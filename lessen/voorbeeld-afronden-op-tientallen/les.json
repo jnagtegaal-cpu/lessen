@@ -1,0 +1,207 @@
+{
+  "id": "voorbeeld-afronden-op-tientallen",
+  "titel": "Afronden op tientallen (voorbeeldles)",
+  "groep": "5",
+  "vak": "Rekenen",
+  "onderwerp": "Afronden",
+  "duur": 30,
+  "edi": true,
+  "samenvatting": "Korte voorbeeldles om het Lesbord uit te proberen: pen, gum en schermen.",
+  "trefwoorden": [
+    "afronden",
+    "tiental",
+    "getallenlijn",
+    "voorbeeld"
+  ],
+  "gemaakt": "2026-10-08",
+  "lesdoel": "Ik kan een getal afronden op het dichtstbijzijnde tiental.",
+  "lesdoelInHoek": true,
+  "schermen": [
+    {
+      "fase": "Lesdoel",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Rekenen · groep 5"
+        },
+        {
+          "type": "kop",
+          "tekst": "Afronden op tientallen"
+        },
+        {
+          "type": "vraag",
+          "tekst": "Ik kan een getal afronden op het ==dichtstbijzijnde tiental==."
+        }
+      ],
+      "notitie": "Lesdoel samen hardop lezen. Vraag: wat is een tiental? Kies willekeurig een leerling."
+    },
+    {
+      "fase": "Activeren voorkennis",
+      "blokken": [
+        {
+          "type": "subkop",
+          "tekst": "Wat weet je al?"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1400 170\" style=\"width:100%;height:auto\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"40\" y1=\"90\" x2=\"1360\" y2=\"90\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"60\" x2=\"40.0\" y2=\"120\" stroke=\"#2f9e63\" stroke-width=\"6\"/><text x=\"40.0\" y=\"165\" text-anchor=\"middle\" font-size=\"40\" font-weight=\"700\" fill=\"#2f9e63\" font-family=\"Atkinson Hyperlegible, Inter, sans-serif\">30</text><line x1=\"172.0\" y1=\"74\" x2=\"172.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"304.0\" y1=\"74\" x2=\"304.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"436.0\" y1=\"74\" x2=\"436.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"568.0\" y1=\"74\" x2=\"568.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"700.0\" y1=\"74\" x2=\"700.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"832.0\" y1=\"74\" x2=\"832.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"964.0\" y1=\"74\" x2=\"964.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><text x=\"964.0\" y=\"165\" text-anchor=\"middle\" font-size=\"40\" font-weight=\"700\" fill=\"#d6453d\" font-family=\"Atkinson Hyperlegible, Inter, sans-serif\">37</text><line x1=\"1096.0\" y1=\"74\" x2=\"1096.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"1228.0\" y1=\"74\" x2=\"1228.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"1360.0\" y1=\"60\" x2=\"1360.0\" y2=\"120\" stroke=\"#2f9e63\" stroke-width=\"6\"/><text x=\"1360.0\" y=\"165\" text-anchor=\"middle\" font-size=\"40\" font-weight=\"700\" fill=\"#2f9e63\" font-family=\"Atkinson Hyperlegible, Inter, sans-serif\">40</text><circle cx=\"964.0\" cy=\"90\" r=\"13\" fill=\"#d6453d\"/></svg>"
+        },
+        {
+          "type": "vraag",
+          "tekst": "Tussen welke twee tientallen ligt 37?"
+        }
+      ],
+      "notitie": "Wisbordjes omhoog. Antwoord: tussen 30 en 40."
+    },
+    {
+      "fase": "Uitleg",
+      "blokken": [
+        {
+          "type": "subkop",
+          "tekst": "Zo rond je af op tientallen"
+        },
+        {
+          "type": "stappen",
+          "items": [
+            "Zoek de **twee tientallen** waar het getal tussen ligt.",
+            "Kijk naar de **eenheden**.",
+            "**0 t/m 4** → naar beneden. **5 t/m 9** → naar boven."
+          ]
+        }
+      ],
+      "notitie": "Stappen één voor één aanwijzen."
+    },
+    {
+      "fase": "Uitleg — hardop denken",
+      "achtergrond": "leeg",
+      "blokken": [
+        {
+          "type": "subkop",
+          "tekst": "Ik doe het voor: 43"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1400 170\" style=\"width:100%;height:auto\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"40\" y1=\"90\" x2=\"1360\" y2=\"90\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"60\" x2=\"40.0\" y2=\"120\" stroke=\"#2f9e63\" stroke-width=\"6\"/><text x=\"40.0\" y=\"165\" text-anchor=\"middle\" font-size=\"40\" font-weight=\"700\" fill=\"#2f9e63\" font-family=\"Atkinson Hyperlegible, Inter, sans-serif\">40</text><line x1=\"172.0\" y1=\"74\" x2=\"172.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"304.0\" y1=\"74\" x2=\"304.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"436.0\" y1=\"74\" x2=\"436.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><text x=\"436.0\" y=\"165\" text-anchor=\"middle\" font-size=\"40\" font-weight=\"700\" fill=\"#d6453d\" font-family=\"Atkinson Hyperlegible, Inter, sans-serif\">43</text><line x1=\"568.0\" y1=\"74\" x2=\"568.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"700.0\" y1=\"74\" x2=\"700.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"832.0\" y1=\"74\" x2=\"832.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"964.0\" y1=\"74\" x2=\"964.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"1096.0\" y1=\"74\" x2=\"1096.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"1228.0\" y1=\"74\" x2=\"1228.0\" y2=\"106\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"1360.0\" y1=\"60\" x2=\"1360.0\" y2=\"120\" stroke=\"#2f9e63\" stroke-width=\"6\"/><text x=\"1360.0\" y=\"165\" text-anchor=\"middle\" font-size=\"40\" font-weight=\"700\" fill=\"#2f9e63\" font-family=\"Atkinson Hyperlegible, Inter, sans-serif\">50</text><circle cx=\"436.0\" cy=\"90\" r=\"13\" fill=\"#d6453d\"/></svg>"
+        },
+        {
+          "type": "schrijfvak",
+          "label": "Ik denk hardop…"
+        }
+      ],
+      "notitie": "Hardop denken: 43 ligt tussen 40 en 50. De eenheid is 3, dat is 0 t/m 4, dus naar beneden: 40. Schrijf mee in het vak."
+    },
+    {
+      "fase": "Begeleide inoefening",
+      "achtergrond": "ruitjes",
+      "blokken": [
+        {
+          "type": "subkop",
+          "tekst": "Samen oefenen"
+        },
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "groot",
+                "tekst": "62"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "groot",
+                "tekst": "35"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ],
+            [
+              {
+                "type": "groot",
+                "tekst": "88"
+              },
+              {
+                "type": "schrijfvak"
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Eerst zelf op wisbordje, dan samen controleren. 35 bespreken: precies in het midden → naar boven."
+    },
+    {
+      "fase": "Controle van begrip",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "Rond af op tientallen. Schrijf op je wisbordje."
+        },
+        {
+          "type": "groot",
+          "tekst": "74"
+        }
+      ],
+      "notitie": "Iedereen tegelijk omhoog. Leerlingen met 80 → aan de instructietafel."
+    },
+    {
+      "fase": "Lesafsluiting",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Wat heb je geleerd?"
+        },
+        {
+          "type": "tekst",
+          "tekst": "Leg aan je buurman uit hoe je **56** afrondt."
+        }
+      ],
+      "notitie": "Terug naar het lesdoel. Duim omhoog / opzij / omlaag."
+    }
+  ],
+  "voorbereiding": {
+    "benodigdheden": [
+      "Wisbordjes en stiften",
+      "Digibord met deze les"
+    ],
+    "verloop": [
+      {
+        "tijd": "0–3 min",
+        "fase": "Lesdoel",
+        "wat": "Lesdoel samen lezen en kort bespreken wat een tiental is."
+      },
+      {
+        "tijd": "3–7 min",
+        "fase": "Activeren voorkennis",
+        "wat": "Getallenlijn 30–40: tussen welke tientallen ligt 37? Wisbordjes."
+      },
+      {
+        "tijd": "7–15 min",
+        "fase": "Uitleg",
+        "wat": "Drie stappen uitleggen. Hardop denken met 43 op de getallenlijn."
+      },
+      {
+        "tijd": "15–22 min",
+        "fase": "Begeleide inoefening",
+        "wat": "62, 35 en 88 samen oefenen. Extra aandacht voor 35 (precies in het midden)."
+      },
+      {
+        "tijd": "22–25 min",
+        "fase": "Controle van begrip",
+        "wat": "74 afronden op wisbordje. Wie 80 heeft: verlengde instructie."
+      },
+      {
+        "tijd": "25–30 min",
+        "fase": "Lesafsluiting",
+        "wat": "Uitleggen aan de buurman hoe je 56 afrondt. Terug naar het lesdoel."
+      }
+    ]
+  }
+}

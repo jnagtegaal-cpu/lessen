@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <title>Presentatie · Lesbord</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    @page { size: 1600px 900px; margin: 0; }
+    body { background: #fff; }
+    .presentatie-print .dia { position: relative; width: 1600px; height: 900px; }
+  </style>
+</head>
+<body class="presentatie-print">
+  <div id="schermen"></div>
+  <script src="assets/blokken.js"></script>
+  <script>
+    const id = Lesbord.param("id");
+    Lesbord.laadLes(id).then((les) => {
+      document.title = `Presentatie – ${les.titel}`;
+      document.getElementById("schermen").innerHTML = (les.schermen || []).map((s) => {
+        let h = Lesbord.diaHtml(s, `lessen/${id}`);
+        if (les.lesdoel && les.lesdoelInHoek && !s.lesdoelVerbergen)
+          h += `<div class="lesdoel-hoek"><b>Lesdoel</b>${Lesbord.opmaak(les.lesdoel)}</div>`;
+        return `<section class="${Lesbord.diaKlassen(s)}">${h}</section>`;
+      }).join("");
+      document.body.dataset.klaar = "1";
+    });
+  </script>
+</body>
+</html>

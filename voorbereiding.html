@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voorbereiding · Lesbord</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body style="background:#fff">
+  <div class="print-balk">
+    <a class="knop" href="./">← Alle lessen</a>
+    <button class="knop hoofd" onclick="print()">Afdrukken</button>
+  </div>
+  <main class="formulier" id="formulier">Laden…</main>
+
+  <script src="assets/blokken.js"></script>
+  <script>
+    const { esc, opmaak } = Lesbord;
+    const id = Lesbord.param("id");
+    Lesbord.laadLes(id).then((les) => {
+      document.title = `Voorbereiding – ${les.titel}`;
+      const v = les.voorbereiding || {};
+      const meta = [`Groep ${les.groep}`, les.vak, les.blok, les.duur ? `${les.duur} minuten` : null, les.edi ? "EDI" : null]
+        .filter(Boolean).map(esc).join(" · ");
+      const lijst = (items) => `<ul>${items.map((i) => `<li>${opmaak(i)}</li>`).join("")}</ul>`;
+      let h = `<h1>${esc(les.titel)}</h1><p class="sub">${meta}</p>`;
+      if (les.lesdoel) h += `<div class="lesdoel-blok"><b>Lesdoel</b>${opmaak(les.lesdoel)}</div>`;
+      if (v.benodigdheden?.length) h += `<h2>Benodigdheden</h2>${lijst(v.benodigdheden)}`;
+      if (v.verloop?.length) {
+        const metFase = v.verloop.some((r) => r.fase);
+        h += `<h2>Verloop</h2><table class="verloop"><thead><tr><th>Tijd</th>${metFase ? "<th>Lesfase</th>" : ""}<th>Wat er gebeurt</th></tr></thead><tbody>` +
+          v.verloop.map((r) => `<tr><td class="tijd">${esc(r.tijd)}</td>${metFase ? `<td class="fase">${esc(r.fase || "")}</td>` : ""}<td><div class="wat">${opmaak(r.wat)}</div></td></tr>`).join("") +
+          `</tbody></table>`;
+      }
+      for (const s of v.secties || []) {
+        h += `<h2>${esc(s.kop)}</h2>` + (s.items ? lijst(s.items) : `<p>${opmaak(s.tekst || "")}</p>`);
+      }
+      h += `<div class="voet">Lesbord · ${esc(les.titel)}${les.gemaakt ? ` · ontworpen ${esc(les.gemaakt)}` : ""}</div>`;
+      document.getElementById("formulier").innerHTML = h;
+      document.body.dataset.klaar = "1";
+    }).catch(() => { document.getElementById("formulier").textContent = "Les niet gevonden."; });
+  </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesbord</title>
+  <meta name="description" content="Lessen om te geven op het digibord, met voorbereiding en presentatie om te downloaden.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232f9e63'/%3E%3Crect x='7' y='9' width='18' height='12' rx='2' fill='none' stroke='white' stroke-width='2.4'/%3E%3Cpath d='M13 25h6M16 21v4' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="kop">
+    <div class="kop-binnen">
+      <a class="merk" href="./">
+        <span class="merk-logo" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></svg>
+        </span>
+        <span>
+          <span class="merk-naam">Lesbord</span><br>
+          <span class="merk-sub">Lessen voor het digibord</span>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main class="inhoud">
+    <label class="zoek">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#52635a" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="zoek" type="search" placeholder="Zoek een les, bijvoorbeeld 'breuken' of 'groep 6'" autocomplete="off" aria-label="Zoek een les">
+    </label>
+
+    <div class="filters" id="filters"></div>
+    <div class="teller" id="teller"></div>
+    <div class="raster" id="raster"></div>
+  </main>
+
+  <script src="assets/blokken.js"></script>
+  <script>
+    const { esc } = Lesbord;
+    const staat = { zoek: "", groep: null, vak: null, lessen: [] };
+    const ikoon = {
+      bord: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></svg>',
+      pdf: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>'
+    };
+
+    const normaal = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+
+    function past(les) {
+      if (staat.groep && String(les.groep) !== staat.groep) return false;
+      if (staat.vak && les.vak !== staat.vak) return false;
+      if (!staat.zoek) return true;
+      const hooiberg = normaal([les.titel, les.vak, "groep " + les.groep, les.onderwerp, les.samenvatting, les.blok, ...(les.trefwoorden || [])].join(" "));
+      return normaal(staat.zoek).split(/\s+/).filter(Boolean).every((w) => hooiberg.includes(w));
+    }
+
+    function tekenFilters() {
+      const groepen = [...new Set(staat.lessen.map((l) => String(l.groep)))].sort((a, b) => a.localeCompare(b, "nl", { numeric: true }));
+      const vakken = [...new Set(staat.lessen.map((l) => l.vak))].sort((a, b) => a.localeCompare(b, "nl"));
+      const chips = (lijst, sleutel, voorvoegsel) => lijst.map((w) =>
+        `<button class="chip" data-${sleutel}="${esc(w)}" aria-pressed="${staat[sleutel] === w}">${voorvoegsel}${esc(w)}</button>`).join("");
+      document.getElementById("filters").innerHTML =
+        `<div class="filter-rij"><span class="filter-label">Groep</span>${chips(groepen, "groep", "")}</div>` +
+        `<div class="filter-rij"><span class="filter-label">Vak</span>${chips(vakken, "vak", "")}</div>`;
+    }
+
+    function tekenLessen() {
+      const zicht = staat.lessen.filter(past);
+      document.getElementById("teller").textContent =
+        zicht.length === 1 ? "1 les" : `${zicht.length} lessen`;
+      const raster = document.getElementById("raster");
+      if (!zicht.length) {
+        raster.innerHTML = `<div class="leeg">Geen lessen gevonden. Probeer een ander zoekwoord of zet een filter uit.</div>`;
+        return;
+      }
+      raster.innerHTML = zicht.map((l) => `
+        <article class="kaart">
+          <div class="kaart-meta">
+            <span class="label">Groep ${esc(l.groep)}</span>
+            <span class="label">${esc(l.vak)}</span>
+            ${l.duur ? `<span class="label grijs">${esc(l.duur)} min</span>` : ""}
+            ${l.edi ? `<span class="label grijs">EDI</span>` : ""}
+          </div>
+          <h2>${esc(l.titel)}</h2>
+          ${l.samenvatting ? `<p>${esc(l.samenvatting)}</p>` : ""}
+          <div class="kaart-acties">
+            <a class="knop hoofd" href="les.html?id=${encodeURIComponent(l.id)}">${ikoon.bord} Open op bord</a>
+            <a class="knop" href="lessen/${encodeURIComponent(l.id)}/voorbereiding.pdf" download>${ikoon.pdf} Voorbereiding</a>
+            <a class="knop" href="lessen/${encodeURIComponent(l.id)}/presentatie.pdf" download>${ikoon.pdf} Presentatie</a>
+          </div>
+        </article>`).join("");
+    }
+
+    document.getElementById("zoek").addEventListener("input", (e) => { staat.zoek = e.target.value; tekenLessen(); });
+    document.getElementById("filters").addEventListener("click", (e) => {
+      const c = e.target.closest(".chip"); if (!c) return;
+      for (const sleutel of ["groep", "vak"]) {
+        if (c.dataset[sleutel] !== undefined) staat[sleutel] = staat[sleutel] === c.dataset[sleutel] ? null : c.dataset[sleutel];
+      }
+      tekenFilters(); tekenLessen();
+    });
+
+    Lesbord.laadCatalogus().then((cat) => {
+      staat.lessen = (cat.lessen || []).sort((a, b) => String(b.gemaakt || "").localeCompare(String(a.gemaakt || "")));
+      tekenFilters(); tekenLessen();
+    }).catch(() => {
+      document.getElementById("raster").innerHTML = `<div class="leeg">De lessen konden niet geladen worden. Ververs de pagina.</div>`;
+    });
+  </script>
+</body>
+</html>

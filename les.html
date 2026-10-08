@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Lesbord</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232f9e63'/%3E%3Crect x='7' y='9' width='18' height='12' rx='2' fill='none' stroke='white' stroke-width='2.4'/%3E%3Cpath d='M13 25h6M16 21v4' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body class="bord">
+  <div class="bord-wrap" id="app">
+    <div class="bord-top">
+      <a class="ikoon-knop" href="./" title="Terug naar alle lessen" aria-label="Terug naar alle lessen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </a>
+      <div class="titel" id="titel">Les laden…</div>
+      <span class="label fase-label" id="fase" hidden></span>
+      <button class="ikoon-knop" id="knop-lesdoel" title="Lesdoel tonen of verbergen" aria-label="Lesdoel tonen of verbergen" aria-pressed="true" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+      </button>
+      <button class="ikoon-knop" id="knop-klad" title="Leeg kladblad" aria-label="Leeg kladblad" aria-pressed="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h5"/></svg>
+      </button>
+      <button class="ikoon-knop" id="knop-notities" title="Notities voor de leerkracht" aria-label="Notities voor de leerkracht" aria-pressed="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4z"/></svg>
+      </button>
+      <button class="ikoon-knop" id="knop-scherm" title="Volledig scherm" aria-label="Volledig scherm">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+      </button>
+    </div>
+
+    <div class="podium" id="podium">
+      <div class="dia-houder" id="houder">
+        <div class="dia" id="dia"></div>
+        <canvas class="tekenlaag aanwijzen" id="laag"></canvas>
+      </div>
+      <aside class="notities" id="notities" aria-label="Notities voor de leerkracht">
+        <h3>Notitie bij dit scherm</h3>
+        <div class="notitie-tekst" id="notitie-tekst"></div>
+      </aside>
+    </div>
+
+    <div class="gereedschap" id="gereedschap">
+      <div class="groep-gereedschap">
+        <button class="ikoon-knop" id="vorige" title="Vorig scherm" aria-label="Vorig scherm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <span class="teller-dia" id="teller">–</span>
+        <button class="ikoon-knop" id="volgende" title="Volgend scherm" aria-label="Volgend scherm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+      <div class="groep-gereedschap">
+        <button class="ikoon-knop" data-modus="aanwijzen" title="Aanwijzen (niet schrijven)" aria-label="Aanwijzen" aria-pressed="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3l14 7-6 2-2 6z"/></svg>
+        </button>
+        <button class="ikoon-knop" data-modus="pen" title="Pen" aria-label="Pen" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg>
+        </button>
+        <button class="ikoon-knop" data-modus="gum" title="Gum" aria-label="Gum" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 20h12M4.5 15.5l9-9a2 2 0 0 1 2.8 0l2.2 2.2a2 2 0 0 1 0 2.8L12 18H7z"/></svg>
+        </button>
+      </div>
+      <div class="groep-gereedschap" id="kleuren">
+        <button class="kleur" data-kleur="#1d2b24" style="background:#1d2b24" title="Zwart" aria-label="Zwart" aria-pressed="true"></button>
+        <button class="kleur" data-kleur="#2e6fd1" style="background:#2e6fd1" title="Blauw" aria-label="Blauw" aria-pressed="false"></button>
+        <button class="kleur" data-kleur="#d6453d" style="background:#d6453d" title="Rood" aria-label="Rood" aria-pressed="false"></button>
+        <button class="kleur" data-kleur="#2f9e63" style="background:#2f9e63" title="Groen" aria-label="Groen" aria-pressed="false"></button>
+      </div>
+      <div class="groep-gereedschap" id="diktes">
+        <button class="dikte" data-dikte="4" title="Dun" aria-label="Dun" aria-pressed="false"><span style="width:6px;height:6px"></span></button>
+        <button class="dikte" data-dikte="8" title="Middel" aria-label="Middel" aria-pressed="true"><span style="width:11px;height:11px"></span></button>
+        <button class="dikte" data-dikte="16" title="Dik" aria-label="Dik" aria-pressed="false"><span style="width:18px;height:18px"></span></button>
+      </div>
+      <div class="groep-gereedschap">
+        <button class="ikoon-knop" id="ongedaan" title="Ongedaan maken" aria-label="Ongedaan maken">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14L4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></svg>
+        </button>
+        <button class="ikoon-knop" id="wissen" title="Alles op dit scherm wissen" aria-label="Alles op dit scherm wissen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/blokken.js"></script>
+  <script src="assets/bord.js"></script>
+</body>
+</html>
