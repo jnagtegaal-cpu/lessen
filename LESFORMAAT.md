@@ -69,6 +69,15 @@ Een scherm is 1600 × 900 en schaalt mee op elk bord.
 | `kolommen` | `kolommen` (lijst van lijsten met blokken), `verhouding` | Naast elkaar, bijv. `["2fr","1fr"]` |
 | `html` | `html` | Maatwerk, zoals een getallenlijn of liniaal in SVG |
 
+### Stap voor stap tonen
+
+Op het bord verschijnt informatie pas als je hem nodig hebt:
+
+- `"stapsgewijs": true` bij `lijst` of `stappen`: elk item is eerst verborgen, en verschijnt als je het aantikt.
+- `"verborgen": true` bij elk ander blok (bijvoorbeeld een antwoord): het hele blok is verborgen tot je het aantikt.
+
+Je kunt ook op **volgende** drukken (knop, pijltje of presenter): eerst verschijnt dan het volgende verborgen item, en pas als alles zichtbaar is, ga je naar het volgende scherm. Aantikken werkt in de stand *Aanwijzen*. Nog eens tikken verbergt het weer. In de presentatie-PDF is alles zichtbaar.
+
 Elk blok mag ook `stijl` hebben (extra CSS), bijvoorbeeld `"stijl": "color:#d6453d"`.
 
 Opmaak in tekst: `**vet**`, `*schuin*`, `==gemarkeerd==`. Een nieuwe regel maak je met `\n`.

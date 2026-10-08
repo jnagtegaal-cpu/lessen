@@ -51,6 +51,11 @@
         {
           "type": "vraag",
           "tekst": "Tussen welke twee tientallen ligt 37?"
+        },
+        {
+          "type": "tekst",
+          "tekst": "Tussen **30** en **40**.",
+          "verborgen": true
         }
       ],
       "notitie": "Wisbordjes omhoog. Antwoord: tussen 30 en 40."
@@ -68,10 +73,11 @@
             "Zoek de **twee tientallen** waar het getal tussen ligt.",
             "Kijk naar de **eenheden**.",
             "**0 t/m 4** → naar beneden. **5 t/m 9** → naar boven."
-          ]
+          ],
+          "stapsgewijs": true
         }
       ],
-      "notitie": "Stappen één voor één aanwijzen."
+      "notitie": "Tik de stappen één voor één aan (of druk op 'volgende'). Bespreek elke stap voordat je de volgende toont."
     },
     {
       "fase": "Uitleg — hardop denken",
@@ -146,6 +152,12 @@
         {
           "type": "groot",
           "tekst": "74"
+        },
+        {
+          "type": "tekst",
+          "tekst": "74 → **70**",
+          "verborgen": true,
+          "stijl": "text-align:center;font-size:60px"
         }
       ],
       "notitie": "Iedereen tegelijk omhoog. Leerlingen met 80 → aan de instructietafel."

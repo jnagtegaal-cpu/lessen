@@ -208,6 +208,26 @@ body.bord { background: #e9f1ec; overflow: hidden; height: 100vh; }
 }
 .b-titeldia { justify-content: center; }
 
+/* ---------- Stap voor stap tonen ---------- */
+.dia .onthul { position: relative; cursor: pointer; transition: background .15s; }
+.dia .onthul:not(.zichtbaar) > * { visibility: hidden; }
+.dia .onthul:not(.zichtbaar) {
+  background: repeating-linear-gradient(-45deg, #f2f8f4 0 14px, #e8f3ec 14px 28px);
+  border: 2px dashed #b9dbc6; border-radius: 14px;
+}
+.dia .onthul:not(.zichtbaar)::after {
+  content: "tik om te tonen"; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  font-size: 24px; color: #7fae92; white-space: nowrap; pointer-events: none;
+}
+.dia li.onthul { padding: 4px 12px; margin-left: -12px; }
+.dia .b-stappen li.onthul:not(.zichtbaar)::before { opacity: .45; }
+.dia .onthul.zichtbaar { animation: verschijn .35s ease; }
+@keyframes verschijn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.alles-zichtbaar .dia .onthul { background: none; border: 0; }
+.alles-zichtbaar .dia .onthul > * { visibility: visible !important; }
+.alles-zichtbaar .dia .onthul::after { content: none !important; }
+.alles-zichtbaar .dia .b-stappen li.onthul { background: #f7fbf8; border: 2px solid var(--line); }
+
 /* ---------- Print: voorbereiding & presentatie ---------- */
 .formulier { max-width: 900px; margin: 0 auto; padding: 36px 32px 60px; background: var(--paper); }
 .formulier h1 { font-size: 30px; margin: 0 0 6px; line-height: 1.2; }
@@ -247,3 +267,4 @@ body.bord { background: #e9f1ec; overflow: hidden; height: 100vh; }
   .kleur { width: 34px; height: 34px; }
   .ikoon-knop, .dikte { width: 40px; height: 40px; }
 }
+.alles-zichtbaar .dia .b-stappen li.onthul::before { opacity: 1; }

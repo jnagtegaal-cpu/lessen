@@ -9,7 +9,8 @@
   const st = {
     les: null, lesmap: "", index: 0, klad: false,
     modus: "aanwijzen", kleur: "#1d2b24", dikte: 8,
-    strepen: new Map(), // schermsleutel -> [{gum, kleur, dikte, punten:[[x,y],...]}]
+    strepen: new Map(), onthuld: new Map(), // schermsleutel -> Set van getoonde stappen
+    // schermsleutel -> [{gum, kleur, dikte, punten:[[x,y],...]}]
     schaal: 1, bezig: null,
   };
   const sleutel = () => (st.klad ? "klad" : String(st.index));
@@ -101,15 +102,32 @@
       html += `<div class="lesdoel-hoek"><b>Lesdoel</b>${Lesbord.opmaak(st.les.lesdoel)}</div>`;
     }
     dia.innerHTML = html;
+    const getoond = st.onthuld.get(sleutel()) || new Set();
+    dia.querySelectorAll(".onthul").forEach((el, i) => el.classList.toggle("zichtbaar", getoond.has(i)));
     $("teller").textContent = st.klad ? "Kladblad" : `${st.index + 1} / ${schermen.length}`;
     $("vorige").disabled = st.klad || st.index === 0;
-    $("volgende").disabled = st.klad || st.index >= schermen.length - 1;
+    $("volgende").disabled = st.klad || (st.index >= schermen.length - 1 && !dia.querySelector(".onthul:not(.zichtbaar)"));
     const fase = !st.klad && s.fase;
     $("fase").hidden = !fase; $("fase").textContent = fase || "";
     $("notitie-tekst").textContent = (!st.klad && s.notitie) || "Geen notitie bij dit scherm.";
     $("knop-klad").setAttribute("aria-pressed", st.klad);
     hertekenen();
   }
+  // Stap voor stap: tik op een verborgen stap, of druk op "volgende" om de eerstvolgende te tonen.
+  function onthul(el) {
+    const alle = [...dia.querySelectorAll(".onthul")];
+    const i = alle.indexOf(el); if (i < 0) return;
+    if (!st.onthuld.has(sleutel())) st.onthuld.set(sleutel(), new Set());
+    const set = st.onthuld.get(sleutel());
+    if (set.has(i)) { set.delete(i); el.classList.remove("zichtbaar"); }
+    else { set.add(i); el.classList.add("zichtbaar"); }
+  }
+  dia.addEventListener("click", (e) => { const el = e.target.closest(".onthul"); if (el) onthul(el); });
+  function volgende() {
+    const verborgen = dia.querySelector(".onthul:not(.zichtbaar)");
+    if (verborgen && !st.klad) onthul(verborgen); else ga(st.index + 1);
+  }
+
   function ga(n) {
     const max = (st.les.schermen || []).length - 1;
     st.klad = false;
@@ -119,7 +137,7 @@
 
   // ---------- Knoppen ----------
   $("vorige").onclick = () => ga(st.index - 1);
-  $("volgende").onclick = () => ga(st.index + 1);
+  $("volgende").onclick = volgende;
   $("knop-klad").onclick = () => { st.klad = !st.klad; toonScherm(); };
   $("knop-lesdoel").onclick = () => {
     const uit = houder.classList.toggle("lesdoel-uit");
@@ -154,7 +172,7 @@
 
   document.addEventListener("keydown", (e) => {
     if (e.target.closest("input, textarea")) return;
-    if (["ArrowRight", "PageDown", " "].includes(e.key)) { e.preventDefault(); ga(st.index + 1); }
+    if (["ArrowRight", "PageDown", " "].includes(e.key)) { e.preventDefault(); volgende(); }
     else if (["ArrowLeft", "PageUp"].includes(e.key)) { e.preventDefault(); ga(st.index - 1); }
     else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z") { e.preventDefault(); $("ongedaan").click(); }
     else if (e.key === "p") zetModus("pen");

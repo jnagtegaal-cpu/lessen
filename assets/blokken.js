@@ -13,6 +13,11 @@ const Lesbord = (() => {
       .replace(/\n/g, "<br>");
 
   const blok = (b, lesmap) => {
+    const html = blokInhoud(b, lesmap);
+    return b.verborgen ? `<div class="onthul onthul-blok">${html}</div>` : html;
+  };
+
+  const blokInhoud = (b, lesmap) => {
     const stijl = b.stijl ? ` style="${esc(b.stijl)}"` : "";
     switch (b.type) {
       case "kop": return `<h1 class="b-kop"${stijl}>${opmaak(b.tekst)}</h1>`;
@@ -24,10 +29,11 @@ const Lesbord = (() => {
       case "fase": return `<span class="b-fase-tag"${stijl}>${esc(b.tekst)}</span>`;
       case "lijst": {
         const tag = b.genummerd ? "ol" : "ul";
-        return `<${tag} class="b-lijst"${stijl}>${(b.items || []).map((i) => `<li>${opmaak(i)}</li>`).join("")}</${tag}>`;
+        const li = b.stapsgewijs ? '<li class="onthul">' : "<li>";
+        return `<${tag} class="b-lijst"${stijl}>${(b.items || []).map((i) => `${li}<span>${opmaak(i)}</span></li>`).join("")}</${tag}>`;
       }
       case "stappen":
-        return `<ol class="b-stappen"${stijl}>${(b.items || []).map((i) => `<li><span>${opmaak(i)}</span></li>`).join("")}</ol>`;
+        return `<ol class="b-stappen"${stijl}>${(b.items || []).map((i) => `<li${b.stapsgewijs ? ' class="onthul"' : ""}><span>${opmaak(i)}</span></li>`).join("")}</ol>`;
       case "afbeelding": {
         const src = /^(https?:|data:|\/)/.test(b.src) ? b.src : `${lesmap}/${b.src}`;
         return `<img class="b-afbeelding" src="${esc(src)}" alt="${esc(b.alt || "")}"${stijl}>`;
