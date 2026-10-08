@@ -1,6 +1,22 @@
 {
   "lessen": [
     {
+      "id": "g7-goedemorgen-dagschema",
+      "titel": "Goedemorgen: dagschema 9 oktober",
+      "groep": "7",
+      "vak": "Dagopening",
+      "onderwerp": "Dagschema",
+      "duur": 10,
+      "samenvatting": "Goedemorgenpagina met het dagschema en een binnenkomstvraag.",
+      "trefwoorden": [
+        "goedemorgen",
+        "dagschema",
+        "dagopening",
+        "binnenkomstvraag"
+      ],
+      "gemaakt": "2026-10-08"
+    },
+    {
       "id": "g7-rekenen-cijferend-vermenigvuldigen",
       "titel": "Cijferend vermenigvuldigen (64 × 32)",
       "groep": "7",

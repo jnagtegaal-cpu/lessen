@@ -1,0 +1,74 @@
+{
+  "id": "g7-goedemorgen-dagschema",
+  "titel": "Goedemorgen: dagschema 9 oktober",
+  "groep": "7",
+  "vak": "Dagopening",
+  "onderwerp": "Dagschema",
+  "duur": 10,
+  "samenvatting": "Goedemorgenpagina met het dagschema en een binnenkomstvraag.",
+  "trefwoorden": [
+    "goedemorgen",
+    "dagschema",
+    "dagopening",
+    "binnenkomstvraag"
+  ],
+  "gemaakt": "2026-10-08",
+  "schermen": [
+    {
+      "fase": "Goedemorgen",
+      "achtergrond": "leeg",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:60px;font-weight:800;margin-bottom:14px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:34px;font-weight:700\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:34px;font-weight:700\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:34px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:34px;font-weight:700\"><span style=\"width:50px;text-align:center\">🎁</span><span>Beloning<span style=\"color:#d9822b;font-weight:700;font-size:26px;margin-left:14px;white-space:nowrap\">weerwolven</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:34px;font-weight:700\"><span style=\"width:50px;text-align:center\">✏️</span><span>Verhaal en stelopdracht<span style=\"color:#d9822b;font-weight:700;font-size:26px;margin-left:14px;white-space:nowrap\">schoolfotograaf kan langskomen 📸</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:34px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:34px;font-weight:700\"><span style=\"width:50px;text-align:center\">🧹</span><span>Klas opruimen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:34px;font-weight:700\"><span style=\"width:50px;text-align:center\">🏃</span><span>Gym</span></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;height:690px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;text-align:center\"><div style=\"font-size:30px;color:#d9822b;font-weight:700;margin-bottom:16px\">Binnenkomstvraag</div><div style=\"font-size:46px;font-weight:700;line-height:1.3\">Als je één dag een dier kon zijn, welk dier kies jij?</div><div style=\"font-size:30px;margin-top:20px;color:#5b6b63\">Vertel het aan een maatje 🐾</div></div>"
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Dagschema voor vrijdag. De binnenkomstvraag is een voorstel; pas aan wat je wilt."
+    }
+  ],
+  "voorbereiding": {
+    "verloop": [
+      {
+        "wat": "Dagopening"
+      },
+      {
+        "wat": "Rekenen"
+      },
+      {
+        "wat": "Pauze"
+      },
+      {
+        "wat": "Beloning: weerwolven"
+      },
+      {
+        "wat": "Verhaal en stelopdracht (de schoolfotograaf kan langskomen)"
+      },
+      {
+        "wat": "Pauze"
+      },
+      {
+        "wat": "Klas opruimen"
+      },
+      {
+        "wat": "Gym"
+      }
+    ]
+  }
+}
