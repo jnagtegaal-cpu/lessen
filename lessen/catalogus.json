@@ -1,6 +1,23 @@
 {
   "lessen": [
     {
+      "id": "g7-8-goedemorgen-maandag",
+      "titel": "Goedemorgen: dagschema maandag 12 oktober",
+      "groep": "7-8",
+      "vak": "Dagopening",
+      "onderwerp": "Dagschema",
+      "duur": 10,
+      "samenvatting": "Goedemorgenpagina voor maandag met het dagschema en een welkom met weekendpraatje.",
+      "trefwoorden": [
+        "goedemorgen",
+        "dagschema",
+        "dagopening",
+        "weekopening",
+        "maandag"
+      ],
+      "gemaakt": "2026-10-08"
+    },
+    {
       "id": "g7-goedemorgen-dagschema",
       "titel": "Goedemorgen: dagschema 9 oktober",
       "groep": "7",
