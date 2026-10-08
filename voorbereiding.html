@@ -31,8 +31,9 @@
       if (v.benodigdheden?.length) h += `<h2>Benodigdheden</h2>${lijst(v.benodigdheden)}`;
       if (v.verloop?.length) {
         const metFase = v.verloop.some((r) => r.fase);
-        h += `<h2>Verloop</h2><table class="verloop"><thead><tr><th>Tijd</th>${metFase ? "<th>Lesfase</th>" : ""}<th>Wat er gebeurt</th></tr></thead><tbody>` +
-          v.verloop.map((r) => `<tr><td class="tijd">${esc(r.tijd)}</td>${metFase ? `<td class="fase">${esc(r.fase || "")}</td>` : ""}<td><div class="wat">${opmaak(r.wat)}</div></td></tr>`).join("") +
+        const metTijd = v.verloop.some((r) => r.tijd);
+        h += `<h2>Verloop</h2><table class="verloop"><thead><tr>${metTijd ? "<th>Tijd</th>" : ""}${metFase ? "<th>Lesfase</th>" : ""}<th>Wat er gebeurt</th></tr></thead><tbody>` +
+          v.verloop.map((r) => `<tr>${metTijd ? `<td class="tijd">${esc(r.tijd || "")}</td>` : ""}${metFase ? `<td class="fase">${esc(r.fase || "")}</td>` : ""}<td><div class="wat">${opmaak(r.wat)}</div></td></tr>`).join("") +
           `</tbody></table>`;
       }
       for (const s of v.secties || []) {

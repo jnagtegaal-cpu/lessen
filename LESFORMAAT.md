@@ -99,4 +99,4 @@ Hier komt **alleen** wat in het ontwerpgesprek besproken is.
 }
 ```
 
-`fase` mag weg als de les geen fases heeft. Dan verdwijnt die kolom in de PDF.
+`fase` mag weg als de les geen fases heeft. Dan verdwijnt die kolom in de PDF. Hetzelfde geldt voor `tijd`.

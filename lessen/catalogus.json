@@ -1,6 +1,23 @@
 {
   "lessen": [
     {
+      "id": "g7-rekenen-cijferend-vermenigvuldigen",
+      "titel": "Cijferend vermenigvuldigen (64 × 32)",
+      "groep": "7",
+      "vak": "Rekenen",
+      "onderwerp": "Cijferend vermenigvuldigen",
+      "edi": true,
+      "samenvatting": "Herhalingsles: sommen als 64 × 32 cijferend uitrekenen met een vast stappenplan van vijf stappen.",
+      "trefwoorden": [
+        "cijferen",
+        "vermenigvuldigen",
+        "vermenigvuldigen met tientallen",
+        "stappenplan",
+        "tafels"
+      ],
+      "gemaakt": "2026-10-08"
+    },
+    {
       "id": "voorbeeld-afronden-op-tientallen",
       "titel": "Afronden op tientallen (voorbeeldles)",
       "groep": "5",

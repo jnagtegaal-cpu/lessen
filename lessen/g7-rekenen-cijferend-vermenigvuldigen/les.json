@@ -1,0 +1,168 @@
+{
+  "id": "g7-rekenen-cijferend-vermenigvuldigen",
+  "titel": "Cijferend vermenigvuldigen (64 × 32)",
+  "groep": "7",
+  "vak": "Rekenen",
+  "onderwerp": "Cijferend vermenigvuldigen",
+  "edi": true,
+  "samenvatting": "Herhalingsles: sommen als 64 × 32 cijferend uitrekenen met een vast stappenplan van vijf stappen.",
+  "trefwoorden": [
+    "cijferen",
+    "vermenigvuldigen",
+    "vermenigvuldigen met tientallen",
+    "stappenplan",
+    "tafels"
+  ],
+  "gemaakt": "2026-10-08",
+  "lesdoel": "Ik kan sommen als 64 × 32 cijferend uitrekenen.",
+  "lesdoelInHoek": true,
+  "schermen": [
+    {
+      "fase": "Lesdoel",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Rekenen · groep 7"
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"font-size:76px;line-height:1.3;text-align:center;font-weight:700\">Ik kan sommen als 64 × 32<br><span style=\"color:#d9822b\">cijferend</span> <span style=\"color:#1f6fd1\">uitrekenen</span>.</div><div style=\"margin-top:40px;text-align:center;font-size:30px;color:#5b6b63\"><span style=\"color:#d9822b;font-weight:700\">oranje</span> = begrip · <span style=\"color:#1f6fd1;font-weight:700\">blauw</span> = vaardigheid</div>"
+        }
+      ],
+      "notitie": "Lesdoel presenteren zoals in het boek (EDI blz 86): jij leest voor terwijl je de woorden aanwijst, dan lezen de kinderen mee, dan lezen ze het aan hun maatje, en een willekeurige leerling leest het voor. Duurt minder dan 3 minuten."
+    },
+    {
+      "fase": "Controle van begrip",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "Reken uit op je wisbordje."
+        },
+        {
+          "type": "groot",
+          "tekst": "64 × 32"
+        },
+        {
+          "type": "tekst",
+          "tekst": "= **2048**",
+          "verborgen": true,
+          "stijl": "text-align:center;font-size:60px"
+        }
+      ],
+      "notitie": "Alle wisbordjes tegelijk omhoog. Wie het goed heeft, gaat zelfstandig aan de les. Wie vastloopt, krijgt de uitleg."
+    },
+    {
+      "fase": "Uitleg — voordoen",
+      "achtergrond": "ruitjes",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "2fr",
+            "3fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Ik doe voor"
+              },
+              {
+                "type": "groot",
+                "tekst": "46 × 23"
+              },
+              {
+                "type": "schrijfvak",
+                "label": "Ik denk hardop…"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Zo doe ik het"
+              },
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "items": [
+                  "**Schrijf** de som onder elkaar.",
+                  "**Vermenigvuldig** de eenheden onderaan met elk cijfer erboven. Begin rechts.\n*Hint: past het antwoord niet in één vakje? Onthoud het tiental.*",
+                  "Schrijf een **0** op.",
+                  "**Vermenigvuldig** de tientallen onderaan met elk cijfer erboven. Begin rechts.\n*Hint: past het antwoord niet in één vakje? Onthoud het tiental.*",
+                  "**Tel** de antwoorden bij elkaar op."
+                ],
+                "stijl": "font-size:.82em"
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Doe 46 × 23 voor (antwoord 1058). De kinderen doen mee in hun rekenschrift. Tik de stappen één voor één aan terwijl je ze uitvoert en hardop denkt. Vraag tussendoor: 'Hoe deed ik dat?'."
+    },
+    {
+      "fase": "Begeleide inoefening",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "subkop",
+          "tekst": "Nu jullie, op je wisbordje"
+        },
+        {
+          "type": "groot",
+          "tekst": "53 × 24",
+          "verborgen": true
+        },
+        {
+          "type": "groot",
+          "tekst": "47 × 32",
+          "verborgen": true
+        },
+        {
+          "type": "groot",
+          "tekst": "68 × 25",
+          "verborgen": true
+        }
+      ],
+      "notitie": "Rule of Two: de kinderen maken 53 × 24 (1272) op het wisbordje. Daarna, als er nog een ronde nodig is, 47 × 32 (1504) en 68 × 25 (1700). Tik ze één voor één aan. Vraag steeds: 'Hoe deed jij dat?'."
+    }
+  ],
+  "voorbereiding": {
+    "benodigdheden": [
+      "Wisbordjes en stiften",
+      "Rekenschrift: de kinderen doen tijdens de uitleg mee"
+    ],
+    "verloop": [
+      {
+        "fase": "Lesdoel",
+        "wat": "Lesdoel presenteren: jij leest voor, de klas leest mee, de kinderen lezen het aan hun maatje en een willekeurige leerling leest het voor."
+      },
+      {
+        "fase": "Controle van begrip",
+        "wat": "Wisbordje met **64 × 32**. Wie het goed heeft, gaat zelfstandig aan de les. Wie vastloopt, krijgt de uitleg."
+      },
+      {
+        "fase": "Uitleg — voordoen",
+        "wat": "Je doet **46 × 23** voor met het stappenplan, hardop denkend. De stappen komen één voor één in beeld. De kinderen doen mee in hun rekenschrift."
+      },
+      {
+        "fase": "Begeleide inoefening",
+        "wat": "De kinderen maken **53 × 24** op het wisbordje. Is er nog een ronde nodig, dan **47 × 32** en **68 × 25**."
+      }
+    ],
+    "secties": [
+      {
+        "kop": "Stappenplan",
+        "items": [
+          "Schrijf de som onder elkaar.",
+          "Vermenigvuldig de eenheden onderaan met elk cijfer erboven. Begin rechts. *Hint: past het antwoord niet in één vakje? Onthoud het tiental.*",
+          "Schrijf een 0 op.",
+          "Vermenigvuldig de tientallen onderaan met elk cijfer erboven. Begin rechts. *Hint: past het antwoord niet in één vakje? Onthoud het tiental.*",
+          "Tel de antwoorden bij elkaar op."
+        ]
+      }
+    ]
+  }
+}
