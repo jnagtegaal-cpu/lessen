@@ -1,0 +1,81 @@
+{
+  "id": "g7-8-goedemorgen-dinsdag",
+  "titel": "Goedemorgen: dagschema dinsdag 13 oktober",
+  "groep": "7-8",
+  "vak": "Dagopening",
+  "onderwerp": "Dagschema",
+  "duur": 10,
+  "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema en een gespreksvraag bij binnenkomst.",
+  "trefwoorden": [
+    "goedemorgen",
+    "dagschema",
+    "dagopening",
+    "gespreksvraag",
+    "dinsdag"
+  ],
+  "gemaakt": "2026-10-09",
+  "schermen": [
+    {
+      "fase": "Goedemorgen",
+      "achtergrond": "leeg",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:56px;font-weight:800;margin-bottom:10px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">💬</span><span>Kwinkles (CEL)</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;margin-bottom:6px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🌍</span><span>Wetenswaardig</span></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;height:640px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;text-align:center\"><div style=\"font-size:30px;color:#d9822b;font-weight:700;margin-bottom:16px\">Gespreksvraag</div><div style=\"font-size:46px;font-weight:700;line-height:1.3\">Als je één dag in de week een verkeersbord zou willen zijn, welke dag zou dat dan zijn? 🚸</div></div>"
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Dagschema voor dinsdag. Gespreksvraag bij binnenkomst."
+    }
+  ],
+  "voorbereiding": {
+    "verloop": [
+      {
+        "wat": "Bij binnenkomst: gespreksvraag op het bord (als je één dag in de week een verkeersbord zou willen zijn, welke dag zou dat dan zijn?)"
+      },
+      {
+        "wat": "Dagopening"
+      },
+      {
+        "wat": "Rekenen"
+      },
+      {
+        "wat": "Pauze"
+      },
+      {
+        "wat": "Spelling"
+      },
+      {
+        "wat": "Taal"
+      },
+      {
+        "wat": "Kwinkles (CEL)"
+      },
+      {
+        "wat": "Pauze"
+      },
+      {
+        "wat": "Stillezen"
+      },
+      {
+        "wat": "Wetenswaardig"
+      }
+    ]
+  }
+}
