@@ -78,7 +78,7 @@
       raster.innerHTML = zicht.map((l) => `
         <article class="kaart">
           <div class="kaart-meta">
-            <span class="label">Groep ${esc(l.groep)}</span>
+            <span class="label">${/^\d/.test(String(l.groep)) ? "Groep " : ""}${esc(l.groep)}</span>
             <span class="label">${esc(l.vak)}</span>
             ${l.duur ? `<span class="label grijs">${esc(l.duur)} min</span>` : ""}
             ${l.edi ? `<span class="label grijs">EDI</span>` : ""}

@@ -10,6 +10,7 @@ Gebruik (vanuit de map van de repository):
     python3 tools/publiceer.py <les-id>   # alleen PDF's van deze les opnieuw
 """
 import functools
+import os
 import http.server
 import json
 import pathlib
@@ -61,7 +62,8 @@ def maak_pdfs(ids):
     basis = f"http://127.0.0.1:{server.server_address[1]}"
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch()
+            # LESBORD_CHROMIUM: pad naar een eigen Chromium, voor omgevingen waar Playwright geen eigen browser heeft
+            browser = p.chromium.launch(executable_path=os.environ.get("LESBORD_CHROMIUM") or None)
             page = browser.new_page()
             for i in ids:
                 page.goto(f"{basis}/voorbereiding.html?id={i}")
