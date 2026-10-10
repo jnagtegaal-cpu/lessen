@@ -70,6 +70,7 @@ Een scherm is 1600 × 900 en schaalt mee op elk bord.
 | `html` | `html` | Maatwerk, zoals een getallenlijn of liniaal in SVG |
 | `stellingen` | `items` (`titel`, `onzin`), `antwoord` | Quizkaart met A, B, C. Na een tik komt het antwoord en krijgt elke kaart een stempel *feit* of *onzin* |
 | `smaken` | `items` | Smaken als kaartjes (proefronde), meestal met `"verborgen": true` |
+| `weetjes` | `items`, `kop` | Weetjes op scheve briefjes met plakband, om zelf te lezen (bijv. naast een `proef`-blok in `kolommen`) |
 | `eindstand` | – | Ranglijst van het scorebord (alleen met `scorebord` in de les, zie hieronder) |
 
 ### Stap voor stap tonen

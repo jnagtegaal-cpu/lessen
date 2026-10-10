@@ -83,6 +83,9 @@ const Lesbord = (() => {
           `<div class="onthul onthul-blok"><div class="b-smaken">${(b.goed || []).map((s) => `<span>${esc(s)}</span>`).join("")}</div>` +
           `${b.echteNaam ? `<p class="proef-onthul">${esc(b.echteNaam)}</p>` : ""}</div></div>`;
       }
+      case "weetjes": // briefjes om zelf te lezen, bijvoorbeeld tijdens het proeven
+        return `<div class="b-weetjes"${stijl}>${b.kop ? `<p class="weetjes-kop">${esc(b.kop)}</p>` : ""}` +
+          `${(b.items || []).map((w) => `<div class="weetje">${opmaak(w)}</div>`).join("")}</div>`;
       case "live-aansluiten": return `<div class="b-aansluiten" data-aansluiten${stijl}></div>`;
       case "eindstand": return `<div class="b-eindstand" data-eindstand${stijl}></div>`; // wordt op het bord gevuld door score.js
       case "html": return b.html || ""; // maatwerk per les
