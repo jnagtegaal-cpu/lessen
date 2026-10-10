@@ -102,7 +102,7 @@ Hier komt **alleen** wat in het ontwerpgesprek besproken is.
 }
 ```
 
-`fase` mag weg als de les geen fases heeft. Dan verdwijnt die kolom in de PDF. Hetzelfde geldt voor `tijd`.
+`fase` mag weg als de les geen fases heeft. Met `"faseKop": "Onderdeel"` in `voorbereiding` krijgt die kolom een andere kop dan "Lesfase". Dan verdwijnt die kolom in de PDF. Hetzelfde geldt voor `tijd`.
 
 ## Scorebord (quizzen en spellen)
 

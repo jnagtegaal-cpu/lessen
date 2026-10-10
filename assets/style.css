@@ -482,3 +482,7 @@ body.thema-pub .scorebalk { background: linear-gradient(#4a2e17, #35200f); borde
 body.thema-pub .score-team { background: var(--bord, #27312b); border: 2px solid rgba(244,239,226,.55); color: #f4efe2; }
 body.thema-pub .score-team.kop { border-color: #e0a84a; background: #3a3820; }
 body.thema-pub .score-punten { color: #e0a84a; }
+
+/* Voorbereiding: kop blijft bij zijn tekst */
+.formulier h2 { break-after: avoid; }
+.formulier p { orphans: 3; widows: 3; }
