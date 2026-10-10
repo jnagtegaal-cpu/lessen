@@ -4,33 +4,162 @@
   "groep": "Volwassenen",
   "vak": "Pubquiz",
   "samenvatting": "Pubquiz voor een familieavond: feiten en onzin, proeven en bluffen.",
-  "trefwoorden": ["pubquiz", "quiz", "feest"],
+  "trefwoorden": [
+    "pubquiz",
+    "quiz",
+    "feest"
+  ],
   "gemaakt": "2026-10-10",
-  "scorebord": { "teams": 3 },
+  "scorebord": {
+    "teams": 3
+  },
   "schermen": [
     {
       "fase": "Welkom",
       "uitlijning": "midden",
       "blokken": [
-        { "type": "fase", "tekst": "Pubquiz" },
-        { "type": "kop", "tekst": "Welkom bij de pubquiz!" },
-        { "type": "vraag", "tekst": "Kies een teamnaam. Elk team heeft een pen en briefjes." }
+        {
+          "type": "fase",
+          "tekst": "Vrijdagavond"
+        },
+        {
+          "type": "kop",
+          "tekst": "De grote familie-pubquiz"
+        },
+        {
+          "type": "klein",
+          "tekst": "Feiten en onzin · proeven · bluffen"
+        },
+        {
+          "type": "vraag",
+          "tekst": "Kies een teamnaam en pak pen en briefjes."
+        }
       ],
-      "notitie": "Concept: de teamnamen typ je in het scorebord onderaan in."
+      "notitie": "Concept. De teamnamen typ je in het scorebord onderaan in."
     },
     {
-      "fase": "Voorbeeld",
+      "fase": "Ronde 1",
+      "uitlijning": "midden",
       "blokken": [
-        { "type": "kop", "tekst": "Voorbeeldscherm" },
-        { "type": "lijst", "items": ["Stelling A", "Stelling B", "Stelling C"], "stapsgewijs": true }
+        {
+          "type": "fase",
+          "tekst": "Ronde 1"
+        },
+        {
+          "type": "kop",
+          "tekst": "Natuur"
+        },
+        {
+          "type": "subkop",
+          "tekst": "Twee feiten, één onzin"
+        },
+        {
+          "type": "klein",
+          "tekst": "Bespreek het in je team en schrijf de letter van de onzin op."
+        }
+      ]
+    },
+    {
+      "fase": "Natuur · kaart 1",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Natuur · kaart 1"
+        },
+        {
+          "type": "kop",
+          "tekst": "Reuzen onder de grond"
+        },
+        {
+          "type": "stellingen",
+          "items": [
+            {
+              "titel": "De zwam van Oregon"
+            },
+            {
+              "titel": "Het bos dat één boom is"
+            },
+            {
+              "titel": "De longen van de aarde",
+              "onzin": true
+            }
+          ],
+          "antwoord": "❌ **C** is de onzin"
+        }
+      ],
+      "notitie": "Concept met de teksten uit het gesprek. Het verhaal voor het voorlezen komt in het voorbereidingsformulier."
+    },
+    {
+      "fase": "Proefronde",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Proefronde · voorbeeldscherm"
+        },
+        {
+          "type": "kop",
+          "tekst": "Biertje 1"
+        },
+        {
+          "type": "vraag",
+          "tekst": "Wat proef je? Vink alle smaken aan die je herkent."
+        },
+        {
+          "type": "smaken",
+          "items": [
+            "honing",
+            "banaan",
+            "sinaasappelschil",
+            "kruidnagel",
+            "witte peper",
+            "droge afdronk"
+          ],
+          "verborgen": true
+        },
+        {
+          "type": "klein",
+          "tekst": "Voorbeeld: de echte smaken volgen zodra de bieren zijn gekocht."
+        }
+      ]
+    },
+    {
+      "fase": "Bluf",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Bluf-ronde"
+        },
+        {
+          "type": "groot",
+          "tekst": "droogstoppel"
+        },
+        {
+          "type": "vraag",
+          "tekst": "Verzin een betekenis die zo echt mogelijk klinkt."
+        },
+        {
+          "type": "klein",
+          "tekst": "Schrijf op je briefje, met je teamnaam erop."
+        }
       ]
     },
     {
       "fase": "Uitslag",
       "blokken": [
-        { "type": "kop", "tekst": "De eindstand" },
-        { "type": "eindstand" }
+        {
+          "type": "fase",
+          "tekst": "Uitslag"
+        },
+        {
+          "type": "kop",
+          "tekst": "De eindstand"
+        },
+        {
+          "type": "eindstand"
+        }
       ]
     }
-  ]
+  ],
+  "thema": "pub"
 }

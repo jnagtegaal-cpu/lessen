@@ -337,3 +337,93 @@ body.bord { background: #e9f1ec; overflow: hidden; height: 100vh; }
   .score-punten { font-size: 24px; }
   .scorepaneel { bottom: 100px; }
 }
+
+/* ---------- Quizkaarten en smaken (alle thema's) ---------- */
+.b-stellingen { display: flex; flex-direction: column; gap: 20px; }
+.stelling {
+  position: relative; display: flex; align-items: center; gap: 28px; padding: 18px 34px 18px 24px;
+  background: #f7fbf8; border: 3px solid var(--line); border-radius: 20px;
+  font-size: 46px; font-weight: 700; line-height: 1.15;
+}
+.stelling-letter {
+  flex: none; width: 82px; height: 82px; border-radius: 50%; background: var(--groen); color: #fff;
+  display: grid; place-items: center; font-size: 46px;
+}
+.stelling-titel { flex: 1; min-width: 0; }
+.stempel {
+  display: none; position: absolute; right: 28px; top: 50%; transform: translateY(-50%) rotate(-5deg);
+  padding: 4px 22px; border: 4px solid; border-radius: 12px; font-size: 34px; letter-spacing: .12em;
+  text-transform: uppercase; background: rgba(255, 255, 255, .9);
+}
+.stempel.onzin { color: var(--rood); border-color: var(--rood); }
+.stempel.feit { color: var(--groen-donker); border-color: var(--groen); }
+.b-stellingen:has(.antwoord-trigger.zichtbaar) .stempel,
+.alles-zichtbaar .b-stellingen .stempel { display: block; }
+.b-stellingen:has(.antwoord-trigger.zichtbaar) .stelling.onzin,
+.alles-zichtbaar .b-stellingen .stelling.onzin { border-color: var(--rood); background: #fdeeed; }
+.b-stellingen:has(.antwoord-trigger.zichtbaar) .stelling.feit,
+.alles-zichtbaar .b-stellingen .stelling.feit { border-color: var(--groen); }
+.b-stellingen:has(.antwoord-trigger.zichtbaar) .stelling-titel,
+.alles-zichtbaar .b-stellingen .stelling-titel { padding-right: 190px; }
+.b-antwoord { font-size: 40px; font-weight: 700; text-align: center; padding: 14px 24px; min-height: 80px; display: grid; place-items: center; }
+.b-smaken { display: flex; flex-wrap: wrap; gap: 14px; }
+.b-smaken span {
+  padding: 6px 22px; border-radius: 999px; background: var(--groen-licht); border: 2px solid var(--groen);
+  color: var(--groen-donker); font-size: 34px; font-weight: 700;
+}
+
+/* ---------- Thema "pub": donker, warm en goudkleurig ---------- */
+body.bord.thema-pub { background: #0d1712; }
+.thema-pub .podium { background: #0d1712; }
+.thema-pub .dia-houder { box-shadow: 0 10px 50px rgba(0, 0, 0, .55); background: #14231c; }
+.dia.thema-pub {
+  --pub-goud: #f2b84b; --pub-crème: #f6efe0; --pub-paneel: #1d3328; --pub-lijn: #2f5a42;
+  background: radial-gradient(ellipse at 15% -10%, #2c4d39 0%, #162a1f 48%, #0d1712 100%);
+  color: var(--pub-crème); padding: 62px 92px;
+}
+.dia.thema-pub::before {
+  content: ""; position: absolute; inset: 16px; border: 2px solid rgba(242, 184, 75, .5); border-radius: 22px; pointer-events: none;
+}
+.dia.thema-pub::after {
+  content: "PUBQUIZ"; position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%);
+  font-size: 15px; letter-spacing: .6em; color: rgba(242, 184, 75, .7); background: #14231c; padding: 0 16px; line-height: 1;
+}
+.thema-pub .b-kop, .thema-pub .b-subkop { font-family: "Fraunces", "Georgia", "Times New Roman", serif; }
+.thema-pub .b-kop { color: var(--pub-crème); }
+.thema-pub .b-subkop { color: var(--pub-goud); }
+.thema-pub .b-klein { color: #b6c9bb; }
+.thema-pub .b-groot { color: var(--pub-goud); font-family: "Fraunces", "Georgia", serif; }
+.thema-pub .b-vraag { background: rgba(242, 184, 75, .12); border-left-color: var(--pub-goud); color: var(--pub-crème); }
+.thema-pub .b-fase-tag { background: var(--pub-goud); color: #1c2a22; }
+.thema-pub .b-lijst li::marker { color: var(--pub-goud); }
+.thema-pub .b-stappen li { background: var(--pub-paneel); border-color: var(--pub-lijn); }
+.thema-pub .b-stappen li::before { background: var(--pub-goud); color: #1c2a22; }
+.thema-pub .b-tabel td, .thema-pub .b-tabel th { border-color: var(--pub-lijn); }
+.thema-pub .b-tabel th { background: var(--pub-paneel); color: var(--pub-goud); }
+.thema-pub .b-schrijfvak { border-color: var(--pub-lijn); }
+.dia.thema-pub .onthul:not(.zichtbaar) {
+  background: repeating-linear-gradient(-45deg, #17291f 0 14px, #1d3328 14px 28px); border-color: #3d6b52;
+}
+.dia.thema-pub .onthul:not(.zichtbaar)::after { color: #7fae92; }
+.thema-pub .stelling { background: var(--pub-paneel); border-color: var(--pub-lijn); }
+.thema-pub .stelling-letter { background: var(--pub-goud); color: #1c2a22; font-family: "Fraunces", "Georgia", serif; }
+.thema-pub .stempel { background: #14231c; }
+.thema-pub .stempel.onzin { color: #ff7a6e; border-color: #ff7a6e; }
+.thema-pub .stempel.feit { color: #6fe0a0; border-color: #6fe0a0; }
+.thema-pub .b-stellingen:has(.antwoord-trigger.zichtbaar) .stelling.onzin,
+.alles-zichtbaar .thema-pub .b-stellingen .stelling.onzin { background: #3a1f1d; border-color: #ff7a6e; }
+.thema-pub .b-stellingen:has(.antwoord-trigger.zichtbaar) .stelling.feit,
+.alles-zichtbaar .thema-pub .b-stellingen .stelling.feit { border-color: #3f8f66; }
+.thema-pub .b-antwoord { color: var(--pub-goud); }
+.thema-pub .b-smaken span { background: rgba(242, 184, 75, .15); border-color: var(--pub-goud); color: var(--pub-crème); }
+.thema-pub .eind-rij { background: var(--pub-paneel); border-color: var(--pub-lijn); color: var(--pub-crème); }
+.thema-pub .eind-plaats { background: #456b55; }
+.thema-pub .eind-punten { color: var(--pub-goud); }
+.thema-pub .eind-rij.plaats-1 { background: #3a3216; border-color: var(--pub-goud); }
+.thema-pub .eind-rij.plaats-1 .eind-plaats { background: var(--pub-goud); color: #1c2a22; }
+.thema-pub .b-eindstand:empty::before { color: #b6c9bb; }
+/* Scorebalk in het thema */
+body.thema-pub .scorebalk { background: #0d1712; border-top: 1px solid #2f5a42; }
+body.thema-pub .score-team { background: #1d3328; border-color: #2f5a42; color: #f6efe0; }
+body.thema-pub .score-team.kop { border-color: #f2b84b; background: #2d3d2c; }
+body.thema-pub .score-punten { color: #f2b84b; }

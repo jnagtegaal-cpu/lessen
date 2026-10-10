@@ -96,7 +96,7 @@
   function toonScherm() {
     const schermen = st.les.schermen || [];
     const s = st.klad ? { blokken: [], achtergrond: "leeg" } : schermen[st.index];
-    dia.className = Lesbord.diaKlassen(s);
+    dia.className = Lesbord.diaKlassen(s, st.les.thema);
     let html = Lesbord.diaHtml(s, st.lesmap);
     if (!st.klad && st.les.lesdoel && st.les.lesdoelInHoek && !s.lesdoelVerbergen) {
       html += `<div class="lesdoel-hoek"><b>Lesdoel</b>${Lesbord.opmaak(st.les.lesdoel)}</div>`;
@@ -187,6 +187,7 @@
   const id = Lesbord.param("id");
   Lesbord.laadLes(id).then((les) => {
     st.les = les; st.lesmap = `lessen/${id}`;
+    if (/^[a-z-]+$/.test(les.thema || "")) document.body.classList.add(`thema-${les.thema}`);
     document.title = `${les.titel} · Lesbord`;
     $("titel").textContent = les.titel;
     $("knop-lesdoel").hidden = !(les.lesdoel && les.lesdoelInHoek);
