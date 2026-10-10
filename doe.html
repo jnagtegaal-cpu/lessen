@@ -6,59 +6,75 @@
   <title>Meedoen · Lesbord</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Rye&family=Caveat+Brush&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Rye&display=swap" rel="stylesheet">
   <style>
-    :root { --hout: #2b1a0e; --hout2: #4a2e17; --krijt: #f4efe2; --koper: #e0a84a; --bord: #27312b; --papier: #efe0bf; --ink: #3a2412; --groen: #8fe3a8; --rood: #ff8a7a; }
+    /* Standaard: de groene Lesbord-stijl. Met het thema "pub" (doorgegeven door het bord): hout en krijtbord. */
+    :root {
+      --achter: #f6faf7; --vlak: #ffffff; --rand: #dfe9e2; --tekst: #1d2b24; --zacht: #52635a;
+      --accent: #2f9e63; --accent-tekst: #ffffff; --accent-schaduw: #1f7a4a; --kop: #1f7a4a;
+      --veld: #ffffff; --veld-rand: #cfe0d5; --veld-tekst: #1d2b24; --goed: #1f7a4a; --fout: #c0392b;
+      --label: #e3f4ea; --label-tekst: #1f7a4a; --kopletter: "Atkinson Hyperlegible", system-ui, sans-serif;
+    }
+    body.thema-pub {
+      --achter: #33200f; --vlak: #27312b; --rand: rgba(244,239,226,.35); --tekst: #f4efe2; --zacht: #d8c9a8;
+      --accent: #e0a84a; --accent-tekst: #2a170a; --accent-schaduw: #8a5a1c; --kop: #e0a84a;
+      --veld: #fff9e8; --veld-rand: #cbb98f; --veld-tekst: #3a2412; --goed: #8fe3a8; --fout: #ff8a7a;
+      --label: #efe0bf; --label-tekst: #3a2412; --kopletter: "Rye", Georgia, serif;
+      background: repeating-linear-gradient(90deg, #3a2412 0 120px, #33200f 120px 240px) fixed;
+    }
     * { box-sizing: border-box; }
     html, body { margin: 0; min-height: 100%; }
-    body {
-      font: 20px/1.4 "Atkinson Hyperlegible", system-ui, sans-serif; color: var(--krijt);
-      background: repeating-linear-gradient(90deg, #3a2412 0 120px, #33200f 120px 240px); background-attachment: fixed;
-    }
-    main { max-width: 560px; margin: 0 auto; padding: 18px 16px 120px; }
-    h1 { font: 400 30px/1.15 "Rye", Georgia, serif; color: var(--koper); margin: 6px 0 4px; text-shadow: 0 2px 0 rgba(0,0,0,.5); }
-    .sub { color: #d8c9a8; margin: 0 0 16px; }
-    .bord { background: var(--bord); border: 10px solid #a8733a; border-radius: 12px; box-shadow: 0 0 0 3px #3b2312, 0 10px 24px rgba(0,0,0,.5), inset 0 0 50px rgba(0,0,0,.55); padding: 20px 18px; }
+    body { font: 20px/1.4 "Atkinson Hyperlegible", system-ui, sans-serif; color: var(--tekst); background: var(--achter); }
+    main { max-width: 560px; margin: 0 auto; padding: 18px 16px 130px; }
+    h1 { font: 700 28px/1.15 var(--kopletter); color: var(--kop); margin: 6px 0 4px; }
+    body.thema-pub h1 { font-weight: 400; text-shadow: 0 2px 0 rgba(0,0,0,.5); }
+    .sub { color: var(--zacht); margin: 0 0 14px; min-height: 1.4em; }
+    .vlak { background: var(--vlak); border: 1px solid var(--rand); border-radius: 16px; padding: 20px 18px; box-shadow: 0 6px 20px rgba(20,50,35,.08); }
+    body.thema-pub .vlak { border: 10px solid #a8733a; border-radius: 12px; box-shadow: 0 0 0 3px #3b2312, 0 10px 24px rgba(0,0,0,.5), inset 0 0 50px rgba(0,0,0,.55); }
     label.veld { display: block; font-weight: 700; margin-bottom: 6px; }
     input[type=text], textarea {
-      width: 100%; font: inherit; font-size: 22px; padding: 14px; border-radius: 12px; border: 3px solid #cbb98f;
-      background: #fff9e8; color: var(--ink);
+      width: 100%; font: inherit; font-size: 22px; padding: 14px; border-radius: 12px; border: 3px solid var(--veld-rand);
+      background: var(--veld); color: var(--veld-tekst);
     }
     textarea { min-height: 150px; resize: vertical; }
-    input:focus, textarea:focus { outline: 0; border-color: var(--koper); }
+    input:focus, textarea:focus { outline: 0; border-color: var(--accent); }
     button.knop {
       width: 100%; font: inherit; font-size: 22px; font-weight: 700; padding: 16px; margin-top: 14px; border: 0; border-radius: 14px;
-      background: var(--koper); color: #2a170a; cursor: pointer; box-shadow: 0 4px 0 #8a5a1c;
+      background: var(--accent); color: var(--accent-tekst); cursor: pointer; box-shadow: 0 4px 0 var(--accent-schaduw);
     }
-    button.knop:active { transform: translateY(2px); box-shadow: 0 2px 0 #8a5a1c; }
+    button.knop:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--accent-schaduw); }
     button.knop:disabled { opacity: .5; }
-    .melding { margin: 14px 0 0; padding: 12px 14px; border-radius: 12px; background: rgba(255,255,255,.07); }
-    .melding.fout { color: var(--rood); }
-    .ok { color: var(--groen); font-weight: 700; }
-    .team { display: inline-block; padding: 4px 16px; border-radius: 999px; background: var(--papier); color: var(--ink); font-weight: 700; margin-bottom: 14px; }
+    .melding { margin: 14px 0 0; padding: 12px 14px; border-radius: 12px; background: rgba(127,127,127,.1); }
+    .melding.fout { color: var(--fout); }
+    .ok { color: var(--goed); font-weight: 700; }
+    .team { display: inline-block; padding: 4px 16px; border-radius: 999px; background: var(--label); color: var(--label-tekst); font-weight: 700; margin-bottom: 14px; }
     .vraag { font-size: 24px; font-weight: 700; margin: 0 0 14px; }
     .keuzes { display: grid; gap: 12px; }
     .keuze {
       display: flex; gap: 14px; align-items: flex-start; text-align: left; font: inherit; font-size: 20px; padding: 14px; border-radius: 14px;
-      border: 3px solid rgba(244,239,226,.5); background: rgba(255,255,255,.05); color: var(--krijt); width: 100%; cursor: pointer;
+      border: 3px solid var(--rand); background: transparent; color: var(--tekst); width: 100%; cursor: pointer;
     }
-    .keuze b { flex: none; width: 46px; height: 46px; border-radius: 50%; background: var(--papier); color: var(--ink); display: grid; place-items: center; font: 400 24px "Rye", Georgia, serif; }
-    .keuze[aria-pressed=true] { border-color: var(--groen); background: rgba(60,120,80,.35); }
+    .keuze b { flex: none; width: 46px; height: 46px; border-radius: 50%; background: var(--label); color: var(--label-tekst); display: grid; place-items: center; font: 700 24px var(--kopletter); }
+    body.thema-pub .keuze b { font-weight: 400; }
+    .keuze[aria-pressed=true] { border-color: var(--goed); background: rgba(80,160,110,.18); }
     .keuze:disabled { opacity: .35; }
-    details { margin: 10px 0; border: 2px solid rgba(244,239,226,.35); border-radius: 12px; padding: 4px 12px; }
-    summary { font-weight: 700; padding: 10px 0; cursor: pointer; color: var(--koper); }
-    .vink { display: flex; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid rgba(244,239,226,.12); }
-    .vink input { width: 28px; height: 28px; accent-color: #8fe3a8; flex: none; }
-    .vast { position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 16px 16px; background: linear-gradient(transparent, rgba(30,18,8,.95) 30%); }
+    details { margin: 10px 0; border: 2px solid var(--rand); border-radius: 12px; padding: 4px 12px; }
+    summary { font-weight: 700; padding: 10px 0; cursor: pointer; color: var(--kop); display: flex; justify-content: space-between; }
+    summary .aantal { color: var(--zacht); font-weight: 400; }
+    .vink { display: flex; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid var(--rand); }
+    .vink input { width: 28px; height: 28px; accent-color: var(--accent); flex: none; }
+    .vast { position: fixed; left: 0; right: 0; bottom: 0; padding: 12px 16px 16px; background: linear-gradient(transparent, var(--achter) 35%); }
     .vast .knop { max-width: 528px; margin: 0 auto; display: block; }
-    .klein { font-size: 15px; color: #c9bb98; }
+    .klein { font-size: 15px; color: var(--zacht); }
+    .teller { text-align: right; }
+    .afmelden { display: block; margin: 26px auto 0; background: none; border: 0; color: var(--zacht); font: inherit; font-size: 15px; text-decoration: underline; cursor: pointer; }
   </style>
 </head>
 <body>
   <main>
-    <h1>De grote kroegquiz</h1>
+    <h1 id="titel">Meedoen</h1>
     <p class="sub" id="sub">Even laden…</p>
-    <div class="bord" id="inhoud"></div>
+    <div class="vlak" id="inhoud"></div>
   </main>
   <script src="assets/live-config.js"></script>
   <script src="assets/live.js"></script>
@@ -67,19 +83,29 @@
     const code = (new URLSearchParams(location.search).get("k") || "").toUpperCase();
     const inhoud = $("inhoud"), sub = $("sub");
     const maak = (tag, tekst, klasse) => { const e = document.createElement(tag); if (tekst) e.textContent = tekst; if (klasse) e.className = klasse; return e; };
-    const leeg = () => { inhoud.replaceChildren(); };
     const toon = (...kinderen) => { inhoud.replaceChildren(...kinderen); };
 
     // Wie ben ik? (bewaard op deze telefoon, zodat herladen geen nieuw team maakt)
     const sleutel = `lesbord-live-team-${code}`;
     let ik = null;
     try { ik = JSON.parse(localStorage.getItem(sleutel) || "null"); } catch (e) { /* geen opslag */ }
-    const bewaarIk = () => { try { localStorage.setItem(sleutel, JSON.stringify(ik)); } catch (e) { /* geen opslag */ } };
+    const bewaarIk = () => { try { ik ? localStorage.setItem(sleutel, JSON.stringify(ik)) : localStorage.removeItem(sleutel); } catch (e) { /* geen opslag */ } };
     const nieuwId = () => { const b = new Uint8Array(6); crypto.getRandomValues(b); return "t" + [...b].map((x) => (x % 36).toString(36)).join(""); };
 
-    let kamer = null, getoondId = null, getoondOpen = null, verstuurd = {}, meta = null;
+    let kamer = null, getoondId = null, getoondOpen = null, meta = null, stopLuisteren = null;
 
     function fout(tekst) { sub.textContent = ""; toon(maak("p", tekst, "melding fout")); }
+
+    // Afmelden: dit team verdwijnt uit de kamer; daarna kan er een nieuwe naam gekozen worden.
+    function afmeldKnop() {
+      const k = maak("button", "Afmelden of een andere teamnaam kiezen", "afmelden");
+      k.onclick = async () => {
+        if (!k.dataset.zeker) { k.dataset.zeker = "1"; k.textContent = "Zeker weten? Tik nog een keer."; return; }
+        try { await Live.schrijf(code, `teams/${ik.tid}`, null, "DELETE"); } catch (e) { /* toch lokaal afmelden */ }
+        ik = null; bewaarIk(); getoondId = null; meedoenScherm();
+      };
+      return k;
+    }
 
     // ---------- Meedoen ----------
     function meedoenScherm(melding) {
@@ -111,11 +137,15 @@
 
     // ---------- Wachten en vragen ----------
     function teken() {
-      if (!kamer || !kamer.teams || !kamer.teams[ik.tid]) { ik = null; try { localStorage.removeItem(sleutel); } catch (e) {} return meedoenScherm(); }
+      if (!ik) return;
+      if (!kamer || !kamer.teams || !kamer.teams[ik.tid]) { // verwijderd door de quizmaster, of de kamer is weg
+        ik = null; bewaarIk(); getoondId = null;
+        return kamer ? meedoenScherm("Jullie team is afgemeld. Kies opnieuw een naam om mee te doen.") : fout("Deze kamer bestaat niet meer.");
+      }
       const v = kamer.vraag;
       const naam = kamer.teams[ik.tid].naam;
       sub.textContent = "";
-      if (!v) { getoondId = null; return toon(maak("div", naam, "team"), maak("p", "Je doet mee! Wacht op de volgende vraag.")); }
+      if (!v) { getoondId = null; return toon(maak("div", naam, "team"), maak("p", "Jullie doen mee! Wacht op de volgende vraag."), afmeldKnop()); }
       const open = v.open !== false;
       if (getoondId === v.id && getoondOpen === open) return; // niets veranderd: laat getypte tekst met rust
       getoondId = v.id; getoondOpen = open;
@@ -129,14 +159,15 @@
         try {
           await Live.schrijf(code, `antw/${v.id}/${ik.tid}`, { w, t: Date.now() });
           status.textContent = "Verstuurd ✓ Je mag het nog aanpassen."; status.style.display = ""; status.className = "melding ok";
+          if (knopEl) { const oud = knopEl.textContent; knopEl.textContent = "Verstuurd ✓"; setTimeout(() => { if (knopEl.isConnected) knopEl.textContent = oud; }, 2500); }
         } catch (e) { status.textContent = "Versturen lukte niet. Probeer het nog een keer."; status.style.display = ""; status.className = "melding fout"; }
-        if (knopEl) knopEl.disabled = false;
+        if (knopEl) knopEl.disabled = !open;
       };
 
       if (v.soort === "keuze") {
         const lijst = (v.opties && v.opties.length ? v.opties : ["", "", "", ""]);
         const uit = v.uitsluit && v.uitsluit[ik.tid];
-        let gekozen = eerder ? eerder.w : null;
+        const gekozen = eerder ? eerder.w : null;
         const wrap = maak("div", null, "keuzes");
         lijst.forEach((tekst, i) => {
           const letter = String.fromCharCode(65 + i);
@@ -144,44 +175,59 @@
           b.append(maak("b", letter), maak("span", tekst || `Optie ${letter}`));
           b.setAttribute("aria-pressed", String(gekozen === letter));
           b.disabled = !open || uit === letter;
-          b.onclick = () => { gekozen = letter; wrap.querySelectorAll(".keuze").forEach((x, j) => x.setAttribute("aria-pressed", String(j === i))); stuur(letter); };
+          b.onclick = () => { wrap.querySelectorAll(".keuze").forEach((x, j) => x.setAttribute("aria-pressed", String(j === i))); stuur(letter); };
           wrap.append(b);
         });
-        if (uit) kop.push(maak("p", `Optie ${uit} is van jullie zelf, die kun je niet kiezen.`, "klein"));
-        return toon(...kop, wrap, status);
+        if (uit) kop.push(maak("p", `${uit} is jullie eigen verzinsel, die kun je niet kiezen.`, "klein"));
+        return toon(...kop, wrap, status, afmeldKnop());
       }
       if (v.soort === "vinkjes") {
         const groepen = v.groepen || [{ naam: "", items: v.opties || [] }];
         const gekozen = new Set(eerder && eerder.w ? String(eerder.w).split(",").filter(Boolean).map(Number) : []);
+        const teller = maak("p", "", "klein teller");
+        const tellers = [];
+        const bijwerken = () => {
+          teller.textContent = `${gekozen.size} smaken aangevinkt`;
+          tellers.forEach(([el, van, tot]) => { let n = 0; for (let i = van; i < tot; i++) if (gekozen.has(i)) n++; el.textContent = n ? `${n} gekozen` : ""; });
+        };
         let start = 0;
         const delen = groepen.map((g) => {
           const d = maak("details"); d.open = groepen.length <= 1;
-          d.append(maak("summary", g.naam || "Smaken"));
+          const s = maak("summary"); const aantal = maak("span", "", "aantal");
+          s.append(maak("span", g.naam || "Kies"), aantal); d.append(s);
+          const van = start;
           (g.items || []).forEach((tekst) => {
             const i = start++;
             const l = maak("label", null, "vink"); const c = maak("input"); c.type = "checkbox"; c.checked = gekozen.has(i); c.disabled = !open;
-            c.onchange = () => { c.checked ? gekozen.add(i) : gekozen.delete(i); teller.textContent = `${gekozen.size} gekozen`; };
+            c.onchange = () => { c.checked ? gekozen.add(i) : gekozen.delete(i); bijwerken(); };
             l.append(c, maak("span", tekst)); d.append(l);
           });
+          tellers.push([aantal, van, start]);
           return d;
         });
-        const teller = maak("p", `${gekozen.size} gekozen`, "klein");
+        bijwerken();
         const knop = maak("button", "Versturen", "knop"); knop.disabled = !open;
         knop.onclick = () => stuur([...gekozen].sort((a, b) => a - b).join(","), knop);
         const vast = maak("div", null, "vast"); vast.append(knop);
-        return toon(...kop, teller, ...delen, status, vast);
+        return toon(...kop, teller, ...delen, status, afmeldKnop(), vast);
       }
       // tekst
-      const veld = maak("textarea"); veld.maxLength = 400; veld.disabled = !open; veld.value = eerder ? String(eerder.w) : "";
+      const max = v.max || 400;
+      const veld = maak("textarea"); veld.maxLength = max; veld.disabled = !open; veld.value = eerder ? String(eerder.w) : "";
       veld.setAttribute("aria-label", "Jullie antwoord");
+      const rest = maak("p", "", "klein teller");
+      const telRest = () => { rest.textContent = `Nog ${max - veld.value.length} tekens`; };
+      veld.addEventListener("input", telRest); telRest();
       const knop = maak("button", "Versturen", "knop"); knop.disabled = !open;
       knop.onclick = () => { const w = veld.value.trim(); if (w) stuur(w, knop); };
-      return toon(...kop, veld, knop, status);
+      return toon(...kop, veld, rest, knop, status, afmeldKnop());
     }
 
     function luisterNaarKamer() {
       sub.textContent = "Verbinden…";
-      Live.luister(code, "", (w) => { kamer = w; if (ik) teken(); }, (s) => { if (s === "fout") $("sub").textContent = "Geen verbinding. We proberen het opnieuw…"; });
+      if (stopLuisteren) stopLuisteren();
+      stopLuisteren = Live.luister(code, "", (w) => { kamer = w; teken(); },
+        (s) => { if (s === "fout") sub.textContent = "Geen verbinding. We proberen het opnieuw…"; });
     }
 
     // ---------- Start ----------
@@ -189,10 +235,12 @@
       if (!Live.geldigeCode(code)) return fout("Deze link klopt niet. Scan de QR-code op het scherm opnieuw.");
       if (!Live.beschikbaar()) return fout("Meedoen is nog niet ingesteld.");
       try { meta = await Live.lees(code, "meta"); } catch (e) { return fout("Geen verbinding. Probeer het nog een keer."); }
-      if (!meta) return fout("Deze kamer bestaat niet (meer). Vraag de quizmaster om een nieuwe code.");
+      if (!meta) return fout("Deze kamer bestaat niet (meer). Vraag om een nieuwe QR-code.");
+      if (meta.titel) { $("titel").textContent = meta.titel; document.title = `${meta.titel} · Meedoen`; }
+      if (/^[a-z-]+$/.test(meta.thema || "")) document.body.classList.add(`thema-${meta.thema}`);
       if (ik && ik.tid) { // al eerder meegedaan: meteen verder
         try { const t = await Live.lees(code, `teams/${ik.tid}`); if (t) return luisterNaarKamer(); } catch (e) { return luisterNaarKamer(); }
-        ik = null;
+        ik = null; bewaarIk();
       }
       meedoenScherm();
     })();

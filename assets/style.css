@@ -372,7 +372,7 @@ body.bord { background: #e9f1ec; overflow: hidden; height: 100vh; }
   color: var(--groen-donker); font-size: 34px; font-weight: 700;
 }
 
-/* ---------- Thema "pub": houten kroeg met een krijtbord ---------- */
+/* ---------- Thema "pub": hout met een krijtbord ---------- */
 .grap {
   position: absolute; right: 96px; bottom: 76px; max-width: 560px; transform: rotate(-3deg); z-index: 3;
   background: #fff6a8; color: #4a3a00; padding: 8px 22px; font-size: 30px; line-height: 1.2;
@@ -398,12 +398,6 @@ body.bord.thema-pub { background: #1b0f07; }
   border: 14px solid var(--hout-licht);
   box-shadow: 0 0 0 3px var(--hout-donker), inset 0 0 0 3px var(--hout-donker), inset 0 0 80px rgba(0,0,0,.7), 0 14px 30px rgba(0,0,0,.55);
 }
-.dia.thema-pub::after {
-  content: "🍺  DE GROTE KROEGQUIZ  🍺"; position: absolute; left: 50%; bottom: 8px; transform: translateX(-50%);
-  font-family: "Rye", Georgia, serif; font-size: 20px; letter-spacing: .22em; white-space: nowrap;
-  color: var(--koper); text-shadow: 0 2px 0 #2a170a;
-  background: #4d3017; padding: 2px 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,.5);
-}
 .thema-pub .b-kop { font-family: "Rye", Georgia, serif; font-weight: 400; color: var(--koper); text-shadow: 0 3px 0 rgba(0,0,0,.5); letter-spacing: .01em; }
 .thema-pub .b-subkop { font-family: "Caveat Brush", "Segoe Print", cursive; font-weight: 400; color: #f1c45f; font-size: 58px; }
 .thema-pub .b-tekst { color: var(--krijt); }
@@ -413,8 +407,10 @@ body.bord.thema-pub { background: #1b0f07; }
   background: rgba(255,255,255,.04); color: var(--krijt); border: 3px solid rgba(244,239,226,.6);
   border-radius: 16px 22px 14px 24px / 24px 14px 22px 16px;
 }
-.thema-pub .b-fase-tag { background: var(--koper); color: #2a170a; font-family: "Rye", Georgia, serif; font-weight: 400; letter-spacing: .1em; font-size: 22px; }
-.thema-pub .b-fase-tag::before { content: "🍺 "; }
+.thema-pub .b-fase-tag {
+  background: none; padding: 0 0 2px; border-radius: 0; border-bottom: 3px solid rgba(224,168,74,.45);
+  color: #e8c98a; font-family: "Caveat Brush", cursive; font-weight: 400; font-size: 36px; letter-spacing: 0; text-transform: none;
+}
 .thema-pub .b-lijst li::marker { color: var(--koper); }
 .thema-pub .b-stappen li { background: rgba(255,255,255,.05); border-color: rgba(244,239,226,.4); }
 .thema-pub .b-stappen li::before { background: #efe0bf; color: #4a2a12; font-family: "Rye", Georgia, serif; box-shadow: inset 0 0 0 4px #c89b55; }
@@ -500,13 +496,17 @@ body.thema-pub .score-punten { color: #e0a84a; }
 .live-uitleg { color: var(--ink-soft); margin: 8px 0 12px; }
 .live-qr { width: 230px; margin: 8px auto 0; }
 .live-qr svg { width: 100%; height: auto; display: block; border-radius: 8px; }
-.live-code { text-align: center; font-size: 40px; font-weight: 700; letter-spacing: .2em; margin: 6px 0 0; }
-.live-link { text-align: center; font-size: 12px; color: var(--ink-soft); word-break: break-all; margin: 4px 0; }
+.live-link { text-align: center; font-size: 13px; color: var(--ink-soft); word-break: break-all; margin: 8px 0 4px; }
 .live-status { text-align: center; font-size: 14px; margin: 4px 0; color: var(--groen-donker); font-weight: 700; }
 .live-status.fout, .live-status.opnieuw { color: var(--rood); }
-.live-teams { margin: 0 0 12px; padding-left: 1.2em; font-size: 18px; }
+.live-teams { margin: 0 0 12px; padding: 0; list-style: none; font-size: 18px; }
+.live-teams li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 0; border-bottom: 1px solid var(--line); }
+.live-weg { flex: none; width: 34px; height: 34px; border-radius: 8px; border: 1.5px solid var(--line); background: none; cursor: pointer; display: grid; place-items: center; color: var(--ink-soft); }
+.live-weg:hover { border-color: var(--rood); color: var(--rood); }
+.live-weg[data-zeker] { width: auto; padding: 0 10px; color: var(--rood); border-color: var(--rood); font-weight: 700; }
+.live-weg svg { width: 18px; height: 18px; }
 .live-teams .extra { color: var(--ink-soft); text-decoration: line-through; }
-.live-teams .leeg { list-style: none; margin-left: -1.2em; color: var(--ink-soft); }
+.live-teams .leeg { color: var(--ink-soft); border: 0; }
 .live-fout { color: var(--rood); font-weight: 700; }
 code { background: #eef2ef; padding: 1px 6px; border-radius: 5px; font-size: .92em; }
 
@@ -514,8 +514,7 @@ code { background: #eef2ef; padding: 1px 6px; border-radius: 5px; font-size: .92
 .aansluit-qr { width: 420px; flex: none; }
 .aansluit-qr svg { width: 100%; height: auto; display: block; border-radius: 14px; }
 .aansluit-tekst { flex: 1; min-width: 0; }
-.aansluit-stap { font-size: 36px; color: var(--ink-soft); }
-.aansluit-code { font-size: 96px; font-weight: 700; letter-spacing: .18em; line-height: 1.1; margin: 4px 0 14px; }
+.aansluit-stap { font-size: 36px; color: var(--ink-soft); margin: 0 0 22px; }
 .aansluit-teams { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 12px; }
 .aansluit-teams li { font-size: 40px; font-weight: 700; padding: 6px 22px; border-radius: 14px; border: 3px solid var(--groen); background: var(--groen-licht); }
 .aansluit-teams li.leeg { border-style: dashed; background: none; color: var(--ink-soft); font-weight: 400; }
@@ -538,11 +537,103 @@ code { background: #eef2ef; padding: 1px 6px; border-radius: 5px; font-size: .92
 /* Live in het pubthema */
 .thema-pub .aansluit-qr svg { border: 8px solid #efe0bf; }
 .thema-pub .aansluit-stap { color: #d8c9a8; }
-.thema-pub .aansluit-code { font-family: "Rye", Georgia, serif; font-weight: 400; color: var(--koper); }
-.thema-pub .aansluit-teams li { background: rgba(255,255,255,.05); border-color: rgba(244,239,226,.6); color: var(--krijt); }
+.thema-pub .thema-pub .aansluit-teams li { background: rgba(255,255,255,.05); border-color: rgba(244,239,226,.6); color: var(--krijt); }
 .thema-pub .aansluit-teams li.leeg { color: #b6c9bb; }
 .thema-pub .live-blok-kop { color: var(--krijt); }
 .thema-pub .live-antw li { background: rgba(255,255,255,.04); border-color: rgba(244,239,226,.5); color: var(--krijt); }
 .thema-pub .live-antw li.klaar { border-color: #8fe3a8; background: rgba(60,120,80,.28); }
 .thema-pub .live-antw .vink { color: #8fe3a8; }
 .thema-pub .live-blok-uit, .thema-pub .b-live:empty::before, .thema-pub .b-aansluiten:empty::before { color: #cdbb90; border-color: rgba(244,239,226,.4); }
+
+/* Antwoord onder een quizkaart: de letter in een cirkel */
+.b-antwoord strong { display: inline-grid; place-items: center; width: 1.3em; height: 1.3em; border: 3px solid currentColor; border-radius: 50%; margin-right: .25em; line-height: 1; }
+
+/* ---------- Spellen: bluf en proeven ---------- */
+.b-spel { display: flex; flex-direction: column; gap: 18px; }
+.bluf-woord { font-size: 100px; font-weight: 700; line-height: 1.05; margin: 0; text-align: center; }
+.b-spel.live .bluf-woord { font-size: 72px; text-align: left; }
+.bluf-echt { font-size: 40px; margin: 0; padding: 16px 24px; }
+.spel-opdracht { font-size: 34px; margin: 0; color: var(--ink-soft); }
+.spel-status { list-style: none; margin: 0; padding: 0; display: flex; gap: 12px; flex-wrap: wrap; }
+.spel-status li { font-size: 28px; font-weight: 700; padding: 6px 18px; border-radius: 12px; border: 3px solid var(--line); display: flex; gap: 12px; align-items: baseline; }
+.spel-status li span { font-weight: 400; font-size: 22px; color: var(--ink-soft); }
+.spel-status li.klaar { border-color: var(--groen); background: var(--groen-licht); }
+.spel-knoppen { display: flex; gap: 12px; margin-top: 4px; }
+.spel-knoppen .knop { font-size: 26px; padding: 12px 26px; }
+.spel-knoppen .knop:disabled { opacity: .45; cursor: default; }
+.bluf-opties { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.bluf-opties li { display: flex; gap: 20px; align-items: flex-start; padding: 12px 20px; border: 3px solid var(--line); border-radius: 14px; font-size: 30px; line-height: 1.25; }
+.bluf-letter { flex: none; width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: var(--groen); color: #fff; font-weight: 700; }
+.bluf-tekst { flex: 1; min-width: 0; padding-top: 8px; }
+.bluf-meta { display: block; font-size: 22px; color: var(--ink-soft); margin-top: 4px; }
+.bluf-opties li.echt { border-color: var(--groen); background: var(--groen-licht); }
+.bluf-opties li.verzonnen { opacity: .8; }
+.spel-punten { list-style: none; margin: 0; padding: 0; display: flex; gap: 12px; flex-wrap: wrap; }
+.spel-punten li { font-size: 28px; padding: 6px 18px; border-radius: 12px; background: var(--groen-licht); display: flex; gap: 12px; }
+.spel-punten b { color: var(--groen-donker); }
+.proef-naam { font-size: 72px; font-weight: 700; margin: 0; line-height: 1.1; }
+.proef-echt { font-size: 40px; font-weight: 400; color: var(--ink-soft); margin-left: 12px; }
+.proef-onthul { font-size: 36px; font-weight: 700; margin: 12px 0 0; }
+.proef-teams { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.proef-teams li { display: flex; align-items: baseline; gap: 18px; font-size: 28px; padding: 10px 20px; border: 3px solid var(--line); border-radius: 14px; }
+.proef-teams b { min-width: 7em; }
+.proef-uitleg { flex: 1; color: var(--ink-soft); font-size: 24px; }
+.proef-p { font-weight: 700; font-size: 34px; color: var(--groen-donker); }
+.b-spel .b-smaken span { font-size: 28px; }
+
+/* Spellen in het pubthema */
+.thema-pub .bluf-woord, .thema-pub .proef-naam { font-family: "Rye", Georgia, serif; font-weight: 400; color: var(--koper); text-shadow: 0 3px 0 rgba(0,0,0,.5); }
+.thema-pub .spel-opdracht, .thema-pub .proef-echt { color: #d8c9a8; }
+.thema-pub .bluf-echt { color: var(--krijt); }
+.thema-pub .proef-onthul { color: var(--koper); font-family: "Caveat Brush", cursive; font-weight: 400; font-size: 44px; }
+.thema-pub .spel-status li, .thema-pub .bluf-opties li, .thema-pub .proef-teams li { border-color: rgba(244,239,226,.45); color: var(--krijt); }
+.thema-pub .spel-status li span, .thema-pub .bluf-meta, .thema-pub .proef-uitleg { color: #cdbb90; }
+.thema-pub .spel-status li.klaar { border-color: #8fe3a8; background: rgba(60,120,80,.28); }
+.thema-pub .bluf-letter { background: radial-gradient(circle, #f3e3bd 0 54%, #e4cb94 55% 60%, #f3e3bd 61% 100%); color: #4a2a12; font-family: "Rye", Georgia, serif; font-weight: 400; box-shadow: inset 0 0 0 3px #c89b55; }
+.thema-pub .bluf-opties li.echt { border-color: #8fe3a8; background: rgba(60,120,80,.3); }
+.thema-pub .spel-punten li { background: rgba(224,168,74,.16); color: var(--krijt); }
+.thema-pub .spel-punten b, .thema-pub .proef-p { color: var(--koper); }
+.dia.thema-pub .knop { background: rgba(255,255,255,.06); border-color: rgba(244,239,226,.5); color: var(--krijt); }
+.dia.thema-pub .knop.hoofd { background: var(--koper); border-color: var(--koper); color: #2a170a; }
+
+/* Werkbalken en panelen in het pubthema: donker hout en papier in plaats van wit en groen */
+body.thema-pub .bord-top, body.thema-pub .gereedschap { background: #24150b; border-color: #3b2312; color: #efe0bf; }
+body.thema-pub .bord-top .titel, body.thema-pub .teller-dia { color: #efe0bf; }
+body.thema-pub .ikoon-knop, body.thema-pub .dikte { background: transparent; border-color: rgba(239,224,191,.25); color: #efe0bf; }
+body.thema-pub .ikoon-knop:hover, body.thema-pub .dikte:hover { border-color: #e0a84a; }
+body.thema-pub .ikoon-knop[aria-pressed="true"], body.thema-pub .dikte[aria-pressed="true"] { background: rgba(224,168,74,.18); border-color: #e0a84a; color: #f1c45f; }
+body.thema-pub .ikoon-knop:disabled { opacity: .35; }
+body.thema-pub .dikte span { background: #efe0bf; }
+body.thema-pub .groep-gereedschap { border-color: rgba(239,224,191,.15); }
+body.thema-pub .kleur { border-color: #24150b; box-shadow: 0 0 0 1.5px rgba(239,224,191,.3); }
+body.thema-pub .kleur[aria-pressed="true"] { box-shadow: 0 0 0 3px #e0a84a; }
+body.thema-pub .fase-label { background: rgba(224,168,74,.18); color: #f1c45f; }
+body.thema-pub .scorebalk .knop.hoofd { background: #e0a84a; border-color: #b9822e; color: #2a170a; }
+body.thema-pub .scorepaneel, body.thema-pub .livepaneel, body.thema-pub .notities {
+  background: #f3e6c8; border: 3px solid #8a5a2b; color: #3a2412; box-shadow: 0 16px 50px rgba(0,0,0,.6);
+}
+body.thema-pub .scorepaneel h3, body.thema-pub .livepaneel h3 { font-family: "Rye", Georgia, serif; font-weight: 400; color: #6b3f17; }
+body.thema-pub .scorepaneel h4, body.thema-pub .livepaneel h4, body.thema-pub .notities h3 { color: #7a5a35; text-transform: none; letter-spacing: 0; font-size: 17px; }
+body.thema-pub .scorepaneel .knop, body.thema-pub .livepaneel .knop { background: #fff8e6; border-color: #c9a46a; color: #3a2412; }
+body.thema-pub .scorepaneel .knop.hoofd, body.thema-pub .livepaneel .knop.hoofd { background: #e0a84a; border-color: #b9822e; color: #2a170a; }
+body.thema-pub .scorepaneel .ikoon-knop, body.thema-pub .livepaneel .ikoon-knop { color: #3a2412; border-color: #c9a46a; }
+body.thema-pub .score-namen input, body.thema-pub .score-actie select { background: #fffaf0; border-color: #d8c08f; }
+body.thema-pub .score-vink { border-color: #d8c08f; }
+body.thema-pub .score-vink:has(input:checked) { background: #f1d8a0; border-color: #b9822e; }
+body.thema-pub .score-vink input { accent-color: #8a5a2b; }
+body.thema-pub .score-melding, body.thema-pub .score-corr-rij b, body.thema-pub .live-status { color: #6b3f17; }
+body.thema-pub .live-teams li { border-color: #e0cfa6; }
+body.thema-pub .live-weg { border-color: #c9a46a; color: #7a5a35; }
+
+/* Spellen: compacte onderrand en uitslag die op het bord past */
+.spel-voet { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.spel-voet .spel-knoppen { margin: 0; }
+.b-bluf.uitslag .bluf-woord { font-size: 56px; }
+.b-bluf.uitslag .bluf-opties li { padding: 8px 18px; font-size: 27px; }
+.b-bluf.uitslag .bluf-letter { width: 48px; height: 48px; }
+.b-bluf.uitslag .bluf-tekst { padding-top: 4px; }
+.bluf-opties.lang li { font-size: 25px; }
+.b-spel.live.uitslag { gap: 14px; }
+
+/* Pdf van de presentatie: geen arcering achter wat al zichtbaar is */
+.alles-zichtbaar .dia.thema-pub .onthul { background: none; border: 0; }

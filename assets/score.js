@@ -20,7 +20,8 @@ const Score = (() => {
       const j = JSON.parse(localStorage.getItem(sleutel) || "null");
       if (j && Array.isArray(j.namen) && j.namen.length === n && Array.isArray(j.punten) && j.punten.length === n
           && j.punten.every(Number.isFinite)) {
-        return { namen: j.namen.map(String), punten: j.punten, log: Array.isArray(j.log) ? j.log : [], ingesteld: !!j.ingesteld };
+        const ids = Array.isArray(j.ids) && j.ids.length === n ? j.ids : j.namen.map(() => null);
+        return { namen: j.namen.map(String), punten: j.punten, ids, log: Array.isArray(j.log) ? j.log : [], ingesteld: !!j.ingesteld };
       }
     } catch (e) { /* kapotte opslag: begin opnieuw */ }
     return null;
@@ -70,8 +71,9 @@ const Score = (() => {
     const gekozen = [...document.querySelectorAll("[data-vink]")].filter((c) => c.checked).map((c) => Number(c.dataset.vink));
     if (!gekozen.length) { melding("Vink eerst minstens één team aan."); return; }
     const n = Number($("score-aantal").value) || 1;
-    gekozen.forEach((i) => { st.punten[i] += n; });
-    st.log.push({ teams: gekozen, n });
+    const d = {};
+    gekozen.forEach((i) => { st.punten[i] += n; d[i] = n; });
+    st.log.push({ d });
     if (st.log.length > 100) st.log.shift();
     document.querySelectorAll("[data-vink]").forEach((c) => { c.checked = false; });
     melding(`+${n} voor ${gekozen.map((i) => st.namen[i]).join(", ")}`);
@@ -80,8 +82,9 @@ const Score = (() => {
   function terug() {
     const laatste = st.log.pop();
     if (!laatste) { melding("Er is niets om ongedaan te maken."); return; }
-    laatste.teams.forEach((i) => { st.punten[i] -= laatste.n; });
-    melding(`Teruggedraaid: −${laatste.n} voor ${laatste.teams.map((i) => st.namen[i]).join(", ")}`);
+    const d = laatste.d || Object.fromEntries((laatste.teams || []).map((i) => [i, laatste.n])); // ook oude opslag
+    Object.entries(d).forEach(([i, n]) => { st.punten[i] -= n; });
+    melding(`Teruggedraaid: ${Object.entries(d).map(([i, n]) => `−${n} ${st.namen[i]}`).join(", ")}`);
     na();
   }
   function nul(knop) {
@@ -151,17 +154,38 @@ const Score = (() => {
     });
   }
 
-  // Teamnamen van buitenaf zetten (bijvoorbeeld de namen die teams op hun telefoon kiezen).
-  function zetNamen(namen) {
+  // Teams van de telefoons koppelen aan de plekken in het scorebord. Elk team houdt zijn plek
+  // (en zijn punten), ook als een ander team wordt verwijderd. Een vrijgekomen plek gaat naar het volgende nieuwe team.
+  function zetTeams(lijst) {
     if (!st) return;
+    const aanwezig = new Set(lijst.map((x) => x.tid));
     let veranderd = false;
-    namen.forEach((n, i) => {
-      if (i < st.namen.length && n && st.namen[i] !== n) { st.namen[i] = n; veranderd = true; }
+    st.ids = st.ids.map((id, i) => {
+      if (id && !aanwezig.has(id)) { veranderd = true; st.namen[i] = standaardNaam(i); return null; }
+      return id;
     });
+    for (const x of lijst) {
+      let i = st.ids.indexOf(x.tid);
+      if (i < 0) { i = st.ids.indexOf(null); if (i < 0) continue; st.ids[i] = x.tid; veranderd = true; }
+      if (x.naam && st.namen[i] !== x.naam) { st.namen[i] = x.naam; veranderd = true; }
+    }
     if (!veranderd) return;
     st.ingesteld = true;
     document.querySelectorAll("input[data-naam]").forEach((el) => { el.value = st.namen[el.dataset.naam]; });
     na();
+  }
+  // Punten optellen voor teams van de telefoons: { tid: punten }. Teams zonder plek tellen niet mee.
+  function geefPunten(perTeam) {
+    if (!st) return false;
+    const d = {};
+    for (const [tid, n] of Object.entries(perTeam)) {
+      const i = st.ids.indexOf(tid);
+      if (i >= 0 && n) { st.punten[i] += n; d[i] = n; }
+    }
+    if (!Object.keys(d).length) return false;
+    st.log.push({ d }); if (st.log.length > 100) st.log.shift();
+    na();
+    return true;
   }
 
   function init(les, id, wijzig, layout) {
@@ -170,7 +194,7 @@ const Score = (() => {
     naWijziging = wijzig || naWijziging; naLayout = layout || naLayout;
     sleutel = `lesbord-score-${id}`;
     const namen = standaardNamen(cfg);
-    st = inlezen(namen.length) || { namen, punten: namen.map(() => 0), log: [], ingesteld: false };
+    st = inlezen(namen.length) || { namen, punten: namen.map(() => 0), ids: namen.map(() => null), log: [], ingesteld: false };
     $("scorebalk").hidden = false;
     paneelBouwen(); koppel(); tekenBalk();
     $("score-open").onclick = () => ($("scorepaneel").hidden ? open() : sluit());
@@ -178,5 +202,6 @@ const Score = (() => {
     naLayout();
   }
 
-  return { init, vulEindstand, zetNamen };
+  const plekVan = (tid) => (st ? st.ids.indexOf(tid) : -1);
+  return { init, vulEindstand, zetTeams, geefPunten, plekVan };
 })();

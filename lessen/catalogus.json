@@ -69,14 +69,16 @@
     },
     {
       "id": "pubquiz-verjaardag",
-      "titel": "Pubquiz",
+      "titel": "Familie-pubquiz",
       "groep": "Volwassenen",
       "vak": "Pubquiz",
-      "samenvatting": "Pubquiz voor een familieavond: feiten en onzin, proeven en bluffen.",
+      "samenvatting": "Pubquiz voor een familieavond: feiten en onzin, een proefronde en een bluf-ronde, met de telefoons.",
       "trefwoorden": [
         "pubquiz",
         "quiz",
-        "feest"
+        "feest",
+        "proeven",
+        "bluffen"
       ],
       "gemaakt": "2026-10-10"
     },

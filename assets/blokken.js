@@ -70,6 +70,19 @@ const Lesbord = (() => {
         const def = { id: b.id, soort: b.soort || "tekst", tekst: b.vraag || "", opties: b.opties, groepen: b.groepen };
         return `<div class="b-live" data-live="${esc(JSON.stringify(def))}"${stijl}></div>`;
       }
+      case "bluf": { // bluf-ronde: zonder telefoons het woord met de echte betekenis verborgen; met telefoons zie spellen.js
+        const def = { id: b.id, woord: b.woord, betekenis: b.betekenis };
+        return `<div class="b-spel b-bluf" data-bluf="${esc(JSON.stringify(def))}"${stijl}>` +
+          `<p class="bluf-woord">${esc(b.woord)}</p><p class="b-vraag">Verzin een betekenis die zo echt mogelijk klinkt.</p>` +
+          `<div class="onthul onthul-blok"><p class="bluf-echt">${opmaak(b.betekenis)}</p></div></div>`;
+      }
+      case "proef": { // proefronde: zonder telefoons het drankje met de smaken verborgen; met telefoons zie spellen.js
+        const def = { id: b.id, naam: b.naam, echteNaam: b.echteNaam, goed: b.goed, groepen: b.groepen };
+        return `<div class="b-spel b-proef" data-proef="${esc(JSON.stringify(def))}"${stijl}>` +
+          `<p class="proef-naam">${esc(b.naam)}</p><p class="b-vraag">Wat proef je? Vink alle smaken aan die je herkent.</p>` +
+          `<div class="onthul onthul-blok"><div class="b-smaken">${(b.goed || []).map((s) => `<span>${esc(s)}</span>`).join("")}</div>` +
+          `${b.echteNaam ? `<p class="proef-onthul">${esc(b.echteNaam)}</p>` : ""}</div></div>`;
+      }
       case "live-aansluiten": return `<div class="b-aansluiten" data-aansluiten${stijl}></div>`;
       case "eindstand": return `<div class="b-eindstand" data-eindstand${stijl}></div>`; // wordt op het bord gevuld door score.js
       case "html": return b.html || ""; // maatwerk per les

@@ -1,13 +1,15 @@
 {
   "id": "pubquiz-verjaardag",
-  "titel": "Pubquiz",
+  "titel": "Familie-pubquiz",
   "groep": "Volwassenen",
   "vak": "Pubquiz",
-  "samenvatting": "Pubquiz voor een familieavond: feiten en onzin, proeven en bluffen.",
+  "samenvatting": "Pubquiz voor een familieavond: feiten en onzin, een proefronde en een bluf-ronde, met de telefoons.",
   "trefwoorden": [
     "pubquiz",
     "quiz",
-    "feest"
+    "feest",
+    "proeven",
+    "bluffen"
   ],
   "gemaakt": "2026-10-10",
   "scorebord": {
@@ -16,7 +18,6 @@
   "schermen": [
     {
       "fase": "Welkom",
-      "uitlijning": "midden",
       "blokken": [
         {
           "type": "fase",
@@ -27,14 +28,10 @@
           "tekst": "De grote familie-pubquiz"
         },
         {
-          "type": "klein",
-          "tekst": "Scan de QR-code en kies een teamnaam."
-        },
-        {
           "type": "live-aansluiten"
         }
       ],
-      "notitie": "Tik op het telefoon-icoon bovenin en kies 'Start telefoons'. Teams scannen de QR-code en kiezen zelf een naam; die verschijnt hier en in het scorebord. Lukt het niet, typ de namen dan in het scorebord (Punten geven)."
+      "notitie": "Tik op het telefoon-icoon bovenin en kies 'Start telefoons'. Teams scannen de QR-code en kiezen zelf een naam; die verschijnt hier en in het scorebord. Verkeerd team? Verwijder het in het telefoonpaneel. Lukt het niet met telefoons, typ de namen dan in bij 'Punten geven'."
     },
     {
       "fase": "Ronde 1",
@@ -73,20 +70,20 @@
           "type": "stellingen",
           "items": [
             {
-              "titel": "De Zwam van Oregon"
+              "titel": "De zwam van Oregon"
             },
             {
-              "titel": "Het Bos dat één Boom is"
+              "titel": "Het bos dat één boom is"
             },
             {
-              "titel": "De Longen van de Aarde",
+              "titel": "De longen van de aarde",
               "onzin": true
             }
           ],
-          "antwoord": "❌ **C** is de onzin"
+          "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Natuur · kaart 2",
@@ -103,20 +100,20 @@
           "type": "stellingen",
           "items": [
             {
-              "titel": "De Eeuwenbloeier"
+              "titel": "De eeuwenbloeier"
             },
             {
-              "titel": "De Priemgetal-Insecten"
+              "titel": "De priemgetal-insecten"
             },
             {
-              "titel": "De Drinkfles van de Woestijn",
+              "titel": "De drinkfles van de woestijn",
               "onzin": true
             }
           ],
-          "antwoord": "❌ **C** is de onzin"
+          "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Ronde 2",
@@ -155,20 +152,20 @@
           "type": "stellingen",
           "items": [
             {
-              "titel": "Het Jaar zonder Zomer"
+              "titel": "Het jaar zonder zomer"
             },
             {
-              "titel": "De Dans zonder Einde"
+              "titel": "De dans zonder einde"
             },
             {
-              "titel": "De Peper-Truc",
+              "titel": "De pepertruc",
               "onzin": true
             }
           ],
-          "antwoord": "❌ **C** is de onzin"
+          "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Geschiedenis · kaart 2",
@@ -185,20 +182,20 @@
           "type": "stellingen",
           "items": [
             {
-              "titel": "De Oorlog tegen de Emoes"
+              "titel": "De oorlog tegen de emoes"
             },
             {
-              "titel": "De Gestolen Glimlach"
+              "titel": "De gestolen glimlach"
             },
             {
-              "titel": "De Ridder aan de Kraan",
+              "titel": "De ridder aan de kraan",
               "onzin": true
             }
           ],
-          "antwoord": "❌ **C** is de onzin"
+          "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Ronde 3",
@@ -237,20 +234,20 @@
           "type": "stellingen",
           "items": [
             {
-              "titel": "De Fluit van Gierenbot"
+              "titel": "De fluit van gierenbot"
             },
             {
-              "titel": "Het Orgel van Druipsteen"
+              "titel": "Het orgel van druipsteen"
             },
             {
               "titel": "De Stradivarius wint altijd",
               "onzin": true
             }
           ],
-          "antwoord": "❌ **C** is de onzin"
+          "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Muziek · kaart 2",
@@ -267,20 +264,20 @@
           "type": "stellingen",
           "items": [
             {
-              "titel": "Het Orgelstuk van 639 jaar"
+              "titel": "Het orgelstuk van 639 jaar"
             },
             {
-              "titel": "De Eerste Cd uit de Fabriek"
+              "titel": "De eerste cd uit de fabriek"
             },
             {
-              "titel": "Thriller in de Winkel",
+              "titel": "Thriller in de winkel",
               "onzin": true
             }
           ],
-          "antwoord": "❌ **C** is de onzin"
+          "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Ronde 4",
@@ -319,20 +316,20 @@
           "type": "stellingen",
           "items": [
             {
-              "titel": "De Octopus die zijn RNA bijwerkt"
+              "titel": "De octopus die zijn RNA bijwerkt"
             },
             {
-              "titel": "De Klap met Licht"
+              "titel": "De klap met licht"
             },
             {
-              "titel": "De Haai zonder Kanker",
+              "titel": "De haai zonder kanker",
               "onzin": true
             }
           ],
-          "antwoord": "❌ **C** is de onzin"
+          "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Dieren · kaart 2",
@@ -349,20 +346,20 @@
           "type": "stellingen",
           "items": [
             {
-              "titel": "De Vleermuis die zijn Maaltijd deelt"
+              "titel": "De vleermuis die zijn maaltijd deelt"
             },
             {
-              "titel": "De Pinguïns die je vanuit de Ruimte ziet"
+              "titel": "De pinguïns die je vanuit de ruimte ziet"
             },
             {
-              "titel": "De Oorworm in je Oor",
+              "titel": "De oorworm in je oor",
               "onzin": true
             }
           ],
-          "antwoord": "❌ **C** is de onzin"
+          "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Dieren · kaart 3 (reserve)",
@@ -379,20 +376,20 @@
           "type": "stellingen",
           "items": [
             {
-              "titel": "De Kikker die zijn Gif haalt uit zijn Eten"
+              "titel": "De kikker die zijn gif uit zijn eten haalt"
             },
             {
-              "titel": "De Kraaien die Gezichten onthouden"
+              "titel": "De kraaien die gezichten onthouden"
             },
             {
-              "titel": "De Lemmingen die springen",
+              "titel": "De lemmingen die springen",
               "onzin": true
             }
           ],
-          "antwoord": "❌ **C** is de onzin"
+          "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord. Reserve: sla deze kaart over als de avond uitloopt."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'. Reserve: sla deze kaart over als de avond uitloopt."
     },
     {
       "fase": "Ronde 5",
@@ -434,17 +431,17 @@
               "titel": "Het omgekeerde Flynn-effect"
             },
             {
-              "titel": "De Klas die weinig uitmaakt"
+              "titel": "De klas die weinig uitmaakt"
             },
             {
-              "titel": "De Leerstijlen",
+              "titel": "De leerstijlen",
               "onzin": true
             }
           ],
-          "antwoord": "❌ **C** is de onzin"
+          "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Onderwijs · kaart 2",
@@ -461,53 +458,1057 @@
           "type": "stellingen",
           "items": [
             {
-              "titel": "Zelf Overhoren wint"
+              "titel": "Zelf overhoren wint"
             },
             {
-              "titel": "De Marshmallowtest"
+              "titel": "De marshmallowtest"
             },
             {
-              "titel": "De Suikerkick",
+              "titel": "De suikerkick",
               "onzin": true
             }
           ],
-          "antwoord": "❌ **C** is de onzin"
+          "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Proefronde",
+      "uitlijning": "midden",
       "blokken": [
         {
           "type": "fase",
-          "tekst": "Proefronde · voorbeeldscherm"
+          "tekst": "Proefronde"
         },
         {
           "type": "kop",
-          "tekst": "Biertje 1"
+          "tekst": "Vier bieren en een whisky"
         },
         {
-          "type": "vraag",
-          "tekst": "Wat proef je? Vink alle smaken aan die je herkent."
+          "type": "subkop",
+          "tekst": "Wat proef je?"
         },
         {
-          "type": "smaken",
-          "items": [
+          "type": "klein",
+          "tekst": "Proef rustig, overleg in je team en vink op je telefoon alle smaken aan die je herkent. Elke goede smaak is een punt, elke foute kost er een."
+        }
+      ],
+      "notitie": "Schenk per glas een bodempje in genummerde glazen, blind. Zet water en crackers klaar."
+    },
+    {
+      "fase": "Proefronde · glas 1",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Proefronde · glas 1"
+        },
+        {
+          "type": "proef",
+          "id": "proef-1",
+          "naam": "Biertje 1",
+          "echteNaam": "Hoegaarden Wit",
+          "goed": [
+            "sinaasappelschil",
+            "sinaasappel",
+            "koriander",
+            "tarwe",
+            "kruidig",
+            "fris"
+          ],
+          "groepen": [
+            {
+              "naam": "Citrus",
+              "items": [
+                "citroen",
+                "limoen",
+                "grapefruit",
+                "sinaasappel",
+                "sinaasappelschil",
+                "mandarijn",
+                "bergamot"
+              ]
+            },
+            {
+              "naam": "Fruit",
+              "items": [
+                "fruitig",
+                "appel",
+                "gekookte appel",
+                "peer",
+                "perzik",
+                "abrikoos",
+                "kers",
+                "pruim",
+                "aardbei",
+                "framboos",
+                "zwarte bes",
+                "bosbes",
+                "rozijn",
+                "vijg",
+                "dadel",
+                "banaan",
+                "ananas",
+                "mango",
+                "passievrucht",
+                "lychee",
+                "meloen",
+                "kokos"
+              ]
+            },
+            {
+              "naam": "Bloemen en kruiden",
+              "items": [
+                "bloemig",
+                "kruidig",
+                "roos",
+                "lavendel",
+                "vlierbloesem",
+                "kamille",
+                "munt",
+                "dille",
+                "gras",
+                "hooi",
+                "hop",
+                "dennenhars",
+                "eucalyptus",
+                "tijm",
+                "rozemarijn",
+                "thee"
+              ]
+            },
+            {
+              "naam": "Specerijen",
+              "items": [
+                "kruidnagel",
+                "kaneel",
+                "nootmuskaat",
+                "koriander",
+                "zwarte peper",
+                "witte peper",
+                "gember",
+                "anijs",
+                "steranijs",
+                "kardemom",
+                "vanille",
+                "laurier"
+              ]
+            },
+            {
+              "naam": "Zoet",
+              "items": [
+                "zoet",
+                "honing",
+                "karamel",
+                "toffee",
+                "butterscotch",
+                "bruine suiker",
+                "stroop",
+                "marsepein",
+                "speculaas"
+              ]
+            },
+            {
+              "naam": "Graan en brood",
+              "items": [
+                "mout",
+                "tarwe",
+                "biscuit",
+                "cracker",
+                "versgebakken brood",
+                "korstje",
+                "popcorn",
+                "havermout",
+                "deeg",
+                "cornflakes"
+              ]
+            },
+            {
+              "naam": "Gebrand en donker",
+              "items": [
+                "koffie",
+                "espresso",
+                "pure chocolade",
+                "cacao",
+                "gebrande noten",
+                "toast",
+                "rook",
+                "teer",
+                "as",
+                "gebrand hout",
+                "drop",
+                "melasse"
+              ]
+            },
+            {
+              "naam": "Noten en hout",
+              "items": [
+                "hazelnoot",
+                "amandel",
+                "walnoot",
+                "eikenhout",
+                "cederhout",
+                "leer",
+                "tabak",
+                "sherry"
+              ]
+            },
+            {
+              "naam": "Overig",
+              "items": [
+                "zuurdesem",
+                "yoghurt",
+                "boter",
+                "room",
+                "zout",
+                "mineralen",
+                "metaal",
+                "gist",
+                "kelder",
+                "zeewier",
+                "zeelucht",
+                "jodium",
+                "kauwgom",
+                "snoepjes"
+              ]
+            },
+            {
+              "naam": "Gevoel en afdronk",
+              "items": [
+                "bitter",
+                "zuur",
+                "droog",
+                "fris",
+                "romig",
+                "scherp",
+                "prikkelend",
+                "vol",
+                "licht",
+                "waterig",
+                "warm",
+                "zacht",
+                "rond",
+                "lange afdronk",
+                "korte afdronk"
+              ]
+            }
+          ]
+        }
+      ],
+      "notitie": "In het glas: Hoegaarden Wit (witbier). Goede smaken: sinaasappelschil, sinaasappel, koriander, tarwe, kruidig, fris. Tik op 'Onthul de smaken' als alle teams hebben ingestuurd; lees daarna het verhaal voor."
+    },
+    {
+      "fase": "Proefronde · glas 2",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Proefronde · glas 2"
+        },
+        {
+          "type": "proef",
+          "id": "proef-2",
+          "naam": "Biertje 2",
+          "echteNaam": "Tripel Karmeliet",
+          "goed": [
             "honing",
             "banaan",
             "sinaasappelschil",
             "kruidnagel",
             "witte peper",
-            "droge afdronk"
+            "citroen",
+            "koriander",
+            "hooi",
+            "droog",
+            "prikkelend",
+            "warm"
           ],
-          "verborgen": true
+          "groepen": [
+            {
+              "naam": "Citrus",
+              "items": [
+                "citroen",
+                "limoen",
+                "grapefruit",
+                "sinaasappel",
+                "sinaasappelschil",
+                "mandarijn",
+                "bergamot"
+              ]
+            },
+            {
+              "naam": "Fruit",
+              "items": [
+                "fruitig",
+                "appel",
+                "gekookte appel",
+                "peer",
+                "perzik",
+                "abrikoos",
+                "kers",
+                "pruim",
+                "aardbei",
+                "framboos",
+                "zwarte bes",
+                "bosbes",
+                "rozijn",
+                "vijg",
+                "dadel",
+                "banaan",
+                "ananas",
+                "mango",
+                "passievrucht",
+                "lychee",
+                "meloen",
+                "kokos"
+              ]
+            },
+            {
+              "naam": "Bloemen en kruiden",
+              "items": [
+                "bloemig",
+                "kruidig",
+                "roos",
+                "lavendel",
+                "vlierbloesem",
+                "kamille",
+                "munt",
+                "dille",
+                "gras",
+                "hooi",
+                "hop",
+                "dennenhars",
+                "eucalyptus",
+                "tijm",
+                "rozemarijn",
+                "thee"
+              ]
+            },
+            {
+              "naam": "Specerijen",
+              "items": [
+                "kruidnagel",
+                "kaneel",
+                "nootmuskaat",
+                "koriander",
+                "zwarte peper",
+                "witte peper",
+                "gember",
+                "anijs",
+                "steranijs",
+                "kardemom",
+                "vanille",
+                "laurier"
+              ]
+            },
+            {
+              "naam": "Zoet",
+              "items": [
+                "zoet",
+                "honing",
+                "karamel",
+                "toffee",
+                "butterscotch",
+                "bruine suiker",
+                "stroop",
+                "marsepein",
+                "speculaas"
+              ]
+            },
+            {
+              "naam": "Graan en brood",
+              "items": [
+                "mout",
+                "tarwe",
+                "biscuit",
+                "cracker",
+                "versgebakken brood",
+                "korstje",
+                "popcorn",
+                "havermout",
+                "deeg",
+                "cornflakes"
+              ]
+            },
+            {
+              "naam": "Gebrand en donker",
+              "items": [
+                "koffie",
+                "espresso",
+                "pure chocolade",
+                "cacao",
+                "gebrande noten",
+                "toast",
+                "rook",
+                "teer",
+                "as",
+                "gebrand hout",
+                "drop",
+                "melasse"
+              ]
+            },
+            {
+              "naam": "Noten en hout",
+              "items": [
+                "hazelnoot",
+                "amandel",
+                "walnoot",
+                "eikenhout",
+                "cederhout",
+                "leer",
+                "tabak",
+                "sherry"
+              ]
+            },
+            {
+              "naam": "Overig",
+              "items": [
+                "zuurdesem",
+                "yoghurt",
+                "boter",
+                "room",
+                "zout",
+                "mineralen",
+                "metaal",
+                "gist",
+                "kelder",
+                "zeewier",
+                "zeelucht",
+                "jodium",
+                "kauwgom",
+                "snoepjes"
+              ]
+            },
+            {
+              "naam": "Gevoel en afdronk",
+              "items": [
+                "bitter",
+                "zuur",
+                "droog",
+                "fris",
+                "romig",
+                "scherp",
+                "prikkelend",
+                "vol",
+                "licht",
+                "waterig",
+                "warm",
+                "zacht",
+                "rond",
+                "lange afdronk",
+                "korte afdronk"
+              ]
+            }
+          ]
+        }
+      ],
+      "notitie": "In het glas: Tripel Karmeliet (tripel). Goede smaken: honing, banaan, sinaasappelschil, kruidnagel, witte peper, citroen, koriander, hooi, droog, prikkelend, warm. Tik op 'Onthul de smaken' als alle teams hebben ingestuurd; lees daarna het verhaal voor."
+    },
+    {
+      "fase": "Proefronde · glas 3",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Proefronde · glas 3"
         },
         {
-          "type": "klein",
-          "tekst": "Voorbeeld: de echte smaken volgen zodra de bieren zijn gekocht."
+          "type": "proef",
+          "id": "proef-3",
+          "naam": "Biertje 3",
+          "echteNaam": "Westmalle Dubbel",
+          "goed": [
+            "mout",
+            "kruidig",
+            "fruitig",
+            "bitter",
+            "zacht",
+            "lange afdronk"
+          ],
+          "groepen": [
+            {
+              "naam": "Citrus",
+              "items": [
+                "citroen",
+                "limoen",
+                "grapefruit",
+                "sinaasappel",
+                "sinaasappelschil",
+                "mandarijn",
+                "bergamot"
+              ]
+            },
+            {
+              "naam": "Fruit",
+              "items": [
+                "fruitig",
+                "appel",
+                "gekookte appel",
+                "peer",
+                "perzik",
+                "abrikoos",
+                "kers",
+                "pruim",
+                "aardbei",
+                "framboos",
+                "zwarte bes",
+                "bosbes",
+                "rozijn",
+                "vijg",
+                "dadel",
+                "banaan",
+                "ananas",
+                "mango",
+                "passievrucht",
+                "lychee",
+                "meloen",
+                "kokos"
+              ]
+            },
+            {
+              "naam": "Bloemen en kruiden",
+              "items": [
+                "bloemig",
+                "kruidig",
+                "roos",
+                "lavendel",
+                "vlierbloesem",
+                "kamille",
+                "munt",
+                "dille",
+                "gras",
+                "hooi",
+                "hop",
+                "dennenhars",
+                "eucalyptus",
+                "tijm",
+                "rozemarijn",
+                "thee"
+              ]
+            },
+            {
+              "naam": "Specerijen",
+              "items": [
+                "kruidnagel",
+                "kaneel",
+                "nootmuskaat",
+                "koriander",
+                "zwarte peper",
+                "witte peper",
+                "gember",
+                "anijs",
+                "steranijs",
+                "kardemom",
+                "vanille",
+                "laurier"
+              ]
+            },
+            {
+              "naam": "Zoet",
+              "items": [
+                "zoet",
+                "honing",
+                "karamel",
+                "toffee",
+                "butterscotch",
+                "bruine suiker",
+                "stroop",
+                "marsepein",
+                "speculaas"
+              ]
+            },
+            {
+              "naam": "Graan en brood",
+              "items": [
+                "mout",
+                "tarwe",
+                "biscuit",
+                "cracker",
+                "versgebakken brood",
+                "korstje",
+                "popcorn",
+                "havermout",
+                "deeg",
+                "cornflakes"
+              ]
+            },
+            {
+              "naam": "Gebrand en donker",
+              "items": [
+                "koffie",
+                "espresso",
+                "pure chocolade",
+                "cacao",
+                "gebrande noten",
+                "toast",
+                "rook",
+                "teer",
+                "as",
+                "gebrand hout",
+                "drop",
+                "melasse"
+              ]
+            },
+            {
+              "naam": "Noten en hout",
+              "items": [
+                "hazelnoot",
+                "amandel",
+                "walnoot",
+                "eikenhout",
+                "cederhout",
+                "leer",
+                "tabak",
+                "sherry"
+              ]
+            },
+            {
+              "naam": "Overig",
+              "items": [
+                "zuurdesem",
+                "yoghurt",
+                "boter",
+                "room",
+                "zout",
+                "mineralen",
+                "metaal",
+                "gist",
+                "kelder",
+                "zeewier",
+                "zeelucht",
+                "jodium",
+                "kauwgom",
+                "snoepjes"
+              ]
+            },
+            {
+              "naam": "Gevoel en afdronk",
+              "items": [
+                "bitter",
+                "zuur",
+                "droog",
+                "fris",
+                "romig",
+                "scherp",
+                "prikkelend",
+                "vol",
+                "licht",
+                "waterig",
+                "warm",
+                "zacht",
+                "rond",
+                "lange afdronk",
+                "korte afdronk"
+              ]
+            }
+          ]
         }
-      ]
+      ],
+      "notitie": "In het glas: Westmalle Dubbel (trappist-dubbel). Goede smaken: mout, kruidig, fruitig, bitter, zacht, lange afdronk. Tik op 'Onthul de smaken' als alle teams hebben ingestuurd; lees daarna het verhaal voor."
+    },
+    {
+      "fase": "Proefronde · glas 4",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Proefronde · glas 4"
+        },
+        {
+          "type": "proef",
+          "id": "proef-4",
+          "naam": "Biertje 4",
+          "echteNaam": "Brouwerij 't IJ IPA",
+          "goed": [
+            "hop",
+            "grapefruit",
+            "bloemig",
+            "fruitig",
+            "bitter",
+            "lange afdronk"
+          ],
+          "groepen": [
+            {
+              "naam": "Citrus",
+              "items": [
+                "citroen",
+                "limoen",
+                "grapefruit",
+                "sinaasappel",
+                "sinaasappelschil",
+                "mandarijn",
+                "bergamot"
+              ]
+            },
+            {
+              "naam": "Fruit",
+              "items": [
+                "fruitig",
+                "appel",
+                "gekookte appel",
+                "peer",
+                "perzik",
+                "abrikoos",
+                "kers",
+                "pruim",
+                "aardbei",
+                "framboos",
+                "zwarte bes",
+                "bosbes",
+                "rozijn",
+                "vijg",
+                "dadel",
+                "banaan",
+                "ananas",
+                "mango",
+                "passievrucht",
+                "lychee",
+                "meloen",
+                "kokos"
+              ]
+            },
+            {
+              "naam": "Bloemen en kruiden",
+              "items": [
+                "bloemig",
+                "kruidig",
+                "roos",
+                "lavendel",
+                "vlierbloesem",
+                "kamille",
+                "munt",
+                "dille",
+                "gras",
+                "hooi",
+                "hop",
+                "dennenhars",
+                "eucalyptus",
+                "tijm",
+                "rozemarijn",
+                "thee"
+              ]
+            },
+            {
+              "naam": "Specerijen",
+              "items": [
+                "kruidnagel",
+                "kaneel",
+                "nootmuskaat",
+                "koriander",
+                "zwarte peper",
+                "witte peper",
+                "gember",
+                "anijs",
+                "steranijs",
+                "kardemom",
+                "vanille",
+                "laurier"
+              ]
+            },
+            {
+              "naam": "Zoet",
+              "items": [
+                "zoet",
+                "honing",
+                "karamel",
+                "toffee",
+                "butterscotch",
+                "bruine suiker",
+                "stroop",
+                "marsepein",
+                "speculaas"
+              ]
+            },
+            {
+              "naam": "Graan en brood",
+              "items": [
+                "mout",
+                "tarwe",
+                "biscuit",
+                "cracker",
+                "versgebakken brood",
+                "korstje",
+                "popcorn",
+                "havermout",
+                "deeg",
+                "cornflakes"
+              ]
+            },
+            {
+              "naam": "Gebrand en donker",
+              "items": [
+                "koffie",
+                "espresso",
+                "pure chocolade",
+                "cacao",
+                "gebrande noten",
+                "toast",
+                "rook",
+                "teer",
+                "as",
+                "gebrand hout",
+                "drop",
+                "melasse"
+              ]
+            },
+            {
+              "naam": "Noten en hout",
+              "items": [
+                "hazelnoot",
+                "amandel",
+                "walnoot",
+                "eikenhout",
+                "cederhout",
+                "leer",
+                "tabak",
+                "sherry"
+              ]
+            },
+            {
+              "naam": "Overig",
+              "items": [
+                "zuurdesem",
+                "yoghurt",
+                "boter",
+                "room",
+                "zout",
+                "mineralen",
+                "metaal",
+                "gist",
+                "kelder",
+                "zeewier",
+                "zeelucht",
+                "jodium",
+                "kauwgom",
+                "snoepjes"
+              ]
+            },
+            {
+              "naam": "Gevoel en afdronk",
+              "items": [
+                "bitter",
+                "zuur",
+                "droog",
+                "fris",
+                "romig",
+                "scherp",
+                "prikkelend",
+                "vol",
+                "licht",
+                "waterig",
+                "warm",
+                "zacht",
+                "rond",
+                "lange afdronk",
+                "korte afdronk"
+              ]
+            }
+          ]
+        }
+      ],
+      "notitie": "In het glas: Brouwerij 't IJ IPA (IPA). Goede smaken: hop, grapefruit, bloemig, fruitig, bitter, lange afdronk. Tik op 'Onthul de smaken' als alle teams hebben ingestuurd; lees daarna het verhaal voor."
+    },
+    {
+      "fase": "Proefronde · glas 5",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Proefronde · glas 5"
+        },
+        {
+          "type": "proef",
+          "id": "proef-5",
+          "naam": "De whisky",
+          "echteNaam": "The Glenlivet Founder's Reserve",
+          "goed": [
+            "sinaasappel",
+            "peer",
+            "appel",
+            "toffee",
+            "honing",
+            "boter",
+            "mout",
+            "witte peper",
+            "eikenhout",
+            "romig"
+          ],
+          "groepen": [
+            {
+              "naam": "Citrus",
+              "items": [
+                "citroen",
+                "limoen",
+                "grapefruit",
+                "sinaasappel",
+                "sinaasappelschil",
+                "mandarijn",
+                "bergamot"
+              ]
+            },
+            {
+              "naam": "Fruit",
+              "items": [
+                "fruitig",
+                "appel",
+                "gekookte appel",
+                "peer",
+                "perzik",
+                "abrikoos",
+                "kers",
+                "pruim",
+                "aardbei",
+                "framboos",
+                "zwarte bes",
+                "bosbes",
+                "rozijn",
+                "vijg",
+                "dadel",
+                "banaan",
+                "ananas",
+                "mango",
+                "passievrucht",
+                "lychee",
+                "meloen",
+                "kokos"
+              ]
+            },
+            {
+              "naam": "Bloemen en kruiden",
+              "items": [
+                "bloemig",
+                "kruidig",
+                "roos",
+                "lavendel",
+                "vlierbloesem",
+                "kamille",
+                "munt",
+                "dille",
+                "gras",
+                "hooi",
+                "hop",
+                "dennenhars",
+                "eucalyptus",
+                "tijm",
+                "rozemarijn",
+                "thee"
+              ]
+            },
+            {
+              "naam": "Specerijen",
+              "items": [
+                "kruidnagel",
+                "kaneel",
+                "nootmuskaat",
+                "koriander",
+                "zwarte peper",
+                "witte peper",
+                "gember",
+                "anijs",
+                "steranijs",
+                "kardemom",
+                "vanille",
+                "laurier"
+              ]
+            },
+            {
+              "naam": "Zoet",
+              "items": [
+                "zoet",
+                "honing",
+                "karamel",
+                "toffee",
+                "butterscotch",
+                "bruine suiker",
+                "stroop",
+                "marsepein",
+                "speculaas"
+              ]
+            },
+            {
+              "naam": "Graan en brood",
+              "items": [
+                "mout",
+                "tarwe",
+                "biscuit",
+                "cracker",
+                "versgebakken brood",
+                "korstje",
+                "popcorn",
+                "havermout",
+                "deeg",
+                "cornflakes"
+              ]
+            },
+            {
+              "naam": "Gebrand en donker",
+              "items": [
+                "koffie",
+                "espresso",
+                "pure chocolade",
+                "cacao",
+                "gebrande noten",
+                "toast",
+                "rook",
+                "teer",
+                "as",
+                "gebrand hout",
+                "drop",
+                "melasse"
+              ]
+            },
+            {
+              "naam": "Noten en hout",
+              "items": [
+                "hazelnoot",
+                "amandel",
+                "walnoot",
+                "eikenhout",
+                "cederhout",
+                "leer",
+                "tabak",
+                "sherry"
+              ]
+            },
+            {
+              "naam": "Overig",
+              "items": [
+                "zuurdesem",
+                "yoghurt",
+                "boter",
+                "room",
+                "zout",
+                "mineralen",
+                "metaal",
+                "gist",
+                "kelder",
+                "zeewier",
+                "zeelucht",
+                "jodium",
+                "kauwgom",
+                "snoepjes"
+              ]
+            },
+            {
+              "naam": "Gevoel en afdronk",
+              "items": [
+                "bitter",
+                "zuur",
+                "droog",
+                "fris",
+                "romig",
+                "scherp",
+                "prikkelend",
+                "vol",
+                "licht",
+                "waterig",
+                "warm",
+                "zacht",
+                "rond",
+                "lange afdronk",
+                "korte afdronk"
+              ]
+            }
+          ]
+        }
+      ],
+      "notitie": "In het glas: The Glenlivet Founder's Reserve (single malt whisky). Goede smaken: sinaasappel, peer, appel, toffee, honing, boter, mout, witte peper, eikenhout, romig. Tik op 'Onthul de smaken' als alle teams hebben ingestuurd; lees daarna het verhaal voor."
     },
     {
       "fase": "Pauze",
@@ -528,26 +1529,123 @@
       ]
     },
     {
-      "fase": "Bluf",
-      "uitlijning": "midden",
+      "fase": "Bluf-ronde",
       "blokken": [
         {
           "type": "fase",
           "tekst": "Bluf-ronde"
         },
         {
-          "type": "groot",
-          "tekst": "droogstoppel"
+          "type": "kop",
+          "tekst": "Wat betekent dit woord?"
         },
         {
-          "type": "vraag",
-          "tekst": "Verzin een betekenis die zo echt mogelijk klinkt."
-        },
-        {
-          "type": "klein",
-          "tekst": "Schrijf op je briefje, met je teamnaam erop."
+          "type": "stappen",
+          "items": [
+            "Je ziet een zeldzaam Nederlands woord. Verzin op je telefoon een betekenis die zo echt mogelijk klinkt.",
+            "Daarna zie je alle betekenissen op het bord. De echte zit ertussen.",
+            "Kies op je telefoon welke echt is. Goed gekozen: **2 punten**.",
+            "Kiest een ander team jullie verzinsel? **1 punt** per stem."
+          ]
         }
-      ]
+      ],
+      "notitie": "Uitleg van de bluf-ronde. Op elk woordscherm: wacht tot alle teams een betekenis hebben ingestuurd, tik op 'Naar het stemmen', lees de opties voor, en tik op 'Onthul' als iedereen heeft gestemd."
+    },
+    {
+      "fase": "Bluf · woord 1",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Bluf · woord 1"
+        },
+        {
+          "type": "bluf",
+          "id": "bluf-droogstoppel",
+          "woord": "droogstoppel",
+          "betekenis": "Een saai, droog en nuchter mens."
+        }
+      ],
+      "notitie": "Echte betekenis: Een saai, droog en nuchter mens."
+    },
+    {
+      "fase": "Bluf · woord 2",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Bluf · woord 2"
+        },
+        {
+          "type": "bluf",
+          "id": "bluf-kalefateren",
+          "woord": "kalefateren",
+          "betekenis": "De naden van een houten schip dichtmaken met touwvezels en teer."
+        }
+      ],
+      "notitie": "Echte betekenis: De naden van een houten schip dichtmaken met touwvezels en teer."
+    },
+    {
+      "fase": "Bluf · woord 3",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Bluf · woord 3"
+        },
+        {
+          "type": "bluf",
+          "id": "bluf-balneologie",
+          "woord": "balneologie",
+          "betekenis": "De leer van genezing door baden, bijvoorbeeld in bronwater of modder."
+        }
+      ],
+      "notitie": "Echte betekenis: De leer van genezing door baden, bijvoorbeeld in bronwater of modder."
+    },
+    {
+      "fase": "Bluf · woord 4",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Bluf · woord 4"
+        },
+        {
+          "type": "bluf",
+          "id": "bluf-defenestratie",
+          "woord": "defenestratie",
+          "betekenis": "Iemand uit het raam gooien."
+        }
+      ],
+      "notitie": "Echte betekenis: Iemand uit het raam gooien."
+    },
+    {
+      "fase": "Bluf · woord 5",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Bluf · woord 5"
+        },
+        {
+          "type": "bluf",
+          "id": "bluf-rederijker",
+          "woord": "rederijker",
+          "betekenis": "Lid van een gezelschap van dichters en toneelspelers in de 15e en 16e eeuw."
+        }
+      ],
+      "notitie": "Echte betekenis: Lid van een gezelschap van dichters en toneelspelers in de 15e en 16e eeuw."
+    },
+    {
+      "fase": "Bluf · woord 6 (reserve)",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Bluf · woord 6 (reserve)"
+        },
+        {
+          "type": "bluf",
+          "id": "bluf-pluimstrijker",
+          "woord": "pluimstrijker",
+          "betekenis": "Een vleier: iemand die anderen naar de mond praat."
+        }
+      ],
+      "notitie": "Echte betekenis: Een vleier: iemand die anderen naar de mond praat. Reserve: alleen als er tijd over is."
     },
     {
       "fase": "Uitslag",
@@ -570,14 +1668,16 @@
   "voorbereiding": {
     "faseKop": "Onderdeel",
     "benodigdheden": [
-      "Laptop met Lesbord op het grote scherm",
-      "Een pen en briefjes per team",
-      "Antwoordformulier voor de proefronde (pdf, volgt)"
+      "Laptop met Lesbord op het grote scherm, en internet",
+      "Eén telefoon per team (om de QR-code te scannen)",
+      "Pen en briefjes per team (voor de feitenrondes)",
+      "Hoegaarden Wit, Tripel Karmeliet, Westmalle Dubbel, Brouwerij 't IJ IPA en The Glenlivet Founder's Reserve",
+      "Genummerde proefglaasjes, water en crackers"
     ],
     "verloop": [
       {
         "fase": "Welkom",
-        "wat": "Drie teams. Typ de teamnamen in het scorebord onderaan (opent vanzelf de eerste keer)."
+        "wat": "Start de telefoons. Drie teams scannen de QR-code en kiezen een naam."
       },
       {
         "fase": "Feitenrondes",
@@ -585,7 +1685,7 @@
       },
       {
         "fase": "Proefronde",
-        "wat": "Vier speciaalbieren en één whisky (The Glenlivet), blind geproefd. Per drankje een aanvinklijst; jij geeft de punten aan de hand van de goede antwoorden en leest het ervaringsverhaal voor. (Volgt nadat de drankjes zijn gekocht.)"
+        "wat": "Vier bieren en een whisky, blind. Teams vinken smaken aan op hun telefoon; de punten worden uitgerekend."
       },
       {
         "fase": "Pauze",
@@ -593,7 +1693,7 @@
       },
       {
         "fase": "Bluf-ronde",
-        "wat": "Zeldzame Nederlandse woorden. Elk team verzint een betekenis, jij leest alle opties voor en de teams kiezen welke echt is. (Wordt uitgewerkt.)"
+        "wat": "Vijf zeldzame Nederlandse woorden (plus een reserve). Teams verzinnen een betekenis en stemmen op de echte."
       },
       {
         "fase": "Uitslag",
@@ -613,47 +1713,111 @@
       },
       {
         "kop": "Kaart 1 · Natuur · Reuzen onder de grond",
-        "tekst": "**Voorlezen vóór het raden**\n**A. De Zwam van Oregon.** Wie door de Blue Mountains in Oregon wandelt, ziet hier en daar een bosje honingzwammen staan. Wat hij niet ziet: die horen allemaal bij hetzelfde wezen. Onder de grond strekt zich één schimmelnetwerk uit over negen tot tien vierkante kilometer, met hetzelfde erfelijk materiaal. Schattingen van zijn leeftijd beginnen bij 2.400 jaar.\n\n**B. Het Bos dat één Boom is.** In Utah staat een espenbos van zo'n 47.000 stammen. Het lijkt een gewoon bos, maar alle stammen zijn uitlopers van één wortelstelsel en hebben identiek erfelijk materiaal. Samen wegen ze naar schatting 6.000 ton. Een afzonderlijke stam wordt hooguit 130 jaar oud, maar het wortelstelsel eronder is veel ouder.\n\n**C. De Longen van de Aarde.** Planten nemen koolstofdioxide op en maken zuurstof. Daarom noemt men het Amazonewoud \"de longen van de aarde\": het levert ruim een vijfde van alle zuurstof die wij inademen. Doordat er zoveel bomen staan, voegt het woud elk jaar netto een gigantische hoeveelheid zuurstof toe aan de lucht.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDe Amazone is geen long. Het woud maakt veel zuurstof, maar verbruikt er bijna net zoveel: elke gevallen boom en elk rottend blad slokt zuurstof op. Netto komt er ongeveer niets bij. Waar komt dat getal van twintig procent vandaan? Waarschijnlijk uit een misverstand: er vindt twintig procent van alle fotosynthese plaats in het Amazonegebied, maar ook twintig procent van het verbruik. Nauwkeurige schattingen van wat het woud brutoproduceert liggen eerder tussen de 6 en 9 procent. Een groot deel van onze zuurstof komt uit de oceaan, van plankton.\n\nDe zwam in Oregon is wél echt, en volgens Guinness het grootste schimmelorganisme: 965 hectare, minstens 2.400 jaar oud, misschien zelfs 8.650. Hij kan bomen laten afsterven en groeit juist door hun wortels. Het espenbos Pando strijdt om dezelfde titel: de zwam wint op oppervlakte, het bos op gewicht als je alleen planten telt. Wie de grootste is, hangt dus af van wie je het vraagt. Allebei verbijsterend."
+        "tekst": "**Voorlezen vóór het raden**\n**A. De zwam van Oregon.** Wie door de Blue Mountains in Oregon wandelt, ziet hier en daar een bosje honingzwammen staan. Wat hij niet ziet: die horen allemaal bij hetzelfde wezen. Onder de grond strekt zich één schimmelnetwerk uit over negen tot tien vierkante kilometer, met hetzelfde erfelijk materiaal. Schattingen van zijn leeftijd beginnen bij 2.400 jaar.\n\n**B. Het bos dat één boom is.** In Utah staat een espenbos van zo'n 47.000 stammen. Het lijkt een gewoon bos, maar alle stammen zijn uitlopers van één wortelstelsel en hebben identiek erfelijk materiaal. Samen wegen ze naar schatting 6.000 ton. Een afzonderlijke stam wordt hooguit 130 jaar oud, maar het wortelstelsel eronder is veel ouder.\n\n**C. De longen van de aarde.** Planten nemen koolstofdioxide op en maken zuurstof. Daarom noemt men het Amazonewoud \"de longen van de aarde\": het levert ruim een vijfde van alle zuurstof die wij inademen. Doordat er zoveel bomen staan, voegt het woud elk jaar netto een gigantische hoeveelheid zuurstof toe aan de lucht.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDe Amazone is geen long. Het woud maakt veel zuurstof, maar verbruikt er bijna net zoveel: elke gevallen boom en elk rottend blad slokt zuurstof op. Netto komt er ongeveer niets bij. Waar komt dat getal van twintig procent vandaan? Waarschijnlijk uit een misverstand: er vindt twintig procent van alle fotosynthese plaats in het Amazonegebied, maar ook twintig procent van het verbruik. Nauwkeurige schattingen van wat het woud brutoproduceert liggen eerder tussen de 6 en 9 procent. Een groot deel van onze zuurstof komt uit de oceaan, van plankton.\n\nDe zwam in Oregon is wél echt, en volgens Guinness het grootste schimmelorganisme: 965 hectare, minstens 2.400 jaar oud, misschien zelfs 8.650. Hij kan bomen laten afsterven en groeit juist door hun wortels. Het espenbos Pando strijdt om dezelfde titel: de zwam wint op oppervlakte, het bos op gewicht als je alleen planten telt. Wie de grootste is, hangt dus af van wie je het vraagt. Allebei verbijsterend."
       },
       {
         "kop": "Kaart 2 · Natuur · Planten en insecten met een kalender",
-        "tekst": "**Voorlezen vóór het raden**\n**A. De Eeuwenbloeier.** Er is een bamboesoort die maar eens in de ongeveer 120 jaar bloeit. Planten die van dezelfde moederplant afstammen, doen dat op hetzelfde moment, ook als ze duizenden kilometers uit elkaar staan en in een heel ander klimaat groeien. Na de bloei sterft de hele plant. Hoe ze dat afspreken, weet men nog altijd niet precies.\n\n**B. De Priemgetal-Insecten.** In het oosten van de Verenigde Staten leven cicaden: insecten van een paar centimeter groot die in de zomer oorverdovend tsjirpen, een beetje zoals een krekel, maar luider. Bepaalde soorten brengen 13 of 17 jaar onder de grond door en komen dan met miljoenen tegelijk tevoorschijn. Beide getallen zijn priemgetallen, en wetenschappers denken dat dat geen toeval is.\n\n**C. De Drinkfles van de Woestijn.** Wie in de woestijn verdwaalt, hoeft niet van dorst om te komen, zolang hij een cactus vindt. De vlezige stengels zitten vol vocht. Snijd de stekels eraf, breek de stengel open, en je kunt het sap veilig opdrinken.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit is een mythe uit Hollywood, onder meer uit de western *Three Godfathers* uit 1948. De meeste cactussen bevatten stoffen die misselijkheid en diarree veroorzaken, en dan raak je juist sneller uitgedroogd. Op één na: de fishhook barrel heeft wat bruikbaar vocht, maar dat druppelt uit de vezels en smaakt slecht. Verdwaal je in de woestijn, wacht dan liever op de reddingsploeg.\n\nDe cicaden: een roofdier met een cyclus van 2, 3 of 4 jaar zou bij een cyclus van 12 jaar steeds vaker met de cicaden samenvallen, bij 13 of 17 bijna nooit. En groepen van 13 en 17 jaar komen maar eens in de 221 jaar tegelijk boven. Of dat de échte reden is, wordt nog bediscussieerd, maar de wiskunde is mooi.\n\nDe bamboe: de laatste bloei was eind jaren zestig, de volgende wordt rond 2090 verwacht. Wie nu zestig is, mist het dus net."
+        "tekst": "**Voorlezen vóór het raden**\n**A. De eeuwenbloeier.** Er is een bamboesoort die maar eens in de ongeveer 120 jaar bloeit. Planten die van dezelfde moederplant afstammen, doen dat op hetzelfde moment, ook als ze duizenden kilometers uit elkaar staan en in een heel ander klimaat groeien. Na de bloei sterft de hele plant. Hoe ze dat afspreken, weet men nog altijd niet precies.\n\n**B. De priemgetal-insecten.** In het oosten van de Verenigde Staten leven cicaden: insecten van een paar centimeter groot die in de zomer oorverdovend tsjirpen, een beetje zoals een krekel, maar luider. Bepaalde soorten brengen 13 of 17 jaar onder de grond door en komen dan met miljoenen tegelijk tevoorschijn. Beide getallen zijn priemgetallen, en wetenschappers denken dat dat geen toeval is.\n\n**C. De drinkfles van de woestijn.** Wie in de woestijn verdwaalt, hoeft niet van dorst om te komen, zolang hij een cactus vindt. De vlezige stengels zitten vol vocht. Snijd de stekels eraf, breek de stengel open, en je kunt het sap veilig opdrinken.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit is een mythe uit Hollywood, onder meer uit de western *Three Godfathers* uit 1948. De meeste cactussen bevatten stoffen die misselijkheid en diarree veroorzaken, en dan raak je juist sneller uitgedroogd. Op één na: de fishhook barrel heeft wat bruikbaar vocht, maar dat druppelt uit de vezels en smaakt slecht. Verdwaal je in de woestijn, wacht dan liever op de reddingsploeg.\n\nDe cicaden: een roofdier met een cyclus van 2, 3 of 4 jaar zou bij een cyclus van 12 jaar steeds vaker met de cicaden samenvallen, bij 13 of 17 bijna nooit. En groepen van 13 en 17 jaar komen maar eens in de 221 jaar tegelijk boven. Of dat de échte reden is, wordt nog bediscussieerd, maar de wiskunde is mooi.\n\nDe bamboe: de laatste bloei was eind jaren zestig, de volgende wordt rond 2090 verwacht. Wie nu zestig is, mist het dus net."
       },
       {
         "kop": "Kaart 3 · Geschiedenis · Als het weer de geschiedenis schrijft",
-        "tekst": "**Voorlezen vóór het raden**\n**A. Het Jaar zonder Zomer.** In april 1815 barstte in Indonesië de vulkaan Tambora uit, de zwaarste uitbarsting uit de geschiedenis. Een jaar later was het in Europa koud en nat, mislukten de oogsten en kwam er geen zomer. Een gezelschap schrijvers zat door de regen binnen in een villa aan het Meer van Genève en bedacht daar griezelverhalen om de tijd te doden.\n\n**B. De Dans zonder Einde.** In de zomer van 1518 begon een vrouw midden op straat in Straatsburg te dansen en niet meer te stoppen. Binnen een maand dansten honderden mensen mee, dagenlang achter elkaar. Volgens de overlevering vielen er doden door uitputting.\n\n**C. De Peper-Truc.** In de middeleeuwen was vlees vaak al bedorven als het op tafel kwam. Daarom kregen koks het zo vol peper en kruiden: de specerijen moesten de stank en de smaak van rottend vlees verbergen. Peper was zo duur omdat die wanhopige koks er grote hoeveelheden van nodig hadden.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit is een heel hardnekkige mythe. De Yale-historicus Paul Freedman noemt het idee overtuigend maar onwaar. Wie zich peper kon veroorloven, kon ook vers vlees kopen, en men kende zout, drogen en roken. Bovendien maakt peper rottend vlees niet lekkerder. Specerijen waren een statussymbool, en zoetzuur was de mode. Een gerecht vol peper betekende: ik kan het betalen.\n\nTambora: in 1816 huurde Lord Byron Villa Diodati bij Genève. De regen hield zijn gasten binnen en hij daagde iedereen uit een spookverhaal te schrijven. De achttienjarige Mary Shelley begon toen aan *Frankenstein*. Dankzij een vulkaan hebben we dus een monster.\n\nStraatsburg: de autoriteiten dachten dat meer dansen zou helpen, dus bouwden ze een podium en huurden muzikanten in. Dat werkte niet. Historici denken nu aan massapsychose, door stress en hongersnood."
+        "tekst": "**Voorlezen vóór het raden**\n**A. Het jaar zonder zomer.** In april 1815 barstte in Indonesië de vulkaan Tambora uit, de zwaarste uitbarsting uit de geschiedenis. Een jaar later was het in Europa koud en nat, mislukten de oogsten en kwam er geen zomer. Een gezelschap schrijvers zat door de regen binnen in een villa aan het Meer van Genève en bedacht daar griezelverhalen om de tijd te doden.\n\n**B. De dans zonder einde.** In de zomer van 1518 begon een vrouw midden op straat in Straatsburg te dansen en niet meer te stoppen. Binnen een maand dansten honderden mensen mee, dagenlang achter elkaar. Volgens de overlevering vielen er doden door uitputting.\n\n**C. De pepertruc.** In de middeleeuwen was vlees vaak al bedorven als het op tafel kwam. Daarom kregen koks het zo vol peper en kruiden: de specerijen moesten de stank en de smaak van rottend vlees verbergen. Peper was zo duur omdat die wanhopige koks er grote hoeveelheden van nodig hadden.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit is een heel hardnekkige mythe. De Yale-historicus Paul Freedman noemt het idee overtuigend maar onwaar. Wie zich peper kon veroorloven, kon ook vers vlees kopen, en men kende zout, drogen en roken. Bovendien maakt peper rottend vlees niet lekkerder. Specerijen waren een statussymbool, en zoetzuur was de mode. Een gerecht vol peper betekende: ik kan het betalen.\n\nTambora: in 1816 huurde Lord Byron Villa Diodati bij Genève. De regen hield zijn gasten binnen en hij daagde iedereen uit een spookverhaal te schrijven. De achttienjarige Mary Shelley begon toen aan *Frankenstein*. Dankzij een vulkaan hebben we dus een monster.\n\nStraatsburg: de autoriteiten dachten dat meer dansen zou helpen, dus bouwden ze een podium en huurden muzikanten in. Dat werkte niet. Historici denken nu aan massapsychose, door stress en hongersnood."
       },
       {
         "kop": "Kaart 4 · Geschiedenis · Mislukte missies, gestolen schatten",
-        "tekst": "**Voorlezen vóór het raden**\n**A. De Oorlog tegen de Emoes.** In 1932 stuurde Australië soldaten met machinegeweren naar het westen van het land, om een plaag emoes te bestrijden die de graanvelden kaalvrat. Na ruim een maand werd de operatie stilgelegd, want de vogels stoven uiteen zodra er geschoten werd en waren niet te stoppen.\n\n**B. De Gestolen Glimlach.** In augustus 1911 verdween de Mona Lisa uit het Louvre. Twee jaar lang bleef ze spoorloos, tot de dief haar in Florence probeerde te verkopen. Pas door die diefstal werd ze echt wereldberoemd.\n\n**C. De Ridder aan de Kraan.** In de middeleeuwen was een volledig harnas zo zwaar dat een ridder niet zelf op zijn paard kon klimmen. Daarom werden ze met een soort hijskraan in het zadel getild. Eenmaal gevallen, bleven ze hulpeloos liggen.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nEen harnas woog meestal 15 tot 25 kilo, en dat is minder dan wat een soldaat nu in zijn rugzak draagt. Middeleeuwse afbeeldingen laten ridders in volle wapenrusting zonder hulp op hun paard stijgen, en moderne proeven bevestigen dat het kan. De kraan komt uit fictie, onder meer uit een film uit 1944. Alleen het speciale harnas voor toernooien was erg zwaar.\n\nDe emoe-oorlog: majoor Meredith kreeg twee Lewis-machinegeweren en 10.000 kogels. Bij elk schot stoven de emoes in alle richtingen uiteen. Volgens het verslag werden er bijna duizend geraakt, maar de plaag bleef een plaag en de militairen trokken zich terug. Eén-nul voor de emoes.\n\nDe Mona Lisa: de dief, Vincenzo Peruggia, had in het Louvre gewerkt. Hij bood het schilderij onder een schuilnaam aan een kunsthandelaar in Florence aan. Die liet het controleren door de Uffizi en waarschuwde de politie. Peruggia zei dat hij het naar Italië wilde terugbrengen."
+        "tekst": "**Voorlezen vóór het raden**\n**A. De oorlog tegen de emoes.** In 1932 stuurde Australië soldaten met machinegeweren naar het westen van het land, om een plaag emoes te bestrijden die de graanvelden kaalvrat. Na ruim een maand werd de operatie stilgelegd, want de vogels stoven uiteen zodra er geschoten werd en waren niet te stoppen.\n\n**B. De gestolen glimlach.** In augustus 1911 verdween de Mona Lisa uit het Louvre. Twee jaar lang bleef ze spoorloos, tot de dief haar in Florence probeerde te verkopen. Pas door die diefstal werd ze echt wereldberoemd.\n\n**C. De ridder aan de kraan.** In de middeleeuwen was een volledig harnas zo zwaar dat een ridder niet zelf op zijn paard kon klimmen. Daarom werden ze met een soort hijskraan in het zadel getild. Eenmaal gevallen, bleven ze hulpeloos liggen.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nEen harnas woog meestal 15 tot 25 kilo, en dat is minder dan wat een soldaat nu in zijn rugzak draagt. Middeleeuwse afbeeldingen laten ridders in volle wapenrusting zonder hulp op hun paard stijgen, en moderne proeven bevestigen dat het kan. De kraan komt uit fictie, onder meer uit een film uit 1944. Alleen het speciale harnas voor toernooien was erg zwaar.\n\nDe emoe-oorlog: majoor Meredith kreeg twee Lewis-machinegeweren en 10.000 kogels. Bij elk schot stoven de emoes in alle richtingen uiteen. Volgens het verslag werden er bijna duizend geraakt, maar de plaag bleef een plaag en de militairen trokken zich terug. Eén-nul voor de emoes.\n\nDe Mona Lisa: de dief, Vincenzo Peruggia, had in het Louvre gewerkt. Hij bood het schilderij onder een schuilnaam aan een kunsthandelaar in Florence aan. Die liet het controleren door de Uffizi en waarschuwde de politie. Peruggia zei dat hij het naar Italië wilde terugbrengen."
       },
       {
         "kop": "Kaart 5 · Muziek · Muziek uit de oertijd",
-        "tekst": "**Voorlezen vóór het raden**\n**A. De Fluit van Gierenbot.** In grotten in de Zwabische Jura in Duitsland vonden archeologen fluiten van het vleugelbot van een gier en van mammoetivoor. Ze zijn tussen de 35.000 en 40.000 jaar oud en horen bij de oudste muziekinstrumenten die we kennen. De gierenfluit heeft vijf gaatjes en een V-vormig mondstuk.\n\n**B. Het Orgel van Druipsteen.** In de Luray Caverns in Virginia staat een orgel waarvan de \"pijpen\" stalactieten zijn. Rubberen hamertjes, aangestuurd vanaf een klavier, tikken tegen 37 verschillende druipstenen verspreid over ruim een hectare grot. Elke steen is uitgekozen omdat hij precies de juiste toon geeft.\n\n**C. De Stradivarius wint altijd.** Een Stradivarius heeft het mooiste geluid van alle violen, en dat is in blinde tests aangetoond. Zelfs topsolisten, die met een lasbril op niet konden zien welke viool ze speelden, kozen vrijwel altijd een Stradivarius boven een moderne viool.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDe lasbril klopt, het resultaat niet. In een proef in Parijs speelden tien solisten op oude Italiaanse violen, waaronder vijf Stradivari, en op nieuwe. Zes van de tien koos een nieuwe als favoriet, en ze konden niet horen welke oud of nieuw was. Latere tests met luisteraars lieten hetzelfde zien. De onderzoekers waarschuwen wel dat de gekozen violen niet voor alle Strads hoeven te gelden.\n\nDe fluit: dat is dus het geluid van mensen die nog tussen mammoeten leefden, op een mondstuk waar je nog steeds op kunt spelen.\n\nHet grotorgel is bedacht door Leland Sprinkle, wiskundige bij het Pentagon, in de jaren vijftig. Het wordt vaak het grootste muziekinstrument ter wereld genoemd, al is dat meer een toeristenclaim dan een officieel record. Een orgel in een grot, bedacht door een man van het ministerie van Defensie."
+        "tekst": "**Voorlezen vóór het raden**\n**A. De fluit van gierenbot.** In grotten in de Zwabische Jura in Duitsland vonden archeologen fluiten van het vleugelbot van een gier en van mammoetivoor. Ze zijn tussen de 35.000 en 40.000 jaar oud en horen bij de oudste muziekinstrumenten die we kennen. De gierenfluit heeft vijf gaatjes en een V-vormig mondstuk.\n\n**B. Het orgel van druipsteen.** In de Luray Caverns in Virginia staat een orgel waarvan de \"pijpen\" stalactieten zijn. Rubberen hamertjes, aangestuurd vanaf een klavier, tikken tegen 37 verschillende druipstenen verspreid over ruim een hectare grot. Elke steen is uitgekozen omdat hij precies de juiste toon geeft.\n\n**C. De Stradivarius wint altijd.** Een Stradivarius heeft het mooiste geluid van alle violen, en dat is in blinde tests aangetoond. Zelfs topsolisten, die met een lasbril op niet konden zien welke viool ze speelden, kozen vrijwel altijd een Stradivarius boven een moderne viool.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDe lasbril klopt, het resultaat niet. In een proef in Parijs speelden tien solisten op oude Italiaanse violen, waaronder vijf Stradivari, en op nieuwe. Zes van de tien koos een nieuwe als favoriet, en ze konden niet horen welke oud of nieuw was. Latere tests met luisteraars lieten hetzelfde zien. De onderzoekers waarschuwen wel dat de gekozen violen niet voor alle Strads hoeven te gelden.\n\nDe fluit: dat is dus het geluid van mensen die nog tussen mammoeten leefden, op een mondstuk waar je nog steeds op kunt spelen.\n\nHet grotorgel is bedacht door Leland Sprinkle, wiskundige bij het Pentagon, in de jaren vijftig. Het wordt vaak het grootste muziekinstrument ter wereld genoemd, al is dat meer een toeristenclaim dan een officieel record. Een orgel in een grot, bedacht door een man van het ministerie van Defensie."
       },
       {
         "kop": "Kaart 6 · Muziek · Eeuwige stukken en eerste keren",
-        "tekst": "**Voorlezen vóór het raden**\n**A. Het Orgelstuk van 639 jaar.** In de Burchardikerk in Halberstadt wordt sinds 2001 een orgelstuk van John Cage gespeeld dat 639 jaar duurt. De eerste anderhalf jaar klonk er niets anders dan lucht in de balgen. Het stuk eindigt in het jaar 2640.\n\n**B. De Eerste Cd uit de Fabriek.** Op 17 augustus 1982 rolde in Duitsland de allereerste cd uit een fabriek van Philips: een album van ABBA.\n\n**C. Thriller in de Winkel.** De allereerste cd die je in de winkel kon kopen was Thriller van Michael Jackson, in 1982.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nThriller verscheen in november 1982 en toen nog niet op cd. De eerste cd in de winkel was *52nd Street* van Billy Joel, op 1 oktober 1982 in Japan. Er kwamen er die dag vijftig tegelijk uit, en Billy Joel stond toevallig bovenaan de lijst. ABBA's *The Visitors* was de eerste die werd geperst, maar kwam pas later in de winkel. In een kroegruzie klopt dus allebei, afhankelijk van wat je met \"eerste\" bedoelt.\n\nEn Halberstadt: de 639 jaar slaan terug op het eerste twaalftoons orgel, uit 1361. De noten wisselen doordat er pijpen worden toegevoegd of weggehaald. Je moet dus soms jaren wachten op de volgende toon. Het heeft de energie van een slechte vergadering, maar dan mooi."
+        "tekst": "**Voorlezen vóór het raden**\n**A. Het orgelstuk van 639 jaar.** In de Burchardikerk in Halberstadt wordt sinds 2001 een orgelstuk van John Cage gespeeld dat 639 jaar duurt. De eerste anderhalf jaar klonk er niets anders dan lucht in de balgen. Het stuk eindigt in het jaar 2640.\n\n**B. De eerste cd uit de fabriek.** Op 17 augustus 1982 rolde in Duitsland de allereerste cd uit een fabriek van Philips: een album van ABBA.\n\n**C. Thriller in de winkel.** De allereerste cd die je in de winkel kon kopen was Thriller van Michael Jackson, in 1982.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nThriller verscheen in november 1982 en toen nog niet op cd. De eerste cd in de winkel was *52nd Street* van Billy Joel, op 1 oktober 1982 in Japan. Er kwamen er die dag vijftig tegelijk uit, en Billy Joel stond toevallig bovenaan de lijst. ABBA's *The Visitors* was de eerste die werd geperst, maar kwam pas later in de winkel. In een discussie aan tafel klopt dus allebei, afhankelijk van wat je met \"eerste\" bedoelt.\n\nEn Halberstadt: de 639 jaar slaan terug op het eerste twaalftoons orgel, uit 1361. De noten wisselen doordat er pijpen worden toegevoegd of weggehaald. Je moet dus soms jaren wachten op de volgende toon. Het heeft de energie van een slechte vergadering, maar dan mooi."
       },
       {
         "kop": "Kaart 7 · Dieren · Slimme trucs van de natuur",
-        "tekst": "**Voorlezen vóór het raden**\n**A. De Octopus die zijn RNA bijwerkt.** Als het water kouder wordt, past een octopus zich aan door zijn RNA te bewerken, niet zijn DNA. Op duizenden plekken verandert hij de bouwstenen van eiwitten in zijn zenuwcellen, zodat die ook in de kou blijven werken. In een proef gebeurde dat bij koud gehouden octopussen op ruim dertienduizend plekken, tegen een paar honderd bij warm gehouden dieren.\n\n**B. De Klap met Licht.** De knotsarm van de mantisgarnaal slaat zo hard uit dat het water voor de knots begint te koken en er een luchtbel ontstaat. Als die bel ineenstort, volgt er een tweede klap en een korte lichtflits. Zijn prooi wordt dus twee keer geraakt.\n\n**C. De Haai zonder Kanker.** Haaien krijgen nooit kanker. Hun skelet bestaat uit kraakbeen, en dat zou zo'n goede bescherming bieden dat tumoren geen kans krijgen.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nHaaien krijgen wel kanker. Er zijn tumoren gevonden bij meer dan twintig soorten, en de eerste al meer dan 150 jaar geleden. De mythe komt uit de jaren zeventig: onderzoekers zagen dat kraakbeen de aanmaak van bloedvaten remt, en bedrijven gingen kraakbeenpillen verkopen. In een proef met zestig patiënten reageerde geen enkele tumor. De haaien kwamen er dus alleen maar slecht vanaf.\n\nDe octopus: zijn DNA hoeft niet te veranderen om zich aan te passen, zijn RNA doet het werk.\n\nEn de mantisgarnaal: zijn slag wordt vergeleken met de versnelling van een kogel uit een .22-geweer. Dat gaat om versnelling, niet om snelheid. Naar verhouding tot zijn gewicht is het de krachtigste klap in het dierenrijk."
+        "tekst": "**Voorlezen vóór het raden**\n**A. De octopus die zijn RNA bijwerkt.** Als het water kouder wordt, past een octopus zich aan door zijn RNA te bewerken, niet zijn DNA. Op duizenden plekken verandert hij de bouwstenen van eiwitten in zijn zenuwcellen, zodat die ook in de kou blijven werken. In een proef gebeurde dat bij koud gehouden octopussen op ruim dertienduizend plekken, tegen een paar honderd bij warm gehouden dieren.\n\n**B. De klap met licht.** De knotsarm van de mantisgarnaal slaat zo hard uit dat het water voor de knots begint te koken en er een luchtbel ontstaat. Als die bel ineenstort, volgt er een tweede klap en een korte lichtflits. Zijn prooi wordt dus twee keer geraakt.\n\n**C. De haai zonder kanker.** Haaien krijgen nooit kanker. Hun skelet bestaat uit kraakbeen, en dat zou zo'n goede bescherming bieden dat tumoren geen kans krijgen.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nHaaien krijgen wel kanker. Er zijn tumoren gevonden bij meer dan twintig soorten, en de eerste al meer dan 150 jaar geleden. De mythe komt uit de jaren zeventig: onderzoekers zagen dat kraakbeen de aanmaak van bloedvaten remt, en bedrijven gingen kraakbeenpillen verkopen. In een proef met zestig patiënten reageerde geen enkele tumor. De haaien kwamen er dus alleen maar slecht vanaf.\n\nDe octopus: zijn DNA hoeft niet te veranderen om zich aan te passen, zijn RNA doet het werk.\n\nEn de mantisgarnaal: zijn slag wordt vergeleken met de versnelling van een kogel uit een .22-geweer. Dat gaat om versnelling, niet om snelheid. Naar verhouding tot zijn gewicht is het de krachtigste klap in het dierenrijk."
       },
       {
         "kop": "Kaart 8 · Dieren · Verrassende vrienden en vijanden",
-        "tekst": "**Voorlezen vóór het raden**\n**A. De Vleermuis die zijn Maaltijd deelt.** Vampiervleermuizen die een goede nacht hebben gehad, braken een deel van hun bloedmaaltijd uit voor een hongerige soortgenoot. Ze doen dat bij voorkeur voor familie, maar ook voor vleermuizen die er niet mee verwant zijn.\n\n**B. De Pinguïns die je vanuit de Ruimte ziet.** Wetenschappers zoeken keizerpinguïns met satellieten. Niet de dieren zelf, want die zijn te klein, maar hun uitwerpselen: bruine vlekken op het ijs die vanuit de ruimte te zien zijn. Zo ontdekten ze in 2009 tien kolonies die niemand kende.\n\n**C. De Oorworm in je Oor.** De oorworm heeft zijn naam te danken aan wat hij 's nachts doet: hij kruipt in de oren van slapende mensen om daar zijn eitjes te leggen.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDe oorworm doet dit niet. Het is een mythe die al teruggaat tot Plinius, en in ongeveer tien eeuwen literatuur is er maar één melding van een oorworm in een oor. Waar de naam vandaan komt, weet niemand zeker. Ze zijn onschuldig, ook al vertel je dat liever niet aan wie ze 's nachts in huis heeft.\n\nDe vleermuizen: onderzoeker Gerald Wilkinson ontdekte dit in 1984. Latere proeven lieten zien dat vleermuizen die veel delen een grotere kans hebben dat iemand hen terughelpt op een slechte nacht. Het is een soort verzekering.\n\nDe pinguïns: Britse onderzoekers vonden zo 38 kolonies, waarvan 10 nieuw. Er zijn dus wetenschappers wier werk bestaat uit het bestuderen van pinguïnpoep vanuit een satelliet."
+        "tekst": "**Voorlezen vóór het raden**\n**A. De vleermuis die zijn maaltijd deelt.** Vampiervleermuizen die een goede nacht hebben gehad, braken een deel van hun bloedmaaltijd uit voor een hongerige soortgenoot. Ze doen dat bij voorkeur voor familie, maar ook voor vleermuizen die er niet mee verwant zijn.\n\n**B. De pinguïns die je vanuit de ruimte ziet.** Wetenschappers zoeken keizerpinguïns met satellieten. Niet de dieren zelf, want die zijn te klein, maar hun uitwerpselen: bruine vlekken op het ijs die vanuit de ruimte te zien zijn. Zo ontdekten ze in 2009 tien kolonies die niemand kende.\n\n**C. De oorworm in je oor.** De oorworm heeft zijn naam te danken aan wat hij 's nachts doet: hij kruipt in de oren van slapende mensen om daar zijn eitjes te leggen.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDe oorworm doet dit niet. Het is een mythe die al teruggaat tot Plinius, en in ongeveer tien eeuwen literatuur is er maar één melding van een oorworm in een oor. Waar de naam vandaan komt, weet niemand zeker. Ze zijn onschuldig, ook al vertel je dat liever niet aan wie ze 's nachts in huis heeft.\n\nDe vleermuizen: onderzoeker Gerald Wilkinson ontdekte dit in 1984. Latere proeven lieten zien dat vleermuizen die veel delen een grotere kans hebben dat iemand hen terughelpt op een slechte nacht. Het is een soort verzekering.\n\nDe pinguïns: Britse onderzoekers vonden zo 38 kolonies, waarvan 10 nieuw. Er zijn dus wetenschappers wier werk bestaat uit het bestuderen van pinguïnpoep vanuit een satelliet."
       },
       {
         "kop": "Kaart 9 (reserve) · Dieren · Gif, geheugen en mythes",
-        "tekst": "**Voorlezen vóór het raden**\n**A. De Kikker die zijn Gif haalt uit zijn Eten.** De felgekleurde pijlgifkikker maakt zijn gif niet zelf. Hij haalt de gifstoffen uit zijn voedsel, vooral uit kleine mieren en mijten. Kikkers die in gevangenschap met andere insecten worden gevoed, verliezen hun gif, maar krijgen het weer terug als ze de juiste prooi krijgen.\n\n**B. De Kraaien die Gezichten onthouden.** Onderzoekers in Seattle droegen een masker als ze kraaien vingen. Jaren later schold een deel van de kraaien nog steeds op mensen met dat masker. Zelfs jonge kraaien die de vangst nooit hadden meegemaakt deden mee.\n\n**C. De Lemmingen die springen.** Als lemmingen te talrijk worden, trekken ze in groepen naar de kust en storten zich van kliffen in zee. Biologen denken dat het een instinct is om de populatie op peil te houden.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit komt uit een Disney-film uit 1958, *White Wilderness*. De scène was in scène gezet in Alberta, waar geen lemmingen leven. Het ging om een paar dozijn dieren op een draaischijf met sneeuw, en volgens getuigen gooiden crewleden ze van de klif. De film won een Oscar. De echte oorzaak van het instorten van populaties zijn roofdieren zoals poolvossen en sneeuwuilen.\n\nDe pijlgifkikker: in gevangenschap voeren ze de kikkers fruitvliegjes, en dan zijn ze na verloop van tijd niet meer giftig. Je bent wat je eet, maar dan levensgevaarlijk.\n\nDe kraaien: de onderzoeker liep zelf een keer met zo'n masker over de campus en kreeg ongeveer vijftig kraaien op zich af. Ze zijn niet wraakzuchtig, ze zijn gewoon goed in administratie."
+        "tekst": "**Voorlezen vóór het raden**\n**A. De kikker die zijn gif uit zijn eten haalt.** De felgekleurde pijlgifkikker maakt zijn gif niet zelf. Hij haalt de gifstoffen uit zijn voedsel, vooral uit kleine mieren en mijten. Kikkers die in gevangenschap met andere insecten worden gevoed, verliezen hun gif, maar krijgen het weer terug als ze de juiste prooi krijgen.\n\n**B. De kraaien die gezichten onthouden.** Onderzoekers in Seattle droegen een masker als ze kraaien vingen. Jaren later schold een deel van de kraaien nog steeds op mensen met dat masker. Zelfs jonge kraaien die de vangst nooit hadden meegemaakt deden mee.\n\n**C. De lemmingen die springen.** Als lemmingen te talrijk worden, trekken ze in groepen naar de kust en storten zich van kliffen in zee. Biologen denken dat het een instinct is om de populatie op peil te houden.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit komt uit een Disney-film uit 1958, *White Wilderness*. De scène was in scène gezet in Alberta, waar geen lemmingen leven. Het ging om een paar dozijn dieren op een draaischijf met sneeuw, en volgens getuigen gooiden crewleden ze van de klif. De film won een Oscar. De echte oorzaak van het instorten van populaties zijn roofdieren zoals poolvossen en sneeuwuilen.\n\nDe pijlgifkikker: in gevangenschap voeren ze de kikkers fruitvliegjes, en dan zijn ze na verloop van tijd niet meer giftig. Je bent wat je eet, maar dan levensgevaarlijk.\n\nDe kraaien: de onderzoeker liep zelf een keer met zo'n masker over de campus en kreeg ongeveer vijftig kraaien op zich af. Ze zijn niet wraakzuchtig, ze zijn gewoon goed in administratie."
       },
       {
         "kop": "Kaart 10 · Onderwijs · Wat we dachten te weten over leren",
-        "tekst": "**Voorlezen vóór het raden**\n**A. Het omgekeerde Flynn-effect.** Bijna de hele twintigste eeuw stegen de gemiddelde IQ-scores in veel landen met ongeveer drie punten per tien jaar. In Noorwegen draaide dat om: bij mannen geboren na 1975 dalen de scores. Een onderzoek dat broers met elkaar vergeleek, liet zien dat dat niet aan erfelijkheid ligt, maar aan de omgeving.\n\n**B. De Klas die weinig uitmaakt.** In de grote meta-analyse *Visible Learning* van John Hattie blijkt klassengrootte een verrassend klein effect op leerresultaten te hebben, ruim onder zijn drempel van 0,40. Hattie verklaart dat doordat leerkrachten in kleinere klassen hun lesgeven vaak nauwelijks aanpassen.\n\n**C. De Leerstijlen.** Leerlingen leren aantoonbaar beter als de les past bij hun leerstijl: de een is visueel, de ander auditief, de derde leert door te doen. Scholen doen er daarom goed aan hun lessen per leerstijl aan te passen.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit is de bekendste mythe in het onderwijs. In een overzicht uit 2008 (Pashler en collega's) vonden onderzoekers geen bewijs dat les afgestemd op iemands stijl beter werkt. Toch bleek uit een enquête uit 2012 dat ruim 90 procent van de leerkrachten in Nederland en Engeland erin geloofde. Dat zijn jullie. Ik zeg het met liefde.\n\nHet Flynn-effect: de Noorse stijging en daling hadden dezelfde omvang, zowel binnen als tussen families. Wat de oorzaak is, weten ze niet.\n\nEn Hattie: een klas van 15 in plaats van 30 geeft een effect van ongeveer 0,2. Dat is niet omdat kleine klassen niet fijn zijn, maar omdat leerkrachten in een kleine klas vaak hetzelfde blijven doen. Pas je lesgeven aan, anders maakt de klasgrootte weinig uit."
+        "tekst": "**Voorlezen vóór het raden**\n**A. Het omgekeerde Flynn-effect.** Bijna de hele twintigste eeuw stegen de gemiddelde IQ-scores in veel landen met ongeveer drie punten per tien jaar. In Noorwegen draaide dat om: bij mannen geboren na 1975 dalen de scores. Een onderzoek dat broers met elkaar vergeleek, liet zien dat dat niet aan erfelijkheid ligt, maar aan de omgeving.\n\n**B. De klas die weinig uitmaakt.** In de grote meta-analyse *Visible Learning* van John Hattie blijkt klassengrootte een verrassend klein effect op leerresultaten te hebben, ruim onder zijn drempel van 0,40. Hattie verklaart dat doordat leerkrachten in kleinere klassen hun lesgeven vaak nauwelijks aanpassen.\n\n**C. De leerstijlen.** Leerlingen leren aantoonbaar beter als de les past bij hun leerstijl: de een is visueel, de ander auditief, de derde leert door te doen. Scholen doen er daarom goed aan hun lessen per leerstijl aan te passen.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit is de bekendste mythe in het onderwijs. In een overzicht uit 2008 (Pashler en collega's) vonden onderzoekers geen bewijs dat les afgestemd op iemands stijl beter werkt. Toch bleek uit een enquête uit 2012 dat ruim 90 procent van de leerkrachten in Nederland en Engeland erin geloofde. Dat zijn jullie. Ik zeg het met liefde.\n\nHet Flynn-effect: de Noorse stijging en daling hadden dezelfde omvang, zowel binnen als tussen families. Wat de oorzaak is, weten ze niet.\n\nEn Hattie: een klas van 15 in plaats van 30 geeft een effect van ongeveer 0,2. Dat is niet omdat kleine klassen niet fijn zijn, maar omdat leerkrachten in een kleine klas vaak hetzelfde blijven doen. Pas je lesgeven aan, anders maakt de klasgrootte weinig uit."
       },
       {
         "kop": "Kaart 11 · Onderwijs · Overhoren, wachten en suiker",
-        "tekst": "**Voorlezen vóór het raden**\n**A. Zelf Overhoren wint.** Onderzoekers lieten studenten een tekst lezen. De ene groep las hem daarna nog een keer, de andere legde de tekst weg en schreef op wat ze nog wist. Vijf minuten later scoorde de groep die had herlezen beter. Maar een week later onthielden de studenten die zichzelf hadden overhoord duidelijk meer.\n\n**B. De Marshmallowtest.** In de jaren zestig en zeventig kregen kleuters op een Stanford-peuterschool een marshmallow en de belofte van een tweede als ze een kwartier wachtten voor ze hem opaten. Wie kon wachten, bleek later hogere schoolscores te halen. In 2018 werd het onderzoek herhaald met 918 kinderen, en bleek het verband veel zwakker, vooral na correctie voor het gezin waarin ze opgroeiden.\n\n**C. De Suikerkick.** Kinderen worden hyperactief van suiker. Dat komt doordat suiker het bloedsuikergehalte snel verhoogt, waardoor ze op een kinderfeestje niet meer te houden zijn.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit blijkt een mythe. In een groot overzicht uit 1995 (Wolraich en collega's) verdween elk effect van suiker op gedrag zodra ouders, kinderen en onderzoekers niet wisten wie suiker kreeg. In een bekende proef kregen moeders te horen dat hun zoon suiker had gekregen, terwijl het een zoetstof was, en zij vonden hem toch drukker. Het zit dus in de verwachting. Wat wel meespeelt: kinderfeestjes en Halloween, met veel prikkels en een rommelig ritme.\n\nZelf overhoren: dat is het testeffect van Roediger en Karpicke (2006). Op de korte termijn won herlezen, na een week het overhoren. Het voelt minder prettig, maar het werkt beter.\n\nDe marshmallowtest: wetenschappers zijn het niet helemaal eens. Critici zeggen dat de herhaling te veel corrigeerde. Maar dat wachten op zichzelf zoveel zegt over later succes, is flink afgezwakt."
+        "tekst": "**Voorlezen vóór het raden**\n**A. Zelf overhoren wint.** Onderzoekers lieten studenten een tekst lezen. De ene groep las hem daarna nog een keer, de andere legde de tekst weg en schreef op wat ze nog wist. Vijf minuten later scoorde de groep die had herlezen beter. Maar een week later onthielden de studenten die zichzelf hadden overhoord duidelijk meer.\n\n**B. De marshmallowtest.** In de jaren zestig en zeventig kregen kleuters op een Stanford-peuterschool een marshmallow en de belofte van een tweede als ze een kwartier wachtten voor ze hem opaten. Wie kon wachten, bleek later hogere schoolscores te halen. In 2018 werd het onderzoek herhaald met 918 kinderen, en bleek het verband veel zwakker, vooral na correctie voor het gezin waarin ze opgroeiden.\n\n**C. De suikerkick.** Kinderen worden hyperactief van suiker. Dat komt doordat suiker het bloedsuikergehalte snel verhoogt, waardoor ze op een kinderfeestje niet meer te houden zijn.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit blijkt een mythe. In een groot overzicht uit 1995 (Wolraich en collega's) verdween elk effect van suiker op gedrag zodra ouders, kinderen en onderzoekers niet wisten wie suiker kreeg. In een bekende proef kregen moeders te horen dat hun zoon suiker had gekregen, terwijl het een zoetstof was, en zij vonden hem toch drukker. Het zit dus in de verwachting. Wat wel meespeelt: kinderfeestjes en Halloween, met veel prikkels en een rommelig ritme.\n\nZelf overhoren: dat is het testeffect van Roediger en Karpicke (2006). Op de korte termijn won herlezen, na een week het overhoren. Het voelt minder prettig, maar het werkt beter.\n\nDe marshmallowtest: wetenschappers zijn het niet helemaal eens. Critici zeggen dat de herhaling te veel corrigeerde. Maar dat wachten op zichzelf zoveel zegt over later succes, is flink afgezwakt."
+      },
+      {
+        "kop": "Proefronde: zo werkt het",
+        "items": [
+          "Schenk blind in genummerde glazen, in deze volgorde: witbier, tripel, dubbel, IPA en als laatste de whisky. Zo overstemt een zwaar of bitter drankje de lichtere niet.",
+          "Op het scherm staat alleen het nummer. Teams vinken op hun telefoon alle smaken aan die ze proeven (ongeveer 125 om uit te kiezen).",
+          "Tik op \"Onthul de smaken\". Het bord laat de goede smaken zien, en per team wat ze goed hadden en hoeveel fout.",
+          "Punten: elke goede smaak +1, elke foute −1, nooit minder dan 0. Tik op \"Punten toekennen\" om ze in het scorebord te zetten.",
+          "Lees daarna het verhaal van het drankje voor. Laat de teams gerust nog een slok nemen terwijl je leest."
+        ]
+      },
+      {
+        "kop": "Glas 1 · Hoegaarden Wit",
+        "tekst": "**Goede smaken:** sinaasappelschil, sinaasappel, koriander, tarwe, kruidig, fris.\n\n**Voorlezen na het onthullen**\nKijk eerst even naar je glas: het is troebel, en dat hoort zo. Een witbier wordt gebrouwen met tarwe en niet gefilterd.\n\nNeem een slok. Je proeft vooral iets fris en lichts, met citrus. Volgens de brouwerij komen geur en smaak van sinaasappelschil, koriander en kruiden, zoals de monniken die ooit uit Curaçao lieten komen.\n\nHet is een bier dat niet zwaar wil zijn, eerder dorstlessend. Een goed begin van de proefronde."
+      },
+      {
+        "kop": "Glas 2 · Tripel Karmeliet",
+        "tekst": "**Goede smaken:** honing, banaan, sinaasappelschil, kruidnagel, witte peper, citroen, koriander, hooi, droog, prikkelend, warm.\n\n**Voorlezen na het onthullen**\nDit is een tripel, gebrouwen met drie granen: gerst, tarwe en haver. Je ruikt het al voor je drinkt: banaan, sinaasappelschil en een vleugje kruidnagel.\n\nNeem een slok. Het eerste is zacht en zoet, bijna als honing. Dan prikt het koolzuur en komen er peperige, kruidige tonen bij, met iets van citroen en koriander. Wie goed zoekt, proeft zelfs iets van hooi.\n\nDe afdronk is verrassend droog, en met ruim 8 procent alcohol voel je het warm worden. Dat sluipt erin."
+      },
+      {
+        "kop": "Glas 3 · Westmalle Dubbel",
+        "tekst": "**Goede smaken:** mout, kruidig, fruitig, bitter, zacht, lange afdronk.\n\n**Voorlezen na het onthullen**\nRoodbruin, met een romige schuimkraag. Dit is een trappist, gebrouwen in de abdij van Westmalle, en eigenlijk de stamvader van alle dubbels: brouwerijen over de hele wereld hebben deze stijl nagedaan.\n\nRuik eerst: je ruikt vooral mout, het geroosterde graan. Neem dan een slok. De smaak is vol en rijk, kruidig en fruitig tegelijk, en het voelt zacht in de mond.\n\nAan het eind komt er een frisse bitter, die nog lang blijft hangen."
+      },
+      {
+        "kop": "Glas 4 · Brouwerij 't IJ IPA",
+        "tekst": "**Goede smaken:** hop, grapefruit, bloemig, fruitig, bitter, lange afdronk.\n\n**Voorlezen na het onthullen**\nEen India Pale Ale van Brouwerij 't IJ uit Amsterdam, de brouwerij naast molen De Gooyer. Donkerblond en vol hop: die gaat er niet alleen bij het brouwen in, maar ook nog eens tijdens het rijpen.\n\nDaardoor ruik je grapefruit en bloemen nog voor je drinkt. De slok is fruitig, en dan komt de bitter, die lang blijft hangen.\n\nDaarom staat dit bier als laatste: na zoveel bitter proef je een zacht bier niet meer goed."
+      },
+      {
+        "kop": "Glas 5 · The Glenlivet Founder's Reserve",
+        "tekst": "**Goede smaken:** sinaasappel, peer, appel, toffee, honing, boter, mout, witte peper, eikenhout, romig.\n\n**Voorlezen na het onthullen**\nEn dan de whisky: The Glenlivet Founder's Reserve, een single malt uit Speyside in Schotland. De naam eert oprichter George Smith, wiens handtekening op de blauwe doos staat.\n\nRuik eerst, met je neus niet te diep in het glas: zoete sinaasappel, citrus en een vleugje toffee. Neem dan een klein slokje en laat het even rondgaan. Peer is de smaak die het meest opvalt, met iets van verse appel en honing. Sommige proevers noemen ook boter en mout, en een beetje witte peper.\n\nDe afdronk is romig en zacht, met een vleugje eikenhout van de vaten. Probeer daarna eens een paar druppels water erbij: dat verandert de geur."
+      },
+      {
+        "kop": "Bluf-ronde: zo werkt het",
+        "items": [
+          "Teams typen op hun telefoon een verzonnen betekenis (maximaal 160 tekens).",
+          "Tik op \"Naar het stemmen\": de verzinsels en de echte betekenis komen gehusseld op het bord, als A, B, C, D. Lees ze voor.",
+          "Teams kiezen op hun telefoon welke echt is. Hun eigen verzinsel kunnen ze niet kiezen.",
+          "Tik op \"Onthul\": je ziet de echte betekenis, wie welk verzinsel schreef en wie wat koos, met de punten erbij. Tik op \"Punten toekennen\".",
+          "Lees daarna de herkomst voor (hieronder per woord)."
+        ]
+      },
+      {
+        "kop": "Woord 1 · droogstoppel",
+        "tekst": "**Echte betekenis:** Een saai, droog en nuchter mens.\n\n**Voorlezen na het onthullen**\nHet woord komt van Batavus Droogstoppel, de koffiemakelaar van de Lauriergracht 37 in *Max Havelaar* (1860) van Multatuli. Hij opent het boek, en vindt romans maar leugens.\n\nMultatuli maakte van hem het toonbeeld van de saaie, zakelijke Nederlander. Zijn achternaam werd een gewoon woord."
+      },
+      {
+        "kop": "Woord 2 · kalefateren",
+        "tekst": "**Echte betekenis:** De naden van een houten schip dichtmaken met touwvezels en teer.\n\n**Voorlezen na het onthullen**\nScheepsbouwers propten pluizige touwvezels in de naden tussen de planken en smeerden er teer of pek over, zodat het schip waterdicht werd. Figuurlijk betekent het ook: iets oplappen.\n\nHet woord kwam via het Frans (*calfater*) en het Italiaans (*calafatare*) uit het middeleeuwse Grieks, en gaat terug op een Arabisch woord voor asfalt."
+      },
+      {
+        "kop": "Woord 3 · balneologie",
+        "tekst": "**Echte betekenis:** De leer van genezing door baden, bijvoorbeeld in bronwater of modder.\n\n**Voorlezen na het onthullen**\nVan het Latijnse *balneum*, bad. Het is de wetenschap achter kuuroorden: bronwater, geneeskrachtige modder en drinkkuren. De badkuur zelf heet balneotherapie.\n\nOf al die baden echt helpen, is overigens maar matig wetenschappelijk aangetoond."
+      },
+      {
+        "kop": "Woord 4 · defenestratie",
+        "tekst": "**Echte betekenis:** Iemand uit het raam gooien.\n\n**Voorlezen na het onthullen**\nVan het Latijnse *fenestra*, raam. Het woord is vooral bekend door Praag. Op 23 mei 1618 gooiden protestantse edelen twee katholieke landvoogden en hun secretaris uit een raam van de burcht. Alle drie overleefden de val.\n\nToch werd het het begin van de Dertigjarige Oorlog. En het was niet de eerste keer: al in 1419 werden in Praag raadsleden uit het raam gegooid."
+      },
+      {
+        "kop": "Woord 5 · rederijker",
+        "tekst": "**Echte betekenis:** Lid van een gezelschap van dichters en toneelspelers in de 15e en 16e eeuw.\n\n**Voorlezen na het onthullen**\nDe leden noemden zichzelf eerst rhetorisienen of rhetorikers, naar de Franse *rhétoriqueurs*. Het woord rederijker ontstond pas eind 16e eeuw, waarschijnlijk in de Amsterdamse kamer De Eglantier.\n\nHet klinkt alsof het iets met *rede* en *rijk* te maken heeft, maar dat is toeval: zo'n vernederlandsing heet volksetymologie."
+      },
+      {
+        "kop": "Woord 6 (reserve) · pluimstrijker",
+        "tekst": "**Echte betekenis:** Een vleier: iemand die anderen naar de mond praat.\n\n**Voorlezen na het onthullen**\nIn de jagerstaal is een pluim de staart van een haas. Pluimstrijken was strelen met zo'n zacht staartje of veertje: iemand honing om de mond smeren.\n\nIn de 17e eeuw schreef men al over pluimstrijkers als huichelaars, die hun gezicht aanpassen aan wie hen iets kan opleveren."
       }
     ]
   },

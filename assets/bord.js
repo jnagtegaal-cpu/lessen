@@ -189,13 +189,18 @@
   Lesbord.laadLes(id).then((les) => {
     st.les = les; st.lesmap = `lessen/${id}`;
     if (/^[a-z-]+$/.test(les.thema || "")) document.body.classList.add(`thema-${les.thema}`);
+    if (les.thema === "pub") { // zwart is onzichtbaar op een krijtbord: de eerste pen wordt krijtwit
+      const k = document.querySelector("[data-kleur]");
+      k.dataset.kleur = "#f4efe2"; k.style.background = "#f4efe2"; k.title = "Krijt"; k.setAttribute("aria-label", "Krijt");
+      st.kleur = "#f4efe2";
+    }
     document.title = `${les.titel} · Lesbord`;
     $("titel").textContent = les.titel;
     $("knop-lesdoel").hidden = !(les.lesdoel && les.lesdoelInHoek);
     const start = Number(Lesbord.param("scherm")) || 1;
     st.index = Math.max(0, Math.min((les.schermen || []).length - 1, start - 1));
     if (typeof Score !== "undefined") Score.init(les, id, () => Score.vulEindstand(dia), pasAan);
-    if (les.live && typeof LiveHost !== "undefined") LiveHost.init(les, id, { onNamen: (n) => typeof Score !== "undefined" && Score.zetNamen(n) });
+    if (les.live && typeof LiveHost !== "undefined") LiveHost.init(les, id, { onTeams: (t) => typeof Score !== "undefined" && Score.zetTeams(t), geefPunten: (p) => typeof Score !== "undefined" && Score.geefPunten(p), plek: (tid) => (typeof Score !== "undefined" ? Score.plekVan(tid) : -1) });
     pasAan(); toonScherm();
   }).catch(() => {
     $("titel").textContent = "Deze les kon niet geladen worden";

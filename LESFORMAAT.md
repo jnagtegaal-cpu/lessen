@@ -125,7 +125,7 @@ Het scorebord staat in `assets/score.js`.
 
 ## Thema en grapjes
 
-- **`"thema": "pub"`** (op het hoogste niveau van `les.json`) geeft de les een kroeglook: houten planken, een krijtbord, bierviltjes als letters en een houten scorebalk. Zonder `thema` blijft de gewone groene stijl.
+- **`"thema": "pub"`** (op het hoogste niveau van `les.json`) geeft de les een pub-look: houten planken, een krijtbord, bierviltjes als letters en een houten scorebalk. Zonder `thema` blijft de gewone groene stijl.
 - **`"grap"`** bij een scherm zet een kort grapje op een briefje in de hoek, bijvoorbeeld `"grap": "Wie vals speelt, trakteert."`. Werkt ook zonder thema.
 
 ## Live: telefoons laten meedoen
@@ -141,7 +141,9 @@ Met `"live": true` op het hoogste niveau van `les.json` krijgt het bord een tele
 
 **Gebruiken op het bord:**
 - Tik op het telefoon-icoon en kies **Start telefoons**. De kamer onthoudt zichzelf als je de pagina herlaadt.
-- De namen die teams kiezen komen automatisch in het scorebord (de eerste teams die aansluiten, zoveel als in `scorebord.teams`).
+- De namen die teams kiezen komen automatisch in het scorebord (de eerste teams die aansluiten, zoveel als in `scorebord.teams`). Elk team houdt zijn plek en punten.
+- **Team verwijderen:** in het telefoonpaneel staat achter elk team een kruisje (twee keer tikken). De telefoon gaat terug naar het scherm om een naam te kiezen. Een team kan zich ook zelf afmelden onderaan de telefoonpagina.
+- De telefoonpagina neemt de titel en het thema van de les over.
 
 **Blokken:**
 
@@ -156,5 +158,14 @@ Soorten vragen (`soort`):
 - `vinkjes`: meerdere dingen aanvinken, met `groepen`: `[{ "naam": "Citrus", "items": ["citroen", "limoen"] }, …]`.
 
 `id` moet per vraag uniek zijn. Onder het blok staan **Toon antwoorden** en **Sluit de vraag** (na het sluiten kunnen de teams niets meer wijzigen).
+
+**Spellen in stappen** (één scherm per woord of drankje; zonder telefoons blijft een gewone versie met verborgen antwoord staan):
+
+| type | velden | gebruik |
+|---|---|---|
+| `bluf` | `id`, `woord`, `betekenis` | Teams verzinnen een betekenis → **Naar het stemmen** (alle verzinsels plus de echte, gehusseld, als A, B, C…) → teams stemmen, niet op hun eigen verzinsel → **Onthul**. Punten: 2 voor wie de echte kiest, 1 voor elke stem op je verzinsel. |
+| `proef` | `id`, `naam`, `echteNaam`, `goed`, `groepen` | Teams vinken smaken aan uit `groepen` (zoals bij `vinkjes`) → **Onthul de smaken**: de goede smaken (`goed`) en per team wat klopte. Punten: goede min foute smaken, nooit minder dan 0. `echteNaam` verschijnt bij het onthullen. |
+
+Na het onthullen zet **Punten toekennen** de punten in één keer in het scorebord. **Opnieuw** begint het spel op dat scherm opnieuw. De stand van elk spel wordt in de browser bewaard, dus herladen kan gewoon.
 
 **Let op:** de kamercode is de enige beveiliging. Gebruik live niet voor gevoelige gegevens. Voor lessen met leerlingen: laat ze geen namen of persoonlijke gegevens invullen en stem af met school wat daar mag.
