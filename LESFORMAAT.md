@@ -68,6 +68,9 @@ Een scherm is 1600 × 900 en schaalt mee op elk bord.
 | `schrijfvak` | `label` | Gestippeld vak om in te schrijven |
 | `kolommen` | `kolommen` (lijst van lijsten met blokken), `verhouding` | Naast elkaar, bijv. `["2fr","1fr"]` |
 | `html` | `html` | Maatwerk, zoals een getallenlijn of liniaal in SVG |
+| `stellingen` | `items` (`titel`, `onzin`), `antwoord` | Quizkaart met A, B, C. Na een tik komt het antwoord en krijgt elke kaart een stempel *feit* of *onzin* |
+| `smaken` | `items` | Smaken als kaartjes (proefronde), meestal met `"verborgen": true` |
+| `eindstand` | – | Ranglijst van het scorebord (alleen met `scorebord` in de les, zie hieronder) |
 
 ### Stap voor stap tonen
 
@@ -99,4 +102,59 @@ Hier komt **alleen** wat in het ontwerpgesprek besproken is.
 }
 ```
 
-`fase` mag weg als de les geen fases heeft. Dan verdwijnt die kolom in de PDF. Hetzelfde geldt voor `tijd`.
+`fase` mag weg als de les geen fases heeft. Met `"faseKop": "Onderdeel"` in `voorbereiding` krijgt die kolom een andere kop dan "Lesfase". Dan verdwijnt die kolom in de PDF. Hetzelfde geldt voor `tijd`.
+
+## Scorebord (quizzen en spellen)
+
+Voor een quiz, spel of wedstrijd zet je in `les.json` op het hoogste niveau:
+
+```json
+"scorebord": { "teams": 3 }
+```
+
+`teams` is een aantal (2 tot 8) of een lijst met standaardnamen, bijvoorbeeld `["Rood", "Blauw", "Geel"]`.
+
+Wat je dan krijgt:
+
+- **Een balk onderaan elk scherm** met de teams en hun punten. Het team met de meeste punten is groen gemarkeerd.
+- **Punten geven:** tik op "Punten geven". In het paneel typ je de teamnamen (dat opent de eerste keer vanzelf), vink je aan welke teams het goed hadden, kies je 1 tot 4 punten en tik je op "Optellen". Er is ook "Laatste ongedaan maken", corrigeren met + en − per team, en "Alles op nul" (met een tweede tik ter bevestiging).
+- **Bewaard in de browser:** de stand en de teamnamen blijven staan als je van scherm wisselt of de pagina herlaadt. Ze staan alleen op het apparaat waarmee je presenteert, niet op de site en niet in de pdf's.
+- **Blok `eindstand`:** zet dit op een slotscherm voor een grote ranglijst met plaats, naam en punten (gelijke stand = gelijke plaats). In de pdf van de presentatie staat daar een lege plek met een korte tekst.
+
+Het scorebord staat in `assets/score.js`.
+
+## Thema en grapjes
+
+- **`"thema": "pub"`** (op het hoogste niveau van `les.json`) geeft de les een kroeglook: houten planken, een krijtbord, bierviltjes als letters en een houten scorebalk. Zonder `thema` blijft de gewone groene stijl.
+- **`"grap"`** bij een scherm zet een kort grapje op een briefje in de hoek, bijvoorbeeld `"grap": "Wie vals speelt, trakteert."`. Werkt ook zonder thema.
+
+## Live: telefoons laten meedoen
+
+Met `"live": true` op het hoogste niveau van `les.json` krijgt het bord een telefoon-icoon. Teams doen mee met hun eigen telefoon of tablet: ze scannen een QR-code, kiezen een teamnaam en beantwoorden de vragen die jij op het bord zet. Er is geen account of naam nodig.
+
+**Hoe het werkt:** de pagina `doe.html` (voor de telefoons) en het bord praten via een kleine database bij Firebase (Realtime Database). Elke avond krijgt een eigen kamer met een willekeurige code van zes tekens onder `rooms/<CODE>`. De antwoorden bestaan alleen in die kamer en verdwijnen als je de kamer stopt ("Stop en wis kamer").
+
+**Instellen (eenmalig):**
+1. Maak een Firebase-project met een Realtime Database (locatie Europa, vergrendelde modus).
+2. Zet de regels uit `firebase-regels.json` bij *Regels* en klik op *Publiceren*.
+3. Zet het webadres van de database in `assets/live-config.js`.
+
+**Gebruiken op het bord:**
+- Tik op het telefoon-icoon en kies **Start telefoons**. De kamer onthoudt zichzelf als je de pagina herlaadt.
+- De namen die teams kiezen komen automatisch in het scorebord (de eerste teams die aansluiten, zoveel als in `scorebord.teams`).
+
+**Blokken:**
+
+| type | velden | gebruik |
+|---|---|---|
+| `live-aansluiten` | – | Grote QR-code, de code en de teams die binnenkomen. Zet dit op het welkomstscherm. |
+| `live` | `id`, `soort`, `vraag`, `opties`, `groepen` | Stuurt een vraag naar de telefoons en laat zien wie geantwoord heeft. |
+
+Soorten vragen (`soort`):
+- `tekst`: een vrij antwoord (maximaal 400 tekens).
+- `keuze`: kiezen uit A, B, C…, met `opties` als lijst met teksten.
+- `vinkjes`: meerdere dingen aanvinken, met `groepen`: `[{ "naam": "Citrus", "items": ["citroen", "limoen"] }, …]`.
+
+`id` moet per vraag uniek zijn. Onder het blok staan **Toon antwoorden** en **Sluit de vraag** (na het sluiten kunnen de teams niets meer wijzigen).
+
+**Let op:** de kamercode is de enige beveiliging. Gebruik live niet voor gevoelige gegevens. Voor lessen met leerlingen: laat ze geen namen of persoonlijke gegevens invullen en stem af met school wat daar mag.

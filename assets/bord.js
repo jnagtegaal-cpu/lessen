@@ -96,12 +96,14 @@
   function toonScherm() {
     const schermen = st.les.schermen || [];
     const s = st.klad ? { blokken: [], achtergrond: "leeg" } : schermen[st.index];
-    dia.className = Lesbord.diaKlassen(s);
+    dia.className = Lesbord.diaKlassen(s, st.les.thema);
     let html = Lesbord.diaHtml(s, st.lesmap);
     if (!st.klad && st.les.lesdoel && st.les.lesdoelInHoek && !s.lesdoelVerbergen) {
       html += `<div class="lesdoel-hoek"><b>Lesdoel</b>${Lesbord.opmaak(st.les.lesdoel)}</div>`;
     }
     dia.innerHTML = html;
+    if (typeof Score !== "undefined") Score.vulEindstand(dia);
+    if (typeof LiveHost !== "undefined") LiveHost.bindScherm(dia);
     const getoond = st.onthuld.get(sleutel()) || new Set();
     dia.querySelectorAll(".onthul").forEach((el, i) => el.classList.toggle("zichtbaar", getoond.has(i)));
     $("teller").textContent = st.klad ? "Kladblad" : `${st.index + 1} / ${schermen.length}`;
@@ -186,11 +188,14 @@
   const id = Lesbord.param("id");
   Lesbord.laadLes(id).then((les) => {
     st.les = les; st.lesmap = `lessen/${id}`;
+    if (/^[a-z-]+$/.test(les.thema || "")) document.body.classList.add(`thema-${les.thema}`);
     document.title = `${les.titel} · Lesbord`;
     $("titel").textContent = les.titel;
     $("knop-lesdoel").hidden = !(les.lesdoel && les.lesdoelInHoek);
     const start = Number(Lesbord.param("scherm")) || 1;
     st.index = Math.max(0, Math.min((les.schermen || []).length - 1, start - 1));
+    if (typeof Score !== "undefined") Score.init(les, id, () => Score.vulEindstand(dia), pasAan);
+    if (les.live && typeof LiveHost !== "undefined") LiveHost.init(les, id, { onNamen: (n) => typeof Score !== "undefined" && Score.zetNamen(n) });
     pasAan(); toonScherm();
   }).catch(() => {
     $("titel").textContent = "Deze les kon niet geladen worden";

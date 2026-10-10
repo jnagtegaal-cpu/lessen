@@ -68,6 +68,19 @@
       "gemaakt": "2026-10-08"
     },
     {
+      "id": "pubquiz-verjaardag",
+      "titel": "Pubquiz",
+      "groep": "Volwassenen",
+      "vak": "Pubquiz",
+      "samenvatting": "Pubquiz voor een familieavond: feiten en onzin, proeven en bluffen.",
+      "trefwoorden": [
+        "pubquiz",
+        "quiz",
+        "feest"
+      ],
+      "gemaakt": "2026-10-10"
+    },
+    {
       "id": "voorbeeld-afronden-op-tientallen",
       "titel": "Afronden op tientallen (voorbeeldles)",
       "groep": "5",

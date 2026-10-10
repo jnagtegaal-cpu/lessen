@@ -23,7 +23,7 @@
     Lesbord.laadLes(id).then((les) => {
       document.title = `Voorbereiding – ${les.titel}`;
       const v = les.voorbereiding || {};
-      const meta = [`Groep ${les.groep}`, les.vak, les.blok, les.duur ? `${les.duur} minuten` : null, les.edi ? "EDI" : null]
+      const meta = [/^\d/.test(les.groep) ? `Groep ${les.groep}` : les.groep, les.vak, les.blok, les.duur ? `${les.duur} minuten` : null, les.edi ? "EDI" : null]
         .filter(Boolean).map(esc).join(" · ");
       const lijst = (items) => `<ul>${items.map((i) => `<li>${opmaak(i)}</li>`).join("")}</ul>`;
       let h = `<h1>${esc(les.titel)}</h1><p class="sub">${meta}</p>`;
@@ -32,7 +32,7 @@
       if (v.verloop?.length) {
         const metFase = v.verloop.some((r) => r.fase);
         const metTijd = v.verloop.some((r) => r.tijd);
-        h += `<h2>Verloop</h2><table class="verloop"><thead><tr>${metTijd ? "<th>Tijd</th>" : ""}${metFase ? "<th>Lesfase</th>" : ""}<th>Wat er gebeurt</th></tr></thead><tbody>` +
+        h += `<h2>Verloop</h2><table class="verloop"><thead><tr>${metTijd ? "<th>Tijd</th>" : ""}${metFase ? `<th>${esc(v.faseKop || "Lesfase")}</th>` : ""}<th>Wat er gebeurt</th></tr></thead><tbody>` +
           v.verloop.map((r) => `<tr>${metTijd ? `<td class="tijd">${esc(r.tijd || "")}</td>` : ""}${metFase ? `<td class="fase">${esc(r.fase || "")}</td>` : ""}<td><div class="wat">${opmaak(r.wat)}</div></td></tr>`).join("") +
           `</tbody></table>`;
       }

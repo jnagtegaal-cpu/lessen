@@ -268,3 +268,281 @@ body.bord { background: #e9f1ec; overflow: hidden; height: 100vh; }
   .ikoon-knop, .dikte { width: 40px; height: 40px; }
 }
 .alles-zichtbaar .dia .b-stappen li.onthul::before { opacity: 1; }
+
+/* ---------- Scorebord (quizzen en spellen) ---------- */
+.scorebalk {
+  display: flex; align-items: center; gap: 12px; padding: 8px 14px;
+  background: var(--paper); border-top: 1px solid var(--line);
+}
+.scorebalk[hidden], .scorepaneel[hidden] { display: none; }
+.score-teams { display: flex; gap: 10px; flex: 1; flex-wrap: wrap; min-width: 0; }
+.score-team {
+  display: flex; align-items: baseline; gap: 12px; padding: 4px 16px; border-radius: 12px;
+  border: 2px solid var(--line); background: #f7fbf8; min-width: 0;
+}
+.score-team.kop { border-color: var(--groen); background: var(--groen-licht); }
+.score-naam { font-size: 18px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 22ch; }
+.score-punten { font-size: 32px; font-weight: 700; color: var(--groen-donker); line-height: 1.1; }
+
+.scorepaneel {
+  position: fixed; left: 50%; bottom: 130px; transform: translateX(-50%); z-index: 20;
+  width: min(700px, 94vw); max-height: calc(100vh - 220px); overflow: auto;
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 12px 50px rgba(20, 50, 35, .25); padding: 16px 20px 20px;
+}
+.score-kop { display: flex; align-items: center; justify-content: space-between; }
+.score-kop h3 { margin: 0; font-size: 22px; }
+.scorepaneel h4 { margin: 14px 0 8px; font-size: 14px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); }
+.score-namen { display: flex; gap: 8px; flex-wrap: wrap; }
+.score-namen input {
+  flex: 1; min-width: 150px; font: inherit; font-size: 20px; padding: 9px 12px; border: 2px solid var(--line);
+  border-radius: 10px; background: #fff; color: var(--ink);
+}
+.score-namen input:focus { outline: 0; border-color: var(--groen); }
+.score-keuze { display: flex; gap: 10px; flex-wrap: wrap; }
+.score-vink {
+  display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; padding: 10px 16px;
+  border: 2px solid var(--line); border-radius: 12px; cursor: pointer; user-select: none;
+}
+.score-vink:has(input:checked) { background: var(--groen-licht); border-color: var(--groen); }
+.score-vink input { width: 26px; height: 26px; accent-color: var(--groen); }
+.score-actie { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+.score-actie select { font: inherit; font-size: 18px; padding: 8px 10px; border: 2px solid var(--line); border-radius: 10px; }
+.score-melding { margin: 8px 0 0; min-height: 1.4em; color: var(--groen-donker); font-weight: 700; }
+.score-corr { display: flex; flex-direction: column; gap: 6px; }
+.score-corr-rij { display: flex; align-items: center; gap: 10px; font-size: 20px; }
+.score-corr-rij span { flex: 1; font-weight: 700; }
+.score-corr-rij b { min-width: 2.2em; text-align: center; font-size: 24px; color: var(--groen-donker); }
+.score-corr-rij .knop { padding: 4px 18px; font-size: 24px; }
+.score-voet { margin-top: 10px; }
+
+/* Eindstand op een dia */
+.b-eindstand { display: flex; flex-direction: column; gap: 18px; }
+.b-eindstand:empty::before { content: "De eindstand verschijnt hier tijdens de quiz."; font-size: 32px; color: var(--ink-soft); }
+.eind-rij {
+  display: flex; align-items: center; gap: 28px; padding: 18px 36px; border-radius: 18px;
+  border: 3px solid var(--line); background: #f7fbf8; font-size: 60px; font-weight: 700;
+}
+.eind-plaats {
+  flex: none; width: 88px; height: 88px; border-radius: 50%; background: #9fb8a9; color: #fff;
+  display: grid; place-items: center;
+}
+.eind-naam { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.eind-punten { color: var(--groen-donker); }
+.eind-rij.plaats-1 { background: var(--groen-licht); border-color: var(--groen); }
+.eind-rij.plaats-1 .eind-plaats { background: var(--groen); }
+
+@media (max-width: 700px) {
+  .score-naam { font-size: 15px; max-width: 12ch; }
+  .score-punten { font-size: 24px; }
+  .scorepaneel { bottom: 100px; }
+}
+
+/* ---------- Quizkaarten en smaken (alle thema's) ---------- */
+.b-stellingen { display: flex; flex-direction: column; gap: 20px; }
+.stelling {
+  position: relative; display: flex; align-items: center; gap: 28px; padding: 18px 34px 18px 24px;
+  background: #f7fbf8; border: 3px solid var(--line); border-radius: 20px;
+  font-size: 46px; font-weight: 700; line-height: 1.15;
+}
+.stelling-letter {
+  flex: none; width: 82px; height: 82px; border-radius: 50%; background: var(--groen); color: #fff;
+  display: grid; place-items: center; font-size: 46px;
+}
+.stelling-titel { flex: 1; min-width: 0; }
+.stempel {
+  display: none; position: absolute; right: 28px; top: 50%; transform: translateY(-50%) rotate(-5deg);
+  padding: 4px 22px; border: 4px solid; border-radius: 12px; font-size: 34px; letter-spacing: .12em;
+  text-transform: uppercase; background: rgba(255, 255, 255, .9);
+}
+.stempel.onzin { color: var(--rood); border-color: var(--rood); }
+.stempel.feit { color: var(--groen-donker); border-color: var(--groen); }
+.b-stellingen:has(.antwoord-trigger.zichtbaar) .stempel,
+.alles-zichtbaar .b-stellingen .stempel { display: block; }
+.b-stellingen:has(.antwoord-trigger.zichtbaar) .stelling.onzin,
+.alles-zichtbaar .b-stellingen .stelling.onzin { border-color: var(--rood); background: #fdeeed; }
+.b-stellingen:has(.antwoord-trigger.zichtbaar) .stelling.feit,
+.alles-zichtbaar .b-stellingen .stelling.feit { border-color: var(--groen); }
+.b-stellingen:has(.antwoord-trigger.zichtbaar) .stelling-titel,
+.alles-zichtbaar .b-stellingen .stelling-titel { padding-right: 190px; }
+.b-antwoord { font-size: 40px; font-weight: 700; text-align: center; padding: 14px 24px; min-height: 80px; display: grid; place-items: center; }
+.b-smaken { display: flex; flex-wrap: wrap; gap: 14px; }
+.b-smaken span {
+  padding: 6px 22px; border-radius: 999px; background: var(--groen-licht); border: 2px solid var(--groen);
+  color: var(--groen-donker); font-size: 34px; font-weight: 700;
+}
+
+/* ---------- Thema "pub": houten kroeg met een krijtbord ---------- */
+.grap {
+  position: absolute; right: 96px; bottom: 76px; max-width: 560px; transform: rotate(-3deg); z-index: 3;
+  background: #fff6a8; color: #4a3a00; padding: 8px 22px; font-size: 30px; line-height: 1.2;
+  border-radius: 4px; box-shadow: 0 4px 10px rgba(0, 0, 0, .35);
+}
+body.bord.thema-pub { background: #1b0f07; }
+.thema-pub .podium { background: radial-gradient(ellipse at 50% 40%, #3a2312, #1b0f07 75%); }
+.thema-pub .dia-houder { box-shadow: 0 14px 50px rgba(0, 0, 0, .65); background: #4a2e17; }
+.dia.thema-pub {
+  --krijt: #f4efe2; --koper: #e0a84a; --hout-licht: #a8733a; --hout-donker: #3b2312; --bord: #27312b;
+  isolation: isolate; color: var(--krijt); padding: 80px 116px 76px;
+  background:
+    repeating-linear-gradient(90deg, rgba(0,0,0,0) 0 196px, rgba(0,0,0,.5) 196px 199px, rgba(255,255,255,.07) 199px 201px, rgba(0,0,0,0) 201px 400px),
+    repeating-linear-gradient(0deg, rgba(0,0,0,.07) 0 2px, rgba(255,255,255,.035) 2px 5px, rgba(0,0,0,.06) 5px 6px, rgba(0,0,0,0) 6px 13px),
+    repeating-linear-gradient(90deg, #6a4424 0 200px, #5b3a1d 200px 400px);
+}
+.dia.thema-pub::before { /* het krijtbord in een houten lijst */
+  content: ""; position: absolute; inset: 40px; z-index: -1; border-radius: 12px;
+  background:
+    radial-gradient(ellipse at 18% 12%, rgba(255,255,255,.08), transparent 55%),
+    radial-gradient(ellipse at 88% 92%, rgba(255,255,255,.05), transparent 50%),
+    var(--bord);
+  border: 14px solid var(--hout-licht);
+  box-shadow: 0 0 0 3px var(--hout-donker), inset 0 0 0 3px var(--hout-donker), inset 0 0 80px rgba(0,0,0,.7), 0 14px 30px rgba(0,0,0,.55);
+}
+.dia.thema-pub::after {
+  content: "🍺  DE GROTE KROEGQUIZ  🍺"; position: absolute; left: 50%; bottom: 8px; transform: translateX(-50%);
+  font-family: "Rye", Georgia, serif; font-size: 20px; letter-spacing: .22em; white-space: nowrap;
+  color: var(--koper); text-shadow: 0 2px 0 #2a170a;
+  background: #4d3017; padding: 2px 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.thema-pub .b-kop { font-family: "Rye", Georgia, serif; font-weight: 400; color: var(--koper); text-shadow: 0 3px 0 rgba(0,0,0,.5); letter-spacing: .01em; }
+.thema-pub .b-subkop { font-family: "Caveat Brush", "Segoe Print", cursive; font-weight: 400; color: #f1c45f; font-size: 58px; }
+.thema-pub .b-tekst { color: var(--krijt); }
+.thema-pub .b-klein { color: #d8c9a8; }
+.thema-pub .b-groot { font-family: "Rye", Georgia, serif; font-weight: 400; color: var(--koper); text-shadow: 0 4px 0 rgba(0,0,0,.5); }
+.thema-pub .b-vraag {
+  background: rgba(255,255,255,.04); color: var(--krijt); border: 3px solid rgba(244,239,226,.6);
+  border-radius: 16px 22px 14px 24px / 24px 14px 22px 16px;
+}
+.thema-pub .b-fase-tag { background: var(--koper); color: #2a170a; font-family: "Rye", Georgia, serif; font-weight: 400; letter-spacing: .1em; font-size: 22px; }
+.thema-pub .b-fase-tag::before { content: "🍺 "; }
+.thema-pub .b-lijst li::marker { color: var(--koper); }
+.thema-pub .b-stappen li { background: rgba(255,255,255,.05); border-color: rgba(244,239,226,.4); }
+.thema-pub .b-stappen li::before { background: #efe0bf; color: #4a2a12; font-family: "Rye", Georgia, serif; box-shadow: inset 0 0 0 4px #c89b55; }
+.thema-pub .b-tabel td, .thema-pub .b-tabel th { border-color: rgba(244,239,226,.4); }
+.thema-pub .b-tabel th { background: rgba(224,168,74,.2); color: var(--koper); }
+.thema-pub .b-schrijfvak { border-color: rgba(244,239,226,.4); }
+.dia.thema-pub .onthul:not(.zichtbaar) {
+  background: repeating-linear-gradient(-45deg, rgba(255,255,255,.03) 0 14px, rgba(0,0,0,.14) 14px 28px);
+  border: 2px dashed rgba(244,239,226,.4);
+}
+.dia.thema-pub .onthul:not(.zichtbaar)::after { color: #cdbb90; font-family: "Caveat Brush", cursive; font-size: 30px; }
+
+/* Quizkaart als menukaart */
+.thema-pub .stelling {
+  background: rgba(255,255,255,.04); border: 3px solid rgba(244,239,226,.6); color: var(--krijt);
+  border-radius: 16px 22px 14px 24px / 24px 14px 22px 16px; text-shadow: 0 0 1px rgba(255,255,255,.4);
+}
+.thema-pub .stelling-letter { /* bierviltje */
+  width: 92px; height: 92px; transform: rotate(-8deg); border: 0;
+  background: radial-gradient(circle, #f3e3bd 0 54%, #e4cb94 55% 60%, #f3e3bd 61% 100%);
+  box-shadow: inset 0 0 0 4px #c89b55, 0 5px 9px rgba(0,0,0,.55);
+  color: #4a2a12; font-family: "Rye", Georgia, serif; font-size: 46px;
+}
+.thema-pub .stelling:nth-child(2) .stelling-letter { transform: rotate(6deg); }
+.thema-pub .stelling:nth-child(3) .stelling-letter { transform: rotate(-3deg); }
+.thema-pub .stempel { background: rgba(27,15,7,.88); font-family: "Rye", Georgia, serif; letter-spacing: .06em; }
+.thema-pub .stempel.onzin { color: #ff8a7a; border-color: #ff8a7a; }
+.thema-pub .stempel.feit { color: #8fe3a8; border-color: #8fe3a8; }
+.thema-pub .b-stellingen:has(.antwoord-trigger.zichtbaar) .stelling.onzin,
+.alles-zichtbaar .thema-pub .b-stellingen .stelling.onzin { background: rgba(140,35,25,.38); border-color: #ff8a7a; }
+.thema-pub .b-stellingen:has(.antwoord-trigger.zichtbaar) .stelling.feit,
+.alles-zichtbaar .thema-pub .b-stellingen .stelling.feit { border-color: #8fe3a8; }
+.thema-pub .b-antwoord { font-family: "Caveat Brush", cursive; font-weight: 400; font-size: 54px; color: var(--koper); }
+
+/* Smaken als kaartjes aan een flesje */
+.thema-pub .b-smaken span {
+  position: relative; padding-left: 44px; background: #efe0bf; color: #4a2a12; border: 0;
+  border-radius: 6px 20px 20px 6px; box-shadow: 0 4px 8px rgba(0,0,0,.5);
+}
+.thema-pub .b-smaken span::before {
+  content: ""; position: absolute; left: 14px; top: 50%; width: 14px; height: 14px; transform: translateY(-50%);
+  border-radius: 50%; background: var(--bord); box-shadow: inset 0 0 0 3px #8b6a3a;
+}
+.thema-pub .b-smaken span:nth-child(odd) { transform: rotate(-1.5deg); }
+.thema-pub .b-smaken span:nth-child(even) { transform: rotate(1.5deg); }
+
+/* Eindstand als houten bordjes */
+.thema-pub .eind-rij {
+  background: linear-gradient(#7a5028, #5f3d1e); border: 3px solid #2a170a; border-radius: 10px;
+  box-shadow: 0 6px 0 #2a170a; color: #f6e7c4; font-family: "Rye", Georgia, serif; font-weight: 400; font-size: 54px;
+}
+.thema-pub .eind-plaats { background: #efe0bf; color: #4a2a12; box-shadow: inset 0 0 0 5px #c89b55; }
+.thema-pub .eind-punten { color: var(--koper); }
+.thema-pub .eind-rij.plaats-1 { background: linear-gradient(#d3a04a, #a97426); border-color: #2a170a; color: #2a170a; }
+.thema-pub .eind-rij.plaats-1 .eind-plaats { background: #fff3cf; color: #4a2a12; }
+.thema-pub .eind-rij.plaats-1 .eind-punten { color: #2a170a; }
+.thema-pub .eind-rij.plaats-1 .eind-naam::after { content: "  🏆"; }
+.thema-pub .b-eindstand:empty::before { color: #d8c9a8; }
+
+/* Briefje met grapje */
+.thema-pub .grap { background: #efe0bf; color: #4a2a12; font-family: "Caveat Brush", "Segoe Print", cursive; font-size: 34px; box-shadow: 0 5px 12px rgba(0,0,0,.55); }
+
+/* Scorebalk in het thema: een houten plank met koperen bordjes */
+body.thema-pub .scorebalk { background: linear-gradient(#4a2e17, #35200f); border-top: 3px solid #a8733a; }
+body.thema-pub .score-team { background: var(--bord, #27312b); border: 2px solid rgba(244,239,226,.55); color: #f4efe2; }
+body.thema-pub .score-team.kop { border-color: #e0a84a; background: #3a3820; }
+body.thema-pub .score-punten { color: #e0a84a; }
+
+/* Voorbereiding: kop blijft bij zijn tekst */
+.formulier h2 { break-after: avoid; }
+.formulier p { orphans: 3; widows: 3; }
+
+/* ---------- Live: telefoons laten meedoen ---------- */
+.livepaneel {
+  position: fixed; right: 16px; top: 70px; z-index: 20; width: min(360px, 94vw); max-height: calc(100vh - 100px); overflow: auto;
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 12px 50px rgba(20, 50, 35, .25); padding: 14px 18px 18px;
+}
+.livepaneel[hidden] { display: none; }
+.live-kop { display: flex; align-items: center; justify-content: space-between; }
+.live-kop h3 { margin: 0; font-size: 22px; }
+.livepaneel h4 { margin: 14px 0 6px; font-size: 14px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); }
+.live-uitleg { color: var(--ink-soft); margin: 8px 0 12px; }
+.live-qr { width: 230px; margin: 8px auto 0; }
+.live-qr svg { width: 100%; height: auto; display: block; border-radius: 8px; }
+.live-code { text-align: center; font-size: 40px; font-weight: 700; letter-spacing: .2em; margin: 6px 0 0; }
+.live-link { text-align: center; font-size: 12px; color: var(--ink-soft); word-break: break-all; margin: 4px 0; }
+.live-status { text-align: center; font-size: 14px; margin: 4px 0; color: var(--groen-donker); font-weight: 700; }
+.live-status.fout, .live-status.opnieuw { color: var(--rood); }
+.live-teams { margin: 0 0 12px; padding-left: 1.2em; font-size: 18px; }
+.live-teams .extra { color: var(--ink-soft); text-decoration: line-through; }
+.live-teams .leeg { list-style: none; margin-left: -1.2em; color: var(--ink-soft); }
+.live-fout { color: var(--rood); font-weight: 700; }
+code { background: #eef2ef; padding: 1px 6px; border-radius: 5px; font-size: .92em; }
+
+.b-aansluiten { display: flex; gap: 60px; align-items: center; }
+.aansluit-qr { width: 420px; flex: none; }
+.aansluit-qr svg { width: 100%; height: auto; display: block; border-radius: 14px; }
+.aansluit-tekst { flex: 1; min-width: 0; }
+.aansluit-stap { font-size: 36px; color: var(--ink-soft); }
+.aansluit-code { font-size: 96px; font-weight: 700; letter-spacing: .18em; line-height: 1.1; margin: 4px 0 14px; }
+.aansluit-teams { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 12px; }
+.aansluit-teams li { font-size: 40px; font-weight: 700; padding: 6px 22px; border-radius: 14px; border: 3px solid var(--groen); background: var(--groen-licht); }
+.aansluit-teams li.leeg { border-style: dashed; background: none; color: var(--ink-soft); font-weight: 400; }
+.live-groot { font-size: 36px; padding: 18px 34px; }
+
+.b-live { display: flex; flex-direction: column; gap: 16px; }
+.live-blok-kop { font-size: 38px; }
+.live-blok-uit { font-size: 32px; color: var(--ink-soft); border: 3px dashed var(--line); border-radius: 16px; padding: 24px; }
+.live-antw { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.live-antw li { display: flex; gap: 24px; align-items: baseline; font-size: 40px; padding: 10px 24px; border: 3px solid var(--line); border-radius: 14px; background: #f7fbf8; }
+.live-antw li.klaar { border-color: var(--groen); background: var(--groen-licht); }
+.live-antw .naam { font-weight: 700; min-width: 5em; }
+.live-antw .inhoud { flex: 1; }
+.live-antw .vink { margin-left: auto; font-weight: 700; color: var(--groen-donker); }
+.live-blok-knoppen { display: flex; gap: 12px; }
+.live-blok-knoppen .knop { font-size: 24px; padding: 10px 22px; }
+.b-live:empty::before { content: "Hier verschijnen de antwoorden van de telefoons tijdens de quiz."; font-size: 30px; color: var(--ink-soft); }
+.b-aansluiten:empty::before { content: "Hier verschijnt een QR-code waarmee de teams meedoen."; font-size: 30px; color: var(--ink-soft); }
+
+/* Live in het pubthema */
+.thema-pub .aansluit-qr svg { border: 8px solid #efe0bf; }
+.thema-pub .aansluit-stap { color: #d8c9a8; }
+.thema-pub .aansluit-code { font-family: "Rye", Georgia, serif; font-weight: 400; color: var(--koper); }
+.thema-pub .aansluit-teams li { background: rgba(255,255,255,.05); border-color: rgba(244,239,226,.6); color: var(--krijt); }
+.thema-pub .aansluit-teams li.leeg { color: #b6c9bb; }
+.thema-pub .live-blok-kop { color: var(--krijt); }
+.thema-pub .live-antw li { background: rgba(255,255,255,.04); border-color: rgba(244,239,226,.5); color: var(--krijt); }
+.thema-pub .live-antw li.klaar { border-color: #8fe3a8; background: rgba(60,120,80,.28); }
+.thema-pub .live-antw .vink { color: #8fe3a8; }
+.thema-pub .live-blok-uit, .thema-pub .b-live:empty::before, .thema-pub .b-aansluiten:empty::before { color: #cdbb90; border-color: rgba(244,239,226,.4); }

@@ -53,15 +53,37 @@ const Lesbord = (() => {
           .map((k) => `<div class="b-kolom">${(k || []).map((x) => blok(x, lesmap)).join("")}</div>`)
           .join("")}</div>`;
       }
+      case "stellingen": {
+        // Quizkaart: drie stellingen (A, B, C) met een verborgen antwoord. Items: { titel, onzin?: true }.
+        const items = b.items || [];
+        const kaarten = items.map((it, i) => {
+          const o = it.onzin ? "onzin" : "feit";
+          return `<div class="stelling ${o}"><span class="stelling-letter">${String.fromCharCode(65 + i)}</span>` +
+            `<span class="stelling-titel">${opmaak(it.titel)}</span>` +
+            `<span class="stempel ${o}">${it.onzin ? "Onzin" : "Feit"}</span></div>`;
+        }).join("");
+        const antwoord = b.antwoord ? `<div class="onthul antwoord-trigger b-antwoord"><span>${opmaak(b.antwoord)}</span></div>` : "";
+        return `<div class="b-stellingen"${stijl}>${kaarten}${antwoord}</div>`;
+      }
+      case "smaken": return `<div class="b-smaken"${stijl}>${(b.items || []).map((s) => `<span>${opmaak(s)}</span>`).join("")}</div>`;
+      case "live": { // vraag naar de telefoons van de teams; de antwoorden verschijnen hier (zie live-host.js)
+        const def = { id: b.id, soort: b.soort || "tekst", tekst: b.vraag || "", opties: b.opties, groepen: b.groepen };
+        return `<div class="b-live" data-live="${esc(JSON.stringify(def))}"${stijl}></div>`;
+      }
+      case "live-aansluiten": return `<div class="b-aansluiten" data-aansluiten${stijl}></div>`;
+      case "eindstand": return `<div class="b-eindstand" data-eindstand${stijl}></div>`; // wordt op het bord gevuld door score.js
       case "html": return b.html || ""; // maatwerk per les
       default: return `<p class="b-klein">[onbekend bloktype: ${esc(b.type)}]</p>`;
     }
   };
 
-  const diaHtml = (scherm, lesmap) => (scherm.blokken || []).map((b) => blok(b, lesmap)).join("");
+  const diaHtml = (scherm, lesmap) =>
+    (scherm.blokken || []).map((b) => blok(b, lesmap)).join("") +
+    (scherm.grap ? `<div class="grap">${opmaak(scherm.grap)}</div>` : ""); // grapje op een briefje in de hoek
 
-  const diaKlassen = (scherm) => {
+  const diaKlassen = (scherm, thema) => {
     const k = ["dia"];
+    if (/^[a-z-]+$/.test(thema || "")) k.push(`thema-${thema}`);
     if (scherm.achtergrond && scherm.achtergrond !== "leeg") k.push(`achtergrond-${scherm.achtergrond}`);
     if (scherm.uitlijning === "midden") k.push("b-titeldia");
     return k.join(" ");

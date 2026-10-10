@@ -1,0 +1,661 @@
+{
+  "id": "pubquiz-verjaardag",
+  "titel": "Pubquiz",
+  "groep": "Volwassenen",
+  "vak": "Pubquiz",
+  "samenvatting": "Pubquiz voor een familieavond: feiten en onzin, proeven en bluffen.",
+  "trefwoorden": [
+    "pubquiz",
+    "quiz",
+    "feest"
+  ],
+  "gemaakt": "2026-10-10",
+  "scorebord": {
+    "teams": 3
+  },
+  "schermen": [
+    {
+      "fase": "Welkom",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Vrijdagavond"
+        },
+        {
+          "type": "kop",
+          "tekst": "De grote familie-pubquiz"
+        },
+        {
+          "type": "klein",
+          "tekst": "Scan de QR-code en kies een teamnaam."
+        },
+        {
+          "type": "live-aansluiten"
+        }
+      ],
+      "notitie": "Tik op het telefoon-icoon bovenin en kies 'Start telefoons'. Teams scannen de QR-code en kiezen zelf een naam; die verschijnt hier en in het scorebord. Lukt het niet, typ de namen dan in het scorebord (Punten geven)."
+    },
+    {
+      "fase": "Ronde 1",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Ronde 1"
+        },
+        {
+          "type": "kop",
+          "tekst": "Natuur"
+        },
+        {
+          "type": "subkop",
+          "tekst": "Twee feiten, één onzin"
+        },
+        {
+          "type": "klein",
+          "tekst": "Bespreek het in je team en schrijf de letter van de onzin op."
+        }
+      ]
+    },
+    {
+      "fase": "Natuur · kaart 1",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Natuur · kaart 1"
+        },
+        {
+          "type": "kop",
+          "tekst": "Reuzen onder de grond"
+        },
+        {
+          "type": "stellingen",
+          "items": [
+            {
+              "titel": "De Zwam van Oregon"
+            },
+            {
+              "titel": "Het Bos dat één Boom is"
+            },
+            {
+              "titel": "De Longen van de Aarde",
+              "onzin": true
+            }
+          ],
+          "antwoord": "❌ **C** is de onzin"
+        }
+      ],
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+    },
+    {
+      "fase": "Natuur · kaart 2",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Natuur · kaart 2"
+        },
+        {
+          "type": "kop",
+          "tekst": "Planten en insecten met een kalender"
+        },
+        {
+          "type": "stellingen",
+          "items": [
+            {
+              "titel": "De Eeuwenbloeier"
+            },
+            {
+              "titel": "De Priemgetal-Insecten"
+            },
+            {
+              "titel": "De Drinkfles van de Woestijn",
+              "onzin": true
+            }
+          ],
+          "antwoord": "❌ **C** is de onzin"
+        }
+      ],
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+    },
+    {
+      "fase": "Ronde 2",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Ronde 2"
+        },
+        {
+          "type": "kop",
+          "tekst": "Geschiedenis"
+        },
+        {
+          "type": "subkop",
+          "tekst": "Twee feiten, één onzin"
+        },
+        {
+          "type": "klein",
+          "tekst": "Bespreek het in je team en schrijf de letter van de onzin op."
+        }
+      ]
+    },
+    {
+      "fase": "Geschiedenis · kaart 1",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Geschiedenis · kaart 1"
+        },
+        {
+          "type": "kop",
+          "tekst": "Als het weer de geschiedenis schrijft"
+        },
+        {
+          "type": "stellingen",
+          "items": [
+            {
+              "titel": "Het Jaar zonder Zomer"
+            },
+            {
+              "titel": "De Dans zonder Einde"
+            },
+            {
+              "titel": "De Peper-Truc",
+              "onzin": true
+            }
+          ],
+          "antwoord": "❌ **C** is de onzin"
+        }
+      ],
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+    },
+    {
+      "fase": "Geschiedenis · kaart 2",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Geschiedenis · kaart 2"
+        },
+        {
+          "type": "kop",
+          "tekst": "Mislukte missies, gestolen schatten"
+        },
+        {
+          "type": "stellingen",
+          "items": [
+            {
+              "titel": "De Oorlog tegen de Emoes"
+            },
+            {
+              "titel": "De Gestolen Glimlach"
+            },
+            {
+              "titel": "De Ridder aan de Kraan",
+              "onzin": true
+            }
+          ],
+          "antwoord": "❌ **C** is de onzin"
+        }
+      ],
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+    },
+    {
+      "fase": "Ronde 3",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Ronde 3"
+        },
+        {
+          "type": "kop",
+          "tekst": "Muziek"
+        },
+        {
+          "type": "subkop",
+          "tekst": "Twee feiten, één onzin"
+        },
+        {
+          "type": "klein",
+          "tekst": "Bespreek het in je team en schrijf de letter van de onzin op."
+        }
+      ]
+    },
+    {
+      "fase": "Muziek · kaart 1",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Muziek · kaart 1"
+        },
+        {
+          "type": "kop",
+          "tekst": "Muziek uit de oertijd"
+        },
+        {
+          "type": "stellingen",
+          "items": [
+            {
+              "titel": "De Fluit van Gierenbot"
+            },
+            {
+              "titel": "Het Orgel van Druipsteen"
+            },
+            {
+              "titel": "De Stradivarius wint altijd",
+              "onzin": true
+            }
+          ],
+          "antwoord": "❌ **C** is de onzin"
+        }
+      ],
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+    },
+    {
+      "fase": "Muziek · kaart 2",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Muziek · kaart 2"
+        },
+        {
+          "type": "kop",
+          "tekst": "Eeuwige stukken en eerste keren"
+        },
+        {
+          "type": "stellingen",
+          "items": [
+            {
+              "titel": "Het Orgelstuk van 639 jaar"
+            },
+            {
+              "titel": "De Eerste Cd uit de Fabriek"
+            },
+            {
+              "titel": "Thriller in de Winkel",
+              "onzin": true
+            }
+          ],
+          "antwoord": "❌ **C** is de onzin"
+        }
+      ],
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+    },
+    {
+      "fase": "Ronde 4",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Ronde 4"
+        },
+        {
+          "type": "kop",
+          "tekst": "Dieren"
+        },
+        {
+          "type": "subkop",
+          "tekst": "Twee feiten, één onzin"
+        },
+        {
+          "type": "klein",
+          "tekst": "Bespreek het in je team en schrijf de letter van de onzin op."
+        }
+      ]
+    },
+    {
+      "fase": "Dieren · kaart 1",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Dieren · kaart 1"
+        },
+        {
+          "type": "kop",
+          "tekst": "Slimme trucs van de natuur"
+        },
+        {
+          "type": "stellingen",
+          "items": [
+            {
+              "titel": "De Octopus die zijn RNA bijwerkt"
+            },
+            {
+              "titel": "De Klap met Licht"
+            },
+            {
+              "titel": "De Haai zonder Kanker",
+              "onzin": true
+            }
+          ],
+          "antwoord": "❌ **C** is de onzin"
+        }
+      ],
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+    },
+    {
+      "fase": "Dieren · kaart 2",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Dieren · kaart 2"
+        },
+        {
+          "type": "kop",
+          "tekst": "Verrassende vrienden en vijanden"
+        },
+        {
+          "type": "stellingen",
+          "items": [
+            {
+              "titel": "De Vleermuis die zijn Maaltijd deelt"
+            },
+            {
+              "titel": "De Pinguïns die je vanuit de Ruimte ziet"
+            },
+            {
+              "titel": "De Oorworm in je Oor",
+              "onzin": true
+            }
+          ],
+          "antwoord": "❌ **C** is de onzin"
+        }
+      ],
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+    },
+    {
+      "fase": "Dieren · kaart 3 (reserve)",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Dieren · kaart 3 (reserve)"
+        },
+        {
+          "type": "kop",
+          "tekst": "Gif, geheugen en mythes"
+        },
+        {
+          "type": "stellingen",
+          "items": [
+            {
+              "titel": "De Kikker die zijn Gif haalt uit zijn Eten"
+            },
+            {
+              "titel": "De Kraaien die Gezichten onthouden"
+            },
+            {
+              "titel": "De Lemmingen die springen",
+              "onzin": true
+            }
+          ],
+          "antwoord": "❌ **C** is de onzin"
+        }
+      ],
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord. Reserve: sla deze kaart over als de avond uitloopt."
+    },
+    {
+      "fase": "Ronde 5",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Ronde 5"
+        },
+        {
+          "type": "kop",
+          "tekst": "Onderwijs en ontwikkeling"
+        },
+        {
+          "type": "subkop",
+          "tekst": "Twee feiten, één onzin"
+        },
+        {
+          "type": "klein",
+          "tekst": "Bespreek het in je team en schrijf de letter van de onzin op."
+        }
+      ]
+    },
+    {
+      "fase": "Onderwijs · kaart 1",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Onderwijs · kaart 1"
+        },
+        {
+          "type": "kop",
+          "tekst": "Wat we dachten te weten over leren"
+        },
+        {
+          "type": "stellingen",
+          "items": [
+            {
+              "titel": "Het omgekeerde Flynn-effect"
+            },
+            {
+              "titel": "De Klas die weinig uitmaakt"
+            },
+            {
+              "titel": "De Leerstijlen",
+              "onzin": true
+            }
+          ],
+          "antwoord": "❌ **C** is de onzin"
+        }
+      ],
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+    },
+    {
+      "fase": "Onderwijs · kaart 2",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Onderwijs · kaart 2"
+        },
+        {
+          "type": "kop",
+          "tekst": "Overhoren, wachten en suiker"
+        },
+        {
+          "type": "stellingen",
+          "items": [
+            {
+              "titel": "Zelf Overhoren wint"
+            },
+            {
+              "titel": "De Marshmallowtest"
+            },
+            {
+              "titel": "De Suikerkick",
+              "onzin": true
+            }
+          ],
+          "antwoord": "❌ **C** is de onzin"
+        }
+      ],
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten in het scorebord."
+    },
+    {
+      "fase": "Proefronde",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Proefronde · voorbeeldscherm"
+        },
+        {
+          "type": "kop",
+          "tekst": "Biertje 1"
+        },
+        {
+          "type": "vraag",
+          "tekst": "Wat proef je? Vink alle smaken aan die je herkent."
+        },
+        {
+          "type": "smaken",
+          "items": [
+            "honing",
+            "banaan",
+            "sinaasappelschil",
+            "kruidnagel",
+            "witte peper",
+            "droge afdronk"
+          ],
+          "verborgen": true
+        },
+        {
+          "type": "klein",
+          "tekst": "Voorbeeld: de echte smaken volgen zodra de bieren zijn gekocht."
+        }
+      ]
+    },
+    {
+      "fase": "Pauze",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Pauze"
+        },
+        {
+          "type": "kop",
+          "tekst": "Pauze"
+        },
+        {
+          "type": "klein",
+          "tekst": "Daarna gaan we verder met de bluf-ronde."
+        }
+      ]
+    },
+    {
+      "fase": "Bluf",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Bluf-ronde"
+        },
+        {
+          "type": "groot",
+          "tekst": "droogstoppel"
+        },
+        {
+          "type": "vraag",
+          "tekst": "Verzin een betekenis die zo echt mogelijk klinkt."
+        },
+        {
+          "type": "klein",
+          "tekst": "Schrijf op je briefje, met je teamnaam erop."
+        }
+      ]
+    },
+    {
+      "fase": "Uitslag",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Uitslag"
+        },
+        {
+          "type": "kop",
+          "tekst": "De eindstand"
+        },
+        {
+          "type": "eindstand"
+        }
+      ]
+    }
+  ],
+  "thema": "pub",
+  "voorbereiding": {
+    "faseKop": "Onderdeel",
+    "benodigdheden": [
+      "Laptop met Lesbord op het grote scherm",
+      "Een pen en briefjes per team",
+      "Antwoordformulier voor de proefronde (pdf, volgt)"
+    ],
+    "verloop": [
+      {
+        "fase": "Welkom",
+        "wat": "Drie teams. Typ de teamnamen in het scorebord onderaan (opent vanzelf de eerste keer)."
+      },
+      {
+        "fase": "Feitenrondes",
+        "wat": "Vijf thema's: natuur, geschiedenis, muziek, dieren, onderwijs en ontwikkelingspsychologie. Per thema twee kaarten (bij dieren een derde als reserve). Elke kaart: twee feiten en één onzin."
+      },
+      {
+        "fase": "Proefronde",
+        "wat": "Vier speciaalbieren en één whisky (The Glenlivet), blind geproefd. Per drankje een aanvinklijst; jij geeft de punten aan de hand van de goede antwoorden en leest het ervaringsverhaal voor. (Volgt nadat de drankjes zijn gekocht.)"
+      },
+      {
+        "fase": "Pauze",
+        "wat": "Pauze."
+      },
+      {
+        "fase": "Bluf-ronde",
+        "wat": "Zeldzame Nederlandse woorden. Elk team verzint een betekenis, jij leest alle opties voor en de teams kiezen welke echt is. (Wordt uitgewerkt.)"
+      },
+      {
+        "fase": "Uitslag",
+        "wat": "Eindstand en winnaar."
+      }
+    ],
+    "secties": [
+      {
+        "kop": "Zo werkt een kaart",
+        "items": [
+          "Lees de drie stellingen voor, A, B en C (de teksten staan hieronder bij elke kaart).",
+          "Op het bord staan alleen de korte titels. Elk team schrijft de letter van de onzin op een briefje.",
+          "Tik op het scherm: de stempels FEIT en ONZIN verschijnen.",
+          "Lees het verhaal voor na het raden.",
+          "Geef de punten: tik op \"Punten geven\" en vink de teams aan die het goed hadden."
+        ]
+      },
+      {
+        "kop": "Kaart 1 · Natuur · Reuzen onder de grond",
+        "tekst": "**Voorlezen vóór het raden**\n**A. De Zwam van Oregon.** Wie door de Blue Mountains in Oregon wandelt, ziet hier en daar een bosje honingzwammen staan. Wat hij niet ziet: die horen allemaal bij hetzelfde wezen. Onder de grond strekt zich één schimmelnetwerk uit over negen tot tien vierkante kilometer, met hetzelfde erfelijk materiaal. Schattingen van zijn leeftijd beginnen bij 2.400 jaar.\n\n**B. Het Bos dat één Boom is.** In Utah staat een espenbos van zo'n 47.000 stammen. Het lijkt een gewoon bos, maar alle stammen zijn uitlopers van één wortelstelsel en hebben identiek erfelijk materiaal. Samen wegen ze naar schatting 6.000 ton. Een afzonderlijke stam wordt hooguit 130 jaar oud, maar het wortelstelsel eronder is veel ouder.\n\n**C. De Longen van de Aarde.** Planten nemen koolstofdioxide op en maken zuurstof. Daarom noemt men het Amazonewoud \"de longen van de aarde\": het levert ruim een vijfde van alle zuurstof die wij inademen. Doordat er zoveel bomen staan, voegt het woud elk jaar netto een gigantische hoeveelheid zuurstof toe aan de lucht.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDe Amazone is geen long. Het woud maakt veel zuurstof, maar verbruikt er bijna net zoveel: elke gevallen boom en elk rottend blad slokt zuurstof op. Netto komt er ongeveer niets bij. Waar komt dat getal van twintig procent vandaan? Waarschijnlijk uit een misverstand: er vindt twintig procent van alle fotosynthese plaats in het Amazonegebied, maar ook twintig procent van het verbruik. Nauwkeurige schattingen van wat het woud brutoproduceert liggen eerder tussen de 6 en 9 procent. Een groot deel van onze zuurstof komt uit de oceaan, van plankton.\n\nDe zwam in Oregon is wél echt, en volgens Guinness het grootste schimmelorganisme: 965 hectare, minstens 2.400 jaar oud, misschien zelfs 8.650. Hij kan bomen laten afsterven en groeit juist door hun wortels. Het espenbos Pando strijdt om dezelfde titel: de zwam wint op oppervlakte, het bos op gewicht als je alleen planten telt. Wie de grootste is, hangt dus af van wie je het vraagt. Allebei verbijsterend."
+      },
+      {
+        "kop": "Kaart 2 · Natuur · Planten en insecten met een kalender",
+        "tekst": "**Voorlezen vóór het raden**\n**A. De Eeuwenbloeier.** Er is een bamboesoort die maar eens in de ongeveer 120 jaar bloeit. Planten die van dezelfde moederplant afstammen, doen dat op hetzelfde moment, ook als ze duizenden kilometers uit elkaar staan en in een heel ander klimaat groeien. Na de bloei sterft de hele plant. Hoe ze dat afspreken, weet men nog altijd niet precies.\n\n**B. De Priemgetal-Insecten.** In het oosten van de Verenigde Staten leven cicaden: insecten van een paar centimeter groot die in de zomer oorverdovend tsjirpen, een beetje zoals een krekel, maar luider. Bepaalde soorten brengen 13 of 17 jaar onder de grond door en komen dan met miljoenen tegelijk tevoorschijn. Beide getallen zijn priemgetallen, en wetenschappers denken dat dat geen toeval is.\n\n**C. De Drinkfles van de Woestijn.** Wie in de woestijn verdwaalt, hoeft niet van dorst om te komen, zolang hij een cactus vindt. De vlezige stengels zitten vol vocht. Snijd de stekels eraf, breek de stengel open, en je kunt het sap veilig opdrinken.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit is een mythe uit Hollywood, onder meer uit de western *Three Godfathers* uit 1948. De meeste cactussen bevatten stoffen die misselijkheid en diarree veroorzaken, en dan raak je juist sneller uitgedroogd. Op één na: de fishhook barrel heeft wat bruikbaar vocht, maar dat druppelt uit de vezels en smaakt slecht. Verdwaal je in de woestijn, wacht dan liever op de reddingsploeg.\n\nDe cicaden: een roofdier met een cyclus van 2, 3 of 4 jaar zou bij een cyclus van 12 jaar steeds vaker met de cicaden samenvallen, bij 13 of 17 bijna nooit. En groepen van 13 en 17 jaar komen maar eens in de 221 jaar tegelijk boven. Of dat de échte reden is, wordt nog bediscussieerd, maar de wiskunde is mooi.\n\nDe bamboe: de laatste bloei was eind jaren zestig, de volgende wordt rond 2090 verwacht. Wie nu zestig is, mist het dus net."
+      },
+      {
+        "kop": "Kaart 3 · Geschiedenis · Als het weer de geschiedenis schrijft",
+        "tekst": "**Voorlezen vóór het raden**\n**A. Het Jaar zonder Zomer.** In april 1815 barstte in Indonesië de vulkaan Tambora uit, de zwaarste uitbarsting uit de geschiedenis. Een jaar later was het in Europa koud en nat, mislukten de oogsten en kwam er geen zomer. Een gezelschap schrijvers zat door de regen binnen in een villa aan het Meer van Genève en bedacht daar griezelverhalen om de tijd te doden.\n\n**B. De Dans zonder Einde.** In de zomer van 1518 begon een vrouw midden op straat in Straatsburg te dansen en niet meer te stoppen. Binnen een maand dansten honderden mensen mee, dagenlang achter elkaar. Volgens de overlevering vielen er doden door uitputting.\n\n**C. De Peper-Truc.** In de middeleeuwen was vlees vaak al bedorven als het op tafel kwam. Daarom kregen koks het zo vol peper en kruiden: de specerijen moesten de stank en de smaak van rottend vlees verbergen. Peper was zo duur omdat die wanhopige koks er grote hoeveelheden van nodig hadden.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit is een heel hardnekkige mythe. De Yale-historicus Paul Freedman noemt het idee overtuigend maar onwaar. Wie zich peper kon veroorloven, kon ook vers vlees kopen, en men kende zout, drogen en roken. Bovendien maakt peper rottend vlees niet lekkerder. Specerijen waren een statussymbool, en zoetzuur was de mode. Een gerecht vol peper betekende: ik kan het betalen.\n\nTambora: in 1816 huurde Lord Byron Villa Diodati bij Genève. De regen hield zijn gasten binnen en hij daagde iedereen uit een spookverhaal te schrijven. De achttienjarige Mary Shelley begon toen aan *Frankenstein*. Dankzij een vulkaan hebben we dus een monster.\n\nStraatsburg: de autoriteiten dachten dat meer dansen zou helpen, dus bouwden ze een podium en huurden muzikanten in. Dat werkte niet. Historici denken nu aan massapsychose, door stress en hongersnood."
+      },
+      {
+        "kop": "Kaart 4 · Geschiedenis · Mislukte missies, gestolen schatten",
+        "tekst": "**Voorlezen vóór het raden**\n**A. De Oorlog tegen de Emoes.** In 1932 stuurde Australië soldaten met machinegeweren naar het westen van het land, om een plaag emoes te bestrijden die de graanvelden kaalvrat. Na ruim een maand werd de operatie stilgelegd, want de vogels stoven uiteen zodra er geschoten werd en waren niet te stoppen.\n\n**B. De Gestolen Glimlach.** In augustus 1911 verdween de Mona Lisa uit het Louvre. Twee jaar lang bleef ze spoorloos, tot de dief haar in Florence probeerde te verkopen. Pas door die diefstal werd ze echt wereldberoemd.\n\n**C. De Ridder aan de Kraan.** In de middeleeuwen was een volledig harnas zo zwaar dat een ridder niet zelf op zijn paard kon klimmen. Daarom werden ze met een soort hijskraan in het zadel getild. Eenmaal gevallen, bleven ze hulpeloos liggen.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nEen harnas woog meestal 15 tot 25 kilo, en dat is minder dan wat een soldaat nu in zijn rugzak draagt. Middeleeuwse afbeeldingen laten ridders in volle wapenrusting zonder hulp op hun paard stijgen, en moderne proeven bevestigen dat het kan. De kraan komt uit fictie, onder meer uit een film uit 1944. Alleen het speciale harnas voor toernooien was erg zwaar.\n\nDe emoe-oorlog: majoor Meredith kreeg twee Lewis-machinegeweren en 10.000 kogels. Bij elk schot stoven de emoes in alle richtingen uiteen. Volgens het verslag werden er bijna duizend geraakt, maar de plaag bleef een plaag en de militairen trokken zich terug. Eén-nul voor de emoes.\n\nDe Mona Lisa: de dief, Vincenzo Peruggia, had in het Louvre gewerkt. Hij bood het schilderij onder een schuilnaam aan een kunsthandelaar in Florence aan. Die liet het controleren door de Uffizi en waarschuwde de politie. Peruggia zei dat hij het naar Italië wilde terugbrengen."
+      },
+      {
+        "kop": "Kaart 5 · Muziek · Muziek uit de oertijd",
+        "tekst": "**Voorlezen vóór het raden**\n**A. De Fluit van Gierenbot.** In grotten in de Zwabische Jura in Duitsland vonden archeologen fluiten van het vleugelbot van een gier en van mammoetivoor. Ze zijn tussen de 35.000 en 40.000 jaar oud en horen bij de oudste muziekinstrumenten die we kennen. De gierenfluit heeft vijf gaatjes en een V-vormig mondstuk.\n\n**B. Het Orgel van Druipsteen.** In de Luray Caverns in Virginia staat een orgel waarvan de \"pijpen\" stalactieten zijn. Rubberen hamertjes, aangestuurd vanaf een klavier, tikken tegen 37 verschillende druipstenen verspreid over ruim een hectare grot. Elke steen is uitgekozen omdat hij precies de juiste toon geeft.\n\n**C. De Stradivarius wint altijd.** Een Stradivarius heeft het mooiste geluid van alle violen, en dat is in blinde tests aangetoond. Zelfs topsolisten, die met een lasbril op niet konden zien welke viool ze speelden, kozen vrijwel altijd een Stradivarius boven een moderne viool.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDe lasbril klopt, het resultaat niet. In een proef in Parijs speelden tien solisten op oude Italiaanse violen, waaronder vijf Stradivari, en op nieuwe. Zes van de tien koos een nieuwe als favoriet, en ze konden niet horen welke oud of nieuw was. Latere tests met luisteraars lieten hetzelfde zien. De onderzoekers waarschuwen wel dat de gekozen violen niet voor alle Strads hoeven te gelden.\n\nDe fluit: dat is dus het geluid van mensen die nog tussen mammoeten leefden, op een mondstuk waar je nog steeds op kunt spelen.\n\nHet grotorgel is bedacht door Leland Sprinkle, wiskundige bij het Pentagon, in de jaren vijftig. Het wordt vaak het grootste muziekinstrument ter wereld genoemd, al is dat meer een toeristenclaim dan een officieel record. Een orgel in een grot, bedacht door een man van het ministerie van Defensie."
+      },
+      {
+        "kop": "Kaart 6 · Muziek · Eeuwige stukken en eerste keren",
+        "tekst": "**Voorlezen vóór het raden**\n**A. Het Orgelstuk van 639 jaar.** In de Burchardikerk in Halberstadt wordt sinds 2001 een orgelstuk van John Cage gespeeld dat 639 jaar duurt. De eerste anderhalf jaar klonk er niets anders dan lucht in de balgen. Het stuk eindigt in het jaar 2640.\n\n**B. De Eerste Cd uit de Fabriek.** Op 17 augustus 1982 rolde in Duitsland de allereerste cd uit een fabriek van Philips: een album van ABBA.\n\n**C. Thriller in de Winkel.** De allereerste cd die je in de winkel kon kopen was Thriller van Michael Jackson, in 1982.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nThriller verscheen in november 1982 en toen nog niet op cd. De eerste cd in de winkel was *52nd Street* van Billy Joel, op 1 oktober 1982 in Japan. Er kwamen er die dag vijftig tegelijk uit, en Billy Joel stond toevallig bovenaan de lijst. ABBA's *The Visitors* was de eerste die werd geperst, maar kwam pas later in de winkel. In een kroegruzie klopt dus allebei, afhankelijk van wat je met \"eerste\" bedoelt.\n\nEn Halberstadt: de 639 jaar slaan terug op het eerste twaalftoons orgel, uit 1361. De noten wisselen doordat er pijpen worden toegevoegd of weggehaald. Je moet dus soms jaren wachten op de volgende toon. Het heeft de energie van een slechte vergadering, maar dan mooi."
+      },
+      {
+        "kop": "Kaart 7 · Dieren · Slimme trucs van de natuur",
+        "tekst": "**Voorlezen vóór het raden**\n**A. De Octopus die zijn RNA bijwerkt.** Als het water kouder wordt, past een octopus zich aan door zijn RNA te bewerken, niet zijn DNA. Op duizenden plekken verandert hij de bouwstenen van eiwitten in zijn zenuwcellen, zodat die ook in de kou blijven werken. In een proef gebeurde dat bij koud gehouden octopussen op ruim dertienduizend plekken, tegen een paar honderd bij warm gehouden dieren.\n\n**B. De Klap met Licht.** De knotsarm van de mantisgarnaal slaat zo hard uit dat het water voor de knots begint te koken en er een luchtbel ontstaat. Als die bel ineenstort, volgt er een tweede klap en een korte lichtflits. Zijn prooi wordt dus twee keer geraakt.\n\n**C. De Haai zonder Kanker.** Haaien krijgen nooit kanker. Hun skelet bestaat uit kraakbeen, en dat zou zo'n goede bescherming bieden dat tumoren geen kans krijgen.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nHaaien krijgen wel kanker. Er zijn tumoren gevonden bij meer dan twintig soorten, en de eerste al meer dan 150 jaar geleden. De mythe komt uit de jaren zeventig: onderzoekers zagen dat kraakbeen de aanmaak van bloedvaten remt, en bedrijven gingen kraakbeenpillen verkopen. In een proef met zestig patiënten reageerde geen enkele tumor. De haaien kwamen er dus alleen maar slecht vanaf.\n\nDe octopus: zijn DNA hoeft niet te veranderen om zich aan te passen, zijn RNA doet het werk.\n\nEn de mantisgarnaal: zijn slag wordt vergeleken met de versnelling van een kogel uit een .22-geweer. Dat gaat om versnelling, niet om snelheid. Naar verhouding tot zijn gewicht is het de krachtigste klap in het dierenrijk."
+      },
+      {
+        "kop": "Kaart 8 · Dieren · Verrassende vrienden en vijanden",
+        "tekst": "**Voorlezen vóór het raden**\n**A. De Vleermuis die zijn Maaltijd deelt.** Vampiervleermuizen die een goede nacht hebben gehad, braken een deel van hun bloedmaaltijd uit voor een hongerige soortgenoot. Ze doen dat bij voorkeur voor familie, maar ook voor vleermuizen die er niet mee verwant zijn.\n\n**B. De Pinguïns die je vanuit de Ruimte ziet.** Wetenschappers zoeken keizerpinguïns met satellieten. Niet de dieren zelf, want die zijn te klein, maar hun uitwerpselen: bruine vlekken op het ijs die vanuit de ruimte te zien zijn. Zo ontdekten ze in 2009 tien kolonies die niemand kende.\n\n**C. De Oorworm in je Oor.** De oorworm heeft zijn naam te danken aan wat hij 's nachts doet: hij kruipt in de oren van slapende mensen om daar zijn eitjes te leggen.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDe oorworm doet dit niet. Het is een mythe die al teruggaat tot Plinius, en in ongeveer tien eeuwen literatuur is er maar één melding van een oorworm in een oor. Waar de naam vandaan komt, weet niemand zeker. Ze zijn onschuldig, ook al vertel je dat liever niet aan wie ze 's nachts in huis heeft.\n\nDe vleermuizen: onderzoeker Gerald Wilkinson ontdekte dit in 1984. Latere proeven lieten zien dat vleermuizen die veel delen een grotere kans hebben dat iemand hen terughelpt op een slechte nacht. Het is een soort verzekering.\n\nDe pinguïns: Britse onderzoekers vonden zo 38 kolonies, waarvan 10 nieuw. Er zijn dus wetenschappers wier werk bestaat uit het bestuderen van pinguïnpoep vanuit een satelliet."
+      },
+      {
+        "kop": "Kaart 9 (reserve) · Dieren · Gif, geheugen en mythes",
+        "tekst": "**Voorlezen vóór het raden**\n**A. De Kikker die zijn Gif haalt uit zijn Eten.** De felgekleurde pijlgifkikker maakt zijn gif niet zelf. Hij haalt de gifstoffen uit zijn voedsel, vooral uit kleine mieren en mijten. Kikkers die in gevangenschap met andere insecten worden gevoed, verliezen hun gif, maar krijgen het weer terug als ze de juiste prooi krijgen.\n\n**B. De Kraaien die Gezichten onthouden.** Onderzoekers in Seattle droegen een masker als ze kraaien vingen. Jaren later schold een deel van de kraaien nog steeds op mensen met dat masker. Zelfs jonge kraaien die de vangst nooit hadden meegemaakt deden mee.\n\n**C. De Lemmingen die springen.** Als lemmingen te talrijk worden, trekken ze in groepen naar de kust en storten zich van kliffen in zee. Biologen denken dat het een instinct is om de populatie op peil te houden.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit komt uit een Disney-film uit 1958, *White Wilderness*. De scène was in scène gezet in Alberta, waar geen lemmingen leven. Het ging om een paar dozijn dieren op een draaischijf met sneeuw, en volgens getuigen gooiden crewleden ze van de klif. De film won een Oscar. De echte oorzaak van het instorten van populaties zijn roofdieren zoals poolvossen en sneeuwuilen.\n\nDe pijlgifkikker: in gevangenschap voeren ze de kikkers fruitvliegjes, en dan zijn ze na verloop van tijd niet meer giftig. Je bent wat je eet, maar dan levensgevaarlijk.\n\nDe kraaien: de onderzoeker liep zelf een keer met zo'n masker over de campus en kreeg ongeveer vijftig kraaien op zich af. Ze zijn niet wraakzuchtig, ze zijn gewoon goed in administratie."
+      },
+      {
+        "kop": "Kaart 10 · Onderwijs · Wat we dachten te weten over leren",
+        "tekst": "**Voorlezen vóór het raden**\n**A. Het omgekeerde Flynn-effect.** Bijna de hele twintigste eeuw stegen de gemiddelde IQ-scores in veel landen met ongeveer drie punten per tien jaar. In Noorwegen draaide dat om: bij mannen geboren na 1975 dalen de scores. Een onderzoek dat broers met elkaar vergeleek, liet zien dat dat niet aan erfelijkheid ligt, maar aan de omgeving.\n\n**B. De Klas die weinig uitmaakt.** In de grote meta-analyse *Visible Learning* van John Hattie blijkt klassengrootte een verrassend klein effect op leerresultaten te hebben, ruim onder zijn drempel van 0,40. Hattie verklaart dat doordat leerkrachten in kleinere klassen hun lesgeven vaak nauwelijks aanpassen.\n\n**C. De Leerstijlen.** Leerlingen leren aantoonbaar beter als de les past bij hun leerstijl: de een is visueel, de ander auditief, de derde leert door te doen. Scholen doen er daarom goed aan hun lessen per leerstijl aan te passen.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit is de bekendste mythe in het onderwijs. In een overzicht uit 2008 (Pashler en collega's) vonden onderzoekers geen bewijs dat les afgestemd op iemands stijl beter werkt. Toch bleek uit een enquête uit 2012 dat ruim 90 procent van de leerkrachten in Nederland en Engeland erin geloofde. Dat zijn jullie. Ik zeg het met liefde.\n\nHet Flynn-effect: de Noorse stijging en daling hadden dezelfde omvang, zowel binnen als tussen families. Wat de oorzaak is, weten ze niet.\n\nEn Hattie: een klas van 15 in plaats van 30 geeft een effect van ongeveer 0,2. Dat is niet omdat kleine klassen niet fijn zijn, maar omdat leerkrachten in een kleine klas vaak hetzelfde blijven doen. Pas je lesgeven aan, anders maakt de klasgrootte weinig uit."
+      },
+      {
+        "kop": "Kaart 11 · Onderwijs · Overhoren, wachten en suiker",
+        "tekst": "**Voorlezen vóór het raden**\n**A. Zelf Overhoren wint.** Onderzoekers lieten studenten een tekst lezen. De ene groep las hem daarna nog een keer, de andere legde de tekst weg en schreef op wat ze nog wist. Vijf minuten later scoorde de groep die had herlezen beter. Maar een week later onthielden de studenten die zichzelf hadden overhoord duidelijk meer.\n\n**B. De Marshmallowtest.** In de jaren zestig en zeventig kregen kleuters op een Stanford-peuterschool een marshmallow en de belofte van een tweede als ze een kwartier wachtten voor ze hem opaten. Wie kon wachten, bleek later hogere schoolscores te halen. In 2018 werd het onderzoek herhaald met 918 kinderen, en bleek het verband veel zwakker, vooral na correctie voor het gezin waarin ze opgroeiden.\n\n**C. De Suikerkick.** Kinderen worden hyperactief van suiker. Dat komt doordat suiker het bloedsuikergehalte snel verhoogt, waardoor ze op een kinderfeestje niet meer te houden zijn.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit blijkt een mythe. In een groot overzicht uit 1995 (Wolraich en collega's) verdween elk effect van suiker op gedrag zodra ouders, kinderen en onderzoekers niet wisten wie suiker kreeg. In een bekende proef kregen moeders te horen dat hun zoon suiker had gekregen, terwijl het een zoetstof was, en zij vonden hem toch drukker. Het zit dus in de verwachting. Wat wel meespeelt: kinderfeestjes en Halloween, met veel prikkels en een rommelig ritme.\n\nZelf overhoren: dat is het testeffect van Roediger en Karpicke (2006). Op de korte termijn won herlezen, na een week het overhoren. Het voelt minder prettig, maar het werkt beter.\n\nDe marshmallowtest: wetenschappers zijn het niet helemaal eens. Critici zeggen dat de herhaling te veel corrigeerde. Maar dat wachten op zichzelf zoveel zegt over later succes, is flink afgezwakt."
+      }
+    ]
+  },
+  "live": true
+}
