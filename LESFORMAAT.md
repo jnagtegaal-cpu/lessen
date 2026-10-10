@@ -68,6 +68,8 @@ Een scherm is 1600 × 900 en schaalt mee op elk bord.
 | `schrijfvak` | `label` | Gestippeld vak om in te schrijven |
 | `kolommen` | `kolommen` (lijst van lijsten met blokken), `verhouding` | Naast elkaar, bijv. `["2fr","1fr"]` |
 | `html` | `html` | Maatwerk, zoals een getallenlijn of liniaal in SVG |
+| `stellingen` | `items` (`titel`, `onzin`), `antwoord` | Quizkaart met A, B, C. Na een tik komt het antwoord en krijgt elke kaart een stempel *feit* of *onzin* |
+| `smaken` | `items` | Smaken als kaartjes (proefronde), meestal met `"verborgen": true` |
 | `eindstand` | – | Ranglijst van het scorebord (alleen met `scorebord` in de les, zie hieronder) |
 
 ### Stap voor stap tonen
@@ -120,3 +122,8 @@ Wat je dan krijgt:
 - **Blok `eindstand`:** zet dit op een slotscherm voor een grote ranglijst met plaats, naam en punten (gelijke stand = gelijke plaats). In de pdf van de presentatie staat daar een lege plek met een korte tekst.
 
 Het scorebord staat in `assets/score.js`.
+
+## Thema en grapjes
+
+- **`"thema": "pub"`** (op het hoogste niveau van `les.json`) geeft de les een kroeglook: houten planken, een krijtbord, bierviltjes als letters en een houten scorebalk. Zonder `thema` blijft de gewone groene stijl.
+- **`"grap"`** bij een scherm zet een kort grapje op een briefje in de hoek, bijvoorbeeld `"grap": "Wie vals speelt, trakteert."`. Werkt ook zonder thema.

@@ -28,14 +28,15 @@
         },
         {
           "type": "klein",
-          "tekst": "Feiten en onzin · proeven · bluffen"
+          "tekst": "Vandaag op de kaart: feiten, onzin en bier"
         },
         {
           "type": "vraag",
           "tekst": "Kies een teamnaam en pak pen en briefjes."
         }
       ],
-      "notitie": "Concept. De teamnamen typ je in het scorebord onderaan in."
+      "notitie": "Concept. De teamnamen typ je in het scorebord onderaan in.",
+      "grap": "Reserveren niet nodig. Betalen wel."
     },
     {
       "fase": "Ronde 1",
@@ -57,7 +58,8 @@
           "type": "klein",
           "tekst": "Bespreek het in je team en schrijf de letter van de onzin op."
         }
-      ]
+      ],
+      "grap": "Even nadenken is gratis."
     },
     {
       "fase": "Natuur · kaart 1",
@@ -87,7 +89,8 @@
           "antwoord": "❌ **C** is de onzin"
         }
       ],
-      "notitie": "Concept met de teksten uit het gesprek. Het verhaal voor het voorlezen komt in het voorbereidingsformulier."
+      "notitie": "Concept met de teksten uit het gesprek. Het verhaal voor het voorlezen komt in het voorbereidingsformulier.",
+      "grap": "Wie vals speelt, trakteert."
     },
     {
       "fase": "Proefronde",
@@ -120,7 +123,8 @@
           "type": "klein",
           "tekst": "Voorbeeld: de echte smaken volgen zodra de bieren zijn gekocht."
         }
-      ]
+      ],
+      "grap": "Eerst ruiken, dan proeven, dan liegen."
     },
     {
       "fase": "Bluf",
@@ -142,7 +146,8 @@
           "type": "klein",
           "tekst": "Schrijf op je briefje, met je teamnaam erop."
         }
-      ]
+      ],
+      "grap": "Liegen mag. Hier mag het echt."
     },
     {
       "fase": "Uitslag",
@@ -158,7 +163,8 @@
         {
           "type": "eindstand"
         }
-      ]
+      ],
+      "grap": "De rekening is voor de winnaar."
     }
   ],
   "thema": "pub"

@@ -72,7 +72,9 @@ const Lesbord = (() => {
     }
   };
 
-  const diaHtml = (scherm, lesmap) => (scherm.blokken || []).map((b) => blok(b, lesmap)).join("");
+  const diaHtml = (scherm, lesmap) =>
+    (scherm.blokken || []).map((b) => blok(b, lesmap)).join("") +
+    (scherm.grap ? `<div class="grap">${opmaak(scherm.grap)}</div>` : ""); // grapje op een briefje in de hoek
 
   const diaKlassen = (scherm, thema) => {
     const k = ["dia"];
