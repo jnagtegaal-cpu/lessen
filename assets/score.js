@@ -151,6 +151,19 @@ const Score = (() => {
     });
   }
 
+  // Teamnamen van buitenaf zetten (bijvoorbeeld de namen die teams op hun telefoon kiezen).
+  function zetNamen(namen) {
+    if (!st) return;
+    let veranderd = false;
+    namen.forEach((n, i) => {
+      if (i < st.namen.length && n && st.namen[i] !== n) { st.namen[i] = n; veranderd = true; }
+    });
+    if (!veranderd) return;
+    st.ingesteld = true;
+    document.querySelectorAll("input[data-naam]").forEach((el) => { el.value = st.namen[el.dataset.naam]; });
+    na();
+  }
+
   function init(les, id, wijzig, layout) {
     if (!les.scorebord) return;
     const cfg = les.scorebord === true ? {} : les.scorebord;
@@ -161,9 +174,9 @@ const Score = (() => {
     $("scorebalk").hidden = false;
     paneelBouwen(); koppel(); tekenBalk();
     $("score-open").onclick = () => ($("scorepaneel").hidden ? open() : sluit());
-    if (!st.ingesteld) open(); // de eerste keer: meteen de teamnamen laten typen
+    if (!st.ingesteld && !les.live) open(); // de eerste keer: meteen de teamnamen laten typen (niet als de teams zelf op hun telefoon een naam kiezen)
     naLayout();
   }
 
-  return { init, vulEindstand };
+  return { init, vulEindstand, zetNamen };
 })();

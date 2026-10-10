@@ -28,14 +28,13 @@
         },
         {
           "type": "klein",
-          "tekst": "Vandaag op de kaart: feiten, onzin en bier"
+          "tekst": "Scan de QR-code en kies een teamnaam."
         },
         {
-          "type": "vraag",
-          "tekst": "Kies een teamnaam en pak pen en briefjes."
+          "type": "live-aansluiten"
         }
       ],
-      "notitie": "Concept. De teamnamen typ je in het scorebord onderaan in."
+      "notitie": "Tik op het telefoon-icoon bovenin en kies 'Start telefoons'. Teams scannen de QR-code en kiezen zelf een naam; die verschijnt hier en in het scorebord. Lukt het niet, typ de namen dan in het scorebord (Punten geven)."
     },
     {
       "fase": "Ronde 1",
@@ -657,5 +656,6 @@
         "tekst": "**Voorlezen vóór het raden**\n**A. Zelf Overhoren wint.** Onderzoekers lieten studenten een tekst lezen. De ene groep las hem daarna nog een keer, de andere legde de tekst weg en schreef op wat ze nog wist. Vijf minuten later scoorde de groep die had herlezen beter. Maar een week later onthielden de studenten die zichzelf hadden overhoord duidelijk meer.\n\n**B. De Marshmallowtest.** In de jaren zestig en zeventig kregen kleuters op een Stanford-peuterschool een marshmallow en de belofte van een tweede als ze een kwartier wachtten voor ze hem opaten. Wie kon wachten, bleek later hogere schoolscores te halen. In 2018 werd het onderzoek herhaald met 918 kinderen, en bleek het verband veel zwakker, vooral na correctie voor het gezin waarin ze opgroeiden.\n\n**C. De Suikerkick.** Kinderen worden hyperactief van suiker. Dat komt doordat suiker het bloedsuikergehalte snel verhoogt, waardoor ze op een kinderfeestje niet meer te houden zijn.\n\n**Antwoord: C is de onzin.**\n\n**Voorlezen na het raden**\nDit blijkt een mythe. In een groot overzicht uit 1995 (Wolraich en collega's) verdween elk effect van suiker op gedrag zodra ouders, kinderen en onderzoekers niet wisten wie suiker kreeg. In een bekende proef kregen moeders te horen dat hun zoon suiker had gekregen, terwijl het een zoetstof was, en zij vonden hem toch drukker. Het zit dus in de verwachting. Wat wel meespeelt: kinderfeestjes en Halloween, met veel prikkels en een rommelig ritme.\n\nZelf overhoren: dat is het testeffect van Roediger en Karpicke (2006). Op de korte termijn won herlezen, na een week het overhoren. Het voelt minder prettig, maar het werkt beter.\n\nDe marshmallowtest: wetenschappers zijn het niet helemaal eens. Critici zeggen dat de herhaling te veel corrigeerde. Maar dat wachten op zichzelf zoveel zegt over later succes, is flink afgezwakt."
       }
     ]
-  }
+  },
+  "live": true
 }

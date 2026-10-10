@@ -486,3 +486,63 @@ body.thema-pub .score-punten { color: #e0a84a; }
 /* Voorbereiding: kop blijft bij zijn tekst */
 .formulier h2 { break-after: avoid; }
 .formulier p { orphans: 3; widows: 3; }
+
+/* ---------- Live: telefoons laten meedoen ---------- */
+.livepaneel {
+  position: fixed; right: 16px; top: 70px; z-index: 20; width: min(360px, 94vw); max-height: calc(100vh - 100px); overflow: auto;
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 12px 50px rgba(20, 50, 35, .25); padding: 14px 18px 18px;
+}
+.livepaneel[hidden] { display: none; }
+.live-kop { display: flex; align-items: center; justify-content: space-between; }
+.live-kop h3 { margin: 0; font-size: 22px; }
+.livepaneel h4 { margin: 14px 0 6px; font-size: 14px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); }
+.live-uitleg { color: var(--ink-soft); margin: 8px 0 12px; }
+.live-qr { width: 230px; margin: 8px auto 0; }
+.live-qr svg { width: 100%; height: auto; display: block; border-radius: 8px; }
+.live-code { text-align: center; font-size: 40px; font-weight: 700; letter-spacing: .2em; margin: 6px 0 0; }
+.live-link { text-align: center; font-size: 12px; color: var(--ink-soft); word-break: break-all; margin: 4px 0; }
+.live-status { text-align: center; font-size: 14px; margin: 4px 0; color: var(--groen-donker); font-weight: 700; }
+.live-status.fout, .live-status.opnieuw { color: var(--rood); }
+.live-teams { margin: 0 0 12px; padding-left: 1.2em; font-size: 18px; }
+.live-teams .extra { color: var(--ink-soft); text-decoration: line-through; }
+.live-teams .leeg { list-style: none; margin-left: -1.2em; color: var(--ink-soft); }
+.live-fout { color: var(--rood); font-weight: 700; }
+code { background: #eef2ef; padding: 1px 6px; border-radius: 5px; font-size: .92em; }
+
+.b-aansluiten { display: flex; gap: 60px; align-items: center; }
+.aansluit-qr { width: 420px; flex: none; }
+.aansluit-qr svg { width: 100%; height: auto; display: block; border-radius: 14px; }
+.aansluit-tekst { flex: 1; min-width: 0; }
+.aansluit-stap { font-size: 36px; color: var(--ink-soft); }
+.aansluit-code { font-size: 96px; font-weight: 700; letter-spacing: .18em; line-height: 1.1; margin: 4px 0 14px; }
+.aansluit-teams { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 12px; }
+.aansluit-teams li { font-size: 40px; font-weight: 700; padding: 6px 22px; border-radius: 14px; border: 3px solid var(--groen); background: var(--groen-licht); }
+.aansluit-teams li.leeg { border-style: dashed; background: none; color: var(--ink-soft); font-weight: 400; }
+.live-groot { font-size: 36px; padding: 18px 34px; }
+
+.b-live { display: flex; flex-direction: column; gap: 16px; }
+.live-blok-kop { font-size: 38px; }
+.live-blok-uit { font-size: 32px; color: var(--ink-soft); border: 3px dashed var(--line); border-radius: 16px; padding: 24px; }
+.live-antw { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.live-antw li { display: flex; gap: 24px; align-items: baseline; font-size: 40px; padding: 10px 24px; border: 3px solid var(--line); border-radius: 14px; background: #f7fbf8; }
+.live-antw li.klaar { border-color: var(--groen); background: var(--groen-licht); }
+.live-antw .naam { font-weight: 700; min-width: 5em; }
+.live-antw .inhoud { flex: 1; }
+.live-antw .vink { margin-left: auto; font-weight: 700; color: var(--groen-donker); }
+.live-blok-knoppen { display: flex; gap: 12px; }
+.live-blok-knoppen .knop { font-size: 24px; padding: 10px 22px; }
+.b-live:empty::before { content: "Hier verschijnen de antwoorden van de telefoons tijdens de quiz."; font-size: 30px; color: var(--ink-soft); }
+.b-aansluiten:empty::before { content: "Hier verschijnt een QR-code waarmee de teams meedoen."; font-size: 30px; color: var(--ink-soft); }
+
+/* Live in het pubthema */
+.thema-pub .aansluit-qr svg { border: 8px solid #efe0bf; }
+.thema-pub .aansluit-stap { color: #d8c9a8; }
+.thema-pub .aansluit-code { font-family: "Rye", Georgia, serif; font-weight: 400; color: var(--koper); }
+.thema-pub .aansluit-teams li { background: rgba(255,255,255,.05); border-color: rgba(244,239,226,.6); color: var(--krijt); }
+.thema-pub .aansluit-teams li.leeg { color: #b6c9bb; }
+.thema-pub .live-blok-kop { color: var(--krijt); }
+.thema-pub .live-antw li { background: rgba(255,255,255,.04); border-color: rgba(244,239,226,.5); color: var(--krijt); }
+.thema-pub .live-antw li.klaar { border-color: #8fe3a8; background: rgba(60,120,80,.28); }
+.thema-pub .live-antw .vink { color: #8fe3a8; }
+.thema-pub .live-blok-uit, .thema-pub .b-live:empty::before, .thema-pub .b-aansluiten:empty::before { color: #cdbb90; border-color: rgba(244,239,226,.4); }

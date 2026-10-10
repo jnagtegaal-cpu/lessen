@@ -127,3 +127,34 @@ Het scorebord staat in `assets/score.js`.
 
 - **`"thema": "pub"`** (op het hoogste niveau van `les.json`) geeft de les een kroeglook: houten planken, een krijtbord, bierviltjes als letters en een houten scorebalk. Zonder `thema` blijft de gewone groene stijl.
 - **`"grap"`** bij een scherm zet een kort grapje op een briefje in de hoek, bijvoorbeeld `"grap": "Wie vals speelt, trakteert."`. Werkt ook zonder thema.
+
+## Live: telefoons laten meedoen
+
+Met `"live": true` op het hoogste niveau van `les.json` krijgt het bord een telefoon-icoon. Teams doen mee met hun eigen telefoon of tablet: ze scannen een QR-code, kiezen een teamnaam en beantwoorden de vragen die jij op het bord zet. Er is geen account of naam nodig.
+
+**Hoe het werkt:** de pagina `doe.html` (voor de telefoons) en het bord praten via een kleine database bij Firebase (Realtime Database). Elke avond krijgt een eigen kamer met een willekeurige code van zes tekens onder `rooms/<CODE>`. De antwoorden bestaan alleen in die kamer en verdwijnen als je de kamer stopt ("Stop en wis kamer").
+
+**Instellen (eenmalig):**
+1. Maak een Firebase-project met een Realtime Database (locatie Europa, vergrendelde modus).
+2. Zet de regels uit `firebase-regels.json` bij *Regels* en klik op *Publiceren*.
+3. Zet het webadres van de database in `assets/live-config.js`.
+
+**Gebruiken op het bord:**
+- Tik op het telefoon-icoon en kies **Start telefoons**. De kamer onthoudt zichzelf als je de pagina herlaadt.
+- De namen die teams kiezen komen automatisch in het scorebord (de eerste teams die aansluiten, zoveel als in `scorebord.teams`).
+
+**Blokken:**
+
+| type | velden | gebruik |
+|---|---|---|
+| `live-aansluiten` | – | Grote QR-code, de code en de teams die binnenkomen. Zet dit op het welkomstscherm. |
+| `live` | `id`, `soort`, `vraag`, `opties`, `groepen` | Stuurt een vraag naar de telefoons en laat zien wie geantwoord heeft. |
+
+Soorten vragen (`soort`):
+- `tekst`: een vrij antwoord (maximaal 400 tekens).
+- `keuze`: kiezen uit A, B, C…, met `opties` als lijst met teksten.
+- `vinkjes`: meerdere dingen aanvinken, met `groepen`: `[{ "naam": "Citrus", "items": ["citroen", "limoen"] }, …]`.
+
+`id` moet per vraag uniek zijn. Onder het blok staan **Toon antwoorden** en **Sluit de vraag** (na het sluiten kunnen de teams niets meer wijzigen).
+
+**Let op:** de kamercode is de enige beveiliging. Gebruik live niet voor gevoelige gegevens. Voor lessen met leerlingen: laat ze geen namen of persoonlijke gegevens invullen en stem af met school wat daar mag.

@@ -103,6 +103,7 @@
     }
     dia.innerHTML = html;
     if (typeof Score !== "undefined") Score.vulEindstand(dia);
+    if (typeof LiveHost !== "undefined") LiveHost.bindScherm(dia);
     const getoond = st.onthuld.get(sleutel()) || new Set();
     dia.querySelectorAll(".onthul").forEach((el, i) => el.classList.toggle("zichtbaar", getoond.has(i)));
     $("teller").textContent = st.klad ? "Kladblad" : `${st.index + 1} / ${schermen.length}`;
@@ -194,6 +195,7 @@
     const start = Number(Lesbord.param("scherm")) || 1;
     st.index = Math.max(0, Math.min((les.schermen || []).length - 1, start - 1));
     if (typeof Score !== "undefined") Score.init(les, id, () => Score.vulEindstand(dia), pasAan);
+    if (les.live && typeof LiveHost !== "undefined") LiveHost.init(les, id, { onNamen: (n) => typeof Score !== "undefined" && Score.zetNamen(n) });
     pasAan(); toonScherm();
   }).catch(() => {
     $("titel").textContent = "Deze les kon niet geladen worden";

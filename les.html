@@ -21,6 +21,9 @@
       <button class="ikoon-knop" id="knop-lesdoel" title="Lesdoel tonen of verbergen" aria-label="Lesdoel tonen of verbergen" aria-pressed="true" hidden>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
       </button>
+      <button class="ikoon-knop" id="knop-live" title="Telefoons laten meedoen" aria-label="Telefoons laten meedoen" aria-pressed="false" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg>
+      </button>
       <button class="ikoon-knop" id="knop-klad" title="Leeg kladblad" aria-label="Leeg kladblad" aria-pressed="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h5"/></svg>
       </button>
@@ -48,6 +51,7 @@
       <button class="knop hoofd" id="score-open" aria-expanded="false" aria-controls="scorepaneel">Punten geven</button>
     </div>
     <div class="scorepaneel" id="scorepaneel" hidden role="dialog" aria-label="Punten geven"></div>
+    <div class="livepaneel" id="livepaneel" hidden role="dialog" aria-label="Telefoons laten meedoen"></div>
 
     <div class="gereedschap" id="gereedschap">
       <div class="groep-gereedschap">
@@ -94,6 +98,10 @@
 
   <script src="assets/blokken.js"></script>
   <script src="assets/score.js"></script>
+  <script src="assets/vendor/qrcode.js"></script>
+  <script src="assets/live-config.js"></script>
+  <script src="assets/live.js"></script>
+  <script src="assets/live-host.js"></script>
   <script src="assets/bord.js"></script>
 </body>
 </html>
