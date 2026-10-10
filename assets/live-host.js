@@ -93,6 +93,7 @@ const LiveHost = (() => {
   const api = {
     actief: () => !!st.code && !!st.kamer,
     lesId: () => st.lesId,
+    code: () => st.code,
     spelers, antwoorden, stuurVraag, vraagOpen,
     sluitVraag: (id) => { if (st.kamer && st.kamer.vraag && st.kamer.vraag.id === id) zetOpen(false); },
     geefPunten: (p) => st.geefPunten(p),

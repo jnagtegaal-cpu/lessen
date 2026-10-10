@@ -507,14 +507,16 @@
           "type": "proef",
           "id": "proef-1",
           "naam": "Biertje 1",
-          "echteNaam": "Hoegaarden Wit",
+          "echteNaam": "Benediktiner Weissbier",
           "goed": [
-            "sinaasappelschil",
-            "sinaasappel",
-            "koriander",
             "tarwe",
+            "banaan",
+            "kruidnagel",
+            "honing",
+            "sinaasappelschil",
+            "karamel",
             "kruidig",
-            "fris"
+            "mout"
           ],
           "groepen": [
             {
@@ -630,6 +632,7 @@
                 "espresso",
                 "pure chocolade",
                 "cacao",
+                "geroosterd",
                 "gebrande noten",
                 "toast",
                 "rook",
@@ -695,7 +698,7 @@
           ]
         }
       ],
-      "notitie": "In het glas: Hoegaarden Wit (witbier). Goede smaken: sinaasappelschil, sinaasappel, koriander, tarwe, kruidig, fris. Tik op 'Onthul de smaken' als alle teams hebben ingestuurd; lees daarna het verhaal voor."
+      "notitie": "In het glas: Benediktiner Weissbier (Beiers weissbier). Goede smaken: tarwe, banaan, kruidnagel, honing, sinaasappelschil, karamel, kruidig, mout. Tik op 'Onthul de smaken' als alle teams hebben ingestuurd; lees daarna het verhaal voor."
     },
     {
       "fase": "Proefronde · glas 2",
@@ -708,6 +711,207 @@
           "type": "proef",
           "id": "proef-2",
           "naam": "Biertje 2",
+          "echteNaam": "Texels Skuumkoppe",
+          "goed": [
+            "karamel",
+            "abrikoos",
+            "tarwe",
+            "romig",
+            "vol"
+          ],
+          "groepen": [
+            {
+              "naam": "Citrus",
+              "items": [
+                "citroen",
+                "limoen",
+                "grapefruit",
+                "sinaasappel",
+                "sinaasappelschil",
+                "mandarijn",
+                "bergamot"
+              ]
+            },
+            {
+              "naam": "Fruit",
+              "items": [
+                "fruitig",
+                "appel",
+                "gekookte appel",
+                "peer",
+                "perzik",
+                "abrikoos",
+                "kers",
+                "pruim",
+                "aardbei",
+                "framboos",
+                "zwarte bes",
+                "bosbes",
+                "rozijn",
+                "vijg",
+                "dadel",
+                "banaan",
+                "ananas",
+                "mango",
+                "passievrucht",
+                "lychee",
+                "meloen",
+                "kokos"
+              ]
+            },
+            {
+              "naam": "Bloemen en kruiden",
+              "items": [
+                "bloemig",
+                "kruidig",
+                "roos",
+                "lavendel",
+                "vlierbloesem",
+                "kamille",
+                "munt",
+                "dille",
+                "gras",
+                "hooi",
+                "hop",
+                "dennenhars",
+                "eucalyptus",
+                "tijm",
+                "rozemarijn",
+                "thee"
+              ]
+            },
+            {
+              "naam": "Specerijen",
+              "items": [
+                "kruidnagel",
+                "kaneel",
+                "nootmuskaat",
+                "koriander",
+                "zwarte peper",
+                "witte peper",
+                "gember",
+                "anijs",
+                "steranijs",
+                "kardemom",
+                "vanille",
+                "laurier"
+              ]
+            },
+            {
+              "naam": "Zoet",
+              "items": [
+                "zoet",
+                "honing",
+                "karamel",
+                "toffee",
+                "butterscotch",
+                "bruine suiker",
+                "stroop",
+                "marsepein",
+                "speculaas"
+              ]
+            },
+            {
+              "naam": "Graan en brood",
+              "items": [
+                "mout",
+                "tarwe",
+                "biscuit",
+                "cracker",
+                "versgebakken brood",
+                "korstje",
+                "popcorn",
+                "havermout",
+                "deeg",
+                "cornflakes"
+              ]
+            },
+            {
+              "naam": "Gebrand en donker",
+              "items": [
+                "koffie",
+                "espresso",
+                "pure chocolade",
+                "cacao",
+                "geroosterd",
+                "gebrande noten",
+                "toast",
+                "rook",
+                "teer",
+                "as",
+                "gebrand hout",
+                "drop",
+                "melasse"
+              ]
+            },
+            {
+              "naam": "Noten en hout",
+              "items": [
+                "hazelnoot",
+                "amandel",
+                "walnoot",
+                "eikenhout",
+                "cederhout",
+                "leer",
+                "tabak",
+                "sherry"
+              ]
+            },
+            {
+              "naam": "Overig",
+              "items": [
+                "zuurdesem",
+                "yoghurt",
+                "boter",
+                "room",
+                "zout",
+                "mineralen",
+                "metaal",
+                "gist",
+                "kelder",
+                "zeewier",
+                "zeelucht",
+                "jodium",
+                "kauwgom",
+                "snoepjes"
+              ]
+            },
+            {
+              "naam": "Gevoel en afdronk",
+              "items": [
+                "bitter",
+                "zuur",
+                "droog",
+                "fris",
+                "romig",
+                "scherp",
+                "prikkelend",
+                "vol",
+                "licht",
+                "waterig",
+                "warm",
+                "zacht",
+                "rond",
+                "lange afdronk",
+                "korte afdronk"
+              ]
+            }
+          ]
+        }
+      ],
+      "notitie": "In het glas: Texels Skuumkoppe (donker tarwebier). Goede smaken: karamel, abrikoos, tarwe, romig, vol. Tik op 'Onthul de smaken' als alle teams hebben ingestuurd; lees daarna het verhaal voor."
+    },
+    {
+      "fase": "Proefronde · glas 3",
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Proefronde · glas 3"
+        },
+        {
+          "type": "proef",
+          "id": "proef-3",
+          "naam": "Biertje 3",
           "echteNaam": "Tripel Karmeliet",
           "goed": [
             "honing",
@@ -836,6 +1040,7 @@
                 "espresso",
                 "pure chocolade",
                 "cacao",
+                "geroosterd",
                 "gebrande noten",
                 "toast",
                 "rook",
@@ -904,207 +1109,6 @@
       "notitie": "In het glas: Tripel Karmeliet (tripel). Goede smaken: honing, banaan, sinaasappelschil, kruidnagel, witte peper, citroen, koriander, hooi, droog, prikkelend, warm. Tik op 'Onthul de smaken' als alle teams hebben ingestuurd; lees daarna het verhaal voor."
     },
     {
-      "fase": "Proefronde · glas 3",
-      "blokken": [
-        {
-          "type": "fase",
-          "tekst": "Proefronde · glas 3"
-        },
-        {
-          "type": "proef",
-          "id": "proef-3",
-          "naam": "Biertje 3",
-          "echteNaam": "Westmalle Dubbel",
-          "goed": [
-            "mout",
-            "kruidig",
-            "fruitig",
-            "bitter",
-            "zacht",
-            "lange afdronk"
-          ],
-          "groepen": [
-            {
-              "naam": "Citrus",
-              "items": [
-                "citroen",
-                "limoen",
-                "grapefruit",
-                "sinaasappel",
-                "sinaasappelschil",
-                "mandarijn",
-                "bergamot"
-              ]
-            },
-            {
-              "naam": "Fruit",
-              "items": [
-                "fruitig",
-                "appel",
-                "gekookte appel",
-                "peer",
-                "perzik",
-                "abrikoos",
-                "kers",
-                "pruim",
-                "aardbei",
-                "framboos",
-                "zwarte bes",
-                "bosbes",
-                "rozijn",
-                "vijg",
-                "dadel",
-                "banaan",
-                "ananas",
-                "mango",
-                "passievrucht",
-                "lychee",
-                "meloen",
-                "kokos"
-              ]
-            },
-            {
-              "naam": "Bloemen en kruiden",
-              "items": [
-                "bloemig",
-                "kruidig",
-                "roos",
-                "lavendel",
-                "vlierbloesem",
-                "kamille",
-                "munt",
-                "dille",
-                "gras",
-                "hooi",
-                "hop",
-                "dennenhars",
-                "eucalyptus",
-                "tijm",
-                "rozemarijn",
-                "thee"
-              ]
-            },
-            {
-              "naam": "Specerijen",
-              "items": [
-                "kruidnagel",
-                "kaneel",
-                "nootmuskaat",
-                "koriander",
-                "zwarte peper",
-                "witte peper",
-                "gember",
-                "anijs",
-                "steranijs",
-                "kardemom",
-                "vanille",
-                "laurier"
-              ]
-            },
-            {
-              "naam": "Zoet",
-              "items": [
-                "zoet",
-                "honing",
-                "karamel",
-                "toffee",
-                "butterscotch",
-                "bruine suiker",
-                "stroop",
-                "marsepein",
-                "speculaas"
-              ]
-            },
-            {
-              "naam": "Graan en brood",
-              "items": [
-                "mout",
-                "tarwe",
-                "biscuit",
-                "cracker",
-                "versgebakken brood",
-                "korstje",
-                "popcorn",
-                "havermout",
-                "deeg",
-                "cornflakes"
-              ]
-            },
-            {
-              "naam": "Gebrand en donker",
-              "items": [
-                "koffie",
-                "espresso",
-                "pure chocolade",
-                "cacao",
-                "gebrande noten",
-                "toast",
-                "rook",
-                "teer",
-                "as",
-                "gebrand hout",
-                "drop",
-                "melasse"
-              ]
-            },
-            {
-              "naam": "Noten en hout",
-              "items": [
-                "hazelnoot",
-                "amandel",
-                "walnoot",
-                "eikenhout",
-                "cederhout",
-                "leer",
-                "tabak",
-                "sherry"
-              ]
-            },
-            {
-              "naam": "Overig",
-              "items": [
-                "zuurdesem",
-                "yoghurt",
-                "boter",
-                "room",
-                "zout",
-                "mineralen",
-                "metaal",
-                "gist",
-                "kelder",
-                "zeewier",
-                "zeelucht",
-                "jodium",
-                "kauwgom",
-                "snoepjes"
-              ]
-            },
-            {
-              "naam": "Gevoel en afdronk",
-              "items": [
-                "bitter",
-                "zuur",
-                "droog",
-                "fris",
-                "romig",
-                "scherp",
-                "prikkelend",
-                "vol",
-                "licht",
-                "waterig",
-                "warm",
-                "zacht",
-                "rond",
-                "lange afdronk",
-                "korte afdronk"
-              ]
-            }
-          ]
-        }
-      ],
-      "notitie": "In het glas: Westmalle Dubbel (trappist-dubbel). Goede smaken: mout, kruidig, fruitig, bitter, zacht, lange afdronk. Tik op 'Onthul de smaken' als alle teams hebben ingestuurd; lees daarna het verhaal voor."
-    },
-    {
       "fase": "Proefronde · glas 4",
       "blokken": [
         {
@@ -1115,14 +1119,15 @@
           "type": "proef",
           "id": "proef-4",
           "naam": "Biertje 4",
-          "echteNaam": "Brouwerij 't IJ IPA",
+          "echteNaam": "Guinness",
           "goed": [
-            "hop",
-            "grapefruit",
-            "bloemig",
-            "fruitig",
+            "koffie",
+            "pure chocolade",
+            "geroosterd",
+            "romig",
             "bitter",
-            "lange afdronk"
+            "zoet",
+            "zacht"
           ],
           "groepen": [
             {
@@ -1238,6 +1243,7 @@
                 "espresso",
                 "pure chocolade",
                 "cacao",
+                "geroosterd",
                 "gebrande noten",
                 "toast",
                 "rook",
@@ -1303,7 +1309,7 @@
           ]
         }
       ],
-      "notitie": "In het glas: Brouwerij 't IJ IPA (IPA). Goede smaken: hop, grapefruit, bloemig, fruitig, bitter, lange afdronk. Tik op 'Onthul de smaken' als alle teams hebben ingestuurd; lees daarna het verhaal voor."
+      "notitie": "In het glas: Guinness (Ierse stout). Goede smaken: koffie, pure chocolade, geroosterd, romig, bitter, zoet, zacht. Tik op 'Onthul de smaken' als alle teams hebben ingestuurd; lees daarna het verhaal voor."
     },
     {
       "fase": "Proefronde · glas 5",
@@ -1443,6 +1449,7 @@
                 "espresso",
                 "pure chocolade",
                 "cacao",
+                "geroosterd",
                 "gebrande noten",
                 "toast",
                 "rook",
@@ -1671,7 +1678,7 @@
       "Laptop met Lesbord op het grote scherm, en internet",
       "Eén telefoon per team (om de QR-code te scannen)",
       "Pen en briefjes per team (voor de feitenrondes)",
-      "Hoegaarden Wit, Tripel Karmeliet, Westmalle Dubbel, Brouwerij 't IJ IPA en The Glenlivet Founder's Reserve",
+      "Benediktiner Weissbier, Texels Skuumkoppe, Tripel Karmeliet, Guinness en The Glenlivet Founder's Reserve",
       "Genummerde proefglaasjes, water en crackers"
     ],
     "verloop": [
@@ -1758,7 +1765,7 @@
       {
         "kop": "Proefronde: zo werkt het",
         "items": [
-          "Schenk blind in genummerde glazen, in deze volgorde: witbier, tripel, dubbel, IPA en als laatste de whisky. Zo overstemt een zwaar of bitter drankje de lichtere niet.",
+          "Schenk blind in genummerde glazen, in deze volgorde: Benediktiner, Skuumkoppe, Tripel Karmeliet, Guinness en als laatste de whisky. Van licht naar zwaar, en de geroosterde Guinness na de tripel, zodat hij de andere niet overstemt.",
           "Op het scherm staat alleen het nummer. Teams vinken op hun telefoon alle smaken aan die ze proeven (ongeveer 125 om uit te kiezen).",
           "Tik op \"Onthul de smaken\". Het bord laat de goede smaken zien, en per team wat ze goed hadden en hoeveel fout.",
           "Punten: elke goede smaak +1, elke foute −1, nooit minder dan 0. Tik op \"Punten toekennen\" om ze in het scorebord te zetten.",
@@ -1766,20 +1773,20 @@
         ]
       },
       {
-        "kop": "Glas 1 · Hoegaarden Wit",
-        "tekst": "**Goede smaken:** sinaasappelschil, sinaasappel, koriander, tarwe, kruidig, fris.\n\n**Voorlezen na het onthullen**\nKijk eerst even naar je glas: het is troebel, en dat hoort zo. Een witbier wordt gebrouwen met tarwe en niet gefilterd.\n\nNeem een slok. Je proeft vooral iets fris en lichts, met citrus. Volgens de brouwerij komen geur en smaak van sinaasappelschil, koriander en kruiden, zoals de monniken die ooit uit Curaçao lieten komen.\n\nHet is een bier dat niet zwaar wil zijn, eerder dorstlessend. Een goed begin van de proefronde."
+        "kop": "Glas 1 · Benediktiner Weissbier",
+        "tekst": "**Goede smaken:** tarwe, banaan, kruidnagel, honing, sinaasappelschil, karamel, kruidig, mout.\n\n**Voorlezen na het onthullen**\nEen Beiers weissbier, troebel omdat de gist er nog in zit. Het recept komt van het klooster Ettal in Beieren, en het wordt gebrouwen met de eigen gist van het klooster.\n\nRuik eerst: tarwe, honing en een vleugje banaan. De brouwer noemt ook sinaasappelschil, kruidnagel en bergkruiden. Neem een slok: fris, moutig-zoet met wat karamel, en op het eind een lichte bitter.\n\nDie banaan en kruidnagel zitten er niet in als fruit of specerij. Ze komen van de gist: die maakt tijdens het gisten precies die geurtjes."
       },
       {
-        "kop": "Glas 2 · Tripel Karmeliet",
+        "kop": "Glas 2 · Texels Skuumkoppe",
+        "tekst": "**Goede smaken:** karamel, abrikoos, tarwe, romig, vol.\n\n**Voorlezen na het onthullen**\nVan de Texelse Bierbrouwerij in Oudeschild. Skuumkoppe is Texels voor schuimkoppen: de witte koppen op de golven.\n\nDit is ook een tarwebier, maar dan donker. Neem een slok: vol en romig, met karamel en, als je goed zoekt, een vleugje abrikoos.\n\nMet 6 procent is hij een stuk steviger dan het eerste glas, maar dat merk je nauwelijks."
+      },
+      {
+        "kop": "Glas 3 · Tripel Karmeliet",
         "tekst": "**Goede smaken:** honing, banaan, sinaasappelschil, kruidnagel, witte peper, citroen, koriander, hooi, droog, prikkelend, warm.\n\n**Voorlezen na het onthullen**\nDit is een tripel, gebrouwen met drie granen: gerst, tarwe en haver. Je ruikt het al voor je drinkt: banaan, sinaasappelschil en een vleugje kruidnagel.\n\nNeem een slok. Het eerste is zacht en zoet, bijna als honing. Dan prikt het koolzuur en komen er peperige, kruidige tonen bij, met iets van citroen en koriander. Wie goed zoekt, proeft zelfs iets van hooi.\n\nDe afdronk is verrassend droog, en met ruim 8 procent alcohol voel je het warm worden. Dat sluipt erin."
       },
       {
-        "kop": "Glas 3 · Westmalle Dubbel",
-        "tekst": "**Goede smaken:** mout, kruidig, fruitig, bitter, zacht, lange afdronk.\n\n**Voorlezen na het onthullen**\nRoodbruin, met een romige schuimkraag. Dit is een trappist, gebrouwen in de abdij van Westmalle, en eigenlijk de stamvader van alle dubbels: brouwerijen over de hele wereld hebben deze stijl nagedaan.\n\nRuik eerst: je ruikt vooral mout, het geroosterde graan. Neem dan een slok. De smaak is vol en rijk, kruidig en fruitig tegelijk, en het voelt zacht in de mond.\n\nAan het eind komt er een frisse bitter, die nog lang blijft hangen."
-      },
-      {
-        "kop": "Glas 4 · Brouwerij 't IJ IPA",
-        "tekst": "**Goede smaken:** hop, grapefruit, bloemig, fruitig, bitter, lange afdronk.\n\n**Voorlezen na het onthullen**\nEen India Pale Ale van Brouwerij 't IJ uit Amsterdam, de brouwerij naast molen De Gooyer. Donkerblond en vol hop: die gaat er niet alleen bij het brouwen in, maar ook nog eens tijdens het rijpen.\n\nDaardoor ruik je grapefruit en bloemen nog voor je drinkt. De slok is fruitig, en dan komt de bitter, die lang blijft hangen.\n\nDaarom staat dit bier als laatste: na zoveel bitter proef je een zacht bier niet meer goed."
+        "kop": "Glas 4 · Guinness",
+        "tekst": "**Goede smaken:** koffie, pure chocolade, geroosterd, romig, bitter, zoet, zacht.\n\n**Voorlezen na het onthullen**\nEen Ierse stout uit Dublin. Hij lijkt zwart, maar volgens Guinness zelf is hij heel donker robijnrood. Hou je glas maar eens tegen het licht.\n\nDie kleur en smaak komen van geroosterde gerst, ongeveer zoals koffiebonen worden gebrand. Daarom ruik je koffie en pure chocolade. De romige schuimkraag komt van stikstof in plaats van alleen koolzuur.\n\nNeem een slok: zacht en romig, met een mooie balans tussen zoet en bitter, en het geroosterde blijft nog even hangen. En hij is lichter dan je denkt: ruim 4 procent, het lichtste bier van vanavond."
       },
       {
         "kop": "Glas 5 · The Glenlivet Founder's Reserve",

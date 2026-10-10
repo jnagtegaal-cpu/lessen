@@ -16,6 +16,11 @@ const Spellen = (() => {
     try { staat = JSON.parse(localStorage.getItem(sleutel(api)) || "{}") || {}; } catch (e) { staat = {}; }
   }
   const bewaar = (api) => { try { localStorage.setItem(sleutel(api), JSON.stringify(staat)); } catch (e) { /* geen opslag */ } };
+  // Elke kamer (elke avond, elke les) begint met lege spellen: een oude uitslag hoort bij oude teams.
+  function zelfdeKamer(api) {
+    const code = api.code();
+    if (code && staat._kamer !== code) { staat = { _kamer: code }; bewaar(api); }
+  }
   const spel = (id) => staat[id] || (staat[id] = { fase: "begin", r: 0 });
   const letter = (i) => String.fromCharCode(65 + i);
   const schud = (lijst) => {
@@ -132,7 +137,7 @@ const Spellen = (() => {
   const vraagVoor = (h) => (h.soort === "bluf" ? blufVraag(h.def, spel(h.def.id)) : proefVraag(h.def, spel(h.def.id)));
 
   function bind(dia, api) {
-    laad(api);
+    laad(api); zelfdeKamer(api);
     huidig = zoek(dia);
     if (huidig) api.stuurVraag(vraagVoor(huidig));
   }
@@ -141,6 +146,7 @@ const Spellen = (() => {
     const el = dia.querySelector(huidig.soort === "bluf" ? "[data-bluf]" : "[data-proef]"); if (!el) return;
     if (!statisch.has(el)) statisch.set(el, el.innerHTML);
     if (!api.actief()) { if (el.innerHTML !== statisch.get(el)) el.innerHTML = statisch.get(el); el.classList.remove("live"); return; }
+    zelfdeKamer(api);
     el.classList.add("live");
     const s = spel(huidig.def.id);
     el.classList.toggle("uitslag", s.fase === "uitslag");
