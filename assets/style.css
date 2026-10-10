@@ -637,3 +637,4 @@ body.thema-pub .live-weg { border-color: #c9a46a; color: #7a5a35; }
 
 /* Pdf van de presentatie: geen arcering achter wat al zichtbaar is */
 .alles-zichtbaar .dia.thema-pub .onthul { background: none; border: 0; }
+.alles-zichtbaar .dia.thema-pub .b-stappen li.onthul { background: rgba(255,255,255,.05); border: 2px solid rgba(244,239,226,.4); }
