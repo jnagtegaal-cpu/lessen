@@ -43,6 +43,12 @@
       </aside>
     </div>
 
+    <div class="scorebalk" id="scorebalk" hidden>
+      <div class="score-teams" id="score-teams" aria-live="polite"></div>
+      <button class="knop hoofd" id="score-open" aria-expanded="false" aria-controls="scorepaneel">Punten geven</button>
+    </div>
+    <div class="scorepaneel" id="scorepaneel" hidden role="dialog" aria-label="Punten geven"></div>
+
     <div class="gereedschap" id="gereedschap">
       <div class="groep-gereedschap">
         <button class="ikoon-knop" id="vorige" title="Vorig scherm" aria-label="Vorig scherm">
@@ -87,6 +93,7 @@
   </div>
 
   <script src="assets/blokken.js"></script>
+  <script src="assets/score.js"></script>
   <script src="assets/bord.js"></script>
 </body>
 </html>

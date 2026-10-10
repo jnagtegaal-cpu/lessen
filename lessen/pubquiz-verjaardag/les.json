@@ -1,0 +1,36 @@
+{
+  "id": "pubquiz-verjaardag",
+  "titel": "Pubquiz",
+  "groep": "Volwassenen",
+  "vak": "Pubquiz",
+  "samenvatting": "Pubquiz voor een familieavond: feiten en onzin, proeven en bluffen.",
+  "trefwoorden": ["pubquiz", "quiz", "feest"],
+  "gemaakt": "2026-10-10",
+  "scorebord": { "teams": 3 },
+  "schermen": [
+    {
+      "fase": "Welkom",
+      "uitlijning": "midden",
+      "blokken": [
+        { "type": "fase", "tekst": "Pubquiz" },
+        { "type": "kop", "tekst": "Welkom bij de pubquiz!" },
+        { "type": "vraag", "tekst": "Kies een teamnaam. Elk team heeft een pen en briefjes." }
+      ],
+      "notitie": "Concept: de teamnamen typ je in het scorebord onderaan in."
+    },
+    {
+      "fase": "Voorbeeld",
+      "blokken": [
+        { "type": "kop", "tekst": "Voorbeeldscherm" },
+        { "type": "lijst", "items": ["Stelling A", "Stelling B", "Stelling C"], "stapsgewijs": true }
+      ]
+    },
+    {
+      "fase": "Uitslag",
+      "blokken": [
+        { "type": "kop", "tekst": "De eindstand" },
+        { "type": "eindstand" }
+      ]
+    }
+  ]
+}

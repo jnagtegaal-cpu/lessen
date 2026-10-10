@@ -53,6 +53,7 @@ const Lesbord = (() => {
           .map((k) => `<div class="b-kolom">${(k || []).map((x) => blok(x, lesmap)).join("")}</div>`)
           .join("")}</div>`;
       }
+      case "eindstand": return `<div class="b-eindstand" data-eindstand${stijl}></div>`; // wordt op het bord gevuld door score.js
       case "html": return b.html || ""; // maatwerk per les
       default: return `<p class="b-klein">[onbekend bloktype: ${esc(b.type)}]</p>`;
     }

@@ -68,6 +68,7 @@ Een scherm is 1600 × 900 en schaalt mee op elk bord.
 | `schrijfvak` | `label` | Gestippeld vak om in te schrijven |
 | `kolommen` | `kolommen` (lijst van lijsten met blokken), `verhouding` | Naast elkaar, bijv. `["2fr","1fr"]` |
 | `html` | `html` | Maatwerk, zoals een getallenlijn of liniaal in SVG |
+| `eindstand` | – | Ranglijst van het scorebord (alleen met `scorebord` in de les, zie hieronder) |
 
 ### Stap voor stap tonen
 
@@ -100,3 +101,22 @@ Hier komt **alleen** wat in het ontwerpgesprek besproken is.
 ```
 
 `fase` mag weg als de les geen fases heeft. Dan verdwijnt die kolom in de PDF. Hetzelfde geldt voor `tijd`.
+
+## Scorebord (quizzen en spellen)
+
+Voor een quiz, spel of wedstrijd zet je in `les.json` op het hoogste niveau:
+
+```json
+"scorebord": { "teams": 3 }
+```
+
+`teams` is een aantal (2 tot 8) of een lijst met standaardnamen, bijvoorbeeld `["Rood", "Blauw", "Geel"]`.
+
+Wat je dan krijgt:
+
+- **Een balk onderaan elk scherm** met de teams en hun punten. Het team met de meeste punten is groen gemarkeerd.
+- **Punten geven:** tik op "Punten geven". In het paneel typ je de teamnamen (dat opent de eerste keer vanzelf), vink je aan welke teams het goed hadden, kies je 1 tot 4 punten en tik je op "Optellen". Er is ook "Laatste ongedaan maken", corrigeren met + en − per team, en "Alles op nul" (met een tweede tik ter bevestiging).
+- **Bewaard in de browser:** de stand en de teamnamen blijven staan als je van scherm wisselt of de pagina herlaadt. Ze staan alleen op het apparaat waarmee je presenteert, niet op de site en niet in de pdf's.
+- **Blok `eindstand`:** zet dit op een slotscherm voor een grote ranglijst met plaats, naam en punten (gelijke stand = gelijke plaats). In de pdf van de presentatie staat daar een lege plek met een korte tekst.
+
+Het scorebord staat in `assets/score.js`.
