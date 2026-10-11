@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les bewerken · Lesbord</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232f9e63'/%3E%3Crect x='7' y='9' width='18' height='12' rx='2' fill='none' stroke='white' stroke-width='2.4'/%3E%3Cpath d='M13 25h6M16 21v4' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body class="bewerk">
+  <header class="bewerk-top">
+    <a class="ikoon-knop" href="./" id="terug" title="Terug naar alle lessen" aria-label="Terug naar alle lessen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    </a>
+    <div class="bewerk-titel" id="kop-titel">Les bewerken</div>
+    <span class="bewerk-status" id="status"></span>
+    <a class="knop" id="knop-bekijk" hidden>Bekijk op bord</a>
+    <button class="knop hoofd" id="knop-opslaan" disabled>Opslaan</button>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="gegevens" aria-selected="true">Gegevens</button>
+    <button class="tab" role="tab" data-tab="schermen" aria-selected="false">Schermen</button>
+    <button class="tab" role="tab" data-tab="voorbereiding" aria-selected="false">Voorbereiding</button>
+  </nav>
+
+  <main class="bewerk-inhoud" id="inhoud">
+    <div class="leeg">Laden…</div>
+  </main>
+
+  <script src="assets/blokken.js"></script>
+  <script src="assets/github.js"></script>
+  <script src="assets/bewerk.js"></script>
+</body>
+</html>
