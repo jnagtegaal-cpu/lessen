@@ -661,3 +661,96 @@ body.thema-pub .live-weg { border-color: #c9a46a; color: #7a5a35; }
 /* Pdf van de presentatie: geen arcering achter wat al zichtbaar is */
 .alles-zichtbaar .dia.thema-pub .onthul { background: none; border: 0; }
 .alles-zichtbaar .dia.thema-pub .b-stappen li.onthul { background: rgba(255,255,255,.05); border: 2px solid rgba(244,239,226,.4); }
+
+/* ---------- Beheer: knoppen in het overzicht ---------- */
+.kop-acties { margin-left: auto; display: flex; gap: 8px; align-items: center; }
+.kop-link { color: var(--ink-soft); font-size: 15px; text-decoration: none; }
+.kop-link:hover { color: var(--groen-donker); text-decoration: underline; }
+.kaart-beheer { display: inline-flex; gap: 6px; margin-left: auto; }
+.kaart-beheer .ikoon-knop { width: 42px; height: 42px; }
+.kaart-beheer .ikoon-knop svg { width: 20px; height: 20px; }
+.ikoon-knop.rood:hover, .knop.rood:hover { border-color: var(--rood); color: var(--rood); }
+.knop.rood { color: #b3372f; }
+.knop.klein { padding: 6px 10px; font-size: 14px; border-radius: 8px; }
+.knop.vol { width: 100%; justify-content: center; margin-top: 8px; }
+.knop:disabled { opacity: .45; cursor: default; }
+
+/* ---------- Bewerkpagina ---------- */
+body.bewerk { background: var(--bg); }
+.bewerk-top {
+  position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 12px;
+  background: var(--paper); border-bottom: 1px solid var(--line); padding: 10px 16px;
+}
+.bewerk-titel { font-weight: 700; font-size: 20px; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bewerk-status { font-size: 15px; color: var(--ink-soft); }
+.bewerk-status[data-soort="fout"] { color: #b3372f; font-weight: 700; }
+.bewerk-status[data-soort="goed"] { color: var(--groen-donker); font-weight: 700; }
+.tabs { display: flex; gap: 4px; max-width: 1400px; margin: 16px auto 0; padding: 0 16px; overflow-x: auto; }
+.tab { flex: none; }
+.tab {
+  border: 1.5px solid var(--line); border-bottom: 0; background: #eef4f0; padding: 10px 20px; border-radius: 12px 12px 0 0;
+  cursor: pointer; font-weight: 700; color: var(--ink-soft);
+}
+.tab[aria-selected="true"] { background: var(--paper); color: var(--groen-donker); }
+.bewerk-inhoud { max-width: 1400px; margin: 0 auto; padding: 0 16px 80px; }
+.paneel {
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; margin-bottom: 16px;
+}
+.paneel.smal { max-width: 860px; }
+.paneel h2 { margin: 0 0 14px; font-size: 20px; }
+.paneel h3 { margin: 22px 0 10px; font-size: 17px; color: var(--groen-donker); }
+.veld { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; flex: 1; min-width: 0; }
+.veld-label { font-weight: 700; font-size: 15px; }
+.veld-uitleg { font-size: 14px; color: var(--ink-soft); }
+.veld-rij { display: flex; gap: 14px; flex-wrap: wrap; }
+.veld-rij .veld { min-width: 160px; }
+.bewerk input:not([type]), .bewerk input[type="number"], .bewerk input[type="password"], .bewerk textarea, .bewerk select,
+.paneel input:not([type]), .paneel input[type="password"], .paneel textarea {
+  font: inherit; font-size: 16px; color: var(--ink); background: #fbfdfc; border: 1.5px solid var(--line);
+  border-radius: 10px; padding: 9px 12px; width: 100%;
+}
+.bewerk textarea, .paneel textarea { resize: vertical; line-height: 1.4; }
+.bewerk input:focus, .bewerk textarea:focus, .bewerk select:focus, .paneel input:focus { outline: 0; border-color: var(--groen); background: #fff; }
+textarea.code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 13px; }
+textarea.fout { border-color: var(--rood) !important; }
+.vink { display: flex; align-items: center; gap: 10px; margin: 8px 0; font-size: 16px; cursor: pointer; }
+.vink input { width: 20px; height: 20px; accent-color: var(--groen); }
+.gevaar { border-top: 1px solid var(--line); margin-top: 20px; padding-top: 16px; }
+.knoppen-rij { display: inline-flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.uitleg-lijst li { margin: 6px 0; }
+
+.schermen-raster { display: grid; grid-template-columns: 270px 1fr; gap: 16px; align-items: start; }
+.schermen-lijst { position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow: auto; }
+.scherm-item {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px; width: 100%; text-align: left;
+  border: 1.5px solid transparent; background: none; border-radius: 10px; padding: 9px 12px; cursor: pointer; font-size: 15px;
+}
+.scherm-item:hover { background: var(--groen-licht); }
+.scherm-item[aria-current="true"] { background: var(--groen-licht); border-color: var(--groen); font-weight: 700; }
+.scherm-item small { color: var(--groen-donker); font-weight: 400; font-size: 13px; }
+.voorbeeld-balk { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; color: var(--ink-soft); font-size: 15px; }
+.voorbeeld { position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 6px 24px rgba(20,60,40,.13); background: #fff; }
+.voorbeeld .dia .onthul { outline: 3px dashed #9fcdb1; outline-offset: 4px; border-radius: 10px; }
+.voorbeeld .dia .onthul > * { visibility: visible !important; }
+.voorbeeld .dia .onthul::after { content: none !important; }
+.voorbeeld .dia .onthul:not(.zichtbaar) { background: none; border: 0; }
+.voorbeeld .dia .b-stappen li.onthul::before { opacity: 1 !important; }
+.blok-kaart { border: 1.5px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 12px; background: #fcfefd; display: flex; flex-direction: column; gap: 8px; }
+.blok-kop { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.blok-kop b { color: var(--groen-donker); }
+.blok-kop input { flex: 1; }
+.toevoegen { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.toevoegen select { width: auto; min-width: 220px; }
+.afbeelding-kies { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.verloop-bewerk { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
+.verloop-kop, .verloop-rij { display: grid; grid-template-columns: 110px 170px 1fr auto; gap: 8px; align-items: start; }
+.verloop-kop { font-size: 13px; font-weight: 700; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .05em; }
+
+@media (max-width: 900px) {
+  .schermen-raster { grid-template-columns: 1fr; }
+  .schermen-lijst { position: static; max-height: none; }
+  .verloop-kop { display: none; }
+  .verloop-rij { grid-template-columns: 1fr 1fr; }
+  .verloop-rij textarea { grid-column: 1 / -1; }
+  .bewerk-status { display: none; }
+}

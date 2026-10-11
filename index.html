@@ -23,6 +23,7 @@
           <span class="merk-sub">Lessen voor het digibord</span>
         </span>
       </a>
+      <div class="kop-acties" id="kop-acties"></div>
     </div>
   </header>
 
@@ -38,10 +39,14 @@
   </main>
 
   <script src="assets/blokken.js"></script>
+  <script src="assets/github.js"></script>
   <script>
     const { esc } = Lesbord;
     const staat = { zoek: "", groep: null, vak: null, lessen: [] };
+    const beheer = GitHub.heeftSleutel();
     const ikoon = {
+      bewerk: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg>',
+      weg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>',
       bord: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></svg>',
       pdf: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>'
     };
@@ -89,7 +94,12 @@
             <a class="knop hoofd" href="les.html?id=${encodeURIComponent(l.id)}">${ikoon.bord} Open op bord</a>
             <a class="knop" href="lessen/${encodeURIComponent(l.id)}/voorbereiding.pdf" download>${ikoon.pdf} Voorbereiding</a>
             <a class="knop" href="lessen/${encodeURIComponent(l.id)}/presentatie.pdf" download>${ikoon.pdf} Presentatie</a>
+            ${beheer ? `<span class="kaart-beheer">
+              <a class="ikoon-knop" href="bewerk.html?id=${encodeURIComponent(l.id)}" title="Bewerken" aria-label="Bewerken">${ikoon.bewerk}</a>
+              <button class="ikoon-knop rood" data-weg="${esc(l.id)}" title="Verwijderen" aria-label="Verwijderen">${ikoon.weg}</button>
+            </span>` : ""}
           </div>
+          ${l.nieuw ? `<p class="veld-uitleg">Net opgeslagen, de PDF's worden nog gemaakt.</p>` : ""}
         </article>`).join("");
     }
 
@@ -102,8 +112,25 @@
       tekenFilters(); tekenLessen();
     });
 
+    document.getElementById("kop-acties").innerHTML = beheer
+      ? `<a class="knop hoofd" href="bewerk.html">+ Nieuwe les</a><a class="ikoon-knop" href="sleutel.html" title="Sleutel" aria-label="Sleutel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M15 8l2 2"/></svg></a>`
+      : `<a class="kop-link" href="sleutel.html">Lessen beheren</a>`;
+
+    document.getElementById("raster").addEventListener("click", async (e) => {
+      const knop = e.target.closest("[data-weg]"); if (!knop) return;
+      const les = staat.lessen.find((l) => l.id === knop.dataset.weg);
+      if (!les || !confirm(`"${les.titel}" verwijderen?\n\nDe les verdwijnt uit het overzicht. In GitHub is hij later nog terug te halen.`)) return;
+      knop.disabled = true;
+      try {
+        await GitHub.verwijderMap(`lessen/${les.id}`, `Les verwijderd: ${les.titel} (via de app)`);
+        GitHub.onthoudVerwijderd(les.id);
+        staat.lessen = staat.lessen.filter((l) => l.id !== les.id);
+        tekenFilters(); tekenLessen();
+      } catch (err) { knop.disabled = false; alert(err.message || "Verwijderen mislukt."); }
+    });
+
     Lesbord.laadCatalogus().then((cat) => {
-      staat.lessen = (cat.lessen || []).sort((a, b) => String(b.gemaakt || "").localeCompare(String(a.gemaakt || "")));
+      staat.lessen = GitHub.pasOverzichtAan(cat.lessen || []).sort((a, b) => String(b.gemaakt || "").localeCompare(String(a.gemaakt || "")));
       tekenFilters(); tekenLessen();
     }).catch(() => {
       document.getElementById("raster").innerHTML = `<div class="leeg">De lessen konden niet geladen worden. Ververs de pagina.</div>`;

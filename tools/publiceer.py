@@ -8,6 +8,7 @@
 Gebruik (vanuit de map van de repository):
     python3 tools/publiceer.py            # alle lessen
     python3 tools/publiceer.py <les-id>   # alleen PDF's van deze les opnieuw
+    python3 tools/publiceer.py --catalogus  # alleen het overzicht
 """
 import functools
 import os
@@ -88,8 +89,13 @@ def main():
         sys.exit(1)
     schrijf_catalogus(lessen)
     print(f"Catalogus bijgewerkt: {len(lessen)} les(sen)")
-    ids = sys.argv[1:] or [les["id"] for les in lessen]
-    maak_pdfs(ids)
+    args = sys.argv[1:]
+    if args == ["--catalogus"]:
+        return  # alleen het overzicht (bijv. na het verwijderen van een les)
+    ids = args or [les["id"] for les in lessen]
+    ids = [i for i in ids if (LESSEN / i / "les.json").exists()]
+    if ids:
+        maak_pdfs(ids)
 
 
 if __name__ == "__main__":

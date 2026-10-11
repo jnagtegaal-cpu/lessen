@@ -11,7 +11,7 @@ In die map staan:
 | `presentatie.pdf` | Wordt gemaakt door `tools/publiceer.py` |
 | afbeeldingen | Optioneel, en vanuit een blok aan te roepen met alleen de bestandsnaam |
 
-Na elke wijziging draai je `python3 tools/publiceer.py`. Dat controleert de lessen, werkt `lessen/catalogus.json` bij (het overzicht op de site) en maakt de PDF's.
+Na elke wijziging draai je `python3 tools/publiceer.py`. Daarnaast doet GitHub dit automatisch bij elke push die een `les.json` verandert (`.github/workflows/publiceer.yml`). Lessen kunnen ook in de app zelf gemaakt en bewerkt worden (`bewerk.html`). Die worden in precies dit formaat opgeslagen. Dat controleert de lessen, werkt `lessen/catalogus.json` bij (het overzicht op de site) en maakt de PDF's.
 
 ## les.json
 
