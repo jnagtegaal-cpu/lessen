@@ -68,6 +68,28 @@
       "gemaakt": "2026-10-08"
     },
     {
+      "id": "g7-rekenen-kommagetallen-optellen-aftrekken",
+      "titel": "Kommagetallen cijferend optellen en aftrekken",
+      "groep": "7",
+      "vak": "Rekenen",
+      "onderwerp": "Kommagetallen optellen en aftrekken",
+      "edi": true,
+      "samenvatting": "Kommagetallen cijferend optellen en aftrekken: komma's onder elkaar en aanvullen met nullen, met de getallenlijn als model.",
+      "trefwoorden": [
+        "kommagetallen",
+        "cijferen",
+        "optellen",
+        "aftrekken",
+        "nullen aanvullen",
+        "tienden",
+        "honderdsten",
+        "duizendsten",
+        "getallenlijn",
+        "stappenplan"
+      ],
+      "gemaakt": "2026-10-11"
+    },
+    {
       "id": "pubquiz-verjaardag",
       "titel": "Familie-pubquiz",
       "groep": "Volwassenen",
