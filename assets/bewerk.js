@@ -1,302 +1,336 @@
-// Lesbord — lessen maken en bewerken in de app.
-// Alles wat je hier invult wordt les.json in GitHub, precies hetzelfde formaat als lessen uit de chat.
+// Lesbord — lessen maken en bewerken, zoals in Prowise:
+// tekstvakken op het scherm zetten, verslepen en opmaken, plus bouwstenen om iets te verstoppen.
+// Lessen uit de chat kun je hier ook openen: hun onderdelen blijven staan, en je kunt er tekstvakken bij zetten.
 (() => {
-  const { esc } = Lesbord;
-  const $ = (s, el = document) => el.querySelector(s);
-  const inhoud = $("#inhoud");
+  const $ = (s) => document.querySelector(s);
+  const B = 1600, H = 900, MINI = 176 / B;
+  const GROOTTES = [["Klein", 32], ["Normaal", 48], ["Groot", 64], ["Heel groot", 96], ["Enorm", 140]];
+  const LETTERNAMEN = [["standaard", "Standaard"], ["school", "Schoolschrift"], ["hand", "Handgeschreven"], ["klassiek", "Klassiek"], ["rond", "Rond"]];
+  const TEKSTKLEUREN = [["#1d2b24", "Zwart"], ["#1f7a4a", "Groen"], ["#2e6fd1", "Blauw"], ["#d6453d", "Rood"], ["#e07b00", "Oranje"], ["#ffffff", "Wit"]];
+  const VULLINGEN = [["", "Geen"], ["#e3f4ea", "Lichtgroen"], ["#fff3b0", "Geel"], ["#dbe9fb", "Lichtblauw"], ["#fbe0e0", "Roze"], ["#2f9e63", "Groen"], ["#2e6fd1", "Blauw"], ["#c9d4ce", "Grijs"]];
 
-  const BLOKTYPES = [
-    ["kop", "Titel"], ["subkop", "Tussenkop"], ["tekst", "Tekst"], ["vraag", "Vraag / opdracht"],
-    ["groot", "Heel groot (getal of woord)"], ["lijst", "Opsomming"], ["stappen", "Stappenplan"],
-    ["tabel", "Tabel"], ["afbeelding", "Afbeelding"], ["schrijfvak", "Schrijfvak"], ["klein", "Kleine tekst"], ["fase", "Label op het scherm"],
-  ];
-  const NAAM = Object.fromEntries(BLOKTYPES);
-  const TEKSTTYPES = ["kop", "subkop", "tekst", "vraag", "groot", "klein", "fase"];
+  const st = {
+    id: Lesbord.param("id"), nieuw: !Lesbord.param("id"), les: null, gekozen: 0,
+    sel: null, bewerken: false, vuil: false, uploads: {}, terug: [], vooruit: [], schaal: 1,
+  };
+  const scherm = () => st.les.schermen[st.gekozen];
+  const els = () => (scherm().elementen ||= []);
+  const lesmap = () => (st.id ? `lessen/${st.id}` : "lessen");
+  const laag = $("#laag"), dia = $("#ed-dia"), houder = $("#houder");
+  const rond = (v) => Math.round(v / 5) * 5;
+  const tussen = (v, a, b) => Math.max(a, Math.min(b, v));
 
-  const st = { id: Lesbord.param("id"), nieuw: !Lesbord.param("id"), les: null, gekozen: 0, tab: "gegevens", vuil: false, uploads: {} };
-
-  const nieuweLes = () => ({
-    titel: "", groep: "", vak: "", lesdoel: "", lesdoelInHoek: false,
-    schermen: [{ blokken: [{ type: "kop", tekst: "" }] }],
-    voorbereiding: { benodigdheden: [], verloop: [] },
-  });
-
-  // ---------- Status en opslaan-knop ----------
-  function status(tekst, soort = "") {
-    const s = $("#status"); s.textContent = tekst; s.dataset.soort = soort;
-  }
-  function vuil() {
-    st.vuil = true; $("#knop-opslaan").disabled = false; status("Niet opgeslagen");
-  }
+  // ---------- Status ----------
+  function status(t, soort = "") { const s = $("#status"); s.textContent = t; s.dataset.soort = soort; }
+  function vuil() { st.vuil = true; $("#knop-opslaan").disabled = false; status("Niet opgeslagen"); }
   window.addEventListener("beforeunload", (e) => { if (st.vuil) { e.preventDefault(); e.returnValue = ""; } });
   $("#terug").addEventListener("click", (e) => {
     if (st.vuil && !confirm("Je hebt wijzigingen die nog niet zijn opgeslagen. Toch teruggaan?")) e.preventDefault();
   });
 
-  // ---------- Tabs ----------
-  document.querySelectorAll(".tab").forEach((t) => (t.onclick = () => { st.tab = t.dataset.tab; teken(); }));
-
-  function teken() {
-    document.querySelectorAll(".tab").forEach((t) => t.setAttribute("aria-selected", t.dataset.tab === st.tab));
-    $("#kop-titel").textContent = st.les.titel || (st.nieuw ? "Nieuwe les" : "Les bewerken");
-    if (st.tab === "gegevens") inhoud.innerHTML = tabGegevens();
-    if (st.tab === "schermen") { inhoud.innerHTML = tabSchermen(); tekenVoorbeeld(); }
-    if (st.tab === "voorbereiding") inhoud.innerHTML = tabVoorbereiding();
+  // ---------- Ongedaan maken ----------
+  function bewaarStap() {
+    st.terug.push(JSON.stringify(st.les.schermen));
+    if (st.terug.length > 80) st.terug.shift();
+    st.vooruit = [];
   }
-
-  // ---------- Tab: gegevens ----------
-  const veld = (label, html, uitleg = "") =>
-    `<label class="veld"><span class="veld-label">${label}</span>${html}${uitleg ? `<span class="veld-uitleg">${uitleg}</span>` : ""}</label>`;
-  const invoer = (sleutel, waarde, extra = "") => `<input data-les-veld="${sleutel}" value="${esc(waarde ?? "")}" ${extra}>`;
-
-  function tabGegevens() {
-    const l = st.les;
-    return `<section class="paneel smal">
-      <h2>Over deze les</h2>
-      ${veld("Titel *", invoer("titel", l.titel, 'placeholder="Bijvoorbeeld: Breuken vergelijken"'))}
-      <div class="veld-rij">
-        ${veld("Groep *", invoer("groep", l.groep, 'placeholder="6"'), "Bijvoorbeeld 6, 7/8 of Bovenbouw")}
-        ${veld("Vak *", invoer("vak", l.vak, 'placeholder="Rekenen" list="vakken"'))}
-        ${veld("Duur (minuten)", invoer("duur", l.duur, 'type="number" min="1" max="300"'))}
-      </div>
-      <datalist id="vakken">${["Rekenen", "Taal", "Spelling", "Lezen", "Begrijpend lezen", "Wereldoriëntatie", "Engels", "Kanjer", "Muziek", "Overig"].map((v) => `<option value="${v}">`).join("")}</datalist>
-      <div class="veld-rij">
-        ${veld("Methode / blok", invoer("blok", l.blok, 'placeholder="Blok 3, les 2"'))}
-        ${veld("Onderwerp", invoer("onderwerp", l.onderwerp, 'placeholder="Breuken"'))}
-      </div>
-      ${veld("Lesdoel", `<textarea data-les-veld="lesdoel" rows="2" placeholder="Ik kan …">${esc(l.lesdoel || "")}</textarea>`)}
-      <label class="vink"><input type="checkbox" data-les-veld="lesdoelInHoek" ${l.lesdoelInHoek ? "checked" : ""}> Lesdoel klein in de hoek van elk scherm</label>
-      <label class="vink"><input type="checkbox" data-les-veld="edi" ${l.edi ? "checked" : ""}> Deze les is in EDI-vorm</label>
-      ${veld("Korte samenvatting", `<textarea data-les-veld="samenvatting" rows="2" placeholder="Eén zin voor het overzicht">${esc(l.samenvatting || "")}</textarea>`)}
-      ${veld("Zoekwoorden", invoer("trefwoorden", (l.trefwoorden || []).join(", "), 'placeholder="breuken, vergelijken, kommagetallen"'), "Gescheiden door komma's")}
-      ${st.nieuw ? "" : `<div class="gevaar"><button class="knop rood" data-actie="les-weg">Deze les verwijderen</button></div>`}
-    </section>`;
+  function herstel(van, naar) {
+    if (!van.length) return;
+    stopBewerken(true);
+    naar.push(JSON.stringify(st.les.schermen));
+    st.les.schermen = JSON.parse(van.pop());
+    st.gekozen = Math.min(st.gekozen, st.les.schermen.length - 1);
+    st.sel = null; vuil(); tekenAlles();
   }
+  $("#ongedaan").onclick = () => herstel(st.terug, st.vooruit);
+  $("#opnieuw").onclick = () => herstel(st.vooruit, st.terug);
 
-  // ---------- Tab: schermen ----------
-  const schermNaam = (s, i) => {
-    const kop = (s.blokken || []).find((b) => b.tekst);
-    const naam = kop?.tekst || s.fase || ((s.blokken || []).length ? "Scherm" : "Leeg scherm");
-    return `${i + 1}. ${esc(naam.replace(/[*=]/g, "").replace(/\n/g, " ").slice(0, 40))}`;
+  // ---------- Tekenen ----------
+  const metUploads = (s) => {
+    const k = structuredClone(s);
+    for (const x of [...(k.blokken || []), ...(k.elementen || [])])
+      if ((x.type === "afbeelding" || x.soort === "afbeelding") && st.uploads[x.src]) x.src = st.uploads[x.src].dataUrl;
+    return k;
   };
+  const lesdoelHoek = (s) => (st.les.lesdoel && st.les.lesdoelInHoek && !s.lesdoelVerbergen
+    ? `<div class="lesdoel-hoek"><b>Lesdoel</b>${Lesbord.opmaak(st.les.lesdoel)}</div>` : "");
 
-  function tabSchermen() {
-    const l = st.les, s = l.schermen[st.gekozen];
-    const lijst = l.schermen.map((x, i) => `
-      <button class="scherm-item" data-actie="scherm-kies" data-i="${i}" aria-current="${i === st.gekozen}">
-        <span>${schermNaam(x, i)}</span>${x.fase ? `<small>${esc(x.fase)}</small>` : ""}
-      </button>`).join("");
-    return `<div class="schermen-raster">
-      <aside class="paneel schermen-lijst">
-        <h2>Schermen</h2>
-        ${lijst}
-        <button class="knop vol" data-actie="scherm-nieuw">+ Nieuw scherm</button>
-      </aside>
-      <section class="scherm-werk">
-        <div class="voorbeeld-balk">
-          <span>Voorbeeld scherm ${st.gekozen + 1} van ${l.schermen.length}</span>
-          <span class="knoppen-rij">
-            <button class="knop klein" data-actie="scherm-omhoog" ${st.gekozen === 0 ? "disabled" : ""} title="Naar voren">↑</button>
-            <button class="knop klein" data-actie="scherm-omlaag" ${st.gekozen === l.schermen.length - 1 ? "disabled" : ""} title="Naar achteren">↓</button>
-            <button class="knop klein" data-actie="scherm-dupliceer">Kopiëren</button>
-            <button class="knop klein rood" data-actie="scherm-weg" ${l.schermen.length === 1 ? "disabled" : ""}>Verwijderen</button>
-          </span>
-        </div>
-        <div class="voorbeeld" id="voorbeeld"><div class="dia" id="voorbeeld-dia"></div></div>
-        <p class="veld-uitleg">Gestippelde delen zijn op het bord eerst verborgen en verschijnen als je ze aantikt.</p>
-
-        <div class="paneel">
-          <h2>Dit scherm</h2>
-          <div class="veld-rij">
-            ${veld("Lesfase (alleen voor jou)", `<input data-scherm-veld="fase" value="${esc(s.fase || "")}" placeholder="Bijvoorbeeld: Begeleide inoefening">`)}
-            ${veld("Achtergrond", `<select data-scherm-veld="achtergrond">${["leeg", "ruitjes", "lijntjes"].map((a) => `<option value="${a}" ${(s.achtergrond || "leeg") === a ? "selected" : ""}>${a === "leeg" ? "Wit" : a[0].toUpperCase() + a.slice(1)}</option>`).join("")}</select>`)}
-          </div>
-          <label class="vink"><input type="checkbox" data-scherm-veld="uitlijning" ${s.uitlijning === "midden" ? "checked" : ""}> Inhoud in het midden van het scherm</label>
-          ${l.lesdoelInHoek ? `<label class="vink"><input type="checkbox" data-scherm-veld="lesdoelVerbergen" ${s.lesdoelVerbergen ? "checked" : ""}> Lesdoel op dit scherm niet tonen</label>` : ""}
-          ${veld("Notitie voor de leerkracht", `<textarea data-scherm-veld="notitie" rows="2" placeholder="Wat wil je hier zeggen of doen? (niet zichtbaar voor de klas)">${esc(s.notitie || "")}</textarea>`)}
-        </div>
-
-        <div class="paneel">
-          <h2>Op het scherm</h2>
-          <div id="blokken">${(s.blokken || []).map(blokEditor).join("") || '<p class="veld-uitleg">Nog leeg. Voeg hieronder iets toe.</p>'}</div>
-          <div class="toevoegen">
-            <select id="nieuw-blok">${BLOKTYPES.map(([t, n]) => `<option value="${t}">${n}</option>`).join("")}</select>
-            <button class="knop" data-actie="blok-toevoegen">+ Toevoegen</button>
-          </div>
-        </div>
-      </section>
-    </div>`;
+  function pasSchaal() {
+    const podium = $("#podium");
+    const ruimteH = Math.max(320, window.innerHeight - podium.getBoundingClientRect().top - window.scrollY - 70);
+    st.schaal = Math.max(0.15, Math.min(podium.clientWidth / B, ruimteH / H));
+    houder.style.width = B * st.schaal + "px"; houder.style.height = H * st.schaal + "px";
+    dia.style.transform = laag.style.transform = `scale(${st.schaal})`;
   }
 
-  function blokEditor(b, i) {
-    const n = (s.blokken || []).length;
-    const kop = `<div class="blok-kop">
-        <b>${esc(NAAM[b.type] || `Blok '${b.type}'`)}</b>
+  function tekenDia() {
+    const s = metUploads(scherm());
+    dia.className = Lesbord.diaKlassen(s, st.les.thema);
+    dia.innerHTML = Lesbord.diaHtml({ ...s, elementen: [] }, lesmap()) + lesdoelHoek(s);
+    houder.classList.toggle("ed-heeft-blokken", !!(s.blokken || []).length);
+  }
+
+  function elHtml(e, i) {
+    const k = ["vrij", `vrij-${e.soort}`, "ed-el"];
+    if (i === st.sel) k.push("gekozen");
+    if (e.verstopt && e.soort !== "afdek") k.push("verstopt");
+    if (i === st.sel && st.bewerken) k.push("bewerken");
+    let binnen;
+    if (e.soort === "afbeelding") {
+      const src = st.uploads[e.src]?.dataUrl || (/^(https?:|data:|\/)/.test(e.src || "") ? e.src : `${lesmap()}/${e.src}`);
+      binnen = `<img src="${Lesbord.esc(src)}" alt="" draggable="false">`;
+    } else if (e.soort === "afdek") binnen = `<span class="ed-badge">Afdekblok · verdwijnt bij tikken</span>`;
+    else binnen = `<div class="vrij-inhoud">${Lesbord.schoonHtml(e.html)}</div>`;
+    const badge = e.verstopt && e.soort !== "afdek" ? `<span class="ed-badge">Verstopt · komt tevoorschijn bij tikken</span>` : "";
+    return `<div class="${k.join(" ")}" data-i="${i}" style="${Lesbord.vrijStijl(e)}">${binnen}${badge}<span class="ed-verplaats" title="Verslepen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18M12 3l-3 3M12 3l3 3M12 21l-3-3M12 21l3-3M3 12l3-3M3 12l3 3M21 12l-3-3M21 12l-3 3"/></svg></span><span class="ed-greep" title="Groter of kleiner"></span></div>`;
+  }
+  function tekenLaag() { laag.innerHTML = els().map(elHtml).join(""); }
+  const laagEl = (i) => laag.querySelector(`[data-i="${i}"]`);
+  const zetStijl = (i) => { const d = laagEl(i); if (d) d.style.cssText = Lesbord.vrijStijl(els()[i]); };
+
+  function tekenStrip() {
+    const n = st.les.schermen.length;
+    $("#strip").innerHTML = `
+      <div class="ed-strip-kop"><b>Schermen</b>
         <span class="knoppen-rij">
-          <button class="knop klein" data-actie="blok-omhoog" data-i="${i}" ${i === 0 ? "disabled" : ""} title="Omhoog">↑</button>
-          <button class="knop klein" data-actie="blok-omlaag" data-i="${i}" ${i === n - 1 ? "disabled" : ""} title="Omlaag">↓</button>
-          <button class="knop klein rood" data-actie="blok-weg" data-i="${i}" title="Verwijderen">✕</button>
-        </span>
-      </div>`;
-    const d = `data-blok="${i}"`;
-    const verborgen = `<label class="vink"><input type="checkbox" ${d} data-veld="verborgen" ${b.verborgen ? "checked" : ""}> Eerst verborgen (tik om te tonen)</label>`;
-    let velden;
-    if (TEKSTTYPES.includes(b.type)) {
-      velden = `<textarea ${d} data-veld="tekst" rows="${b.type === "tekst" ? 3 : 2}" placeholder="Tekst">${esc(b.tekst || "")}</textarea>
-        <span class="veld-uitleg">**vet**, *schuin*, ==gemarkeerd==</span>${verborgen}`;
-    } else if (b.type === "lijst" || b.type === "stappen") {
-      velden = `<textarea ${d} data-veld="items" rows="4" placeholder="Eén regel per ${b.type === "lijst" ? "punt" : "stap"}">${esc((b.items || []).join("\n"))}</textarea>
-        ${b.type === "lijst" ? `<label class="vink"><input type="checkbox" ${d} data-veld="genummerd" ${b.genummerd ? "checked" : ""}> Genummerd</label>` : ""}
-        <label class="vink"><input type="checkbox" ${d} data-veld="stapsgewijs" ${b.stapsgewijs ? "checked" : ""}> Stap voor stap tonen (elke regel eerst verborgen)</label>`;
-    } else if (b.type === "tabel") {
-      velden = `<textarea ${d} data-veld="rijen" rows="4" placeholder="Eén rij per regel, cellen gescheiden door |&#10;T | E&#10;3 | 4">${esc((b.rijen || []).map((r) => r.join(" | ")).join("\n"))}</textarea>
-        <label class="vink"><input type="checkbox" ${d} data-veld="kopRij" ${b.kopRij !== false ? "checked" : ""}> Eerste rij is de kop</label>${verborgen}`;
-    } else if (b.type === "afbeelding") {
-      velden = `<div class="afbeelding-kies">
-          ${b.src ? `<span class="veld-uitleg">Bestand: ${esc(b.src)}</span>` : '<span class="veld-uitleg">Nog geen afbeelding gekozen.</span>'}
-          <label class="knop klein">Afbeelding kiezen<input type="file" accept="image/*" ${d} data-veld="bestand" hidden></label>
-        </div>
-        ${veld("Omschrijving (voor wie de afbeelding niet ziet)", `<input ${d} data-veld="alt" value="${esc(b.alt || "")}">`)}${verborgen}`;
-    } else if (b.type === "schrijfvak") {
-      velden = `<input ${d} data-veld="label" value="${esc(b.label || "")}" placeholder="Tekst in de hoek van het vak (mag leeg)">${verborgen}`;
-    } else {
-      velden = `<span class="veld-uitleg">Dit blok is in de chat gemaakt. Je kunt het hier laten staan, verplaatsen of verwijderen. Wijzigen kan als code (voor gevorderden):</span>
-        <textarea class="code" ${d} data-veld="json" rows="6" spellcheck="false">${esc(JSON.stringify(b, null, 2))}</textarea>`;
-    }
-    return `<div class="blok-kaart">${kop}${velden}</div>`;
+          <button class="knop klein" data-scherm="omhoog" title="Scherm naar voren" ${st.gekozen === 0 ? "disabled" : ""}>↑</button>
+          <button class="knop klein" data-scherm="omlaag" title="Scherm naar achteren" ${st.gekozen === n - 1 ? "disabled" : ""}>↓</button>
+          <button class="knop klein" data-scherm="kopie" title="Scherm kopiëren">⧉</button>
+          <button class="knop klein rood" data-scherm="weg" title="Scherm verwijderen" ${n === 1 ? "disabled" : ""}>✕</button>
+        </span></div>
+      ${st.les.schermen.map((s, i) => `
+        <button class="ed-mini-knop" data-kies="${i}" aria-current="${i === st.gekozen}" aria-label="Scherm ${i + 1}">
+          <span class="ed-mini-nr">${i + 1}</span>
+          <div class="ed-mini alles-zichtbaar"><div class="${Lesbord.diaKlassen(s, st.les.thema)}" style="transform:scale(${MINI})">${Lesbord.diaHtml(metUploads(s), lesmap())}${lesdoelHoek(s)}</div></div>
+        </button>`).join("")}
+      <button class="knop vol" data-scherm="nieuw">+ Nieuw scherm</button>`;
   }
-  let s; // het gekozen scherm, voor blokEditor
-  const huidigScherm = () => (s = st.les.schermen[st.gekozen]);
+  let stripTimer;
+  const straksStrip = () => { clearTimeout(stripTimer); stripTimer = setTimeout(tekenStrip, 400); };
 
-  // ---------- Voorbeeld ----------
-  function tekenVoorbeeld() {
-    const vak = $("#voorbeeld"), dia = $("#voorbeeld-dia");
-    if (!vak || !dia) return;
-    const sch = structuredClone(st.les.schermen[st.gekozen]);
-    for (const b of sch.blokken || []) if (b.type === "afbeelding" && st.uploads[b.src]) b.src = st.uploads[b.src].dataUrl;
-    const lesmap = st.id ? `lessen/${st.id}` : "lessen";
-    dia.className = Lesbord.diaKlassen(sch, st.les.thema);
-    let html = Lesbord.diaHtml(sch, lesmap);
-    if (st.les.lesdoel && st.les.lesdoelInHoek && !sch.lesdoelVerbergen)
-      html += `<div class="lesdoel-hoek"><b>Lesdoel</b>${Lesbord.opmaak(st.les.lesdoel)}</div>`;
-    dia.innerHTML = html;
-    vak.classList.toggle(`thema-${st.les.thema}`, !!st.les.thema);
-    const schaal = vak.clientWidth / 1600;
-    vak.style.height = 900 * schaal + "px";
-    dia.style.transform = `scale(${schaal})`;
-  }
-  window.addEventListener("resize", tekenVoorbeeld);
-  let wacht;
-  const straks = () => { clearTimeout(wacht); wacht = setTimeout(tekenVoorbeeld, 150); };
-
-  // ---------- Tab: voorbereiding ----------
-  function tabVoorbereiding() {
-    const v = st.les.voorbereiding || (st.les.voorbereiding = {});
-    const verloop = v.verloop || [];
-    const secties = v.secties || [];
-    return `<section class="paneel smal">
-      <h2>Voorbereidingsformulier</h2>
-      <p class="veld-uitleg">Dit komt in de PDF bij de les. Lege onderdelen worden weggelaten.</p>
-      ${veld("Benodigdheden", `<textarea data-voorbereiding="benodigdheden" rows="3" placeholder="Eén per regel, bijvoorbeeld: wisbordjes">${esc((v.benodigdheden || []).join("\n"))}</textarea>`)}
-
-      <h3>Verloop</h3>
-      <div class="verloop-bewerk">
-        ${verloop.length ? `<div class="verloop-kop"><span>Tijd</span><span>Lesfase</span><span>Wat er gebeurt</span><span></span></div>` : ""}
-        ${verloop.map((r, i) => `<div class="verloop-rij">
-          <input data-verloop="${i}" data-veld="tijd" value="${esc(r.tijd || "")}" placeholder="0–5 min">
-          <input data-verloop="${i}" data-veld="fase" value="${esc(r.fase || "")}" placeholder="(mag leeg)">
-          <textarea data-verloop="${i}" data-veld="wat" rows="2" placeholder="Wat er gebeurt">${esc(r.wat || "")}</textarea>
-          <span class="knoppen-rij">
-            <button class="knop klein" data-actie="verloop-omhoog" data-i="${i}" ${i === 0 ? "disabled" : ""}>↑</button>
-            <button class="knop klein rood" data-actie="verloop-weg" data-i="${i}">✕</button>
-          </span>
-        </div>`).join("")}
+  function tekenEigenschappen() {
+    const bar = $("#eigenschappen"), e = st.sel != null ? els()[st.sel] : null;
+    bar.hidden = !e;
+    if (!e) return;
+    const kleurKnoppen = (veld, lijst, huidig) => lijst.map(([k, n]) =>
+      `<button class="ed-kleur${k ? "" : " geen"}" data-eig="${veld}" data-waarde="${k}" title="${n}" aria-label="${n}" aria-pressed="${(huidig || "") === k}" style="${k ? `background:${k}` : ""}"></button>`).join("");
+    let h = "";
+    if (e.soort === "tekst") {
+      const g = e.grootte || 48;
+      const groottes = GROOTTES.some(([, v]) => v === g) ? GROOTTES : [...GROOTTES, [`Eigen (${g})`, g]];
+      h += `<div class="ed-groep">
+        <select data-eig="letter" aria-label="Lettertype">${LETTERNAMEN.map(([k, n]) => `<option value="${k}" ${(e.letter || "standaard") === k ? "selected" : ""}>${n}</option>`).join("")}</select>
+        <select data-eig="grootte" aria-label="Lettergrootte">${groottes.map(([n, v]) => `<option value="${v}" ${v === g ? "selected" : ""}>${n}</option>`).join("")}</select>
       </div>
-      <button class="knop" data-actie="verloop-nieuw">+ Rij toevoegen</button>
-
-      <h3>Extra onderdelen</h3>
-      ${secties.map((x, i) => `<div class="blok-kaart">
-        <div class="blok-kop"><input data-sectie="${i}" data-veld="kop" value="${esc(x.kop || "")}" placeholder="Kop, bijvoorbeeld: Aandachtspunten">
-          <button class="knop klein rood" data-actie="sectie-weg" data-i="${i}">✕</button></div>
-        <textarea data-sectie="${i}" data-veld="inhoud" rows="3">${esc(x.items ? x.items.join("\n") : x.tekst || "")}</textarea>
-        <label class="vink"><input type="checkbox" data-sectie="${i}" data-veld="lijst" ${x.items ? "checked" : ""}> Als opsomming (één punt per regel)</label>
-      </div>`).join("")}
-      <button class="knop" data-actie="sectie-nieuw">+ Onderdeel toevoegen</button>
-    </section>`;
+      <div class="ed-groep">
+        <button class="ikoon-knop" data-opmaak="bold" title="Vet (Ctrl+B)"><b>B</b></button>
+        <button class="ikoon-knop" data-opmaak="italic" title="Schuin (Ctrl+I)"><i style="font-family:Georgia,serif">I</i></button>
+        <button class="ikoon-knop" data-opmaak="underline" title="Onderstrepen (Ctrl+U)"><u>O</u></button>
+        <button class="ikoon-knop" data-opmaak="insertUnorderedList" title="Opsomming">•≡</button>
+      </div>
+      <div class="ed-groep">${[["left", "Links", "M4 6h16M4 12h10M4 18h14"], ["center", "Midden", "M4 6h16M7 12h10M5 18h14"], ["right", "Rechts", "M4 6h16M10 12h10M6 18h14"]].map(([k, n, d]) =>
+        `<button class="ikoon-knop" data-eig="uitlijning" data-waarde="${k}" title="${n}" aria-pressed="${(e.uitlijning || "left") === k}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="${d}"/></svg></button>`).join("")}</div>
+      <div class="ed-groep"><span class="ed-balk-label">Tekst</span>${kleurKnoppen("kleur", TEKSTKLEUREN, e.kleur || "#1d2b24")}</div>`;
+    }
+    if (e.soort !== "afbeelding")
+      h += `<div class="ed-groep"><span class="ed-balk-label">${e.soort === "afdek" ? "Kleur" : "Vlak"}</span>${kleurKnoppen("vulling", e.soort === "afdek" ? VULLINGEN.slice(1) : VULLINGEN, e.vulling || (e.soort === "afdek" ? "#2f9e63" : ""))}</div>`;
+    if (e.soort !== "afdek")
+      h += `<div class="ed-groep"><label class="vink"><input type="checkbox" data-eig="verstopt" ${e.verstopt ? "checked" : ""}> Verstopt tot je tikt</label></div>`;
+    h += `<div class="ed-groep">
+      <button class="knop klein" data-el="voor" title="Naar voren">Naar voren</button>
+      <button class="knop klein" data-el="achter" title="Naar achteren">Naar achteren</button>
+      <button class="knop klein" data-el="kopie" title="Kopiëren (Ctrl+D)">Kopiëren</button>
+      <button class="knop klein rood" data-el="weg" title="Verwijderen (Delete)">Verwijderen</button></div>`;
+    bar.innerHTML = h;
   }
 
-  // ---------- Invoer verwerken ----------
-  const regels = (t) => t.split("\n").map((x) => x.trim()).filter(Boolean);
-  const zet = (obj, k, w) => { if (w === "" || w === false || w == null || (Array.isArray(w) && !w.length)) delete obj[k]; else obj[k] = w; };
+  function tekenAlles() {
+    const s = scherm();
+    $("#titel").value = st.les.titel || ""; $("#groep").value = st.les.groep || ""; $("#vak").value = st.les.vak || "";
+    $("#achtergrond").value = s.achtergrond || "leeg";
+    $("#notitie").value = s.notitie || "";
+    pasSchaal(); tekenDia(); tekenLaag(); tekenEigenschappen(); tekenStrip();
+  }
 
-  inhoud.addEventListener("input", (e) => {
-    const el = e.target, l = st.les, d = el.dataset;
-    const waarde = el.type === "checkbox" ? el.checked : el.value;
-    if (d.lesVeld) {
-      const k = d.lesVeld;
-      if (k === "trefwoorden") zet(l, k, waarde.split(",").map((x) => x.trim()).filter(Boolean));
-      else if (k === "duur") zet(l, k, waarde ? Number(waarde) : "");
-      else if (k === "titel" || k === "groep" || k === "vak") l[k] = waarde;
-      else zet(l, k, typeof waarde === "string" ? waarde.trim() && waarde : waarde);
-      if (k === "titel") $("#kop-titel").textContent = waarde || "Nieuwe les";
-    } else if (d.schermVeld) {
-      const sch = l.schermen[st.gekozen], k = d.schermVeld;
-      if (k === "uitlijning") zet(sch, k, waarde ? "midden" : "");
-      else if (k === "achtergrond") zet(sch, k, waarde === "leeg" ? "" : waarde);
-      else zet(sch, k, waarde);
-      if (k === "fase") document.querySelectorAll(".scherm-item")[st.gekozen].innerHTML =
-        `<span>${schermNaam(sch, st.gekozen)}</span>${sch.fase ? `<small>${esc(sch.fase)}</small>` : ""}`;
-      straks();
-    } else if (d.blok !== undefined) {
-      const sch = l.schermen[st.gekozen], i = Number(d.blok), b = sch.blokken[i], k = d.veld;
-      if (k === "bestand") return; // via change
-      if (k === "json") {
-        try { const nieuw = JSON.parse(waarde); if (!nieuw.type) throw 0; sch.blokken[i] = nieuw; el.classList.remove("fout"); }
-        catch { el.classList.add("fout"); return; }
-      } else if (k === "items") zet(b, k, regels(waarde));
-      else if (k === "rijen") zet(b, k, regels(waarde).map((r) => r.split("|").map((c) => c.trim())));
-      else if (k === "kopRij") { if (waarde) delete b.kopRij; else b.kopRij = false; }
-      else if (k === "tekst") b.tekst = waarde;
-      else zet(b, k, waarde);
-      if (k === "tekst" && i === sch.blokken.findIndex((x) => x.tekst !== undefined))
-        document.querySelectorAll(".scherm-item span")[st.gekozen].innerHTML = schermNaam(sch, st.gekozen);
-      straks();
-    } else if (d.voorbereiding) {
-      zet(l.voorbereiding, d.voorbereiding, regels(waarde));
-    } else if (d.verloop !== undefined) {
-      const r = l.voorbereiding.verloop[Number(d.verloop)];
-      zet(r, d.veld, waarde);
-    } else if (d.sectie !== undefined) {
-      const x = l.voorbereiding.secties[Number(d.sectie)];
-      if (d.veld === "kop") x.kop = waarde;
-      else {
-        const lijst = d.veld === "lijst" ? waarde : !!x.items;
-        const tekst = d.veld === "inhoud" ? waarde : (x.items ? x.items.join("\n") : x.tekst || "");
-        delete x.items; delete x.tekst;
-        if (lijst) x.items = regels(tekst); else x.tekst = tekst;
-      }
-    } else return;
-    vuil();
+  // ---------- Kiezen, slepen, groter maken ----------
+  function kies(i) {
+    if (st.sel === i) return;
+    stopBewerken(true);
+    st.sel = i; tekenLaag(); tekenEigenschappen();
+  }
+
+  laag.addEventListener("pointerdown", (ev) => {
+    const d = ev.target.closest(".ed-el");
+    if (!d) { stopBewerken(true); st.sel = null; tekenLaag(); tekenEigenschappen(); return; }
+    const i = Number(d.dataset.i);
+    const greep = ev.target.closest(".ed-greep, .ed-verplaats");
+    if (st.bewerken && st.sel === i && greep) { // tijdens het typen: alleen via de grepen slepen
+      bewaarStap();
+      return slepen(ev, i, greep.classList.contains("ed-greep") ? "groot" : "verplaats", false, true);
+    }
+    if (st.bewerken && st.sel === i) return; // aan het typen
+    const alGekozen = st.sel === i && !st.bewerken;
+    let doel = i;
+    if (st.bewerken) {
+      const weg = stopBewerken(true); // een leeg tekstvak verdwijnt, de nummers schuiven dan op
+      if (weg === i) return;
+      if (weg != null && weg < i) doel = i - 1;
+    }
+    if (st.sel !== doel) kies(doel);
+    slepen(ev, doel, ev.target.closest(".ed-greep") ? "groot" : "verplaats", alGekozen);
   });
 
-  // Afbeelding kiezen: verkleinen tot max. 1600 px breed en bewaren tot het opslaan.
-  inhoud.addEventListener("change", async (e) => {
-    const el = e.target;
-    if (el.dataset.veld !== "bestand" || !el.files?.[0]) return;
-    const bestand = el.files[0];
-    const b = st.les.schermen[st.gekozen].blokken[Number(el.dataset.blok)];
+  function slepen(ev, i, modus, alGekozen, tijdensTypen = false) {
+    ev.preventDefault();
+    const e = els()[i];
+    const start = { x: ev.clientX, y: ev.clientY, ex: e.x, ey: e.y, eb: e.b, eh: e.h || laagEl(i)?.offsetHeight || 200 };
+    let bewogen = false;
+    laag.setPointerCapture(ev.pointerId);
+    const beweeg = (m) => {
+      const dx = (m.clientX - start.x) / st.schaal, dy = (m.clientY - start.y) / st.schaal;
+      if (!bewogen && Math.hypot(dx, dy) < 4) return;
+      if (!bewogen) { if (!tijdensTypen) bewaarStap(); bewogen = true; }
+      if (modus === "verplaats") {
+        e.x = tussen(rond(start.ex + dx), 40 - e.b, B - 40);
+        e.y = tussen(rond(start.ey + dy), -40, H - 40);
+      } else {
+        e.b = tussen(rond(start.eb + dx), 60, B * 1.2);
+        if (e.soort === "afdek") e.h = tussen(rond(start.eh + dy), 30, H * 1.2);
+      }
+      if (tijdensTypen) { const d = laagEl(i); d.style.left = e.x + "px"; d.style.top = e.y + "px"; d.style.width = e.b + "px"; }
+      else zetStijl(i);
+    };
+    const klaar = () => {
+      laag.removeEventListener("pointermove", beweeg);
+      laag.removeEventListener("pointerup", klaar);
+      laag.removeEventListener("pointercancel", klaar);
+      if (bewogen) { vuil(); straksStrip(); }
+      else if (alGekozen && e.soort === "tekst") startBewerken(i); // nog eens tikken = typen
+    };
+    laag.addEventListener("pointermove", beweeg);
+    laag.addEventListener("pointerup", klaar);
+    laag.addEventListener("pointercancel", klaar);
+  }
+
+  laag.addEventListener("dblclick", (ev) => {
+    const d = ev.target.closest(".ed-el.vrij-tekst");
+    if (d && !st.bewerken) startBewerken(Number(d.dataset.i));
+  });
+
+  // ---------- Typen in een tekstvak ----------
+  function startBewerken(i, allesSelecteren = false, zonderStap = false) {
+    if (!zonderStap) bewaarStap();
+    st.sel = i; st.bewerken = true; tekenLaag(); tekenEigenschappen();
+    const div = laagEl(i)?.querySelector(".vrij-inhoud");
+    if (!div) return;
+    div.contentEditable = "true"; div.focus();
+    const r = document.createRange(); r.selectNodeContents(div);
+    if (!allesSelecteren) r.collapse(false);
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+  }
+  // Stopt met typen. Geeft het nummer terug van een leeg tekstvak dat daarbij is weggehaald.
+  function stopBewerken(stil = false) {
+    if (!st.bewerken) return null;
+    const e = els()[st.sel], div = laagEl(st.sel)?.querySelector(".vrij-inhoud");
+    let weg = null;
+    st.bewerken = false;
+    if (e && div) {
+      e.html = Lesbord.schoonHtml(div.innerHTML);
+      if (!div.textContent.trim()) { weg = st.sel; els().splice(st.sel, 1); st.sel = null; vuil(); }
+    }
+    tekenLaag();
+    if (!stil || weg != null) tekenEigenschappen();
+    straksStrip();
+    return weg;
+  }
+  laag.addEventListener("input", (ev) => {
+    const div = ev.target.closest(".vrij-inhoud");
+    if (!div) return;
+    els()[Number(div.parentElement.dataset.i)].html = div.innerHTML;
+    vuil(); straksStrip();
+  });
+  // Plakken altijd als platte tekst (geen rommel uit Word of websites)
+  laag.addEventListener("paste", (ev) => {
+    if (!ev.target.closest(".vrij-inhoud")) return;
+    ev.preventDefault();
+    document.execCommand("insertText", false, ev.clipboardData.getData("text/plain"));
+  });
+
+  // ---------- Eigenschappenbalk ----------
+  const balk = $("#eigenschappen");
+  balk.addEventListener("mousedown", (ev) => { if (ev.target.closest("[data-opmaak]")) ev.preventDefault(); }); // selectie in de tekst bewaren
+  balk.addEventListener("click", (ev) => {
+    const e = els()[st.sel]; if (!e) return;
+    const opm = ev.target.closest("[data-opmaak]");
+    if (opm) {
+      const wasBezig = st.bewerken;
+      if (!wasBezig) startBewerken(st.sel, true);
+      const sel = getSelection(), div0 = laagEl(st.sel)?.querySelector(".vrij-inhoud");
+      if (wasBezig && sel.isCollapsed && div0) { const r = document.createRange(); r.selectNodeContents(div0); sel.removeAllRanges(); sel.addRange(r); }
+      document.execCommand(opm.dataset.opmaak);
+      const div = laagEl(st.sel)?.querySelector(".vrij-inhoud");
+      if (div) e.html = div.innerHTML;
+      if (!wasBezig) stopBewerken();
+      vuil(); straksStrip(); return;
+    }
+    const knop = ev.target.closest("[data-eig][data-waarde]");
+    if (knop) { wijzigEig(knop.dataset.eig, knop.dataset.waarde); return; }
+    const actie = ev.target.closest("[data-el]");
+    if (actie) elementActie(actie.dataset.el);
+  });
+  balk.addEventListener("change", (ev) => {
+    const el = ev.target; if (!el.dataset.eig) return;
+    wijzigEig(el.dataset.eig, el.type === "checkbox" ? el.checked : el.value);
+  });
+  function wijzigEig(k, w) {
+    const e = els()[st.sel]; if (!e) return;
+    const bezig = st.bewerken;
+    if (bezig && stopBewerken(true) != null) return;
+    bewaarStap();
+    if (k === "grootte") w = Number(w);
+    if (w === "" || w === false) delete e[k]; else e[k] = w;
+    if (k === "kleur" && w === "#1d2b24") delete e.kleur;
+    vuil(); tekenLaag(); tekenEigenschappen(); straksStrip();
+    if (bezig && st.sel != null) startBewerken(st.sel, false, true);
+  }
+  function elementActie(a) {
+    const lijst = els(), i = st.sel; if (i == null) return;
+    stopBewerken(true);
+    if (st.sel == null) { tekenEigenschappen(); return; }
+    bewaarStap();
+    if (a === "weg") { lijst.splice(i, 1); st.sel = null; }
+    if (a === "kopie") { const k = structuredClone(lijst[i]); k.x += 30; k.y += 30; lijst.push(k); st.sel = lijst.length - 1; }
+    if (a === "voor" && i < lijst.length - 1) { lijst.push(lijst.splice(i, 1)[0]); st.sel = lijst.length - 1; }
+    if (a === "achter" && i > 0) { lijst.unshift(lijst.splice(i, 1)[0]); st.sel = 0; }
+    vuil(); tekenLaag(); tekenEigenschappen(); straksStrip();
+  }
+
+  // ---------- Bouwstenen toevoegen ----------
+  function voegToe(e) {
+    stopBewerken(true);
+    const n = els().length % 6;
+    e.x += n * 30; e.y += n * 30;
+    bewaarStap(); els().push(e); st.sel = els().length - 1;
+    vuil(); tekenLaag(); tekenEigenschappen(); straksStrip();
+  }
+  document.querySelectorAll("[data-nieuw]").forEach((k) => (k.onclick = () => {
+    const soort = k.dataset.nieuw;
+    if (soort === "afdek") return voegToe({ soort: "afdek", x: 500, y: 300, b: 600, h: 200, vulling: "#2f9e63" });
+    voegToe({ soort: "tekst", x: 400, y: 340, b: 800, html: "", grootte: 56, ...(soort === "verstopt" ? { verstopt: true } : {}) });
+    startBewerken(st.sel, false, true);
+  }));
+  $("#nieuw-afbeelding").addEventListener("change", async (ev) => {
+    const bestand = ev.target.files?.[0]; ev.target.value = "";
+    if (!bestand) return;
     try {
-      const { dataUrl, ext } = await verklein(bestand);
-      const basis = bestand.name.toLowerCase().replace(/\.[a-z0-9]+$/, "").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "afbeelding";
-      let naam = `${basis}.${ext}`, n = 2;
-      while (st.uploads[naam]) naam = `${basis}-${n++}.${ext}`;
+      const { dataUrl, ext, breed, hoog } = await verklein(bestand);
+      const basis = bestand.name.toLowerCase().replace(/\.[a-z0-9]+$/, "").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) || "afbeelding";
+      const naam = `${basis}-${Date.now().toString(36)}.${ext}`;
       st.uploads[naam] = { dataUrl, base64: dataUrl.split(",")[1] };
-      b.src = naam;
-      if (!b.alt) b.alt = basis.replace(/-/g, " ");
-      vuil(); teken();
+      const b = Math.min(700, Math.round(700 * Math.min(1, (breed / hoog) * 0.8)));
+      voegToe({ soort: "afbeelding", x: 450, y: 150, b, src: naam, alt: basis.replace(/-/g, " ") });
     } catch { alert("Deze afbeelding kon niet worden gelezen."); }
   });
-
   function verklein(bestand) {
     return new Promise((klaar, fout) => {
       const lezer = new FileReader();
@@ -306,13 +340,11 @@
         img.onerror = fout;
         img.onload = () => {
           const png = bestand.type === "image/png" || bestand.type === "image/gif";
-          const max = 1600, f = Math.min(1, max / img.width);
-          if (f === 1 && bestand.size < 1.5e6 && /image\/(png|jpeg)/.test(bestand.type))
-            return klaar({ dataUrl: lezer.result, ext: png ? "png" : "jpg" });
+          const f = Math.min(1, 1600 / img.width);
           const c = document.createElement("canvas");
           c.width = Math.round(img.width * f); c.height = Math.round(img.height * f);
           c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
-          klaar({ dataUrl: c.toDataURL(png ? "image/png" : "image/jpeg", 0.85), ext: png ? "png" : "jpg" });
+          klaar({ dataUrl: c.toDataURL(png ? "image/png" : "image/jpeg", 0.85), ext: png ? "png" : "jpg", breed: c.width, hoog: c.height });
         };
         img.src = lezer.result;
       };
@@ -320,79 +352,71 @@
     });
   }
 
-  // ---------- Knoppen ----------
-  const wissel = (lijst, a, b) => { [lijst[a], lijst[b]] = [lijst[b], lijst[a]]; };
-  inhoud.addEventListener("click", async (e) => {
-    const knop = e.target.closest("[data-actie]");
-    if (!knop) return;
-    const l = st.les, i = Number(knop.dataset.i), sch = l.schermen[st.gekozen];
-    const v = l.voorbereiding || (l.voorbereiding = {});
-    switch (knop.dataset.actie) {
-      case "scherm-kies": st.gekozen = i; break;
-      case "scherm-nieuw": l.schermen.splice(st.gekozen + 1, 0, { blokken: [{ type: "subkop", tekst: "" }] }); st.gekozen++; break;
-      case "scherm-dupliceer": l.schermen.splice(st.gekozen + 1, 0, structuredClone(sch)); st.gekozen++; break;
-      case "scherm-omhoog": wissel(l.schermen, st.gekozen, st.gekozen - 1); st.gekozen--; break;
-      case "scherm-omlaag": wissel(l.schermen, st.gekozen, st.gekozen + 1); st.gekozen++; break;
-      case "scherm-weg":
-        if (!confirm(`Scherm ${st.gekozen + 1} verwijderen?`)) return;
-        l.schermen.splice(st.gekozen, 1); st.gekozen = Math.max(0, st.gekozen - 1); break;
-      case "blok-toevoegen": {
-        const type = $("#nieuw-blok").value;
-        const b = { type };
-        if (TEKSTTYPES.includes(type)) b.tekst = "";
-        if (type === "lijst" || type === "stappen") { b.items = []; b.stapsgewijs = true; }
-        (sch.blokken ||= []).push(b); break;
-      }
-      case "blok-omhoog": wissel(sch.blokken, i, i - 1); break;
-      case "blok-omlaag": wissel(sch.blokken, i, i + 1); break;
-      case "blok-weg": sch.blokken.splice(i, 1); break;
-      case "verloop-nieuw": (v.verloop ||= []).push({ tijd: "", wat: "" }); break;
-      case "verloop-omhoog": wissel(v.verloop, i, i - 1); break;
-      case "verloop-weg": v.verloop.splice(i, 1); break;
-      case "sectie-nieuw": (v.secties ||= []).push({ kop: "", tekst: "" }); break;
-      case "sectie-weg": v.secties.splice(i, 1); break;
-      case "les-weg": return verwijder();
-      default: return;
-    }
-    if (knop.dataset.actie !== "scherm-kies") vuil();
-    huidigScherm(); teken();
+  // ---------- Schermen ----------
+  $("#strip").addEventListener("click", (ev) => {
+    const kies = ev.target.closest("[data-kies]");
+    if (kies) { stopBewerken(true); st.gekozen = Number(kies.dataset.kies); st.sel = null; tekenAlles(); return; }
+    const k = ev.target.closest("[data-scherm]"); if (!k) return;
+    stopBewerken(true);
+    const l = st.les.schermen, i = st.gekozen;
+    const a = k.dataset.scherm;
+    if (a === "weg" && !confirm(`Scherm ${i + 1} verwijderen?`)) return;
+    bewaarStap();
+    if (a === "nieuw") { l.splice(i + 1, 0, { elementen: [] }); st.gekozen = i + 1; }
+    if (a === "kopie") { l.splice(i + 1, 0, structuredClone(l[i])); st.gekozen = i + 1; }
+    if (a === "omhoog" && i > 0) { [l[i - 1], l[i]] = [l[i], l[i - 1]]; st.gekozen = i - 1; }
+    if (a === "omlaag" && i < l.length - 1) { [l[i + 1], l[i]] = [l[i], l[i + 1]]; st.gekozen = i + 1; }
+    if (a === "weg") { l.splice(i, 1); st.gekozen = Math.max(0, i - 1); }
+    st.sel = null; vuil(); tekenAlles();
   });
+  $("#achtergrond").addEventListener("change", (ev) => {
+    bewaarStap();
+    if (ev.target.value === "leeg") delete scherm().achtergrond; else scherm().achtergrond = ev.target.value;
+    vuil(); tekenDia(); straksStrip();
+  });
+  $("#notitie").addEventListener("input", (ev) => {
+    if (ev.target.value.trim()) scherm().notitie = ev.target.value; else delete scherm().notitie;
+    vuil();
+  });
+  for (const k of ["titel", "groep", "vak"]) $("#" + k).addEventListener("input", (ev) => { st.les[k] = ev.target.value; vuil(); });
 
-  async function verwijder() {
-    if (!confirm(`"${st.les.titel}" verwijderen?\n\nDe les verdwijnt uit het overzicht. In GitHub is hij later nog terug te halen.`)) return;
-    try {
-      status("Verwijderen…");
-      await GitHub.verwijderMap(`lessen/${st.id}`, `Les verwijderd: ${st.les.titel} (via de app)`);
-      GitHub.onthoudVerwijderd(st.id);
-      st.vuil = false;
-      location.href = "./";
-    } catch (err) { status(err.message, "fout"); }
-  }
+  // ---------- Toetsenbord ----------
+  document.addEventListener("keydown", (ev) => {
+    const ctrl = ev.ctrlKey || ev.metaKey, t = ev.key.toLowerCase();
+    if (ctrl && t === "s") { ev.preventDefault(); if (st.vuil) opslaan(); return; }
+    if (st.bewerken) { if (ev.key === "Escape") stopBewerken(); return; } // typen: gewone toetsen
+    if (ev.target.closest("input, textarea, select")) return;
+    if (ctrl && t === "z" && !ev.shiftKey) { ev.preventDefault(); return herstel(st.terug, st.vooruit); }
+    if (ctrl && (t === "y" || (t === "z" && ev.shiftKey))) { ev.preventDefault(); return herstel(st.vooruit, st.terug); }
+    if (st.sel == null) return;
+    const e = els()[st.sel];
+    if (ctrl && t === "d") { ev.preventDefault(); return elementActie("kopie"); }
+    if (ev.key === "Delete" || ev.key === "Backspace") { ev.preventDefault(); return elementActie("weg"); }
+    if (ev.key === "Enter" && e.soort === "tekst") { ev.preventDefault(); return startBewerken(st.sel); }
+    if (ev.key === "Escape") { st.sel = null; tekenLaag(); tekenEigenschappen(); return; }
+    const stap = ev.shiftKey ? 1 : 10;
+    const d = { ArrowLeft: [-stap, 0], ArrowRight: [stap, 0], ArrowUp: [0, -stap], ArrowDown: [0, stap] }[ev.key];
+    if (d) { ev.preventDefault(); bewaarStap(); e.x += d[0]; e.y += d[1]; zetStijl(st.sel); vuil(); straksStrip(); }
+  });
+  window.addEventListener("resize", pasSchaal);
 
   // ---------- Opslaan ----------
   const slug = (t) => t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 60).replace(/-+$/, "");
 
-  function schoon(obj) {
-    // lege velden en tijdelijke dingen weghalen
-    const les = structuredClone(obj);
-    for (const k of Object.keys(les)) if (les[k] === "" || les[k] == null) delete les[k];
-    const v = les.voorbereiding || {};
-    if (v.verloop) v.verloop = v.verloop.filter((r) => (r.wat || "").trim() || (r.tijd || "").trim());
-    if (v.secties) v.secties = v.secties.filter((x) => (x.kop || "").trim());
-    for (const k of Object.keys(v)) if (Array.isArray(v[k]) && !v[k].length) delete v[k];
-    if (!Object.keys(v).length) delete les.voorbereiding;
-    return les;
-  }
-
   async function opslaan() {
+    stopBewerken();
     const l = st.les;
-    const mist = ["titel", "groep", "vak"].filter((k) => !String(l[k] || "").trim());
-    if (mist.length) { st.tab = "gegevens"; teken(); return status(`Vul eerst in: ${mist.join(", ")}`, "fout"); }
+    const mist = ["titel", "groep", "vak"].find((k) => !String(l[k] || "").trim());
+    if (mist) { $("#" + mist).focus(); return status(`Vul eerst de ${mist} in (bovenaan).`, "fout"); }
     const knop = $("#knop-opslaan");
     knop.disabled = true; status("Opslaan…");
     try {
-      const les = schoon(l);
+      const les = structuredClone(l);
       les.titel = les.titel.trim(); les.groep = String(les.groep).trim(); les.vak = les.vak.trim();
+      for (const s of les.schermen) {
+        for (const e of s.elementen || []) if (e.soort === "tekst") e.html = Lesbord.schoonHtml(e.html);
+        if (s.elementen && !s.elementen.length) delete s.elementen;
+      }
       let id = st.id;
       if (st.nieuw) {
         const basis = slug(`${/^\d/.test(les.groep) ? "g" + les.groep : les.groep}-${les.vak}-${les.titel}`) || "les";
@@ -400,51 +424,49 @@
         for (let n = 2; await GitHub.leesBestand(`lessen/${id}/les.json`); n++) id = `${basis}-${n}`;
         les.gemaakt = new Date().toISOString().slice(0, 10);
       }
-      les.id = id;
-      const rest = Object.fromEntries(Object.entries(les).filter(([k]) => k !== "id"));
-      const opTeSlaan = { id, ...rest };
+      delete les.id;
+      const opTeSlaan = { id, ...les };
       for (const [naam, u] of Object.entries(st.uploads))
-        await GitHub.schrijfBestand(`lessen/${id}/${naam}`, u.base64, `Afbeelding voor ${les.titel} (via de app)`);
+        if (JSON.stringify(opTeSlaan).includes(naam))
+          await GitHub.schrijfBestand(`lessen/${id}/${naam}`, u.base64, `Afbeelding voor ${les.titel} (via de app)`);
       await GitHub.schrijfTekst(`lessen/${id}/les.json`, JSON.stringify(opTeSlaan, null, 2) + "\n",
         `${st.nieuw ? "Nieuwe les" : "Les aangepast"}: ${les.titel} (via de app)`);
       GitHub.onthoudOpgeslagen(opTeSlaan);
       st.les = opTeSlaan; st.id = id; st.nieuw = false; st.uploads = {}; st.vuil = false;
       history.replaceState(null, "", `bewerk.html?id=${id}`);
       const bekijk = $("#knop-bekijk"); bekijk.hidden = false; bekijk.href = `les.html?id=${id}`;
-      status("Opgeslagen ✓ Over een paar minuten staat hij online, met nieuwe PDF's.", "goed");
-      huidigScherm(); teken();
+      status("Opgeslagen ✓ Binnen een paar minuten staat hij online.", "goed");
+      tekenAlles();
     } catch (err) {
       knop.disabled = false; status(err.message || "Opslaan mislukt.", "fout");
     }
   }
   $("#knop-opslaan").onclick = opslaan;
-  document.addEventListener("keydown", (e) => {
-    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "s") { e.preventDefault(); if (st.vuil) opslaan(); }
-  });
 
   // ---------- Start ----------
   async function start() {
     if (!GitHub.heeftSleutel()) {
-      document.querySelector(".tabs").hidden = true;
-      inhoud.innerHTML = `<section class="paneel smal"><h2>Eerst je sleutel invullen</h2>
+      document.body.classList.add("ed-zonder-sleutel");
+      $("#werk").innerHTML = `<section class="paneel smal" style="margin:24px auto"><h2>Eerst je sleutel invullen</h2>
         <p>Om lessen te maken, aan te passen of te verwijderen heeft dit apparaat eenmalig je persoonlijke GitHub-sleutel nodig.</p>
         <a class="knop hoofd" href="sleutel.html?terug=${encodeURIComponent(location.pathname.split("/").pop() + location.search)}">Sleutel invullen</a></section>`;
       return;
     }
     try {
-      if (st.nieuw) st.les = nieuweLes();
-      else {
+      if (st.nieuw) {
+        st.les = { titel: "", groep: "", vak: "", pdfs: false, schermen: [{ elementen: [] }] };
+        status("Nieuwe les");
+      } else {
         const bestand = await GitHub.leesBestand(`lessen/${st.id}/les.json`);
         if (!bestand) throw new Error("Deze les bestaat niet (meer).");
         st.les = JSON.parse(bestand.inhoud);
         const bekijk = $("#knop-bekijk"); bekijk.hidden = false; bekijk.href = `les.html?id=${st.id}`;
       }
-      if (!st.les.schermen?.length) st.les.schermen = [{ blokken: [] }];
-      st.les.voorbereiding ||= {};
-      if (st.nieuw) status("Nieuwe les, nog niet opgeslagen");
-      huidigScherm(); teken();
+      if (!st.les.schermen?.length) st.les.schermen = [{ elementen: [] }];
+      tekenAlles();
+      if (st.nieuw) $("#titel").focus();
     } catch (err) {
-      inhoud.innerHTML = `<div class="leeg">${esc(err.message || "Laden mislukt.")}</div>`;
+      $("#werk").innerHTML = `<div class="leeg" style="margin:24px">${Lesbord.esc(err.message || "Laden mislukt.")}</div>`;
     }
   }
   start();

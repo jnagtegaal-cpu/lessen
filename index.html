@@ -92,14 +92,14 @@
           ${l.samenvatting ? `<p>${esc(l.samenvatting)}</p>` : ""}
           <div class="kaart-acties">
             <a class="knop hoofd" href="les.html?id=${encodeURIComponent(l.id)}">${ikoon.bord} Open op bord</a>
-            <a class="knop" href="lessen/${encodeURIComponent(l.id)}/voorbereiding.pdf" download>${ikoon.pdf} Voorbereiding</a>
-            <a class="knop" href="lessen/${encodeURIComponent(l.id)}/presentatie.pdf" download>${ikoon.pdf} Presentatie</a>
+            ${l.pdfs === false ? "" : `<a class="knop" href="lessen/${encodeURIComponent(l.id)}/voorbereiding.pdf" download>${ikoon.pdf} Voorbereiding</a>
+            <a class="knop" href="lessen/${encodeURIComponent(l.id)}/presentatie.pdf" download>${ikoon.pdf} Presentatie</a>`}
             ${beheer ? `<span class="kaart-beheer">
               <a class="ikoon-knop" href="bewerk.html?id=${encodeURIComponent(l.id)}" title="Bewerken" aria-label="Bewerken">${ikoon.bewerk}</a>
               <button class="ikoon-knop rood" data-weg="${esc(l.id)}" title="Verwijderen" aria-label="Verwijderen">${ikoon.weg}</button>
             </span>` : ""}
           </div>
-          ${l.nieuw ? `<p class="veld-uitleg">Net opgeslagen, de PDF's worden nog gemaakt.</p>` : ""}
+          ${l.nieuw ? `<p class="veld-uitleg">Net opgeslagen. Over een paar minuten is hij overal te zien.</p>` : ""}
         </article>`).join("");
     }
 

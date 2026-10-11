@@ -11,7 +11,7 @@ In die map staan:
 | `presentatie.pdf` | Wordt gemaakt door `tools/publiceer.py` |
 | afbeeldingen | Optioneel, en vanuit een blok aan te roepen met alleen de bestandsnaam |
 
-Na elke wijziging draai je `python3 tools/publiceer.py`. Daarnaast doet GitHub dit automatisch bij elke push die een `les.json` verandert (`.github/workflows/publiceer.yml`). Lessen kunnen ook in de app zelf gemaakt en bewerkt worden (`bewerk.html`). Die worden in precies dit formaat opgeslagen. Dat controleert de lessen, werkt `lessen/catalogus.json` bij (het overzicht op de site) en maakt de PDF's.
+Na elke wijziging draai je `python3 tools/publiceer.py`. Daarnaast doet GitHub dit automatisch bij elke push die een `les.json` verandert (`.github/workflows/publiceer.yml`). Lessen kunnen ook in de app zelf gemaakt en bewerkt worden (`bewerk.html`, in Prowise-stijl met vrije tekstvakken; zie *Vrije elementen* hieronder). Lessen uit de app hebben `"pdfs": false`, en daarvoor worden geen PDF's gemaakt. Dat controleert de lessen, werkt `lessen/catalogus.json` bij (het overzicht op de site) en maakt de PDF's.
 
 ## les.json
 
@@ -85,6 +85,25 @@ Je kunt ook op **volgende** drukken (knop, pijltje of presenter): eerst verschij
 Elk blok mag ook `stijl` hebben (extra CSS), bijvoorbeeld `"stijl": "color:#d6453d"`.
 
 Opmaak in tekst: `**vet**`, `*schuin*`, `==gemarkeerd==`. Een nieuwe regel maak je met `\n`.
+
+## Vrije elementen (uit de app)
+
+Naast `blokken` kan een scherm `elementen` hebben: vrij geplaatste onderdelen, zoals in Prowise. Ze liggen bovenop de blokken. De coördinaten gaan uit van het scherm van 1600 × 900.
+
+```json
+"elementen": [
+  { "soort": "tekst", "x": 200, "y": 150, "b": 800, "html": "<b>Wat is groter?</b>",
+    "letter": "school", "grootte": 96, "kleur": "#1d2b24", "vulling": "#fff3b0", "uitlijning": "center", "verstopt": true },
+  { "soort": "afdek", "x": 500, "y": 300, "b": 600, "h": 200, "vulling": "#2f9e63" },
+  { "soort": "afbeelding", "x": 450, "y": 150, "b": 600, "src": "plaatje.jpg", "alt": "…" }
+]
+```
+
+- `letter`: `standaard`, `school` (Playpen Sans), `hand` (Caveat), `klassiek` (Lora) of `rond` (Fredoka).
+- `html`: alleen `b`, `i`, `u`, `br`, `div`, `p`, `ul`, `ol` en `li`. De rest wordt weggefilterd.
+- `verstopt: true`: eerst verborgen, en tevoorschijn met een tik of met *volgende*.
+- `afdek`: een gekleurd blok dat iets afdekt en verdwijnt als je erop tikt (of met *volgende*).
+- Bij het tonen hoort alles in dezelfde volgorde als de blokken: eerst de blokken, dan de elementen.
 
 ## Voorbereiding
 

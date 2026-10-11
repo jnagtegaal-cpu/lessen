@@ -93,8 +93,64 @@ const Lesbord = (() => {
     }
   };
 
+  // ---------- Vrije elementen (tekstvakken zoals in Prowise, gemaakt in de app) ----------
+  const LETTERS = {
+    // let op: enkele aanhalingstekens, want dit komt in een style="…"-attribuut
+    standaard: "'Atkinson Hyperlegible', Inter, sans-serif",
+    school: "'Playpen Sans', 'Comic Sans MS', sans-serif",
+    hand: "Caveat, 'Segoe Print', cursive",
+    klassiek: "Lora, Georgia, serif",
+    rond: "Fredoka, 'Arial Rounded MT Bold', sans-serif",
+  };
+  const KLEUR = /^#[0-9a-f]{3,8}$/i;
+  const getal = (n, standaard) => (Number.isFinite(Number(n)) ? Math.round(Number(n)) : standaard);
+  const vrijStijl = (e) => {
+    const s = [`left:${getal(e.x, 100)}px`, `top:${getal(e.y, 100)}px`, `width:${getal(e.b, 600)}px`];
+    if (e.h && e.soort !== "tekst") s.push(`height:${getal(e.h, 200)}px`);
+    if (e.soort !== "afbeelding") {
+      s.push(`font-family:${LETTERS[e.letter] || LETTERS.standaard}`, `font-size:${getal(e.grootte, 48)}px`);
+      if (KLEUR.test(e.kleur || "")) s.push(`color:${e.kleur}`);
+      if (["left", "center", "right"].includes(e.uitlijning)) s.push(`text-align:${e.uitlijning}`);
+    }
+    const vul = e.vulling || (e.soort === "afdek" ? "#2f9e63" : "");
+    if (KLEUR.test(vul)) s.push(`background:${vul}`);
+    return s.join(";");
+  };
+  // Alleen eenvoudige opmaak toestaan (vet, schuin, onderstreept, regels, opsommingen).
+  const TOEGESTAAN = new Set(["B", "STRONG", "I", "EM", "U", "BR", "DIV", "P", "SPAN", "UL", "OL", "LI"]);
+  const schoonHtml = (html) => {
+    const t = document.createElement("template");
+    t.innerHTML = String(html || "");
+    const loop = (knoop) => {
+      for (const c of [...knoop.childNodes]) {
+        if (c.nodeType === 1) {
+          if (!TOEGESTAAN.has(c.tagName)) {
+            if (/^(SCRIPT|STYLE|IFRAME|OBJECT|EMBED|TEMPLATE|SVG|MATH)$/.test(c.tagName)) c.remove();
+            else { loop(c); c.replaceWith(...c.childNodes); }
+            continue;
+          }
+          for (const a of [...c.attributes]) c.removeAttribute(a.name);
+          loop(c);
+        } else if (c.nodeType !== 3) c.remove();
+      }
+    };
+    loop(t.content);
+    return t.innerHTML;
+  };
+  const vrijElement = (e, lesmap) => {
+    const verstopt = e.verstopt && e.soort !== "afdek" ? " onthul" : "";
+    if (e.soort === "afdek") return `<div class="vrij vrij-afdek onthul" style="${vrijStijl(e)}"></div>`;
+    if (e.soort === "afbeelding") {
+      const src = /^(https?:|data:|\/)/.test(e.src || "") ? e.src : `${lesmap}/${e.src}`;
+      return `<div class="vrij vrij-afbeelding${verstopt}" style="${vrijStijl(e)}"><img src="${esc(src)}" alt="${esc(e.alt || "")}"></div>`;
+    }
+    return `<div class="vrij vrij-tekst${verstopt}" style="${vrijStijl(e)}"><div class="vrij-inhoud">${schoonHtml(e.html)}</div></div>`;
+  };
+  const vrijeLaag = (scherm, lesmap) =>
+    scherm.elementen?.length ? `<div class="vrije-laag">${scherm.elementen.map((e) => vrijElement(e, lesmap)).join("")}</div>` : "";
+
   const diaHtml = (scherm, lesmap) =>
-    (scherm.blokken || []).map((b) => blok(b, lesmap)).join("") +
+    (scherm.blokken || []).map((b) => blok(b, lesmap)).join("") + vrijeLaag(scherm, lesmap) +
     (scherm.grap ? `<div class="grap">${opmaak(scherm.grap)}</div>` : ""); // grapje op een briefje in de hoek
 
   const diaKlassen = (scherm, thema) => {
@@ -120,5 +176,5 @@ const Lesbord = (() => {
 
   const param = (naam) => new URLSearchParams(location.search).get(naam);
 
-  return { esc, opmaak, diaHtml, diaKlassen, laadCatalogus, laadLes, param };
+  return { esc, opmaak, diaHtml, diaKlassen, laadCatalogus, laadLes, param, LETTERS, vrijStijl, schoonHtml };
 })();

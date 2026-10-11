@@ -88,7 +88,7 @@ const GitHub = (() => {
     } catch { return {}; }
   };
   const schrijfRecent = (r) => { try { localStorage.setItem(RECENT, JSON.stringify(r)); } catch {} };
-  const VELDEN = ["id", "titel", "groep", "vak", "blok", "onderwerp", "duur", "edi", "samenvatting", "trefwoorden", "gemaakt"];
+  const VELDEN = ["id", "titel", "groep", "vak", "blok", "onderwerp", "duur", "edi", "samenvatting", "trefwoorden", "gemaakt", "pdfs"];
   function onthoudOpgeslagen(les) {
     const r = leesRecent();
     r[les.id] = { t: Date.now(), les: Object.fromEntries(VELDEN.filter((k) => k in les).map((k) => [k, les[k]])) };

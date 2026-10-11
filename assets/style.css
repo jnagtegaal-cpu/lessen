@@ -754,3 +754,112 @@ textarea.fout { border-color: var(--rood) !important; }
   .verloop-rij textarea { grid-column: 1 / -1; }
   .bewerk-status { display: none; }
 }
+
+/* ---------- Vrije elementen: tekstvakken, afdekblokken, afbeeldingen ---------- */
+.vrij { position: absolute; box-sizing: border-box; padding: 10px 16px; line-height: 1.25; border-radius: 12px; overflow-wrap: break-word; }
+.vrij-inhoud { min-height: 1.1em; outline: none; }
+.vrij-inhoud p, .vrij-inhoud ul, .vrij-inhoud ol { margin: 0; }
+.vrij-afbeelding { padding: 0; }
+.vrij-afbeelding img { width: 100%; height: 100%; object-fit: contain; display: block; border-radius: 8px; }
+.vrij-afdek { padding: 0; border-radius: 8px; }
+.dia .vrije-laag { position: absolute; inset: 0; pointer-events: none; }
+.dia .vrije-laag .vrij { position: absolute; pointer-events: auto; margin: 0; }
+.dia .vrije-laag .vrij:not(.onthul) { pointer-events: none; }
+.dia .vrije-laag .vrij-afdek.onthul:not(.zichtbaar) { border: 0; box-shadow: 0 4px 14px rgba(0,0,0,.12); }
+.dia .vrije-laag .vrij-afdek.onthul:not(.zichtbaar)::after { content: none; }
+.dia .vrije-laag .vrij-afdek.zichtbaar { opacity: 0; pointer-events: none; transition: opacity .35s ease; animation: none; }
+.alles-zichtbaar .vrij-afdek { display: none; }
+
+/* ---------- Bewerkpagina in Prowise-stijl ---------- */
+body.ed { background: #e9f1ec; }
+.ed-top {
+  position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  background: var(--paper); border-bottom: 1px solid var(--line); padding: 10px 16px;
+}
+.ed-top input {
+  font: inherit; font-size: 16px; color: var(--ink); background: #fbfdfc; border: 1.5px solid var(--line);
+  border-radius: 10px; padding: 9px 12px;
+}
+.ed-top input:focus { outline: 0; border-color: var(--groen); background: #fff; }
+.ed-titel { flex: 1; min-width: 200px; font-weight: 700; font-size: 18px !important; }
+.ed-klein { width: 120px; }
+.ed-top .bewerk-status { margin-left: 4px; }
+.ed-balk, .ed-eigenschappen {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap; padding: 8px 16px;
+  background: var(--paper); border-bottom: 1px solid var(--line);
+}
+.ed-eigenschappen { background: #f4faf6; position: sticky; top: 63px; z-index: 15; }
+.ed-groep { display: flex; align-items: center; gap: 6px; padding: 0 10px; border-right: 1px solid var(--line); flex-wrap: wrap; }
+.ed-groep:last-child { border-right: 0; }
+.ed-balk-label { font-size: 13px; color: var(--ink-soft); font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-right: 2px; }
+.ed-balk .knop svg { width: 18px; height: 18px; }
+.ed-balk select, .ed-eigenschappen select {
+  font: inherit; font-size: 15px; border: 1.5px solid var(--line); border-radius: 10px; padding: 8px 10px; background: #fff;
+}
+.ed-eigenschappen .ikoon-knop { width: 40px; height: 40px; font-size: 17px; }
+.ed-eigenschappen .vink { margin: 0; font-size: 15px; }
+.ed-kleur { width: 30px; height: 30px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1.5px var(--line); cursor: pointer; padding: 0; }
+.ed-kleur.geen { background: linear-gradient(135deg, #fff 45%, var(--rood) 45%, var(--rood) 55%, #fff 55%); }
+.ed-kleur[aria-pressed="true"] { box-shadow: 0 0 0 3px var(--groen); }
+
+.ed-werk { display: grid; grid-template-columns: 212px 1fr; gap: 16px; padding: 16px; align-items: start; }
+.ed-strip {
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px;
+  position: sticky; top: 130px; max-height: calc(100vh - 146px); overflow: auto; display: flex; flex-direction: column; gap: 8px;
+}
+.ed-strip-kop { display: flex; justify-content: space-between; align-items: center; gap: 4px; flex-wrap: wrap; }
+.ed-strip-kop .knop.klein { padding: 4px 8px; }
+.ed-mini-knop { display: flex; gap: 6px; align-items: flex-start; border: 0; background: none; padding: 4px; border-radius: 10px; cursor: pointer; }
+.ed-mini-knop[aria-current="true"] { background: var(--groen-licht); }
+.ed-mini-knop[aria-current="true"] .ed-mini { box-shadow: 0 0 0 3px var(--groen); }
+.ed-mini-nr { font-size: 13px; font-weight: 700; color: var(--ink-soft); width: 14px; text-align: right; padding-top: 2px; }
+.ed-mini { position: relative; width: 162px; height: 91px; overflow: hidden; border-radius: 4px; background: #fff; box-shadow: 0 0 0 1px var(--line); flex: none; pointer-events: none; }
+.ed-mini .dia { transform-origin: 0 0; }
+.ed .alles-zichtbaar .vrij-afdek { display: block; }
+
+.ed-midden { min-width: 0; }
+.ed-podium { width: 100%; }
+.ed-houder { position: relative; margin: 0 auto; overflow: hidden; border-radius: 6px; background: #fff; box-shadow: 0 10px 40px rgba(20,60,40,.15); }
+.ed-houder .dia { pointer-events: none; }
+.ed-houder .dia .onthul > * { visibility: visible !important; }
+.ed-houder .dia .onthul::after { content: none !important; }
+.ed-houder .dia .onthul:not(.zichtbaar) { background: none; outline: 3px dashed #9fcdb1; outline-offset: 4px; }
+.ed-laag { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; transform-origin: 0 0; touch-action: none; }
+.ed-el { cursor: move; user-select: none; -webkit-user-select: none; }
+.ed-el:hover { outline: 2px solid rgba(47,158,99,.45); outline-offset: 2px; }
+.ed-el.gekozen { outline: 4px solid var(--groen); outline-offset: 3px; }
+.ed-el.verstopt { outline: 4px dashed #d9a400; outline-offset: 3px; }
+.ed-el.verstopt.gekozen { outline-color: var(--groen); }
+.ed-el.bewerken { cursor: text; user-select: text; -webkit-user-select: text; }
+.ed-el.bewerken .vrij-inhoud { cursor: text; }
+.ed-el .vrij-inhoud:empty::before { content: "Typ hier…"; opacity: .4; }
+.ed-el.vrij-afdek { opacity: .88; display: grid; place-items: center; }
+.ed-badge {
+  position: absolute; left: 0; top: -40px; font: 700 20px/1 "Atkinson Hyperlegible", Inter, sans-serif; color: #fff;
+  background: #b98a00; padding: 7px 12px; border-radius: 8px; white-space: nowrap; pointer-events: none; text-align: left;
+}
+.ed-el.vrij-afdek .ed-badge { position: static; background: rgba(0,0,0,.35); }
+.ed-greep {
+  position: absolute; right: -16px; bottom: -16px; width: 32px; height: 32px; border-radius: 50%;
+  background: #fff; border: 4px solid var(--groen); cursor: nwse-resize; display: none; touch-action: none;
+}
+.ed-el.gekozen .ed-greep { display: block; }
+.ed-verplaats {
+  position: absolute; left: -18px; top: -18px; width: 36px; height: 36px; border-radius: 50%; display: none;
+  background: var(--groen); color: #fff; place-items: center; cursor: move; touch-action: none; z-index: 2;
+}
+.ed-verplaats svg { width: 24px; height: 24px; }
+.ed-el.gekozen .ed-verplaats { display: grid; }
+.ed-el.gekozen .ed-badge { left: 26px; }
+.ed-notitie { margin-top: 10px; background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; }
+.ed-notitie summary { cursor: pointer; font-weight: 700; color: var(--ink-soft); }
+.ed-notitie textarea { width: 100%; margin-top: 8px; font: inherit; font-size: 16px; border: 1.5px solid var(--line); border-radius: 10px; padding: 9px 12px; }
+.ed-zonder-sleutel .ed-balk, .ed-zonder-sleutel .ed-top input { display: none; }
+
+@media (max-width: 900px) {
+  .ed-werk { grid-template-columns: 1fr; }
+  .ed-strip { position: static; max-height: none; flex-direction: row; overflow-x: auto; }
+  .ed-strip-kop { flex-direction: column; align-items: flex-start; }
+  .ed-eigenschappen { position: static; }
+  .ed-klein { width: 90px; }
+}
