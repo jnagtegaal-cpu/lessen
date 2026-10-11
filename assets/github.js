@@ -77,5 +77,31 @@ const GitHub = (() => {
     if (!r.ok) throw new Error("Verwijderen mislukt. Probeer het opnieuw.");
   }
 
-  return { sleutel, zetSleutel, heeftSleutel, test, leesBestand, schrijfTekst, schrijfBestand, verwijderMap, naarBase64 };
+  // Het overzicht op de website loopt een paar minuten achter na opslaan of verwijderen.
+  // Op dit apparaat onthouden we daarom 20 minuten wat er net veranderd is.
+  const RECENT = "lesbord-recent", DUUR = 20 * 60 * 1000;
+  const leesRecent = () => {
+    try {
+      const r = JSON.parse(localStorage.getItem(RECENT) || "{}");
+      for (const id of Object.keys(r)) if (Date.now() - r[id].t > DUUR) delete r[id];
+      return r;
+    } catch { return {}; }
+  };
+  const schrijfRecent = (r) => { try { localStorage.setItem(RECENT, JSON.stringify(r)); } catch {} };
+  const VELDEN = ["id", "titel", "groep", "vak", "blok", "onderwerp", "duur", "edi", "samenvatting", "trefwoorden", "gemaakt"];
+  function onthoudOpgeslagen(les) {
+    const r = leesRecent();
+    r[les.id] = { t: Date.now(), les: Object.fromEntries(VELDEN.filter((k) => k in les).map((k) => [k, les[k]])) };
+    schrijfRecent(r);
+  }
+  function onthoudVerwijderd(id) { const r = leesRecent(); r[id] = { t: Date.now(), weg: true }; schrijfRecent(r); }
+  function pasOverzichtAan(lessen) {
+    const r = leesRecent();
+    let uit = lessen.filter((l) => !r[l.id]);
+    for (const [id, x] of Object.entries(r)) if (!x.weg && x.les) uit.push({ ...x.les, id, nieuw: true });
+    return uit;
+  }
+
+  return { sleutel, zetSleutel, heeftSleutel, test, leesBestand, schrijfTekst, schrijfBestand, verwijderMap, naarBase64,
+    onthoudOpgeslagen, onthoudVerwijderd, pasOverzichtAan };
 })();
