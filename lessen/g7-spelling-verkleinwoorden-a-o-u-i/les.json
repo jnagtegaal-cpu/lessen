@@ -157,13 +157,13 @@
     {
       "fase": "Begeleide inoefening (1 van 2)",
       "achtergrond": "leeg",
-      "notitie": "Per stap samen, met beurten. Tik daarna het verkleinwoord aan.",
+      "notitie": "Per stap samen, met beurten. Schrijf het verkleinwoord zelf op de lijntjes.",
       "blokken": [
         {
           "type": "kolommen",
           "verhouding": [
-            "1fr",
-            "1fr"
+            "3fr",
+            "2fr"
           ],
           "kolommen": [
             [
@@ -173,17 +173,11 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"height:240px;display:flex;align-items:center;justify-content:center;font-size:190px;line-height:1\">📻</div>"
-              },
-              {
-                "type": "groot",
-                "tekst": "radio",
-                "stijl": "font-size:84px;margin:0"
+                "html": "<div style=\"display:flex;align-items:center;gap:40px\"><div style=\"height:150px;display:flex;width:160px;align-items:center;justify-content:center;font-size:120px;line-height:1\">📻</div><div style=\"font-size:88px;font-weight:800\">radio</div></div>"
               },
               {
                 "type": "html",
-                "html": "<div style=\"text-align:center;font-weight:800;font-size:84px;margin:0;color:#2f9e63\">radi<span style=\"color:#d9822b\">oo</span><span style=\"color:#d9822b\">tje</span></div>",
-                "verborgen": true
+                "html": "<div style=\"position:relative;height:392px;background:#fff;border:2px solid #b9d3c3;border-radius:12px;overflow:hidden\"><div style=\"position:absolute;left:0;right:0;top:152px;height:88px;background:#eef4fb\"></div><div style=\"position:absolute;left:0;right:0;top:20px;border-top:2px solid #9bb7d4\"></div><div style=\"position:absolute;left:0;right:0;top:152px;border-top:3px solid #3f74ad\"></div><div style=\"position:absolute;left:0;right:0;top:240px;border-top:3px solid #3f74ad\"></div><div style=\"position:absolute;left:0;right:0;top:372px;border-top:2px solid #9bb7d4\"></div></div>"
               }
             ],
             [
@@ -211,13 +205,13 @@
     {
       "fase": "Begeleide inoefening (2 van 2)",
       "achtergrond": "leeg",
-      "notitie": "Per stap samen, met beurten. Tik daarna het verkleinwoord aan.",
+      "notitie": "Per stap samen, met beurten. Schrijf het verkleinwoord zelf op de lijntjes.",
       "blokken": [
         {
           "type": "kolommen",
           "verhouding": [
-            "1fr",
-            "1fr"
+            "3fr",
+            "2fr"
           ],
           "kolommen": [
             [
@@ -227,17 +221,11 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"height:240px;display:flex;align-items:center;justify-content:center;font-size:190px;line-height:1\">🥪</div>"
-              },
-              {
-                "type": "groot",
-                "tekst": "tosti",
-                "stijl": "font-size:84px;margin:0"
+                "html": "<div style=\"display:flex;align-items:center;gap:40px\"><div style=\"height:150px;display:flex;width:160px;align-items:center;justify-content:center;font-size:120px;line-height:1\">🥪</div><div style=\"font-size:88px;font-weight:800\">tosti</div></div>"
               },
               {
                 "type": "html",
-                "html": "<div style=\"text-align:center;font-weight:800;font-size:84px;margin:0;color:#2f9e63\">tost<span style=\"color:#d9822b\">ie</span><span style=\"color:#d9822b\">tje</span></div>",
-                "verborgen": true
+                "html": "<div style=\"position:relative;height:392px;background:#fff;border:2px solid #b9d3c3;border-radius:12px;overflow:hidden\"><div style=\"position:absolute;left:0;right:0;top:152px;height:88px;background:#eef4fb\"></div><div style=\"position:absolute;left:0;right:0;top:20px;border-top:2px solid #9bb7d4\"></div><div style=\"position:absolute;left:0;right:0;top:152px;border-top:3px solid #3f74ad\"></div><div style=\"position:absolute;left:0;right:0;top:240px;border-top:3px solid #3f74ad\"></div><div style=\"position:absolute;left:0;right:0;top:372px;border-top:2px solid #9bb7d4\"></div></div>"
               }
             ],
             [
