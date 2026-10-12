@@ -85,7 +85,7 @@
     {
       "fase": "Uitleg — begrip",
       "achtergrond": "leeg",
-      "notitie": "Neem een echte modelauto mee. Eerst de denkvragen (maatje, dan willekeurige beurt), daarna de overgang van schaallijn naar schaal 1 : 43.",
+      "notitie": "Neem een echte modelauto mee. Eerst de denkvragen (maatje, dan willekeurige beurt), daarna de overgang van schaallijn naar schaal 1 : 40.",
       "blokken": [
         {
           "type": "kolommen",
@@ -98,6 +98,11 @@
               {
                 "type": "html",
                 "html": "<div style=\"text-align:center\"><svg width=\"560\" height=\"250\" viewBox=\"0 0 560 250\"><defs><marker id=\"q\" markerWidth=\"10\" markerHeight=\"10\" refX=\"5\" refY=\"5\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#d6453d\"/></marker></defs><line x1=\"40\" y1=\"30\" x2=\"520\" y2=\"30\" stroke=\"#d6453d\" stroke-width=\"4\" marker-start=\"url(#q)\" marker-end=\"url(#q)\"/><text x=\"280\" y=\"20\" font-size=\"30\" font-weight=\"700\" fill=\"#d6453d\" text-anchor=\"middle\">10 cm</text><path d=\"M40,170 L40,130 Q45,110 90,105 L170,100 L230,60 L360,60 L420,100 L500,108 Q520,115 520,140 L520,170 Z\" fill=\"#2f6fd1\" stroke=\"#1d3f7a\" stroke-width=\"4\"/><path d=\"M240,70 L300,70 L300,100 L195,100 Z\" fill=\"#dbeaf7\"/><path d=\"M312,70 L355,70 L398,100 L312,100 Z\" fill=\"#dbeaf7\"/><circle cx=\"140\" cy=\"172\" r=\"32\" fill=\"#333\"/><circle cx=\"140\" cy=\"172\" r=\"13\" fill=\"#bbb\"/><circle cx=\"420\" cy=\"172\" r=\"32\" fill=\"#333\"/><circle cx=\"420\" cy=\"172\" r=\"13\" fill=\"#bbb\"/><text x=\"280\" y=\"240\" font-size=\"28\" fill=\"#5b6b63\" text-anchor=\"middle\">modelauto</text></svg></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div><div style=\"text-align:center;font-size:24px;color:#5b6b63\">schaallijn van de modelauto (in het echt)</div><svg width=\"560\" height=\"90\" viewBox=\"0 268 560 90\" style=\"display:block;margin:0 auto\"><text x=\"64\" y=\"292\" font-size=\"20\" font-weight=\"700\" fill=\"#d6453d\" text-anchor=\"middle\">1 cm</text><rect x=\"40\" y=\"300\" width=\"48\" height=\"16\" fill=\"#1d2b24\" stroke=\"#1d2b24\" stroke-width=\"2\"/><rect x=\"88\" y=\"300\" width=\"48\" height=\"16\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"2\"/><rect x=\"136\" y=\"300\" width=\"48\" height=\"16\" fill=\"#1d2b24\" stroke=\"#1d2b24\" stroke-width=\"2\"/><rect x=\"184\" y=\"300\" width=\"48\" height=\"16\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"2\"/><rect x=\"232\" y=\"300\" width=\"48\" height=\"16\" fill=\"#1d2b24\" stroke=\"#1d2b24\" stroke-width=\"2\"/><rect x=\"280\" y=\"300\" width=\"48\" height=\"16\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"2\"/><rect x=\"328\" y=\"300\" width=\"48\" height=\"16\" fill=\"#1d2b24\" stroke=\"#1d2b24\" stroke-width=\"2\"/><rect x=\"376\" y=\"300\" width=\"48\" height=\"16\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"2\"/><rect x=\"424\" y=\"300\" width=\"48\" height=\"16\" fill=\"#1d2b24\" stroke=\"#1d2b24\" stroke-width=\"2\"/><rect x=\"472\" y=\"300\" width=\"48\" height=\"16\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"2\"/><text x=\"40\" y=\"344\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">0</text><text x=\"136\" y=\"344\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">80</text><text x=\"232\" y=\"344\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">160</text><text x=\"328\" y=\"344\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">240</text><text x=\"424\" y=\"344\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">320</text><text x=\"520\" y=\"344\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">400 cm</text></svg></div>",
+                "verborgen": true
               },
               {
                 "type": "lijst",
@@ -113,17 +118,12 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"text-align:center\"><svg width=\"420\" height=\"110\" viewBox=\"0 0 420 110\"><text x=\"210\" y=\"28\" font-size=\"26\" fill=\"#5b6b63\" text-anchor=\"middle\">schaallijn</text><rect x=\"60\" y=\"45\" width=\"300\" height=\"18\" fill=\"#1d2b24\"/><line x1=\"60\" y1=\"38\" x2=\"60\" y2=\"70\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"360\" y1=\"38\" x2=\"360\" y2=\"70\" stroke=\"#1d2b24\" stroke-width=\"3\"/><text x=\"60\" y=\"98\" font-size=\"28\" font-weight=\"700\" text-anchor=\"middle\">0</text><text x=\"360\" y=\"98\" font-size=\"28\" font-weight=\"700\" text-anchor=\"middle\">43 cm</text></svg><div style=\"font-size:26px;color:#5b6b63\">1 cm op het model is 43 cm in het echt</div></div>",
+                "html": "<div style=\"text-align:center\"><div style=\"font-size:72px;font-weight:800;color:#d9822b\">schaal 1 : 40</div><div style=\"font-size:30px;margin-top:6px\">1 op het model is <b>40</b> in het echt</div></div>",
                 "verborgen": true
               },
               {
                 "type": "html",
-                "html": "<div style=\"text-align:center\"><div style=\"font-size:44px;color:#5b6b63\">⬇</div><div style=\"font-size:72px;font-weight:800;color:#d9822b\">schaal 1 : 43</div><div style=\"font-size:30px;margin-top:6px\">1 op het model is <b>43</b> in het echt</div></div>",
-                "verborgen": true
-              },
-              {
-                "type": "html",
-                "html": "<div style=\"text-align:center;font-size:30px;line-height:1.5;background:#eef7f1;border-radius:14px;padding:12px\"><b>Links en rechts dezelfde maat</b><br>1 <b>cm</b> wordt 43 <b>cm</b> · 1 <b>m</b> wordt 43 <b>m</b></div>",
+                "html": "<div style=\"text-align:center;font-size:30px;line-height:1.5;background:#eef7f1;border-radius:14px;padding:12px\"><b>Links en rechts dezelfde maat</b><br>1 <b>cm</b> wordt 40 <b>cm</b> · 1 <b>m</b> wordt 40 <b>m</b></div>",
                 "verborgen": true
               }
             ]
@@ -170,18 +170,6 @@
                 ],
                 "stijl": "font-size:.7em",
                 "stapsgewijs": true
-              },
-              {
-                "type": "tekst",
-                "tekst": "**Stap 1:** 4 × 50 = **200 cm**",
-                "verborgen": true,
-                "stijl": "font-size:30px;margin:0"
-              },
-              {
-                "type": "tekst",
-                "tekst": "**Stap 2:** 200 cm = **2 m**",
-                "verborgen": true,
-                "stijl": "font-size:30px;margin:0"
               }
             ]
           ]
@@ -226,18 +214,6 @@
                   "Reken het aantal **cm in het echt** om naar de **gevraagde maat**."
                 ],
                 "stijl": "font-size:.7em"
-              },
-              {
-                "type": "tekst",
-                "tekst": "**Stap 1:** 5 × 200 = **1000 cm**",
-                "verborgen": true,
-                "stijl": "font-size:30px;margin:0"
-              },
-              {
-                "type": "tekst",
-                "tekst": "**Stap 2:** 1000 cm = **10 m**",
-                "verborgen": true,
-                "stijl": "font-size:30px;margin:0"
               }
             ]
           ]
@@ -247,7 +223,7 @@
     {
       "fase": "Begeleide inoefening — jullie",
       "achtergrond": "leeg",
-      "notitie": "Maatje A doet stap 1, maatje B doet stap 2. Daarna vergelijken.",
+      "notitie": "Maatje gangkant doet stap 1, maatje raamkant doet stap 2. Daarna vergelijken.",
       "blokken": [
         {
           "type": "kolommen",
@@ -287,19 +263,7 @@
                 "type": "vraag",
                 "verborgen": true,
                 "stijl": "font-size:26px",
-                "tekst": "**Maatje A** doet stap 1 en legt uit hoe.\n**Maatje B** doet stap 2 en legt uit hoe.\nVergelijk: klopt het samen?"
-              },
-              {
-                "type": "tekst",
-                "tekst": "**Stap 1:** 3 × 150 = **450 cm**",
-                "verborgen": true,
-                "stijl": "font-size:30px;margin:0"
-              },
-              {
-                "type": "tekst",
-                "tekst": "**Stap 2:** 450 cm = **4,5 m**",
-                "verborgen": true,
-                "stijl": "font-size:30px;margin:0"
+                "tekst": "**Maatje gangkant** doet stap 1 en legt uit hoe.\n**Maatje raamkant** doet stap 2 en legt uit hoe.\nVergelijk: klopt het samen?"
               }
             ]
           ]
@@ -344,23 +308,148 @@
                   "Reken het aantal **cm in het echt** om naar de **gevraagde maat**."
                 ],
                 "stijl": "font-size:.7em"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Verlengde instructie",
+      "achtergrond": "leeg",
+      "notitie": "Extra voorbeeld voor de instructietafel.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Verlengde instructie"
               },
               {
-                "type": "tekst",
-                "tekst": "**Stap 1:** 10 × 400 = **4000 cm**",
-                "verborgen": true,
-                "stijl": "font-size:30px;margin:0"
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:28px\"><div style=\"display:flex;align-items:center\"><svg width=\"140\" height=\"170\" viewBox=\"0 0 140 170\"><defs><marker id=\"p\" markerWidth=\"10\" markerHeight=\"10\" refX=\"5\" refY=\"5\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#d6453d\"/></marker></defs><line x1=\"120\" y1=\"14\" x2=\"120\" y2=\"156\" stroke=\"#d6453d\" stroke-width=\"4\" marker-start=\"url(#p)\" marker-end=\"url(#p)\"/><text x=\"102\" y=\"95.0\" font-size=\"30\" font-weight=\"700\" fill=\"#d6453d\" text-anchor=\"end\">5 cm</text></svg><div style=\"font-size:130px;line-height:150px\">🌻</div></div><div style=\"font-size:34px;line-height:1.35\"><div style=\"font-weight:800;margin-bottom:8px\">Schaal 1 : 50</div>Hoeveel meter hoog is de zonnebloem in werkelijkheid?</div></div>"
               },
               {
-                "type": "tekst",
-                "tekst": "**Stap 2:** 4000 cm = **40 m**",
-                "verborgen": true,
-                "stijl": "font-size:30px;margin:0"
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Reken het aantal **cm op de tekening** om naar het aantal **cm in het echt**.",
+                  "Reken het aantal **cm in het echt** om naar de **gevraagde maat**."
+                ],
+                "stijl": "font-size:.7em"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Verlengde instructie",
+      "achtergrond": "leeg",
+      "notitie": "Extra voorbeeld voor de instructietafel.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Verlengde instructie"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:28px\"><div style=\"display:flex;align-items:center\"><svg width=\"140\" height=\"230\" viewBox=\"0 0 140 230\"><defs><marker id=\"p\" markerWidth=\"10\" markerHeight=\"10\" refX=\"5\" refY=\"5\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#d6453d\"/></marker></defs><line x1=\"120\" y1=\"14\" x2=\"120\" y2=\"216\" stroke=\"#d6453d\" stroke-width=\"4\" marker-start=\"url(#p)\" marker-end=\"url(#p)\"/><text x=\"102\" y=\"125.0\" font-size=\"30\" font-weight=\"700\" fill=\"#d6453d\" text-anchor=\"end\">6 cm</text></svg><svg width=\"120\" height=\"230\" viewBox=\"0 0 120 230\"><polygon points=\"45,40 75,40 92,225 28,225\" fill=\"#fff\" stroke=\"#5b6b63\" stroke-width=\"3\"/><polygon points=\"40,90 80,90 83,120 37,120\" fill=\"#d6453d\"/><polygon points=\"34,150 86,150 89,180 31,180\" fill=\"#d6453d\"/><rect x=\"42\" y=\"18\" width=\"36\" height=\"22\" fill=\"#ffd34d\" stroke=\"#5b6b63\" stroke-width=\"3\"/><polygon points=\"38,18 82,18 60,2\" fill=\"#d6453d\"/></svg></div><div style=\"font-size:34px;line-height:1.35\"><div style=\"font-weight:800;margin-bottom:8px\">Schaal 1 : 500</div>Hoeveel meter hoog is de vuurtoren in werkelijkheid?</div></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Reken het aantal **cm op de tekening** om naar het aantal **cm in het echt**.",
+                  "Reken het aantal **cm in het echt** om naar de **gevraagde maat**."
+                ],
+                "stijl": "font-size:.7em"
               }
             ]
           ]
         }
       ]
     }
-  ]
+  ],
+  "voorbereiding": {
+    "benodigdheden": [
+      "Een modelauto",
+      "Wisbordjes"
+    ],
+    "verloop": [
+      {
+        "fase": "Lesdoel",
+        "wat": "Ik kan een schaal omrekenen naar de lengte in werkelijkheid."
+      },
+      {
+        "fase": "Activeren voorkennis",
+        "wat": "Cm omrekenen naar m: ik doe 200 cm voor, de kinderen doen 350 cm op het wisbordje."
+      },
+      {
+        "fase": "Uitleg — begrip",
+        "wat": "Modelauto: denkvragen, schaallijn van de auto, dan schaal 1 : 40. Links en rechts dezelfde maat."
+      },
+      {
+        "fase": "Ik doe voor",
+        "wat": "Deur (4 cm, schaal 1 : 50) met het stappenplan."
+      },
+      {
+        "fase": "Wij samen",
+        "wat": "Molen (5 cm, schaal 1 : 200), met willekeurige beurten."
+      },
+      {
+        "fase": "Jullie",
+        "wat": "Giraf (3 cm, schaal 1 : 150). Maatje gangkant doet stap 1, maatje raamkant doet stap 2, daarna vergelijken."
+      },
+      {
+        "fase": "Jij",
+        "wat": "Schoorsteen (10 cm, schaal 1 : 400), iedereen zelf."
+      },
+      {
+        "fase": "Verlengde instructie",
+        "wat": "Twee extra voorbeelden: zonnebloem (5 cm, 1 : 50) en vuurtoren (6 cm, 1 : 500)."
+      }
+    ],
+    "secties": [
+      {
+        "kop": "Stappenplan",
+        "items": [
+          "1. Reken het aantal cm op de tekening om naar het aantal cm in het echt.",
+          "2. Reken het aantal cm in het echt om naar de gevraagde maat."
+        ]
+      }
+    ]
+  }
 }
