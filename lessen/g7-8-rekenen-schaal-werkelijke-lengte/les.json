@@ -1,0 +1,91 @@
+{
+  "id": "g7-8-rekenen-schaal-werkelijke-lengte",
+  "titel": "Schaal omrekenen naar de lengte in werkelijkheid",
+  "groep": "7-8",
+  "vak": "Rekenen",
+  "onderwerp": "Schaal",
+  "edi": true,
+  "samenvatting": "Met een schaal als 1 : 50 de lengte in werkelijkheid berekenen.",
+  "trefwoorden": [
+    "schaal",
+    "werkelijkheid",
+    "lengte",
+    "cm",
+    "m",
+    "omrekenen"
+  ],
+  "gemaakt": "2026-10-12",
+  "lesdoel": "Ik kan een schaal omrekenen naar de lengte in werkelijkheid.",
+  "lesdoelInHoek": true,
+  "schermen": [
+    {
+      "fase": "Lesdoel",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "notitie": "Ik lees voor, de klas leest mee, maatjes lezen het aan elkaar voor, dan een willekeurige beurt.",
+      "blokken": [
+        {
+          "type": "subkop",
+          "tekst": "Lesdoel"
+        },
+        {
+          "type": "groot",
+          "tekst": "Ik kan een schaal omrekenen naar de lengte in werkelijkheid.",
+          "stijl": "font-size:64px;line-height:1.25"
+        }
+      ]
+    },
+    {
+      "fase": "Activeren voorkennis",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "notitie": "Ik doe 200 cm voor, de kinderen doen 350 cm op het wisbordje.",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "Hoeveel meter is het?"
+        },
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Ik doe het voor"
+              },
+              {
+                "type": "groot",
+                "tekst": "200 cm = … m",
+                "stijl": "font-size:80px;"
+              },
+              {
+                "type": "groot",
+                "tekst": "200 cm = **2 m**",
+                "verborgen": true,
+                "stijl": "font-size:80px;color:#2f9e63"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Jij op je wisbordje"
+              },
+              {
+                "type": "groot",
+                "tekst": "350 cm = … m",
+                "stijl": "font-size:80px;"
+              },
+              {
+                "type": "groot",
+                "tekst": "350 cm = **3,5 m**",
+                "verborgen": true,
+                "stijl": "font-size:80px;color:#2f9e63"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
