@@ -1,0 +1,35 @@
+{
+  "id": "g8-spelling-dictee-latijnse-meervouden",
+  "titel": "Dictee: Latijnse meervouden, -ieel/-eaal/-ueel en vind jij",
+  "groep": "8",
+  "vak": "Spelling",
+  "onderwerp": "Dictee",
+  "samenvatting": "Dictee met vijf woorden en een zin. Alles staat verborgen en tik je één voor één zichtbaar.",
+  "trefwoorden": [ "dictee", "spelling", "latijnse meervouden", "musea", "ieel", "eaal", "ueel", "vind jij", "werkwoordspelling"],
+  "gemaakt": "2026-10-12",
+  "pdfs": false,
+  "schermen": [
+    {
+      "fase": "Dictee",
+      "achtergrond": "leeg",
+      "notitie": "Tik elk woord en daarna de zin aan om ze te laten zien.",
+      "blokken": [
+        { "type": "kop", "tekst": "Dictee" },
+        {
+          "type": "lijst",
+          "genummerd": true,
+          "stapsgewijs": true,
+          "stijl": "font-size:48px;font-weight:700",
+          "items": ["laboratoria", "musea", "centra", "stadia", "officieel"]
+        },
+        { "type": "subkop", "tekst": "Zin" },
+        {
+          "type": "tekst",
+          "verborgen": true,
+          "stijl": "font-size:48px;font-weight:700;line-height:1.3",
+          "tekst": "Vind jij individueel werken ook ideaal, of werk je liever samen met je maatje?"
+        }
+      ]
+    }
+  ]
+}

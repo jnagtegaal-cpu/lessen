@@ -8,6 +8,7 @@
 Gebruik (vanuit de map van de repository):
     python3 tools/publiceer.py            # alle lessen
     python3 tools/publiceer.py <les-id>   # alleen PDF's van deze les opnieuw
+    python3 tools/publiceer.py --catalogus  # alleen het overzicht
 """
 import functools
 import os
@@ -43,7 +44,7 @@ def lees_lessen():
 
 
 def schrijf_catalogus(lessen):
-    velden = ["id", "titel", "groep", "vak", "blok", "onderwerp", "duur", "edi", "samenvatting", "trefwoorden", "gemaakt"]
+    velden = ["id", "titel", "groep", "vak", "blok", "onderwerp", "duur", "edi", "samenvatting", "trefwoorden", "gemaakt", "pdfs"]
     cat = {"lessen": [{k: les[k] for k in velden if k in les} for les in lessen]}
     (LESSEN / "catalogus.json").write_text(json.dumps(cat, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
@@ -88,8 +89,14 @@ def main():
         sys.exit(1)
     schrijf_catalogus(lessen)
     print(f"Catalogus bijgewerkt: {len(lessen)} les(sen)")
-    ids = sys.argv[1:] or [les["id"] for les in lessen]
-    maak_pdfs(ids)
+    args = sys.argv[1:]
+    if args == ["--catalogus"]:
+        return  # alleen het overzicht (bijv. na het verwijderen van een les)
+    ids = args or [les["id"] for les in lessen]
+    zonder_pdf = {les["id"] for les in lessen if les.get("pdfs") is False}  # lessen uit de app
+    ids = [i for i in ids if (LESSEN / i / "les.json").exists() and i not in zonder_pdf]
+    if ids:
+        maak_pdfs(ids)
 
 
 if __name__ == "__main__":
