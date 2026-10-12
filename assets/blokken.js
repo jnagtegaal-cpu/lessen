@@ -86,6 +86,10 @@ const Lesbord = (() => {
       case "weetjes": // briefjes om zelf te lezen, bijvoorbeeld tijdens het proeven
         return `<div class="b-weetjes"${stijl}>${b.kop ? `<p class="weetjes-kop">${esc(b.kop)}</p>` : ""}` +
           `${(b.items || []).map((w) => `<div class="weetje">${opmaak(w)}</div>`).join("")}</div>`;
+      case "keuze": // knoppen die naar een ander scherm springen (dat scherm heeft "anker"), zie bord.js
+        return `<div class="b-keuze"${stijl}>${(b.items || []).map((k) =>
+          `<button class="keuze-knop${k.hoofd ? " hoofd" : ""}" data-naar="${esc(k.naar)}"><span class="keuze-tekst">${opmaak(k.tekst)}</span>` +
+          `${k.uitleg ? `<span class="keuze-uitleg">${opmaak(k.uitleg)}</span>` : ""}</button>`).join("")}</div>`;
       case "live-aansluiten": return `<div class="b-aansluiten" data-aansluiten${stijl}></div>`;
       case "eindstand": return `<div class="b-eindstand" data-eindstand${stijl}></div>`; // wordt op het bord gevuld door score.js
       case "html": return b.html || ""; // maatwerk per les

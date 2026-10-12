@@ -45,6 +45,7 @@ Een scherm is 1600 × 900 en schaalt mee op elk bord.
   "achtergrond": "leeg",            // "leeg", "ruitjes" of "lijntjes"
   "uitlijning": "midden",           // optioneel: inhoud verticaal in het midden
   "lesdoelVerbergen": true,         // optioneel: geen lesdoel in de hoek op dit scherm
+  "anker": "uitslag",               // optioneel: naam waar een keuzeknop naartoe springt (zie "Splitsen")
   "notitie": "Alleen voor de leerkracht (knop met tekstballon).",
   "blokken": [ … ]
 }
@@ -70,6 +71,7 @@ Een scherm is 1600 × 900 en schaalt mee op elk bord.
 | `html` | `html` | Maatwerk, zoals een getallenlijn of liniaal in SVG |
 | `stellingen` | `items` (`titel`, `onzin`), `antwoord` | Quizkaart met A, B, C. Na een tik komt het antwoord en krijgt elke kaart een stempel *feit* of *onzin* |
 | `smaken` | `items` | Smaken als kaartjes (proefronde), meestal met `"verborgen": true` |
+| `keuze` | `items` (`tekst`, `uitleg`, `naar`, `hoofd`) | Grote knoppen die naar een ander scherm springen, zie "Splitsen" |
 | `weetjes` | `items`, `kop` | Weetjes op scheve briefjes met plakband, om zelf te lezen (bijv. naast een `proef`-blok in `kolommen`) |
 | `eindstand` | – | Ranglijst van het scorebord (alleen met `scorebord` in de les, zie hieronder) |
 
@@ -81,6 +83,22 @@ Op het bord verschijnt informatie pas als je hem nodig hebt:
 - `"verborgen": true` bij elk ander blok (bijvoorbeeld een antwoord): het hele blok is verborgen tot je het aantikt.
 
 Je kunt ook op **volgende** drukken (knop, pijltje of presenter): eerst verschijnt dan het volgende verborgen item, en pas als alles zichtbaar is, ga je naar het volgende scherm. Aantikken werkt in de stand *Aanwijzen*. Nog eens tikken verbergt het weer. In de presentatie-PDF is alles zichtbaar.
+
+### Splitsen: zelf kiezen hoe je verdergaat
+
+Met een `keuze`-blok maak je een splitsing in de les, bijvoorbeeld: naar de afsluiting, of eerst nog extra oefeningen. Elke knop springt naar het scherm met dat `anker`:
+
+```json
+{ "fase": "Hoe verder?", "blokken": [
+  { "type": "kop", "tekst": "Hoe gaan we verder?" },
+  { "type": "keuze", "items": [
+    { "tekst": "Naar de afsluiting", "naar": "afsluiting", "hoofd": true },
+    { "tekst": "Extra oefeningen", "uitleg": "4 sommen · 10 minuten", "naar": "extra" } ] } ] }
+```
+
+Op een keuzescherm werkt **volgende** niet: je kiest met een knop. `hoofd` maakt een knop opvallend. Zet aan het eind van een extra deel weer een keuzescherm, zodat je daarna opnieuw kunt kiezen.
+
+**Ergens anders heen?** Tik onderaan op het schermnummer (bijvoorbeeld *12 / 30*). Je krijgt een lijst met alle schermen, met hun `fase` (of anders de kop). Dat werkt in elke les.
 
 Elk blok mag ook `stijl` hebben (extra CSS), bijvoorbeeld `"stijl": "color:#d6453d"`.
 

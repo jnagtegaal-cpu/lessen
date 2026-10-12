@@ -108,7 +108,7 @@
     dia.querySelectorAll(".onthul").forEach((el, i) => el.classList.toggle("zichtbaar", getoond.has(i)));
     $("teller").textContent = st.klad ? "Kladblad" : `${st.index + 1} / ${schermen.length}`;
     $("vorige").disabled = st.klad || st.index === 0;
-    $("volgende").disabled = st.klad || (st.index >= schermen.length - 1 && !dia.querySelector(".onthul:not(.zichtbaar)"));
+    $("volgende").disabled = st.klad || ((st.index >= schermen.length - 1 || isKeuze()) && !dia.querySelector(".onthul:not(.zichtbaar)"));
     const fase = !st.klad && s.fase;
     $("fase").hidden = !fase; $("fase").textContent = fase || "";
     $("notitie-tekst").textContent = (!st.klad && s.notitie) || "Geen notitie bij dit scherm.";
@@ -124,10 +124,49 @@
     if (set.has(i)) { set.delete(i); el.classList.remove("zichtbaar"); }
     else { set.add(i); el.classList.add("zichtbaar"); }
   }
-  dia.addEventListener("click", (e) => { const el = e.target.closest(".onthul"); if (el) onthul(el); });
+  dia.addEventListener("click", (e) => {
+    const naar = e.target.closest("[data-naar]");
+    if (naar) { springNaar(naar.dataset.naar); return; }
+    const el = e.target.closest(".onthul"); if (el) onthul(el);
+  });
+  // Een keuzescherm (blok "keuze") is een splitsing: daar ga je verder met een van de knoppen, niet met "volgende".
+  const isKeuze = () => !st.klad && !!dia.querySelector("[data-naar]");
+  function springNaar(anker) {
+    const i = (st.les.schermen || []).findIndex((s) => s.anker === anker);
+    if (i >= 0) ga(i);
+  }
   function volgende() {
     const verborgen = dia.querySelector(".onthul:not(.zichtbaar)");
-    if (verborgen && !st.klad) onthul(verborgen); else ga(st.index + 1);
+    if (verborgen && !st.klad) onthul(verborgen);
+    else if (!isKeuze()) ga(st.index + 1);
+  }
+
+  // ---------- Schermkiezer: tik op het schermnummer om naar een ander scherm te gaan ----------
+  const lijst = $("schermlijst");
+  const schermNaam = (s, i) => s.fase || ((s.blokken || []).find((b) => b.type === "kop") || {}).tekst || `Scherm ${i + 1}`;
+  function toonLijst(open) {
+    if (!lijst || !st.les) return;
+    lijst.hidden = !open;
+    $("teller").setAttribute("aria-expanded", String(open));
+    if (!open) return;
+    lijst.innerHTML = `<h3>Ga naar scherm</h3><ol>${(st.les.schermen || []).map((s, i) =>
+      `<li><button data-scherm="${i}"${i === st.index && !st.klad ? ' aria-current="true"' : ""}><span>${i + 1}</span>${Lesbord.esc(schermNaam(s, i))}</button></li>`).join("")}</ol>`;
+    const nu = lijst.querySelector("[aria-current]") || lijst.querySelector("button");
+    if (nu) { nu.scrollIntoView({ block: "center" }); nu.focus(); }
+  }
+  if (lijst) {
+    $("teller").onclick = () => toonLijst(lijst.hidden);
+    lijst.addEventListener("click", (e) => {
+      const b = e.target.closest("[data-scherm]"); if (!b) return;
+      toonLijst(false); ga(Number(b.dataset.scherm));
+    });
+    lijst.addEventListener("keydown", (e) => { // pijltjes en spatie mogen het bord hier niet verder laten gaan
+      e.stopPropagation();
+      if (e.key === "Escape") { toonLijst(false); $("teller").focus(); }
+    });
+    document.addEventListener("pointerdown", (e) => {
+      if (!lijst.hidden && !lijst.contains(e.target) && !$("teller").contains(e.target)) toonLijst(false);
+    });
   }
 
   function ga(n) {
@@ -179,7 +218,7 @@
     else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z") { e.preventDefault(); $("ongedaan").click(); }
     else if (e.key === "p") zetModus("pen");
     else if (e.key === "g") zetModus("gum");
-    else if (e.key === "Escape") zetModus("aanwijzen");
+    else if (e.key === "Escape") { zetModus("aanwijzen"); toonLijst(false); }
   });
   window.addEventListener("resize", pasAan);
   document.addEventListener("fullscreenchange", pasAan);

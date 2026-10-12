@@ -161,7 +161,29 @@ body.bord { background: #e9f1ec; overflow: hidden; height: 100vh; }
 .dikte { width: 46px; height: 46px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--paper); cursor: pointer; display: grid; place-items: center; }
 .dikte span { display: block; border-radius: 50%; background: var(--ink); }
 .dikte[aria-pressed="true"] { background: var(--groen-licht); border-color: var(--groen); }
-.teller-dia { min-width: 74px; text-align: center; font-weight: 700; font-size: 18px; }
+.teller-dia {
+  min-width: 74px; text-align: center; font: inherit; font-weight: 700; font-size: 18px; color: inherit;
+  background: none; border: 1.5px solid transparent; border-radius: 12px; padding: 10px 8px; cursor: pointer;
+}
+.teller-dia:hover, .teller-dia[aria-expanded="true"] { border-color: var(--line); }
+
+/* Schermkiezer: lijst van alle schermen, opent bij een tik op het schermnummer */
+.schermlijst {
+  position: fixed; left: 50%; bottom: 78px; transform: translateX(-50%); z-index: 25;
+  width: min(440px, 94vw); max-height: calc(100vh - 170px); overflow: auto;
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 12px 50px rgba(20, 50, 35, .25); padding: 10px 10px 12px;
+}
+.schermlijst[hidden] { display: none; }
+.schermlijst h3 { margin: 6px 10px 8px; font-size: 18px; }
+.schermlijst ol { list-style: none; margin: 0; padding: 0; }
+.schermlijst button {
+  display: flex; gap: 10px; width: 100%; text-align: left; padding: 7px 10px; border: 0; border-radius: 8px;
+  background: none; font: inherit; font-size: 17px; color: inherit; cursor: pointer;
+}
+.schermlijst button span { min-width: 2.2em; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.schermlijst button:hover, .schermlijst button:focus-visible { background: var(--groen-licht); outline: none; }
+.schermlijst button[aria-current] { background: var(--groen-licht); font-weight: 700; }
 
 .notities {
   position: absolute; right: 0; top: 0; bottom: 0; width: min(420px, 90vw); background: var(--paper);
@@ -372,6 +394,17 @@ body.bord { background: #e9f1ec; overflow: hidden; height: 100vh; }
   color: var(--groen-donker); font-size: 34px; font-weight: 700;
 }
 
+/* Keuze: grote knoppen die naar een ander deel van de les springen */
+.b-keuze { display: flex; flex-direction: column; gap: 18px; }
+.keuze-knop {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 28px; text-align: left; cursor: pointer;
+  font: inherit; font-size: 40px; font-weight: 700; line-height: 1.2; padding: 22px 34px; border-radius: 18px;
+  border: 3px solid var(--line); background: #f7fbf8; color: var(--ink);
+}
+.keuze-knop:hover { border-color: var(--groen); }
+.keuze-knop.hoofd { background: var(--groen); border-color: var(--groen); color: #fff; }
+.keuze-uitleg { font-size: 26px; font-weight: 400; opacity: .85; white-space: nowrap; }
+
 /* Weetjes: briefjes met plakband, een beetje scheef opgehangen */
 .b-weetjes { display: flex; flex-direction: column; gap: 22px; }
 .weetjes-kop { margin: 0; font-size: 34px; font-weight: 700; color: var(--groen-donker); }
@@ -474,6 +507,10 @@ body.bord.thema-pub { background: #1b0f07; }
 }
 .thema-pub .b-smaken span:nth-child(odd) { transform: rotate(-1.5deg); }
 .thema-pub .b-smaken span:nth-child(even) { transform: rotate(1.5deg); }
+.thema-pub .keuze-knop { background: rgba(255,255,255,.06); border-color: rgba(244,239,226,.5); color: var(--krijt); }
+.thema-pub .keuze-knop:hover { border-color: var(--koper); }
+.thema-pub .keuze-knop.hoofd { background: var(--koper); border-color: var(--koper); color: #2a170a; }
+.thema-pub .keuze-uitleg { color: inherit; }
 .thema-pub .weetjes-kop { font-family: "Caveat Brush", "Segoe Print", cursive; font-weight: 400; font-size: 48px; line-height: 1; color: var(--koper); transform: rotate(-2deg); }
 .thema-pub .weetje { background: #efe0bf; color: #4a2a12; box-shadow: 0 6px 14px rgba(0, 0, 0, .55); }
 .thema-pub .weetje::before { background: rgba(250, 236, 196, .55); }
@@ -630,7 +667,7 @@ body.thema-pub .kleur { border-color: #24150b; box-shadow: 0 0 0 1.5px rgba(239,
 body.thema-pub .kleur[aria-pressed="true"] { box-shadow: 0 0 0 3px #e0a84a; }
 body.thema-pub .fase-label { background: rgba(224,168,74,.18); color: #f1c45f; }
 body.thema-pub .scorebalk .knop.hoofd { background: #e0a84a; border-color: #b9822e; color: #2a170a; }
-body.thema-pub .scorepaneel, body.thema-pub .livepaneel, body.thema-pub .notities {
+body.thema-pub .scorepaneel, body.thema-pub .livepaneel, body.thema-pub .notities, body.thema-pub .schermlijst {
   background: #f3e6c8; border: 3px solid #8a5a2b; color: #3a2412; box-shadow: 0 16px 50px rgba(0,0,0,.6);
 }
 body.thema-pub .scorepaneel h3, body.thema-pub .livepaneel h3 { font-family: "Rye", Georgia, serif; font-weight: 400; color: #6b3f17; }
@@ -661,3 +698,7 @@ body.thema-pub .live-weg { border-color: #c9a46a; color: #7a5a35; }
 /* Pdf van de presentatie: geen arcering achter wat al zichtbaar is */
 .alles-zichtbaar .dia.thema-pub .onthul { background: none; border: 0; }
 .alles-zichtbaar .dia.thema-pub .b-stappen li.onthul { background: rgba(255,255,255,.05); border: 2px solid rgba(244,239,226,.4); }
+body.thema-pub .teller-dia:hover, body.thema-pub .teller-dia[aria-expanded="true"] { border-color: rgba(239,224,191,.35); }
+body.thema-pub .schermlijst h3 { font-family: "Rye", Georgia, serif; font-weight: 400; color: #6b3f17; }
+body.thema-pub .schermlijst button span { color: #7a5a35; }
+body.thema-pub .schermlijst button:hover, body.thema-pub .schermlijst button:focus-visible, body.thema-pub .schermlijst button[aria-current] { background: rgba(224,168,74,.3); }
