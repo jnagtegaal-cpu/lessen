@@ -1,20 +1,20 @@
 {
   "id": "g8-spelling-dictee-latijnse-meervouden",
-  "titel": "Dicté: Latijnse meervouden, -ieel/-eaal/-ueel en vind jij",
+  "titel": "Dictee: Latijnse meervouden, -ieel/-eaal/-ueel en vind jij",
   "groep": "8",
   "vak": "Spelling",
-  "onderwerp": "Dicté",
-  "samenvatting": "Dicté met vijf woorden en een zin. Alles staat verborgen en tik je één voor één zichtbaar.",
-  "trefwoorden": ["dicté", "dictee", "spelling", "latijnse meervouden", "musea", "ieel", "eaal", "ueel", "vind jij", "werkwoordspelling"],
+  "onderwerp": "Dictee",
+  "samenvatting": "Dictee met vijf woorden en een zin. Alles staat verborgen en tik je één voor één zichtbaar.",
+  "trefwoorden": [ "dictee", "spelling", "latijnse meervouden", "musea", "ieel", "eaal", "ueel", "vind jij", "werkwoordspelling"],
   "gemaakt": "2026-10-12",
   "pdfs": false,
   "schermen": [
     {
-      "fase": "Dicté",
+      "fase": "Dictee",
       "achtergrond": "leeg",
       "notitie": "Tik elk woord en daarna de zin aan om ze te laten zien.",
       "blokken": [
-        { "type": "kop", "tekst": "Dicté" },
+        { "type": "kop", "tekst": "Dictee" },
         {
           "type": "lijst",
           "genummerd": true,
