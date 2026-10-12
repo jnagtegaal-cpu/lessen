@@ -1,0 +1,338 @@
+{
+  "id": "g7-spelling-verkleinwoorden-a-o-u-i",
+  "titel": "Verkleinwoorden van woorden op a, o, u en i",
+  "groep": "7",
+  "vak": "Spelling",
+  "onderwerp": "Verkleinwoorden",
+  "edi": true,
+  "samenvatting": "Korte EDI-les: verkleinwoorden van woorden die eindigen op a, o, u of i (radiootje, tostietje), met een terugblik op de hoofdletter en een dictee.",
+  "trefwoorden": [
+    "spelling",
+    "verkleinwoorden",
+    "tje",
+    "aatje",
+    "ootje",
+    "uutje",
+    "ietje",
+    "hoofdletter",
+    "dictee"
+  ],
+  "gemaakt": "2026-10-12",
+  "lesdoel": "Ik kan verkleinwoorden schrijven van woorden die eindigen op a, o, u of i.",
+  "lesdoelInHoek": true,
+  "schermen": [
+    {
+      "fase": "Terugblik: hoofdletter",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "notitie": "De zin van gisteren. Iedereen had de regel goed, maar de hoofdletter vergeten.",
+      "blokken": [
+        {
+          "type": "groot",
+          "tekst": "verf je eerst die muur."
+        },
+        {
+          "type": "vraag",
+          "tekst": "Wat is hier fout?",
+          "stijl": "text-align:center;font-size:48px"
+        }
+      ]
+    },
+    {
+      "fase": "Activeren voorkennis",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "notitie": "Laat de woorden invullen. Daarna: beide woorden eindigen op a, o, u of i.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"height:240px;display:flex;align-items:center;justify-content:center;font-size:190px;line-height:1\">🦓</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "De **…** leeft in het wild.",
+                "stijl": "font-size:48px;text-align:center"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center;font-weight:800;font-size:72px;margin:0\">zebr<span style=\"color:#d9822b\">a</span></div>",
+                "verborgen": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"height:240px;display:flex;align-items:center;justify-content:center;font-size:190px;line-height:1\">🚗</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Onze **…** start niet.",
+                "stijl": "font-size:48px;text-align:center"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center;font-weight:800;font-size:72px;margin:0\">aut<span style=\"color:#d9822b\">o</span></div>",
+                "verborgen": true
+              }
+            ]
+          ]
+        },
+        {
+          "type": "vraag",
+          "tekst": "Deze woorden eindigen op **a, o, u** of **i**.",
+          "verborgen": true,
+          "stijl": "text-align:center;font-size:40px"
+        }
+      ]
+    },
+    {
+      "fase": "Lesdoel",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "notitie": "Ik lees voor, de klas leest mee, maatjes lezen het aan elkaar voor, dan een willekeurige beurt.",
+      "blokken": [
+        {
+          "type": "html",
+          "html": "<div style=\"font-size:68px;line-height:1.25;text-align:center;font-weight:700\">Ik kan <span style=\"color:#d9822b\">verkleinwoorden</span> <span style=\"color:#1f6fd1\">schrijven</span><br><span style=\"color:#2f9e63\">van woorden die eindigen op a, o, u of i</span>.</div><div style=\"margin-top:24px;text-align:center;font-size:26px;color:#5b6b63\"><span style=\"color:#d9822b;font-weight:700\">oranje</span> = begrip · <span style=\"color:#1f6fd1;font-weight:700\">blauw</span> = vaardigheid · <span style=\"color:#2f9e63;font-weight:700\">groen</span> = bij welke woorden</div>"
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — begrip",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "notitie": "Wat is een verkleinwoord? Voorbeelden: vliegtuigje en vuurtorentje.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Verkleinwoorden",
+          "stijl": "text-align:center"
+        },
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"height:240px;display:flex;align-items:center;justify-content:center;font-size:190px;line-height:1\">✈️</div>"
+              },
+              {
+                "type": "groot",
+                "tekst": "vliegtuig",
+                "stijl": "font-size:72px;margin:0"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center;font-weight:800;font-size:72px;margin:0\">vliegtuig<span style=\"color:#d9822b\">je</span></div>",
+                "verborgen": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"height:240px;display:flex;align-items:center;justify-content:center;font-size:190px;line-height:1\"><svg width=\"120\" height=\"230\" viewBox=\"0 0 120 230\"><polygon points=\"45,40 75,40 92,225 28,225\" fill=\"#fff\" stroke=\"#5b6b63\" stroke-width=\"3\"/><polygon points=\"40,90 80,90 83,120 37,120\" fill=\"#d6453d\"/><polygon points=\"34,150 86,150 89,180 31,180\" fill=\"#d6453d\"/><rect x=\"42\" y=\"18\" width=\"36\" height=\"22\" fill=\"#ffd34d\" stroke=\"#5b6b63\" stroke-width=\"3\"/><polygon points=\"38,18 82,18 60,2\" fill=\"#d6453d\"/></svg></div>"
+              },
+              {
+                "type": "groot",
+                "tekst": "vuurtoren",
+                "stijl": "font-size:72px;margin:0"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center;font-weight:800;font-size:72px;margin:0\">vuurtoren<span style=\"color:#d9822b\">tje</span></div>",
+                "verborgen": true
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Begeleide inoefening (1 van 2)",
+      "achtergrond": "leeg",
+      "notitie": "Per stap samen, met beurten. Tik daarna het verkleinwoord aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Wij samen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"height:240px;display:flex;align-items:center;justify-content:center;font-size:190px;line-height:1\">📻</div>"
+              },
+              {
+                "type": "groot",
+                "tekst": "radio",
+                "stijl": "font-size:84px;margin:0"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center;font-weight:800;font-size:84px;margin:0;color:#2f9e63\">radi<span style=\"color:#d9822b\">oo</span><span style=\"color:#d9822b\">tje</span></div>",
+                "verborgen": true
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "stijl": "font-size:.8em",
+                "items": [
+                  "Eindigt het woord op **a, o, u** of **i**?",
+                  "Maak de klank lang en zet er **-tje** achter."
+                ]
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"margin-left:24px;display:inline-block;background:#fff6e0;border:2px dashed #d9822b;border-radius:12px;padding:10px 18px;font-size:28px\"><b style=\"color:#d9822b\">Tip:</b> a → aa · o → oo · u → uu · i → ie</div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Begeleide inoefening (2 van 2)",
+      "achtergrond": "leeg",
+      "notitie": "Per stap samen, met beurten. Tik daarna het verkleinwoord aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Wij samen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"height:240px;display:flex;align-items:center;justify-content:center;font-size:190px;line-height:1\">🥪</div>"
+              },
+              {
+                "type": "groot",
+                "tekst": "tosti",
+                "stijl": "font-size:84px;margin:0"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center;font-weight:800;font-size:84px;margin:0;color:#2f9e63\">tost<span style=\"color:#d9822b\">ie</span><span style=\"color:#d9822b\">tje</span></div>",
+                "verborgen": true
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "stijl": "font-size:.8em",
+                "items": [
+                  "Eindigt het woord op **a, o, u** of **i**?",
+                  "Maak de klank lang en zet er **-tje** achter."
+                ]
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"margin-left:24px;display:inline-block;background:#fff6e0;border:2px dashed #d9822b;border-radius:12px;padding:10px 18px;font-size:28px\"><b style=\"color:#d9822b\">Tip:</b> a → aa · o → oo · u → uu · i → ie</div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Dictee",
+      "achtergrond": "leeg",
+      "lesdoelVerbergen": true,
+      "notitie": "Tik elk woord en daarna de zin aan om ze te laten zien. De zinnen bij de woorden verzin je zelf.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Dictee"
+        },
+        {
+          "type": "lijst",
+          "genummerd": true,
+          "stapsgewijs": true,
+          "stijl": "font-size:48px;font-weight:700",
+          "items": [
+            "minuutje",
+            "eurootje",
+            "bikinietje",
+            "gorillaatje",
+            "zwangerschap"
+          ]
+        },
+        {
+          "type": "subkop",
+          "tekst": "Zin"
+        },
+        {
+          "type": "tekst",
+          "verborgen": true,
+          "stijl": "font-size:48px;font-weight:700;line-height:1.3",
+          "tekst": "Ik maak een videootje van hoe ik het veld bij de tennisclub schrop."
+        }
+      ]
+    }
+  ],
+  "voorbereiding": {
+    "verloop": [
+      {
+        "fase": "Terugblik",
+        "wat": "Zin van gisteren zonder hoofdletter: verf je eerst die muur. Wat is hier fout? Daarna het verhaal over de hoofdletter."
+      },
+      {
+        "fase": "Activeren voorkennis",
+        "wat": "De … leeft in het wild (zebra) en Onze … start niet (auto): woorden die eindigen op a, o, u of i."
+      },
+      {
+        "fase": "Lesdoel",
+        "wat": "Ik kan verkleinwoorden schrijven van woorden die eindigen op a, o, u of i."
+      },
+      {
+        "fase": "Uitleg — begrip",
+        "wat": "Verkleinwoorden: vliegtuigje en vuurtorentje."
+      },
+      {
+        "fase": "Begeleide inoefening",
+        "wat": "Met het stappenplan: radio → radiootje, tosti → tostietje."
+      },
+      {
+        "fase": "Dictee",
+        "wat": "Minuutje, eurootje, bikinietje, gorillaatje, zwangerschap. Zin: Ik maak een videootje van hoe ik het veld bij de tennisclub schrop."
+      }
+    ],
+    "secties": [
+      {
+        "kop": "Stappenplan",
+        "items": [
+          "1. Eindigt het woord op a, o, u of i?",
+          "2. Maak de klank lang en zet er -tje achter. Tip: a → aa, o → oo, u → uu, i → ie."
+        ]
+      }
+    ]
+  }
+}
