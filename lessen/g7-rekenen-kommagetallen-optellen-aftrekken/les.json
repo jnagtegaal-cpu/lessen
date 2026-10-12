@@ -144,7 +144,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:44px 60px;background-position:-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
@@ -191,7 +191,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:44px 60px;background-position:-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
@@ -239,7 +239,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:44px 60px;background-position:-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
@@ -286,7 +286,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:44px 60px;background-position:-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
@@ -333,7 +333,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:44px 60px;background-position:-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
@@ -380,7 +380,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:44px 60px;background-position:-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
@@ -427,7 +427,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:44px 60px;background-position:-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
@@ -474,7 +474,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:44px 60px;background-position:-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:420px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
