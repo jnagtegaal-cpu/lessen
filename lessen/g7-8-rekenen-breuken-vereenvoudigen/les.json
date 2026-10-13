@@ -1,0 +1,474 @@
+{
+  "id": "g7-8-rekenen-breuken-vereenvoudigen",
+  "titel": "Breuken vereenvoudigen",
+  "groep": "7-8",
+  "vak": "Rekenen",
+  "onderwerp": "Breuken",
+  "edi": true,
+  "samenvatting": "Kale breuken vereenvoudigen door teller en noemer door hetzelfde (zo hoog mogelijke) getal te delen.",
+  "trefwoorden": [
+    "breuken",
+    "vereenvoudigen",
+    "teller",
+    "noemer",
+    "delen",
+    "gelijkwaardige breuken",
+    "stappenplan"
+  ],
+  "gemaakt": "2026-10-13",
+  "lesdoel": "Ik kan breuken vereenvoudigen.",
+  "lesdoelInHoek": true,
+  "schermen": [
+    {
+      "fase": "Lesdoel",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "notitie": "Ik lees voor, de klas leest mee, maatjes lezen het aan elkaar voor, dan een willekeurige beurt.",
+      "blokken": [
+        {
+          "type": "html",
+          "html": "<div style=\"font-size:84px;line-height:1.25;text-align:center;font-weight:700\">Ik kan <span style=\"color:#d9822b\">breuken</span> <span style=\"color:#1f6fd1\">vereenvoudigen</span>.</div><div style=\"margin-top:24px;text-align:center;font-size:26px;color:#5b6b63\"><span style=\"color:#d9822b;font-weight:700\">oranje</span> = begrip · <span style=\"color:#1f6fd1;font-weight:700\">blauw</span> = vaardigheid</div>"
+        }
+      ]
+    },
+    {
+      "fase": "Wie kan dit al?",
+      "achtergrond": "leeg",
+      "lesdoelVerbergen": true,
+      "notitie": "Korte check. Wie het al kan, hoeft niet naar de uitleg te luisteren.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Wie kan dit al?"
+        },
+        {
+          "type": "vraag",
+          "tekst": "Vereenvoudig de breuk. Schrijf je antwoord op je wisbordje."
+        },
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:96px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">6</span><span style=\"align-self:stretch;border-top:6px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">8</span></span></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"text-align:center\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:72px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:5px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:96px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">10</span><span style=\"align-self:stretch;border-top:6px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">15</span></span></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"text-align:center\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:72px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:5px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:96px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">16</span><span style=\"align-self:stretch;border-top:6px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">24</span></span></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"text-align:center\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:72px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:5px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Activeren voorkennis",
+      "achtergrond": "leeg",
+      "notitie": "Teller en noemer ophalen. Strook 1 doe ik voor, strook 2 doen de kinderen.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "vraag",
+                "tekst": "Welke breuk hoort hierbij?"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:20px\"><b style=\"font-size:34px\">1</b><svg width=\"624\" height=\"74\" viewBox=\"0 0 624 74\"><rect x=\"2.00\" y=\"2\" width=\"62.00\" height=\"70\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"64.00\" y=\"2\" width=\"62.00\" height=\"70\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"126.00\" y=\"2\" width=\"62.00\" height=\"70\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"188.00\" y=\"2\" width=\"62.00\" height=\"70\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"250.00\" y=\"2\" width=\"62.00\" height=\"70\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"312.00\" y=\"2\" width=\"62.00\" height=\"70\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"374.00\" y=\"2\" width=\"62.00\" height=\"70\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"436.00\" y=\"2\" width=\"62.00\" height=\"70\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"498.00\" y=\"2\" width=\"62.00\" height=\"70\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"560.00\" y=\"2\" width=\"62.00\" height=\"70\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/></svg></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"text-align:center\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:64px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">6</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">10</span></span></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:20px\"><b style=\"font-size:34px\">2</b><svg width=\"624\" height=\"74\" viewBox=\"0 0 624 74\"><rect x=\"2.00\" y=\"2\" width=\"77.50\" height=\"70\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"79.50\" y=\"2\" width=\"77.50\" height=\"70\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"157.00\" y=\"2\" width=\"77.50\" height=\"70\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"234.50\" y=\"2\" width=\"77.50\" height=\"70\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"312.00\" y=\"2\" width=\"77.50\" height=\"70\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"389.50\" y=\"2\" width=\"77.50\" height=\"70\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"467.00\" y=\"2\" width=\"77.50\" height=\"70\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"544.50\" y=\"2\" width=\"77.50\" height=\"70\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/></svg></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"text-align:center\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:64px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">8</span></span></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Weet je nog?"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:26px\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:96px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">6</span><span style=\"align-self:stretch;border-top:6px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">10</span></span><div style=\"font-size:32px;line-height:1.9\"><div>← <b>teller</b></div><div>← <b>noemer</b></div></div></div>"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "stijl": "font-size:30px;margin:0",
+                "tekst": "**Teller:** hoeveel stukjes je hebt."
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "stijl": "font-size:30px;margin:0",
+                "tekst": "**Noemer:** in hoeveel gelijke stukjes het geheel is verdeeld."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — begrip",
+      "achtergrond": "leeg",
+      "notitie": "Twee taarten naast elkaar. Wat valt je op? (maatje, dan willekeurige beurt)",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "Wat valt je op?",
+          "stijl": "text-align:center"
+        },
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center\"><svg width=\"266\" height=\"266\" viewBox=\"0 0 266 266\"><path d=\"M133.0,133.0 L133.0,3.0 A130.0,130.0 0 0 1 182.7,12.9 Z\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L182.7,12.9 A130.0,130.0 0 0 1 224.9,41.1 Z\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L224.9,41.1 A130.0,130.0 0 0 1 253.1,83.3 Z\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L253.1,83.3 A130.0,130.0 0 0 1 263.0,133.0 Z\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L263.0,133.0 A130.0,130.0 0 0 1 253.1,182.7 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L253.1,182.7 A130.0,130.0 0 0 1 224.9,224.9 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L224.9,224.9 A130.0,130.0 0 0 1 182.7,253.1 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L182.7,253.1 A130.0,130.0 0 0 1 133.0,263.0 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L133.0,263.0 A130.0,130.0 0 0 1 83.3,253.1 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L83.3,253.1 A130.0,130.0 0 0 1 41.1,224.9 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L41.1,224.9 A130.0,130.0 0 0 1 12.9,182.7 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L12.9,182.7 A130.0,130.0 0 0 1 3.0,133.0 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L3.0,133.0 A130.0,130.0 0 0 1 12.9,83.3 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L12.9,83.3 A130.0,130.0 0 0 1 41.1,41.1 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L41.1,41.1 A130.0,130.0 0 0 1 83.3,12.9 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L83.3,12.9 A130.0,130.0 0 0 1 133.0,3.0 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/></svg></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:72px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">4</span><span style=\"align-self:stretch;border-top:5px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">16</span></span></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center\"><svg width=\"266\" height=\"266\" viewBox=\"0 0 266 266\"><path d=\"M133.0,133.0 L133.0,3.0 A130.0,130.0 0 0 1 263.0,133.0 Z\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L263.0,133.0 A130.0,130.0 0 0 1 133.0,263.0 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L133.0,263.0 A130.0,130.0 0 0 1 3.0,133.0 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/><path d=\"M133.0,133.0 L3.0,133.0 A130.0,130.0 0 0 1 133.0,3.0 Z\" fill=\"#fff\" stroke=\"#1d2b24\" stroke-width=\"3\"/></svg></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:72px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:5px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span></div>"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "groot",
+          "verborgen": true,
+          "tekst": "Ze zijn **even groot**!",
+          "stijl": "font-size:56px;color:#2f9e63;margin:0"
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — begrip",
+      "achtergrond": "leeg",
+      "notitie": "Dezelfde breuken als getallen. Welke som zie je? Teller en noemer allebei gedeeld door 4.",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "Wat valt je op? Welke som kun je maken?",
+          "stijl": "text-align:center"
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"display:flex;justify-content:center;align-items:center;gap:60px\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:120px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">4</span><span style=\"align-self:stretch;border-top:8px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">16</span></span><span style=\"font-size:80px;font-weight:800\">=</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:120px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:8px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span></div>"
+        },
+        {
+          "type": "html",
+          "verborgen": true,
+          "html": "<div style=\"text-align:center;font-size:44px;font-weight:700;line-height:1.5\">teller: 4 <span style=\"color:#1f6fd1\">: 4</span> = 1<br>noemer: 16 <span style=\"color:#1f6fd1\">: 4</span> = 4</div>"
+        },
+        {
+          "type": "vraag",
+          "verborgen": true,
+          "stijl": "font-size:34px",
+          "tekst": "**Vereenvoudigen:** je deelt de teller én de noemer door hetzelfde getal. De getallen worden kleiner, de breuk blijft even groot."
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — ik doe voor",
+      "achtergrond": "leeg",
+      "notitie": "Hardop denken, stap voor stap. Tik de stappen een voor een aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Ik doe voor"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:30px\"><span style=\"font-size:34px\">Vereenvoudig:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:80px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">9</span><span style=\"align-self:stretch;border-top:5px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">12</span></span></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:56px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Kies het **hoogste getal** waar je de **teller én de noemer** door kunt delen.",
+                  "**Deel** de teller en de noemer door dat getal.",
+                  "Kun je **nog verder delen**?\nJa → terug naar stap 1. Nee → klaar!"
+                ],
+                "stijl": "font-size:.7em",
+                "stapsgewijs": true
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Begeleide inoefening — wij samen",
+      "achtergrond": "leeg",
+      "notitie": "Samen per stap, met willekeurige beurten. Wie eerst door 2 deelt, komt via stap 3 ook bij 2/3.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Wij samen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:30px\"><span style=\"font-size:34px\">Vereenvoudig:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:80px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">12</span><span style=\"align-self:stretch;border-top:5px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">18</span></span></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:56px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Kies het **hoogste getal** waar je de **teller én de noemer** door kunt delen.",
+                  "**Deel** de teller en de noemer door dat getal.",
+                  "Kun je **nog verder delen**?\nJa → terug naar stap 1. Nee → klaar!"
+                ],
+                "stijl": "font-size:.7em"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Begeleide inoefening — jullie",
+      "achtergrond": "leeg",
+      "notitie": "Maatje gangkant doet stap 1, maatje raamkant doet stap 2, samen stap 3. Daarna vergelijken.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Jullie samen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:30px\"><span style=\"font-size:34px\">Vereenvoudig:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:80px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">10</span><span style=\"align-self:stretch;border-top:5px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">25</span></span></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:56px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">5</span></span></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Kies het **hoogste getal** waar je de **teller én de noemer** door kunt delen.",
+                  "**Deel** de teller en de noemer door dat getal.",
+                  "Kun je **nog verder delen**?\nJa → terug naar stap 1. Nee → klaar!"
+                ],
+                "stijl": "font-size:.7em"
+              },
+              {
+                "type": "vraag",
+                "verborgen": true,
+                "stijl": "font-size:26px",
+                "tekst": "**Maatje gangkant:** stap 1, en leg uit waarom.\n**Maatje raamkant:** stap 2.\n**Samen:** stap 3. Klopt het?"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Begeleide inoefening — jij",
+      "achtergrond": "leeg",
+      "notitie": "Iedereen zelf, op het wisbordje, als controle van begrip.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Jij alleen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:30px\"><span style=\"font-size:34px\">Vereenvoudig:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:80px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">18</span><span style=\"align-self:stretch;border-top:5px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">24</span></span></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:56px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Kies het **hoogste getal** waar je de **teller én de noemer** door kunt delen.",
+                  "**Deel** de teller en de noemer door dat getal.",
+                  "Kun je **nog verder delen**?\nJa → terug naar stap 1. Nee → klaar!"
+                ],
+                "stijl": "font-size:.7em"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "voorbereiding": {
+    "benodigdheden": [
+      "Wisbordjes"
+    ],
+    "verloop": [
+      {
+        "fase": "Lesdoel",
+        "wat": "Ik kan breuken vereenvoudigen."
+      },
+      {
+        "fase": "Wie kan dit al?",
+        "wat": "Korte check: drie breuken vereenvoudigen. Wie het al kan, hoeft niet naar de uitleg te luisteren."
+      },
+      {
+        "fase": "Activeren voorkennis",
+        "wat": "Teller en noemer ophalen, en bij twee stroken de breuk benoemen."
+      },
+      {
+        "fase": "Uitleg — begrip",
+        "wat": "Taart 4/16 en taart 1/4 naast elkaar: wat valt je op? Daarna de breuken als getallen: teller en noemer allebei gedeeld door 4."
+      },
+      {
+        "fase": "Uitleg — vaardigheid",
+        "wat": "Stappenplan: hoogste getal kiezen, teller en noemer delen, kijken of je nog verder kunt delen."
+      },
+      {
+        "fase": "Verwerking",
+        "wat": "Opgave 2a t/m 2c (alle delers opschrijven) mogen ze overslaan."
+      },
+      {
+        "fase": "Verlengde instructie",
+        "wat": "Eventueel met de delers van de teller en de noemer werken, voor wie dat nodig heeft."
+      }
+    ],
+    "secties": [
+      {
+        "kop": "Stappenplan",
+        "items": [
+          "1. Kies het hoogste getal waar je de teller én de noemer door kunt delen.",
+          "2. Deel de teller en de noemer door dat getal.",
+          "3. Kun je nog verder delen? Ja: terug naar stap 1. Nee: klaar."
+        ]
+      }
+    ]
+  }
+}
