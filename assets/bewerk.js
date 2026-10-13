@@ -66,7 +66,7 @@
   function tekenDia() {
     const s = metUploads(scherm());
     dia.className = Lesbord.diaKlassen(s, st.les.thema);
-    dia.innerHTML = Lesbord.diaHtml({ ...s, elementen: [] }, lesmap()) + lesdoelHoek(s);
+    dia.innerHTML = Lesbord.diaHtml({ ...s, elementen: [] }, lesmap(), { padden: true }) + lesdoelHoek(s);
     houder.classList.toggle("ed-heeft-blokken", !!(s.blokken || []).length);
   }
 
@@ -161,7 +161,11 @@
 
   laag.addEventListener("pointerdown", (ev) => {
     const d = ev.target.closest(".ed-el");
-    if (!d) { stopBewerken(true); st.sel = null; tekenLaag(); tekenEigenschappen(); return; }
+    if (!d) {
+      stopBewerken(true); st.sel = null; tekenLaag(); tekenEigenschappen();
+      if (st.tekstModus) { ev.preventDefault(); pasTekstAan(ev.clientX, ev.clientY); }
+      return;
+    }
     const i = Number(d.dataset.i);
     const greep = ev.target.closest(".ed-greep, .ed-verplaats");
     if (st.bewerken && st.sel === i && greep) { // tijdens het typen: alleen via de grepen slepen
@@ -215,7 +219,111 @@
   laag.addEventListener("dblclick", (ev) => {
     const d = ev.target.closest(".ed-el.vrij-tekst");
     if (d && !st.bewerken) startBewerken(Number(d.dataset.i));
+    else if (!ev.target.closest(".ed-el") && !st.tekstModus) pasTekstAan(ev.clientX, ev.clientY);
   });
+
+  // ---------- Tekst van de les zelf aanpassen (ook in lessen uit de chat) ----------
+  // Tik (of dubbelklik) op een tekst: je past precies dat stukje tekst aan, zonder de opmaak eromheen.
+  st.tekstModus = false;
+  $("#knop-tekst").onclick = () => {
+    st.tekstModus = !st.tekstModus;
+    $("#knop-tekst").setAttribute("aria-pressed", st.tekstModus);
+    houder.classList.toggle("ed-tekstmodus", st.tekstModus);
+    status(st.tekstModus ? "Tik op een tekst in de les om hem aan te passen." : (st.vuil ? "Niet opgeslagen" : ""));
+  };
+  function tekstOpPunt(x, y) {
+    laag.style.pointerEvents = "none"; dia.style.pointerEvents = "auto";
+    let knoop = null;
+    try {
+      const r = document.caretRangeFromPoint?.(x, y);
+      if (r?.startContainer?.nodeType === 3) knoop = r.startContainer;
+      if (!knoop) { const p = document.caretPositionFromPoint?.(x, y); if (p?.offsetNode?.nodeType === 3) knoop = p.offsetNode; }
+      if (!knoop) {
+        const el = document.elementFromPoint(x, y);
+        if (el && dia.contains(el)) knoop = [...el.childNodes].find((n) => n.nodeType === 3 && n.textContent.trim()) || null;
+      }
+    } finally { laag.style.pointerEvents = ""; dia.style.pointerEvents = ""; }
+    if (!knoop || !dia.contains(knoop) || !knoop.textContent.trim()) return null;
+    const r = document.createRange(); r.selectNodeContents(knoop); // echt op de tekst getikt, niet ernaast?
+    const m = 6 * st.schaal + 4;
+    return [...r.getClientRects()].some((b) => x >= b.left - m && x <= b.right + m && y >= b.top - m && y <= b.bottom + m) ? knoop : null;
+  }
+  const naarHtml = (t) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\u00a0/g, "&nbsp;");
+  const NIET_DOORZOEKEN = new Set(["type", "stijl", "src", "id", "soort", "verhouding", "naar", "anker", "groepen", "goed"]);
+  // Alle plekken (in volgorde) waar een stukje tekst in de tekstvelden van een blok staat.
+  function vindPlekken(obj, stukje, isHtml) {
+    const uit = [];
+    const loop = (o, k) => {
+      if (typeof o[k] === "string") {
+        for (const zoek of isHtml ? [stukje, naarHtml(stukje)] : [stukje]) {
+          let i = o[k].indexOf(zoek);
+          if (i < 0) continue;
+          for (; i >= 0; i = o[k].indexOf(zoek, i + zoek.length)) uit.push({ o, k, i, zoek });
+          break;
+        }
+      } else if (o[k] && typeof o[k] === "object") for (const kk of Object.keys(o[k])) if (!NIET_DOORZOEKEN.has(kk)) loop(o[k], kk);
+    };
+    for (const k of Object.keys(obj)) if (!NIET_DOORZOEKEN.has(k)) loop(obj, k);
+    return uit;
+  }
+  function vraagTekst(oud) {
+    return new Promise((klaar) => {
+      const d = document.createElement("dialog");
+      d.className = "ed-tekstdialoog";
+      d.innerHTML = `<form method="dialog"><h3>Tekst aanpassen</h3>
+        <textarea rows="3" aria-label="Tekst"></textarea>
+        <p class="veld-uitleg">Daarna nog op <b>Opslaan</b> drukken (rechtsboven).</p>
+        <div class="knoppen-rij"><button class="knop" value="nee">Annuleren</button><button class="knop hoofd" value="ja">Aanpassen</button></div></form>`;
+      document.body.appendChild(d);
+      const ta = d.querySelector("textarea"); ta.value = oud;
+      ta.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); d.close("ja"); } });
+      d.addEventListener("close", () => { const w = d.returnValue === "ja" ? ta.value : null; d.remove(); klaar(w); });
+      d.showModal(); ta.focus(); ta.select();
+    });
+  }
+  async function pasTekstAan(x, y) {
+    const knoop = tekstOpPunt(x, y);
+    if (!knoop) { if (st.tekstModus) status("Tik precies op een tekst van de les.", "fout"); return; }
+    const vol = knoop.textContent, kern = vol.trim();
+    const voor = vol.slice(0, vol.indexOf(kern)), na = vol.slice(vol.indexOf(kern) + kern.length);
+    const el = knoop.parentElement;
+    let plek = null;
+    if (el.closest(".lesdoel-hoek")) {
+      const p = vindPlekken(st.les, kern, false).filter((p) => p.o === st.les && p.k === "lesdoel");
+      plek = p[0];
+    } else {
+      const omhul = el.closest("[data-pad]");
+      if (omhul) {
+        const b = omhul.dataset.pad.split(".").reduce((o, k) => o?.[k], scherm().blokken);
+        const w = document.createTreeWalker(omhul, NodeFilter.SHOW_TEXT);
+        const zelfde = []; for (let n; (n = w.nextNode());) if (n.textContent === vol) zelfde.push(n);
+        const plekken = b ? vindPlekken(b, vol, b.type === "html") : [];
+        const nr = Math.max(0, zelfde.indexOf(knoop));
+        plek = plekken[Math.min(nr, plekken.length - 1)];
+      }
+    }
+    if (!plek) { status("Deze tekst hoort bij het bord zelf en kun je hier niet aanpassen.", "fout"); return; }
+    const nieuw = await vraagTekst(kern);
+    if (nieuw == null || nieuw.trim() === kern) return;
+    bewaarStap();
+    const html = plek.zoek !== vol && plek.zoek !== kern; // in een html-blok staat de tekst met &amp; enz.
+    const vervang = html ? naarHtml(voor + nieuw.trim() + na) : voor + nieuw.trim() + na;
+    plek.o[plek.k] = plek.o[plek.k].slice(0, plek.i) + vervang + plek.o[plek.k].slice(plek.i + plek.zoek.length);
+    // Staat dezelfde tekst ook in het voorbereidingsformulier? Dan daar ook aanpassen.
+    let ookVb = false;
+    // (alleen als de tekst maar één keer op het scherm staat, anders weet je niet welke bedoeld is)
+    const w = document.createTreeWalker(dia, NodeFilter.SHOW_TEXT);
+    let opScherm = 0; for (let n; (n = w.nextNode());) if (n.textContent.includes(kern)) opScherm++;
+    if (kern.length >= 4 && opScherm === 1 && st.les.voorbereiding) {
+      const loop = (o) => { for (const k of Object.keys(o)) {
+        if (typeof o[k] === "string" && o[k].includes(kern)) { o[k] = o[k].split(kern).join(nieuw.trim()); ookVb = true; }
+        else if (o[k] && typeof o[k] === "object") loop(o[k]);
+      } };
+      loop(st.les.voorbereiding);
+    }
+    vuil(); tekenDia(); straksStrip();
+    status(`Aangepast${ookVb ? ", ook in het voorbereidingsformulier" : ""}. Vergeet niet op te slaan.`);
+  }
 
   // ---------- Typen in een tekstvak ----------
   function startBewerken(i, allesSelecteren = false, zonderStap = false) {

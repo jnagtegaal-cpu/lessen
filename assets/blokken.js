@@ -12,12 +12,15 @@ const Lesbord = (() => {
       .replace(/(^|[^*])\*(?!\s)(.+?)\*/g, "$1<em>$2</em>")
       .replace(/\n/g, "<br>");
 
-  const blok = (b, lesmap) => {
-    const html = blokInhoud(b, lesmap);
-    return b.verborgen ? `<div class="onthul onthul-blok">${html}</div>` : html;
+  // pad: alleen in de bewerk-app. Elk blok krijgt dan een onzichtbare omhulling met zijn plek in les.json,
+  // zodat je in de app op een tekst kunt tikken en die kunt aanpassen.
+  const blok = (b, lesmap, pad) => {
+    const html = blokInhoud(b, lesmap, pad);
+    const uit = b.verborgen ? `<div class="onthul onthul-blok">${html}</div>` : html;
+    return pad != null ? `<div data-pad="${pad}" style="display:contents">${uit}</div>` : uit;
   };
 
-  const blokInhoud = (b, lesmap) => {
+  const blokInhoud = (b, lesmap, pad) => {
     const stijl = b.stijl ? ` style="${esc(b.stijl)}"` : "";
     switch (b.type) {
       case "kop": return `<h1 class="b-kop"${stijl}>${opmaak(b.tekst)}</h1>`;
@@ -50,7 +53,7 @@ const Lesbord = (() => {
         const kol = b.kolommen || [];
         const breedtes = b.verhouding || kol.map(() => "1fr");
         return `<div class="b-kolommen" style="grid-template-columns:${breedtes.join(" ")}">${kol
-          .map((k) => `<div class="b-kolom">${(k || []).map((x) => blok(x, lesmap)).join("")}</div>`)
+          .map((k, ki) => `<div class="b-kolom">${(k || []).map((x, xi) => blok(x, lesmap, pad != null ? `${pad}.kolommen.${ki}.${xi}` : undefined)).join("")}</div>`)
           .join("")}</div>`;
       }
       case "stellingen": {
@@ -153,8 +156,8 @@ const Lesbord = (() => {
   const vrijeLaag = (scherm, lesmap) =>
     scherm.elementen?.length ? `<div class="vrije-laag">${scherm.elementen.map((e) => vrijElement(e, lesmap)).join("")}</div>` : "";
 
-  const diaHtml = (scherm, lesmap) =>
-    (scherm.blokken || []).map((b) => blok(b, lesmap)).join("") + vrijeLaag(scherm, lesmap) +
+  const diaHtml = (scherm, lesmap, opties = {}) =>
+    (scherm.blokken || []).map((b, i) => blok(b, lesmap, opties.padden ? String(i) : undefined)).join("") + vrijeLaag(scherm, lesmap) +
     (scherm.grap ? `<div class="grap">${opmaak(scherm.grap)}</div>` : ""); // grapje op een briefje in de hoek
 
   const diaKlassen = (scherm, thema) => {

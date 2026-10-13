@@ -132,6 +132,12 @@ Naast `blokken` kan een scherm `elementen` hebben: vrij geplaatste onderdelen, z
 - `afdek`: een gekleurd blok dat iets afdekt en verdwijnt als je erop tikt (of met *volgende*).
 - Bij het tonen hoort alles in dezelfde volgorde als de blokken: eerst de blokken, dan de elementen.
 
+## Tekst aanpassen in de app
+
+In de app (`bewerk.html`, het potloodje in het overzicht) kun je **elke tekst van een les** aanpassen, ook in lessen uit de chat: dubbelklik op de tekst, of zet **Tekst aanpassen** aan en tik erop. Je past precies dat stukje tekst aan; de opmaak eromheen blijft staan. Staat dezelfde tekst één keer op het scherm en ook in de voorbereiding, dan wordt hij daar ook aangepast. Daarna op **Opslaan** drukken; de PDF's worden dan vanzelf opnieuw gemaakt.
+
+Daarom geldt voor elke les: **tekst is altijd echte tekst**, in een blok of in een `html`-blok (ook in SVG mag, met `<text>`). Nooit tekst in een afbeelding.
+
 ## Voorbereiding
 
 Hier komt **alleen** wat in het ontwerpgesprek besproken is.

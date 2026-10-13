@@ -909,3 +909,13 @@ body.ed { background: #e9f1ec; }
 .dia [data-sleep] { cursor: grab; touch-action: none; user-select: none; }
 .dia [data-sleep]:active { cursor: grabbing; }
 .dia .sleep-kopie { filter: drop-shadow(0 2px 3px rgba(0,0,0,.18)); }
+
+/* Bewerk-app: tekst van de les aanpassen */
+.ed-houder.ed-tekstmodus .ed-laag { cursor: text; }
+.ed-houder.ed-tekstmodus { outline: 3px solid #2e6fd1; outline-offset: 3px; }
+#knop-tekst[aria-pressed="true"] { background: #2e6fd1; color: #fff; border-color: #2e6fd1; }
+.ed-tekstdialoog { border: 0; border-radius: 14px; padding: 22px; width: min(560px, 92vw); box-shadow: 0 20px 60px rgba(0,0,0,.25); }
+.ed-tekstdialoog::backdrop { background: rgba(20,40,30,.35); }
+.ed-tekstdialoog h3 { margin: 0 0 10px; }
+.ed-tekstdialoog textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 20px; padding: 10px; border: 2px solid #b9d3c3; border-radius: 10px; }
+.ed-tekstdialoog .knoppen-rij { display: flex; justify-content: flex-end; gap: 8px; margin-top: 10px; }
