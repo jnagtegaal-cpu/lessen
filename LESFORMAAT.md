@@ -100,6 +100,15 @@ Op een keuzescherm werkt **volgende** niet: je kiest met een knop. `hoofd` maakt
 
 **Ergens anders heen?** Tik onderaan op het schermnummer (bijvoorbeeld *12 / 30*). Je krijgt een lijst met alle schermen, met hun `fase` (of anders de kop). Dat werkt in elke les.
 
+### Slepen op het bord
+
+In een `html`-blok kun je onderdelen sleepbaar maken (in de stand *Aanwijzen*):
+
+- `data-sleep="bron"`: slepen maakt een **kopie**, zodat je er zoveel neerlegt als je wilt, bijvoorbeeld schaallijnen onder een tekening om hem op te meten. Kopieën die tegen elkaar aan komen, klikken aan elkaar. Een kopie terugslepen op de bron haalt hem weg.
+- `data-sleep` (zonder waarde): het onderdeel zelf schuift mee.
+
+Staat het onderdeel in een verborgen blok, dan tik je het eerst tevoorschijn. Kopieën verdwijnen als je naar een ander scherm gaat.
+
 Elk blok mag ook `stijl` hebben (extra CSS), bijvoorbeeld `"stijl": "color:#d6453d"`.
 
 Opmaak in tekst: `**vet**`, `*schuin*`, `==gemarkeerd==`. Een nieuwe regel maak je met `\n`.

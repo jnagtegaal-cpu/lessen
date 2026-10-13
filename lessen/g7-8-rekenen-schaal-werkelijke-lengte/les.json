@@ -85,7 +85,7 @@
     {
       "fase": "Uitleg — begrip",
       "achtergrond": "leeg",
-      "notitie": "Neem een echte modelauto mee. Eerst de denkvragen (maatje, dan willekeurige beurt), daarna de overgang van schaallijn naar schaal 1 : 40.",
+      "notitie": "Neem een echte modelauto mee. Eerst de denkvragen (maatje, dan willekeurige beurt). Tik dan de schaallijn tevoorschijn en sleep hem (stand Aanwijzen) steeds opnieuw onder de auto: elke keer komt er een nieuwe bij, ze klikken aan elkaar. Terugslepen op de schaallijn haalt er een weg. Daarna de overgang naar schaal 1 : 40.",
       "blokken": [
         {
           "type": "kolommen",
@@ -101,7 +101,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"margin-top:-40px\"><svg width=\"680\" height=\"158\" viewBox=\"0 0 560 130\" style=\"display:block;margin:0 auto\"><line x1=\"40\" y1=\"18\" x2=\"88\" y2=\"18\" stroke=\"#d6453d\" stroke-width=\"5\"/><line x1=\"40\" y1=\"4\" x2=\"40\" y2=\"32\" stroke=\"#d6453d\" stroke-width=\"5\"/><line x1=\"88\" y1=\"4\" x2=\"88\" y2=\"32\" stroke=\"#d6453d\" stroke-width=\"5\"/><line x1=\"256\" y1=\"78\" x2=\"304\" y2=\"78\" stroke=\"#d6453d\" stroke-width=\"5\"/><line x1=\"256\" y1=\"64\" x2=\"256\" y2=\"92\" stroke=\"#d6453d\" stroke-width=\"5\"/><line x1=\"304\" y1=\"64\" x2=\"304\" y2=\"92\" stroke=\"#d6453d\" stroke-width=\"5\"/><text x=\"280\" y=\"122\" font-size=\"28\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#1d2b24\">40 cm in het echt</text></svg></div>",
+                "html": "<div style=\"text-align:center;margin-top:-20px\"><div data-sleep=\"bron\" style=\"display:inline-block;width:58.29px;height:44px;line-height:0\"><svg width=\"58.29\" height=\"44\" viewBox=\"0 0 58.29 44\"><line x1=\"2\" y1=\"22\" x2=\"56.29\" y2=\"22\" stroke=\"#d6453d\" stroke-width=\"5\"/><line x1=\"2.5\" y1=\"6\" x2=\"2.5\" y2=\"38\" stroke=\"#d6453d\" stroke-width=\"5\"/><line x1=\"55.79\" y1=\"6\" x2=\"55.79\" y2=\"38\" stroke=\"#d6453d\" stroke-width=\"5\"/></svg></div><div style=\"font-size:28px;font-weight:700;line-height:1.2\">40 cm in het echt</div><div style=\"font-size:20px;color:#5b6b63;line-height:1.2\">sleep de schaallijn onder de auto</div></div>",
                 "verborgen": true
               },
               {

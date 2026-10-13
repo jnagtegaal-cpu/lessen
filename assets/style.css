@@ -904,3 +904,8 @@ body.ed { background: #e9f1ec; }
   .ed-eigenschappen { position: static; }
   .ed-klein { width: 90px; }
 }
+
+/* Slepen op het bord (data-sleep, zie LESFORMAAT.md) */
+.dia [data-sleep] { cursor: grab; touch-action: none; user-select: none; }
+.dia [data-sleep]:active { cursor: grabbing; }
+.dia .sleep-kopie { filter: drop-shadow(0 2px 3px rgba(0,0,0,.18)); }

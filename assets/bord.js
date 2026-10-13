@@ -129,6 +129,68 @@
     if (naar) { springNaar(naar.dataset.naar); return; }
     const el = e.target.closest(".onthul"); if (el) onthul(el);
   });
+  // ---------- Slepen (stand Aanwijzen) ----------
+  // data-sleep="bron": slepen maakt een kopie, zodat je er zoveel neerlegt als je wilt (bijv. schaallijnen).
+  // Een kopie die je terugsleept op de bron verdwijnt. Kopieën die tegen elkaar aan komen, klikken netjes aan elkaar.
+  // data-sleep (zonder waarde): het element zelf schuift mee.
+  let sleep = null, netGesleept = false;
+  const SNAP = 18;
+  dia.addEventListener("pointerdown", (e) => {
+    if (st.modus !== "aanwijzen" || st.klad) return;
+    let el = e.target.closest("[data-sleep]"); if (!el) return;
+    const omhul = el.closest(".onthul");
+    if (omhul && !omhul.classList.contains("zichtbaar")) return; // eerst tonen, dan slepen
+    e.preventDefault(); e.stopPropagation();
+    const d = dia.getBoundingClientRect(), r = el.getBoundingClientRect();
+    if (el.dataset.sleep === "bron") {
+      const k = el.cloneNode(true);
+      k.dataset.sleep = "kopie"; k.classList.add("sleep-kopie");
+      Object.assign(k.style, { position: "absolute", margin: "0", zIndex: "6",
+        left: `${(r.left - d.left) / st.schaal}px`, top: `${(r.top - d.top) / st.schaal}px` });
+      dia.appendChild(k); el = k;
+    }
+    const kopie = el.classList.contains("sleep-kopie");
+    sleep = { el, kopie, id: e.pointerId, x: e.clientX, y: e.clientY,
+      l: parseFloat(el.style.left) || 0, t: parseFloat(el.style.top) || 0,
+      dx: Number(el.dataset.dx || 0), dy: Number(el.dataset.dy || 0) };
+    netGesleept = true;
+    el.setPointerCapture?.(e.pointerId);
+  });
+  dia.addEventListener("pointermove", (e) => {
+    if (!sleep || e.pointerId !== sleep.id) return;
+    e.preventDefault();
+    const mx = (e.clientX - sleep.x) / st.schaal, my = (e.clientY - sleep.y) / st.schaal;
+    if (sleep.kopie) { sleep.el.style.left = `${sleep.l + mx}px`; sleep.el.style.top = `${sleep.t + my}px`; }
+    else {
+      sleep.el.dataset.dx = sleep.dx + mx; sleep.el.dataset.dy = sleep.dy + my;
+      sleep.el.style.transform = `translate(${sleep.dx + mx}px, ${sleep.dy + my}px)`;
+    }
+  });
+  const sleepEinde = (e) => {
+    if (!sleep || e.pointerId !== sleep.id) return;
+    const { el, kopie } = sleep; sleep = null;
+    if (!kopie) return;
+    const box = (x) => { const d = dia.getBoundingClientRect(), r = x.getBoundingClientRect();
+      return { l: (r.left - d.left) / st.schaal, t: (r.top - d.top) / st.schaal, w: r.width / st.schaal, h: r.height / st.schaal }; };
+    const b = box(el);
+    const bron = dia.querySelector('[data-sleep="bron"]');
+    if (bron) { const o = box(bron); // terug op de stapel = weg
+      if (b.l + b.w / 2 > o.l && b.l + b.w / 2 < o.l + o.w && b.t + b.h / 2 > o.t && b.t + b.h / 2 < o.t + o.h) { el.remove(); return; } }
+    for (const ander of dia.querySelectorAll(".sleep-kopie")) {
+      if (ander === el) continue;
+      const o = box(ander);
+      if (Math.abs(b.t - o.t) > SNAP * 1.5) continue;
+      if (Math.abs(b.l - (o.l + o.w)) < SNAP) { el.style.left = `${o.l + o.w}px`; el.style.top = `${o.t}px`; break; }
+      if (Math.abs(b.l + b.w - o.l) < SNAP) { el.style.left = `${o.l - b.w}px`; el.style.top = `${o.t}px`; break; }
+    }
+  };
+  dia.addEventListener("pointerup", sleepEinde);
+  dia.addEventListener("pointercancel", sleepEinde);
+  dia.addEventListener("click", (e) => { // na slepen geen tik doorgeven (anders klapt een blok weer dicht)
+    if (netGesleept) { netGesleept = false; e.stopPropagation(); }
+  }, true);
+  dia.addEventListener("pointerdown", () => { if (!sleep) netGesleept = false; }, true);
+
   // Een keuzescherm (blok "keuze") is een splitsing: daar ga je verder met een van de knoppen, niet met "volgende".
   const isKeuze = () => !st.klad && !!dia.querySelector("[data-naar]");
   function springNaar(anker) {
