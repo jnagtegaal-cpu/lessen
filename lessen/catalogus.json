@@ -35,6 +35,25 @@
       "gemaakt": "2026-10-08"
     },
     {
+      "id": "g7-8-rekenen-breuken-vereenvoudigen",
+      "titel": "Breuken vereenvoudigen",
+      "groep": "7-8",
+      "vak": "Rekenen",
+      "onderwerp": "Breuken",
+      "edi": true,
+      "samenvatting": "Kale breuken vereenvoudigen door teller en noemer door hetzelfde (zo hoog mogelijke) getal te delen.",
+      "trefwoorden": [
+        "breuken",
+        "vereenvoudigen",
+        "teller",
+        "noemer",
+        "delen",
+        "gelijkwaardige breuken",
+        "stappenplan"
+      ],
+      "gemaakt": "2026-10-13"
+    },
+    {
       "id": "g7-8-rekenen-schaal-werkelijke-lengte",
       "titel": "Schaal omrekenen naar de lengte in werkelijkheid",
       "groep": "7-8",
