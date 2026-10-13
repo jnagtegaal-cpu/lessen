@@ -221,7 +221,7 @@
     {
       "fase": "Uitleg — ik doe voor",
       "achtergrond": "leeg",
-      "notitie": "Hardop denken, stap voor stap. Tik de stappen een voor een aan.",
+      "notitie": "Hardop denken. Twee manieren: links in kleine stapjes (: 2, nog eens : 2), rechts in één keer het hoogste getal (: 4). Zelfde antwoord!",
       "blokken": [
         {
           "type": "kolommen",
@@ -237,16 +237,16 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;align-items:center;gap:30px\"><span style=\"font-size:34px\">Vereenvoudig:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:80px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">9</span><span style=\"align-self:stretch;border-top:5px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">12</span></span></div>"
+                "html": "<div style=\"display:flex;align-items:center;gap:30px\"><span style=\"font-size:34px\">Vereenvoudig:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:64px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">8</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">12</span></span></div>"
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+                "html": "<div style=\"display:flex;gap:18px;flex:1\"><div style=\"flex:1;display:flex;flex-direction:column;gap:6px\"><div style=\"font-size:26px;font-weight:700;color:#d9822b\">Manier 1: in stapjes</div><div style=\"flex:1;min-height:250px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div></div><div style=\"flex:1;display:flex;flex-direction:column;gap:6px\"><div style=\"font-size:26px;font-weight:700;color:#1f6fd1\">Manier 2: in één keer</div><div style=\"flex:1;min-height:250px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div></div></div>"
               },
               {
                 "type": "html",
                 "verborgen": true,
-                "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:56px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span></div>"
+                "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:44px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span></div>"
               }
             ],
             [
@@ -261,7 +261,7 @@
                   "**Deel** de teller en de noemer door dat getal.",
                   "Kun je **nog verder delen**?\nJa → terug naar stap 1. Nee → klaar!"
                 ],
-                "stijl": "font-size:.7em",
+                "stijl": "font-size:.64em",
                 "stapsgewijs": true
               }
             ]
@@ -272,7 +272,7 @@
     {
       "fase": "Begeleide inoefening — wij samen",
       "achtergrond": "leeg",
-      "notitie": "Samen per stap, met willekeurige beurten. Wie eerst door 2 deelt, komt via stap 3 ook bij 2/3.",
+      "notitie": "Samen, met willekeurige beurten. Links in stapjes (: 2, dan : 3), rechts in één keer (: 6).",
       "blokken": [
         {
           "type": "kolommen",
@@ -288,16 +288,16 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;align-items:center;gap:30px\"><span style=\"font-size:34px\">Vereenvoudig:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:80px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">12</span><span style=\"align-self:stretch;border-top:5px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">18</span></span></div>"
+                "html": "<div style=\"display:flex;align-items:center;gap:30px\"><span style=\"font-size:34px\">Vereenvoudig:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:64px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">12</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">18</span></span></div>"
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+                "html": "<div style=\"display:flex;gap:18px;flex:1\"><div style=\"flex:1;display:flex;flex-direction:column;gap:6px\"><div style=\"font-size:26px;font-weight:700;color:#d9822b\">Manier 1: in stapjes</div><div style=\"flex:1;min-height:250px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div></div><div style=\"flex:1;display:flex;flex-direction:column;gap:6px\"><div style=\"font-size:26px;font-weight:700;color:#1f6fd1\">Manier 2: in één keer</div><div style=\"flex:1;min-height:250px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div></div></div>"
               },
               {
                 "type": "html",
                 "verborgen": true,
-                "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:56px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span></div>"
+                "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:44px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span></div>"
               }
             ],
             [
@@ -312,7 +312,7 @@
                   "**Deel** de teller en de noemer door dat getal.",
                   "Kun je **nog verder delen**?\nJa → terug naar stap 1. Nee → klaar!"
                 ],
-                "stijl": "font-size:.7em"
+                "stijl": "font-size:.64em"
               }
             ]
           ]
@@ -322,7 +322,7 @@
     {
       "fase": "Begeleide inoefening — jullie",
       "achtergrond": "leeg",
-      "notitie": "Maatje gangkant doet stap 1, maatje raamkant doet stap 2, samen stap 3. Daarna vergelijken.",
+      "notitie": "Gangkant werkt in stapjes, raamkant zoekt in één keer het hoogste getal (12). Daarna vergelijken. Gangkant begint met uitleggen, dan wisselen. Willekeurige beurt: vertel wat je maatje deed.",
       "blokken": [
         {
           "type": "kolommen",
@@ -338,16 +338,16 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;align-items:center;gap:30px\"><span style=\"font-size:34px\">Vereenvoudig:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:80px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">10</span><span style=\"align-self:stretch;border-top:5px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">25</span></span></div>"
+                "html": "<div style=\"display:flex;align-items:center;gap:30px\"><span style=\"font-size:34px\">Vereenvoudig:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:64px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">24</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">36</span></span></div>"
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+                "html": "<div style=\"display:flex;gap:18px;flex:1\"><div style=\"flex:1;display:flex;flex-direction:column;gap:6px\"><div style=\"font-size:26px;font-weight:700;color:#d9822b\">Gangkant: in stapjes</div><div style=\"flex:1;min-height:250px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div></div><div style=\"flex:1;display:flex;flex-direction:column;gap:6px\"><div style=\"font-size:26px;font-weight:700;color:#1f6fd1\">Raamkant: in één keer</div><div style=\"flex:1;min-height:250px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 60px,44px 60px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div></div></div>"
               },
               {
                 "type": "html",
                 "verborgen": true,
-                "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:56px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">5</span></span></div>"
+                "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:44px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span></div>"
               }
             ],
             [
@@ -362,13 +362,19 @@
                   "**Deel** de teller en de noemer door dat getal.",
                   "Kun je **nog verder delen**?\nJa → terug naar stap 1. Nee → klaar!"
                 ],
-                "stijl": "font-size:.7em"
+                "stijl": "font-size:.64em"
               },
               {
                 "type": "vraag",
                 "verborgen": true,
-                "stijl": "font-size:26px",
-                "tekst": "**Maatje gangkant:** stap 1, en leg uit waarom.\n**Maatje raamkant:** stap 2.\n**Samen:** stap 3. Klopt het?"
+                "stijl": "font-size:23px",
+                "tekst": "**Vergelijk:** komen jullie op hetzelfde uit?\nWelke manier was sneller, en waarom?"
+              },
+              {
+                "type": "klein",
+                "verborgen": true,
+                "stijl": "font-size:22px;color:#1d2b24;margin:0",
+                "tekst": "*Ik heb de teller en de noemer gedeeld door …, omdat …*\n*Ik kan (niet) verder delen, want …*"
               }
             ]
           ]
@@ -394,7 +400,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;align-items:center;gap:30px\"><span style=\"font-size:34px\">Vereenvoudig:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:80px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">18</span><span style=\"align-self:stretch;border-top:5px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">24</span></span></div>"
+                "html": "<div style=\"display:flex;align-items:center;gap:30px\"><span style=\"font-size:34px\">Vereenvoudig:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:64px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">18</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">24</span></span></div>"
               },
               {
                 "type": "html",
@@ -403,7 +409,7 @@
               {
                 "type": "html",
                 "verborgen": true,
-                "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:56px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span></div>"
+                "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:44px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span></div>"
               }
             ],
             [
@@ -418,7 +424,7 @@
                   "**Deel** de teller en de noemer door dat getal.",
                   "Kun je **nog verder delen**?\nJa → terug naar stap 1. Nee → klaar!"
                 ],
-                "stijl": "font-size:.7em"
+                "stijl": "font-size:.64em"
               }
             ]
           ]
@@ -450,6 +456,22 @@
       {
         "fase": "Uitleg — vaardigheid",
         "wat": "Stappenplan: hoogste getal kiezen, teller en noemer delen, kijken of je nog verder kunt delen."
+      },
+      {
+        "fase": "Ik doe voor",
+        "wat": "8/12 op twee manieren naast elkaar: in kleine stapjes (: 2, nog eens : 2) en in één keer het hoogste getal (: 4)."
+      },
+      {
+        "fase": "Wij samen",
+        "wat": "12/18 op twee manieren (: 2 en : 3, of in één keer : 6), met willekeurige beurten."
+      },
+      {
+        "fase": "Jullie",
+        "wat": "24/36. Gangkant werkt in stapjes, raamkant zoekt in één keer het hoogste getal. Vergelijken: hetzelfde antwoord? Welke manier was sneller? Met zinsstarter."
+      },
+      {
+        "fase": "Jij",
+        "wat": "18/24, iedereen zelf op het wisbordje."
       },
       {
         "fase": "Verwerking",
