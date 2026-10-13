@@ -82,7 +82,24 @@ def maak_pdfs(ids):
         server.shutdown()
 
 
+def ververs_versies():
+    """Zet achter elke assets/...js en .css een ?v=<inhoud> in de html-pagina's,
+    zodat browsers na een wijziging meteen de nieuwe versie laden (geen oude kopie uit de cache)."""
+    import hashlib
+    def versie(m):
+        pad = ROOT / m.group(1)
+        if not pad.exists():
+            return m.group(0)
+        return f'{m.group(1)}?v={hashlib.sha1(pad.read_bytes()).hexdigest()[:8]}"'
+    for html in ROOT.glob("*.html"):
+        oud = html.read_text(encoding="utf-8")
+        nieuw = re.sub(r'(assets/[\w./-]+\.(?:js|css))(?:\?v=[0-9a-f]+)?"', versie, oud)
+        if nieuw != oud:
+            html.write_text(nieuw, encoding="utf-8")
+
+
 def main():
+    ververs_versies()
     lessen, fouten = lees_lessen()
     if fouten:
         print("Er zijn problemen:\n  " + "\n  ".join(fouten))
