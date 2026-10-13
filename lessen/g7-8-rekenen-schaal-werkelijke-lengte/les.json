@@ -132,6 +132,83 @@
       ]
     },
     {
+      "fase": "Uitleg — begrip: zelf tekenen",
+      "achtergrond": "leeg",
+      "notitie": "In het schrift. Eerst de schaallijn van 1 cm, dan invullen wat hij betekent, dan de lijn van 7 cm.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "In je schrift"
+              },
+              {
+                "type": "vraag",
+                "tekst": "**1.** Teken een schaallijn van precies **1 cm**.\nSchrijf erboven: **100 cm**."
+              },
+              {
+                "type": "html",
+                "html": "<svg width=\"260\" height=\"110\" viewBox=\"0 0 260 110\" style=\"display:block;margin:0 auto\"><text x=\"130\" y=\"36\" font-size=\"40\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">100 cm</text><line x1=\"70\" y1=\"75\" x2=\"190\" y2=\"75\" stroke=\"#d6453d\" stroke-width=\"6\"/><line x1=\"70\" y1=\"55\" x2=\"70\" y2=\"95\" stroke=\"#d6453d\" stroke-width=\"6\"/><line x1=\"190\" y1=\"55\" x2=\"190\" y2=\"95\" stroke=\"#d6453d\" stroke-width=\"6\"/></svg>"
+              },
+              {
+                "type": "vraag",
+                "tekst": "**3.** Teken onder je schaallijn een lijn van **7 cm**."
+              },
+              {
+                "type": "tekst",
+                "tekst": "In het echt is die lijn **…** cm lang.",
+                "stijl": "font-size:36px;margin:0"
+              },
+              {
+                "type": "tekst",
+                "tekst": "**700 cm**",
+                "verborgen": true,
+                "stijl": "font-size:36px;margin:0;color:#2f9e63"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Wat betekent jouw schaallijn?"
+              },
+              {
+                "type": "vraag",
+                "tekst": "**2.** Vul in."
+              },
+              {
+                "type": "tekst",
+                "tekst": "1 cm is in het echt **…** cm.",
+                "stijl": "font-size:36px;margin:0"
+              },
+              {
+                "type": "tekst",
+                "tekst": "**100 cm**",
+                "verborgen": true,
+                "stijl": "font-size:36px;margin:0;color:#2f9e63"
+              },
+              {
+                "type": "tekst",
+                "tekst": "In het echt is het **…** keer zo groot.",
+                "stijl": "font-size:36px;margin:0"
+              },
+              {
+                "type": "tekst",
+                "tekst": "**100 keer**",
+                "verborgen": true,
+                "stijl": "font-size:36px;margin:0;color:#2f9e63"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
       "fase": "Uitleg — ik doe voor",
       "achtergrond": "leeg",
       "notitie": "Hardop denken, stap voor stap. Tik de stappen een voor een aan.",
@@ -406,7 +483,8 @@
   "voorbereiding": {
     "benodigdheden": [
       "Een modelauto",
-      "Wisbordjes"
+      "Wisbordjes",
+      "Schriften"
     ],
     "verloop": [
       {
@@ -420,6 +498,10 @@
       {
         "fase": "Uitleg — begrip",
         "wat": "Modelauto: denkvragen, schaallijn van de auto, dan schaal 1 : 40. Links en rechts dezelfde maat."
+      },
+      {
+        "fase": "Uitleg — begrip",
+        "wat": "In het schrift: schaallijn van 1 cm tekenen (100 cm), invullen wat hij betekent, dan een lijn van 7 cm: hoe lang in het echt?"
       },
       {
         "fase": "Ik doe voor",
