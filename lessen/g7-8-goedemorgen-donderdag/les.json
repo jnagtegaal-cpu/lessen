@@ -1,0 +1,89 @@
+{
+  "id": "g7-8-goedemorgen-donderdag",
+  "titel": "Goedemorgen: dagschema donderdag 15 oktober",
+  "groep": "7-8",
+  "vak": "Dagopening",
+  "onderwerp": "Dagschema",
+  "samenvatting": "Goedemorgenpagina voor donderdag met het dagschema en een denkvraag bij binnenkomst.",
+  "trefwoorden": [
+    "goedemorgen",
+    "dagschema",
+    "dagopening",
+    "denkvraag",
+    "donderdag"
+  ],
+  "gemaakt": "2026-10-14",
+  "schermen": [
+    {
+      "fase": "Goedemorgen",
+      "achtergrond": "leeg",
+      "notitie": "Dagschema voor donderdag. Denkvraag bij binnenkomst: wat is jouw mooiste bezit?",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div><div style=\"font-size:52px;font-weight:800;margin-bottom:6px;line-height:1.2\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">✏️</span><span>Werkwoordspelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🇬🇧</span><span>Engels</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">📒</span><span>Huiswerk invullen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🧹</span><span>Opruimen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🗣️</span><span>Voorbespreken opening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🎉</span><span>Opening IKC</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;height:640px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;text-align:center\"><div style=\"font-size:30px;color:#d9822b;font-weight:700;margin-bottom:16px\">Denkvraag</div><div style=\"font-size:54px;font-weight:800;line-height:1.25\">Wat is jouw mooiste bezit? 💎</div></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "voorbereiding": {
+    "verloop": [
+      {
+        "wat": "Bij binnenkomst: denkvraag op het bord (wat is jouw mooiste bezit?)"
+      },
+      {
+        "wat": "Dagopening"
+      },
+      {
+        "wat": "Rekenen"
+      },
+      {
+        "wat": "Pauze"
+      },
+      {
+        "wat": "Werkwoordspelling"
+      },
+      {
+        "wat": "Engels"
+      },
+      {
+        "wat": "Huiswerk invullen"
+      },
+      {
+        "wat": "Pauze"
+      },
+      {
+        "wat": "Opruimen"
+      },
+      {
+        "wat": "Voorbespreken opening"
+      },
+      {
+        "wat": "Stillezen"
+      },
+      {
+        "wat": "Opening IKC"
+      },
+      {
+        "wat": "Afsluiten"
+      }
+    ]
+  }
+}
