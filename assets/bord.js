@@ -106,6 +106,7 @@
     if (typeof LiveHost !== "undefined") LiveHost.bindScherm(dia);
     const getoond = st.onthuld.get(sleutel()) || new Set();
     dia.querySelectorAll(".onthul").forEach((el, i) => el.classList.toggle("zichtbaar", getoond.has(i)));
+    vulInvulvakken();
     $("teller").textContent = st.klad ? "Kladblad" : `${st.index + 1} / ${schermen.length}`;
     $("vorige").disabled = st.klad || st.index === 0;
     $("volgende").disabled = st.klad || ((st.index >= schermen.length - 1 || isKeuze()) && !dia.querySelector(".onthul:not(.zichtbaar)"));
@@ -115,6 +116,18 @@
     $("knop-klad").setAttribute("aria-pressed", st.klad);
     hertekenen();
   }
+  // Invulvakken (textarea/input in een html-blok): wat je typt blijft alleen op dit apparaat bewaard, niet op de site.
+  const invulSleutel = (i) => `lesbord-invul:${st.lesmap}:${sleutel()}:${i}`;
+  function vulInvulvakken() {
+    dia.querySelectorAll("textarea, input[type=text]").forEach((el, i) => {
+      try { const w = localStorage.getItem(invulSleutel(i)); if (w != null) el.value = w; } catch (e) {}
+    });
+  }
+  dia.addEventListener("input", (e) => {
+    const el = e.target.closest("textarea, input[type=text]"); if (!el) return;
+    const i = [...dia.querySelectorAll("textarea, input[type=text]")].indexOf(el);
+    try { localStorage.setItem(invulSleutel(i), el.value); } catch (err) {}
+  });
   // Stap voor stap: tik op een verborgen stap, of druk op "volgende" om de eerstvolgende te tonen.
   function onthul(el) {
     const alle = [...dia.querySelectorAll(".onthul")];

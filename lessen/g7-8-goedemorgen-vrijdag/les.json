@@ -1,0 +1,104 @@
+{
+  "id": "g7-8-goedemorgen-vrijdag",
+  "titel": "Goedemorgen: dagschema vrijdag 16 oktober",
+  "groep": "7-8",
+  "vak": "Dagopening",
+  "onderwerp": "Dagschema",
+  "samenvatting": "Goedemorgenpagina voor vrijdag (meester- en juffendag) met het dagschema en een pagina om kinderen bij spelletjes in te delen.",
+  "trefwoorden": [
+    "goedemorgen",
+    "dagschema",
+    "dagopening",
+    "vrijdag",
+    "meester- en juffendag",
+    "spelletjes",
+    "indelen"
+  ],
+  "gemaakt": "2026-10-15",
+  "schermen": [
+    {
+      "fase": "Goedemorgen",
+      "achtergrond": "leeg",
+      "notitie": "Dagschema voor vrijdag: meester- en juffendag.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div><div style=\"font-size:56px;font-weight:800;margin-bottom:14px;line-height:1.2\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:24px;padding:8px 20px;margin-bottom:12px;line-height:1.2;border-radius:16px;background:#eef7f1;font-size:40px;font-weight:700\"><span style=\"width:60px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:24px;padding:8px 20px;margin-bottom:12px;line-height:1.2;border-radius:16px;background:#eef7f1;font-size:40px;font-weight:700\"><span style=\"width:60px;text-align:center\">🎲</span><span>Spelletjes</span></div><div style=\"display:flex;align-items:center;gap:24px;padding:8px 20px;margin-bottom:12px;line-height:1.2;border-radius:16px;background:#eef7f1;font-size:40px;font-weight:700\"><span style=\"width:60px;text-align:center\">🎂</span><span>Cake versieren en lekker eten</span></div><div style=\"display:flex;align-items:center;gap:24px;padding:8px 20px;margin-bottom:12px;line-height:1.2;border-radius:16px;background:#eef7f1;font-size:40px;font-weight:700\"><span style=\"width:60px;text-align:center\">⚽</span><span>Buiten spelen</span></div><div style=\"display:flex;align-items:center;gap:24px;padding:8px 20px;margin-bottom:12px;line-height:1.2;border-radius:16px;background:#eef7f1;font-size:40px;font-weight:700\"><span style=\"width:60px;text-align:center\">🌳</span><span>Naar het parkje: buskruit</span></div><div style=\"display:flex;align-items:center;gap:24px;padding:8px 20px;margin-bottom:12px;line-height:1.2;border-radius:16px;background:#eef7f1;font-size:40px;font-weight:700\"><span style=\"width:60px;text-align:center\">🧹</span><span>Opruimen</span></div><div style=\"display:flex;align-items:center;gap:24px;padding:8px 20px;margin-bottom:12px;line-height:1.2;border-radius:16px;background:#eef7f1;font-size:40px;font-weight:700\"><span style=\"width:60px;text-align:center\">👋</span><span>Naar huis</span></div></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;height:700px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:26px\"><div style=\"font-size:110px;line-height:1\">🎉</div><div style=\"font-size:60px;font-weight:800;line-height:1.2\">Meester- en juffendag!</div><div style=\"font-size:44px;font-weight:700;color:#d9822b\">De juf is jarig 🎂</div></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Spelletjes indelen",
+      "achtergrond": "leeg",
+      "notitie": "Typ de namen onder de spelletjes. Ze blijven alleen op dit apparaat bewaard, niet op de site.",
+      "blokken": [
+        {
+          "type": "html",
+          "html": "<div style=\"display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px\"><div style=\"font-size:48px;font-weight:800\">🎲 Spelletjes: wie speelt wat?</div><div style=\"font-size:22px;color:#52635a\">Tik in een vak en typ de namen.</div></div><div style=\"display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(3,1fr);gap:14px;height:650px\"><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><div style=\"font-size:28px;font-weight:800;line-height:1.15\">Schaken</div><textarea aria-label=\"Namen bij Schaken\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><div style=\"font-size:28px;font-weight:800;line-height:1.15\">Toepen</div><textarea aria-label=\"Namen bij Toepen\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><div style=\"font-size:28px;font-weight:800;line-height:1.15\">Vliegtuigjes vouwen</div><textarea aria-label=\"Namen bij Vliegtuigjes vouwen\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><div style=\"font-size:28px;font-weight:800;line-height:1.15\">Jenga</div><textarea aria-label=\"Namen bij Jenga\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><div style=\"font-size:28px;font-weight:800;line-height:1.15\">Pictionary</div><textarea aria-label=\"Namen bij Pictionary\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><div style=\"font-size:28px;font-weight:800;line-height:1.15\">Uno</div><textarea aria-label=\"Namen bij Uno\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><div style=\"font-size:28px;font-weight:800;line-height:1.15\">Grote Dalmuti</div><textarea aria-label=\"Namen bij Grote Dalmuti\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><div style=\"font-size:28px;font-weight:800;line-height:1.15\">Triominos</div><textarea aria-label=\"Namen bij Triominos\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><div style=\"font-size:28px;font-weight:800;line-height:1.15\">Dammen</div><textarea aria-label=\"Namen bij Dammen\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><div style=\"font-size:28px;font-weight:800;line-height:1.15\">Mathable</div><textarea aria-label=\"Namen bij Mathable\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><div style=\"font-size:28px;font-weight:800;line-height:1.15\">Fase 10</div><textarea aria-label=\"Namen bij Fase 10\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><div style=\"font-size:28px;font-weight:800;line-height:1.15\">30 Seconds</div><textarea aria-label=\"Namen bij 30 Seconds\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><div style=\"font-size:28px;font-weight:800;line-height:1.15\">Set</div><textarea aria-label=\"Namen bij Set\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><input type=\"text\" placeholder=\"Ander spel…\" aria-label=\"Naam van een ander spel\" style=\"font:inherit;font-size:26px;font-weight:800;border:0;border-bottom:2px dashed #9fcdb1;background:transparent;padding:0 2px;width:100%;color:#1d2b24\"><textarea aria-label=\"Namen bij ander spel\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div><div style=\"background:#eef7f1;border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:6px;min-height:0\"><input type=\"text\" placeholder=\"Ander spel…\" aria-label=\"Naam van een ander spel\" style=\"font:inherit;font-size:26px;font-weight:800;border:0;border-bottom:2px dashed #9fcdb1;background:transparent;padding:0 2px;width:100%;color:#1d2b24\"><textarea aria-label=\"Namen bij ander spel\" style=\"flex:1;min-height:0;width:100%;box-sizing:border-box;resize:none;border:2px solid #cfe3d6;border-radius:10px;padding:6px 10px;font:inherit;font-size:24px;line-height:1.25;background:#fff;color:#1d2b24\"></textarea></div></div>"
+        }
+      ]
+    }
+  ],
+  "voorbereiding": {
+    "verloop": [
+      {
+        "wat": "Dagopening"
+      },
+      {
+        "wat": "Spelletjes (indelen op het tweede scherm)"
+      },
+      {
+        "wat": "Cake versieren en lekker eten"
+      },
+      {
+        "wat": "Buiten spelen"
+      },
+      {
+        "wat": "Naar het parkje: buskruit"
+      },
+      {
+        "wat": "Opruimen: alles netjes maken"
+      },
+      {
+        "wat": "Naar huis"
+      }
+    ],
+    "secties": [
+      {
+        "kop": "Spelletjes",
+        "items": [
+          "Schaken",
+          "Toepen",
+          "Vliegtuigjes vouwen",
+          "Jenga",
+          "Pictionary",
+          "Uno",
+          "Grote Dalmuti",
+          "Triominos",
+          "Dammen",
+          "Mathable",
+          "Fase 10",
+          "30 Seconds",
+          "Set"
+        ]
+      }
+    ]
+  }
+}

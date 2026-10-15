@@ -109,6 +109,10 @@ In een `html`-blok kun je onderdelen sleepbaar maken (in de stand *Aanwijzen*):
 
 Staat het onderdeel in een verborgen blok, dan tik je het eerst tevoorschijn. Kopieën verdwijnen als je naar een ander scherm gaat.
 
+### Invulvakken op het bord
+
+Een `<textarea>` of `<input type="text">` in een `html`-blok kun je op het bord aantikken en erin typen, bijvoorbeeld namen onder spelletjes. Wat je typt wordt **alleen op dat apparaat** bewaard (in de browser, per les en per scherm), zodat het blijft staan als je van scherm wisselt of de pagina herlaadt. Het komt niet op de site en niet in de pdf's, dus namen van leerlingen kunnen hier wel. Zet zelf nooit namen in `les.json`.
+
 Elk blok mag ook `stijl` hebben (extra CSS), bijvoorbeeld `"stijl": "color:#d6453d"`.
 
 Opmaak in tekst: `**vet**`, `*schuin*`, `==gemarkeerd==`. Een nieuwe regel maak je met `\n`.
