@@ -19,18 +19,6 @@
  "lesdoel": "Ik kan werkwoorden in de verleden tijd goed schrijven.",
  "schermen": [
   {
-   "fase": "Lesdoel",
-   "achtergrond": "leeg",
-   "uitlijning": "midden",
-   "notitie": "Ik lees voor, de klas leest mee, maatjes lezen het aan elkaar voor, dan een willekeurige beurt.",
-   "blokken": [
-    {
-     "type": "html",
-     "html": "<div style=\"font-size:80px;line-height:1.25;text-align:center;font-weight:700\">Ik kan <span style=\"color:#d9822b\">werkwoorden in de verleden tijd</span> goed <span style=\"color:#1f6fd1\">schrijven</span>.</div><div style=\"margin-top:40px;text-align:center;font-size:30px;color:#5b6b63\"><span style=\"color:#d9822b;font-weight:700\">oranje</span> = begrip · <span style=\"color:#1f6fd1;font-weight:700\">blauw</span> = vaardigheid</div>"
-    }
-   ]
-  },
-  {
    "fase": "Activeren voorkennis 1: rijden",
    "achtergrond": "leeg",
    "blokken": [
@@ -51,6 +39,18 @@
     }
    ],
    "notitie": "Voorkennis: de tegenwoordige tijd met het orakel, op dezelfde manier als straks de verleden tijd."
+  },
+  {
+   "fase": "Lesdoel",
+   "achtergrond": "leeg",
+   "uitlijning": "midden",
+   "notitie": "Ik lees voor, de klas leest mee, maatjes lezen het aan elkaar voor, dan een willekeurige beurt.",
+   "blokken": [
+    {
+     "type": "html",
+     "html": "<div style=\"font-size:80px;line-height:1.25;text-align:center;font-weight:700\">Ik kan <span style=\"color:#d9822b\">werkwoorden in de verleden tijd</span> goed <span style=\"color:#1f6fd1\">schrijven</span>.</div><div style=\"margin-top:40px;text-align:center;font-size:30px;color:#5b6b63\"><span style=\"color:#d9822b;font-weight:700\">oranje</span> = begrip · <span style=\"color:#1f6fd1;font-weight:700\">blauw</span> = vaardigheid</div>"
+    }
+   ]
   },
   {
    "fase": "Zin 1: knuffelen",
@@ -159,12 +159,12 @@
   ],
   "verloop": [
    {
-    "fase": "Lesdoel",
-    "wat": "Ik kan werkwoorden in de verleden tijd goed schrijven."
-   },
-   {
     "fase": "Activeren voorkennis",
     "wat": "Twee zinnen in de tegenwoordige tijd met het orakel: Rijd jij vandaag met ons mee? (jij achter het werkwoord, ik-vorm) en De kaars brandt nu al de hele avond (iemand anders, ik-vorm + t)."
+   },
+   {
+    "fase": "Lesdoel",
+    "wat": "Ik kan werkwoorden in de verleden tijd goed schrijven."
    },
    {
     "fase": "Verleden tijd",
