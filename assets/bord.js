@@ -305,6 +305,14 @@
   document.addEventListener("fullscreenchange", pasAan);
 
   // ---------- Start ----------
+  // Een tv die de randen afsnijdt (overscan): ?rand=4 laat rondom 4% ruimte. Onthouden op dit apparaat; ?rand=0 zet het uit.
+  (() => {
+    let rand = Lesbord.param("rand");
+    try { if (rand !== null) localStorage.setItem("lesbord-rand", rand); else rand = localStorage.getItem("lesbord-rand"); } catch (e) { /* geen opslag */ }
+    const n = Math.max(0, Math.min(15, Number(rand) || 0));
+    document.documentElement.style.setProperty("--rand-x", `${n}vw`);
+    document.documentElement.style.setProperty("--rand-y", `${n}vh`);
+  })();
   const id = Lesbord.param("id");
   Lesbord.laadLes(id).then((les) => {
     st.les = les; st.lesmap = `lessen/${id}`;
