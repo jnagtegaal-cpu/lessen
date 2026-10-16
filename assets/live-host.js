@@ -68,7 +68,7 @@ const LiveHost = (() => {
     const huidigeVraag = st.kamer && st.kamer.vraag;
     if (huidigeVraag && huidigeVraag.id === def.id && def.open !== false) return;
     const v = { id: def.id, soort: def.soort, tekst: def.tekst || "", open: def.open !== false };
-    for (const k of ["opties", "groepen", "uitsluit", "max"]) if (def[k] !== undefined) v[k] = def[k];
+    for (const k of ["opties", "groepen", "uitsluit", "max", "wacht", "uitslag"]) if (def[k] !== undefined) v[k] = def[k];
     try { await Live.schrijf(st.code, "vraag", v); } catch (e) { st.fout = "De vraag kon niet verstuurd worden."; teken(); }
   }
   async function zetOpen(open) {
@@ -96,6 +96,7 @@ const LiveHost = (() => {
     code: () => st.code,
     spelers, antwoorden, stuurVraag, vraagOpen,
     sluitVraag: (id) => { if (st.kamer && st.kamer.vraag && st.kamer.vraag.id === id) zetOpen(false); },
+    heropenVraag: (id) => { if (st.kamer && st.kamer.vraag && st.kamer.vraag.id === id) zetOpen(true); },
     geefPunten: (p) => st.geefPunten(p),
     teken: () => tekenBlokken(),
   };

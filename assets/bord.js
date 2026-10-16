@@ -114,6 +114,12 @@
     $("fase").hidden = !fase; $("fase").textContent = fase || "";
     $("notitie-tekst").textContent = (!st.klad && s.notitie) || "Geen notitie bij dit scherm.";
     $("knop-klad").setAttribute("aria-pressed", st.klad);
+    if (!st.klad) { // schermnummer in het adres: per ongeluk herladen brengt je terug op hetzelfde scherm
+      try {
+        const u = new URL(location.href);
+        if (u.searchParams.get("scherm") !== String(st.index + 1)) { u.searchParams.set("scherm", st.index + 1); history.replaceState(null, "", u); }
+      } catch (e) { /* geen adresbalk (bijv. in een voorbeeld) */ }
+    }
     hertekenen();
   }
   // Invulvakken (textarea/input in een html-blok): wat je typt blijft alleen op dit apparaat bewaard, niet op de site.

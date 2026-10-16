@@ -2,6 +2,8 @@
 //  • bluf:  teams verzinnen een betekenis → alle betekenissen plus de echte, gehusseld → teams stemmen → onthullen.
 //           Punten: 2 voor wie de echte kiest, 1 voor elke stem op je eigen verzinsel.
 //  • proef: teams vinken smaken aan → onthullen. Punten: goede smaken min foute smaken (nooit minder dan 0).
+//  • feiten: teams kiezen welke van A, B, C de onzin is → antwoorden dicht (de telefoons wachten) → het verhaal
+//           wordt voorgelezen → punten toekennen: de stempels verschijnen, goed = 1 punt, de telefoons zien of het klopte.
 // De stand van elk spel wordt in de browser bewaard, zodat herladen niets kapotmaakt.
 // Zonder telefoons blijft de gewone inhoud van het blok staan (woord of drankje met verborgen antwoord).
 const Spellen = (() => {
@@ -128,13 +130,52 @@ const Spellen = (() => {
       voet(status(api.antwoorden(proefVraag(def, s).id), "ingestuurd"), knoppen([["onthul", "Onthul de smaken", false, true]]));
   }
 
+  // ---------- Feiten: twee feiten en één onzin ----------
+  // Fases: "begin" (teams kiezen), "dicht" (de telefoons wachten, het verhaal wordt voorgelezen), "uitslag".
+  const feitenVraag = (def, s) => {
+    const v = { id: `${def.id}-r${s.r}`, soort: "keuze", tekst: "Welke is de onzin?", opties: def.titels, wacht: true, open: s.fase === "begin" };
+    if (s.fase === "uitslag") v.uitslag = { goed: letter(def.onzin) };
+    return v;
+  };
+  function feitenPunten(def, s, api) {
+    const goed = letter(def.onzin), res = {};
+    api.antwoorden(feitenVraag(def, s).id).forEach((x) => { res[x.tid] = { k: x.antw ? String(x.antw) : "", p: x.antw === goed ? 1 : 0 }; });
+    s.res = res; s.punten = Object.fromEntries(Object.entries(res).map(([t, r]) => [t, r.p]));
+    s.fase = "uitslag"; s.toegekend = true;
+    api.geefPunten(s.punten); bewaar(api); api.stuurVraag(feitenVraag(def, s));
+  }
+  function feitenHtml(def, s, api, basis) {
+    // De kaarten zelf blijven zoals op het gewone bord; het antwoord (en daarmee de stempels) komt pas bij de uitslag.
+    const t = document.createElement("template"); t.innerHTML = basis;
+    const antw = t.content.querySelector(".antwoord-trigger");
+    if (antw && s.fase === "uitslag") { antw.classList.remove("onthul"); antw.classList.add("zichtbaar"); }
+    else if (antw) antw.remove();
+    const id = feitenVraag(def, s).id;
+    if (s.fase === "uitslag") {
+      const teams = api.spelers().map((tm) => {
+        const r = (s.res || {})[tm.tid] || { k: "", p: 0 };
+        return `<li class="${r.p ? "klaar" : "mis"}">${esc(tm.naam)}<span>${r.k ? `koos ${esc(r.k)}` : "niet gekozen"}${r.p ? " · +1" : ""}</span></li>`;
+      }).join("");
+      return t.innerHTML + voet(`<ul class="spel-status">${teams || "<li>Nog geen teams</li>"}</ul>`, knoppen([["opnieuw", "Opnieuw"]]));
+    }
+    const lijst = api.antwoorden(id);
+    if (s.fase === "dicht") return t.innerHTML + voet(status(lijst, "gekozen"), knoppen([["geef", "Punten toekennen", false, true], ["heropen", "Toch weer open"]]));
+    return t.innerHTML + voet(status(lijst, "gekozen"), knoppen([["dicht", "Antwoorden dicht", !lijst.some((x) => x.antw), true]]));
+  }
+
   // ---------- Koppeling met het bord ----------
+  const SOORTEN = { bluf: "[data-bluf]", proef: "[data-proef]", feiten: "[data-feiten]" };
   const zoek = (dia) => {
-    const b = dia.querySelector("[data-bluf]"); if (b) return { soort: "bluf", def: JSON.parse(b.dataset.bluf), el: b };
-    const p = dia.querySelector("[data-proef]"); if (p) return { soort: "proef", def: JSON.parse(p.dataset.proef), el: p };
+    for (const [soort, sel] of Object.entries(SOORTEN)) {
+      const el = dia.querySelector(sel);
+      if (el) { const def = JSON.parse(el.dataset[soort]); if (def.id) return { soort, def }; }
+    }
     return null;
   };
-  const vraagVoor = (h) => (h.soort === "bluf" ? blufVraag(h.def, spel(h.def.id)) : proefVraag(h.def, spel(h.def.id)));
+  const vraagVoor = (h) => {
+    const s = spel(h.def.id);
+    return h.soort === "bluf" ? blufVraag(h.def, s) : h.soort === "proef" ? proefVraag(h.def, s) : feitenVraag(h.def, s);
+  };
 
   function bind(dia, api) {
     laad(api); zelfdeKamer(api);
@@ -143,20 +184,24 @@ const Spellen = (() => {
   }
   function teken(dia, api) {
     if (!huidig) return;
-    const el = dia.querySelector(huidig.soort === "bluf" ? "[data-bluf]" : "[data-proef]"); if (!el) return;
+    const el = dia.querySelector(SOORTEN[huidig.soort]); if (!el) return;
     if (!statisch.has(el)) statisch.set(el, el.innerHTML);
     if (!api.actief()) { if (el.innerHTML !== statisch.get(el)) el.innerHTML = statisch.get(el); el.classList.remove("live"); return; }
     zelfdeKamer(api);
     el.classList.add("live");
     const s = spel(huidig.def.id);
     el.classList.toggle("uitslag", s.fase === "uitslag");
-    el.innerHTML = huidig.soort === "bluf" ? blufHtml(huidig.def, s, api) : proefHtml(huidig.def, s, api);
+    el.innerHTML = huidig.soort === "bluf" ? blufHtml(huidig.def, s, api)
+      : huidig.soort === "proef" ? proefHtml(huidig.def, s, api) : feitenHtml(huidig.def, s, api, statisch.get(el));
   }
   function klik(b, api) {
     if (!huidig) return;
     const { soort, def } = huidig, s = spel(def.id), actie = b.dataset.spel;
     if (actie === "stemmen" && soort === "bluf") blufNaarStemmen(def, s, api);
     else if (actie === "onthul") (soort === "bluf" ? blufOnthul : proefOnthul)(def, s, api);
+    else if (actie === "dicht" && soort === "feiten") { s.fase = "dicht"; bewaar(api); api.sluitVraag(feitenVraag(def, s).id); }
+    else if (actie === "heropen" && soort === "feiten") { s.fase = "begin"; bewaar(api); api.heropenVraag(feitenVraag(def, s).id); }
+    else if (actie === "geef" && soort === "feiten" && !s.toegekend) feitenPunten(def, s, api);
     else if (actie === "geef" && !s.toegekend) { api.geefPunten(s.punten || {}); s.toegekend = true; bewaar(api); }
     else if (actie === "opnieuw") {
       if (!b.dataset.zeker) { b.dataset.zeker = "1"; b.textContent = "Zeker weten?"; setTimeout(() => { if (b.isConnected) { delete b.dataset.zeker; b.textContent = "Opnieuw"; } }, 3000); return; }

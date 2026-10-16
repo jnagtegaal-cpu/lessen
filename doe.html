@@ -68,6 +68,22 @@
     .klein { font-size: 15px; color: var(--zacht); }
     .teller { text-align: right; }
     .afmelden { display: block; margin: 26px auto 0; background: none; border: 0; color: var(--zacht); font: inherit; font-size: 15px; text-decoration: underline; cursor: pointer; }
+    /* Wachten na het kiezen (feitenronde), en daarna goed of fout */
+    .midden { text-align: center; }
+    .gekozen { display: flex; gap: 14px; align-items: center; padding: 14px; border-radius: 14px; border: 3px solid var(--goed); background: rgba(80,160,110,.14); }
+    .gekozen b { flex: none; width: 46px; height: 46px; border-radius: 50%; background: var(--label); color: var(--label-tekst); display: grid; place-items: center; font: 700 24px var(--kopletter); }
+    body.thema-pub .gekozen b { font-weight: 400; }
+    .laden { display: flex; gap: 12px; justify-content: center; margin: 26px 0 10px; }
+    .laden i { width: 16px; height: 16px; border-radius: 50%; background: var(--accent); animation: stuiter 1.2s infinite ease-in-out; }
+    .laden i:nth-child(2) { animation-delay: .15s; }
+    .laden i:nth-child(3) { animation-delay: .3s; }
+    @keyframes stuiter { 0%, 80%, 100% { transform: scale(.45); opacity: .35; } 40% { transform: scale(1); opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .laden i { animation: none; opacity: .8; } }
+    .uitslag { font: 700 44px/1.1 var(--kopletter); margin: 4px 0 6px; }
+    body.thema-pub .uitslag { font-weight: 400; }
+    .uitslag.goed { color: var(--goed); }
+    .uitslag.fout { color: var(--fout); }
+    .link { display: block; margin: 16px auto 0; background: none; border: 0; color: var(--zacht); font: inherit; font-size: 17px; text-decoration: underline; cursor: pointer; }
   </style>
 </head>
 <body>
@@ -92,7 +108,7 @@
     const bewaarIk = () => { try { ik ? localStorage.setItem(sleutel, JSON.stringify(ik)) : localStorage.removeItem(sleutel); } catch (e) { /* geen opslag */ } };
     const nieuwId = () => { const b = new Uint8Array(6); crypto.getRandomValues(b); return "t" + [...b].map((x) => (x % 36).toString(36)).join(""); };
 
-    let kamer = null, getoondId = null, getoondOpen = null, meta = null, stopLuisteren = null;
+    let kamer = null, getoond = null, wijzig = null, meta = null, stopLuisteren = null;
 
     function fout(tekst) { sub.textContent = ""; toon(maak("p", tekst, "melding fout")); }
 
@@ -102,7 +118,7 @@
       k.onclick = async () => {
         if (!k.dataset.zeker) { k.dataset.zeker = "1"; k.textContent = "Zeker weten? Tik nog een keer."; return; }
         try { await Live.schrijf(code, `teams/${ik.tid}`, null, "DELETE"); } catch (e) { /* toch lokaal afmelden */ }
-        ik = null; bewaarIk(); getoondId = null; meedoenScherm();
+        ik = null; bewaarIk(); getoond = null; meedoenScherm();
       };
       return k;
     }
@@ -139,17 +155,20 @@
     function teken() {
       if (!ik) return;
       if (!kamer || !kamer.teams || !kamer.teams[ik.tid]) { // verwijderd door de quizmaster, of de kamer is weg
-        ik = null; bewaarIk(); getoondId = null;
+        ik = null; bewaarIk(); getoond = null;
         return kamer ? meedoenScherm("Jullie team is afgemeld. Kies opnieuw een naam om mee te doen.") : fout("Deze kamer bestaat niet meer.");
       }
       const v = kamer.vraag;
       const naam = kamer.teams[ik.tid].naam;
       sub.textContent = "";
-      if (!v) { getoondId = null; return toon(maak("div", naam, "team"), maak("p", "Jullie doen mee! Wacht op de volgende vraag."), afmeldKnop()); }
+      if (!v) { getoond = null; return toon(maak("div", naam, "team"), maak("p", "Jullie doen mee! Wacht op de volgende vraag."), afmeldKnop()); }
       const open = v.open !== false;
-      if (getoondId === v.id && getoondOpen === open) return; // niets veranderd: laat getypte tekst met rust
-      getoondId = v.id; getoondOpen = open;
       const eerder = kamer.antw && kamer.antw[v.id] && kamer.antw[v.id][ik.tid];
+      // Alleen opnieuw tekenen als er echt iets veranderd is: laat getypte tekst met rust.
+      // Bij een wachtvraag telt ook het eigen antwoord en de uitslag mee (dan wisselt het scherm naar wachten of goed/fout).
+      const nu = [v.id, open, v.wacht ? `${eerder ? eerder.w : ""}|${wijzig === v.id}|${v.uitslag ? v.uitslag.goed : ""}` : ""].join("~");
+      if (getoond === nu) return;
+      getoond = nu;
       const kop = [maak("div", naam, "team"), maak("p", v.tekst || "", "vraag")];
       if (!open) kop.push(maak("p", "Deze vraag is gesloten.", "melding"));
       const status = maak("p", eerder ? "Verstuurd ✓ Je mag het nog aanpassen." : "", "melding ok");
@@ -164,6 +183,7 @@
         if (knopEl) knopEl.disabled = !open;
       };
 
+      if (v.soort === "keuze" && v.wacht) return wachtVraag(v, naam, open, eerder);
       if (v.soort === "keuze") {
         const lijst = (v.opties && v.opties.length ? v.opties : ["", "", "", ""]);
         const uit = v.uitsluit && v.uitsluit[ik.tid];
@@ -221,6 +241,58 @@
       const knop = maak("button", "Versturen", "knop"); knop.disabled = !open;
       knop.onclick = () => { const w = veld.value.trim(); if (w) stuur(w, knop); };
       return toon(...kop, veld, rest, knop, status, afmeldKnop());
+    }
+
+    // Keuze met wachten (feitenronde): na het kiezen een wachtscherm, want het verhaal vertelt of het klopte.
+    // Na "Punten toekennen" op het bord komt de uitslag mee (v.uitslag.goed) en zie je hier goed of fout.
+    function wachtVraag(v, naam, open, eerder) {
+      const lijst = v.opties || [];
+      const titel = (l) => lijst[l.charCodeAt(0) - 65] || "";
+      const gekozen = eerder ? String(eerder.w) : "";
+      const team = maak("div", naam, "team");
+      const regel = (l) => { const r = maak("div", null, "gekozen"); r.append(maak("b", l), maak("span", titel(l))); return r; };
+      if (v.uitslag) {
+        const goed = v.uitslag.goed;
+        const kop = gekozen === goed ? [maak("p", "Goed!", "uitslag goed midden"), maak("p", "+1 punt", "ok midden")]
+          : [maak("p", gekozen ? "Helaas" : "Geen antwoord", "uitslag fout midden")];
+        const uitleg = maak("p", gekozen && gekozen !== goed ? `Jullie kozen ${gekozen}. De onzin was:` : "De onzin was:");
+        return toon(team, ...kop, uitleg, regel(goed), maak("p", "Wacht op de volgende vraag.", "klein"), afmeldKnop());
+      }
+      if (gekozen && wijzig !== v.id) {
+        const laden = maak("div", null, "laden"); laden.append(maak("i"), maak("i"), maak("i"));
+        const delen = [team, maak("p", "Antwoord ontvangen", "ok"), maak("p", "Jullie kozen als onzin:"), regel(gekozen), laden,
+          maak("p", "Luister naar het verhaal. Daarna zie je hier of het klopte.", "midden")];
+        if (open) {
+          const ander = maak("button", "Toch een ander antwoord kiezen", "link"); ander.type = "button";
+          ander.onclick = () => { wijzig = v.id; teken(); };
+          delen.push(ander);
+        }
+        return toon(...delen, afmeldKnop());
+      }
+      if (!open) return toon(team, maak("p", v.tekst || "", "vraag"), maak("p", "De antwoorden zijn dicht. Luister naar het verhaal.", "melding"), afmeldKnop());
+      const status = maak("p", "", "melding fout"); status.style.display = "none";
+      const wrap = maak("div", null, "keuzes");
+      lijst.forEach((tekst, i) => {
+        const l = String.fromCharCode(65 + i);
+        const b = maak("button", null, "keuze"); b.type = "button";
+        b.append(maak("b", l), maak("span", tekst || `Optie ${l}`));
+        b.setAttribute("aria-pressed", String(gekozen === l));
+        b.onclick = async () => {
+          wrap.querySelectorAll(".keuze").forEach((x) => { x.disabled = true; });
+          try {
+            const a = { w: l, t: Date.now() };
+            await Live.schrijf(code, `antw/${v.id}/${ik.tid}`, a);
+            // meteen het wachtscherm, niet wachten tot de kamer het terugmeldt
+            kamer.antw = kamer.antw || {}; kamer.antw[v.id] = kamer.antw[v.id] || {}; kamer.antw[v.id][ik.tid] = a;
+            wijzig = null; teken();
+          } catch (e) {
+            wrap.querySelectorAll(".keuze").forEach((x) => { x.disabled = false; });
+            status.textContent = "Versturen lukte niet. Probeer het nog een keer."; status.style.display = "";
+          }
+        };
+        wrap.append(b);
+      });
+      return toon(team, maak("p", v.tekst || "", "vraag"), wrap, status, afmeldKnop());
     }
 
     function luisterNaarKamer() {

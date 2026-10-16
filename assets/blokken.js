@@ -66,7 +66,9 @@ const Lesbord = (() => {
             `<span class="stempel ${o}">${it.onzin ? "Onzin" : "Feit"}</span></div>`;
         }).join("");
         const antwoord = b.antwoord ? `<div class="onthul antwoord-trigger b-antwoord"><span>${opmaak(b.antwoord)}</span></div>` : "";
-        return `<div class="b-stellingen"${stijl}>${kaarten}${antwoord}</div>`;
+        // Met een id kunnen teams met hun telefoon kiezen (zie spellen.js); zonder telefoons blijft het zoals hierboven.
+        const feiten = b.id ? ` data-feiten="${esc(JSON.stringify({ id: b.id, titels: items.map((it) => it.titel), onzin: items.findIndex((it) => it.onzin) }))}"` : "";
+        return `<div class="b-stellingen"${feiten}${stijl}>${kaarten}${antwoord}</div>`;
       }
       case "smaken": return `<div class="b-smaken"${stijl}>${(b.items || []).map((s) => `<span>${opmaak(s)}</span>`).join("")}</div>`;
       case "live": { // vraag naar de telefoons van de teams; de antwoorden verschijnen hier (zie live-host.js)

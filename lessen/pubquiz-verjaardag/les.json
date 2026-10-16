@@ -51,7 +51,7 @@
         },
         {
           "type": "klein",
-          "tekst": "Bespreek het in je team en schrijf de letter van de onzin op."
+          "tekst": "Bespreek het in je team en kies op je telefoon welke de onzin is."
         }
       ]
     },
@@ -68,6 +68,7 @@
         },
         {
           "type": "stellingen",
+          "id": "feit-reuzen-onder-de-grond",
           "items": [
             {
               "titel": "De zwam van Oregon"
@@ -83,7 +84,7 @@
           "antwoord": "**B** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams kiezen op hun telefoon welke de onzin is. Iedereen gekozen? Tik op 'Antwoorden dicht' en lees het verhaal voor. Tik daarna op 'Punten toekennen': de stempels verschijnen en de punten gaan naar het scorebord. Zonder telefoons: teams schrijven de letter op, tik op het scherm voor de stempels en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Ronde 2",
@@ -103,7 +104,7 @@
         },
         {
           "type": "klein",
-          "tekst": "Bespreek het in je team en schrijf de letter van de onzin op."
+          "tekst": "Bespreek het in je team en kies op je telefoon welke de onzin is."
         }
       ]
     },
@@ -120,6 +121,7 @@
         },
         {
           "type": "stellingen",
+          "id": "feit-mislukte-missies-gestolen-schatten",
           "items": [
             {
               "titel": "De ridder aan de kraan",
@@ -135,7 +137,7 @@
           "antwoord": "**A** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams kiezen op hun telefoon welke de onzin is. Iedereen gekozen? Tik op 'Antwoorden dicht' en lees het verhaal voor. Tik daarna op 'Punten toekennen': de stempels verschijnen en de punten gaan naar het scorebord. Zonder telefoons: teams schrijven de letter op, tik op het scherm voor de stempels en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Ronde 3",
@@ -155,7 +157,7 @@
         },
         {
           "type": "klein",
-          "tekst": "Bespreek het in je team en schrijf de letter van de onzin op."
+          "tekst": "Bespreek het in je team en kies op je telefoon welke de onzin is."
         }
       ]
     },
@@ -172,6 +174,7 @@
         },
         {
           "type": "stellingen",
+          "id": "feit-muziek-uit-de-oertijd",
           "items": [
             {
               "titel": "De fluit van gierenbot"
@@ -187,7 +190,7 @@
           "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams kiezen op hun telefoon welke de onzin is. Iedereen gekozen? Tik op 'Antwoorden dicht' en lees het verhaal voor. Tik daarna op 'Punten toekennen': de stempels verschijnen en de punten gaan naar het scorebord. Zonder telefoons: teams schrijven de letter op, tik op het scherm voor de stempels en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Ronde 4",
@@ -207,7 +210,7 @@
         },
         {
           "type": "klein",
-          "tekst": "Bespreek het in je team en schrijf de letter van de onzin op."
+          "tekst": "Bespreek het in je team en kies op je telefoon welke de onzin is."
         }
       ]
     },
@@ -224,6 +227,7 @@
         },
         {
           "type": "stellingen",
+          "id": "feit-gif-geheugen-en-mythes",
           "items": [
             {
               "titel": "De lemmingen die springen",
@@ -239,7 +243,7 @@
           "antwoord": "**A** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams kiezen op hun telefoon welke de onzin is. Iedereen gekozen? Tik op 'Antwoorden dicht' en lees het verhaal voor. Tik daarna op 'Punten toekennen': de stempels verschijnen en de punten gaan naar het scorebord. Zonder telefoons: teams schrijven de letter op, tik op het scherm voor de stempels en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Ronde 5",
@@ -259,7 +263,7 @@
         },
         {
           "type": "klein",
-          "tekst": "Bespreek het in je team en schrijf de letter van de onzin op."
+          "tekst": "Bespreek het in je team en kies op je telefoon welke de onzin is."
         }
       ]
     },
@@ -276,6 +280,7 @@
         },
         {
           "type": "stellingen",
+          "id": "feit-overhoren-wachten-en-suiker",
           "items": [
             {
               "titel": "Zelf overhoren wint"
@@ -291,7 +296,7 @@
           "antwoord": "**B** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams kiezen op hun telefoon welke de onzin is. Iedereen gekozen? Tik op 'Antwoorden dicht' en lees het verhaal voor. Tik daarna op 'Punten toekennen': de stempels verschijnen en de punten gaan naar het scorebord. Zonder telefoons: teams schrijven de letter op, tik op het scherm voor de stempels en geef de punten via 'Punten geven'."
     },
     {
       "fase": "Proefronde",
@@ -1628,7 +1633,7 @@
         },
         {
           "type": "klein",
-          "tekst": "Zelfde spel: bespreek het in je team en schrijf de letter van de onzin op."
+          "tekst": "Zelfde spel: bespreek het in je team en kies op je telefoon welke de onzin is."
         }
       ],
       "notitie": "Extra feitenkaarten: 6 kaarten, ongeveer 25 minuten. Eerder stoppen? Tik onderaan op het schermnummer en kies 'Hoe verder?' of 'Uitslag'."
@@ -1646,6 +1651,7 @@
         },
         {
           "type": "stellingen",
+          "id": "feit-planten-en-insecten-met-een-kalender",
           "items": [
             {
               "titel": "De drinkfles van de woestijn",
@@ -1661,7 +1667,7 @@
           "antwoord": "**A** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'. Eerder stoppen? Tik onderaan op het schermnummer en kies 'Hoe verder?' of 'Uitslag'."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams kiezen op hun telefoon welke de onzin is. Iedereen gekozen? Tik op 'Antwoorden dicht' en lees het verhaal voor. Tik daarna op 'Punten toekennen': de stempels verschijnen en de punten gaan naar het scorebord. Zonder telefoons: teams schrijven de letter op, tik op het scherm voor de stempels en geef de punten via 'Punten geven'. Eerder stoppen? Tik onderaan op het schermnummer en kies 'Hoe verder?' of 'Uitslag'."
     },
     {
       "fase": "Extra kaart 2 · Geschiedenis",
@@ -1676,6 +1682,7 @@
         },
         {
           "type": "stellingen",
+          "id": "feit-als-het-weer-de-geschiedenis-schrijft",
           "items": [
             {
               "titel": "Het jaar zonder zomer"
@@ -1691,7 +1698,7 @@
           "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'. Eerder stoppen? Tik onderaan op het schermnummer en kies 'Hoe verder?' of 'Uitslag'."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams kiezen op hun telefoon welke de onzin is. Iedereen gekozen? Tik op 'Antwoorden dicht' en lees het verhaal voor. Tik daarna op 'Punten toekennen': de stempels verschijnen en de punten gaan naar het scorebord. Zonder telefoons: teams schrijven de letter op, tik op het scherm voor de stempels en geef de punten via 'Punten geven'. Eerder stoppen? Tik onderaan op het schermnummer en kies 'Hoe verder?' of 'Uitslag'."
     },
     {
       "fase": "Extra kaart 3 · Muziek",
@@ -1706,6 +1713,7 @@
         },
         {
           "type": "stellingen",
+          "id": "feit-eeuwige-stukken-en-eerste-keren",
           "items": [
             {
               "titel": "Het orgelstuk van 639 jaar"
@@ -1721,7 +1729,7 @@
           "antwoord": "**B** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'. Eerder stoppen? Tik onderaan op het schermnummer en kies 'Hoe verder?' of 'Uitslag'."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams kiezen op hun telefoon welke de onzin is. Iedereen gekozen? Tik op 'Antwoorden dicht' en lees het verhaal voor. Tik daarna op 'Punten toekennen': de stempels verschijnen en de punten gaan naar het scorebord. Zonder telefoons: teams schrijven de letter op, tik op het scherm voor de stempels en geef de punten via 'Punten geven'. Eerder stoppen? Tik onderaan op het schermnummer en kies 'Hoe verder?' of 'Uitslag'."
     },
     {
       "fase": "Extra kaart 4 · Dieren",
@@ -1736,6 +1744,7 @@
         },
         {
           "type": "stellingen",
+          "id": "feit-slimme-trucs-van-de-natuur",
           "items": [
             {
               "titel": "De octopus die zijn RNA bijwerkt"
@@ -1751,7 +1760,7 @@
           "antwoord": "**C** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'. Eerder stoppen? Tik onderaan op het schermnummer en kies 'Hoe verder?' of 'Uitslag'."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams kiezen op hun telefoon welke de onzin is. Iedereen gekozen? Tik op 'Antwoorden dicht' en lees het verhaal voor. Tik daarna op 'Punten toekennen': de stempels verschijnen en de punten gaan naar het scorebord. Zonder telefoons: teams schrijven de letter op, tik op het scherm voor de stempels en geef de punten via 'Punten geven'. Eerder stoppen? Tik onderaan op het schermnummer en kies 'Hoe verder?' of 'Uitslag'."
     },
     {
       "fase": "Extra kaart 5 · Dieren",
@@ -1766,6 +1775,7 @@
         },
         {
           "type": "stellingen",
+          "id": "feit-verrassende-vrienden-en-vijanden",
           "items": [
             {
               "titel": "De oorworm in je oor",
@@ -1781,7 +1791,7 @@
           "antwoord": "**A** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'. Eerder stoppen? Tik onderaan op het schermnummer en kies 'Hoe verder?' of 'Uitslag'."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams kiezen op hun telefoon welke de onzin is. Iedereen gekozen? Tik op 'Antwoorden dicht' en lees het verhaal voor. Tik daarna op 'Punten toekennen': de stempels verschijnen en de punten gaan naar het scorebord. Zonder telefoons: teams schrijven de letter op, tik op het scherm voor de stempels en geef de punten via 'Punten geven'. Eerder stoppen? Tik onderaan op het schermnummer en kies 'Hoe verder?' of 'Uitslag'."
     },
     {
       "fase": "Extra kaart 6 · Onderwijs en ontwikkeling",
@@ -1796,6 +1806,7 @@
         },
         {
           "type": "stellingen",
+          "id": "feit-wat-we-dachten-te-weten-over-leren",
           "items": [
             {
               "titel": "Het omgekeerde Flynn-effect"
@@ -1811,7 +1822,7 @@
           "antwoord": "**B** is de onzin"
         }
       ],
-      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams schrijven de letter van de onzin op. Tik om het antwoord te tonen, lees dan het verhaal voor en geef de punten via 'Punten geven'. Eerder stoppen? Tik onderaan op het schermnummer en kies 'Hoe verder?' of 'Uitslag'."
+      "notitie": "Lees de drie stellingen voor (zie het voorbereidingsformulier). Teams kiezen op hun telefoon welke de onzin is. Iedereen gekozen? Tik op 'Antwoorden dicht' en lees het verhaal voor. Tik daarna op 'Punten toekennen': de stempels verschijnen en de punten gaan naar het scorebord. Zonder telefoons: teams schrijven de letter op, tik op het scherm voor de stempels en geef de punten via 'Punten geven'. Eerder stoppen? Tik onderaan op het schermnummer en kies 'Hoe verder?' of 'Uitslag'."
     },
     {
       "fase": "Hoe verder?",
@@ -2003,7 +2014,7 @@
     "benodigdheden": [
       "Laptop met Lesbord op het grote scherm, en internet",
       "Eén telefoon per team (om de QR-code te scannen)",
-      "Pen en briefjes per team (voor de feitenrondes)",
+      "Pen en briefjes per team (alleen nodig als de telefoons niet werken)",
       "Benediktiner Weissbier, Texels Skuumkoppe, Tripel Karmeliet, Guinness en The Glenlivet Founder's Reserve",
       "Genummerde proefglaasjes, water en crackers"
     ],
@@ -2016,7 +2027,7 @@
       {
         "tijd": "20 min",
         "fase": "Feitenrondes",
-        "wat": "Vijf thema's, één kaart per thema: natuur, geschiedenis, muziek, dieren, onderwijs en ontwikkeling. Elke kaart: twee feiten en één onzin, met een verhaal na het raden."
+        "wat": "Vijf thema's, één kaart per thema: natuur, geschiedenis, muziek, dieren, onderwijs en ontwikkeling. Elke kaart: twee feiten en één onzin. Teams kiezen op hun telefoon welke de onzin is; na het verhaal ken je de punten toe."
       },
       {
         "tijd": "35 min",
@@ -2057,11 +2068,13 @@
       {
         "kop": "Zo werkt een kaart",
         "items": [
-          "Lees de drie stellingen voor, A, B en C (de teksten staan hieronder bij elke kaart).",
-          "Op het bord staan alleen de korte titels. Elk team schrijft de letter van de onzin op een briefje.",
-          "Tik op het scherm: de stempels FEIT en ONZIN verschijnen.",
-          "Lees het verhaal voor na het raden.",
-          "Geef de punten: tik op \"Punten geven\" en vink de teams aan die het goed hadden."
+          "Lees de drie stellingen voor, A, B en C (de teksten staan hieronder bij elke kaart). Op het bord staan alleen de korte titels.",
+          "Elk team kiest op de telefoon welke de onzin is. Daarna zien ze een wachtscherm. Zolang de antwoorden open zijn, mogen ze nog wisselen.",
+          "Staat er bij elk team \"gekozen\"? Tik op **Antwoorden dicht**.",
+          "Lees het verhaal voor: daarin hoor je welke de onzin was.",
+          "Tik op **Punten toekennen**: de stempels FEIT en ONZIN verschijnen, elk team dat goed koos krijgt 1 punt in het scorebord, en op de telefoons staat of het goed was.",
+          "Kwam er een team te laat? Tik op **Toch weer open** zolang je nog geen punten hebt toegekend.",
+          "Zonder telefoons: elk team schrijft de letter op een briefje. Tik op het scherm voor de stempels en geef de punten via \"Punten geven\"."
         ]
       },
       {

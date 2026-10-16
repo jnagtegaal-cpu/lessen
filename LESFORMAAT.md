@@ -69,7 +69,7 @@ Een scherm is 1600 × 900 en schaalt mee op elk bord.
 | `schrijfvak` | `label` | Gestippeld vak om in te schrijven |
 | `kolommen` | `kolommen` (lijst van lijsten met blokken), `verhouding` | Naast elkaar, bijv. `["2fr","1fr"]` |
 | `html` | `html` | Maatwerk, zoals een getallenlijn of liniaal in SVG |
-| `stellingen` | `items` (`titel`, `onzin`), `antwoord` | Quizkaart met A, B, C. Na een tik komt het antwoord en krijgt elke kaart een stempel *feit* of *onzin* |
+| `stellingen` | `items` (`titel`, `onzin`), `antwoord`, `id` | Quizkaart met A, B, C. Na een tik komt het antwoord en krijgt elke kaart een stempel *feit* of *onzin*. Met een `id` en telefoons (zie Live) kiezen teams op hun telefoon: **Antwoorden dicht** → verhaal → **Punten toekennen** (stempels, 1 punt per goed antwoord, en goed of fout op de telefoon) |
 | `smaken` | `items` | Smaken als kaartjes (proefronde), meestal met `"verborgen": true` |
 | `keuze` | `items` (`tekst`, `uitleg`, `naar`, `hoofd`) | Grote knoppen die naar een ander scherm springen, zie "Splitsen" |
 | `weetjes` | `items`, `kop` | Weetjes op scheve briefjes met plakband, om zelf te lezen (bijv. naast een `proef`-blok in `kolommen`) |
