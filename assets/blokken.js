@@ -167,6 +167,8 @@ const Lesbord = (() => {
     if (/^[a-z-]+$/.test(thema || "")) k.push(`thema-${thema}`);
     if (scherm.achtergrond && scherm.achtergrond !== "leeg") k.push(`achtergrond-${scherm.achtergrond}`);
     if (scherm.uitlijning === "midden") k.push("b-titeldia");
+    if (scherm.ruim) k.push("dia-ruim");
+    if (scherm.lesdoelLinks) k.push("lesdoel-links");
     return k.join(" ");
   };
 
