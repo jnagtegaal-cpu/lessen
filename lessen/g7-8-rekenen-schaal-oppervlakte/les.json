@@ -63,12 +63,12 @@
               },
               {
                 "type": "groot",
-                "tekst": "1000 cm = … m",
+                "tekst": "250 cm = … m",
                 "stijl": "font-size:56px;"
               },
               {
                 "type": "groot",
-                "tekst": "1000 cm = **10 m**",
+                "tekst": "250 cm = **2,5 m**",
                 "verborgen": true,
                 "stijl": "font-size:56px;color:#2f9e63"
               }
@@ -134,7 +134,7 @@
     {
       "fase": "Ik doe voor",
       "achtergrond": "leeg",
-      "notitie": "Ik doe voor en denk hardop, met tussendoor beurten (wij). De kinderen doen mee in hun schrift. Ik werk uit op het ruitjespapier. Antwoorden: 1400 en 1000 cm → 14 en 10 m → 140 m².",
+      "notitie": "Ik doe voor en denk hardop. De kinderen doen mee in hun schrift. Ik werk uit op het ruitjespapier. Antwoorden: 1400 en 1000 cm → 14 en 10 m → 140 m².",
       "blokken": [
         {
           "type": "kolommen",
@@ -154,7 +154,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 44px,44px 44px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,32px 64px,32px 64px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
@@ -199,7 +199,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 44px,44px 44px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,32px 64px,32px 64px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
@@ -224,7 +224,7 @@
     {
       "fase": "Jullie samen",
       "achtergrond": "leeg",
-      "notitie": "Tweetallen, één schrift. Gangkant doet stap 1, raamkant stap 2, samen stap 3. Gangkant begint en geeft het schrift door. Tik het blok met de taakverdeling tevoorschijn. Antwoorden: 600 en 500 cm → 6 en 5 m → 30 m².",
+      "notitie": "Tweetallen, één schrift. Gangkant doet stap 1, raamkant stap 2, samen stap 3. Gangkant begint en geeft het schrift door. Raamkant controleert eerst stap 1, ze zijn samen verantwoordelijk. Tik het blok met de taakverdeling tevoorschijn. Antwoorden: 600 en 500 cm → 6 en 5 m → 30 m².",
       "blokken": [
         {
           "type": "kolommen",
@@ -244,7 +244,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 44px,44px 44px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,32px 64px,32px 64px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
@@ -264,7 +264,7 @@
               {
                 "type": "html",
                 "verborgen": true,
-                "html": "<div style=\"margin-top:14px;background:#fff6e0;border:4px dashed #d9822b;border-radius:18px;padding:12px 18px;font-size:26px;line-height:1.35\"><div style=\"font-weight:800;margin-bottom:4px\">👥 Samen in één schrift</div><b>Gangkant</b> stap 1 · <b>Raamkant</b> stap 2<br><b>Samen</b> stap 3<br>Gangkant begint en geeft het schrift door.</div>"
+                "html": "<div style=\"margin-top:14px;background:#fff6e0;border:4px dashed #d9822b;border-radius:18px;padding:12px 18px;font-size:26px;line-height:1.35\"><div style=\"font-weight:800;margin-bottom:2px\">👥 Eén schrift, gangkant begint</div>1. <b>Gangkant</b> · 2. <b>Raamkant</b> · 3. <b>Samen</b><div style=\"margin-top:6px;font-weight:700;color:#b5541c\">⚠️ Raamkant controleert eerst stap 1. Jullie zijn samen verantwoordelijk!</div></div>"
               }
             ]
           ]
@@ -294,7 +294,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 44px,44px 44px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,32px 64px,32px 64px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
@@ -339,7 +339,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 44px,44px 44px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,32px 64px,32px 64px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
@@ -384,7 +384,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,44px 44px,44px 44px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,32px 64px,32px 64px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ],
             [
