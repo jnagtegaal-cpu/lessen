@@ -1,0 +1,63 @@
+{
+  "id": "g7-8-rekenen-delen-door-kommagetal",
+  "titel": "Delen door een kommagetal",
+  "groep": "7-8",
+  "vak": "Rekenen",
+  "onderwerp": "Kommagetallen",
+  "samenvatting": "Eén scherm: een kommagetal delen door een kommagetal in twee stappen, met drie sommen en ruitjespapier.",
+  "trefwoorden": [
+    "kommagetal",
+    "delen",
+    "deelsom",
+    "vermenigvuldigen",
+    "handig getal"
+  ],
+  "gemaakt": "2026-10-26",
+  "lesdoel": "Ik kan een kommagetal delen door een kommagetal.",
+  "lesdoelInHoek": true,
+  "schermen": [
+    {
+      "fase": "Delen door een kommagetal",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Stappen eerst verborgen, tik ze tevoorschijn. Antwoorden: 3,6 : 0,09 → 360 : 9 = 40. 4,8 : 2,4 → 48 : 24 = 2. 3,5 : 0,25 → 350 : 25 = 14.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Delen door een kommagetal"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Vermenigvuldig **beide kanten** met een **handig getal**.",
+                  "Reken de **deelsom** uit."
+                ],
+                "stijl": "font-size:.75em",
+                "stapsgewijs": true
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;flex-direction:column;gap:12px\"><div style=\"font-size:52px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 22px;width:fit-content;letter-spacing:.02em\">3,6 : 0,09 =</div><div style=\"font-size:52px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 22px;width:fit-content;letter-spacing:.02em\">4,8 : 2,4 =</div><div style=\"font-size:52px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 22px;width:fit-content;letter-spacing:.02em\">3,5 : 0,25 =</div></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

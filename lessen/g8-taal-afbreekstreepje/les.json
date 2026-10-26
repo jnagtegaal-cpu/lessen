@@ -155,7 +155,7 @@
       "achtergrond": "leeg",
       "ruim": true,
       "lesdoelLinks": true,
-      "notitie": "Ik doe voor en denk hardop, bij elk woord de stappen langs. Antwoorden: reken-machine (1), waar-heid (2), lol-ly (3).",
+      "notitie": "Ik doe voor en denk hardop, bij elk woord de stappen langs. Antwoorden: reken-machine (stap 1), waar-heid (stap 2).",
       "blokken": [
         {
           "type": "kolommen",
@@ -175,7 +175,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">rekenmachine</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">waarheid</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">lolly</span></div>"
+                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">rekenmachine</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">waarheid</span></div>"
               },
               {
                 "type": "stappen",
@@ -209,7 +209,7 @@
       "achtergrond": "leeg",
       "ruim": true,
       "lesdoelLinks": true,
-      "notitie": "Samen, stap voor stap. Antwoorden: her-lezen (2), don-ker (4), do-cent (5).",
+      "notitie": "Samen, stap voor stap. Antwoorden: lol-ly (stap 3), don-ker (stap 4).",
       "blokken": [
         {
           "type": "kolommen",
@@ -229,7 +229,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">herlezen</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">donker</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">docent</span></div>"
+                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">lolly</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">donker</span></div>"
               },
               {
                 "type": "stappen",
@@ -263,7 +263,7 @@
       "achtergrond": "leeg",
       "ruim": true,
       "lesdoelLinks": true,
-      "notitie": "Tweetallen. Antwoorden: winkel-centrum (1), her-rie (3), slin-ger (4).",
+      "notitie": "Tweetallen. Antwoorden: do-cent (stap 5), her-lezen (stap 2).",
       "blokken": [
         {
           "type": "kolommen",
@@ -283,7 +283,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">winkelcentrum</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">herrie</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">slinger</span></div>"
+                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">docent</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">herlezen</span></div>"
               },
               {
                 "type": "stappen",
@@ -317,7 +317,7 @@
       "achtergrond": "leeg",
       "ruim": true,
       "lesdoelLinks": true,
-      "notitie": "Ieder voor zich. Antwoorden: diamant-jes (2), wan-neer (3), compo-nist (5).",
+      "notitie": "Ieder voor zich. Antwoorden: winkel-centrum (stap 1), slin-ger (stap 4).",
       "blokken": [
         {
           "type": "kolommen",
@@ -337,7 +337,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">diamantjes</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">wanneer</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">componist</span></div>"
+                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">winkelcentrum</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">slinger</span></div>"
               },
               {
                 "type": "stappen",
@@ -371,7 +371,7 @@
       "achtergrond": "leeg",
       "ruim": true,
       "lesdoelLinks": true,
-      "notitie": "Antwoorden: bagage-drager (1), mense-lijk (2), zan-geres (4).",
+      "notitie": "Antwoorden: her-rie (stap 3), compo-nist (stap 5).",
       "blokken": [
         {
           "type": "kolommen",
@@ -391,7 +391,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">bagagedrager</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">menselijk</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">zangeres</span></div>"
+                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">herrie</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">componist</span></div>"
               },
               {
                 "type": "stappen",

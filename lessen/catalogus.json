@@ -2,12 +2,12 @@
   "lessen": [
     {
       "id": "g7-8-goedemorgen-dinsdag",
-      "titel": "Goedemorgen: dagschema dinsdag 13 oktober",
+      "titel": "Goedemorgen: dagschema dinsdag 27 oktober",
       "groep": "7-8",
       "vak": "Dagopening",
       "onderwerp": "Dagschema",
       "duur": 10,
-      "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema en een raadsel bij binnenkomst.",
+      "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema en een welkom: Chromebook pakken en plek netjes.",
       "trefwoorden": [
         "goedemorgen",
         "dagschema",
@@ -86,6 +86,22 @@
         "stappenplan"
       ],
       "gemaakt": "2026-10-13"
+    },
+    {
+      "id": "g7-8-rekenen-delen-door-kommagetal",
+      "titel": "Delen door een kommagetal",
+      "groep": "7-8",
+      "vak": "Rekenen",
+      "onderwerp": "Kommagetallen",
+      "samenvatting": "Eén scherm: een kommagetal delen door een kommagetal in twee stappen, met drie sommen en ruitjespapier.",
+      "trefwoorden": [
+        "kommagetal",
+        "delen",
+        "deelsom",
+        "vermenigvuldigen",
+        "handig getal"
+      ],
+      "gemaakt": "2026-10-26"
     },
     {
       "id": "g7-8-rekenen-schaal-oppervlakte",
@@ -246,6 +262,26 @@
       ],
       "gemaakt": "2026-10-12",
       "pdfs": false
+    },
+    {
+      "id": "g8-taal-afbreekstreepje",
+      "titel": "Een woord afbreken met een afbreekstreepje",
+      "groep": "8",
+      "vak": "Taal",
+      "onderwerp": "Afbreekstreepje",
+      "edi": true,
+      "samenvatting": "Een woord op de goede plek afbreken, met een stappenplan van vijf vragen in vaste volgorde.",
+      "trefwoorden": [
+        "afbreekstreepje",
+        "afbreken",
+        "samenstelling",
+        "voorvoegsel",
+        "achtervoegsel",
+        "lettergrepen",
+        "taalbeschouwing",
+        "leestekens"
+      ],
+      "gemaakt": "2026-10-26"
     },
     {
       "id": "pubquiz-verjaardag",
