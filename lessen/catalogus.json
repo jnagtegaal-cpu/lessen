@@ -248,6 +248,26 @@
       "pdfs": false
     },
     {
+      "id": "g8-taal-afbreekstreepje",
+      "titel": "Een woord afbreken met een afbreekstreepje",
+      "groep": "8",
+      "vak": "Taal",
+      "onderwerp": "Afbreekstreepje",
+      "edi": true,
+      "samenvatting": "Een woord op de goede plek afbreken, met een stappenplan van vijf vragen in vaste volgorde.",
+      "trefwoorden": [
+        "afbreekstreepje",
+        "afbreken",
+        "samenstelling",
+        "voorvoegsel",
+        "achtervoegsel",
+        "lettergrepen",
+        "taalbeschouwing",
+        "leestekens"
+      ],
+      "gemaakt": "2026-10-26"
+    },
+    {
       "id": "pubquiz-verjaardag",
       "titel": "Familie-pubquiz",
       "groep": "Volwassenen",

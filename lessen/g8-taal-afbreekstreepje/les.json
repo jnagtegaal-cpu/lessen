@@ -1,0 +1,424 @@
+{
+  "id": "g8-taal-afbreekstreepje",
+  "titel": "Een woord afbreken met een afbreekstreepje",
+  "groep": "8",
+  "vak": "Taal",
+  "onderwerp": "Afbreekstreepje",
+  "edi": true,
+  "samenvatting": "Een woord op de goede plek afbreken, met een stappenplan van vijf vragen in vaste volgorde.",
+  "trefwoorden": [
+    "afbreekstreepje",
+    "afbreken",
+    "samenstelling",
+    "voorvoegsel",
+    "achtervoegsel",
+    "lettergrepen",
+    "taalbeschouwing",
+    "leestekens"
+  ],
+  "gemaakt": "2026-10-26",
+  "lesdoel": "Ik kan een woord op de goede plek afbreken met een afbreekstreepje.",
+  "lesdoelInHoek": true,
+  "schermen": [
+    {
+      "fase": "Activeren voorkennis",
+      "achtergrond": "leeg",
+      "lesdoelVerbergen": true,
+      "notitie": "Op het wisbordje. 1: in lettergrepen verdelen. 2: samenstelling, voorvoegsel of achtervoegsel?",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "1. Verdeel in lettergrepen."
+              },
+              {
+                "type": "groot",
+                "tekst": "boterham",
+                "stijl": "font-size:56px;"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"font-size:40px;font-weight:800;color:#2f9e63;text-align:center\">bo · ter · ham</div>"
+              },
+              {
+                "type": "groot",
+                "tekst": "winkelwagen",
+                "stijl": "font-size:56px;"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"font-size:40px;font-weight:800;color:#2f9e63;text-align:center\">win · kel · wa · gen</div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "2. Samenstelling, voorvoegsel of achtervoegsel?"
+              },
+              {
+                "type": "groot",
+                "tekst": "fietspad",
+                "stijl": "font-size:48px;"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"font-size:40px;font-weight:800;color:#2f9e63;text-align:center\">samenstelling: fiets + pad</div>"
+              },
+              {
+                "type": "groot",
+                "tekst": "betalen",
+                "stijl": "font-size:48px;"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"font-size:40px;font-weight:800;color:#2f9e63;text-align:center\">voorvoegsel: be</div>"
+              },
+              {
+                "type": "groot",
+                "tekst": "vriendelijk",
+                "stijl": "font-size:48px;"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"font-size:40px;font-weight:800;color:#2f9e63;text-align:center\">achtervoegsel: lijk</div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Lesdoel",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "notitie": "Ik lees voor, de klas leest mee, maatjes lezen het aan elkaar voor, dan een willekeurige beurt.",
+      "blokken": [
+        {
+          "type": "html",
+          "html": "<div style=\"font-size:72px;line-height:1.25;text-align:center;font-weight:700\">Ik kan een woord op de goede plek <span style=\"color:#1f6fd1\">afbreken</span><br>met een <span style=\"color:#d9822b\">afbreekstreepje</span>.</div><div style=\"margin-top:24px;text-align:center;font-size:26px;color:#5b6b63\"><span style=\"color:#d9822b;font-weight:700\">oranje</span> = begrip · <span style=\"color:#1f6fd1;font-weight:700\">blauw</span> = vaardigheid</div>"
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — begrip: afbreekstreepje",
+      "achtergrond": "leeg",
+      "notitie": "Twee keer dezelfde tekst. Welke leest makkelijker, en waarom? Kort overleg met het maatje. Daarna de omschrijving tevoorschijn tikken.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:30px;font-weight:800;margin-bottom:6px\">Tekst 1</div><div style=\"border:3px solid #d6453d;border-radius:16px;padding:14px 22px;font-size:27px;line-height:1.45;white-space:nowrap;width:fit-content;background:#fff\">Op zaterdag gingen we naar het zw-<br>embad. Mijn broertje sprong van de duikp-<br>lank. Daarna aten we een lekker ij-<br>sje op het terras.</div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:30px;font-weight:800;margin:10px 0 6px\">Tekst 2</div><div style=\"border:3px solid #2f9e63;border-radius:16px;padding:14px 22px;font-size:27px;line-height:1.45;white-space:nowrap;width:fit-content;background:#fff\">Op zaterdag gingen we naar het zwem-<br>bad. Mijn broertje sprong van de duik-<br>plank. Daarna aten we een lekker ijs-<br>je op het terras.</div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:18px;padding:18px 22px;font-size:30px;line-height:1.4\"><div style=\"font-weight:800;margin-bottom:4px\">👥 Overleg met je maatje</div>Welke tekst leest makkelijker?<br>Leg uit <b>waarom</b>.</div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"margin-top:22px;background:#eef7f1;border-radius:18px;padding:20px 24px;font-size:30px;line-height:1.4\"><div style=\"font-size:40px;font-weight:800;color:#d9822b\">afbreek-<br>streepje</div><b>Wat?</b> Een kort streepje aan het eind van een regel.<br><b>Waarom?</b> Past een woord niet meer, dan schrijf je het tweede deel op de volgende regel. Op de goede plek blijft het woord goed leesbaar.</div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Ik doe voor",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Ik doe voor en denk hardop, bij elk woord de stappen langs. Antwoorden: reken-machine (stap 1), waar-heid (stap 2).",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Ik doe voor"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:30px;font-weight:700\">Breek af op de goede plek.</div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">rekenmachine</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">waarheid</span></div>"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Is het een **samenstelling**? Zet het streepje **tussen de twee woorden**.",
+                  "Heeft het een **voorvoegsel** of **achtervoegsel**? Zet het streepje **erna** of **ervoor** (niet bij -ig).",
+                  "Staan er **twee dezelfde medeklinkers** naast elkaar? Zet het streepje **ertussen**.",
+                  "Staat er **ng** of **nk** in? Zet het streepje **tussen de n en de g of k**.",
+                  "Geen van deze? Zet het streepje **tussen de lettergrepen**."
+                ],
+                "stijl": "font-size:.56em",
+                "stapsgewijs": true
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:24px;font-weight:700;color:#b5541c;margin-top:2px\">⚠️ Let op: één letter staat nooit alleen.</div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),repeating-linear-gradient(to bottom,transparent 0 18px,#9fb8cf 18px 19.5px,transparent 19.5px 60px,#9fb8cf 60px 61.5px,#eef4fa 61.5px 88px,#9fb8cf 88px 89.5px,transparent 89.5px 130px,#9fb8cf 130px 131.5px,transparent 131.5px 134px);background-repeat:no-repeat,repeat\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Wij samen",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Samen, stap voor stap. Antwoorden: lol-ly (stap 3), don-ker (stap 4).",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Wij samen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:30px;font-weight:700\">Breek af op de goede plek.</div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">lolly</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">donker</span></div>"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Is het een **samenstelling**? Zet het streepje **tussen de twee woorden**.",
+                  "Heeft het een **voorvoegsel** of **achtervoegsel**? Zet het streepje **erna** of **ervoor** (niet bij -ig).",
+                  "Staan er **twee dezelfde medeklinkers** naast elkaar? Zet het streepje **ertussen**.",
+                  "Staat er **ng** of **nk** in? Zet het streepje **tussen de n en de g of k**.",
+                  "Geen van deze? Zet het streepje **tussen de lettergrepen**."
+                ],
+                "stijl": "font-size:.56em",
+                "stapsgewijs": true
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:24px;font-weight:700;color:#b5541c;margin-top:2px\">⚠️ Let op: één letter staat nooit alleen.</div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),repeating-linear-gradient(to bottom,transparent 0 18px,#9fb8cf 18px 19.5px,transparent 19.5px 60px,#9fb8cf 60px 61.5px,#eef4fa 61.5px 88px,#9fb8cf 88px 89.5px,transparent 89.5px 130px,#9fb8cf 130px 131.5px,transparent 131.5px 134px);background-repeat:no-repeat,repeat\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Jullie samen",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Tweetallen. Antwoorden: do-cent (stap 5), her-lezen (stap 2).",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Jullie samen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:30px;font-weight:700\">Breek af op de goede plek.</div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">docent</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">herlezen</span></div>"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Is het een **samenstelling**? Zet het streepje **tussen de twee woorden**.",
+                  "Heeft het een **voorvoegsel** of **achtervoegsel**? Zet het streepje **erna** of **ervoor** (niet bij -ig).",
+                  "Staan er **twee dezelfde medeklinkers** naast elkaar? Zet het streepje **ertussen**.",
+                  "Staat er **ng** of **nk** in? Zet het streepje **tussen de n en de g of k**.",
+                  "Geen van deze? Zet het streepje **tussen de lettergrepen**."
+                ],
+                "stijl": "font-size:.56em",
+                "stapsgewijs": true
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:24px;font-weight:700;color:#b5541c;margin-top:2px\">⚠️ Let op: één letter staat nooit alleen.</div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),repeating-linear-gradient(to bottom,transparent 0 18px,#9fb8cf 18px 19.5px,transparent 19.5px 60px,#9fb8cf 60px 61.5px,#eef4fa 61.5px 88px,#9fb8cf 88px 89.5px,transparent 89.5px 130px,#9fb8cf 130px 131.5px,transparent 131.5px 134px);background-repeat:no-repeat,repeat\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Jij alleen",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Ieder voor zich. Antwoorden: winkel-centrum (stap 1), slin-ger (stap 4).",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Jij alleen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:30px;font-weight:700\">Breek af op de goede plek.</div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">winkelcentrum</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">slinger</span></div>"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Is het een **samenstelling**? Zet het streepje **tussen de twee woorden**.",
+                  "Heeft het een **voorvoegsel** of **achtervoegsel**? Zet het streepje **erna** of **ervoor** (niet bij -ig).",
+                  "Staan er **twee dezelfde medeklinkers** naast elkaar? Zet het streepje **ertussen**.",
+                  "Staat er **ng** of **nk** in? Zet het streepje **tussen de n en de g of k**.",
+                  "Geen van deze? Zet het streepje **tussen de lettergrepen**."
+                ],
+                "stijl": "font-size:.56em",
+                "stapsgewijs": true
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:24px;font-weight:700;color:#b5541c;margin-top:2px\">⚠️ Let op: één letter staat nooit alleen.</div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),repeating-linear-gradient(to bottom,transparent 0 18px,#9fb8cf 18px 19.5px,transparent 19.5px 60px,#9fb8cf 60px 61.5px,#eef4fa 61.5px 88px,#9fb8cf 88px 89.5px,transparent 89.5px 130px,#9fb8cf 130px 131.5px,transparent 131.5px 134px);background-repeat:no-repeat,repeat\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Verlengde instructie",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Antwoorden: her-rie (stap 3), compo-nist (stap 5).",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Verlengde instructie"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:30px;font-weight:700\">Breek af op de goede plek.</div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;gap:14px;flex-wrap:wrap\"><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">herrie</span><span style=\"font-size:40px;font-weight:800;background:#eef7f1;border-radius:12px;padding:6px 18px\">componist</span></div>"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Is het een **samenstelling**? Zet het streepje **tussen de twee woorden**.",
+                  "Heeft het een **voorvoegsel** of **achtervoegsel**? Zet het streepje **erna** of **ervoor** (niet bij -ig).",
+                  "Staan er **twee dezelfde medeklinkers** naast elkaar? Zet het streepje **ertussen**.",
+                  "Staat er **ng** of **nk** in? Zet het streepje **tussen de n en de g of k**.",
+                  "Geen van deze? Zet het streepje **tussen de lettergrepen**."
+                ],
+                "stijl": "font-size:.56em",
+                "stapsgewijs": true
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:24px;font-weight:700;color:#b5541c;margin-top:2px\">⚠️ Let op: één letter staat nooit alleen.</div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),repeating-linear-gradient(to bottom,transparent 0 18px,#9fb8cf 18px 19.5px,transparent 19.5px 60px,#9fb8cf 60px 61.5px,#eef4fa 61.5px 88px,#9fb8cf 88px 89.5px,transparent 89.5px 130px,#9fb8cf 130px 131.5px,transparent 131.5px 134px);background-repeat:no-repeat,repeat\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
