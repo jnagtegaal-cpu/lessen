@@ -82,7 +82,7 @@ Op het bord verschijnt informatie pas als je hem nodig hebt:
 - `"stapsgewijs": true` bij `lijst` of `stappen`: elk item is eerst verborgen, en verschijnt als je het aantikt.
 - `"verborgen": true` bij elk ander blok (bijvoorbeeld een antwoord): het hele blok is verborgen tot je het aantikt.
 
-Je kunt ook op **volgende** drukken (knop, pijltje of presenter): eerst verschijnt dan het volgende verborgen item, en pas als alles zichtbaar is, ga je naar het volgende scherm. Aantikken werkt in de stand *Aanwijzen*. Nog eens tikken verbergt het weer. In de presentatie-PDF is alles zichtbaar.
+Tonen gaat alleen door aan te tikken. **Volgende** (knop, pijltje of presenter) gaat altijd meteen naar het volgende scherm, ook als er nog iets verborgen is. Aantikken werkt in de stand *Aanwijzen*. Nog eens tikken verbergt het weer. In de presentatie-PDF is alles zichtbaar.
 
 ### Splitsen: zelf kiezen hoe je verdergaat
 
@@ -132,8 +132,8 @@ Naast `blokken` kan een scherm `elementen` hebben: vrij geplaatste onderdelen, z
 
 - `letter`: `standaard`, `school` (Playpen Sans), `hand` (Caveat), `klassiek` (Lora) of `rond` (Fredoka).
 - `html`: alleen `b`, `i`, `u`, `br`, `div`, `p`, `ul`, `ol` en `li`. De rest wordt weggefilterd.
-- `verstopt: true`: eerst verborgen, en tevoorschijn met een tik of met *volgende*.
-- `afdek`: een gekleurd blok dat iets afdekt en verdwijnt als je erop tikt (of met *volgende*).
+- `verstopt: true`: eerst verborgen, en tevoorschijn met een tik.
+- `afdek`: een gekleurd blok dat iets afdekt en verdwijnt als je erop tikt.
 - Bij het tonen hoort alles in dezelfde volgorde als de blokken: eerst de blokken, dan de elementen.
 
 ## Tekst aanpassen in de app

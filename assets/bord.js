@@ -109,7 +109,7 @@
     vulInvulvakken();
     $("teller").textContent = st.klad ? "Kladblad" : `${st.index + 1} / ${schermen.length}`;
     $("vorige").disabled = st.klad || st.index === 0;
-    $("volgende").disabled = st.klad || ((st.index >= schermen.length - 1 || isKeuze()) && !dia.querySelector(".onthul:not(.zichtbaar)"));
+    $("volgende").disabled = st.klad || st.index >= schermen.length - 1 || isKeuze();
     const fase = !st.klad && s.fase;
     $("fase").hidden = !fase; $("fase").textContent = fase || "";
     $("notitie-tekst").textContent = (!st.klad && s.notitie) || "Geen notitie bij dit scherm.";
@@ -134,7 +134,7 @@
     const i = [...dia.querySelectorAll("textarea, input[type=text]")].indexOf(el);
     try { localStorage.setItem(invulSleutel(i), el.value); } catch (err) {}
   });
-  // Stap voor stap: tik op een verborgen stap, of druk op "volgende" om de eerstvolgende te tonen.
+  // Stap voor stap: tik op een verborgen stap om hem te tonen. "Volgende" gaat altijd naar het volgende scherm.
   function onthul(el) {
     const alle = [...dia.querySelectorAll(".onthul")];
     const i = alle.indexOf(el); if (i < 0) return;
@@ -217,9 +217,7 @@
     if (i >= 0) ga(i);
   }
   function volgende() {
-    const verborgen = dia.querySelector(".onthul:not(.zichtbaar)");
-    if (verborgen && !st.klad) onthul(verborgen);
-    else if (!isKeuze()) ga(st.index + 1);
+    if (!isKeuze()) ga(st.index + 1);
   }
 
   // ---------- Schermkiezer: tik op het schermnummer om naar een ander scherm te gaan ----------
