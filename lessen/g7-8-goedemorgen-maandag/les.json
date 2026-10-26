@@ -1,6 +1,6 @@
 {
   "id": "g7-8-goedemorgen-maandag",
-  "titel": "Goedemorgen: dagschema maandag 19 oktober",
+  "titel": "Goedemorgen: dagschema maandag 26 oktober",
   "groep": "7-8",
   "vak": "Dagopening",
   "onderwerp": "Dagschema",
@@ -29,28 +29,28 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"font-size:52px;font-weight:800;margin-bottom:8px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">🌞</span><span>Weekopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">⚡</span><span>Automatiseren</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">💡</span><span>Wetenswaardig</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div>"
+                "html": "<div style=\"font-size:52px;font-weight:800;margin-bottom:8px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">⚡</span><span>Automatiseren</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">💡</span><span>Wetenswaardig</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;margin-bottom:4px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div>"
               }
             ],
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;height:640px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;text-align:center\"><div style=\"font-size:50px;font-weight:800;line-height:1.25\">Welkom, leuk dat je er bent! 😊</div><div style=\"font-size:40px;margin-top:28px;line-height:1.3\">Vertel aan je maatje: wat heb je dit weekend gedaan?</div></div>"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;height:640px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;text-align:center\"><div style=\"font-size:50px;font-weight:800;line-height:1.25\">Welkom, leuk dat je er bent! 😊</div><div style=\"font-size:40px;margin-top:28px;line-height:1.3\">Vertel aan je maatje: wat was het leukste van je vakantie?</div></div>"
               }
             ]
           ]
         }
       ],
-      "notitie": "Dagschema voor maandag. Bij binnenkomst vertellen de kinderen aan hun maatje wat ze dit weekend hebben gedaan."
+      "notitie": "Dagschema voor maandag. Bij binnenkomst vertellen de kinderen aan hun maatje wat het leukste van hun vakantie was."
     }
   ],
   "voorbereiding": {
     "verloop": [
       {
-        "wat": "Bij binnenkomst: welkom op het bord, kinderen vertellen aan hun maatje wat ze dit weekend hebben gedaan"
+        "wat": "Bij binnenkomst: welkom op het bord, kinderen vertellen aan hun maatje wat het leukste van hun vakantie was"
       },
       {
-        "wat": "Weekopening"
+        "wat": "Dagopening"
       },
       {
         "wat": "Rekenen"
