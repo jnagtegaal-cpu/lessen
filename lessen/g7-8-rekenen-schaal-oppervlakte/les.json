@@ -135,13 +135,15 @@
     {
       "fase": "Ik doe voor",
       "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
       "notitie": "Ik doe voor en denk hardop. De kinderen doen mee in hun schrift. Ik werk uit op het ruitjespapier. Antwoorden: 1400 en 1000 cm → 14 en 10 m → 140 m².",
       "blokken": [
         {
           "type": "kolommen",
           "verhouding": [
-            "3fr",
-            "2fr"
+            "5fr",
+            "6fr"
           ],
           "kolommen": [
             [
@@ -151,17 +153,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;align-items:center;gap:16px\"><svg width=\"440\" height=\"277\" viewBox=\"0 0 440 277\" style=\"flex:none\"><rect x=\"26.5\" y=\"12.0\" width=\"301.0\" height=\"215.0\" rx=\"0\" fill=\"#cfe8b5\" stroke=\"#5f9e45\" stroke-width=\"8\" /><rect x=\"38.5\" y=\"141.0\" width=\"114.4\" height=\"77.4\" rx=\"0\" fill=\"#e3d6bf\" stroke=\"#cbbd9f\" stroke-width=\"2\" /><line x1=\"67.1\" y1=\"141.0\" x2=\"67.1\" y2=\"218.4\" stroke=\"#cbbd9f\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"95.7\" y1=\"141.0\" x2=\"95.7\" y2=\"218.4\" stroke=\"#cbbd9f\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"124.3\" y1=\"141.0\" x2=\"124.3\" y2=\"218.4\" stroke=\"#cbbd9f\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><rect x=\"152.9\" y=\"166.8\" width=\"162.5\" height=\"25.8\" rx=\"0\" fill=\"#e3d6bf\" stroke=\"none\" stroke-width=\"0\" /><ellipse cx=\"243.2\" cy=\"72.2\" rx=\"54.2\" ry=\"27.9\" fill=\"#e9a6b8\" stroke=\"#c97a8f\" stroke-width=\"2\"/><circle cx=\"219.1\" cy=\"65.8\" r=\"3.5\" fill=\"#f6d44a\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"243.2\" cy=\"80.8\" r=\"3.5\" fill=\"#fff\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"267.3\" cy=\"67.9\" r=\"3.5\" fill=\"#d9534f\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"252.2\" cy=\"59.3\" r=\"3.5\" fill=\"#f6d44a\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"92.7\" cy=\"65.8\" r=\"34.4\" fill=\"#4f8f3a\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"89.7\" cy=\"63.6\" r=\"20.6\" fill=\"#68a94c\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"92.7\" cy=\"65.8\" r=\"6.2\" fill=\"#3d6e2c\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"62.6\" y=\"153.9\" width=\"54.2\" height=\"25.8\" rx=\"3\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"2\" /><text x=\"177.0\" y=\"267.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">7 cm</text><text x=\"341.5\" y=\"129.5\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">5 cm</text></svg><div style=\"font-size:28px;line-height:1.35\"><div style=\"font-size:38px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 200</div>Hoe groot is de oppervlakte van de tuin in het echt?</div></div>"
-              },
-              {
-                "type": "html",
-                "html": "<div style=\"flex:1;min-height:240px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
-              }
-            ],
-            [
-              {
-                "type": "subkop",
-                "tekst": "Stappenplan"
+                "html": "<div style=\"display:flex;align-items:center;gap:16px\"><svg width=\"360\" height=\"232\" viewBox=\"0 0 360 232\" style=\"flex:none\"><rect x=\"18.0\" y=\"12.0\" width=\"238.0\" height=\"170.0\" rx=\"0\" fill=\"#cfe8b5\" stroke=\"#5f9e45\" stroke-width=\"8\" /><rect x=\"27.5\" y=\"114.0\" width=\"90.4\" height=\"61.2\" rx=\"0\" fill=\"#e3d6bf\" stroke=\"#cbbd9f\" stroke-width=\"2\" /><line x1=\"50.1\" y1=\"114.0\" x2=\"50.1\" y2=\"175.2\" stroke=\"#cbbd9f\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"72.7\" y1=\"114.0\" x2=\"72.7\" y2=\"175.2\" stroke=\"#cbbd9f\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"95.4\" y1=\"114.0\" x2=\"95.4\" y2=\"175.2\" stroke=\"#cbbd9f\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><rect x=\"118.0\" y=\"134.4\" width=\"128.5\" height=\"20.4\" rx=\"0\" fill=\"#e3d6bf\" stroke=\"none\" stroke-width=\"0\" /><ellipse cx=\"189.4\" cy=\"59.6\" rx=\"42.8\" ry=\"22.1\" fill=\"#e9a6b8\" stroke=\"#c97a8f\" stroke-width=\"2\"/><circle cx=\"170.3\" cy=\"54.5\" r=\"3.5\" fill=\"#f6d44a\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"189.4\" cy=\"66.4\" r=\"3.5\" fill=\"#fff\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"208.4\" cy=\"56.2\" r=\"3.5\" fill=\"#d9534f\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"196.5\" cy=\"49.4\" r=\"3.5\" fill=\"#f6d44a\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"70.4\" cy=\"54.5\" r=\"27.2\" fill=\"#4f8f3a\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"68.0\" cy=\"52.8\" r=\"16.3\" fill=\"#68a94c\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"70.4\" cy=\"54.5\" r=\"4.9\" fill=\"#3d6e2c\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"46.6\" y=\"124.2\" width=\"42.8\" height=\"20.4\" rx=\"3\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"2\" /><text x=\"137.0\" y=\"222.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">7 cm</text><text x=\"270.0\" y=\"107.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">5 cm</text></svg><div style=\"font-size:26px;line-height:1.3\"><div style=\"font-size:36px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 200</div>Hoe groot is de oppervlakte van de tuin in het echt?</div></div>"
               },
               {
                 "type": "stappen",
@@ -170,8 +162,14 @@
                   "Reken de **cm** om naar **m**.",
                   "Bereken de **oppervlakte** in **m²**."
                 ],
-                "stijl": "font-size:.7em",
+                "stijl": "font-size:.68em",
                 "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ]
           ]
@@ -181,13 +179,15 @@
     {
       "fase": "Wij samen",
       "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
       "notitie": "Samen, stap voor stap. De kinderen doen elke stap mee in hun schrift. Antwoorden: 300 en 300 cm → 3 en 3 m → 9 m².",
       "blokken": [
         {
           "type": "kolommen",
           "verhouding": [
-            "3fr",
-            "2fr"
+            "5fr",
+            "6fr"
           ],
           "kolommen": [
             [
@@ -197,17 +197,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;align-items:center;gap:16px\"><svg width=\"440\" height=\"277\" viewBox=\"0 0 440 277\" style=\"flex:none\"><rect x=\"69.5\" y=\"12.0\" width=\"215.0\" height=\"215.0\" rx=\"0\" fill=\"#fbf7ef\" stroke=\"#3a3f3c\" stroke-width=\"6\" /><line x1=\"177.0\" y1=\"12.0\" x2=\"177.0\" y2=\"145.3\" stroke=\"#3a3f3c\" stroke-width=\"4\" stroke-linecap=\"square\"/><line x1=\"69.5\" y1=\"145.3\" x2=\"284.5\" y2=\"145.3\" stroke=\"#3a3f3c\" stroke-width=\"4\" stroke-linecap=\"square\"/><line x1=\"202.8\" y1=\"145.3\" x2=\"202.8\" y2=\"227.0\" stroke=\"#3a3f3c\" stroke-width=\"4\" stroke-linecap=\"square\"/><rect x=\"94.3\" y=\"142.3\" width=\"32.1\" height=\"6\" fill=\"#fbf7ef\"/><path d=\"M125.4,145.3 A30.1,30.1 0 0 0 95.3,115.2 L95.3,145.3\" fill=\"none\" stroke=\"#9aa39e\" stroke-width=\"2\"/><rect x=\"210.4\" y=\"142.3\" width=\"32.1\" height=\"6\" fill=\"#fbf7ef\"/><path d=\"M241.5,145.3 A30.1,30.1 0 0 0 211.4,115.2 L211.4,145.3\" fill=\"none\" stroke=\"#9aa39e\" stroke-width=\"2\"/><line x1=\"95.3\" y1=\"12.0\" x2=\"151.2\" y2=\"12.0\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><line x1=\"202.8\" y1=\"12.0\" x2=\"258.7\" y2=\"12.0\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><line x1=\"69.5\" y1=\"55.0\" x2=\"69.5\" y2=\"108.8\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><line x1=\"284.5\" y1=\"55.0\" x2=\"284.5\" y2=\"108.8\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><text x=\"123.2\" y=\"85.1\" font-size=\"17\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">kantoor</text><text x=\"230.8\" y=\"85.1\" font-size=\"17\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">kantoor</text><text x=\"136.2\" y=\"196.9\" font-size=\"17\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">hal</text><text x=\"243.7\" y=\"196.9\" font-size=\"17\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">wc</text><text x=\"177.0\" y=\"267.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">12 cm</text><text x=\"298.5\" y=\"129.5\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">12 cm</text></svg><div style=\"font-size:28px;line-height:1.35\"><div style=\"font-size:38px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 25</div>Hoe groot is de oppervlakte van het gebouw in het echt?</div></div>"
-              },
-              {
-                "type": "html",
-                "html": "<div style=\"flex:1;min-height:240px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
-              }
-            ],
-            [
-              {
-                "type": "subkop",
-                "tekst": "Stappenplan"
+                "html": "<div style=\"display:flex;align-items:center;gap:16px\"><svg width=\"360\" height=\"232\" viewBox=\"0 0 360 232\" style=\"flex:none\"><rect x=\"52.0\" y=\"12.0\" width=\"170.0\" height=\"170.0\" rx=\"0\" fill=\"#fbf7ef\" stroke=\"#3a3f3c\" stroke-width=\"6\" /><line x1=\"137.0\" y1=\"12.0\" x2=\"137.0\" y2=\"117.4\" stroke=\"#3a3f3c\" stroke-width=\"4\" stroke-linecap=\"square\"/><line x1=\"52.0\" y1=\"117.4\" x2=\"222.0\" y2=\"117.4\" stroke=\"#3a3f3c\" stroke-width=\"4\" stroke-linecap=\"square\"/><line x1=\"157.4\" y1=\"117.4\" x2=\"157.4\" y2=\"182.0\" stroke=\"#3a3f3c\" stroke-width=\"4\" stroke-linecap=\"square\"/><rect x=\"71.4\" y=\"114.4\" width=\"25.8\" height=\"6\" fill=\"#fbf7ef\"/><path d=\"M96.2,117.4 A23.8,23.8 0 0 0 72.4,93.6 L72.4,117.4\" fill=\"none\" stroke=\"#9aa39e\" stroke-width=\"2\"/><rect x=\"163.2\" y=\"114.4\" width=\"25.8\" height=\"6\" fill=\"#fbf7ef\"/><path d=\"M188.0,117.4 A23.8,23.8 0 0 0 164.2,93.6 L164.2,117.4\" fill=\"none\" stroke=\"#9aa39e\" stroke-width=\"2\"/><line x1=\"72.4\" y1=\"12.0\" x2=\"116.6\" y2=\"12.0\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><line x1=\"157.4\" y1=\"12.0\" x2=\"201.6\" y2=\"12.0\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><line x1=\"52.0\" y1=\"46.0\" x2=\"52.0\" y2=\"88.5\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><line x1=\"222.0\" y1=\"46.0\" x2=\"222.0\" y2=\"88.5\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><text x=\"94.5\" y=\"69.8\" font-size=\"17\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">kantoor</text><text x=\"179.5\" y=\"69.8\" font-size=\"17\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">kantoor</text><text x=\"104.7\" y=\"158.2\" font-size=\"17\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">hal</text><text x=\"189.7\" y=\"158.2\" font-size=\"17\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">wc</text><text x=\"137.0\" y=\"222.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">12 cm</text><text x=\"236.0\" y=\"107.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">12 cm</text></svg><div style=\"font-size:26px;line-height:1.3\"><div style=\"font-size:36px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 25</div>Hoe groot is de oppervlakte van het gebouw in het echt?</div></div>"
               },
               {
                 "type": "stappen",
@@ -216,8 +206,14 @@
                   "Reken de **cm** om naar **m**.",
                   "Bereken de **oppervlakte** in **m²**."
                 ],
-                "stijl": "font-size:.7em",
+                "stijl": "font-size:.68em",
                 "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ]
           ]
@@ -227,13 +223,15 @@
     {
       "fase": "Jullie samen",
       "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
       "notitie": "Tweetallen, één schrift. Gangkant doet stap 1, raamkant stap 2, samen stap 3. Gangkant begint en geeft het schrift door. Raamkant controleert eerst stap 1, ze zijn samen verantwoordelijk. Tik het blok met de taakverdeling tevoorschijn. Antwoorden: 600 en 500 cm → 6 en 5 m → 30 m².",
       "blokken": [
         {
           "type": "kolommen",
           "verhouding": [
-            "3fr",
-            "2fr"
+            "5fr",
+            "6fr"
           ],
           "kolommen": [
             [
@@ -243,17 +241,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;align-items:center;gap:16px\"><svg width=\"440\" height=\"277\" viewBox=\"0 0 440 277\" style=\"flex:none\"><rect x=\"48.0\" y=\"12.0\" width=\"258.0\" height=\"215.0\" rx=\"0\" fill=\"#fbf7ef\" stroke=\"#3a3f3c\" stroke-width=\"6\" /><rect x=\"63.5\" y=\"29.2\" width=\"92.9\" height=\"107.5\" rx=\"4\" fill=\"#f1ece2\" stroke=\"#b8ab95\" stroke-width=\"2\" /><rect x=\"73.8\" y=\"35.6\" width=\"72.2\" height=\"21.5\" rx=\"3\" fill=\"#ffffff\" stroke=\"#c9bfae\" stroke-width=\"1.5\" /><rect x=\"63.5\" y=\"80.8\" width=\"92.9\" height=\"55.9\" rx=\"3\" fill=\"#9cc3a5\" stroke=\"#6f9a79\" stroke-width=\"2\" /><rect x=\"233.8\" y=\"24.9\" width=\"56.8\" height=\"25.8\" rx=\"0\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"2\" /><rect x=\"208.0\" y=\"153.9\" width=\"82.6\" height=\"30.1\" rx=\"0\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"2\" /><circle cx=\"249.2\" cy=\"201.2\" r=\"10.8\" fill=\"#8a8f8c\" stroke=\"none\" stroke-width=\"0\"/><ellipse cx=\"177.0\" cy=\"119.5\" rx=\"31.0\" ry=\"19.3\" fill=\"#f2c6b0\" stroke=\"none\" stroke-width=\"0\"/><line x1=\"177.0\" y1=\"12.0\" x2=\"218.3\" y2=\"12.0\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><rect x=\"67.6\" y=\"224.0\" width=\"36.4\" height=\"6\" fill=\"#fbf7ef\"/><path d=\"M103.0,227.0 A34.4,34.4 0 0 0 68.6,192.6 L68.6,227.0\" fill=\"none\" stroke=\"#9aa39e\" stroke-width=\"2\"/><text x=\"177.0\" y=\"267.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">12 cm</text><text x=\"320.0\" y=\"129.5\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">10 cm</text></svg><div style=\"font-size:28px;line-height:1.35\"><div style=\"font-size:38px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 50</div>Hoe groot is de oppervlakte van de kamer in het echt?</div></div>"
-              },
-              {
-                "type": "html",
-                "html": "<div style=\"flex:1;min-height:240px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
-              }
-            ],
-            [
-              {
-                "type": "subkop",
-                "tekst": "Stappenplan"
+                "html": "<div style=\"display:flex;align-items:center;gap:16px\"><svg width=\"360\" height=\"232\" viewBox=\"0 0 360 232\" style=\"flex:none\"><rect x=\"35.0\" y=\"12.0\" width=\"204.0\" height=\"170.0\" rx=\"0\" fill=\"#fbf7ef\" stroke=\"#3a3f3c\" stroke-width=\"6\" /><rect x=\"47.2\" y=\"25.6\" width=\"73.4\" height=\"85.0\" rx=\"4\" fill=\"#f1ece2\" stroke=\"#b8ab95\" stroke-width=\"2\" /><rect x=\"55.4\" y=\"30.7\" width=\"57.1\" height=\"17.0\" rx=\"3\" fill=\"#ffffff\" stroke=\"#c9bfae\" stroke-width=\"1.5\" /><rect x=\"47.2\" y=\"66.4\" width=\"73.4\" height=\"44.2\" rx=\"3\" fill=\"#9cc3a5\" stroke=\"#6f9a79\" stroke-width=\"2\" /><rect x=\"181.9\" y=\"22.2\" width=\"44.9\" height=\"20.4\" rx=\"0\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"2\" /><rect x=\"161.5\" y=\"124.2\" width=\"65.3\" height=\"23.8\" rx=\"0\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"2\" /><circle cx=\"194.1\" cy=\"161.6\" r=\"8.5\" fill=\"#8a8f8c\" stroke=\"none\" stroke-width=\"0\"/><ellipse cx=\"137.0\" cy=\"97.0\" rx=\"24.5\" ry=\"15.3\" fill=\"#f2c6b0\" stroke=\"none\" stroke-width=\"0\"/><line x1=\"137.0\" y1=\"12.0\" x2=\"169.6\" y2=\"12.0\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><rect x=\"50.3\" y=\"179.0\" width=\"29.2\" height=\"6\" fill=\"#fbf7ef\"/><path d=\"M78.5,182.0 A27.2,27.2 0 0 0 51.3,154.8 L51.3,182.0\" fill=\"none\" stroke=\"#9aa39e\" stroke-width=\"2\"/><text x=\"137.0\" y=\"222.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">12 cm</text><text x=\"253.0\" y=\"107.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">10 cm</text></svg><div style=\"font-size:26px;line-height:1.3\"><div style=\"font-size:36px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 50</div>Hoe groot is de oppervlakte van de kamer in het echt?</div></div>"
               },
               {
                 "type": "stappen",
@@ -262,13 +250,19 @@
                   "Reken de **cm** om naar **m**.",
                   "Bereken de **oppervlakte** in **m²**."
                 ],
-                "stijl": "font-size:.7em",
+                "stijl": "font-size:.68em",
                 "stapsgewijs": true
-              },
+              }
+            ],
+            [
               {
                 "type": "html",
                 "verborgen": true,
-                "html": "<div style=\"margin-top:14px;background:#fff6e0;border:4px dashed #d9822b;border-radius:18px;padding:12px 18px;font-size:26px;line-height:1.35\"><div style=\"font-weight:800;margin-bottom:2px\">👥 Eén schrift, gangkant begint</div>1. <b>Gangkant</b> · 2. <b>Raamkant</b> · 3. <b>Samen</b><div style=\"margin-top:6px;font-weight:700;color:#b5541c\">⚠️ Raamkant controleert eerst stap 1. Jullie zijn samen verantwoordelijk!</div></div>"
+                "html": "<div style=\"margin-bottom:4px;background:#fff6e0;border:4px dashed #d9822b;border-radius:18px;padding:12px 18px;font-size:26px;line-height:1.35\"><div style=\"font-weight:800;margin-bottom:2px\">👥 Eén schrift, gangkant begint</div>1. <b>Gangkant</b> · 2. <b>Raamkant</b> · 3. <b>Samen</b><div style=\"margin-top:6px;font-weight:700;color:#b5541c\">⚠️ Raamkant controleert eerst stap 1. Jullie zijn samen verantwoordelijk!</div></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ]
           ]
@@ -278,13 +272,15 @@
     {
       "fase": "Jij alleen",
       "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
       "notitie": "Ieder voor zich in het schrift. Antwoorden: 1200 en 800 cm → 12 en 8 m → 96 m².",
       "blokken": [
         {
           "type": "kolommen",
           "verhouding": [
-            "3fr",
-            "2fr"
+            "5fr",
+            "6fr"
           ],
           "kolommen": [
             [
@@ -294,17 +290,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;align-items:center;gap:16px\"><svg width=\"440\" height=\"277\" viewBox=\"0 0 440 277\" style=\"flex:none\"><rect x=\"15.8\" y=\"12.0\" width=\"322.5\" height=\"215.0\" rx=\"0\" fill=\"#fbf7ef\" stroke=\"#3a3f3c\" stroke-width=\"6\" /><ellipse cx=\"151.2\" cy=\"119.5\" rx=\"64.5\" ry=\"43.0\" fill=\"#e7d9c4\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"35.1\" y=\"37.8\" width=\"38.7\" height=\"133.3\" rx=\"4\" fill=\"#7a9cc6\" stroke=\"#506f96\" stroke-width=\"2\" /><rect x=\"35.1\" y=\"171.1\" width=\"161.2\" height=\"30.1\" rx=\"4\" fill=\"#7a9cc6\" stroke=\"#506f96\" stroke-width=\"2\" /><rect x=\"119.0\" y=\"98.0\" width=\"64.5\" height=\"43.0\" rx=\"3\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"2\" /><rect x=\"293.1\" y=\"76.5\" width=\"25.8\" height=\"86.0\" rx=\"2\" fill=\"#5b5f5d\" stroke=\"#3a3f3c\" stroke-width=\"2\" /><circle cx=\"306.0\" cy=\"37.8\" r=\"12.9\" fill=\"#68a94c\" stroke=\"none\" stroke-width=\"0\"/><line x1=\"112.5\" y1=\"12.0\" x2=\"241.5\" y2=\"12.0\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><rect x=\"281.3\" y=\"224.0\" width=\"32.1\" height=\"6\" fill=\"#fbf7ef\"/><path d=\"M282.3,227.0 A30.1,30.1 0 0 1 312.4,196.9 L312.4,227.0\" fill=\"none\" stroke=\"#9aa39e\" stroke-width=\"2\"/><text x=\"177.0\" y=\"267.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">6 cm</text><text x=\"352.2\" y=\"129.5\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">4 cm</text></svg><div style=\"font-size:28px;line-height:1.35\"><div style=\"font-size:38px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 200</div>Hoe groot is de oppervlakte van de woonkamer in het echt?</div></div>"
-              },
-              {
-                "type": "html",
-                "html": "<div style=\"flex:1;min-height:240px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
-              }
-            ],
-            [
-              {
-                "type": "subkop",
-                "tekst": "Stappenplan"
+                "html": "<div style=\"display:flex;align-items:center;gap:16px\"><svg width=\"360\" height=\"232\" viewBox=\"0 0 360 232\" style=\"flex:none\"><rect x=\"12.0\" y=\"13.7\" width=\"250.0\" height=\"166.7\" rx=\"0\" fill=\"#fbf7ef\" stroke=\"#3a3f3c\" stroke-width=\"6\" /><ellipse cx=\"117.0\" cy=\"97.0\" rx=\"50.0\" ry=\"33.3\" fill=\"#e7d9c4\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"27.0\" y=\"33.7\" width=\"30.0\" height=\"103.3\" rx=\"4\" fill=\"#7a9cc6\" stroke=\"#506f96\" stroke-width=\"2\" /><rect x=\"27.0\" y=\"137.0\" width=\"125.0\" height=\"23.3\" rx=\"4\" fill=\"#7a9cc6\" stroke=\"#506f96\" stroke-width=\"2\" /><rect x=\"92.0\" y=\"80.3\" width=\"50.0\" height=\"33.3\" rx=\"3\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"2\" /><rect x=\"227.0\" y=\"63.7\" width=\"20.0\" height=\"66.7\" rx=\"2\" fill=\"#5b5f5d\" stroke=\"#3a3f3c\" stroke-width=\"2\" /><circle cx=\"237.0\" cy=\"33.7\" r=\"10.0\" fill=\"#68a94c\" stroke=\"none\" stroke-width=\"0\"/><line x1=\"87.0\" y1=\"13.7\" x2=\"187.0\" y2=\"13.7\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><rect x=\"217.7\" y=\"177.3\" width=\"25.3\" height=\"6\" fill=\"#fbf7ef\"/><path d=\"M218.7,180.3 A23.3,23.3 0 0 1 242.0,157.0 L242.0,180.3\" fill=\"none\" stroke=\"#9aa39e\" stroke-width=\"2\"/><text x=\"137.0\" y=\"220.3\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">6 cm</text><text x=\"276.0\" y=\"107.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">4 cm</text></svg><div style=\"font-size:26px;line-height:1.3\"><div style=\"font-size:36px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 200</div>Hoe groot is de oppervlakte van de woonkamer in het echt?</div></div>"
               },
               {
                 "type": "stappen",
@@ -313,8 +299,14 @@
                   "Reken de **cm** om naar **m**.",
                   "Bereken de **oppervlakte** in **m²**."
                 ],
-                "stijl": "font-size:.7em",
+                "stijl": "font-size:.68em",
                 "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ]
           ]
@@ -324,13 +316,15 @@
     {
       "fase": "Verlengde instructie",
       "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
       "notitie": "Antwoorden: 500 en 500 cm → 5 en 5 m → 25 m².",
       "blokken": [
         {
           "type": "kolommen",
           "verhouding": [
-            "3fr",
-            "2fr"
+            "5fr",
+            "6fr"
           ],
           "kolommen": [
             [
@@ -340,17 +334,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;align-items:center;gap:16px\"><svg width=\"440\" height=\"277\" viewBox=\"0 0 440 277\" style=\"flex:none\"><rect x=\"69.5\" y=\"12.0\" width=\"215.0\" height=\"215.0\" rx=\"0\" fill=\"#cfe8b5\" stroke=\"#5f9e45\" stroke-width=\"8\" /><ellipse cx=\"211.4\" cy=\"145.3\" rx=\"47.3\" ry=\"34.4\" fill=\"#8fc9ec\" stroke=\"#5aa6d3\" stroke-width=\"3\"/><rect x=\"86.7\" y=\"29.2\" width=\"25.8\" height=\"180.6\" rx=\"0\" fill=\"#e3d6bf\" stroke=\"none\" stroke-width=\"0\" /><circle cx=\"155.5\" cy=\"65.8\" r=\"27.9\" fill=\"#4f8f3a\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"153.4\" cy=\"63.6\" r=\"16.8\" fill=\"#68a94c\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"155.5\" cy=\"65.8\" r=\"5.0\" fill=\"#3d6e2c\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"237.2\" cy=\"55.0\" r=\"23.6\" fill=\"#4f8f3a\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"235.1\" cy=\"52.9\" r=\"14.2\" fill=\"#68a94c\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"237.2\" cy=\"55.0\" r=\"4.3\" fill=\"#3d6e2c\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"151.2\" cy=\"173.2\" r=\"19.3\" fill=\"#4f8f3a\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"149.1\" cy=\"171.1\" r=\"11.6\" fill=\"#68a94c\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"151.2\" cy=\"173.2\" r=\"3.5\" fill=\"#3d6e2c\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"177.0\" y=\"93.7\" width=\"25.8\" height=\"10.8\" rx=\"2\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"1.5\" /><text x=\"177.0\" y=\"267.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">20 cm</text><text x=\"298.5\" y=\"129.5\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">20 cm</text></svg><div style=\"font-size:28px;line-height:1.35\"><div style=\"font-size:38px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 25</div>Hoe groot is de oppervlakte van de tuin in het echt?</div></div>"
-              },
-              {
-                "type": "html",
-                "html": "<div style=\"flex:1;min-height:240px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
-              }
-            ],
-            [
-              {
-                "type": "subkop",
-                "tekst": "Stappenplan"
+                "html": "<div style=\"display:flex;align-items:center;gap:16px\"><svg width=\"360\" height=\"232\" viewBox=\"0 0 360 232\" style=\"flex:none\"><rect x=\"52.0\" y=\"12.0\" width=\"170.0\" height=\"170.0\" rx=\"0\" fill=\"#cfe8b5\" stroke=\"#5f9e45\" stroke-width=\"8\" /><ellipse cx=\"164.2\" cy=\"117.4\" rx=\"37.4\" ry=\"27.2\" fill=\"#8fc9ec\" stroke=\"#5aa6d3\" stroke-width=\"3\"/><rect x=\"65.6\" y=\"25.6\" width=\"20.4\" height=\"142.8\" rx=\"0\" fill=\"#e3d6bf\" stroke=\"none\" stroke-width=\"0\" /><circle cx=\"120.0\" cy=\"54.5\" r=\"22.1\" fill=\"#4f8f3a\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"118.3\" cy=\"52.8\" r=\"13.3\" fill=\"#68a94c\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"120.0\" cy=\"54.5\" r=\"4.0\" fill=\"#3d6e2c\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"184.6\" cy=\"46.0\" r=\"18.7\" fill=\"#4f8f3a\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"182.9\" cy=\"44.3\" r=\"11.2\" fill=\"#68a94c\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"184.6\" cy=\"46.0\" r=\"3.4\" fill=\"#3d6e2c\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"116.6\" cy=\"139.5\" r=\"15.3\" fill=\"#4f8f3a\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"114.9\" cy=\"137.8\" r=\"9.2\" fill=\"#68a94c\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"116.6\" cy=\"139.5\" r=\"2.8\" fill=\"#3d6e2c\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"137.0\" y=\"76.6\" width=\"20.4\" height=\"8.5\" rx=\"2\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"1.5\" /><text x=\"137.0\" y=\"222.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">20 cm</text><text x=\"236.0\" y=\"107.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">20 cm</text></svg><div style=\"font-size:26px;line-height:1.3\"><div style=\"font-size:36px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 25</div>Hoe groot is de oppervlakte van de tuin in het echt?</div></div>"
               },
               {
                 "type": "stappen",
@@ -359,8 +343,14 @@
                   "Reken de **cm** om naar **m**.",
                   "Bereken de **oppervlakte** in **m²**."
                 ],
-                "stijl": "font-size:.7em",
+                "stijl": "font-size:.68em",
                 "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ]
           ]
@@ -370,13 +360,15 @@
     {
       "fase": "Verlengde instructie",
       "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
       "notitie": "Antwoorden: 1000 en 600 cm → 10 en 6 m → 60 m².",
       "blokken": [
         {
           "type": "kolommen",
           "verhouding": [
-            "3fr",
-            "2fr"
+            "5fr",
+            "6fr"
           ],
           "kolommen": [
             [
@@ -386,17 +378,7 @@
               },
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;align-items:center;gap:16px\"><svg width=\"440\" height=\"277\" viewBox=\"0 0 440 277\" style=\"flex:none\"><rect x=\"12.0\" y=\"20.5\" width=\"330.0\" height=\"198.0\" rx=\"0\" fill=\"#fbf7ef\" stroke=\"#3a3f3c\" stroke-width=\"6\" /><line x1=\"210.0\" y1=\"20.5\" x2=\"210.0\" y2=\"218.5\" stroke=\"#3a3f3c\" stroke-width=\"4\" stroke-linecap=\"square\"/><line x1=\"210.0\" y1=\"119.5\" x2=\"342.0\" y2=\"119.5\" stroke=\"#3a3f3c\" stroke-width=\"4\" stroke-linecap=\"square\"/><line x1=\"276.0\" y1=\"119.5\" x2=\"276.0\" y2=\"218.5\" stroke=\"#3a3f3c\" stroke-width=\"4\" stroke-linecap=\"square\"/><rect x=\"28.5\" y=\"40.3\" width=\"23.1\" height=\"99.0\" rx=\"4\" fill=\"#7a9cc6\" stroke=\"#506f96\" stroke-width=\"2\" /><rect x=\"28.5\" y=\"139.3\" width=\"99.0\" height=\"17.8\" rx=\"4\" fill=\"#7a9cc6\" stroke=\"#506f96\" stroke-width=\"2\" /><rect x=\"78.0\" y=\"75.9\" width=\"39.6\" height=\"35.6\" rx=\"2\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"1.5\" /><rect x=\"229.8\" y=\"30.4\" width=\"99.0\" height=\"17.8\" rx=\"0\" fill=\"#d7dcd9\" stroke=\"#9aa39e\" stroke-width=\"1.5\" /><rect x=\"249.6\" y=\"68.0\" width=\"52.8\" height=\"27.7\" rx=\"2\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"1.5\" /><line x1=\"216.6\" y1=\"131.4\" x2=\"269.4\" y2=\"131.4\" stroke=\"#b9b2a5\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"216.6\" y1=\"145.2\" x2=\"269.4\" y2=\"145.2\" stroke=\"#b9b2a5\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"216.6\" y1=\"159.1\" x2=\"269.4\" y2=\"159.1\" stroke=\"#b9b2a5\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"216.6\" y1=\"173.0\" x2=\"269.4\" y2=\"173.0\" stroke=\"#b9b2a5\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"216.6\" y1=\"186.8\" x2=\"269.4\" y2=\"186.8\" stroke=\"#b9b2a5\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"216.6\" y1=\"200.7\" x2=\"269.4\" y2=\"200.7\" stroke=\"#b9b2a5\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><rect x=\"289.2\" y=\"143.3\" width=\"26.4\" height=\"27.7\" rx=\"3\" fill=\"#ffffff\" stroke=\"#9aa39e\" stroke-width=\"1.5\" /><text x=\"117.6\" y=\"198.7\" font-size=\"17\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">woonkamer</text><text x=\"276.0\" y=\"111.6\" font-size=\"17\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">keuken</text><text x=\"243.0\" y=\"206.6\" font-size=\"14\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">trap</text><text x=\"309.0\" y=\"202.7\" font-size=\"14\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">wc</text><line x1=\"61.5\" y1=\"20.5\" x2=\"160.5\" y2=\"20.5\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><line x1=\"12.0\" y1=\"70.0\" x2=\"12.0\" y2=\"129.4\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><line x1=\"243.0\" y1=\"20.5\" x2=\"309.0\" y2=\"20.5\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><text x=\"177.0\" y=\"258.5\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">20 cm</text><text x=\"356.0\" y=\"129.5\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">12 cm</text></svg><div style=\"font-size:28px;line-height:1.35\"><div style=\"font-size:38px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 50</div>Dit is het bovenaanzicht van een huis. Hoe groot is de oppervlakte in het echt?</div></div>"
-              },
-              {
-                "type": "html",
-                "html": "<div style=\"flex:1;min-height:240px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
-              }
-            ],
-            [
-              {
-                "type": "subkop",
-                "tekst": "Stappenplan"
+                "html": "<div style=\"display:flex;align-items:center;gap:16px\"><svg width=\"360\" height=\"232\" viewBox=\"0 0 360 232\" style=\"flex:none\"><rect x=\"12.0\" y=\"22.0\" width=\"250.0\" height=\"150.0\" rx=\"0\" fill=\"#fbf7ef\" stroke=\"#3a3f3c\" stroke-width=\"6\" /><line x1=\"162.0\" y1=\"22.0\" x2=\"162.0\" y2=\"172.0\" stroke=\"#3a3f3c\" stroke-width=\"4\" stroke-linecap=\"square\"/><line x1=\"162.0\" y1=\"97.0\" x2=\"262.0\" y2=\"97.0\" stroke=\"#3a3f3c\" stroke-width=\"4\" stroke-linecap=\"square\"/><line x1=\"212.0\" y1=\"97.0\" x2=\"212.0\" y2=\"172.0\" stroke=\"#3a3f3c\" stroke-width=\"4\" stroke-linecap=\"square\"/><rect x=\"24.5\" y=\"37.0\" width=\"17.5\" height=\"75.0\" rx=\"4\" fill=\"#7a9cc6\" stroke=\"#506f96\" stroke-width=\"2\" /><rect x=\"24.5\" y=\"112.0\" width=\"75.0\" height=\"13.5\" rx=\"4\" fill=\"#7a9cc6\" stroke=\"#506f96\" stroke-width=\"2\" /><rect x=\"62.0\" y=\"64.0\" width=\"30.0\" height=\"27.0\" rx=\"2\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"1.5\" /><rect x=\"177.0\" y=\"29.5\" width=\"75.0\" height=\"13.5\" rx=\"0\" fill=\"#d7dcd9\" stroke=\"#9aa39e\" stroke-width=\"1.5\" /><rect x=\"192.0\" y=\"58.0\" width=\"40.0\" height=\"21.0\" rx=\"2\" fill=\"#c9a77a\" stroke=\"#9c7b52\" stroke-width=\"1.5\" /><line x1=\"167.0\" y1=\"106.0\" x2=\"207.0\" y2=\"106.0\" stroke=\"#b9b2a5\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"167.0\" y1=\"116.5\" x2=\"207.0\" y2=\"116.5\" stroke=\"#b9b2a5\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"167.0\" y1=\"127.0\" x2=\"207.0\" y2=\"127.0\" stroke=\"#b9b2a5\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"167.0\" y1=\"137.5\" x2=\"207.0\" y2=\"137.5\" stroke=\"#b9b2a5\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"167.0\" y1=\"148.0\" x2=\"207.0\" y2=\"148.0\" stroke=\"#b9b2a5\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><line x1=\"167.0\" y1=\"158.5\" x2=\"207.0\" y2=\"158.5\" stroke=\"#b9b2a5\" stroke-width=\"1.5\" stroke-linecap=\"square\"/><rect x=\"222.0\" y=\"115.0\" width=\"20.0\" height=\"21.0\" rx=\"3\" fill=\"#ffffff\" stroke=\"#9aa39e\" stroke-width=\"1.5\" /><text x=\"92.0\" y=\"157.0\" font-size=\"17\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">woonkamer</text><text x=\"212.0\" y=\"91.0\" font-size=\"17\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">keuken</text><text x=\"187.0\" y=\"163.0\" font-size=\"14\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">trap</text><text x=\"237.0\" y=\"160.0\" font-size=\"14\" font-weight=\"700\" fill=\"#5b6b63\" text-anchor=\"middle\">wc</text><line x1=\"49.5\" y1=\"22.0\" x2=\"124.5\" y2=\"22.0\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><line x1=\"12.0\" y1=\"59.5\" x2=\"12.0\" y2=\"104.5\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><line x1=\"187.0\" y1=\"22.0\" x2=\"237.0\" y2=\"22.0\" stroke=\"#8fc9ec\" stroke-width=\"6\" stroke-linecap=\"square\"/><text x=\"137.0\" y=\"212.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">20 cm</text><text x=\"276.0\" y=\"107.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">12 cm</text></svg><div style=\"font-size:26px;line-height:1.3\"><div style=\"font-size:36px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 50</div>Dit is het bovenaanzicht van een huis. Hoe groot is de oppervlakte in het echt?</div></div>"
               },
               {
                 "type": "stappen",
@@ -405,8 +387,14 @@
                   "Reken de **cm** om naar **m**.",
                   "Bereken de **oppervlakte** in **m²**."
                 ],
-                "stijl": "font-size:.7em",
+                "stijl": "font-size:.68em",
                 "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
               }
             ]
           ]

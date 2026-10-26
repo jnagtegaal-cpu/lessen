@@ -45,6 +45,8 @@ Een scherm is 1600 × 900 en schaalt mee op elk bord.
   "achtergrond": "leeg",            // "leeg", "ruitjes" of "lijntjes"
   "uitlijning": "midden",           // optioneel: inhoud verticaal in het midden
   "lesdoelVerbergen": true,         // optioneel: geen lesdoel in de hoek op dit scherm
+  "lesdoelLinks": true,             // optioneel: lesdoel linksonder in plaats van rechtsonder
+  "ruim": true,                     // optioneel: smallere witte rand, meer ruimte (bijv. voor ruitjespapier)
   "anker": "uitslag",               // optioneel: naam waar een keuzeknop naartoe springt (zie "Splitsen")
   "notitie": "Alleen voor de leerkracht (knop met tekstballon).",
   "blokken": [ … ]
