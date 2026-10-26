@@ -1,11 +1,11 @@
 {
   "id": "g7-8-goedemorgen-dinsdag",
-  "titel": "Goedemorgen: dagschema dinsdag 13 oktober",
+  "titel": "Goedemorgen: dagschema dinsdag 27 oktober",
   "groep": "7-8",
   "vak": "Dagopening",
   "onderwerp": "Dagschema",
   "duur": 10,
-  "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema en een raadsel bij binnenkomst.",
+  "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema en een welkom: Chromebook pakken en plek netjes.",
   "trefwoorden": [
     "goedemorgen",
     "dagschema",
@@ -29,46 +29,40 @@
             [
               {
                 "type": "html",
-                "html": "<div><div style=\"font-size:52px;font-weight:800;margin-bottom:6px;line-height:1.2\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">💬</span><span>Kwink</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🌍</span><span>Wetenswaardig</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🧩</span><span>MindConnected</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
+                "html": "<div style=\"display:flex;flex-direction:column;gap:8px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">💡</span><span>Wetenswaardig</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🤝</span><span>Kwink</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen — juf Kathleen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
               }
             ],
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;height:580px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;text-align:center\"><div style=\"font-size:30px;color:#d9822b;font-weight:700;margin-bottom:16px\">Raadsel 🤔</div><div style=\"font-size:44px;font-weight:700;line-height:1.35\">Als ik jong ben, ben ik lang.<br>Als ik oud ben, ben ik kort.<br><br>Wat ben ik?</div></div>"
-              },
-              {
-                "type": "groot",
-                "tekst": "Een kaars 🕯️",
-                "verborgen": true,
-                "stijl": "font-size:44px;margin:10px 0 0"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;height:640px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;text-align:center\"><div style=\"font-size:50px;font-weight:800;line-height:1.25\">Welkom, fijn dat jullie er zijn! 😊</div><div style=\"font-size:38px;margin-top:30px;line-height:1.35\">💻 Pak alvast je <b>Chromebook</b>.</div><div style=\"font-size:38px;margin-top:18px;line-height:1.35\">🧹 Zorg dat je plek <b>netjes</b> is, dan kunnen we zo beginnen.</div></div>"
               }
             ]
           ]
         }
       ],
-      "notitie": "Dagschema voor dinsdag. Raadsel bij binnenkomst (antwoord: een kaars, tik eronder om het te tonen)."
+      "notitie": "Dagschema voor dinsdag. Bij binnenkomst: Chromebook pakken en de plek netjes maken."
     }
   ],
   "voorbereiding": {
     "verloop": [
       {
-        "wat": "Bij binnenkomst: raadsel op het bord (als ik jong ben, ben ik lang; als ik oud ben, ben ik kort. Wat ben ik?)"
+        "wat": "Bij binnenkomst: welkom op het bord, Chromebook pakken en plek netjes maken"
       },
       {
         "wat": "Dagopening"
       },
       {
-        "wat": "Rekenen"
+        "wat": "Wetenswaardig"
       },
       {
         "wat": "Pauze"
       },
       {
-        "wat": "Spelling"
+        "wat": "Taal"
       },
       {
-        "wat": "Taal"
+        "wat": "Spelling"
       },
       {
         "wat": "Kwink"
@@ -77,13 +71,10 @@
         "wat": "Pauze"
       },
       {
-        "wat": "Stillezen"
+        "wat": "Rekenen"
       },
       {
-        "wat": "Wetenswaardig"
-      },
-      {
-        "wat": "MindConnected"
+        "wat": "Stillezen — juf Kathleen"
       },
       {
         "wat": "Afsluiten"
