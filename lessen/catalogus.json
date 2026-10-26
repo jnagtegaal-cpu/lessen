@@ -89,11 +89,11 @@
     },
     {
       "id": "g7-8-rekenen-delen-door-kommagetal",
-      "titel": "Delen door een kommagetal",
+      "titel": "Een kommagetal delen door een kommagetal",
       "groep": "7-8",
       "vak": "Rekenen",
       "onderwerp": "Kommagetallen",
-      "samenvatting": "Eén scherm: een kommagetal delen door een kommagetal in twee stappen, met drie sommen en ruitjespapier.",
+      "samenvatting": "Eén scherm: een kommagetal delen door een kommagetal in twee stappen, met zes sommen en ruitjespapier.",
       "trefwoorden": [
         "kommagetal",
         "delen",
@@ -142,8 +142,8 @@
       "gemaakt": "2026-10-12"
     },
     {
-      "id": "g7-8-spelling-dictee-iaal-um-latijnse-voorvoegsels",
-      "titel": "Dictee: groep 8 -iaal/-eaal en meervoud op -um, groep 7 Latijnse voorvoegsels en verkleinwoorden",
+      "id": "g7-8-spelling-dictee",
+      "titel": "Dictee: groep 8 -iaal/-ieel/-ueel en stoffelijke bijvoeglijke naamwoorden, groep 7 woorden op b en verkleinwoorden",
       "groep": "7-8",
       "vak": "Spelling",
       "onderwerp": "Dictee",
@@ -152,15 +152,14 @@
         "dictee",
         "spelling",
         "iaal",
-        "eaal",
-        "meervoud op um",
-        "podia",
-        "aquaria",
-        "latijns voorvoegsel",
+        "ieel",
+        "ueel",
+        "stoffelijke bijvoeglijke naamwoorden",
+        "woorden op b",
         "verkleinwoorden",
-        "a i u"
+        "a o u i"
       ],
-      "gemaakt": "2026-10-22",
+      "gemaakt": "2026-10-27",
       "pdfs": false
     },
     {

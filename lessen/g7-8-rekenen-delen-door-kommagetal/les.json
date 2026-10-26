@@ -1,10 +1,10 @@
 {
   "id": "g7-8-rekenen-delen-door-kommagetal",
-  "titel": "Delen door een kommagetal",
+  "titel": "Een kommagetal delen door een kommagetal",
   "groep": "7-8",
   "vak": "Rekenen",
   "onderwerp": "Kommagetallen",
-  "samenvatting": "Eén scherm: een kommagetal delen door een kommagetal in twee stappen, met drie sommen en ruitjespapier.",
+  "samenvatting": "Eén scherm: een kommagetal delen door een kommagetal in twee stappen, met zes sommen en ruitjespapier.",
   "trefwoorden": [
     "kommagetal",
     "delen",
@@ -17,11 +17,11 @@
   "lesdoelInHoek": true,
   "schermen": [
     {
-      "fase": "Delen door een kommagetal",
+      "fase": "Een kommagetal delen door een kommagetal",
       "achtergrond": "leeg",
       "ruim": true,
       "lesdoelLinks": true,
-      "notitie": "Stappen eerst verborgen, tik ze tevoorschijn. Antwoorden: 3,6 : 0,09 → 360 : 9 = 40. 4,8 : 2,4 → 48 : 24 = 2. 3,5 : 0,25 → 350 : 25 = 14.",
+      "notitie": "Stappen en sommen eerst verborgen, tik ze één voor één tevoorschijn. Antwoorden: 3,6 : 0,09 → 360 : 9 = 40. 4,8 : 2,4 → 48 : 24 = 2. 3,5 : 0,25 → 350 : 25 = 14. 2,4 : 0,6 → 24 : 6 = 4. 7,2 : 0,08 → 720 : 8 = 90. 4,5 : 0,15 → 450 : 15 = 30. Reminder (R naast het lesdoel): zet het doel nog klaar voor de leerlingen.",
       "blokken": [
         {
           "type": "kolommen",
@@ -33,7 +33,7 @@
             [
               {
                 "type": "subkop",
-                "tekst": "Delen door een kommagetal"
+                "tekst": "Een kommagetal delen door een kommagetal"
               },
               {
                 "type": "stappen",
@@ -45,8 +45,47 @@
                 "stapsgewijs": true
               },
               {
-                "type": "html",
-                "html": "<div style=\"display:flex;flex-direction:column;gap:12px\"><div style=\"font-size:52px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 22px;width:fit-content;letter-spacing:.02em\">3,6 : 0,09 =</div><div style=\"font-size:52px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 22px;width:fit-content;letter-spacing:.02em\">4,8 : 2,4 =</div><div style=\"font-size:52px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 22px;width:fit-content;letter-spacing:.02em\">3,5 : 0,25 =</div></div>"
+                "type": "kolommen",
+                "verhouding": [
+                  "1fr",
+                  "1fr"
+                ],
+                "kolommen": [
+                  [
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;white-space:nowrap\">3,6 : 0,09 =</div>"
+                    },
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;white-space:nowrap\">3,5 : 0,25 =</div>"
+                    },
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;white-space:nowrap\">7,2 : 0,08 =</div>"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;white-space:nowrap\">4,8 : 2,4 =</div>"
+                    },
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;white-space:nowrap\">2,4 : 0,6 =</div>"
+                    },
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;white-space:nowrap\">4,5 : 0,15 =</div>"
+                    }
+                  ]
+                ]
               }
             ],
             [
@@ -56,6 +95,10 @@
               }
             ]
           ]
+        },
+        {
+          "type": "html",
+          "html": "<details style=\"position:absolute;left:500px;bottom:20px;z-index:3;font-size:22px\"><summary style=\"list-style:none;cursor:pointer;width:34px;height:34px;border-radius:50%;background:#fff;border:2px solid #9aa39e;color:#5b6b63;font-weight:800;font-size:18px;display:grid;place-items:center\">R</summary><div style=\"position:absolute;left:0;bottom:44px;width:320px;background:#fff6e0;border:2px solid #d9822b;border-radius:12px;padding:10px 14px;line-height:1.35\">Zet het doel nog klaar voor de leerlingen.</div></details>"
         }
       ]
     }
