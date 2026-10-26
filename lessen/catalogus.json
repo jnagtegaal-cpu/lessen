@@ -88,6 +88,26 @@
       "gemaakt": "2026-10-13"
     },
     {
+      "id": "g7-8-rekenen-schaal-oppervlakte",
+      "titel": "Oppervlakte in werkelijkheid berekenen met een schaal",
+      "groep": "7-8",
+      "vak": "Rekenen",
+      "onderwerp": "Schaal",
+      "edi": true,
+      "samenvatting": "Met een schaal als 1 : 50 de oppervlakte in werkelijkheid berekenen, in drie stappen: cm in het echt, omrekenen naar m, oppervlakte in m².",
+      "trefwoorden": [
+        "schaal",
+        "oppervlakte",
+        "werkelijkheid",
+        "m²",
+        "cm",
+        "m",
+        "omrekenen",
+        "plattegrond"
+      ],
+      "gemaakt": "2026-10-26"
+    },
+    {
       "id": "g7-8-rekenen-schaal-werkelijke-lengte",
       "titel": "Schaal omrekenen naar de lengte in werkelijkheid",
       "groep": "7-8",

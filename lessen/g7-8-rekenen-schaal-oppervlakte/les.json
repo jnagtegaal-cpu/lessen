@@ -1,0 +1,410 @@
+{
+  "id": "g7-8-rekenen-schaal-oppervlakte",
+  "titel": "Oppervlakte in werkelijkheid berekenen met een schaal",
+  "groep": "7-8",
+  "vak": "Rekenen",
+  "onderwerp": "Schaal",
+  "edi": true,
+  "samenvatting": "Met een schaal als 1 : 50 de oppervlakte in werkelijkheid berekenen, in drie stappen: cm in het echt, omrekenen naar m, oppervlakte in m².",
+  "trefwoorden": [
+    "schaal",
+    "oppervlakte",
+    "werkelijkheid",
+    "m²",
+    "cm",
+    "m",
+    "omrekenen",
+    "plattegrond"
+  ],
+  "gemaakt": "2026-10-26",
+  "lesdoel": "Ik kan met een schaal de oppervlakte in werkelijkheid berekenen.",
+  "lesdoelInHoek": true,
+  "schermen": [
+    {
+      "fase": "Lesdoel",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "notitie": "Ik lees voor, de klas leest mee, maatjes lezen het aan elkaar voor, dan een willekeurige beurt.",
+      "blokken": [
+        {
+          "type": "html",
+          "html": "<div style=\"font-size:72px;line-height:1.25;text-align:center;font-weight:700\">Ik kan <span style=\"color:#2f9e63\">met een schaal</span> de <span style=\"color:#d9822b\">oppervlakte</span><br><span style=\"color:#2f9e63\">in werkelijkheid</span> <span style=\"color:#1f6fd1\">berekenen</span>.</div><div style=\"margin-top:24px;text-align:center;font-size:26px;color:#5b6b63\"><span style=\"color:#d9822b;font-weight:700\">oranje</span> = begrip · <span style=\"color:#1f6fd1;font-weight:700\">blauw</span> = vaardigheid · <span style=\"color:#2f9e63;font-weight:700\">groen</span> = hoe en waarvan</div>"
+        }
+      ]
+    },
+    {
+      "fase": "Activeren voorkennis",
+      "achtergrond": "leeg",
+      "notitie": "Twee korte opdrachten op het wisbordje: cm omrekenen naar m, en de oppervlakte van een rechthoek in cm².",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "1. Hoeveel meter is het?"
+              },
+              {
+                "type": "groot",
+                "tekst": "400 cm = … m",
+                "stijl": "font-size:56px;"
+              },
+              {
+                "type": "groot",
+                "tekst": "400 cm = **4 m**",
+                "verborgen": true,
+                "stijl": "font-size:56px;color:#2f9e63"
+              },
+              {
+                "type": "groot",
+                "tekst": "250 cm = … m",
+                "stijl": "font-size:56px;"
+              },
+              {
+                "type": "groot",
+                "tekst": "250 cm = **2,5 m**",
+                "verborgen": true,
+                "stijl": "font-size:56px;color:#2f9e63"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "2. Hoeveel cm² is deze rechthoek?"
+              },
+              {
+                "type": "html",
+                "html": "<svg width=\"520\" height=\"330\" viewBox=\"0 0 520 330\" style=\"display:block;margin:0 auto\"><rect x=\"30\" y=\"30\" width=\"330\" height=\"220\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"5\"/><text x=\"195\" y=\"295\" font-size=\"36\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">15 cm</text><text x=\"376\" y=\"152\" font-size=\"36\" font-weight=\"800\" fill=\"#d6453d\">10 cm</text></svg>"
+              },
+              {
+                "type": "groot",
+                "tekst": "15 cm × 10 cm = **150 cm²**",
+                "verborgen": true,
+                "stijl": "font-size:48px;color:#2f9e63"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — begrip: schaal",
+      "achtergrond": "leeg",
+      "notitie": "Kort herhalen wat schaal betekent, aan de hand van de modelauto. Daarna het overlegmoment in tweetallen: om de beurt een ding noemen dat op schaal gemaakt wordt.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "vraag",
+                "tekst": "Wat betekent **schaal** ook alweer?"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center\"><svg width=\"680\" height=\"304\" viewBox=\"0 0 560 250\"><defs><marker id=\"q\" markerWidth=\"10\" markerHeight=\"10\" refX=\"5\" refY=\"5\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#d6453d\"/></marker></defs><line x1=\"40\" y1=\"30\" x2=\"520\" y2=\"30\" stroke=\"#d6453d\" stroke-width=\"4\" marker-start=\"url(#q)\" marker-end=\"url(#q)\"/><text x=\"280\" y=\"20\" font-size=\"30\" font-weight=\"700\" fill=\"#d6453d\" text-anchor=\"middle\">10 cm</text><path d=\"M40,170 L40,130 Q45,110 90,105 L170,100 L230,60 L360,60 L420,100 L500,108 Q520,115 520,140 L520,170 Z\" fill=\"#2f6fd1\" stroke=\"#1d3f7a\" stroke-width=\"4\"/><path d=\"M240,70 L300,70 L300,100 L195,100 Z\" fill=\"#dbeaf7\"/><path d=\"M312,70 L355,70 L398,100 L312,100 Z\" fill=\"#dbeaf7\"/><circle cx=\"140\" cy=\"172\" r=\"32\" fill=\"#333\"/><circle cx=\"140\" cy=\"172\" r=\"13\" fill=\"#bbb\"/><circle cx=\"420\" cy=\"172\" r=\"32\" fill=\"#333\"/><circle cx=\"420\" cy=\"172\" r=\"13\" fill=\"#bbb\"/><text x=\"280\" y=\"240\" font-size=\"28\" fill=\"#5b6b63\" text-anchor=\"middle\">modelauto</text></svg></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"text-align:center\"><div style=\"font-size:64px;font-weight:800;color:#d9822b\">schaal 1 : 40</div><div style=\"font-size:32px;margin-top:8px;line-height:1.35\">In het echt is alles <b>40 keer</b> zo groot.<br>1 cm op het model = 40 cm in het echt.</div></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"margin-top:28px;background:#fff6e0;border:4px dashed #d9822b;border-radius:18px;padding:20px 24px;font-size:32px;line-height:1.35\"><div style=\"font-weight:800;margin-bottom:6px\">👥 Overleg met je maatje</div>Wat wordt er op schaal gemaakt?<br>Noem <b>om de beurt</b> een ding.</div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Ik doe voor",
+      "achtergrond": "leeg",
+      "notitie": "Ik doe voor en denk hardop. De kinderen doen mee in hun schrift. Ik werk uit op het ruitjespapier. Antwoorden: 1400 en 1000 cm → 14 en 10 m → 140 m².",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Ik doe voor"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><svg width=\"310\" height=\"200\" viewBox=\"0 0 310 200\" style=\"flex:none\"><rect x=\"19.0\" y=\"10.0\" width=\"182.0\" height=\"130.0\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"4\"/><text x=\"110.0\" y=\"84.0\" font-size=\"24\" font-weight=\"700\" fill=\"#2f6b4a\" text-anchor=\"middle\">tuin</text><text x=\"110.0\" y=\"178.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">7 cm</text><text x=\"213.0\" y=\"85.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">5 cm</text></svg><div style=\"font-size:30px;line-height:1.35\"><div style=\"font-size:38px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 200</div>Hoe groot is de oppervlakte van de tuin in het echt?</div></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,32px 64px,32px 64px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Reken de **cm op de tekening** om naar **cm in het echt**.",
+                  "Reken de **cm** om naar **m**.",
+                  "Bereken de **oppervlakte** in **m²**."
+                ],
+                "stijl": "font-size:.7em"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Wij samen",
+      "achtergrond": "leeg",
+      "notitie": "Samen, stap voor stap. De kinderen doen elke stap mee in hun schrift. Antwoorden: 300 en 300 cm → 3 en 3 m → 9 m².",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Wij samen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><svg width=\"310\" height=\"200\" viewBox=\"0 0 310 200\" style=\"flex:none\"><rect x=\"45.0\" y=\"10.0\" width=\"130.0\" height=\"130.0\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"4\"/><text x=\"110.0\" y=\"84.0\" font-size=\"24\" font-weight=\"700\" fill=\"#2f6b4a\" text-anchor=\"middle\">gebouw</text><text x=\"110.0\" y=\"178.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">12 cm</text><text x=\"187.0\" y=\"85.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">12 cm</text></svg><div style=\"font-size:30px;line-height:1.35\"><div style=\"font-size:38px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 25</div>Hoe groot is de oppervlakte van het gebouw in het echt?</div></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,32px 64px,32px 64px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Reken de **cm op de tekening** om naar **cm in het echt**.",
+                  "Reken de **cm** om naar **m**.",
+                  "Bereken de **oppervlakte** in **m²**."
+                ],
+                "stijl": "font-size:.7em"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Jullie samen",
+      "achtergrond": "leeg",
+      "notitie": "Tweetallen, één schrift. Gangkant doet stap 1, raamkant stap 2, samen stap 3. Gangkant begint en geeft het schrift door. Raamkant controleert eerst stap 1, ze zijn samen verantwoordelijk. Tik het blok met de taakverdeling tevoorschijn. Antwoorden: 600 en 500 cm → 6 en 5 m → 30 m².",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Jullie samen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><svg width=\"310\" height=\"200\" viewBox=\"0 0 310 200\" style=\"flex:none\"><rect x=\"32.0\" y=\"10.0\" width=\"156.0\" height=\"130.0\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"4\"/><text x=\"110.0\" y=\"84.0\" font-size=\"24\" font-weight=\"700\" fill=\"#2f6b4a\" text-anchor=\"middle\">kamer</text><text x=\"110.0\" y=\"178.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">12 cm</text><text x=\"200.0\" y=\"85.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">10 cm</text></svg><div style=\"font-size:30px;line-height:1.35\"><div style=\"font-size:38px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 50</div>Hoe groot is de oppervlakte van de kamer in het echt?</div></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,32px 64px,32px 64px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Reken de **cm op de tekening** om naar **cm in het echt**.",
+                  "Reken de **cm** om naar **m**.",
+                  "Bereken de **oppervlakte** in **m²**."
+                ],
+                "stijl": "font-size:.7em"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"margin-top:14px;background:#fff6e0;border:4px dashed #d9822b;border-radius:18px;padding:12px 18px;font-size:26px;line-height:1.35\"><div style=\"font-weight:800;margin-bottom:2px\">👥 Eén schrift, gangkant begint</div>1. <b>Gangkant</b> · 2. <b>Raamkant</b> · 3. <b>Samen</b><div style=\"margin-top:6px;font-weight:700;color:#b5541c\">⚠️ Raamkant controleert eerst stap 1. Jullie zijn samen verantwoordelijk!</div></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Jij alleen",
+      "achtergrond": "leeg",
+      "notitie": "Ieder voor zich in het schrift. Antwoorden: 1200 en 800 cm → 12 en 8 m → 96 m².",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Jij alleen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><svg width=\"310\" height=\"200\" viewBox=\"0 0 310 200\" style=\"flex:none\"><rect x=\"12.5\" y=\"10.0\" width=\"195.0\" height=\"130.0\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"4\"/><text x=\"110.0\" y=\"84.0\" font-size=\"24\" font-weight=\"700\" fill=\"#2f6b4a\" text-anchor=\"middle\">woonkamer</text><text x=\"110.0\" y=\"178.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">6 cm</text><text x=\"219.5\" y=\"85.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">4 cm</text></svg><div style=\"font-size:30px;line-height:1.35\"><div style=\"font-size:38px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 200</div>Hoe groot is de oppervlakte van de woonkamer in het echt?</div></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,32px 64px,32px 64px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Reken de **cm op de tekening** om naar **cm in het echt**.",
+                  "Reken de **cm** om naar **m**.",
+                  "Bereken de **oppervlakte** in **m²**."
+                ],
+                "stijl": "font-size:.7em"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Verlengde instructie",
+      "achtergrond": "leeg",
+      "notitie": "Antwoorden: 500 en 500 cm → 5 en 5 m → 25 m².",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Verlengde instructie"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><svg width=\"310\" height=\"200\" viewBox=\"0 0 310 200\" style=\"flex:none\"><rect x=\"45.0\" y=\"10.0\" width=\"130.0\" height=\"130.0\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"4\"/><text x=\"110.0\" y=\"84.0\" font-size=\"24\" font-weight=\"700\" fill=\"#2f6b4a\" text-anchor=\"middle\">tuin</text><text x=\"110.0\" y=\"178.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">20 cm</text><text x=\"187.0\" y=\"85.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">20 cm</text></svg><div style=\"font-size:30px;line-height:1.35\"><div style=\"font-size:38px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 25</div>Hoe groot is de oppervlakte van de tuin in het echt?</div></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,32px 64px,32px 64px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Reken de **cm op de tekening** om naar **cm in het echt**.",
+                  "Reken de **cm** om naar **m**.",
+                  "Bereken de **oppervlakte** in **m²**."
+                ],
+                "stijl": "font-size:.7em"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Verlengde instructie",
+      "achtergrond": "leeg",
+      "notitie": "Antwoorden: 1000 en 600 cm → 10 en 6 m → 60 m².",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Verlengde instructie"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><svg width=\"310\" height=\"200\" viewBox=\"0 0 310 200\" style=\"flex:none\"><rect x=\"10.0\" y=\"15.0\" width=\"200.0\" height=\"120.0\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"4\"/><text x=\"110.0\" y=\"84.0\" font-size=\"24\" font-weight=\"700\" fill=\"#2f6b4a\" text-anchor=\"middle\">huis</text><text x=\"110.0\" y=\"173.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">20 cm</text><text x=\"222.0\" y=\"85.0\" font-size=\"30\" font-weight=\"800\" fill=\"#d6453d\">12 cm</text></svg><div style=\"font-size:30px;line-height:1.35\"><div style=\"font-size:38px;font-weight:800;color:#d9822b;margin-bottom:6px\">schaal 1 : 50</div>Dit is het bovenaanzicht van een huis. Hoe groot is de oppervlakte in het echt?</div></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,32px 64px,32px 64px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "Reken de **cm op de tekening** om naar **cm in het echt**.",
+                  "Reken de **cm** om naar **m**.",
+                  "Bereken de **oppervlakte** in **m²**."
+                ],
+                "stijl": "font-size:.7em"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
