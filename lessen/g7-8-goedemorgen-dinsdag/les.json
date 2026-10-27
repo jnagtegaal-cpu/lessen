@@ -5,7 +5,7 @@
   "vak": "Dagopening",
   "onderwerp": "Dagschema",
   "duur": 10,
-  "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema en een welkom: Chromebook pakken en plek netjes.",
+  "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema en een welkom: Wetenswaardig-boek pakken en plek netjes.",
   "trefwoorden": [
     "goedemorgen",
     "dagschema",
@@ -35,19 +35,19 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;height:640px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;text-align:center\"><div style=\"font-size:50px;font-weight:800;line-height:1.25\">Welkom, fijn dat jullie er zijn! 😊</div><div style=\"font-size:38px;margin-top:30px;line-height:1.35\">💻 Pak alvast je <b>Chromebook</b>.</div><div style=\"font-size:38px;margin-top:18px;line-height:1.35\">🧹 Zorg dat je plek <b>netjes</b> is, dan kunnen we zo beginnen.</div></div>"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;height:640px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;text-align:center\"><div style=\"font-size:50px;font-weight:800;line-height:1.25\">Welkom, fijn dat jullie er zijn! 😊</div><div style=\"font-size:38px;margin-top:30px;line-height:1.35\">📘 Pak alvast je <b>Wetenswaardig-boek</b>.</div><div style=\"font-size:38px;margin-top:18px;line-height:1.35\">🧹 Zorg dat je plek <b>netjes</b> is, dan kunnen we zo beginnen.</div></div>"
               }
             ]
           ]
         }
       ],
-      "notitie": "Dagschema voor dinsdag. Bij binnenkomst: Chromebook pakken en de plek netjes maken."
+      "notitie": "Dagschema voor dinsdag. Bij binnenkomst: Wetenswaardig-boek pakken en de plek netjes maken."
     }
   ],
   "voorbereiding": {
     "verloop": [
       {
-        "wat": "Bij binnenkomst: welkom op het bord, Chromebook pakken en plek netjes maken"
+        "wat": "Bij binnenkomst: welkom op het bord, Wetenswaardig-boek pakken en plek netjes maken"
       },
       {
         "wat": "Dagopening"
