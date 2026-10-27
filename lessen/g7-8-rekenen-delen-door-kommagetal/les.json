@@ -21,7 +21,7 @@
       "achtergrond": "leeg",
       "ruim": true,
       "lesdoelLinks": true,
-      "notitie": "Stappen eerst verborgen, tik ze tevoorschijn. Antwoorden: 3,6 : 0,09 → 360 : 9 = 40. 4,8 : 2,4 → 48 : 24 = 2. 3,5 : 0,25 → 350 : 25 = 14. 2,4 : 0,6 → 24 : 6 = 4. 7,2 : 0,08 → 720 : 8 = 90. 4,5 : 0,15 → 450 : 15 = 30. Reminder (R naast het lesdoel): zet het doel nog klaar voor de leerlingen.",
+      "notitie": "Stappen en sommen eerst verborgen, tik ze één voor één tevoorschijn. Antwoorden: 3,6 : 0,09 → 360 : 9 = 40. 4,8 : 2,4 → 48 : 24 = 2. 3,5 : 0,25 → 350 : 25 = 14. 2,4 : 0,6 → 24 : 6 = 4. 7,2 : 0,08 → 720 : 8 = 90. 4,5 : 0,15 → 450 : 15 = 30. Reminder (R naast het lesdoel): zet het doel nog klaar voor de leerlingen.",
       "blokken": [
         {
           "type": "kolommen",
@@ -45,8 +45,47 @@
                 "stapsgewijs": true
               },
               {
-                "type": "html",
-                "html": "<div style=\"display:grid;grid-template-columns:auto auto;justify-content:start;gap:12px 16px\"><div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;width:fit-content;white-space:nowrap;letter-spacing:.02em\">3,6 : 0,09 =</div><div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;width:fit-content;white-space:nowrap;letter-spacing:.02em\">4,8 : 2,4 =</div><div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;width:fit-content;white-space:nowrap;letter-spacing:.02em\">3,5 : 0,25 =</div><div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;width:fit-content;white-space:nowrap;letter-spacing:.02em\">2,4 : 0,6 =</div><div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;width:fit-content;white-space:nowrap;letter-spacing:.02em\">7,2 : 0,08 =</div><div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;width:fit-content;white-space:nowrap;letter-spacing:.02em\">4,5 : 0,15 =</div></div>"
+                "type": "kolommen",
+                "verhouding": [
+                  "1fr",
+                  "1fr"
+                ],
+                "kolommen": [
+                  [
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;white-space:nowrap\">3,6 : 0,09 =</div>"
+                    },
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;white-space:nowrap\">3,5 : 0,25 =</div>"
+                    },
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;white-space:nowrap\">7,2 : 0,08 =</div>"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;white-space:nowrap\">4,8 : 2,4 =</div>"
+                    },
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;white-space:nowrap\">2,4 : 0,6 =</div>"
+                    },
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"font-size:44px;font-weight:800;background:#eef7f1;border-radius:14px;padding:4px 18px;white-space:nowrap\">4,5 : 0,15 =</div>"
+                    }
+                  ]
+                ]
               }
             ],
             [

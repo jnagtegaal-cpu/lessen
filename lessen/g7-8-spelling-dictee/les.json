@@ -1,12 +1,22 @@
 {
-  "id": "g7-8-spelling-dictee-iaal-um-latijnse-voorvoegsels",
-  "titel": "Dictee: groep 8 -iaal/-eaal en meervoud op -um, groep 7 Latijnse voorvoegsels en verkleinwoorden",
+  "id": "g7-8-spelling-dictee",
+  "titel": "Dictee: groep 8 -iaal/-ieel/-ueel en stoffelijke bijvoeglijke naamwoorden, groep 7 woorden op b en verkleinwoorden",
   "groep": "7-8",
   "vak": "Spelling",
   "onderwerp": "Dictee",
   "samenvatting": "Twee dictees in één presentatie, elk met vijf woorden en een zin. Scherm 1 is groep 8, scherm 2 is groep 7. Alles staat verborgen en tik je één voor één zichtbaar.",
-  "trefwoorden": ["dictee", "spelling", "iaal", "eaal", "meervoud op um", "podia", "aquaria", "latijns voorvoegsel", "verkleinwoorden", "a i u"],
-  "gemaakt": "2026-10-22",
+  "trefwoorden": [
+    "dictee",
+    "spelling",
+    "iaal",
+    "ieel",
+    "ueel",
+    "stoffelijke bijvoeglijke naamwoorden",
+    "woorden op b",
+    "verkleinwoorden",
+    "a o u i"
+  ],
+  "gemaakt": "2026-10-27",
   "pdfs": false,
   "schermen": [
     {
@@ -14,20 +24,32 @@
       "achtergrond": "leeg",
       "notitie": "Groep 8. Tik elk woord en daarna de zin aan om ze te laten zien.",
       "blokken": [
-        { "type": "kop", "tekst": "Dictee groep 8" },
+        {
+          "type": "kop",
+          "tekst": "Dictee groep 8"
+        },
         {
           "type": "lijst",
           "genummerd": true,
           "stapsgewijs": true,
           "stijl": "font-size:48px;font-weight:700",
-          "items": ["de liniaal", "geniaal", "speciaal", "de podia", "de criteria"]
+          "items": [
+            "sociaal",
+            "commercieel",
+            "visueel",
+            "kartonnen",
+            "fluwelen"
+          ]
         },
-        { "type": "subkop", "tekst": "Zin" },
+        {
+          "type": "subkop",
+          "tekst": "Zin"
+        },
         {
           "type": "tekst",
           "verborgen": true,
           "stijl": "font-size:48px;font-weight:700;line-height:1.3",
-          "tekst": "Het was een ideale dag voor een uitstapje, want we bezochten in één week twee aquaria en keken 's avonds naar een voorstelling in het theater."
+          "tekst": "Het is essentieel dat je die glazen vaas voorzichtig vasthoudt."
         }
       ]
     },
@@ -36,20 +58,32 @@
       "achtergrond": "leeg",
       "notitie": "Groep 7. Tik elk woord en daarna de zin aan om ze te laten zien.",
       "blokken": [
-        { "type": "kop", "tekst": "Dictee groep 7" },
+        {
+          "type": "kop",
+          "tekst": "Dictee groep 7"
+        },
         {
           "type": "lijst",
           "genummerd": true,
           "stapsgewijs": true,
           "stijl": "font-size:48px;font-weight:700",
-          "items": ["absoluut", "de advertentie", "de obstakels", "het paprikaatje", "het parapluutje"]
+          "items": [
+            "krab",
+            "schub",
+            "gorillaatje",
+            "tostietje",
+            "menuutje"
+          ]
         },
-        { "type": "subkop", "tekst": "Zin" },
+        {
+          "type": "subkop",
+          "tekst": "Zin"
+        },
         {
           "type": "tekst",
           "verborgen": true,
           "stijl": "font-size:48px;font-weight:700;line-height:1.3",
-          "tekst": "De advocaat at in de pauze snel een kiwietje en een pindaatje, want hij moest nog veel administratie doen."
+          "tekst": "Bij eb zag ik een zeerob naast een rood kanootje liggen."
         }
       ]
     }
