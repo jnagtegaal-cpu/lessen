@@ -1,0 +1,399 @@
+{
+  "id": "g8-rekenen-kubieke-maten-liter",
+  "titel": "Kubieke maten omrekenen in litermaten en andersom",
+  "groep": "8",
+  "vak": "Rekenen",
+  "onderwerp": "Inhoud",
+  "edi": true,
+  "samenvatting": "Kubieke maten (m³, dm³, cm³) omrekenen in liter en milliliter en andersom, met de brug 1 dm³ = 1 L en 1 cm³ = 1 ml.",
+  "trefwoorden": [
+    "inhoud",
+    "kubieke maten",
+    "liter",
+    "milliliter",
+    "dm3",
+    "cm3",
+    "metriek stelsel",
+    "omrekenen"
+  ],
+  "gemaakt": "2026-10-28",
+  "lesdoel": "Ik kan kubieke maten omrekenen in litermaten en andersom.",
+  "lesdoelInHoek": true,
+  "schermen": [
+    {
+      "fase": "Activeren voorkennis: metriek stelsel",
+      "achtergrond": "leeg",
+      "lesdoelVerbergen": true,
+      "notitie": "Ezelsbruggetje: Kan Het Dametje Met De Centimeter Meten. Willekeurige beurten: welke maat hoort bij deze letter? Tik het groene blokje weg. Daarna de sprongetjes boven (× 10) en onder (: 10) wegtikken. Dan op het wisbordje: 3,5 m = … cm (350 cm), willekeurige beurt. Link: vandaag springen we met 1000.",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "**K**an **H**et **D**ametje **M**et **D**e **C**entimeter **M**eten?"
+        },
+        {
+          "type": "html",
+          "html": "<svg width=\"1310\" height=\"230\" viewBox=\"0 0 1310 230\" style=\"display:block;margin:0 auto\"><rect x=\"10\" y=\"80\" width=\"150\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"85.0\" y=\"135\" font-size=\"44\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">km</text><path d=\"M100.0,76 Q180.0,22 260.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M248.0,64 L260.0,76 L244.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"180.0\" y=\"40\" font-size=\"26\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 10</text><path d=\"M260.0,164 Q180.0,218 100.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M112.0,176 L100.0,164 L116.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"180.0\" y=\"222\" font-size=\"26\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 10</text><rect x=\"200\" y=\"80\" width=\"150\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"275.0\" y=\"135\" font-size=\"44\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">hm</text><path d=\"M290.0,76 Q370.0,22 450.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M438.0,64 L450.0,76 L434.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"370.0\" y=\"40\" font-size=\"26\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 10</text><path d=\"M450.0,164 Q370.0,218 290.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M302.0,176 L290.0,164 L306.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"370.0\" y=\"222\" font-size=\"26\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 10</text><rect x=\"390\" y=\"80\" width=\"150\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"465.0\" y=\"135\" font-size=\"44\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">dam</text><path d=\"M480.0,76 Q560.0,22 640.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M628.0,64 L640.0,76 L624.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"560.0\" y=\"40\" font-size=\"26\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 10</text><path d=\"M640.0,164 Q560.0,218 480.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M492.0,176 L480.0,164 L496.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"560.0\" y=\"222\" font-size=\"26\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 10</text><rect x=\"580\" y=\"80\" width=\"150\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"655.0\" y=\"135\" font-size=\"44\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">m</text><path d=\"M670.0,76 Q750.0,22 830.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M818.0,64 L830.0,76 L814.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"750.0\" y=\"40\" font-size=\"26\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 10</text><path d=\"M830.0,164 Q750.0,218 670.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M682.0,176 L670.0,164 L686.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"750.0\" y=\"222\" font-size=\"26\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 10</text><rect x=\"770\" y=\"80\" width=\"150\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"845.0\" y=\"135\" font-size=\"44\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">dm</text><path d=\"M860.0,76 Q940.0,22 1020.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M1008.0,64 L1020.0,76 L1004.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"940.0\" y=\"40\" font-size=\"26\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 10</text><path d=\"M1020.0,164 Q940.0,218 860.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M872.0,176 L860.0,164 L876.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"940.0\" y=\"222\" font-size=\"26\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 10</text><rect x=\"960\" y=\"80\" width=\"150\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"1035.0\" y=\"135\" font-size=\"44\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">cm</text><path d=\"M1050.0,76 Q1130.0,22 1210.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M1198.0,64 L1210.0,76 L1194.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"1130.0\" y=\"40\" font-size=\"26\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 10</text><path d=\"M1210.0,164 Q1130.0,218 1050.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M1062.0,176 L1050.0,164 L1066.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"1130.0\" y=\"222\" font-size=\"26\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 10</text><rect x=\"1150\" y=\"80\" width=\"150\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"1225.0\" y=\"135\" font-size=\"44\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">mm</text></svg>"
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"text-align:center;font-size:52px;font-weight:800;margin-top:10px\">✏️ 3,5 m = … cm</div>"
+        },
+        {
+          "type": "html",
+          "verborgen": true,
+          "html": "<div style=\"text-align:center;font-size:52px;font-weight:800;color:#2f9e63\">3,5 m = 350 cm</div>"
+        },
+        {
+          "type": "html",
+          "html": "<details style=\"position:absolute;left:30px;bottom:20px;z-index:3;font-size:22px\"><summary style=\"list-style:none;cursor:pointer;width:34px;height:34px;border-radius:50%;background:#fff;border:2px solid #9aa39e;color:#5b6b63;font-weight:800;font-size:18px;display:grid;place-items:center\">R</summary><div style=\"position:absolute;left:0;bottom:44px;width:380px;background:#fff6e0;border:2px solid #d9822b;border-radius:12px;padding:10px 14px;line-height:1.35\">Wisbordje: iedereen schrijft 3,5 m = … cm op. Daarna een willekeurige beurt. Link: vandaag springen we niet met 10, maar met 1000.</div></details>"
+        }
+      ],
+      "elementen": [
+        {
+          "soort": "afdek",
+          "x": 151,
+          "y": 288,
+          "b": 158,
+          "h": 88,
+          "vulling": "#2f9e63"
+        },
+        {
+          "soort": "afdek",
+          "x": 341,
+          "y": 288,
+          "b": 158,
+          "h": 88,
+          "vulling": "#2f9e63"
+        },
+        {
+          "soort": "afdek",
+          "x": 531,
+          "y": 288,
+          "b": 158,
+          "h": 88,
+          "vulling": "#2f9e63"
+        },
+        {
+          "soort": "afdek",
+          "x": 721,
+          "y": 288,
+          "b": 158,
+          "h": 88,
+          "vulling": "#2f9e63"
+        },
+        {
+          "soort": "afdek",
+          "x": 911,
+          "y": 288,
+          "b": 158,
+          "h": 88,
+          "vulling": "#2f9e63"
+        },
+        {
+          "soort": "afdek",
+          "x": 1101,
+          "y": 288,
+          "b": 158,
+          "h": 88,
+          "vulling": "#2f9e63"
+        },
+        {
+          "soort": "afdek",
+          "x": 1291,
+          "y": 288,
+          "b": 158,
+          "h": 88,
+          "vulling": "#2f9e63"
+        },
+        {
+          "soort": "afdek",
+          "x": 215,
+          "y": 208,
+          "b": 1150,
+          "h": 82,
+          "vulling": "#cfe3f7"
+        },
+        {
+          "soort": "afdek",
+          "x": 215,
+          "y": 372,
+          "b": 1150,
+          "h": 86,
+          "vulling": "#f6d4d1"
+        }
+      ]
+    },
+    {
+      "fase": "Activeren voorkennis: liter en ml, dm³ en cm³",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "notitie": "Op het wisbordje.",
+      "blokken": [
+        {
+          "type": "html",
+          "html": "<div style=\"text-align:center;font-size:52px;font-weight:800;color:#1d2b24\">1 liter = … ml</div>"
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"text-align:center;font-size:52px;font-weight:800;color:#2f9e63\">1 liter = 1000 ml</div>",
+          "verborgen": true
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"text-align:center;font-size:52px;font-weight:800;color:#1d2b24\">1 dm³ = … cm³</div>"
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"text-align:center;font-size:52px;font-weight:800;color:#2f9e63\">1 dm³ = 1000 cm³</div>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Activeren voorkennis: 1 dm³ en 1 liter",
+      "achtergrond": "leeg",
+      "lesdoelVerbergen": true,
+      "notitie": "Met een echte kubieke decimeter en een literpak. Giet over: past het?",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "Past dit?"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<svg width=\"300\" height=\"300\" viewBox=\"0 0 300 300\" style=\"display:block;margin:0 auto\"><polygon points=\"60,110 170,110 240,60 130,60\" fill=\"#d8ecf7\" stroke=\"#2b6a8e\" stroke-width=\"3\"/><polygon points=\"170,110 240,60 240,170 170,220\" fill=\"#a9d2ea\" stroke=\"#2b6a8e\" stroke-width=\"3\"/><rect x=\"60\" y=\"110\" width=\"110\" height=\"110\" fill=\"#c3e1f2\" stroke=\"#2b6a8e\" stroke-width=\"3\"/><text x=\"115\" y=\"290\" font-size=\"34\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">1 dm³</text></svg>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<svg width=\"220\" height=\"300\" viewBox=\"0 0 220 300\" style=\"display:block;margin:0 auto\"><polygon points=\"60,70 160,70 140,30 80,30\" fill=\"#e9eef0\" stroke=\"#8a969c\" stroke-width=\"3\"/><rect x=\"60\" y=\"70\" width=\"100\" height=\"180\" rx=\"6\" fill=\"#ffffff\" stroke=\"#8a969c\" stroke-width=\"3\"/><rect x=\"60\" y=\"130\" width=\"100\" height=\"60\" fill=\"#8fc9ec\"/><text x=\"110\" y=\"170\" font-size=\"26\" font-weight=\"800\" fill=\"#ffffff\" text-anchor=\"middle\">1 L</text><text x=\"110\" y=\"290\" font-size=\"34\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">1 liter</text></svg>"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"text-align:center;font-size:52px;font-weight:800;color:#2f9e63\">1 dm³ = 1 liter</div>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Lesdoel",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "notitie": "Ik lees voor, de klas leest mee, maatjes lezen het aan elkaar voor, dan een willekeurige beurt. Je weet al: 1 dm³ = 1 liter.",
+      "blokken": [
+        {
+          "type": "html",
+          "html": "<div style=\"font-size:64px;line-height:1.25;text-align:center;font-weight:700\">Ik kan <span style=\"color:#d9822b\">kubieke maten</span> <span style=\"color:#1f6fd1\">omrekenen</span><br>in <span style=\"color:#d9822b\">litermaten</span> en andersom.</div>"
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"margin-top:20px\"><svg width=\"1110\" height=\"230\" viewBox=\"0 0 1110 230\" style=\"display:block;margin:0 auto\"><rect x=\"10\" y=\"80\" width=\"190\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"105.0\" y=\"136\" font-size=\"46\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">m³</text><path d=\"M124.0,76 Q255.0,22 386.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M374.0,64 L386.0,76 L370.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"255.0\" y=\"40\" font-size=\"26\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M386.0,164 Q255.0,218 124.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M136.0,176 L124.0,164 L140.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"255.0\" y=\"222\" font-size=\"26\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"310\" y=\"80\" width=\"190\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"405.0\" y=\"136\" font-size=\"46\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">dm³</text><path d=\"M424.0,76 Q555.0,22 686.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M674.0,64 L686.0,76 L670.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"555.0\" y=\"40\" font-size=\"26\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M686.0,164 Q555.0,218 424.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M436.0,176 L424.0,164 L440.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"555.0\" y=\"222\" font-size=\"26\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"610\" y=\"80\" width=\"190\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"705.0\" y=\"136\" font-size=\"46\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">cm³</text><path d=\"M724.0,76 Q855.0,22 986.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M974.0,64 L986.0,76 L970.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"855.0\" y=\"40\" font-size=\"26\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M986.0,164 Q855.0,218 724.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M736.0,176 L724.0,164 L740.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"855.0\" y=\"222\" font-size=\"26\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"910\" y=\"80\" width=\"190\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"1005.0\" y=\"136\" font-size=\"46\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">mm³</text></svg></div>"
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — begrip: van kubieke maat naar liter",
+      "achtergrond": "leeg",
+      "notitie": "Brug: 1000 cm³ past in 1 dm³, en 1000 ml past in 1 liter. Dus dm³ hoort bij liter en cm³ hoort bij ml: dezelfde sprong van × 1000. Tik eerst liter en ml onder de trap, dan de twee zinnen.",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "Hoe hoort de liter bij de kubieke maten?"
+        },
+        {
+          "type": "html",
+          "html": "<svg width=\"1110\" height=\"230\" viewBox=\"0 0 1110 230\" style=\"display:block;margin:0 auto\"><rect x=\"10\" y=\"80\" width=\"190\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"105.0\" y=\"136\" font-size=\"46\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">m³</text><path d=\"M124.0,76 Q255.0,22 386.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M374.0,64 L386.0,76 L370.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"255.0\" y=\"40\" font-size=\"26\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M386.0,164 Q255.0,218 124.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M136.0,176 L124.0,164 L140.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"255.0\" y=\"222\" font-size=\"26\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"310\" y=\"80\" width=\"190\" height=\"80\" rx=\"14\" fill=\"#fff6e0\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"405.0\" y=\"136\" font-size=\"46\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">dm³</text><path d=\"M424.0,76 Q555.0,22 686.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M674.0,64 L686.0,76 L670.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"555.0\" y=\"40\" font-size=\"26\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M686.0,164 Q555.0,218 424.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M436.0,176 L424.0,164 L440.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"555.0\" y=\"222\" font-size=\"26\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"610\" y=\"80\" width=\"190\" height=\"80\" rx=\"14\" fill=\"#fff6e0\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"705.0\" y=\"136\" font-size=\"46\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">cm³</text><path d=\"M724.0,76 Q855.0,22 986.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M974.0,64 L986.0,76 L970.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"855.0\" y=\"40\" font-size=\"26\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M986.0,164 Q855.0,218 724.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M736.0,176 L724.0,164 L740.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"855.0\" y=\"222\" font-size=\"26\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"910\" y=\"80\" width=\"190\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"1005.0\" y=\"136\" font-size=\"46\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">mm³</text></svg>"
+        },
+        {
+          "type": "html",
+          "verborgen": true,
+          "html": "<svg width=\"1170\" height=\"74\" viewBox=\"-30 0 1170 74\" style=\"display:block;margin:0 auto\"><rect x=\"280\" y=\"4\" width=\"250\" height=\"64\" rx=\"14\" fill=\"#fff6e0\" stroke=\"#d9822b\" stroke-width=\"3\"/><text x=\"405.0\" y=\"48\" font-size=\"32\" font-weight=\"800\" fill=\"#d9822b\" text-anchor=\"middle\">1 dm³ = 1 L</text><rect x=\"580\" y=\"4\" width=\"250\" height=\"64\" rx=\"14\" fill=\"#fff6e0\" stroke=\"#d9822b\" stroke-width=\"3\"/><text x=\"705.0\" y=\"48\" font-size=\"32\" font-weight=\"800\" fill=\"#d9822b\" text-anchor=\"middle\">1 cm³ = 1 ml</text></svg>"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"background:#eef7f1;border-radius:16px;padding:14px 20px;font-size:32px;line-height:1.4;text-align:center\"><b>1000 cm³</b> past in <b>1 dm³</b></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"background:#fff6e0;border-radius:16px;padding:14px 20px;font-size:32px;line-height:1.4;text-align:center\"><b>1000 ml</b> past in <b>1 liter</b></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 1",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Stappen eerst verborgen, tik ze één voor één tevoorschijn. Antwoord: ml staat bij cm³, naar dm³ is 1 sprong naar links: 900 : 1000 = 0,9 dm³.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Voorbeeld 1"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:46px;font-weight:800\">900 ml = … dm³</div>"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welke maat heb je?** Zoek hem op de trap.",
+                  "**Naar welke maat moet je?** Zoek die ook op.",
+                  "**Tel de sprongen:** × 1000 of : 1000.",
+                  "**Schrijf het antwoord** in de gevraagde maat."
+                ],
+                "stijl": "font-size:.62em",
+                "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<svg width=\"750\" height=\"330\" viewBox=\"0 0 750 330\" style=\"display:block;margin:0 auto\"><rect x=\"10\" y=\"80\" width=\"130\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"75.0\" y=\"133\" font-size=\"36\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">m³</text><path d=\"M88.0,76 Q175.0,22 262.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M250.0,64 L262.0,76 L246.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"175.0\" y=\"40\" font-size=\"24\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M262.0,164 Q175.0,218 88.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M100.0,176 L88.0,164 L104.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"175.0\" y=\"222\" font-size=\"24\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"210\" y=\"80\" width=\"130\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"275.0\" y=\"133\" font-size=\"36\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">dm³</text><path d=\"M288.0,76 Q375.0,22 462.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M450.0,64 L462.0,76 L446.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"375.0\" y=\"40\" font-size=\"24\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M462.0,164 Q375.0,218 288.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M300.0,176 L288.0,164 L304.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"375.0\" y=\"222\" font-size=\"24\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"410\" y=\"80\" width=\"130\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"475.0\" y=\"133\" font-size=\"36\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">cm³</text><path d=\"M488.0,76 Q575.0,22 662.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M650.0,64 L662.0,76 L646.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"575.0\" y=\"40\" font-size=\"24\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M662.0,164 Q575.0,218 488.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M500.0,176 L488.0,164 L504.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"575.0\" y=\"222\" font-size=\"24\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"610\" y=\"80\" width=\"130\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"675.0\" y=\"133\" font-size=\"36\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">mm³</text><rect x=\"210\" y=\"250\" width=\"130\" height=\"64\" rx=\"14\" fill=\"#fff6e0\" stroke=\"#d9822b\" stroke-width=\"3\"/><text x=\"275.0\" y=\"294\" font-size=\"34\" font-weight=\"800\" fill=\"#d9822b\" text-anchor=\"middle\">L</text><rect x=\"410\" y=\"250\" width=\"130\" height=\"64\" rx=\"14\" fill=\"#fff6e0\" stroke=\"#d9822b\" stroke-width=\"3\"/><text x=\"475.0\" y=\"294\" font-size=\"34\" font-weight=\"800\" fill=\"#d9822b\" text-anchor=\"middle\">ml</text></svg>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 2",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Meerkeuze. Antwoord B: liter staat bij dm³, van m³ naar dm³ is 1 sprong naar rechts: 0,1 × 1000 = 100 dm³ = 100 liter.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Voorbeeld 2"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:38px;font-weight:800;margin-bottom:8px\">0,1 m³ = … liter</div><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;font-size:30px;font-weight:700\"><div style=\"background:#eef7f1;border-radius:12px;padding:4px 14px\"><b>A</b>&nbsp; 0,1 liter</div><div style=\"background:#eef7f1;border-radius:12px;padding:4px 14px\"><b>B</b>&nbsp; 100 liter</div><div style=\"background:#eef7f1;border-radius:12px;padding:4px 14px\"><b>C</b>&nbsp; 1000 liter</div><div style=\"background:#eef7f1;border-radius:12px;padding:4px 14px\"><b>D</b>&nbsp; 10.000 liter</div></div>"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welke maat heb je?** Zoek hem op de trap.",
+                  "**Naar welke maat moet je?** Zoek die ook op.",
+                  "**Tel de sprongen:** × 1000 of : 1000.",
+                  "**Schrijf het antwoord** in de gevraagde maat."
+                ],
+                "stijl": "font-size:.62em",
+                "stapsgewijs": false
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<svg width=\"750\" height=\"330\" viewBox=\"0 0 750 330\" style=\"display:block;margin:0 auto\"><rect x=\"10\" y=\"80\" width=\"130\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"75.0\" y=\"133\" font-size=\"36\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">m³</text><path d=\"M88.0,76 Q175.0,22 262.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M250.0,64 L262.0,76 L246.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"175.0\" y=\"40\" font-size=\"24\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M262.0,164 Q175.0,218 88.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M100.0,176 L88.0,164 L104.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"175.0\" y=\"222\" font-size=\"24\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"210\" y=\"80\" width=\"130\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"275.0\" y=\"133\" font-size=\"36\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">dm³</text><path d=\"M288.0,76 Q375.0,22 462.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M450.0,64 L462.0,76 L446.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"375.0\" y=\"40\" font-size=\"24\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M462.0,164 Q375.0,218 288.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M300.0,176 L288.0,164 L304.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"375.0\" y=\"222\" font-size=\"24\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"410\" y=\"80\" width=\"130\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"475.0\" y=\"133\" font-size=\"36\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">cm³</text><path d=\"M488.0,76 Q575.0,22 662.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M650.0,64 L662.0,76 L646.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"575.0\" y=\"40\" font-size=\"24\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M662.0,164 Q575.0,218 488.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M500.0,176 L488.0,164 L504.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"575.0\" y=\"222\" font-size=\"24\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"610\" y=\"80\" width=\"130\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"675.0\" y=\"133\" font-size=\"36\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">mm³</text><rect x=\"210\" y=\"250\" width=\"130\" height=\"64\" rx=\"14\" fill=\"#fff6e0\" stroke=\"#d9822b\" stroke-width=\"3\"/><text x=\"275.0\" y=\"294\" font-size=\"34\" font-weight=\"800\" fill=\"#d9822b\" text-anchor=\"middle\">L</text><rect x=\"410\" y=\"250\" width=\"130\" height=\"64\" rx=\"14\" fill=\"#fff6e0\" stroke=\"#d9822b\" stroke-width=\"3\"/><text x=\"475.0\" y=\"294\" font-size=\"34\" font-weight=\"800\" fill=\"#d9822b\" text-anchor=\"middle\">ml</text></svg>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 3",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Antwoord: liter staat bij dm³, van cm³ naar dm³ is 1 sprong naar links: 6000 : 1000 = 6 dm³ = 6 liter.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Voorbeeld 3"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:46px;font-weight:800\">6000 cm³ = … liter</div>"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welke maat heb je?** Zoek hem op de trap.",
+                  "**Naar welke maat moet je?** Zoek die ook op.",
+                  "**Tel de sprongen:** × 1000 of : 1000.",
+                  "**Schrijf het antwoord** in de gevraagde maat."
+                ],
+                "stijl": "font-size:.62em",
+                "stapsgewijs": false
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<svg width=\"750\" height=\"330\" viewBox=\"0 0 750 330\" style=\"display:block;margin:0 auto\"><rect x=\"10\" y=\"80\" width=\"130\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"75.0\" y=\"133\" font-size=\"36\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">m³</text><path d=\"M88.0,76 Q175.0,22 262.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M250.0,64 L262.0,76 L246.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"175.0\" y=\"40\" font-size=\"24\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M262.0,164 Q175.0,218 88.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M100.0,176 L88.0,164 L104.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"175.0\" y=\"222\" font-size=\"24\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"210\" y=\"80\" width=\"130\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"275.0\" y=\"133\" font-size=\"36\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">dm³</text><path d=\"M288.0,76 Q375.0,22 462.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M450.0,64 L462.0,76 L446.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"375.0\" y=\"40\" font-size=\"24\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M462.0,164 Q375.0,218 288.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M300.0,176 L288.0,164 L304.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"375.0\" y=\"222\" font-size=\"24\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"410\" y=\"80\" width=\"130\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"475.0\" y=\"133\" font-size=\"36\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">cm³</text><path d=\"M488.0,76 Q575.0,22 662.0,76\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><path d=\"M650.0,64 L662.0,76 L646.0,78\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"3.5\"/><text x=\"575.0\" y=\"40\" font-size=\"24\" font-weight=\"800\" fill=\"#1f6fd1\" text-anchor=\"middle\">× 1000</text><path d=\"M662.0,164 Q575.0,218 488.0,164\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><path d=\"M500.0,176 L488.0,164 L504.0,162\" fill=\"none\" stroke=\"#d6453d\" stroke-width=\"3.5\"/><text x=\"575.0\" y=\"222\" font-size=\"24\" font-weight=\"800\" fill=\"#d6453d\" text-anchor=\"middle\">: 1000</text><rect x=\"610\" y=\"80\" width=\"130\" height=\"80\" rx=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"675.0\" y=\"133\" font-size=\"36\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">mm³</text><rect x=\"210\" y=\"250\" width=\"130\" height=\"64\" rx=\"14\" fill=\"#fff6e0\" stroke=\"#d9822b\" stroke-width=\"3\"/><text x=\"275.0\" y=\"294\" font-size=\"34\" font-weight=\"800\" fill=\"#d9822b\" text-anchor=\"middle\">L</text><rect x=\"410\" y=\"250\" width=\"130\" height=\"64\" rx=\"14\" fill=\"#fff6e0\" stroke=\"#d9822b\" stroke-width=\"3\"/><text x=\"475.0\" y=\"294\" font-size=\"34\" font-weight=\"800\" fill=\"#d9822b\" text-anchor=\"middle\">ml</text></svg>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:300px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
