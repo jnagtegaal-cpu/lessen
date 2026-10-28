@@ -242,6 +242,26 @@
       "gemaakt": "2026-10-12"
     },
     {
+      "id": "g8-rekenen-kubieke-maten-liter",
+      "titel": "Kubieke maten omrekenen in litermaten en andersom",
+      "groep": "8",
+      "vak": "Rekenen",
+      "onderwerp": "Inhoud",
+      "edi": true,
+      "samenvatting": "Kubieke maten (m³, dm³, cm³) omrekenen in liter en milliliter en andersom, met de brug 1 dm³ = 1 L en 1 cm³ = 1 ml.",
+      "trefwoorden": [
+        "inhoud",
+        "kubieke maten",
+        "liter",
+        "milliliter",
+        "dm3",
+        "cm3",
+        "metriek stelsel",
+        "omrekenen"
+      ],
+      "gemaakt": "2026-10-28"
+    },
+    {
       "id": "g8-spelling-dictee-latijnse-meervouden",
       "titel": "Dictee: Latijnse meervouden, -ieel/-eaal/-ueel en vind jij",
       "groep": "8",
