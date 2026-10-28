@@ -1,10 +1,10 @@
 {
   "id": "g7-8-goedemorgen-donderdag",
-  "titel": "Goedemorgen: dagschema donderdag 15 oktober",
+  "titel": "Goedemorgen: dagschema donderdag 29 oktober",
   "groep": "7-8",
   "vak": "Dagopening",
   "onderwerp": "Dagschema",
-  "samenvatting": "Goedemorgenpagina voor donderdag met het dagschema en een denkvraag bij binnenkomst.",
+  "samenvatting": "Goedemorgenpagina voor donderdag met het dagschema en een raadsel.",
   "trefwoorden": [
     "goedemorgen",
     "dagschema",
@@ -17,7 +17,6 @@
     {
       "fase": "Goedemorgen",
       "achtergrond": "leeg",
-      "notitie": "Dagschema voor donderdag. Denkvraag bij binnenkomst: wat is jouw mooiste bezit?",
       "blokken": [
         {
           "type": "kolommen",
@@ -29,24 +28,30 @@
             [
               {
                 "type": "html",
-                "html": "<div><div style=\"font-size:52px;font-weight:800;margin-bottom:6px;line-height:1.2\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">👩‍🏫</span><span>Juf Alet met de meiden</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">✏️</span><span>Werkwoordspelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🇬🇧</span><span>Engels</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">📒</span><span>Huiswerk invullen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🧹</span><span>Opruimen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🗣️</span><span>Voorbespreken opening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">🎉</span><span>Opening IKC</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:3px 16px;margin-bottom:6px;line-height:1.2;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
+                "html": "<div style=\"display:flex;flex-direction:column;gap:7px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">💡</span><span>Wetenswaardig</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🇬🇧</span><span>Engels</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🤝</span><span>Kwink-activiteit</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">⚡</span><span>Automatiseren</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten en naar huis</span></div></div>"
               }
             ],
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;height:640px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;text-align:center\"><div style=\"font-size:30px;color:#d9822b;font-weight:700;margin-bottom:16px\">Denkvraag</div><div style=\"font-size:54px;font-weight:800;line-height:1.25\">Wat is jouw mooiste bezit? 💎</div></div>"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;box-sizing:border-box;text-align:center\"><div style=\"font-size:44px;font-weight:800;line-height:1.25\">Welkom! 😊</div><div style=\"font-size:34px;font-weight:800;margin-top:22px;color:#b5541c\">🧩 Raadsel</div><div style=\"font-size:28px;margin-top:10px;line-height:1.45\">Ik heb steden, maar geen huizen.<br>Ik heb bossen, maar geen bomen.<br>Ik heb water, maar geen vissen.<br><b>Wat ben ik?</b></div></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"text-align:center;font-size:40px;font-weight:800;color:#2f9e63\">Een landkaart! 🗺️</div>"
               }
             ]
           ]
         }
-      ]
+      ],
+      "notitie": "Dagschema voor donderdag. Raadsel bij binnenkomst; het antwoord (een landkaart) tik je tevoorschijn."
     }
   ],
   "voorbereiding": {
     "verloop": [
       {
-        "wat": "Bij binnenkomst: denkvraag op het bord (wat is jouw mooiste bezit?)"
+        "wat": "Bij binnenkomst: welkom en raadsel op het bord"
       },
       {
         "wat": "Dagopening"
@@ -58,34 +63,28 @@
         "wat": "Pauze"
       },
       {
-        "wat": "Juf Alet met de meiden"
+        "wat": "Spelling"
       },
       {
-        "wat": "Werkwoordspelling"
-      },
-      {
-        "wat": "Engels"
-      },
-      {
-        "wat": "Huiswerk invullen"
+        "wat": "Wetenswaardig"
       },
       {
         "wat": "Pauze"
       },
       {
-        "wat": "Opruimen"
-      },
-      {
-        "wat": "Voorbespreken opening"
-      },
-      {
         "wat": "Stillezen"
       },
       {
-        "wat": "Opening IKC"
+        "wat": "Engels"
       },
       {
-        "wat": "Afsluiten"
+        "wat": "Kwink-activiteit"
+      },
+      {
+        "wat": "Automatiseren"
+      },
+      {
+        "wat": "Afsluiten en naar huis"
       }
     ]
   }
