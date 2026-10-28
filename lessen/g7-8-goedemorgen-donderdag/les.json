@@ -34,7 +34,7 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;box-sizing:border-box;text-align:center\"><div style=\"font-size:44px;font-weight:800;line-height:1.25\">Welkom! 😊</div><div style=\"font-size:34px;font-weight:800;margin-top:22px;color:#b5541c\">🧩 Raadsel</div><div style=\"font-size:28px;margin-top:10px;line-height:1.45\">Ik heb steden, maar geen huizen.<br>Ik heb bossen, maar geen bomen.<br>Ik heb water, maar geen vissen.<br><b>Wat ben ik?</b></div></div>"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;box-sizing:border-box;text-align:center\"><div style=\"font-size:44px;font-weight:800;line-height:1.25\">Welkom! 😊</div><div style=\"font-size:30px;margin-top:16px;line-height:1.35\">📖 Pak je <b>Bijbel</b> en leg hem open bij <b>1 Koningen 19</b>.</div><div style=\"font-size:34px;font-weight:800;margin-top:22px;color:#b5541c\">🧩 Raadsel</div><div style=\"font-size:28px;margin-top:10px;line-height:1.45\">Ik heb steden, maar geen huizen.<br>Ik heb bossen, maar geen bomen.<br>Ik heb water, maar geen vissen.<br><b>Wat ben ik?</b></div></div>"
               },
               {
                 "type": "html",
@@ -45,13 +45,13 @@
           ]
         }
       ],
-      "notitie": "Dagschema voor donderdag. Raadsel bij binnenkomst; het antwoord (een landkaart) tik je tevoorschijn."
+      "notitie": "Dagschema voor donderdag. Bij binnenkomst: Bijbel open bij 1 Koningen 19. Raadsel bij binnenkomst; het antwoord (een landkaart) tik je tevoorschijn."
     }
   ],
   "voorbereiding": {
     "verloop": [
       {
-        "wat": "Bij binnenkomst: welkom en raadsel op het bord"
+        "wat": "Bij binnenkomst: welkom, Bijbel open bij 1 Koningen 19, en raadsel op het bord"
       },
       {
         "wat": "Dagopening"
