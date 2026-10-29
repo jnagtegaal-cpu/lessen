@@ -30,6 +30,7 @@ Na elke wijziging draai je `python3 tools/publiceer.py`. Daarnaast doet GitHub d
   "gemaakt": "2026-10-08",
   "lesdoel": "Ik kan …",                 // optioneel
   "lesdoelInHoek": true,                 // lesdoel klein in de hoek van elk scherm
+  "bijlagen": [{ "titel": "Verrijking", "bestand": "verrijking.pdf" }],  // optioneel: extra downloads op het lesbord (bestand staat in de map van de les)
   "schermen": [ … ],
   "voorbereiding": { … }
 }

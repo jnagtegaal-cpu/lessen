@@ -17,6 +17,12 @@
     "schatten"
   ],
   "gemaakt": "2026-10-30",
+  "bijlagen": [
+    {
+      "titel": "Verrijking",
+      "bestand": "verrijking.pdf"
+    }
+  ],
   "lesdoel": "Ik kan bij een voorwerp een passende kubieke maat kiezen.",
   "lesdoelInHoek": true,
   "schermen": [
@@ -24,7 +30,7 @@
       "fase": "Activeren voorkennis: vierkante maten",
       "achtergrond": "leeg",
       "lesdoelVerbergen": true,
-      "notitie": "Haak aan bij de vierkante meter die in de klas hangt. Tik de vierkante maten één voor één tevoorschijn. Daarna de vraag: welke vierkante maat past? (wisbordje of willekeurige beurt)",
+      "notitie": "Haak aan bij de vierkante meter, decimeter en centimeter die in de klas hangen. Tik de vierkante maten één voor één tevoorschijn. Daarna de vraag: welke vierkante maat past? (wisbordje of willekeurige beurt)",
       "blokken": [
         {
           "type": "vraag",
@@ -43,28 +49,28 @@
               {
                 "type": "html",
                 "verborgen": true,
-                "html": "<svg width=\"190\" height=\"250\" viewBox=\"0 0 190 250\" style=\"display:block;margin:0 auto\"><rect x=\"20.0\" y=\"10\" width=\"150\" height=\"150\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"95.0\" y=\"200\" font-size=\"34\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">1 m²</text><text x=\"95.0\" y=\"234\" font-size=\"22\" fill=\"#5b6b63\" text-anchor=\"middle\">1 m bij 1 m</text></svg>"
+                "html": "<div style=\"text-align:center;background:#eef7f1;border:3px solid #2f6b4a;border-radius:16px;padding:16px 8px\"><div style=\"font-size:46px;font-weight:800\">1 m²</div><div style=\"font-size:24px;color:#5b6b63\">1 m bij 1 m</div></div>"
               }
             ],
             [
               {
                 "type": "html",
                 "verborgen": true,
-                "html": "<svg width=\"160\" height=\"205\" viewBox=\"0 0 160 205\" style=\"display:block;margin:0 auto\"><rect x=\"27.5\" y=\"10\" width=\"105\" height=\"105\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"80.0\" y=\"155\" font-size=\"34\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">1 dm²</text><text x=\"80.0\" y=\"189\" font-size=\"22\" fill=\"#5b6b63\" text-anchor=\"middle\">10 cm bij 10 cm</text></svg>"
+                "html": "<div style=\"text-align:center;background:#eef7f1;border:3px solid #2f6b4a;border-radius:16px;padding:16px 8px\"><div style=\"font-size:46px;font-weight:800\">1 dm²</div><div style=\"font-size:24px;color:#5b6b63\">10 cm bij 10 cm</div></div>"
               }
             ],
             [
               {
                 "type": "html",
                 "verborgen": true,
-                "html": "<svg width=\"160\" height=\"160\" viewBox=\"0 0 160 160\" style=\"display:block;margin:0 auto\"><rect x=\"50.0\" y=\"10\" width=\"60\" height=\"60\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"80.0\" y=\"110\" font-size=\"34\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">1 cm²</text><text x=\"80.0\" y=\"144\" font-size=\"22\" fill=\"#5b6b63\" text-anchor=\"middle\">1 cm bij 1 cm</text></svg>"
+                "html": "<div style=\"text-align:center;background:#eef7f1;border:3px solid #2f6b4a;border-radius:16px;padding:16px 8px\"><div style=\"font-size:46px;font-weight:800\">1 cm²</div><div style=\"font-size:24px;color:#5b6b63\">1 cm bij 1 cm</div></div>"
               }
             ],
             [
               {
                 "type": "html",
                 "verborgen": true,
-                "html": "<svg width=\"160\" height=\"114\" viewBox=\"0 0 160 114\" style=\"display:block;margin:0 auto\"><rect x=\"73.0\" y=\"10\" width=\"14\" height=\"14\" fill=\"#eef7f1\" stroke=\"#2f6b4a\" stroke-width=\"3\"/><text x=\"80.0\" y=\"64\" font-size=\"34\" font-weight=\"800\" fill=\"#1d2b24\" text-anchor=\"middle\">1 mm²</text><text x=\"80.0\" y=\"98\" font-size=\"22\" fill=\"#5b6b63\" text-anchor=\"middle\">1 mm bij 1 mm</text></svg>"
+                "html": "<div style=\"text-align:center;background:#eef7f1;border:3px solid #2f6b4a;border-radius:16px;padding:16px 8px\"><div style=\"font-size:46px;font-weight:800\">1 mm²</div><div style=\"font-size:24px;color:#5b6b63\">1 mm bij 1 mm</div></div>"
               }
             ]
           ]
@@ -274,7 +280,7 @@
       ]
     },
     {
-      "fase": "Jullie: om de beurt opschrijven",
+      "fase": "Jij: om de beurt opschrijven",
       "achtergrond": "leeg",
       "uitlijning": "midden",
       "notitie": "Stil, want de andere groep maakt een toets. Eén papiertje per tweetal: om de beurt iets opschrijven van ongeveer 1 m³ en doorgeven.",

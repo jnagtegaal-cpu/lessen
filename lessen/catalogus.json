@@ -7,7 +7,7 @@
       "vak": "Dagopening",
       "onderwerp": "Dagschema",
       "duur": 10,
-      "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema en een welkom: Chromebook pakken en plek netjes.",
+      "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema en een welkom: Wetenswaardig-boek pakken en plek netjes.",
       "trefwoorden": [
         "goedemorgen",
         "dagschema",
@@ -219,6 +219,32 @@
         "stappenplan"
       ],
       "gemaakt": "2026-10-11"
+    },
+    {
+      "id": "g7-rekenen-passende-kubieke-maat",
+      "titel": "Een passende kubieke maat kiezen",
+      "groep": "7",
+      "vak": "Rekenen",
+      "onderwerp": "Inhoud",
+      "edi": true,
+      "samenvatting": "Wat kubieke maten zijn (m³, dm³, cm³, mm³) en bij voorwerpen een passende kubieke maat kiezen. Met een echte kubieke meter.",
+      "trefwoorden": [
+        "kubieke maten",
+        "inhoud",
+        "m3",
+        "dm3",
+        "cm3",
+        "mm3",
+        "vierkante maten",
+        "schatten"
+      ],
+      "gemaakt": "2026-10-30",
+      "bijlagen": [
+        {
+          "titel": "Verrijking",
+          "bestand": "verrijking.pdf"
+        }
+      ]
     },
     {
       "id": "g7-spelling-verkleinwoorden-a-o-u-i",
