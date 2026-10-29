@@ -44,7 +44,7 @@ def lees_lessen():
 
 
 def schrijf_catalogus(lessen):
-    velden = ["id", "titel", "groep", "vak", "blok", "onderwerp", "duur", "edi", "samenvatting", "trefwoorden", "gemaakt", "pdfs"]
+    velden = ["id", "titel", "groep", "vak", "blok", "onderwerp", "duur", "edi", "samenvatting", "trefwoorden", "gemaakt", "pdfs", "bijlagen"]
     cat = {"lessen": [{k: les[k] for k in velden if k in les} for les in lessen]}
     (LESSEN / "catalogus.json").write_text(json.dumps(cat, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 

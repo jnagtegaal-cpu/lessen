@@ -39,7 +39,7 @@
   </main>
 
   <script src="assets/blokken.js?v=4fae156c"></script>
-  <script src="assets/github.js?v=34ea26a3"></script>
+  <script src="assets/github.js?v=c43a0d22"></script>
   <script>
     const { esc } = Lesbord;
     const staat = { zoek: "", groep: null, vak: null, lessen: [] };
@@ -94,6 +94,7 @@
             <a class="knop hoofd" href="les.html?id=${encodeURIComponent(l.id)}">${ikoon.bord} Open op bord</a>
             ${l.pdfs === false ? "" : `<a class="knop" href="lessen/${encodeURIComponent(l.id)}/voorbereiding.pdf" download>${ikoon.pdf} Voorbereiding</a>
             <a class="knop" href="lessen/${encodeURIComponent(l.id)}/presentatie.pdf" download>${ikoon.pdf} Presentatie</a>`}
+            ${(l.bijlagen || []).filter((b) => /^[\w.-]+$/.test(b.bestand || "")).map((b) => `<a class="knop" href="lessen/${encodeURIComponent(l.id)}/${encodeURIComponent(b.bestand)}" download>${ikoon.pdf} ${esc(b.titel || b.bestand)}</a>`).join("")}
             ${beheer ? `<span class="kaart-beheer">
               <a class="ikoon-knop" href="bewerk.html?id=${encodeURIComponent(l.id)}" title="Bewerken" aria-label="Bewerken">${ikoon.bewerk}</a>
               <button class="ikoon-knop rood" data-weg="${esc(l.id)}" title="Verwijderen" aria-label="Verwijderen">${ikoon.weg}</button>
