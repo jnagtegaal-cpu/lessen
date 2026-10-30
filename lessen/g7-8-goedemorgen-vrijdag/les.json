@@ -36,7 +36,7 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:22px;min-height:560px\"><div style=\"font-size:90px;line-height:1\">🎤</div><div style=\"font-size:40px;font-weight:800;line-height:1.25;color:#b5541c\">Maandsluiting</div><div style=\"font-size:34px;line-height:1.4\">Denk alvast na:<br><b>wat kunnen wij laten zien bij de maandsluiting?</b></div></div>"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:22px;min-height:560px\"><div style=\"font-size:90px;line-height:1\">🎤</div><div style=\"font-size:40px;font-weight:800;line-height:1.25;color:#b5541c\">Maandsluiting</div><div style=\"font-size:34px;line-height:1.4\">Denk alvast na:<br><b>wat kunnen wij laten zien bij de maandsluiting?</b></div><div style=\"font-size:30px;line-height:1.35;background:#ffffff;border-radius:14px;padding:12px 16px\">🧽 Pak voor in de klas een <b>nieuw wisdoekje</b>.</div></div>"
               }
             ]
           ]
@@ -47,7 +47,7 @@
   "voorbereiding": {
     "verloop": [
       {
-        "wat": "Bij binnenkomst: denkvraag op het bord: wat kunnen we laten zien bij de maandsluiting?"
+        "wat": "Bij binnenkomst: denkvraag op het bord: wat kunnen we laten zien bij de maandsluiting? Nieuw wisdoekje pakken voor in de klas."
       },
       {
         "wat": "Dagopening"
