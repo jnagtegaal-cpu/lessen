@@ -105,6 +105,27 @@
       "gemaakt": "2026-10-26"
     },
     {
+      "id": "g7-8-rekenen-delen-met-nullen",
+      "titel": "Delen met tientallen, honderdtallen en duizendtallen",
+      "groep": "7-8",
+      "vak": "Rekenen",
+      "onderwerp": "Delen",
+      "edi": true,
+      "samenvatting": "Korte les: deelsommen als 3600 : 90 uitrekenen door aan beide kanten evenveel nullen weg te strepen, met een stappenplan van drie stappen.",
+      "trefwoorden": [
+        "delen",
+        "deelsom",
+        "tientallen",
+        "honderdtallen",
+        "duizendtallen",
+        "nullen wegstrepen",
+        "hulpsom",
+        "stappenplan",
+        "geld"
+      ],
+      "gemaakt": "2026-11-02"
+    },
+    {
       "id": "g7-8-rekenen-schaal-oppervlakte",
       "titel": "Oppervlakte in werkelijkheid berekenen met een schaal",
       "groep": "7-8",
