@@ -1,19 +1,21 @@
 {
   "id": "g7-8-goedemorgen-dinsdag",
-  "titel": "Goedemorgen: dagschema dinsdag 27 oktober",
+  "titel": "Goedemorgen: dagschema dinsdag 3 november",
   "groep": "7-8",
   "vak": "Dagopening",
   "onderwerp": "Dagschema",
   "duur": 10,
-  "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema en een welkom: Chromebook pakken en plek netjes.",
+  "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema, een vraagje (iets heel goed gedaan) en Bijbel open bij Genesis 41.",
   "trefwoorden": [
     "goedemorgen",
     "dagschema",
     "dagopening",
-    "raadsel",
-    "dinsdag"
+    "dinsdag",
+    "vraagje",
+    "kwink",
+    "begrijpend lezen"
   ],
-  "gemaakt": "2026-10-09",
+  "gemaakt": "2026-11-03",
   "schermen": [
     {
       "fase": "Goedemorgen",
@@ -29,31 +31,31 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;flex-direction:column;gap:8px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">💡</span><span>Wetenswaardig</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🤝</span><span>Kwink</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen — juf Kathleen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
+                "html": "<div style=\"display:flex;flex-direction:column;gap:8px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🔍</span><span>Begrijpend lezen <span style=\"font-weight:500\">(oefening)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🔍</span><span>Begrijpend lezen <span style=\"font-weight:500\">(oefening afmaken)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🤝</span><span>Kwink</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
               }
             ],
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;height:640px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;text-align:center\"><div style=\"font-size:50px;font-weight:800;line-height:1.25\">Welkom, fijn dat jullie er zijn! 😊</div><div style=\"font-size:38px;margin-top:30px;line-height:1.35\">💻 Pak alvast je <b>Chromebook</b>.</div><div style=\"font-size:38px;margin-top:18px;line-height:1.35\">🧹 Zorg dat je plek <b>netjes</b> is, dan kunnen we zo beginnen.</div></div>"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:24px;min-height:620px\"><div style=\"font-size:84px;line-height:1\">⭐</div><div style=\"font-size:40px;font-weight:800;line-height:1.25;color:#b5541c\">Vraagje</div><div style=\"font-size:38px;line-height:1.35\"><b>Denk eens terug aan een moment dat je iets heel goed gedaan had.</b></div><div style=\"font-size:30px;line-height:1.35;background:#ffffff;border-radius:14px;padding:12px 16px\">📖 Leg je Bijbel open bij <b>Genesis 41</b>.</div></div>"
               }
             ]
           ]
         }
       ],
-      "notitie": "Dagschema voor dinsdag. Bij binnenkomst: Chromebook pakken en de plek netjes maken."
+      "notitie": "Dagschema voor dinsdag 3 november. Vraagje bij binnenkomst: denk eens terug aan een moment dat je iets heel goed gedaan had. Bijbel open bij Genesis 41."
     }
   ],
   "voorbereiding": {
     "verloop": [
       {
-        "wat": "Bij binnenkomst: welkom op het bord, Chromebook pakken en plek netjes maken"
+        "wat": "Bij binnenkomst: vraagje op het bord: denk eens terug aan een moment dat je iets heel goed gedaan had. Bijbel open bij Genesis 41."
       },
       {
         "wat": "Dagopening"
       },
       {
-        "wat": "Wetenswaardig"
+        "wat": "Rekenen"
       },
       {
         "wat": "Pauze"
@@ -65,16 +67,19 @@
         "wat": "Spelling"
       },
       {
-        "wat": "Kwink"
+        "wat": "Begrijpend lezen (oefening)"
       },
       {
         "wat": "Pauze"
       },
       {
-        "wat": "Rekenen"
+        "wat": "Stillezen"
       },
       {
-        "wat": "Stillezen — juf Kathleen"
+        "wat": "Begrijpend lezen (oefening afmaken)"
+      },
+      {
+        "wat": "Kwink"
       },
       {
         "wat": "Afsluiten"
