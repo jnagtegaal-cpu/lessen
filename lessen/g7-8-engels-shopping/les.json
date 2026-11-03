@@ -78,7 +78,7 @@
     {
       "fase": "Binnen- en buitenkring",
       "achtergrond": "leeg",
-      "notitie": "Binnenkring: winkeliers met het winkelblad. Buitenkring: klanten met een klantkaartje en hun niveaublad. Na elk gesprek schuift de buitenkring één plek door. Na drie rondes wisselen de kringen van rol, en ruilen de klanten hun klantkaartje met iemand anders. Tik de stappen één voor één aan.",
+      "notitie": "Binnenkring: de winkel, met het winkelblad. Buitenkring: klanten, die een klantkaartje trekken (30 kaartjes, elk één aankoop) en hun niveaublad hebben. Na elk gesprek leggen ze het kaartje terug, trekken ze een nieuw kaartje en schuift de buitenkring één plek door. Na een paar rondes wisselen de kringen van rol. Tik de stappen één voor één aan.",
       "blokken": [
         {
           "type": "kolommen",
@@ -103,11 +103,11 @@
                 "stapsgewijs": true,
                 "stijl": "font-size:.72em",
                 "items": [
-                  "**Binnenkring:** jij bent de **shopkeeper**. Je hebt het winkelblad.",
-                  "**Buitenkring:** jij bent de **customer**. Je hebt je klantkaartje en je niveaublad.",
+                  "**Binnenkring:** jij bent de **shop**. Je hebt het winkelblad.",
+                  "**Buitenkring:** jij bent de **customer**. Trek een klantkaartje en pak je niveaublad.",
                   "De shopkeeper begint: *Good afternoon. Can I help you?*",
-                  "Klaar? Zeg *Thank you!* De **buitenkring schuift één plek** door.",
-                  "Na **3 rondes** wissel je van rol. Ruil je klantkaartje met iemand anders."
+                  "Klaar? Zeg *Thank you!* Leg je kaartje terug, trek een nieuw kaartje en **schuif één plek** door.",
+                  "Na een paar rondes wissel je van rol."
                 ]
               }
             ]
@@ -120,7 +120,7 @@
     "benodigdheden": [
       "Boek blz 36–37 (koorlezen)",
       "Winkelblad (shopkeeper sheet), voor de helft van de klas",
-      "Klantkaartjes, uitgeknipt",
+      "Klantkaartjes (30 stuks, 3 A4), uitgeknipt",
       "Niveaubladen: basis, midden en uitdaging"
     ],
     "verloop": [
@@ -138,7 +138,7 @@
       },
       {
         "fase": "Binnen- en buitenkring",
-        "wat": "Binnenkring winkeliers met het winkelblad, buitenkring klanten met een klantkaartje. Na elk gesprek schuift de buitenkring één plek. Na drie rondes wisselen van rol."
+        "wat": "Binnenkring is de winkel, met het winkelblad. De buitenkring trekt een klantkaartje. Na elk gesprek een nieuw kaartje trekken en één plek doorschuiven. Na een paar rondes wisselen van rol."
       }
     ]
   }
