@@ -1,6 +1,41 @@
 {
   "lessen": [
     {
+      "id": "g7-8-engels-shopping",
+      "titel": "Shopping: iets kopen in een winkel",
+      "groep": "7-8",
+      "vak": "Engels",
+      "onderwerp": "Shopping",
+      "duur": 35,
+      "samenvatting": "Praatles Engels: in een winkel iets vragen, de prijs vragen en betalen, met rolkaartjes op drie niveaus en een binnen- en buitenkring.",
+      "trefwoorden": [
+        "Engels",
+        "shopping",
+        "winkel",
+        "dialoog",
+        "pounds",
+        "binnen- en buitenkring",
+        "spreken",
+        "niveaus",
+        "rollenspel"
+      ],
+      "gemaakt": "2026-11-03",
+      "bijlagen": [
+        {
+          "titel": "Shopkeeper sheet (winkelblad)",
+          "bestand": "winkelblad.pdf"
+        },
+        {
+          "titel": "Customer cards (klantkaartjes)",
+          "bestand": "klantkaartjes.pdf"
+        },
+        {
+          "titel": "Niveaubladen (3 niveaus)",
+          "bestand": "niveaubladen.pdf"
+        }
+      ]
+    },
+    {
       "id": "g7-8-goedemorgen-dinsdag",
       "titel": "Goedemorgen: dagschema dinsdag 3 november",
       "groep": "7-8",

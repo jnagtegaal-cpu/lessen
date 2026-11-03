@@ -1,0 +1,145 @@
+{
+  "id": "g7-8-engels-shopping",
+  "titel": "Shopping: iets kopen in een winkel",
+  "groep": "7-8",
+  "vak": "Engels",
+  "onderwerp": "Shopping",
+  "samenvatting": "Praatles Engels: in een winkel iets vragen, de prijs vragen en betalen, met rolkaartjes op drie niveaus en een binnen- en buitenkring.",
+  "trefwoorden": [
+    "Engels",
+    "shopping",
+    "winkel",
+    "dialoog",
+    "pounds",
+    "binnen- en buitenkring",
+    "spreken",
+    "niveaus",
+    "rollenspel"
+  ],
+  "gemaakt": "2026-11-03",
+  "duur": 35,
+  "lesdoel": "I can buy something in a shop in English.",
+  "lesdoelInHoek": true,
+  "bijlagen": [
+    {
+      "titel": "Shopkeeper sheet (winkelblad)",
+      "bestand": "winkelblad.pdf"
+    },
+    {
+      "titel": "Customer cards (klantkaartjes)",
+      "bestand": "klantkaartjes.pdf"
+    },
+    {
+      "titel": "Niveaubladen (3 niveaus)",
+      "bestand": "niveaubladen.pdf"
+    }
+  ],
+  "schermen": [
+    {
+      "fase": "Lesdoel",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "notitie": "Lesdoel: in een winkel iets vragen, de prijs vragen en betalen.",
+      "blokken": [
+        {
+          "type": "html",
+          "html": "<div style=\"text-align:center\"><div style=\"font-size:110px;line-height:1\">🛍️</div><div style=\"font-size:72px;font-weight:800;line-height:1.25;margin-top:20px\">I can buy something<br>in a shop in English.</div><div style=\"font-size:34px;color:#5b6b63;margin-top:26px\">Ik kan iets vragen, de prijs vragen en betalen.</div></div>"
+        }
+      ]
+    },
+    {
+      "fase": "Koor",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "notitie": "Koorlezen vanuit het boek (blz 36–37): de klas leest de zinnen met je mee. Niemand valt op.",
+      "blokken": [
+        {
+          "type": "html",
+          "html": "<div style=\"text-align:center\"><div style=\"font-size:100px;line-height:1\">📖</div><div style=\"font-size:68px;font-weight:800;margin-top:16px\">Read along with me!</div><div style=\"font-size:40px;margin-top:18px\">Book, page 36 and 37</div></div>"
+        }
+      ]
+    },
+    {
+      "fase": "Kies je niveau",
+      "achtergrond": "leeg",
+      "notitie": "De kinderen kiezen zelf hun niveaublad. Wie het spannend vindt, kan ook eerst winkelier zijn: die rol is kleiner. In de uitdaging zit ook iets terugbrengen of geld terugvragen.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Choose your level"
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;margin-top:10px\"><div style=\"border:4px solid #2f9e63;border-radius:22px;padding:26px;background:#eef7f1\"><div style=\"font-size:44px\">⭐</div><div style=\"font-size:38px;font-weight:800;margin:10px 0\">Read</div><div style=\"font-size:28px;line-height:1.35\">Je leest de hele dialoog. Je verandert de onderstreepte woorden.</div></div><div style=\"border:4px solid #1f6fd1;border-radius:22px;padding:26px;background:#eef3fd\"><div style=\"font-size:44px\">⭐⭐</div><div style=\"font-size:38px;font-weight:800;margin:10px 0\">Fill in</div><div style=\"font-size:28px;line-height:1.35\">Je vult de gaten zelf in met je klantkaartje.</div></div><div style=\"border:4px solid #d9822b;border-radius:22px;padding:26px;background:#fff6e0\"><div style=\"font-size:44px\">⭐⭐⭐</div><div style=\"font-size:38px;font-weight:800;margin:10px 0\">Challenge</div><div style=\"font-size:28px;line-height:1.35\">Geen dialoog: je verzint het zelf. Er gebeurt iets onverwachts!</div></div></div>"
+        }
+      ]
+    },
+    {
+      "fase": "Binnen- en buitenkring",
+      "achtergrond": "leeg",
+      "notitie": "Binnenkring: winkeliers met het winkelblad. Buitenkring: klanten met een klantkaartje en hun niveaublad. Na elk gesprek schuift de buitenkring één plek door. Na drie rondes wisselen de kringen van rol, en ruilen de klanten hun klantkaartje met iemand anders. Tik de stappen één voor één aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<svg width=\"520\" height=\"520\" viewBox=\"0 0 520 520\"><circle cx=\"260\" cy=\"260\" r=\"225\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"4\" stroke-dasharray=\"10 10\"/><circle cx=\"260\" cy=\"260\" r=\"130\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"4\" stroke-dasharray=\"10 10\"/><circle cx=\"260\" cy=\"130\" r=\"30\" fill=\"#fff\" stroke=\"#1f6fd1\" stroke-width=\"4\"/><text x=\"260\" y=\"141\" font-size=\"30\" text-anchor=\"middle\">🛍️</text><circle cx=\"260\" cy=\"35\" r=\"30\" fill=\"#fff\" stroke=\"#c0392b\" stroke-width=\"4\"/><text x=\"260\" y=\"46\" font-size=\"30\" text-anchor=\"middle\">🧾</text><circle cx=\"352\" cy=\"168\" r=\"30\" fill=\"#fff\" stroke=\"#1f6fd1\" stroke-width=\"4\"/><text x=\"352\" y=\"179\" font-size=\"30\" text-anchor=\"middle\">🛍️</text><circle cx=\"419\" cy=\"101\" r=\"30\" fill=\"#fff\" stroke=\"#c0392b\" stroke-width=\"4\"/><text x=\"419\" y=\"112\" font-size=\"30\" text-anchor=\"middle\">🧾</text><circle cx=\"390\" cy=\"260\" r=\"30\" fill=\"#fff\" stroke=\"#1f6fd1\" stroke-width=\"4\"/><text x=\"390\" y=\"271\" font-size=\"30\" text-anchor=\"middle\">🛍️</text><circle cx=\"485\" cy=\"260\" r=\"30\" fill=\"#fff\" stroke=\"#c0392b\" stroke-width=\"4\"/><text x=\"485\" y=\"271\" font-size=\"30\" text-anchor=\"middle\">🧾</text><circle cx=\"352\" cy=\"352\" r=\"30\" fill=\"#fff\" stroke=\"#1f6fd1\" stroke-width=\"4\"/><text x=\"352\" y=\"363\" font-size=\"30\" text-anchor=\"middle\">🛍️</text><circle cx=\"419\" cy=\"419\" r=\"30\" fill=\"#fff\" stroke=\"#c0392b\" stroke-width=\"4\"/><text x=\"419\" y=\"430\" font-size=\"30\" text-anchor=\"middle\">🧾</text><circle cx=\"260\" cy=\"390\" r=\"30\" fill=\"#fff\" stroke=\"#1f6fd1\" stroke-width=\"4\"/><text x=\"260\" y=\"401\" font-size=\"30\" text-anchor=\"middle\">🛍️</text><circle cx=\"260\" cy=\"485\" r=\"30\" fill=\"#fff\" stroke=\"#c0392b\" stroke-width=\"4\"/><text x=\"260\" y=\"496\" font-size=\"30\" text-anchor=\"middle\">🧾</text><circle cx=\"168\" cy=\"352\" r=\"30\" fill=\"#fff\" stroke=\"#1f6fd1\" stroke-width=\"4\"/><text x=\"168\" y=\"363\" font-size=\"30\" text-anchor=\"middle\">🛍️</text><circle cx=\"101\" cy=\"419\" r=\"30\" fill=\"#fff\" stroke=\"#c0392b\" stroke-width=\"4\"/><text x=\"101\" y=\"430\" font-size=\"30\" text-anchor=\"middle\">🧾</text><circle cx=\"130\" cy=\"260\" r=\"30\" fill=\"#fff\" stroke=\"#1f6fd1\" stroke-width=\"4\"/><text x=\"130\" y=\"271\" font-size=\"30\" text-anchor=\"middle\">🛍️</text><circle cx=\"35\" cy=\"260\" r=\"30\" fill=\"#fff\" stroke=\"#c0392b\" stroke-width=\"4\"/><text x=\"35\" y=\"271\" font-size=\"30\" text-anchor=\"middle\">🧾</text><circle cx=\"168\" cy=\"168\" r=\"30\" fill=\"#fff\" stroke=\"#1f6fd1\" stroke-width=\"4\"/><text x=\"168\" y=\"179\" font-size=\"30\" text-anchor=\"middle\">🛍️</text><circle cx=\"101\" cy=\"101\" r=\"30\" fill=\"#fff\" stroke=\"#c0392b\" stroke-width=\"4\"/><text x=\"101\" y=\"112\" font-size=\"30\" text-anchor=\"middle\">🧾</text><path d=\"M 400 70 A 225 225 0 0 1 470 140\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"6\" marker-end=\"url(#pijl)\"/><defs><marker id=\"pijl\" markerWidth=\"10\" markerHeight=\"10\" refX=\"5\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#c0392b\"/></marker></defs><text x=\"260\" y=\"252\" font-size=\"24\" font-weight=\"700\" fill=\"#1f6fd1\" text-anchor=\"middle\">binnen:</text><text x=\"260\" y=\"282\" font-size=\"24\" font-weight=\"700\" fill=\"#1f6fd1\" text-anchor=\"middle\">shopkeepers</text></svg>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Zo werkt het"
+              },
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "stijl": "font-size:.72em",
+                "items": [
+                  "**Binnenkring:** jij bent de **shopkeeper**. Je hebt het winkelblad.",
+                  "**Buitenkring:** jij bent de **customer**. Je hebt je klantkaartje en je niveaublad.",
+                  "De shopkeeper begint: *Good afternoon. Can I help you?*",
+                  "Klaar? Zeg *Thank you!* De **buitenkring schuift één plek** door.",
+                  "Na **3 rondes** wissel je van rol. Ruil je klantkaartje met iemand anders."
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "voorbereiding": {
+    "benodigdheden": [
+      "Boek blz 36–37 (koorlezen)",
+      "Winkelblad (shopkeeper sheet), voor de helft van de klas",
+      "Klantkaartjes, uitgeknipt",
+      "Niveaubladen: basis, midden en uitdaging"
+    ],
+    "verloop": [
+      {
+        "fase": "Lesdoel",
+        "wat": "I can buy something in a shop in English: iets vragen, de prijs vragen en betalen."
+      },
+      {
+        "fase": "Koor",
+        "wat": "Koorlezen vanuit het boek: de klas leest de zinnen met je mee."
+      },
+      {
+        "fase": "Kies je niveau",
+        "wat": "Elk kind kiest een niveaublad: basis (hele dialoog), midden (met gaten) of uitdaging (zelf verzinnen, met iets onverwachts, zoals iets terugbrengen of geld terugvragen)."
+      },
+      {
+        "fase": "Binnen- en buitenkring",
+        "wat": "Binnenkring winkeliers met het winkelblad, buitenkring klanten met een klantkaartje. Na elk gesprek schuift de buitenkring één plek. Na drie rondes wisselen van rol."
+      }
+    ]
+  }
+}
