@@ -13,7 +13,7 @@
     "dinsdag",
     "vraagje",
     "kwink",
-    "begrijpend lezen"
+    "Engels"
   ],
   "gemaakt": "2026-11-03",
   "schermen": [
@@ -31,7 +31,7 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;flex-direction:column;gap:8px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🔍</span><span>Begrijpend lezen <span style=\"font-weight:500\">(oefening)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🔍</span><span>Begrijpend lezen <span style=\"font-weight:500\">(oefening afmaken)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🤝</span><span>Kwink</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
+                "html": "<div style=\"display:flex;flex-direction:column;gap:8px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🇬🇧</span><span>Engels</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🇬🇧</span><span>Engels <span style=\"font-weight:500\">(afmaken)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🤝</span><span>Kwink</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:29px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
               }
             ],
             [
@@ -67,7 +67,7 @@
         "wat": "Spelling"
       },
       {
-        "wat": "Begrijpend lezen (oefening)"
+        "wat": "Engels"
       },
       {
         "wat": "Pauze"
@@ -76,7 +76,7 @@
         "wat": "Stillezen"
       },
       {
-        "wat": "Begrijpend lezen (oefening afmaken)"
+        "wat": "Engels (afmaken)"
       },
       {
         "wat": "Kwink"
