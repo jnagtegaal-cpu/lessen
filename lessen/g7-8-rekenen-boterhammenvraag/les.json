@@ -1,0 +1,651 @@
+{
+  "id": "g7-8-rekenen-boterhammenvraag",
+  "titel": "Denktaak (BTC): de boterhammenvraag",
+  "groep": "7-8",
+  "vak": "Rekenen",
+  "onderwerp": "Denktaak (Building Thinking Classrooms), schatten",
+  "duur": 60,
+  "samenvatting": "BTC-denktaak voor de hele klas: hoeveel boterhammen eet onze school (75 leerlingen) in een jaar? Schatten, aannames maken en rekenen in groepjes van 3 aan verticale borden met één stift. Daarna broden, kosten, gewicht, de bakker, de stapel, de rij en heel Houten.",
+  "trefwoorden": [
+    "BTC",
+    "building thinking classrooms",
+    "denktaak",
+    "schatten",
+    "fermivraag",
+    "boterhammen",
+    "brood",
+    "Houten",
+    "aannames",
+    "grote getallen",
+    "verticale borden",
+    "één stift"
+  ],
+  "gemaakt": "2026-11-05",
+  "bijlagen": [
+    {
+      "titel": "Uitdagingskaartjes en hulpkaartjes",
+      "bestand": "uitdagingskaartjes.pdf"
+    },
+    {
+      "titel": "Uitwerking van de juf",
+      "bestand": "uitwerking.pdf"
+    }
+  ],
+  "schermen": [
+    {
+      "fase": "Het probleem (mondeling)",
+      "achtergrond": "leeg",
+      "notitie": "Vertel het probleem mondeling. De kinderen staan dicht om je heen, niet aan hun tafel. Tik de vraag aan. Vraag daarna snel (1 minuut, niet opschrijven): noem een getal dat zeker te weinig is, en een getal dat zeker te veel is. Geef geen aanpak en geen getallen. Na hooguit 5 minuten zijn ze aan het werk.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "2fr",
+            "3fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"margin-top:110px\"><svg width=\"560\" height=\"308\" viewBox=\"0 0 520 286\"><path d=\"M40,250 L40,130 C40,40 300,30 320,120 L320,250 Z\" fill=\"#c98a3d\" stroke=\"#8a5a22\" stroke-width=\"6\"/><path d=\"M70,110 C90,80 140,70 170,90 M150,80 C180,60 230,62 260,90\" fill=\"none\" stroke=\"#e2b06b\" stroke-width=\"6\" stroke-linecap=\"round\"/><g transform=\"rotate(8 375 250)\"><path d=\"M340,250 L340,150 C340,110 410,110 410,150 L410,250 Z\" fill=\"#f5deb3\" stroke=\"#c98a3d\" stroke-width=\"7\"/></g><g transform=\"rotate(14 420 250)\"><path d=\"M385,250 L385,150 C385,110 455,110 455,150 L455,250 Z\" fill=\"#f5deb3\" stroke=\"#c98a3d\" stroke-width=\"7\"/></g><g transform=\"rotate(20 465 250)\"><path d=\"M430,250 L430,150 C430,110 500,110 500,150 L500,250 Z\" fill=\"#f5deb3\" stroke=\"#c98a3d\" stroke-width=\"7\"/></g></svg></div>"
+              }
+            ],
+            [
+              {
+                "type": "kop",
+                "tekst": "De boterhammenvraag 🍞",
+                "stijl": "font-size:60px"
+              },
+              {
+                "type": "tekst",
+                "tekst": "Op onze school zitten **75 leerlingen**.",
+                "stijl": "font-size:44px"
+              },
+              {
+                "type": "vraag",
+                "verborgen": true,
+                "tekst": "Hoeveel **boterhammen** eten wij met z'n allen in **één jaar**?",
+                "stijl": "font-size:54px"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "Wat is **zeker te weinig**? Wat is **zeker te veel**?",
+                "stijl": "font-size:42px;color:#5b6b63"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Groepjes",
+      "achtergrond": "leeg",
+      "lesdoelVerbergen": true,
+      "notitie": "Schrijf de groepjes hier met de pen op het bord, terwijl de kinderen kijken. Groepjes van 3. De namen worden niet bewaard: ze verdwijnen als je de les sluit.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Groepjes"
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"display:grid;grid-template-columns:repeat(5,1fr);gap:16px\"><div style=\"border:3px dashed #b9d3c3;border-radius:16px;padding:10px 16px;min-height:300px\"><div style=\"font-size:30px;font-weight:800;color:#1f7a4a\">Bord 1</div></div><div style=\"border:3px dashed #b9d3c3;border-radius:16px;padding:10px 16px;min-height:300px\"><div style=\"font-size:30px;font-weight:800;color:#1f7a4a\">Bord 2</div></div><div style=\"border:3px dashed #b9d3c3;border-radius:16px;padding:10px 16px;min-height:300px\"><div style=\"font-size:30px;font-weight:800;color:#1f7a4a\">Bord 3</div></div><div style=\"border:3px dashed #b9d3c3;border-radius:16px;padding:10px 16px;min-height:300px\"><div style=\"font-size:30px;font-weight:800;color:#1f7a4a\">Bord 4</div></div><div style=\"border:3px dashed #b9d3c3;border-radius:16px;padding:10px 16px;min-height:300px\"><div style=\"font-size:30px;font-weight:800;color:#1f7a4a\">Bord 5</div></div><div style=\"border:3px dashed #b9d3c3;border-radius:16px;padding:10px 16px;min-height:300px\"><div style=\"font-size:30px;font-weight:800;color:#1f7a4a\">Bord 6</div></div><div style=\"border:3px dashed #b9d3c3;border-radius:16px;padding:10px 16px;min-height:300px\"><div style=\"font-size:30px;font-weight:800;color:#1f7a4a\">Bord 7</div></div><div style=\"border:3px dashed #b9d3c3;border-radius:16px;padding:10px 16px;min-height:300px\"><div style=\"font-size:30px;font-weight:800;color:#1f7a4a\">Bord 8</div></div><div style=\"border:3px dashed #b9d3c3;border-radius:16px;padding:10px 16px;min-height:300px\"><div style=\"font-size:30px;font-weight:800;color:#1f7a4a\">Bord 9</div></div><div style=\"border:3px dashed #b9d3c3;border-radius:16px;padding:10px 16px;min-height:300px\"><div style=\"font-size:30px;font-weight:800;color:#1f7a4a\">Bord 10</div></div></div>"
+        }
+      ]
+    },
+    {
+      "fase": "Zo werken we",
+      "achtergrond": "leeg",
+      "notitie": "Benoem de afspraken kort en stuur de groepjes daarna meteen naar hun bord. Elk groepje krijgt één stift. Benadruk vooral: hardop aan elkaar uitleggen, en iedereen kan het uitleggen, want jij kunt iedereen iets vragen.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Zo werken we"
+        },
+        {
+          "type": "stappen",
+          "stapsgewijs": true,
+          "items": [
+            "Je werkt met **3 kinderen** samen, **staand aan je bord**.",
+            "Er is **één stift**.",
+            "**Leg hardop aan elkaar uit** wat je doet. Iedereen in je groepje moet het snappen.",
+            "**Uitvegen mag.** Maar als de juf komt kijken, staat je **berekening** op het bord.",
+            "Je bent **met z'n drieën verantwoordelijk** voor je bord. **Iedereen** kan uitleggen **hoe** en **waarom**.",
+            "Klaar? Laat het zien en leg het uit. Dan krijg je een **nieuwe vraag**."
+          ],
+          "stijl": "font-size:.74em;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,auto);grid-auto-flow:column;gap:14px 28px"
+        }
+      ]
+    },
+    {
+      "fase": "Aan het werk (dit scherm blijft staan)",
+      "achtergrond": "leeg",
+      "notitie": "Laat dit scherm staan terwijl de groepjes werken. Loop rond, ga niet voor de klas staan. Vraag bij elk bord aan een willekeurig kind: hoe hebben jullie dit gedaan? Waarom? Geef uitdagingen en hulpkaartjes per groepje (zie de voorbereiding en de bijlage). Beantwoord alleen vragen die helpen om verder te denken.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "3fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"margin-top:30px\"><svg width=\"380\" height=\"209\" viewBox=\"0 0 520 286\"><path d=\"M40,250 L40,130 C40,40 300,30 320,120 L320,250 Z\" fill=\"#c98a3d\" stroke=\"#8a5a22\" stroke-width=\"6\"/><path d=\"M70,110 C90,80 140,70 170,90 M150,80 C180,60 230,62 260,90\" fill=\"none\" stroke=\"#e2b06b\" stroke-width=\"6\" stroke-linecap=\"round\"/><g transform=\"rotate(8 375 250)\"><path d=\"M340,250 L340,150 C340,110 410,110 410,150 L410,250 Z\" fill=\"#f5deb3\" stroke=\"#c98a3d\" stroke-width=\"7\"/></g><g transform=\"rotate(14 420 250)\"><path d=\"M385,250 L385,150 C385,110 455,110 455,150 L455,250 Z\" fill=\"#f5deb3\" stroke=\"#c98a3d\" stroke-width=\"7\"/></g><g transform=\"rotate(20 465 250)\"><path d=\"M430,250 L430,150 C430,110 500,110 500,150 L500,250 Z\" fill=\"#f5deb3\" stroke=\"#c98a3d\" stroke-width=\"7\"/></g></svg></div>"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "De boterhammenvraag"
+              },
+              {
+                "type": "vraag",
+                "tekst": "Op onze school zitten **75 leerlingen**. Hoeveel **boterhammen** eten wij met z'n allen in **één jaar**?",
+                "stijl": "font-size:50px"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:10px\"><div style=\"background:#eef7f1;border-radius:16px;padding:18px 22px;font-size:32px;line-height:1.3\">🗣️ <b>Leg het hardop uit</b> aan elkaar. Iedereen snapt het.</div><div style=\"background:#eef3fd;border-radius:16px;padding:18px 22px;font-size:32px;line-height:1.3\">🧮 Je <b>berekening</b> staat op het bord.</div><div style=\"background:#fff6e0;border-radius:16px;padding:18px 22px;font-size:32px;line-height:1.3\">⭐ <b>Klaar?</b> Kunnen jullie alle drie uitleggen <b>hoe</b> en <b>waarom</b>? Dan krijg je een nieuwe vraag.</div></div>"
+        }
+      ]
+    },
+    {
+      "fase": "Terugkijken 1: wat moest je weten?",
+      "achtergrond": "leeg",
+      "notitie": "Begin bij een bord dat iedereen kan volgen, bijvoorbeeld een groepje dat met één kind of één dag begon. Vraag: wat moesten jullie allemaal weten om dit uit te rekenen? Laat eerst kinderen antwoorden en tik dan de punten één voor één aan.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Wat moest je allemaal weten?"
+        },
+        {
+          "type": "lijst",
+          "stapsgewijs": true,
+          "stijl": "font-size:48px;line-height:1.5",
+          "items": [
+            "Hoeveel **kinderen**? → 75",
+            "Hoeveel boterhammen eet **één kind** op een dag?",
+            "Hoeveel **dagen** tellen mee?",
+            "En dan: **keer, keer, keer**!"
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Terugkijken 2: verschillende antwoorden",
+      "achtergrond": "leeg",
+      "notitie": "Zet twee of drie borden met een verschillend antwoord naast elkaar (bijvoorbeeld 24 000, 30 000 en 100 000). Vraag een ander groepje: waarom hebben zij een ander antwoord? Tik de vragen aan. Belangrijkste les: bij een schatvraag zijn er meerdere goede antwoorden, zolang je kunt uitleggen wat je hebt aangenomen.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Waarom hebben we verschillende antwoorden?"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "lijst",
+                "stapsgewijs": true,
+                "stijl": "font-size:42px;line-height:1.45",
+                "items": [
+                  "Alleen **op school**, of ook **thuis**?",
+                  "Tellen het **weekend** en de **vakanties** mee?",
+                  "Eten de **juffen en meesters** mee?",
+                  "Eet **iedereen evenveel**?"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"background:#fff6e0;border-radius:18px;padding:28px 32px;font-size:42px;line-height:1.4;margin-top:10px\">Bij een schatvraag zijn er <b>meerdere goede antwoorden</b>.<br><br>Je antwoord is goed als je kunt uitleggen <b>wat je hebt aangenomen</b> en <b>hoe je hebt gerekend</b>.</div>",
+                "verborgen": true
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Terugkijken 3: zo dacht de juf",
+      "achtergrond": "leeg",
+      "notitie": "Mijn eigen schatting, alleen voor op school (lunch). Tik de regels één voor één aan. Vraag steeds: wat neem ik hier aan? Zou jij dat ook doen? Variant: zonder lunch op woensdag is het 4 dagen per week, dan kom je op 24 000. Met thuis erbij (4 boterhammen per dag, het hele jaar) kom je op ongeveer 110 000.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Zo dacht de juf (alleen op school)"
+        },
+        {
+          "type": "lijst",
+          "stapsgewijs": true,
+          "stijl": "font-size:46px;line-height:1.5;list-style:none;padding-left:0",
+          "items": [
+            "Ik neem aan: elk kind eet **2 boterhammen** bij de lunch.",
+            "75 × 2 = **150** boterhammen per dag",
+            "150 × 5 = **750** boterhammen per week",
+            "Ik neem aan: **40 schoolweken** per jaar.",
+            "750 × 40 = **30 000** boterhammen per jaar"
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Terugkijken 4: broden en de stapel",
+      "achtergrond": "leeg",
+      "notitie": "Voor de groepjes die verder kwamen. Laat het groepje zelf vertellen wat ze aannamen. Tik daarna de schatting van de juf aan. Een brood van 800 gram heeft ongeveer 20 tot 24 sneetjes; een sneetje is ongeveer 1 cm dik. De Domtoren in Utrecht is ongeveer 112 meter hoog.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Hoeveel broden? Hoe hoog is de stapel?"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "🍞 Broden"
+              },
+              {
+                "type": "lijst",
+                "stapsgewijs": true,
+                "stijl": "font-size:40px;line-height:1.45;list-style:none;padding-left:0",
+                "items": [
+                  "Ik neem aan: **22 sneetjes** in een brood.",
+                  "30 000 : 22 ≈ **1400 broden** per jaar",
+                  "750 : 22 ≈ **34 broden** per week voor de bakker"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "📏 De stapel"
+              },
+              {
+                "type": "lijst",
+                "stapsgewijs": true,
+                "stijl": "font-size:40px;line-height:1.45;list-style:none;padding-left:0",
+                "items": [
+                  "Ik neem aan: een boterham is **1 cm** dik.",
+                  "30 000 cm = **300 meter**",
+                  "Dat is bijna **3 keer de Domtoren** (112 m)!"
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Terugkijken: nog meer brood",
+      "achtergrond": "leeg",
+      "notitie": "Voor de groepjes die deze uitdagingen hebben gedaan. Laat het groepje eerst zelf vertellen wat ze aannamen. Tik daarna de schatting van de juf aan. Aannames juf: een brood kost €2,50 en weegt 800 gram; een boterham is 10 cm breed; één persoon eet 4 boterhammen per dag.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Nog meer brood 🍞"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "💶 Wat kost het?"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "1400 × €2,50 = **€3500** per jaar",
+                "stijl": "font-size:38px"
+              },
+              {
+                "type": "subkop",
+                "tekst": "⚖️ Hoe zwaar?"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "1400 × 800 g = **1120 kg**: zo zwaar als een **auto**",
+                "stijl": "font-size:38px"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "➡️ Een rij vanaf school"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "30 000 × 10 cm = 300 000 cm = **3 km**",
+                "stijl": "font-size:38px"
+              },
+              {
+                "type": "subkop",
+                "tekst": "😋 Eén persoon eet alles op"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "30 000 : 4 = 7500 dagen: **ruim 20 jaar**!",
+                "stijl": "font-size:38px"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Terugkijken 5: heel Houten",
+      "achtergrond": "leeg",
+      "notitie": "Voor de groepjes die dit hebben gedaan. In Houten wonen ongeveer 51 000 mensen (rond af op 50 000). Een Nederlander eet gemiddeld zo'n 3,5 boterham per dag; met 4 rekent het makkelijker. Met 3,5 kom je op ongeveer 65 miljoen. Bakkers: als één bakker 500 broden per dag bakt (aanname), heeft Houten zo'n 18 bakkers nodig. In het echt komt veel brood uit fabrieken en supermarkten.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "En heel Houten? 🏘️"
+        },
+        {
+          "type": "lijst",
+          "stapsgewijs": true,
+          "stijl": "font-size:42px;line-height:1.5;list-style:none;padding-left:0",
+          "items": [
+            "In Houten wonen ongeveer **50 000 mensen**.",
+            "Ik neem aan: iedereen eet **4 boterhammen** per dag (ontbijt en lunch).",
+            "50 000 × 4 = **200 000** boterhammen per dag",
+            "200 000 × 365 = **73 000 000** boterhammen per jaar: **73 miljoen**!",
+            "73 000 000 : 22 ≈ **9000 broden per dag**"
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Notities voor later",
+      "achtergrond": "lijntjes",
+      "notitie": "Elk kind schrijft in het eigen schrift een briefje aan zichzelf: zo pak je een schatvraag aan. Ze mogen bij de borden kijken en zelf hun voorbeeld kiezen. Ongeveer 5 minuten.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Een briefje aan jezelf ✉️"
+        },
+        {
+          "type": "tekst",
+          "tekst": "**Zo pak je een schatvraag aan.** Schrijf het op, met een voorbeeld van vandaag.",
+          "stijl": "font-size:38px"
+        },
+        {
+          "type": "stappen",
+          "items": [
+            "**Wat moet je weten?** Maak een lijstje.",
+            "**Wat neem je aan?** Schrijf het op, bijvoorbeeld: elk kind eet 2 boterhammen.",
+            "**Reken het uit.** Laat je berekening zien.",
+            "**Kan dat?** Is het niet veel te veel of veel te weinig?"
+          ],
+          "stijl": "font-size:.9em"
+        }
+      ]
+    },
+    {
+      "fase": "Check je begrip",
+      "achtergrond": "leeg",
+      "notitie": "Check je begrip: alleen werken, in het schrift. Ze mogen hun briefje gebruiken. Er is geen vast antwoord: kijk of ze hun aannames opschrijven en hun berekening laten zien. De voorbeeldantwoorden tik je pas aan als de meesten klaar zijn.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Check je begrip (alleen)"
+        },
+        {
+          "type": "tekst",
+          "tekst": "Schrijf op **wat je aanneemt** en laat je **berekening** zien.",
+          "stijl": "font-size:36px;color:#5b6b63"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "tekst",
+                "tekst": "1. Hoeveel **glazen drinken** drinkt onze klas in **één week** op school?",
+                "stijl": "font-size:42px;font-weight:700"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "Bijvoorbeeld: 25 kinderen × 3 glazen × 5 dagen = **375 glazen**",
+                "stijl": "font-size:36px;color:#1f7a4a"
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "2. Hoeveel **appels** eet jij in je **hele basisschooltijd** op school?",
+                "stijl": "font-size:42px;font-weight:700"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "Bijvoorbeeld: 8 jaar × 40 weken × 5 dagen = 1600 schooldagen. Om de dag een appel: **800 appels**",
+                "stijl": "font-size:36px;color:#1f7a4a"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "voorbereiding": {
+    "benodigdheden": [
+      "**Verticale schermen** (whiteboards, wisbare vellen of ramen): één per groepje van 3, op ooghoogte, verspreid door het lokaal",
+      "**Eén stift per groepje** en een wisser of doekje",
+      "**Uitdagingskaartjes en hulpkaartjes** (bijlage): uitknippen en op volgorde leggen",
+      "**Uitwerking van de juf** (bijlage), voor jezelf",
+      "Schriften voor het briefje aan jezelf en de check-je-begrip-vragen",
+      "Telefoon of tablet om aan het eind foto's van de borden te maken"
+    ],
+    "verloop": [
+      {
+        "tijd": "0–5 min",
+        "fase": "Probleem geven",
+        "wat": "Kinderen komen **staand om je heen** (niet aan tafel). Vertel de boterhammenvraag **mondeling** met scherm 1: onze school heeft 75 leerlingen, hoeveel boterhammen eten wij met z'n allen in één jaar? Vraag snel: wat is zeker te weinig, wat is zeker te veel? Geen aanpak en geen getallen geven."
+      },
+      {
+        "tijd": "5–8 min",
+        "fase": "Groepjes",
+        "wat": "Maak de groepjes van 3 **op het bord terwijl ze kijken** (scherm 2). Afspraken kort (scherm 3), één stift per groepje, en meteen naar de borden."
+      },
+      {
+        "tijd": "8–35 min",
+        "fase": "Denken aan het bord",
+        "wat": "Scherm 4 blijft staan. Jij loopt rond, nooit voor de klas. Vraag bij elk bord aan **een willekeurig kind** hoe en waarom ze iets deden. Kan dat kind het niet uitleggen? Dan moet het groepje het eerst aan elkaar uitleggen. Geef een **uitdaging** als ze klaar zijn en het alle drie kunnen uitleggen, of een **hulpkaartje** als ze vastlopen."
+      },
+      {
+        "tijd": "35–47 min",
+        "fase": "Terugkijken van onderaf",
+        "wat": "Alle kinderen lopen mee langs de borden. Begin bij het bord dat **iedereen** kan volgen en ga stap voor stap naar borden met meer (zie de volgorde hieronder). Gebruik scherm 5 tot en met 10 waar het helpt. Laat het groepje zelf uitleggen, of vraag een ander groepje: \"Wat denken jullie dat zij bedoelen?\""
+      },
+      {
+        "tijd": "47–52 min",
+        "fase": "Notities voor later",
+        "wat": "Terug naar de plek. Elk kind schrijft een briefje aan zichzelf (scherm 11): zo pak je een schatvraag aan."
+      },
+      {
+        "tijd": "52–60 min",
+        "fase": "Check je begrip",
+        "wat": "Twee schatvragen alleen (scherm 12), met het eigen briefje erbij. Heb je maar 45 minuten? Doe dan één vraag, of schuif ze naar de volgende rekenles."
+      }
+    ],
+    "secties": [
+      {
+        "kop": "Het probleem (zo vertel je het)",
+        "tekst": "Op onze school zitten 75 leerlingen. Iedereen neemt brood mee of eet thuis brood. **Hoeveel boterhammen eten wij met z'n allen in één jaar?** Daarna: \"Wat is zeker te weinig? Wat is zeker te veel?\" Laat een paar kinderen een getal noemen, zonder uitleg, en begin dan."
+      },
+      {
+        "kop": "Wat leren ze hiervan?",
+        "items": [
+          "**Schatten en aannames maken:** wat weet je niet precies, en wat neem je dan aan? Bijvoorbeeld 2 boterhammen per kind, 40 schoolweken.",
+          "**Rekenen:** vermenigvuldigen met grote getallen en met nullen, delen (broden), omrekenen van cm naar m, afronden.",
+          "**Uitleggen:** waarom heb je dit aangenomen, en hoe heb je gerekend? Een antwoord is pas goed als je het kunt uitleggen.",
+          "**Samenwerken:** hardop aan elkaar uitleggen, zodat iedereen in het groepje het snapt."
+        ]
+      },
+      {
+        "kop": "De BTC-voorwaarden in deze les",
+        "items": [
+          "**Denktaak vooraf:** geen uitleg vooraf. Het probleem is de les.",
+          "**Probleem in de eerste 5 minuten**, mondeling, terwijl de kinderen **staan** en dicht om je heen staan. Het scherm is alleen steun.",
+          "**Groepjes van 3**, die jij op het bord maakt terwijl ze kijken. Niet ruilen. Volgende BTC-les nieuwe groepjes.",
+          "**Staand werken is een eis**, aan een verticaal bord dat je kunt uitvegen. Dat maakt het makkelijker om iets te proberen.",
+          "**Eén stift per groepje.** Er is geen regel over wie schrijft of wat: wie de stift heeft, mag ook zijn **eigen idee** opschrijven en uitleggen. Wel moet iedereen meedenken en kunnen uitleggen wat er staat.",
+          "**Hardop aan elkaar uitleggen.** Een kind mag het juist ook aan een ander uitleggen. Het gaat erom dat iedereen in het groepje snapt wat er gebeurt.",
+          "**Uitvegen mag**, maar als jij komt kijken, staat de berekening op het bord.",
+          "**Met z'n drieën verantwoordelijk:** jij kunt **iedereen** vragen hoe en waarom. Niemand staat ernaast te niksen.",
+          "**Lokaal zonder voorkant:** jij staat niet voor de klas, maar loopt tussen de borden door.",
+          "**Alleen doordenkvragen beantwoorden** (zie hieronder).",
+          "**Uitdagingen en hulp per groepje**, op het moment dat ze het nodig hebben, zodat ze blijven denken: niet te makkelijk (verveling) en niet te moeilijk (frustratie).",
+          "**Terugkijken van onderaf:** begin bij wat iedereen snapt en bouw op naar het moeilijkste. Gebruik het werk van de kinderen.",
+          "**Notities voor later:** een briefje aan jezelf, geen overschrijven van het bord.",
+          "**Check je begrip:** een paar vragen alleen, om te zien of het blijft hangen. Geen cijfer."
+        ]
+      },
+      {
+        "kop": "Uitdagingen: steeds moeilijker (geef ze op volgorde)",
+        "items": [
+          "**Start:** Hoeveel boterhammen eet onze school (75 leerlingen) in één jaar? *Juf: ongeveer 30 000 als je alleen de lunch op school telt; ongeveer 110 000 als je thuis meetelt.*",
+          "**Zijpad** (voor wie op dit niveau nog wat oefening nodig heeft): Hoeveel boterhammen eet **jij** in je **hele basisschooltijd** op school? *Juf: 8 jaar × 40 weken × 5 dagen × 2 = 3200 boterhammen.*",
+          "**Uitdaging 1: broden.** Hoeveel broden is dat? *Juf: met 22 sneetjes per brood: 30 000 : 22 ≈ 1400 broden.*",
+          "**Uitdaging 2: wat kost het?** Hoeveel geld kost al dat brood? *Juf: met €2,50 per brood: 1400 × €2,50 = €3500 per jaar.*",
+          "**Uitdaging 3: hoe zwaar?** Hoeveel weegt al dat brood? Waarmee kun je dat vergelijken? *Juf: 1400 broden × 800 gram = 1 120 000 gram = 1120 kg, ongeveer zo zwaar als een auto.*",
+          "**Uitdaging 4: de bakker.** Wat als één bakker al het brood voor onze school moet bakken? Hoeveel broden bakt hij dan elke week voor ons? Kan één bakker dat aan? *Juf: 750 : 22 ≈ 34 broden per week, dat is ongeveer 7 per schooldag. Dat lukt één bakker makkelijk.*",
+          "**Uitdaging 5: de stapel.** Je legt alle boterhammen van één jaar op elkaar. Hoe hoog wordt de stapel? Waarmee kun je dat vergelijken? *Juf: 1 cm per boterham: 30 000 cm = 300 m, bijna 3 keer de Domtoren (112 m).*",
+          "**Uitdaging 6: de rij.** Je legt alle boterhammen naast elkaar op een rij, vanaf school. Hoe lang wordt de rij? Waar kom je uit? *Juf: 10 cm per boterham: 30 000 × 10 cm = 300 000 cm = 3 km.*",
+          "**Uitdaging 7: één persoon.** Hoe lang doet één persoon erover om alle boterhammen van onze school (van één jaar) op te eten? *Juf: met 4 per dag: 30 000 : 4 = 7500 dagen, dat is ruim 20 jaar.*",
+          "**Uitdaging 8: heel Houten.** In Houten wonen ongeveer 51 000 mensen. Hoeveel boterhammen eet heel Houten in een jaar? *Juf: 50 000 × 4 × 365 = 73 miljoen. Met het echte gemiddelde van 3,5 per dag: ongeveer 65 miljoen.*",
+          "**Uitdaging 9: bakkers in Houten.** Hoeveel broden zijn dat per dag? Hoeveel bakkers heeft Houten nodig? *Juf: 73 000 000 : 22 : 365 ≈ 9000 broden per dag. Als een bakker 500 broden per dag bakt (aanname): zo'n 18 bakkers.*"
+        ]
+      },
+      {
+        "kop": "Makkelijker maken (hulpkaartjes)",
+        "items": [
+          "**Hulp A:** Begin klein: hoeveel boterhammen eet **jij** op één dag?",
+          "**Hulp B:** Hoeveel boterhammen eet **onze klas** in **één week**?",
+          "**Hulp C:** Wat moet je allemaal **weten** om dit uit te rekenen? Maak eerst een lijstje.",
+          "Geef een hulpkaartje pas als een groepje **echt** vastzit. Vraag eerst: \"Wat hebben jullie al geprobeerd?\""
+        ]
+      },
+      {
+        "kop": "Vragen om aannames uit te lokken (moeilijker maken zonder kaartje)",
+        "items": [
+          "Telt het **weekend** mee? En de **vakanties**?",
+          "Eten de **juffen en meesters** ook mee?",
+          "Eet **iedereen evenveel**? Een kleuter ook?",
+          "Hebben jullie het alleen over **school**, of ook over **thuis**?",
+          "Is **woensdag** ook een lunchdag?",
+          "Wat als je **3 boterhammen** per kind neemt in plaats van 2? Hoeveel scheelt dat?"
+        ]
+      },
+      {
+        "kop": "Handige getallen (alleen geven als ze erom vragen)",
+        "items": [
+          "Een schooljaar heeft ongeveer **40 schoolweken** (ongeveer 190 tot 200 schooldagen).",
+          "Een heel brood (800 gram) heeft ongeveer **20 tot 24 sneetjes**.",
+          "Een sneetje brood is ongeveer **1 cm** dik (9 mm).",
+          "Een Nederlander eet gemiddeld ongeveer **3,5 boterham per dag**, zo'n 50 kilo brood per jaar.",
+          "In **Houten** wonen ongeveer **51 000 mensen**.",
+          "De **Domtoren** in Utrecht is ongeveer **112 meter** hoog.",
+          "Een heel brood kost ongeveer **€2 tot €3** (bij de bakker vaak meer) en weegt **800 gram**.",
+          "Een boterham is ongeveer **10 tot 12 cm** breed.",
+          "Een auto weegt ongeveer **1000 tot 1500 kg**.",
+          "Vraagt een groepje zoiets? Vraag eerst terug: \"Hoe kun je dat zelf schatten?\" Een getal geven mag als ze echt vastzitten, of als je het niet kunt schatten (zoals het aantal inwoners van Houten)."
+        ]
+      },
+      {
+        "kop": "Begeleiden: wat zie je en wat doe je dan?",
+        "items": [
+          "**Eén kind doet alles, de rest kijkt** → vraag een ander kind: \"Leg jij eens uit wat hier staat.\" Lukt dat niet? \"Leg het eerst aan elkaar uit, ik kom zo terug.\"",
+          "**Ze roepen \"Klaar!\"** → \"Wat hebben jullie aangenomen? Waarom? Kan iedereen het uitleggen?\" Daarna de volgende uitdaging.",
+          "**Alleen een getal op het bord** → \"Hoe kwamen jullie hieraan? Ik wil je berekening zien.\"",
+          "**Ze zitten vast** → hulpkaartje, of: \"Begin eens met één kind op één dag.\"",
+          "**Ze willen het precies weten** (\"Hoeveel eet iedereen precies?\") → \"Dat weten we niet precies. Wat neem je aan? Schrijf het op.\"",
+          "**Rekenfouten met nullen** (750 × 40) → niet aanwijzen, maar vragen: \"Kan dat? Is dat niet veel te veel of te weinig?\"",
+          "**Antwoord is heel gek** (3 boterhammen per jaar, of een miljard) → \"Vergelijk het eens met wat je eerst schatte: zeker te weinig en zeker te veel.\"",
+          "Ga **weg** nadat je een uitdaging of hint hebt gegeven, zodat ze zelf verder denken."
+        ]
+      },
+      {
+        "kop": "Vragen van kinderen: alleen doordenkvragen beantwoorden",
+        "items": [
+          "**Vragen omdat je toevallig dichtbij bent** (\"Juf, kijk eens\"): \"Leg het eerst uit aan je groepje.\"",
+          "**Vragen om te stoppen met denken** (\"Is dit goed?\", \"Hoeveel moet het zijn?\"): niet beantwoorden. Vraag terug: \"Hoe kunnen jullie dat controleren?\", \"Wat hebben jullie aangenomen?\", \"Kan dat?\"",
+          "**Doordenkvragen** (\"Tellen de juffen mee?\", \"Hoeveel mensen wonen er in Houten?\"): wel beantwoorden. Of zeg: \"Dat mogen jullie zelf kiezen, als je het maar opschrijft.\""
+        ]
+      },
+      {
+        "kop": "Terugkijken van onderaf: volgorde van de borden",
+        "items": [
+          "**1. Een bord dat klein begon** (één kind, één dag, of de klas): wat moesten ze weten? Scherm 5.",
+          "**2. Twee of drie borden met een ander antwoord voor de school:** waarom verschillen ze? Scherm 6. *(Op school of ook thuis? Weekend? Juffen?)*",
+          "**3. Zo dacht de juf:** scherm 7. Vraag bij elke regel: wat neem ik hier aan?",
+          "**4. Borden met broden, bakker of stapel:** scherm 8.",
+          "**5. Borden met kosten, gewicht, de rij of één persoon:** scherm 9.",
+          "**6. Borden met heel Houten:** scherm 10.",
+          "Laat bij elk bord eerst **een ander groepje** zeggen wat ze denken dat er staat. Daarna vertelt het eigen groepje, en vraag je **een willekeurig kind** uit dat groepje."
+        ]
+      },
+      {
+        "kop": "Uitwerking van de juf",
+        "items": [
+          "**Op school (lunch):** 75 × 2 = 150 per dag; × 5 = 750 per week; × 40 weken = **30 000 per jaar**. Zonder lunch op woensdag (4 dagen): **24 000**.",
+          "**Ook thuis, het hele jaar:** 75 × 4 (ontbijt en lunch) = 300 per dag; × 365 = **109 500, ongeveer 110 000**.",
+          "**Broden:** 30 000 : 22 ≈ **1400 broden** (met 20 sneetjes: 1500). Met thuis erbij: 109 500 : 22 ≈ **5000 broden**.",
+          "**Bakker:** 750 : 22 ≈ **34 broden per week** voor onze school, ongeveer 7 per schooldag. Met thuis erbij: 2100 : 22 ≈ 95 broden per week.",
+          "**Kosten:** 1400 × €2,50 = **€3500** per jaar. Met thuis erbij: 5000 × €2,50 = €12 500.",
+          "**Gewicht:** 1400 × 800 g = 1120 kg, **zo zwaar als een auto**. Met thuis erbij: 4000 kg, zo zwaar als een olifant.",
+          "**Stapel:** 30 000 × 1 cm = 30 000 cm = **300 m**, bijna 3 Domtorens. Met thuis erbij: 109 500 cm ≈ **1,1 km**, bijna 10 Domtorens.",
+          "**Rij:** 30 000 × 10 cm = 300 000 cm = **3 km**.",
+          "**Eén persoon:** 30 000 : 4 per dag = 7500 dagen ≈ **ruim 20 jaar**.",
+          "**Jouw basisschooltijd:** 8 × 40 × 5 × 2 = **3200 boterhammen**.",
+          "**Heel Houten:** 50 000 × 4 × 365 = **73 miljoen** boterhammen per jaar (met 3,5 per dag: ongeveer 65 miljoen). Dat is ongeveer 9000 broden per dag, en een stapel van 730 km."
+        ]
+      },
+      {
+        "kop": "Check je begrip: voorbeeldantwoorden",
+        "items": [
+          "1. Glazen drinken: bijvoorbeeld 25 kinderen × 3 glazen × 5 dagen = **375 glazen** per week. Andere aannames zijn ook goed, als ze opgeschreven zijn.",
+          "2. Appels: bijvoorbeeld 8 jaar × 40 weken × 5 dagen = 1600 schooldagen; om de dag een appel = **800 appels**.",
+          "Kijk vooral: staan de **aannames** erbij? Staat de **berekening** erbij? Is het antwoord **mogelijk**?"
+        ]
+      },
+      {
+        "kop": "Na de les",
+        "items": [
+          "Maak **foto's van de borden** voordat ze worden uitgeveegd. Leuk om de volgende les te vergelijken.",
+          "Volgende BTC-les weer **nieuwe groepjes**."
+        ]
+      }
+    ]
+  }
+}

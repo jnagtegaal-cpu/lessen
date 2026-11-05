@@ -107,6 +107,40 @@
       "gemaakt": "2026-10-30"
     },
     {
+      "id": "g7-8-rekenen-boterhammenvraag",
+      "titel": "Denktaak (BTC): de boterhammenvraag",
+      "groep": "7-8",
+      "vak": "Rekenen",
+      "onderwerp": "Denktaak (Building Thinking Classrooms), schatten",
+      "duur": 60,
+      "samenvatting": "BTC-denktaak voor de hele klas: hoeveel boterhammen eet onze school (75 leerlingen) in een jaar? Schatten, aannames maken en rekenen in groepjes van 3 aan verticale borden met één stift. Daarna broden, kosten, gewicht, de bakker, de stapel, de rij en heel Houten.",
+      "trefwoorden": [
+        "BTC",
+        "building thinking classrooms",
+        "denktaak",
+        "schatten",
+        "fermivraag",
+        "boterhammen",
+        "brood",
+        "Houten",
+        "aannames",
+        "grote getallen",
+        "verticale borden",
+        "één stift"
+      ],
+      "gemaakt": "2026-11-05",
+      "bijlagen": [
+        {
+          "titel": "Uitdagingskaartjes en hulpkaartjes",
+          "bestand": "uitdagingskaartjes.pdf"
+        },
+        {
+          "titel": "Uitwerking van de juf",
+          "bestand": "uitwerking.pdf"
+        }
+      ]
+    },
+    {
       "id": "g7-8-rekenen-breuken-vereenvoudigen",
       "titel": "Breuken vereenvoudigen",
       "groep": "7-8",
@@ -161,44 +195,6 @@
         "geld"
       ],
       "gemaakt": "2026-11-02"
-    },
-    {
-      "id": "g7-8-rekenen-kluisjesprobleem",
-      "titel": "Denktaak (BTC): het kluisjesprobleem",
-      "groep": "7-8",
-      "vak": "Rekenen",
-      "onderwerp": "Denktaak (Building Thinking Classrooms)",
-      "duur": 60,
-      "samenvatting": "BTC-denktaak voor de hele klas: welke kluisjes staan open? Groepjes van 3 aan verticale borden met één stift, uitdagingen die steeds moeilijker worden (delers, kwadraten, priemgetallen), terugkijken van onderaf, notities en check je begrip.",
-      "trefwoorden": [
-        "BTC",
-        "building thinking classrooms",
-        "denktaak",
-        "denkende klas",
-        "probleem oplossen",
-        "kluisjes",
-        "delers",
-        "kwadraten",
-        "priemgetallen",
-        "patronen",
-        "verticale borden",
-        "één stift"
-      ],
-      "gemaakt": "2026-11-05",
-      "bijlagen": [
-        {
-          "titel": "Groepskaartjes (zichtbaar willekeurig)",
-          "bestand": "groepskaartjes.pdf"
-        },
-        {
-          "titel": "Uitdagingskaartjes en hulpkaartjes",
-          "bestand": "uitdagingskaartjes.pdf"
-        },
-        {
-          "titel": "Uitwerkingen voor de leerkracht",
-          "bestand": "uitwerkingen.pdf"
-        }
-      ]
     },
     {
       "id": "g7-8-rekenen-schaal-oppervlakte",
