@@ -1,0 +1,666 @@
+{
+  "id": "g7-8-rekenen-kluisjesprobleem",
+  "titel": "Denktaak (BTC): het kluisjesprobleem",
+  "groep": "7-8",
+  "vak": "Rekenen",
+  "onderwerp": "Denktaak (Building Thinking Classrooms)",
+  "duur": 60,
+  "samenvatting": "BTC-denktaak voor de hele klas: welke kluisjes staan open? Groepjes van 3 aan verticale borden met één stift, uitdagingen die steeds moeilijker worden (delers, kwadraten, priemgetallen), terugkijken van onderaf, notities en check je begrip.",
+  "trefwoorden": [
+    "BTC",
+    "building thinking classrooms",
+    "denktaak",
+    "denkende klas",
+    "probleem oplossen",
+    "kluisjes",
+    "delers",
+    "kwadraten",
+    "priemgetallen",
+    "patronen",
+    "verticale borden",
+    "één stift"
+  ],
+  "gemaakt": "2026-11-05",
+  "bijlagen": [
+    {
+      "titel": "Groepskaartjes (zichtbaar willekeurig)",
+      "bestand": "groepskaartjes.pdf"
+    },
+    {
+      "titel": "Uitdagingskaartjes en hulpkaartjes",
+      "bestand": "uitdagingskaartjes.pdf"
+    },
+    {
+      "titel": "Uitwerkingen voor de leerkracht",
+      "bestand": "uitwerkingen.pdf"
+    }
+  ],
+  "schermen": [
+    {
+      "fase": "Het probleem (mondeling)",
+      "achtergrond": "leeg",
+      "notitie": "Vertel het probleem mondeling. De kinderen staan dicht om je heen, niet aan hun tafel. Tik de regels één voor één aan terwijl je vertelt, en wijs de kluisjes aan. Tik als laatste de vraag aan. Geen voorbeeld voordoen en geen strategie geven. Na hooguit 5 minuten zijn ze aan het werk.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Kluisjes op de gang 🔐"
+        },
+        {
+          "type": "html",
+          "html": "<style>\n.kl{display:flex;gap:14px;justify-content:center}\n.kl .k{position:relative;width:104px;height:236px;display:block}\n.kl .nr{display:block;text-align:center;font-size:34px;font-weight:800;color:#1d2b24;margin-bottom:6px;line-height:1}\n.kl .vak{position:absolute;left:0;right:0;top:44px;bottom:0;background:#26343c;border:4px solid #3d5a73;border-radius:8px;perspective:600px}\n.kl .vak::after{content:\"\";position:absolute;left:14px;right:14px;top:30px;height:4px;background:#4d6170;box-shadow:0 60px 0 #4d6170}\n.kl .deur{position:absolute;inset:-4px;background:#7fa7c9;border:4px solid #3d5a73;border-radius:8px;transform-origin:left center;transition:transform .35s;box-sizing:border-box;z-index:1}\n.kl .deur::before{content:\"\";position:absolute;left:18px;right:18px;top:16px;height:44px;background:repeating-linear-gradient(#5d84a6 0 5px,transparent 5px 11px)}\n.kl .deur::after{content:\"\";position:absolute;right:12px;top:86px;width:9px;height:34px;border-radius:5px;background:#e9eef2;border:2px solid #3d5a73}\n.kl input{position:absolute;opacity:0;pointer-events:none}\n.kl label.k{cursor:pointer}\n.kl input:checked ~ .vak .deur{transform:rotateY(-72deg);background:#a9c6de}\n.kl .klein{transform:scale(.62);transform-origin:top center;margin-bottom:-100px}\n</style><div class=\"kl\"><div class=\"k\"><span class=\"nr\">1</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">2</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">3</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">4</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">5</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">6</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">7</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">8</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">9</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">10</span><span class=\"vak\"><span class=\"deur\"></span></span></div></div>"
+        },
+        {
+          "type": "lijst",
+          "stapsgewijs": true,
+          "stijl": "font-size:34px;line-height:1.3",
+          "items": [
+            "Op de gang staan **10 kluisjes**, met de nummers 1 tot en met 10. **Alle deurtjes zijn dicht.**",
+            "Er komen **10 leerlingen** langs, één voor één.",
+            "**Leerling 1** doet **elk** kluisje open.",
+            "**Leerling 2** verandert **elk 2e** kluisje (2, 4, 6 …). **Open wordt dicht, dicht wordt open.**",
+            "**Leerling 3** verandert **elk 3e** kluisje (3, 6, 9). Zo gaat het door tot en met **leerling 10**."
+          ]
+        },
+        {
+          "type": "vraag",
+          "verborgen": true,
+          "tekst": "Welke kluisjes staan **open** als alle 10 leerlingen langs zijn geweest?",
+          "stijl": "font-size:38px"
+        }
+      ]
+    },
+    {
+      "fase": "Groepjes en afspraken",
+      "achtergrond": "leeg",
+      "notitie": "Laat de kinderen een groepskaartje trekken uit de stapel (zichtbaar schudden, zodat iedereen ziet dat het toeval is). Het nummer op het kaartje is hun bord. Groepjes van 3. Benoem de afspraken kort en stuur ze dan meteen naar de borden. Geef elk groepje één stift.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Zo werken we"
+        },
+        {
+          "type": "stappen",
+          "stapsgewijs": true,
+          "stijl": "font-size:.74em;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(4,auto);grid-auto-flow:column;gap:14px 28px",
+          "items": [
+            "Trek een kaartje: het nummer is **jouw bord**. Je werkt met **3 kinderen** samen.",
+            "Je werkt **staand aan het bord**. Tafels en schriften blijven waar ze zijn.",
+            "Er is **maar één stift**. Wie de stift heeft, schrijft op wat **de anderen** zeggen, niet zijn eigen idee.",
+            "**De stift gaat door**: na elk nieuw idee krijgt de volgende hem.",
+            "**Uitvegen mag.** Fouten maken hoort erbij.",
+            "Vast? Kijk bij **een ander bord**. Ideeën lenen mag!",
+            "Een vraag? Stel hem **eerst aan je groepje**.",
+            "Klaar? Kun je uitleggen **waarom** het klopt? Dan krijg je een **nieuwe uitdaging**."
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Aan het werk (dit scherm blijft staan)",
+      "achtergrond": "leeg",
+      "notitie": "Laat dit scherm staan zolang de groepjes werken. Loop rond, ga niet voor de klas staan. Geef uitdagingen en hulpkaartjes per groepje (zie voorbereiding en de bijlage met uitdagingskaartjes). Beantwoord alleen vragen die helpen om verder te denken.",
+      "blokken": [
+        {
+          "type": "subkop",
+          "tekst": "Kluisjes op de gang"
+        },
+        {
+          "type": "html",
+          "html": "<style>\n.kl{display:flex;gap:14px;justify-content:center}\n.kl .k{position:relative;width:104px;height:236px;display:block}\n.kl .nr{display:block;text-align:center;font-size:34px;font-weight:800;color:#1d2b24;margin-bottom:6px;line-height:1}\n.kl .vak{position:absolute;left:0;right:0;top:44px;bottom:0;background:#26343c;border:4px solid #3d5a73;border-radius:8px;perspective:600px}\n.kl .vak::after{content:\"\";position:absolute;left:14px;right:14px;top:30px;height:4px;background:#4d6170;box-shadow:0 60px 0 #4d6170}\n.kl .deur{position:absolute;inset:-4px;background:#7fa7c9;border:4px solid #3d5a73;border-radius:8px;transform-origin:left center;transition:transform .35s;box-sizing:border-box;z-index:1}\n.kl .deur::before{content:\"\";position:absolute;left:18px;right:18px;top:16px;height:44px;background:repeating-linear-gradient(#5d84a6 0 5px,transparent 5px 11px)}\n.kl .deur::after{content:\"\";position:absolute;right:12px;top:86px;width:9px;height:34px;border-radius:5px;background:#e9eef2;border:2px solid #3d5a73}\n.kl input{position:absolute;opacity:0;pointer-events:none}\n.kl label.k{cursor:pointer}\n.kl input:checked ~ .vak .deur{transform:rotateY(-72deg);background:#a9c6de}\n.kl .klein{transform:scale(.62);transform-origin:top center;margin-bottom:-100px}\n</style><div class=\"kl\"><div class=\"k\"><span class=\"nr\">1</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">2</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">3</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">4</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">5</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">6</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">7</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">8</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">9</span><span class=\"vak\"><span class=\"deur\"></span></span></div><div class=\"k\"><span class=\"nr\">10</span><span class=\"vak\"><span class=\"deur\"></span></span></div></div>"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "lijst",
+                "stijl": "font-size:28px;line-height:1.3",
+                "items": [
+                  "10 kluisjes, allemaal **dicht**. 10 leerlingen komen langs.",
+                  "Leerling 1 verandert elk kluisje, leerling 2 elk 2e, leerling 3 elk 3e … tot leerling 10.",
+                  "**Open wordt dicht, dicht wordt open.**"
+                ]
+              },
+              {
+                "type": "vraag",
+                "tekst": "Welke kluisjes staan aan het eind **open**?",
+                "stijl": "font-size:34px"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;flex-direction:column;gap:12px\"><div style=\"background:#eef7f1;border-radius:16px;padding:12px 20px;font-size:27px;line-height:1.3\">🖊️ <b>Eén stift</b>: geef hem door na elk idee.</div><div style=\"background:#eef3fd;border-radius:16px;padding:12px 20px;font-size:27px;line-height:1.3\">👀 <b>Vast?</b> Kijk bij een ander bord.</div><div style=\"background:#fff6e0;border-radius:16px;padding:12px 20px;font-size:27px;line-height:1.3\">⭐ <b>Klaar?</b> Kun je uitleggen <b>waarom</b>? Haal een nieuwe uitdaging.</div></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Terugkijken 1: naspelen",
+      "achtergrond": "leeg",
+      "notitie": "Begin het terugkijken bij het bord waar iedereen het kan volgen, bijvoorbeeld een groepje dat het helemaal heeft uitgetekend. Speel het daarna samen na: tik op een kluisje om het open of dicht te doen. De kinderen zeggen wat je moet doen. Tik de regels per leerling aan als hulp. Wil je opnieuw beginnen? Ga een scherm terug en weer vooruit. Uitkomst: 1, 4 en 9 staan open.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Speel het na"
+        },
+        {
+          "type": "html",
+          "html": "<style>\n.kl{display:flex;gap:14px;justify-content:center}\n.kl .k{position:relative;width:104px;height:236px;display:block}\n.kl .nr{display:block;text-align:center;font-size:34px;font-weight:800;color:#1d2b24;margin-bottom:6px;line-height:1}\n.kl .vak{position:absolute;left:0;right:0;top:44px;bottom:0;background:#26343c;border:4px solid #3d5a73;border-radius:8px;perspective:600px}\n.kl .vak::after{content:\"\";position:absolute;left:14px;right:14px;top:30px;height:4px;background:#4d6170;box-shadow:0 60px 0 #4d6170}\n.kl .deur{position:absolute;inset:-4px;background:#7fa7c9;border:4px solid #3d5a73;border-radius:8px;transform-origin:left center;transition:transform .35s;box-sizing:border-box;z-index:1}\n.kl .deur::before{content:\"\";position:absolute;left:18px;right:18px;top:16px;height:44px;background:repeating-linear-gradient(#5d84a6 0 5px,transparent 5px 11px)}\n.kl .deur::after{content:\"\";position:absolute;right:12px;top:86px;width:9px;height:34px;border-radius:5px;background:#e9eef2;border:2px solid #3d5a73}\n.kl input{position:absolute;opacity:0;pointer-events:none}\n.kl label.k{cursor:pointer}\n.kl input:checked ~ .vak .deur{transform:rotateY(-72deg);background:#a9c6de}\n.kl .klein{transform:scale(.62);transform-origin:top center;margin-bottom:-100px}\n</style><div class=\"kl\"><label class=\"k\"><input type=\"checkbox\"><span class=\"nr\">1</span><span class=\"vak\"><span class=\"deur\"></span></span></label><label class=\"k\"><input type=\"checkbox\"><span class=\"nr\">2</span><span class=\"vak\"><span class=\"deur\"></span></span></label><label class=\"k\"><input type=\"checkbox\"><span class=\"nr\">3</span><span class=\"vak\"><span class=\"deur\"></span></span></label><label class=\"k\"><input type=\"checkbox\"><span class=\"nr\">4</span><span class=\"vak\"><span class=\"deur\"></span></span></label><label class=\"k\"><input type=\"checkbox\"><span class=\"nr\">5</span><span class=\"vak\"><span class=\"deur\"></span></span></label><label class=\"k\"><input type=\"checkbox\"><span class=\"nr\">6</span><span class=\"vak\"><span class=\"deur\"></span></span></label><label class=\"k\"><input type=\"checkbox\"><span class=\"nr\">7</span><span class=\"vak\"><span class=\"deur\"></span></span></label><label class=\"k\"><input type=\"checkbox\"><span class=\"nr\">8</span><span class=\"vak\"><span class=\"deur\"></span></span></label><label class=\"k\"><input type=\"checkbox\"><span class=\"nr\">9</span><span class=\"vak\"><span class=\"deur\"></span></span></label><label class=\"k\"><input type=\"checkbox\"><span class=\"nr\">10</span><span class=\"vak\"><span class=\"deur\"></span></span></label></div>"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "lijst",
+                "stapsgewijs": true,
+                "stijl": "font-size:26px;line-height:1.15;list-style:none;padding-left:0",
+                "items": [
+                  "**Leerling 1** → 1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+                  "**Leerling 2** → 2, 4, 6, 8, 10",
+                  "**Leerling 3** → 3, 6, 9",
+                  "**Leerling 4** → 4, 8",
+                  "**Leerling 5** → 5, 10"
+                ]
+              }
+            ],
+            [
+              {
+                "type": "lijst",
+                "stapsgewijs": true,
+                "stijl": "font-size:26px;line-height:1.15;list-style:none;padding-left:0",
+                "items": [
+                  "**Leerling 6** → 6",
+                  "**Leerling 7** → 7",
+                  "**Leerling 8** → 8",
+                  "**Leerling 9** → 9",
+                  "**Leerling 10** → 10"
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Terugkijken 2: wat valt op?",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "notitie": "Laat een groepje vertellen dat ook 20 (of 30) kluisjes heeft gedaan. Tik de rijtjes één voor één aan. Vraag: wat valt op? Laat eerst een paar kinderen hun idee zeggen voordat je de onderste regel aantikt (kwadraten: een getal keer zichzelf).",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Welke kluisjes staan open?"
+        },
+        {
+          "type": "lijst",
+          "stapsgewijs": true,
+          "stijl": "font-size:46px;font-weight:700;line-height:1.45;list-style:none;padding-left:0",
+          "items": [
+            "10 kluisjes: 1, 4, 9",
+            "20 kluisjes: 1, 4, 9, 16",
+            "30 kluisjes: 1, 4, 9, 16, 25"
+          ]
+        },
+        {
+          "type": "vraag",
+          "tekst": "Wat valt op?",
+          "verborgen": true
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"font-size:40px;line-height:1.4;background:#fff6e0;border-radius:16px;padding:16px 24px;text-align:center\"><b>1×1 = 1 · 2×2 = 4 · 3×3 = 9 · 4×4 = 16 · 5×5 = 25</b><br>Het zijn <b>kwadraten</b>: een getal keer zichzelf.</div>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Terugkijken 3: waarom?",
+      "achtergrond": "leeg",
+      "notitie": "Vraag eerst: welke leerlingen komen bij kluisje 12? En bij 16? Laat het een groepje uitleggen dat delers (keersommen) heeft gevonden. Tik de paartjes aan. Bij 12 heeft elke leerling een maatje (1 en 12, 2 en 6, 3 en 4): 6 leerlingen, even, dus dicht. Bij 16 staat 4 × 4: leerling 4 heeft geen maatje. 5 leerlingen, oneven, dus open. Dat kan alleen bij een kwadraat. De stippen laten zien: 12 is een rechthoek, 16 een vierkant.",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "**Waarom** staan juist die kluisjes open? Kijk naar kluisje 12 en kluisje 16."
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Kluisje 12"
+              },
+              {
+                "type": "lijst",
+                "stapsgewijs": true,
+                "stijl": "font-size:34px;line-height:1.35;list-style:none;padding-left:0",
+                "items": [
+                  "1 × 12",
+                  "2 × 6",
+                  "3 × 4"
+                ]
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:20px\"><div><svg width=\"154\" height=\"118\" viewBox=\"0 0 154 118\"><circle cx=\"23.0\" cy=\"23.0\" r=\"13\" fill=\"#1f6fd1\"/><circle cx=\"59.0\" cy=\"23.0\" r=\"13\" fill=\"#1f6fd1\"/><circle cx=\"95.0\" cy=\"23.0\" r=\"13\" fill=\"#1f6fd1\"/><circle cx=\"131.0\" cy=\"23.0\" r=\"13\" fill=\"#1f6fd1\"/><circle cx=\"23.0\" cy=\"59.0\" r=\"13\" fill=\"#1f6fd1\"/><circle cx=\"59.0\" cy=\"59.0\" r=\"13\" fill=\"#1f6fd1\"/><circle cx=\"95.0\" cy=\"59.0\" r=\"13\" fill=\"#1f6fd1\"/><circle cx=\"131.0\" cy=\"59.0\" r=\"13\" fill=\"#1f6fd1\"/><circle cx=\"23.0\" cy=\"95.0\" r=\"13\" fill=\"#1f6fd1\"/><circle cx=\"59.0\" cy=\"95.0\" r=\"13\" fill=\"#1f6fd1\"/><circle cx=\"95.0\" cy=\"95.0\" r=\"13\" fill=\"#1f6fd1\"/><circle cx=\"131.0\" cy=\"95.0\" r=\"13\" fill=\"#1f6fd1\"/></svg></div><div style=\"font-size:32px;line-height:1.3\">6 leerlingen<br><b>even → dicht</b></div></div>",
+                "verborgen": true
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Kluisje 16"
+              },
+              {
+                "type": "lijst",
+                "stapsgewijs": true,
+                "stijl": "font-size:34px;line-height:1.35;list-style:none;padding-left:0",
+                "items": [
+                  "1 × 16",
+                  "2 × 8",
+                  "4 × 4  ← maar één leerling!"
+                ]
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:20px\"><div><svg width=\"154\" height=\"154\" viewBox=\"0 0 154 154\"><circle cx=\"23.0\" cy=\"23.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"59.0\" cy=\"23.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"95.0\" cy=\"23.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"131.0\" cy=\"23.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"23.0\" cy=\"59.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"59.0\" cy=\"59.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"95.0\" cy=\"59.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"131.0\" cy=\"59.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"23.0\" cy=\"95.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"59.0\" cy=\"95.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"95.0\" cy=\"95.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"131.0\" cy=\"95.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"23.0\" cy=\"131.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"59.0\" cy=\"131.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"95.0\" cy=\"131.0\" r=\"13\" fill=\"#d9822b\"/><circle cx=\"131.0\" cy=\"131.0\" r=\"13\" fill=\"#d9822b\"/></svg></div><div style=\"font-size:32px;line-height:1.3\">5 leerlingen<br><b>oneven → open</b></div></div>",
+                "verborgen": true
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"font-size:32px;line-height:1.35;background:#eef7f1;border-radius:16px;padding:14px 22px\">Leerlingen komen in <b>paartjes</b>. Alleen bij een <b>kwadraat</b> heeft één leerling geen maatje. Dan is het aantal oneven en staat het kluisje <b>open</b>.</div>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Terugkijken 4: heel veel kluisjes",
+      "achtergrond": "leeg",
+      "notitie": "Voor de groepjes die verder kwamen. Vraag: hoe weet je het zonder alles te tekenen? Bij 100: de kwadraten tot en met 10 × 10, dus 10 kluisjes. Bij 1000: 31 × 31 = 961 past nog, 32 × 32 = 1024 is te veel, dus 31 kluisjes.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "En bij heel veel kluisjes?"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "100 kluisjes, 100 leerlingen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:38px;line-height:1.4\"><b>10 open</b>:<br>1, 4, 9, 16, 25, 36, 49, 64, 81, 100</div>",
+                "verborgen": true
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "1000 kluisjes, 1000 leerlingen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:38px;line-height:1.4\"><b>31 open</b>:<br>31 × 31 = 961 ✔️<br>32 × 32 = 1024 ✖️ te veel</div>",
+                "verborgen": true
+              }
+            ]
+          ]
+        },
+        {
+          "type": "vraag",
+          "tekst": "Hoe weet je dat **zonder** alles te tekenen?",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Terugkijken 5: superdenkers",
+      "achtergrond": "leeg",
+      "notitie": "Alleen gebruiken als groepjes zo ver zijn gekomen. Laat dat groepje het uitleggen bij hun eigen bord. Precies 2 keer: priemgetallen (alleen 1 en zichzelf), 25 stuks onder de 100. Vaakst: 60, 72, 84, 90 en 96, elk 12 keer. Leerling 1 ziek: alle kluisjes behalve de kwadraten staan open, en kluisje 1 blijft dicht: 90 open. Maar 50 leerlingen bij 100 kluisjes: 54 open (7 kwadraten tot en met 49, plus 47 kluisjes van 51 tot en met 100 die geen kwadraat zijn).",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Voor de superdenkers (100 kluisjes)"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Precies 2 keer veranderd?"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "De **priemgetallen**: 2, 3, 5, 7, 11 … **25 kluisjes**",
+                "stijl": "font-size:30px"
+              },
+              {
+                "type": "subkop",
+                "tekst": "Het vaakst veranderd?"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "**60, 72, 84, 90 en 96**: elk **12 keer**",
+                "stijl": "font-size:30px"
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Leerling 1 is ziek"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "Precies andersom: alles behalve de kwadraten staat open, kluisje 1 blijft dicht. **90 open**",
+                "stijl": "font-size:30px"
+              },
+              {
+                "type": "subkop",
+                "tekst": "Maar 50 leerlingen"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "**54 open**: 1, 4 … 49 (7 stuks) en van 51 tot 100 alles behalve 64, 81, 100 (47 stuks)",
+                "stijl": "font-size:30px"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Notities voor later",
+      "achtergrond": "lijntjes",
+      "notitie": "Notities voor later: elk kind schrijft in eigen schrift een briefje aan zichzelf, alsof ze het over een maand vergeten zijn. Ze mogen bij de borden kijken en zelf hun voorbeeld kiezen. Ongeveer 5 minuten.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Een briefje aan jezelf ✉️"
+        },
+        {
+          "type": "tekst",
+          "tekst": "Stel: over een maand ben je alles vergeten. Wat moet je dan lezen?",
+          "stijl": "font-size:34px"
+        },
+        {
+          "type": "stappen",
+          "items": [
+            "Wat was het **probleem**? Leg het in je eigen woorden uit.",
+            "Teken **één klein voorbeeld**, bijvoorbeeld 10 kluisjes.",
+            "Wat **ontdekten** we? Welke kluisjes staan open?",
+            "**Waarom** klopt dat? Gebruik de paartjes."
+          ],
+          "stijl": "font-size:.8em"
+        }
+      ]
+    },
+    {
+      "fase": "Check je begrip",
+      "achtergrond": "leeg",
+      "notitie": "Check je begrip: alleen werken, in het schrift of op een wisbordje. Ze mogen hun briefje gebruiken. Het is geen toets: ze kijken het zelf na. Tik de antwoorden pas aan als de meesten klaar zijn. Antwoorden: 1) 6 keer (1, 2, 5, 10, 25, 50), dicht. 2) Open: 1, 2, 3, 4, 6, 9, 12, 18 en 36, dat zijn 9 leerlingen. 3) 1, 4, 9, 16, 25, 36, 49: 7 kluisjes. 4) 14, want 14 × 14 = 196 en 15 × 15 = 225 is te veel.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Check je begrip (alleen)"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "tekst",
+                "tekst": "1. Hoe vaak wordt kluisje 50 veranderd? Open of dicht?",
+                "stijl": "font-size:32px;font-weight:700"
+              },
+              {
+                "type": "tekst",
+                "tekst": "6 keer (1, 2, 5, 10, 25, 50): **dicht**",
+                "verborgen": true,
+                "stijl": "font-size:28px;color:#1f7a4a"
+              },
+              {
+                "type": "tekst",
+                "tekst": "2. Staat kluisje 36 open of dicht? Welke leerlingen komen langs?",
+                "stijl": "font-size:32px;font-weight:700"
+              },
+              {
+                "type": "tekst",
+                "tekst": "1, 2, 3, 4, 6, 9, 12, 18, 36: 9 leerlingen, **open**",
+                "verborgen": true,
+                "stijl": "font-size:28px;color:#1f7a4a"
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "tekst": "3. Er zijn 50 kluisjes. Welke staan aan het eind open?",
+                "stijl": "font-size:32px;font-weight:700"
+              },
+              {
+                "type": "tekst",
+                "tekst": "1, 4, 9, 16, 25, 36, 49: **7 kluisjes**",
+                "verborgen": true,
+                "stijl": "font-size:28px;color:#1f7a4a"
+              },
+              {
+                "type": "tekst",
+                "tekst": "4. Er zijn 200 kluisjes. Hoeveel staan er open?",
+                "stijl": "font-size:32px;font-weight:700"
+              },
+              {
+                "type": "tekst",
+                "tekst": "**14**, want 14 × 14 = 196 en 15 × 15 = 225 is te veel",
+                "verborgen": true,
+                "stijl": "font-size:28px;color:#1f7a4a"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "voorbereiding": {
+    "benodigdheden": [
+      "**Verticale schermen** (whiteboards, wisbare vellen of ramen): één per groepje van 3, op ooghoogte, verspreid door het lokaal",
+      "**Eén stift per groepje** (geen extra stiften!) en een wisser of doekje",
+      "**Groepskaartjes** (bijlage): uitknippen en vóór de les schudden. Leg alleen zoveel kaartjes in de stapel als er kinderen zijn",
+      "Nummers bij de borden: bord 1, bord 2 … (passend bij de groepskaartjes)",
+      "**Uitdagingskaartjes** (bijlage): uitknippen, op volgorde op een stapeltje, ook de hulpkaartjes",
+      "**Uitwerkingen** (bijlage), voor jezelf",
+      "Schriften voor het briefje aan jezelf en de check-je-begrip-vragen",
+      "Telefoon of tablet om aan het eind foto's van de borden te maken"
+    ],
+    "verloop": [
+      {
+        "tijd": "0–5 min",
+        "fase": "Probleem geven",
+        "wat": "Kinderen komen **staand om je heen** (niet aan tafel). Vertel het kluisjesprobleem **mondeling** met scherm 1. Geen voorbeeld voordoen, geen aanpak geven. Alleen checken of de regels duidelijk zijn: \"Wat doet leerling 2?\""
+      },
+      {
+        "tijd": "5–8 min",
+        "fase": "Groepjes",
+        "wat": "Schud de groepskaartjes zichtbaar. Iedereen trekt er één: het nummer is het bord. Groepjes van 3. Afspraken kort (scherm 2), één stift per groepje, en meteen naar de borden."
+      },
+      {
+        "tijd": "8–35 min",
+        "fase": "Denken aan het bord",
+        "wat": "Scherm 3 blijft staan. Jij loopt rond, nooit voor de klas. Geef per groepje een **uitdaging** als ze klaar zijn en kunnen uitleggen waarom, of een **hulpkaartje** als ze vastlopen. Beantwoord alleen doordenkvragen. Let op de stift: gaat hij echt door?"
+      },
+      {
+        "tijd": "35–45 min",
+        "fase": "Terugkijken van onderaf",
+        "wat": "Alle kinderen lopen mee langs de borden. Begin bij het bord dat **iedereen** kan volgen (tekening of tabel van 10 kluisjes) en ga stap voor stap naar borden met meer: het patroon, het waarom, 100 en 1000 kluisjes. Gebruik scherm 4 tot en met 8 waar het helpt. Laat het groepje steeds zelf uitleggen, of vraag een ander groepje: \"Wat denken jullie dat zij bedoelen?\""
+      },
+      {
+        "tijd": "45–50 min",
+        "fase": "Notities voor later",
+        "wat": "Terug naar de plek. Elk kind schrijft een briefje aan zichzelf (scherm 9): probleem, één voorbeeld, ontdekking, waarom."
+      },
+      {
+        "tijd": "50–60 min",
+        "fase": "Check je begrip",
+        "wat": "Vier vragen alleen (scherm 10), met het eigen briefje erbij. Zelf nakijken. Heb je maar 45 minuten? Doe dan 2 vragen, of schuif de vragen naar de volgende rekenles."
+      }
+    ],
+    "secties": [
+      {
+        "kop": "Het probleem (zo vertel je het)",
+        "tekst": "Op de gang staan 10 kluisjes, genummerd 1 tot en met 10. Alle deurtjes zijn dicht. Er komen 10 leerlingen langs, één voor één. Leerling 1 doet elk kluisje open. Leerling 2 verandert elk 2e kluisje: 2, 4, 6, 8, 10. Open wordt dicht, dicht wordt open. Leerling 3 verandert elk 3e kluisje: 3, 6, 9. Zo gaat het door, tot leerling 10 alleen kluisje 10 verandert. **Welke kluisjes staan open als alle leerlingen langs zijn geweest?**"
+      },
+      {
+        "kop": "Wat leren ze hiervan?",
+        "items": [
+          "**Rekenen:** delers en keersommen (welke tafels passen op een getal), even en oneven, kwadraten (een getal keer zichzelf), priemgetallen.",
+          "**Denken:** een probleem kleiner maken, ordenen in een tabel, een patroon zien, voorspellen en controleren, uitleggen **waarom** iets altijd klopt.",
+          "**Samenwerken:** naar elkaar luisteren (wie de stift heeft, schrijft het idee van een ander op), ideeën lenen bij andere groepjes."
+        ]
+      },
+      {
+        "kop": "De BTC-voorwaarden in deze les",
+        "items": [
+          "**Denktaak vooraf**: geen uitleg vooraf. Het probleem is de les.",
+          "**Probleem in de eerste 5 minuten**, mondeling, terwijl de kinderen **staan** en dicht om je heen staan. Het scherm is alleen steun.",
+          "**Zichtbaar willekeurige groepjes van 3**: de kinderen trekken een kaartje en zien dat het toeval is. Niet zelf indelen en niet ruilen. Volgende BTC-les opnieuw trekken.",
+          "**Verticale, uitwisbare schermen**: staand werken aan een bord dat je kunt uitvegen. Dat maakt het makkelijker om iets te proberen.",
+          "**Eén stift per groepje**: wie de stift heeft, schrijft op wat de **anderen** zeggen. De stift gaat door na elk idee. Zo moet iedereen praten en uitleggen.",
+          "**Lokaal zonder voorkant**: jij staat niet voor de klas maar loopt tussen de borden door. Er is geen vaste \"voorkant\".",
+          "**Alleen doordenkvragen beantwoorden** (zie hieronder).",
+          "**Kennis mag rondgaan**: kijken en ideeën lenen bij andere borden mag en is de bedoeling.",
+          "**Uitdagingen en hulp per groepje**, op het moment dat ze het nodig hebben, zodat ze steeds blijven denken: niet te makkelijk (verveling) en niet te moeilijk (frustratie).",
+          "**Terugkijken van onderaf**: begin bij wat iedereen snapt en bouw op naar het moeilijkste. Gebruik het werk van de kinderen, niet jouw uitleg.",
+          "**Notities voor later**: een briefje aan jezelf, geen overschrijven van het bord.",
+          "**Check je begrip**: een paar vragen alleen, om te zien of het blijft hangen. Ze kijken zelf na, je geeft geen cijfer."
+        ]
+      },
+      {
+        "kop": "Uitdagingen: steeds moeilijker (geef ze op volgorde)",
+        "items": [
+          "**Start:** 10 kluisjes, 10 leerlingen. *Antwoord: 1, 4, 9.*",
+          "**Uitdaging 1:** 20 kluisjes en 20 leerlingen. *Antwoord: 1, 4, 9, 16.*",
+          "**Zijpad** (voor wie op dit niveau nog wat oefening nodig heeft): hoeveel keer wordt er in totaal een deurtje veranderd bij 10 kluisjes? *Antwoord: 27 keer* (10 + 5 + 3 + 2 + 2 + 1 + 1 + 1 + 1 + 1). Bij 20 kluisjes: *66 keer*.",
+          "**Uitdaging 2:** Wat valt op aan de open kluisjes? Voorspel welke open staan bij 30 kluisjes, zonder te tekenen. Controleer daarna. *Antwoord: 1, 4, 9, 16, 25, de kwadraten.*",
+          "**Uitdaging 3:** 100 kluisjes, 100 leerlingen. Welke staan open en hoeveel? *Antwoord: 10 kluisjes, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100.*",
+          "**Uitdaging 4:** Welke leerlingen komen bij kluisje 12? En bij kluisje 16? Waarom staat de ene open en de andere dicht? *Antwoord: 12: 1, 2, 3, 4, 6, 12 (6 keer, even, dicht). 16: 1, 2, 4, 8, 16 (5 keer, oneven, open). Delers komen in paartjes; bij een kwadraat staat er één alleen (4 × 4).*",
+          "**Uitdaging 5:** Welke kluisjes (van de 100) worden precies 2 keer veranderd? Hoeveel zijn dat er? Bonus: en precies 3 keer? *Antwoord: de priemgetallen, 25 stuks. Precies 3 keer: 4, 9, 25, 49 (kwadraten van priemgetallen).*",
+          "**Uitdaging 6:** Welk kluisje (van de 100) wordt het vaakst veranderd? *Antwoord: 60, 72, 84, 90 en 96, elk 12 keer.*",
+          "**Uitdaging 7:** 1000 kluisjes, 1000 leerlingen. Hoeveel staan er open? *Antwoord: 31, want 31 × 31 = 961 en 32 × 32 = 1024.*",
+          "**Uitdaging 8:** Leerling 1 is ziek. Alles is dicht en leerling 2 begint (100 kluisjes). Welke staan nu open? *Antwoord: precies andersom: alle kluisjes behalve de kwadraten, en kluisje 1 wordt nooit aangeraakt. 90 open.*",
+          "**Uitdaging 9:** 100 kluisjes, maar er komen maar 50 leerlingen. Hoeveel staan er open? *Antwoord: 54. Tot en met 50 gewoon de kwadraten (1 tot en met 49: 7 stuks). Van 51 tot en met 100 komt het kluisje zelf niet meer langs, dus is alles open behalve de kwadraten 64, 81 en 100: 47 stuks.*"
+        ]
+      },
+      {
+        "kop": "Makkelijker maken (hulpkaartjes)",
+        "items": [
+          "**Hulp A:** Maak het kleiner: begin met 5 kluisjes en 5 leerlingen. *(Open: 1 en 4.)*",
+          "**Hulp B:** Hoe houden jullie bij of een deurtje open of dicht is? Probeer een tabel: kluisjes bovenaan, leerlingen onder elkaar, en zet een O (open) of D (dicht).",
+          "**Hulp C:** Kies één kluisje, bijvoorbeeld kluisje 6. Welke leerlingen komen daar langs? Hoe vaak is dat?",
+          "Of speel het na: vier kinderen zijn even kluisjes (staan = open, zitten = dicht).",
+          "Geef een hulpkaartje pas als een groepje **echt** vastzit, niet bij de eerste zucht. Vraag eerst: \"Wat hebben jullie al geprobeerd?\""
+        ]
+      },
+      {
+        "kop": "Begeleiden: wat zie je en wat doe je dan?",
+        "items": [
+          "**Ze zijn snel klaar en vervelen zich** → volgende uitdaging. Eerst: \"Kunnen jullie uitleggen **waarom**? Laat het me zien op het bord.\"",
+          "**Ze zitten vast en worden boos of stil** → hulpkaartje of een kleine vraag (\"Wat doet leerling 4 bij kluisje 8?\").",
+          "**Eén kind doet alles** → \"Geef de stift aan de volgende.\" Of vraag een stil kind: \"Leg jij eens uit wat er op het bord staat.\"",
+          "**Ze roepen \"Klaar!\"** → \"Hoe weten jullie zeker dat het klopt? Kan iemand anders van jullie groepje het uitleggen?\"",
+          "**Veelgemaakte fouten:** leerling 2 begint bij kluisje 1; ze vergeten dat leerling 1 alles opent; open en dicht door elkaar; bij 1000 tellen ze tot 30 of 32. Wijs de fout niet aan, maar vraag: \"Controleer kluisje 4 nog eens.\"",
+          "**Groepje gaat helemaal de verkeerde kant op** → stuur ze naar een ander bord: \"Kijk eens hoe bord 5 het bijhoudt.\"",
+          "Ga **weg** nadat je een uitdaging of hint hebt gegeven, zodat ze zelf verder denken."
+        ]
+      },
+      {
+        "kop": "Vragen van kinderen: alleen doordenkvragen beantwoorden",
+        "items": [
+          "**Vragen omdat je toevallig dichtbij bent** (\"Juf, kijk eens\"): \"Wat hebben jullie gevonden? Vertel het eerst aan elkaar.\"",
+          "**Vragen om te stoppen met denken** (\"Is dit goed?\", \"Wat moeten we nu doen?\"): niet beantwoorden. Vraag terug: \"Hoe kunnen jullie dat zelf controleren?\", \"Klopt het ook bij kluisje 9?\", \"Wat zou er gebeuren als …?\"",
+          "**Doordenkvragen** (\"Mag leerling 1 ook dichtdoen?\", \"Telt kluisje 1 als kwadraat?\"): wel beantwoorden. Daarmee kunnen ze verder.",
+          "Handig zinnetje: \"Vraag het eerst aan je groepje.\" En: \"Kijk eens bij een ander bord.\""
+        ]
+      },
+      {
+        "kop": "Terugkijken van onderaf: volgorde van de borden",
+        "items": [
+          "**1. Een bord met een tekening of tabel** van 10 kluisjes: hoe hielden ze het bij? Speel het na op scherm 4. *(Iedereen kan dit volgen.)*",
+          "**2. Een bord met 20 of 30 kluisjes:** wat valt op? Scherm 5. *(1, 4, 9, 16, 25: kwadraten.)*",
+          "**3. Een bord met delers of paartjes:** waarom staan juist die open? Scherm 6. *(Paartjes; bij een kwadraat staat er één alleen.)*",
+          "**4. Een bord met 100 of 1000 kluisjes:** hoe weet je het zonder tekenen? Scherm 7.",
+          "**5. Als iemand zo ver kwam:** de superdenkers op scherm 8.",
+          "Laat bij elk bord eerst **een ander groepje** zeggen wat ze denken dat er staat. Daarna vertelt het eigen groepje."
+        ]
+      },
+      {
+        "kop": "Uitwerking: 10 kluisjes",
+        "items": [
+          "Kluisje 1: leerling 1 → 1 keer → **open**",
+          "Kluisje 2: leerling 1, 2 → 2 keer → dicht",
+          "Kluisje 3: leerling 1, 3 → 2 keer → dicht",
+          "Kluisje 4: leerling 1, 2, 4 → 3 keer → **open**",
+          "Kluisje 5: leerling 1, 5 → 2 keer → dicht",
+          "Kluisje 6: leerling 1, 2, 3, 6 → 4 keer → dicht",
+          "Kluisje 7: leerling 1, 7 → 2 keer → dicht",
+          "Kluisje 8: leerling 1, 2, 4, 8 → 4 keer → dicht",
+          "Kluisje 9: leerling 1, 3, 9 → 3 keer → **open**",
+          "Kluisje 10: leerling 1, 2, 5, 10 → 4 keer → dicht",
+          "**Regel:** een kluisje wordt veranderd door elke leerling waarvan het nummer een **deler** is. Oneven aantal keer = open. Alleen **kwadraten** hebben een oneven aantal delers, omdat delers in paartjes komen (12 = 1 × 12 = 2 × 6 = 3 × 4) en bij een kwadraat één deler met zichzelf een paartje vormt (16 = 4 × 4)."
+        ]
+      },
+      {
+        "kop": "Check je begrip: antwoorden",
+        "items": [
+          "1. Kluisje 50: leerling 1, 2, 5, 10, 25, 50 → 6 keer → **dicht**",
+          "2. Kluisje 36: leerling 1, 2, 3, 4, 6, 9, 12, 18, 36 → 9 keer → **open**",
+          "3. 50 kluisjes: 1, 4, 9, 16, 25, 36, 49 → **7 open**",
+          "4. 200 kluisjes: **14 open** (14 × 14 = 196, 15 × 15 = 225)"
+        ]
+      },
+      {
+        "kop": "Na de les",
+        "items": [
+          "Maak **foto's van de borden** voordat ze worden uitgeveegd. Je kunt ze de volgende les gebruiken om op terug te kijken.",
+          "Volgende keer weer **nieuwe groepjes trekken**: groepjes zijn er voor één les."
+        ]
+      }
+    ]
+  }
+}

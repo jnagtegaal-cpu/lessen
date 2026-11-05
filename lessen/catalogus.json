@@ -163,6 +163,44 @@
       "gemaakt": "2026-11-02"
     },
     {
+      "id": "g7-8-rekenen-kluisjesprobleem",
+      "titel": "Denktaak (BTC): het kluisjesprobleem",
+      "groep": "7-8",
+      "vak": "Rekenen",
+      "onderwerp": "Denktaak (Building Thinking Classrooms)",
+      "duur": 60,
+      "samenvatting": "BTC-denktaak voor de hele klas: welke kluisjes staan open? Groepjes van 3 aan verticale borden met één stift, uitdagingen die steeds moeilijker worden (delers, kwadraten, priemgetallen), terugkijken van onderaf, notities en check je begrip.",
+      "trefwoorden": [
+        "BTC",
+        "building thinking classrooms",
+        "denktaak",
+        "denkende klas",
+        "probleem oplossen",
+        "kluisjes",
+        "delers",
+        "kwadraten",
+        "priemgetallen",
+        "patronen",
+        "verticale borden",
+        "één stift"
+      ],
+      "gemaakt": "2026-11-05",
+      "bijlagen": [
+        {
+          "titel": "Groepskaartjes (zichtbaar willekeurig)",
+          "bestand": "groepskaartjes.pdf"
+        },
+        {
+          "titel": "Uitdagingskaartjes en hulpkaartjes",
+          "bestand": "uitdagingskaartjes.pdf"
+        },
+        {
+          "titel": "Uitwerkingen voor de leerkracht",
+          "bestand": "uitwerkingen.pdf"
+        }
+      ]
+    },
+    {
       "id": "g7-8-rekenen-schaal-oppervlakte",
       "titel": "Oppervlakte in werkelijkheid berekenen met een schaal",
       "groep": "7-8",
