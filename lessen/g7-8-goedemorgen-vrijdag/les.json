@@ -1,24 +1,24 @@
 {
   "id": "g7-8-goedemorgen-vrijdag",
-  "titel": "Goedemorgen: dagschema vrijdag 30 oktober",
+  "titel": "Goedemorgen: dagschema vrijdag 6 november",
   "groep": "7-8",
   "vak": "Dagopening",
   "onderwerp": "Dagschema",
-  "samenvatting": "Goedemorgenpagina voor vrijdag met het dagschema en een denkvraag voor de maandsluiting.",
+  "samenvatting": "Goedemorgenpagina voor vrijdag met het dagschema en een denkvraag: waarvoor zou je willen danken?",
   "trefwoorden": [
     "goedemorgen",
     "dagschema",
     "dagopening",
     "vrijdag",
-    "maandsluiting",
+    "danken",
     "denkvraag"
   ],
-  "gemaakt": "2026-10-30",
+  "gemaakt": "2026-11-06",
   "schermen": [
     {
       "fase": "Goedemorgen",
       "achtergrond": "leeg",
-      "notitie": "Dagschema voor vrijdag 30 oktober. Denkvraag bij binnenkomst: wat kunnen we laten zien bij de maandsluiting?",
+      "notitie": "Dagschema voor vrijdag 6 november. Denkvraag bij binnenkomst: bedenk iets waarvoor je zou willen danken. Aan het eind: fijn weekend wensen.",
       "blokken": [
         {
           "type": "kolommen",
@@ -30,13 +30,13 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;flex-direction:column;gap:9px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📝</span><span>Huiswerk <span style=\"font-weight:500\">(topo-toets, memo en nieuw huiswerk)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📋</span><span>Weektaak</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🤸</span><span>Gym</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🎤</span><span>Maandsluiting</span></div></div>"
+                "html": "<div style=\"display:flex;flex-direction:column;gap:9px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">✍️</span><span>Werkwoordspelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🎤</span><span>Presentaties</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🤸</span><span>Gym</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">👋</span><span>Fijn weekend!</span></div></div>"
               }
             ],
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:22px;min-height:560px\"><div style=\"font-size:90px;line-height:1\">🎤</div><div style=\"font-size:40px;font-weight:800;line-height:1.25;color:#b5541c\">Maandsluiting</div><div style=\"font-size:34px;line-height:1.4\">Denk alvast na:<br><b>wat kunnen wij laten zien bij de maandsluiting?</b></div><div style=\"font-size:30px;line-height:1.35;background:#ffffff;border-radius:14px;padding:12px 16px\">🧽 Pak voor in de klas een <b>nieuw wisdoekje</b>.</div></div>"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:22px;min-height:560px\"><div style=\"font-size:90px;line-height:1\">🙏</div><div style=\"font-size:42px;font-weight:800;line-height:1.25;color:#b5541c\">Denk even na</div><div style=\"font-size:36px;line-height:1.4\">Bedenk iets waarvoor<br>je zou willen <b>danken</b>.</div></div>"
               }
             ]
           ]
@@ -47,7 +47,7 @@
   "voorbereiding": {
     "verloop": [
       {
-        "wat": "Bij binnenkomst: denkvraag op het bord: wat kunnen we laten zien bij de maandsluiting? Nieuw wisdoekje pakken voor in de klas."
+        "wat": "Bij binnenkomst: denkvraag op het bord: bedenk iets waarvoor je zou willen danken"
       },
       {
         "wat": "Dagopening"
@@ -59,13 +59,13 @@
         "wat": "Pauze"
       },
       {
-        "wat": "Spelling"
+        "wat": "Werkwoordspelling"
       },
       {
-        "wat": "Huiswerk (topo-toets, memo en nieuw huiswerk)"
+        "wat": "Presentaties"
       },
       {
-        "wat": "Weektaak"
+        "wat": "Stillezen"
       },
       {
         "wat": "Pauze"
@@ -74,7 +74,7 @@
         "wat": "Gym"
       },
       {
-        "wat": "Maandsluiting"
+        "wat": "Fijn weekend wensen"
       }
     ]
   }
