@@ -5,15 +5,15 @@
   "vak": "Dagopening",
   "onderwerp": "Dagschema",
   "duur": 10,
-  "samenvatting": "Goedemorgenpagina voor maandag met het dagschema: weekopening, rekenen, begrijpend lezen, automatiseren, stillezen en tekenen.",
+  "samenvatting": "Goedemorgenpagina voor maandag met het dagschema en een uitdaging: zoek uit welke weektaak van jou is.",
   "trefwoorden": [
     "goedemorgen",
     "dagschema",
-    "dagopening",
     "weekopening",
     "maandag",
     "tekenen",
-    "begrijpend lezen"
+    "spelling",
+    "weektaak"
   ],
   "gemaakt": "2026-11-09",
   "schermen": [
@@ -31,23 +31,26 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;flex-direction:column;gap:10px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🌞</span><span>Weekopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🔍</span><span>Begrijpend lezen <span style=\"font-weight:500\">(oefening)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">⚡</span><span>Automatiseren</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🎨</span><span>Tekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
+                "html": "<div style=\"display:flex;flex-direction:column;gap:10px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🌞</span><span>Weekopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">⚡</span><span>Automatiseren</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🎨</span><span>Tekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
               }
             ],
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:24px;min-height:600px\"><div style=\"font-size:96px;line-height:1\">🌞</div><div style=\"font-size:48px;font-weight:800;line-height:1.25;color:#b5541c\">Fijne week!</div></div>"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:30px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:22px;min-height:600px\"><div style=\"font-size:80px;line-height:1\">🔎</div><div style=\"font-size:42px;font-weight:800;line-height:1.25;color:#b5541c\">Uitdaging!</div><div style=\"font-size:36px;line-height:1.35\"><b>Zoek uit welke weektaak van jou is.</b></div><div style=\"font-size:30px;line-height:1.4;background:#fff;border-radius:14px;padding:14px 18px\">📋 Pak je weektaak<br>💻 Pak je Chromebook<br>🪑 Ga lekker zitten</div></div>"
               }
             ]
           ]
         }
       ],
-      "notitie": "Dagschema voor maandag 9 november."
+      "notitie": "Dagschema voor maandag 9 november. Bij binnenkomst: uitdaging, zoek uit welke weektaak van jou is. Pak je weektaak en je Chromebook en ga lekker zitten."
     }
   ],
   "voorbereiding": {
     "verloop": [
+      {
+        "wat": "Bij binnenkomst: uitdaging, zoek uit welke weektaak van jou is. Weektaak en Chromebook pakken en gaan zitten."
+      },
       {
         "wat": "Weekopening"
       },
@@ -58,7 +61,7 @@
         "wat": "Pauze"
       },
       {
-        "wat": "Begrijpend lezen (oefening)"
+        "wat": "Spelling"
       },
       {
         "wat": "Automatiseren"
