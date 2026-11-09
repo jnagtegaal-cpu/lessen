@@ -880,7 +880,8 @@
   ],
   "voorbereiding": {
     "benodigdheden": [
-      "Wisbordjes"
+      "Wisbordjes",
+      "Verrijkingsblad (bijlage) voor wie het zelf wil uitzoeken; pagina 3 zijn de antwoorden"
     ],
     "verloop": [
       {
@@ -919,5 +920,11 @@
         ]
       }
     ]
-  }
+  },
+  "bijlagen": [
+    {
+      "titel": "Verrijking: nog grotere getallen (met antwoorden)",
+      "bestand": "verrijking.pdf"
+    }
+  ]
 }

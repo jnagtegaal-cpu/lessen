@@ -214,7 +214,13 @@
         "plaatswaarde",
         "nullen"
       ],
-      "gemaakt": "2026-11-09"
+      "gemaakt": "2026-11-09",
+      "bijlagen": [
+        {
+          "titel": "Verrijking: nog grotere getallen (met antwoorden)",
+          "bestand": "verrijking.pdf"
+        }
+      ]
     },
     {
       "id": "g7-8-rekenen-schaal-oppervlakte",
