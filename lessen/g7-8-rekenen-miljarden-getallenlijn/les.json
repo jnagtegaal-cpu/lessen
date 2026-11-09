@@ -1,0 +1,923 @@
+{
+  "id": "g7-8-rekenen-miljarden-getallenlijn",
+  "titel": "Miljarden: getallen tot een biljoen op de getallenlijn",
+  "groep": "7-8",
+  "vak": "Rekenen",
+  "onderwerp": "Grote getallen",
+  "edi": true,
+  "samenvatting": "Miljarden uitspreken en getallen tot een biljoen ongeveer op de getallenlijn plaatsen, met een stappenplan van drie stappen en twaalf getallenlijnen om aan te tikken.",
+  "trefwoorden": [
+    "miljard",
+    "biljoen",
+    "miljoen",
+    "grote getallen",
+    "getallenlijn",
+    "uitspreken",
+    "plaatswaarde",
+    "nullen"
+  ],
+  "gemaakt": "2026-11-09",
+  "lesdoel": "Ik kan getallen tot een biljoen ongeveer op de getallenlijn plaatsen.",
+  "lesdoelInHoek": true,
+  "schermen": [
+    {
+      "fase": "Voorkennis: hoe noem je dit getal?",
+      "achtergrond": "leeg",
+      "lesdoelVerbergen": true,
+      "notitie": "Vraag eerst: hoeveel nullen heeft een miljoen? Daarna per getal: hoe noem je dit getal? Laat ze de nullen tellen in groepjes van drie. Tik het antwoord pas aan na het wisbordje of een beurt.",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "Hoeveel **nullen** heeft een miljoen? En hoe noem je **deze** getallen?"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:60px;font-weight:800;line-height:1.7;letter-spacing:2px\">1 000 000<br>1 000 000 000<br>1 000 000 000 000</div>"
+              }
+            ],
+            [
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "**een miljoen** · 6 nullen",
+                "stijl": "font-size:34px;margin-top:22px"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "**een miljard** · 9 nullen",
+                "stijl": "font-size:34px;margin-top:24px"
+              },
+              {
+                "type": "tekst",
+                "verborgen": true,
+                "tekst": "**een biljoen** · 12 nullen",
+                "stijl": "font-size:34px;margin-top:24px"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Lesdoel",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "notitie": "Ik lees voor, de klas leest mee, maatjes lezen het aan elkaar voor, dan een willekeurige beurt.",
+      "blokken": [
+        {
+          "type": "html",
+          "html": "<div style=\"font-size:70px;line-height:1.25;text-align:center;font-weight:700\">Ik kan <span style=\"color:#d9822b\">getallen tot een biljoen</span> <span style=\"color:#1f6fd1\">ongeveer op de getallenlijn plaatsen</span>.</div><div style=\"margin-top:30px;text-align:center;font-size:28px;color:#5b6b63\"><span style=\"color:#d9822b;font-weight:700\">oranje</span> = begrip · <span style=\"color:#1f6fd1;font-weight:700\">blauw</span> = vaardigheid</div>"
+        }
+      ]
+    },
+    {
+      "fase": "Concept: hoeveel keer zoveel?",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "notitie": "Elke keer 1000 keer zoveel: er komen 3 nullen bij. Een miljard is duizend miljoen, een biljoen is duizend miljard.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Hoeveel keer zoveel?"
+        },
+        {
+          "type": "lijst",
+          "stapsgewijs": true,
+          "stijl": "font-size:44px;line-height:1.6;list-style:none;padding-left:0",
+          "items": [
+            "1000 × **1 miljoen** = **1 miljard**",
+            "1000 × **1 miljard** = **1 biljoen**"
+          ]
+        },
+        {
+          "type": "tekst",
+          "verborgen": true,
+          "tekst": "Elke keer **1000 keer zoveel**: er komen **3 nullen** bij.",
+          "stijl": "font-size:36px"
+        }
+      ]
+    },
+    {
+      "fase": "Concept: uitspreken",
+      "achtergrond": "leeg",
+      "notitie": "Grote getallen lees je in groepjes van drie, van links naar rechts. Elk groepje krijgt zijn naam: miljard, miljoen, duizend. Uitspreken: vijfentwintig miljard vierhonderddrieënzeventig miljoen achthonderdelfduizend zeshonderdnegenentwintig.",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Hoe spreek je dit uit?"
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"display:flex;gap:46px;justify-content:center;margin:10px 0\"><div style=\"text-align:center\"><div style=\"font-size:64px;font-weight:800;color:#d6453d\">25</div><div style=\"font-size:24px;color:#d6453d;font-weight:700\">miljard</div></div><div style=\"text-align:center\"><div style=\"font-size:64px;font-weight:800;color:#1f6fd1\">473</div><div style=\"font-size:24px;color:#1f6fd1;font-weight:700\">miljoen</div></div><div style=\"text-align:center\"><div style=\"font-size:64px;font-weight:800;color:#2f9e63\">811</div><div style=\"font-size:24px;color:#2f9e63;font-weight:700\">duizend</div></div><div style=\"text-align:center\"><div style=\"font-size:64px;font-weight:800;color:#1d2b24\">629</div><div style=\"font-size:24px;color:#1d2b24;font-weight:700\"></div></div></div>"
+        },
+        {
+          "type": "tekst",
+          "verborgen": true,
+          "tekst": "**vijfentwintig miljard** · **vierhonderddrieënzeventig miljoen** · **achthonderdelfduizend** · **zeshonderdnegenentwintig**",
+          "stijl": "font-size:32px;text-align:center"
+        },
+        {
+          "type": "vraag",
+          "verborgen": true,
+          "tekst": "Lees in **groepjes van drie**, van links naar rechts. Elk groepje krijgt zijn naam."
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 1",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelVerbergen": true,
+      "notitie": "Waar ligt 25 473 811 629 ongeveer? Stap 1: sprongen van 10 miljard. Stap 2: tussen 20 miljard en 30 miljard. Stap 3: rechts van het midden: dichter bij 30 miljard. Uitspreken: vijfentwintig miljard vierhonderddrieënzeventig miljoen achthonderdelfduizend zeshonderdnegenentwintig. Tik onder de getallenlijn de streepjes, het 'tussen' en de pijl één voor één aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:64px;font-weight:800;letter-spacing:1px\">25 473 811 629</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "🗣️ vijfentwintig miljard vierhonderddrieënzeventig miljoen achthonderdelfduizend zeshonderdnegenentwintig",
+                "verborgen": true,
+                "stijl": "font-size:24px;color:#5b6b63"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "stijl": "font-size:.66em",
+                "items": [
+                  "Hoe groot zijn de **sprongen**? Kijk naar het **begin** en het **eind**.",
+                  "Tussen welke twee **streepjes** ligt het getal?",
+                  "Ligt het **links** of **rechts** van het **midden**? Zet je pijl **ongeveer** daar."
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 110\" style=\"width:100%;display:block\"><line x1=\"110\" y1=\"40\" x2=\"890\" y2=\"40\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"16\" x2=\"110.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><line x1=\"188.0\" y1=\"24\" x2=\"188.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"266.0\" y1=\"24\" x2=\"266.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"344.0\" y1=\"24\" x2=\"344.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"422.0\" y1=\"24\" x2=\"422.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"500.0\" y1=\"16\" x2=\"500.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"578.0\" y1=\"24\" x2=\"578.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"656.0\" y1=\"24\" x2=\"656.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"734.0\" y1=\"24\" x2=\"734.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"812.0\" y1=\"24\" x2=\"812.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"890.0\" y1=\"16\" x2=\"890.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><text x=\"110\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">0</text><text x=\"890\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">100 miljard</text></svg>"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 66\" style=\"width:100%;display:block\"><text x=\"110.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">0</text><text x=\"188.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">10</text><text x=\"266.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">20</text><text x=\"344.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">30</text><text x=\"422.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">40</text><text x=\"500.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">50</text><text x=\"578.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">60</text><text x=\"656.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">70</text><text x=\"734.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">80</text><text x=\"812.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">90</text><text x=\"890.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">100</text><text x=\"500\" y=\"60\" font-size=\"24\" text-anchor=\"middle\" fill=\"#5b6b63\">sprongen van 10 miljard (getallen in miljarden)</text></svg>",
+          "verborgen": true
+        },
+        {
+          "type": "tekst",
+          "tekst": "Tussen **20 miljard** en **30 miljard**",
+          "verborgen": true,
+          "stijl": "font-size:34px;text-align:center"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 80\" style=\"width:100%;display:block\"><path d=\"M308.69573070620004,2 L292.69573070620004,30 L302.69573070620004,30 L302.69573070620004,46 L314.69573070620004,46 L314.69573070620004,30 L324.69573070620004,30 Z\" fill=\"#d6453d\"/><text x=\"288.69573070620004\" y=\"74\" font-size=\"26\" text-anchor=\"start\" fill=\"#d6453d\" font-weight=\"700\">rechts van het midden: dichter bij 30 miljard</text></svg>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 2",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelVerbergen": true,
+      "notitie": "Waar ligt 638 245 117 ongeveer? Stap 1: sprongen van 100 miljoen. Stap 2: tussen 600 miljoen en 700 miljoen. Stap 3: links van het midden: dichter bij 600 miljoen. Uitspreken: zeshonderdachtendertig miljoen tweehonderdvijfenveertigduizend honderdzeventien. Tik onder de getallenlijn de streepjes, het 'tussen' en de pijl één voor één aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:64px;font-weight:800;letter-spacing:1px\">638 245 117</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "🗣️ zeshonderdachtendertig miljoen tweehonderdvijfenveertigduizend honderdzeventien",
+                "verborgen": true,
+                "stijl": "font-size:24px;color:#5b6b63"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "stijl": "font-size:.66em",
+                "items": [
+                  "Hoe groot zijn de **sprongen**? Kijk naar het **begin** en het **eind**.",
+                  "Tussen welke twee **streepjes** ligt het getal?",
+                  "Ligt het **links** of **rechts** van het **midden**? Zet je pijl **ongeveer** daar."
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 110\" style=\"width:100%;display:block\"><line x1=\"110\" y1=\"40\" x2=\"890\" y2=\"40\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"16\" x2=\"110.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><line x1=\"188.0\" y1=\"24\" x2=\"188.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"266.0\" y1=\"24\" x2=\"266.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"344.0\" y1=\"24\" x2=\"344.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"422.0\" y1=\"24\" x2=\"422.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"500.0\" y1=\"16\" x2=\"500.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"578.0\" y1=\"24\" x2=\"578.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"656.0\" y1=\"24\" x2=\"656.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"734.0\" y1=\"24\" x2=\"734.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"812.0\" y1=\"24\" x2=\"812.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"890.0\" y1=\"16\" x2=\"890.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><text x=\"110\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">0</text><text x=\"890\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">1 miljard</text></svg>"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 66\" style=\"width:100%;display:block\"><text x=\"110.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">0</text><text x=\"188.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">100</text><text x=\"266.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">200</text><text x=\"344.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">300</text><text x=\"422.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">400</text><text x=\"500.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">500</text><text x=\"578.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">600</text><text x=\"656.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">700</text><text x=\"734.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">800</text><text x=\"812.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">900</text><text x=\"890.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1 000</text><text x=\"500\" y=\"60\" font-size=\"24\" text-anchor=\"middle\" fill=\"#5b6b63\">sprongen van 100 miljoen (getallen in miljoenen)</text></svg>",
+          "verborgen": true
+        },
+        {
+          "type": "tekst",
+          "tekst": "Tussen **600 miljoen** en **700 miljoen**",
+          "verborgen": true,
+          "stijl": "font-size:34px;text-align:center"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 80\" style=\"width:100%;display:block\"><path d=\"M607.83119126,2 L591.83119126,30 L601.83119126,30 L601.83119126,46 L613.83119126,46 L613.83119126,30 L623.83119126,30 Z\" fill=\"#d6453d\"/><text x=\"607.83119126\" y=\"74\" font-size=\"26\" text-anchor=\"middle\" fill=\"#d6453d\" font-weight=\"700\">links van het midden: dichter bij 600 miljoen</text></svg>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 3",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelVerbergen": true,
+      "notitie": "Waar ligt 7 380 512 ongeveer? Stap 1: sprongen van 1 miljoen. Stap 2: tussen 7 miljoen en 8 miljoen. Stap 3: links van het midden: dichter bij 7 miljoen. Uitspreken: zeven miljoen driehonderdtachtigduizend vijfhonderdtwaalf. Tik onder de getallenlijn de streepjes, het 'tussen' en de pijl één voor één aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:64px;font-weight:800;letter-spacing:1px\">7 380 512</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "🗣️ zeven miljoen driehonderdtachtigduizend vijfhonderdtwaalf",
+                "verborgen": true,
+                "stijl": "font-size:24px;color:#5b6b63"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "stijl": "font-size:.66em",
+                "items": [
+                  "Hoe groot zijn de **sprongen**? Kijk naar het **begin** en het **eind**.",
+                  "Tussen welke twee **streepjes** ligt het getal?",
+                  "Ligt het **links** of **rechts** van het **midden**? Zet je pijl **ongeveer** daar."
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 110\" style=\"width:100%;display:block\"><line x1=\"110\" y1=\"40\" x2=\"890\" y2=\"40\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"16\" x2=\"110.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><line x1=\"188.0\" y1=\"24\" x2=\"188.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"266.0\" y1=\"24\" x2=\"266.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"344.0\" y1=\"24\" x2=\"344.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"422.0\" y1=\"24\" x2=\"422.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"500.0\" y1=\"16\" x2=\"500.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"578.0\" y1=\"24\" x2=\"578.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"656.0\" y1=\"24\" x2=\"656.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"734.0\" y1=\"24\" x2=\"734.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"812.0\" y1=\"24\" x2=\"812.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"890.0\" y1=\"16\" x2=\"890.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><text x=\"110\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">0</text><text x=\"890\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">10 miljoen</text></svg>"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 66\" style=\"width:100%;display:block\"><text x=\"110.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">0</text><text x=\"188.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1</text><text x=\"266.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">2</text><text x=\"344.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">3</text><text x=\"422.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">4</text><text x=\"500.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">5</text><text x=\"578.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">6</text><text x=\"656.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">7</text><text x=\"734.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">8</text><text x=\"812.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">9</text><text x=\"890.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">10</text><text x=\"500\" y=\"60\" font-size=\"24\" text-anchor=\"middle\" fill=\"#5b6b63\">sprongen van 1 miljoen (getallen in miljoenen)</text></svg>",
+          "verborgen": true
+        },
+        {
+          "type": "tekst",
+          "tekst": "Tussen **7 miljoen** en **8 miljoen**",
+          "verborgen": true,
+          "stijl": "font-size:34px;text-align:center"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 80\" style=\"width:100%;display:block\"><path d=\"M685.679936,2 L669.679936,30 L679.679936,30 L679.679936,46 L691.679936,46 L691.679936,30 L701.679936,30 Z\" fill=\"#d6453d\"/><text x=\"705.679936\" y=\"74\" font-size=\"26\" text-anchor=\"end\" fill=\"#d6453d\" font-weight=\"700\">links van het midden: dichter bij 7 miljoen</text></svg>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 4",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelVerbergen": true,
+      "notitie": "Waar ligt 24 710 300 000 ongeveer? Stap 1: sprongen van 1 miljard. Stap 2: tussen 24 miljard en 25 miljard. Stap 3: rechts van het midden: dichter bij 25 miljard. Uitspreken: vierentwintig miljard zevenhonderdtien miljoen driehonderdduizend. Tik onder de getallenlijn de streepjes, het 'tussen' en de pijl één voor één aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:64px;font-weight:800;letter-spacing:1px\">24 710 300 000</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "🗣️ vierentwintig miljard zevenhonderdtien miljoen driehonderdduizend",
+                "verborgen": true,
+                "stijl": "font-size:24px;color:#5b6b63"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "stijl": "font-size:.66em",
+                "items": [
+                  "Hoe groot zijn de **sprongen**? Kijk naar het **begin** en het **eind**.",
+                  "Tussen welke twee **streepjes** ligt het getal?",
+                  "Ligt het **links** of **rechts** van het **midden**? Zet je pijl **ongeveer** daar."
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 110\" style=\"width:100%;display:block\"><line x1=\"110\" y1=\"40\" x2=\"890\" y2=\"40\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"16\" x2=\"110.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><line x1=\"188.0\" y1=\"24\" x2=\"188.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"266.0\" y1=\"24\" x2=\"266.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"344.0\" y1=\"24\" x2=\"344.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"422.0\" y1=\"24\" x2=\"422.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"500.0\" y1=\"16\" x2=\"500.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"578.0\" y1=\"24\" x2=\"578.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"656.0\" y1=\"24\" x2=\"656.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"734.0\" y1=\"24\" x2=\"734.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"812.0\" y1=\"24\" x2=\"812.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"890.0\" y1=\"16\" x2=\"890.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><text x=\"110\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">20 miljard</text><text x=\"890\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">30 miljard</text></svg>"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 66\" style=\"width:100%;display:block\"><text x=\"110.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">20</text><text x=\"188.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">21</text><text x=\"266.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">22</text><text x=\"344.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">23</text><text x=\"422.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">24</text><text x=\"500.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">25</text><text x=\"578.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">26</text><text x=\"656.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">27</text><text x=\"734.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">28</text><text x=\"812.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">29</text><text x=\"890.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">30</text><text x=\"500\" y=\"60\" font-size=\"24\" text-anchor=\"middle\" fill=\"#5b6b63\">sprongen van 1 miljard (getallen in miljarden)</text></svg>",
+          "verborgen": true
+        },
+        {
+          "type": "tekst",
+          "tekst": "Tussen **24 miljard** en **25 miljard**",
+          "verborgen": true,
+          "stijl": "font-size:34px;text-align:center"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 80\" style=\"width:100%;display:block\"><path d=\"M477.4034,2 L461.4034,30 L471.4034,30 L471.4034,46 L483.4034,46 L483.4034,30 L493.4034,30 Z\" fill=\"#d6453d\"/><text x=\"477.4034\" y=\"74\" font-size=\"26\" text-anchor=\"middle\" fill=\"#d6453d\" font-weight=\"700\">rechts van het midden: dichter bij 25 miljard</text></svg>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 5",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelVerbergen": true,
+      "notitie": "Waar ligt 318 650 000 000 ongeveer? Stap 1: sprongen van 100 miljard. Stap 2: tussen 300 miljard en 400 miljard. Stap 3: links van het midden: dichter bij 300 miljard. Uitspreken: driehonderdachttien miljard zeshonderdvijftig miljoen. Tik onder de getallenlijn de streepjes, het 'tussen' en de pijl één voor één aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:64px;font-weight:800;letter-spacing:1px\">318 650 000 000</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "🗣️ driehonderdachttien miljard zeshonderdvijftig miljoen",
+                "verborgen": true,
+                "stijl": "font-size:24px;color:#5b6b63"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "stijl": "font-size:.66em",
+                "items": [
+                  "Hoe groot zijn de **sprongen**? Kijk naar het **begin** en het **eind**.",
+                  "Tussen welke twee **streepjes** ligt het getal?",
+                  "Ligt het **links** of **rechts** van het **midden**? Zet je pijl **ongeveer** daar."
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 110\" style=\"width:100%;display:block\"><line x1=\"110\" y1=\"40\" x2=\"890\" y2=\"40\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"16\" x2=\"110.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><line x1=\"188.0\" y1=\"24\" x2=\"188.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"266.0\" y1=\"24\" x2=\"266.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"344.0\" y1=\"24\" x2=\"344.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"422.0\" y1=\"24\" x2=\"422.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"500.0\" y1=\"16\" x2=\"500.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"578.0\" y1=\"24\" x2=\"578.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"656.0\" y1=\"24\" x2=\"656.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"734.0\" y1=\"24\" x2=\"734.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"812.0\" y1=\"24\" x2=\"812.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"890.0\" y1=\"16\" x2=\"890.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><text x=\"110\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">0</text><text x=\"890\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">1 biljoen</text></svg>"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 66\" style=\"width:100%;display:block\"><text x=\"110.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">0</text><text x=\"188.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">100</text><text x=\"266.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">200</text><text x=\"344.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">300</text><text x=\"422.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">400</text><text x=\"500.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">500</text><text x=\"578.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">600</text><text x=\"656.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">700</text><text x=\"734.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">800</text><text x=\"812.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">900</text><text x=\"890.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1 000</text><text x=\"500\" y=\"60\" font-size=\"24\" text-anchor=\"middle\" fill=\"#5b6b63\">sprongen van 100 miljard (getallen in miljarden)</text></svg>",
+          "verborgen": true
+        },
+        {
+          "type": "tekst",
+          "tekst": "Tussen **300 miljard** en **400 miljard**",
+          "verborgen": true,
+          "stijl": "font-size:34px;text-align:center"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 80\" style=\"width:100%;display:block\"><path d=\"M358.547,2 L342.547,30 L352.547,30 L352.547,46 L364.547,46 L364.547,30 L374.547,30 Z\" fill=\"#d6453d\"/><text x=\"358.547\" y=\"74\" font-size=\"26\" text-anchor=\"middle\" fill=\"#d6453d\" font-weight=\"700\">links van het midden: dichter bij 300 miljard</text></svg>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 6",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelVerbergen": true,
+      "notitie": "Waar ligt 151 902 330 ongeveer? Stap 1: sprongen van 10 miljoen. Stap 2: tussen 150 miljoen en 160 miljoen. Stap 3: links van het midden: dichter bij 150 miljoen. Uitspreken: honderdeenenvijftig miljoen negenhonderdtweeduizend driehonderddertig. Tik onder de getallenlijn de streepjes, het 'tussen' en de pijl één voor één aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:64px;font-weight:800;letter-spacing:1px\">151 902 330</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "🗣️ honderdeenenvijftig miljoen negenhonderdtweeduizend driehonderddertig",
+                "verborgen": true,
+                "stijl": "font-size:24px;color:#5b6b63"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "stijl": "font-size:.66em",
+                "items": [
+                  "Hoe groot zijn de **sprongen**? Kijk naar het **begin** en het **eind**.",
+                  "Tussen welke twee **streepjes** ligt het getal?",
+                  "Ligt het **links** of **rechts** van het **midden**? Zet je pijl **ongeveer** daar."
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 110\" style=\"width:100%;display:block\"><line x1=\"110\" y1=\"40\" x2=\"890\" y2=\"40\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"16\" x2=\"110.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><line x1=\"188.0\" y1=\"24\" x2=\"188.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"266.0\" y1=\"24\" x2=\"266.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"344.0\" y1=\"24\" x2=\"344.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"422.0\" y1=\"24\" x2=\"422.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"500.0\" y1=\"16\" x2=\"500.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"578.0\" y1=\"24\" x2=\"578.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"656.0\" y1=\"24\" x2=\"656.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"734.0\" y1=\"24\" x2=\"734.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"812.0\" y1=\"24\" x2=\"812.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"890.0\" y1=\"16\" x2=\"890.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><text x=\"110\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">100 miljoen</text><text x=\"890\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">200 miljoen</text></svg>"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 66\" style=\"width:100%;display:block\"><text x=\"110.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">100</text><text x=\"188.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">110</text><text x=\"266.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">120</text><text x=\"344.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">130</text><text x=\"422.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">140</text><text x=\"500.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">150</text><text x=\"578.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">160</text><text x=\"656.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">170</text><text x=\"734.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">180</text><text x=\"812.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">190</text><text x=\"890.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">200</text><text x=\"500\" y=\"60\" font-size=\"24\" text-anchor=\"middle\" fill=\"#5b6b63\">sprongen van 10 miljoen (getallen in miljoenen)</text></svg>",
+          "verborgen": true
+        },
+        {
+          "type": "tekst",
+          "tekst": "Tussen **150 miljoen** en **160 miljoen**",
+          "verborgen": true,
+          "stijl": "font-size:34px;text-align:center"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 80\" style=\"width:100%;display:block\"><path d=\"M514.838174,2 L498.838174,30 L508.838174,30 L508.838174,46 L520.838174,46 L520.838174,30 L530.838174,30 Z\" fill=\"#d6453d\"/><text x=\"514.838174\" y=\"74\" font-size=\"26\" text-anchor=\"middle\" fill=\"#d6453d\" font-weight=\"700\">links van het midden: dichter bij 150 miljoen</text></svg>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 7",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelVerbergen": true,
+      "notitie": "Waar ligt 46 815 000 ongeveer? Stap 1: sprongen van 10 miljoen. Stap 2: tussen 40 miljoen en 50 miljoen. Stap 3: rechts van het midden: dichter bij 50 miljoen. Uitspreken: zesenveertig miljoen achthonderdvijftienduizend. Tik onder de getallenlijn de streepjes, het 'tussen' en de pijl één voor één aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:64px;font-weight:800;letter-spacing:1px\">46 815 000</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "🗣️ zesenveertig miljoen achthonderdvijftienduizend",
+                "verborgen": true,
+                "stijl": "font-size:24px;color:#5b6b63"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "stijl": "font-size:.66em",
+                "items": [
+                  "Hoe groot zijn de **sprongen**? Kijk naar het **begin** en het **eind**.",
+                  "Tussen welke twee **streepjes** ligt het getal?",
+                  "Ligt het **links** of **rechts** van het **midden**? Zet je pijl **ongeveer** daar."
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 110\" style=\"width:100%;display:block\"><line x1=\"110\" y1=\"40\" x2=\"890\" y2=\"40\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"16\" x2=\"110.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><line x1=\"188.0\" y1=\"24\" x2=\"188.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"266.0\" y1=\"24\" x2=\"266.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"344.0\" y1=\"24\" x2=\"344.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"422.0\" y1=\"24\" x2=\"422.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"500.0\" y1=\"16\" x2=\"500.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"578.0\" y1=\"24\" x2=\"578.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"656.0\" y1=\"24\" x2=\"656.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"734.0\" y1=\"24\" x2=\"734.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"812.0\" y1=\"24\" x2=\"812.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"890.0\" y1=\"16\" x2=\"890.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><text x=\"110\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">0</text><text x=\"890\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">100 miljoen</text></svg>"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 66\" style=\"width:100%;display:block\"><text x=\"110.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">0</text><text x=\"188.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">10</text><text x=\"266.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">20</text><text x=\"344.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">30</text><text x=\"422.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">40</text><text x=\"500.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">50</text><text x=\"578.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">60</text><text x=\"656.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">70</text><text x=\"734.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">80</text><text x=\"812.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">90</text><text x=\"890.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">100</text><text x=\"500\" y=\"60\" font-size=\"24\" text-anchor=\"middle\" fill=\"#5b6b63\">sprongen van 10 miljoen (getallen in miljoenen)</text></svg>",
+          "verborgen": true
+        },
+        {
+          "type": "tekst",
+          "tekst": "Tussen **40 miljoen** en **50 miljoen**",
+          "verborgen": true,
+          "stijl": "font-size:34px;text-align:center"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 80\" style=\"width:100%;display:block\"><path d=\"M475.157,2 L459.157,30 L469.157,30 L469.157,46 L481.157,46 L481.157,30 L491.157,30 Z\" fill=\"#d6453d\"/><text x=\"475.157\" y=\"74\" font-size=\"26\" text-anchor=\"middle\" fill=\"#d6453d\" font-weight=\"700\">rechts van het midden: dichter bij 50 miljoen</text></svg>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 8",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelVerbergen": true,
+      "notitie": "Waar ligt 1 862 455 900 ongeveer? Stap 1: sprongen van 100 miljoen. Stap 2: tussen 1 800 miljoen en 1 900 miljoen. Stap 3: rechts van het midden: dichter bij 1 900 miljoen. Uitspreken: een miljard achthonderdtweeënzestig miljoen vierhonderdvijfenvijftigduizend negenhonderd. Tik onder de getallenlijn de streepjes, het 'tussen' en de pijl één voor één aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:64px;font-weight:800;letter-spacing:1px\">1 862 455 900</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "🗣️ een miljard achthonderdtweeënzestig miljoen vierhonderdvijfenvijftigduizend negenhonderd",
+                "verborgen": true,
+                "stijl": "font-size:24px;color:#5b6b63"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "stijl": "font-size:.66em",
+                "items": [
+                  "Hoe groot zijn de **sprongen**? Kijk naar het **begin** en het **eind**.",
+                  "Tussen welke twee **streepjes** ligt het getal?",
+                  "Ligt het **links** of **rechts** van het **midden**? Zet je pijl **ongeveer** daar."
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 110\" style=\"width:100%;display:block\"><line x1=\"110\" y1=\"40\" x2=\"890\" y2=\"40\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"16\" x2=\"110.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><line x1=\"188.0\" y1=\"24\" x2=\"188.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"266.0\" y1=\"24\" x2=\"266.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"344.0\" y1=\"24\" x2=\"344.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"422.0\" y1=\"24\" x2=\"422.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"500.0\" y1=\"16\" x2=\"500.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"578.0\" y1=\"24\" x2=\"578.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"656.0\" y1=\"24\" x2=\"656.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"734.0\" y1=\"24\" x2=\"734.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"812.0\" y1=\"24\" x2=\"812.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"890.0\" y1=\"16\" x2=\"890.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><text x=\"110\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">1 miljard</text><text x=\"890\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">2 miljard</text></svg>"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 66\" style=\"width:100%;display:block\"><text x=\"110.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1 000</text><text x=\"188.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1 100</text><text x=\"266.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1 200</text><text x=\"344.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1 300</text><text x=\"422.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1 400</text><text x=\"500.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1 500</text><text x=\"578.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1 600</text><text x=\"656.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1 700</text><text x=\"734.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1 800</text><text x=\"812.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1 900</text><text x=\"890.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">2 000</text><text x=\"500\" y=\"60\" font-size=\"24\" text-anchor=\"middle\" fill=\"#5b6b63\">sprongen van 100 miljoen (getallen in miljoenen)</text></svg>",
+          "verborgen": true
+        },
+        {
+          "type": "tekst",
+          "tekst": "Tussen **1 800 miljoen** en **1 900 miljoen**",
+          "verborgen": true,
+          "stijl": "font-size:34px;text-align:center"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 80\" style=\"width:100%;display:block\"><path d=\"M782.715602,2 L766.715602,30 L776.715602,30 L776.715602,46 L788.715602,46 L788.715602,30 L798.715602,30 Z\" fill=\"#d6453d\"/><text x=\"802.715602\" y=\"74\" font-size=\"26\" text-anchor=\"end\" fill=\"#d6453d\" font-weight=\"700\">rechts van het midden: dichter bij 1 900 miljoen</text></svg>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 9",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelVerbergen": true,
+      "notitie": "Waar ligt 583 120 000 000 ongeveer? Stap 1: sprongen van 10 miljard. Stap 2: tussen 580 miljard en 590 miljard. Stap 3: links van het midden: dichter bij 580 miljard. Uitspreken: vijfhonderddrieëntachtig miljard honderdtwintig miljoen. Tik onder de getallenlijn de streepjes, het 'tussen' en de pijl één voor één aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:64px;font-weight:800;letter-spacing:1px\">583 120 000 000</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "🗣️ vijfhonderddrieëntachtig miljard honderdtwintig miljoen",
+                "verborgen": true,
+                "stijl": "font-size:24px;color:#5b6b63"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "stijl": "font-size:.66em",
+                "items": [
+                  "Hoe groot zijn de **sprongen**? Kijk naar het **begin** en het **eind**.",
+                  "Tussen welke twee **streepjes** ligt het getal?",
+                  "Ligt het **links** of **rechts** van het **midden**? Zet je pijl **ongeveer** daar."
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 110\" style=\"width:100%;display:block\"><line x1=\"110\" y1=\"40\" x2=\"890\" y2=\"40\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"16\" x2=\"110.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><line x1=\"188.0\" y1=\"24\" x2=\"188.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"266.0\" y1=\"24\" x2=\"266.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"344.0\" y1=\"24\" x2=\"344.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"422.0\" y1=\"24\" x2=\"422.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"500.0\" y1=\"16\" x2=\"500.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"578.0\" y1=\"24\" x2=\"578.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"656.0\" y1=\"24\" x2=\"656.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"734.0\" y1=\"24\" x2=\"734.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"812.0\" y1=\"24\" x2=\"812.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"890.0\" y1=\"16\" x2=\"890.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><text x=\"110\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">500 miljard</text><text x=\"890\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">600 miljard</text></svg>"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 66\" style=\"width:100%;display:block\"><text x=\"110.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">500</text><text x=\"188.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">510</text><text x=\"266.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">520</text><text x=\"344.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">530</text><text x=\"422.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">540</text><text x=\"500.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">550</text><text x=\"578.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">560</text><text x=\"656.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">570</text><text x=\"734.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">580</text><text x=\"812.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">590</text><text x=\"890.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">600</text><text x=\"500\" y=\"60\" font-size=\"24\" text-anchor=\"middle\" fill=\"#5b6b63\">sprongen van 10 miljard (getallen in miljarden)</text></svg>",
+          "verborgen": true
+        },
+        {
+          "type": "tekst",
+          "tekst": "Tussen **580 miljard** en **590 miljard**",
+          "verborgen": true,
+          "stijl": "font-size:34px;text-align:center"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 80\" style=\"width:100%;display:block\"><path d=\"M758.336,2 L742.336,30 L752.336,30 L752.336,46 L764.336,46 L764.336,30 L774.336,30 Z\" fill=\"#d6453d\"/><text x=\"778.336\" y=\"74\" font-size=\"26\" text-anchor=\"end\" fill=\"#d6453d\" font-weight=\"700\">links van het midden: dichter bij 580 miljard</text></svg>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 10",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelVerbergen": true,
+      "notitie": "Waar ligt 6 049 770 000 ongeveer? Stap 1: sprongen van 1 miljard. Stap 2: tussen 6 miljard en 7 miljard. Stap 3: links van het midden: dichter bij 6 miljard. Uitspreken: zes miljard negenenveertig miljoen zevenhonderdzeventigduizend. Tik onder de getallenlijn de streepjes, het 'tussen' en de pijl één voor één aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:64px;font-weight:800;letter-spacing:1px\">6 049 770 000</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "🗣️ zes miljard negenenveertig miljoen zevenhonderdzeventigduizend",
+                "verborgen": true,
+                "stijl": "font-size:24px;color:#5b6b63"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "stijl": "font-size:.66em",
+                "items": [
+                  "Hoe groot zijn de **sprongen**? Kijk naar het **begin** en het **eind**.",
+                  "Tussen welke twee **streepjes** ligt het getal?",
+                  "Ligt het **links** of **rechts** van het **midden**? Zet je pijl **ongeveer** daar."
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 110\" style=\"width:100%;display:block\"><line x1=\"110\" y1=\"40\" x2=\"890\" y2=\"40\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"16\" x2=\"110.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><line x1=\"188.0\" y1=\"24\" x2=\"188.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"266.0\" y1=\"24\" x2=\"266.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"344.0\" y1=\"24\" x2=\"344.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"422.0\" y1=\"24\" x2=\"422.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"500.0\" y1=\"16\" x2=\"500.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"578.0\" y1=\"24\" x2=\"578.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"656.0\" y1=\"24\" x2=\"656.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"734.0\" y1=\"24\" x2=\"734.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"812.0\" y1=\"24\" x2=\"812.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"890.0\" y1=\"16\" x2=\"890.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><text x=\"110\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">0</text><text x=\"890\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">10 miljard</text></svg>"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 66\" style=\"width:100%;display:block\"><text x=\"110.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">0</text><text x=\"188.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1</text><text x=\"266.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">2</text><text x=\"344.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">3</text><text x=\"422.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">4</text><text x=\"500.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">5</text><text x=\"578.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">6</text><text x=\"656.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">7</text><text x=\"734.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">8</text><text x=\"812.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">9</text><text x=\"890.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">10</text><text x=\"500\" y=\"60\" font-size=\"24\" text-anchor=\"middle\" fill=\"#5b6b63\">sprongen van 1 miljard (getallen in miljarden)</text></svg>",
+          "verborgen": true
+        },
+        {
+          "type": "tekst",
+          "tekst": "Tussen **6 miljard** en **7 miljard**",
+          "verborgen": true,
+          "stijl": "font-size:34px;text-align:center"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 80\" style=\"width:100%;display:block\"><path d=\"M581.88206,2 L565.88206,30 L575.88206,30 L575.88206,46 L587.88206,46 L587.88206,30 L597.88206,30 Z\" fill=\"#d6453d\"/><text x=\"581.88206\" y=\"74\" font-size=\"26\" text-anchor=\"middle\" fill=\"#d6453d\" font-weight=\"700\">links van het midden: dichter bij 6 miljard</text></svg>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 11",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelVerbergen": true,
+      "notitie": "Waar ligt 347 502 618 ongeveer? Stap 1: sprongen van 10 miljoen. Stap 2: tussen 340 miljoen en 350 miljoen. Stap 3: rechts van het midden: dichter bij 350 miljoen. Uitspreken: driehonderdzevenenveertig miljoen vijfhonderdtweeduizend zeshonderdachttien. Tik onder de getallenlijn de streepjes, het 'tussen' en de pijl één voor één aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:64px;font-weight:800;letter-spacing:1px\">347 502 618</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "🗣️ driehonderdzevenenveertig miljoen vijfhonderdtweeduizend zeshonderdachttien",
+                "verborgen": true,
+                "stijl": "font-size:24px;color:#5b6b63"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "stijl": "font-size:.66em",
+                "items": [
+                  "Hoe groot zijn de **sprongen**? Kijk naar het **begin** en het **eind**.",
+                  "Tussen welke twee **streepjes** ligt het getal?",
+                  "Ligt het **links** of **rechts** van het **midden**? Zet je pijl **ongeveer** daar."
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 110\" style=\"width:100%;display:block\"><line x1=\"110\" y1=\"40\" x2=\"890\" y2=\"40\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"16\" x2=\"110.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><line x1=\"188.0\" y1=\"24\" x2=\"188.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"266.0\" y1=\"24\" x2=\"266.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"344.0\" y1=\"24\" x2=\"344.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"422.0\" y1=\"24\" x2=\"422.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"500.0\" y1=\"16\" x2=\"500.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"578.0\" y1=\"24\" x2=\"578.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"656.0\" y1=\"24\" x2=\"656.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"734.0\" y1=\"24\" x2=\"734.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"812.0\" y1=\"24\" x2=\"812.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"890.0\" y1=\"16\" x2=\"890.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><text x=\"110\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">300 miljoen</text><text x=\"890\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">400 miljoen</text></svg>"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 66\" style=\"width:100%;display:block\"><text x=\"110.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">300</text><text x=\"188.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">310</text><text x=\"266.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">320</text><text x=\"344.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">330</text><text x=\"422.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">340</text><text x=\"500.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">350</text><text x=\"578.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">360</text><text x=\"656.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">370</text><text x=\"734.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">380</text><text x=\"812.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">390</text><text x=\"890.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">400</text><text x=\"500\" y=\"60\" font-size=\"24\" text-anchor=\"middle\" fill=\"#5b6b63\">sprongen van 10 miljoen (getallen in miljoenen)</text></svg>",
+          "verborgen": true
+        },
+        {
+          "type": "tekst",
+          "tekst": "Tussen **340 miljoen** en **350 miljoen**",
+          "verborgen": true,
+          "stijl": "font-size:34px;text-align:center"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 80\" style=\"width:100%;display:block\"><path d=\"M480.5204204,2 L464.5204204,30 L474.5204204,30 L474.5204204,46 L486.5204204,46 L486.5204204,30 L496.5204204,30 Z\" fill=\"#d6453d\"/><text x=\"480.5204204\" y=\"74\" font-size=\"26\" text-anchor=\"middle\" fill=\"#d6453d\" font-weight=\"700\">rechts van het midden: dichter bij 350 miljoen</text></svg>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Voorbeeld 12",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelVerbergen": true,
+      "notitie": "Waar ligt 905 400 000 000 ongeveer? Stap 1: sprongen van 100 miljard. Stap 2: tussen 900 miljard en 1 biljoen. Stap 3: links van het midden: dichter bij 900 miljard. Uitspreken: negenhonderdvijf miljard vierhonderd miljoen. Tik onder de getallenlijn de streepjes, het 'tussen' en de pijl één voor één aan.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:64px;font-weight:800;letter-spacing:1px\">905 400 000 000</div>"
+              },
+              {
+                "type": "tekst",
+                "tekst": "🗣️ negenhonderdvijf miljard vierhonderd miljoen",
+                "verborgen": true,
+                "stijl": "font-size:24px;color:#5b6b63"
+              }
+            ],
+            [
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "stijl": "font-size:.66em",
+                "items": [
+                  "Hoe groot zijn de **sprongen**? Kijk naar het **begin** en het **eind**.",
+                  "Tussen welke twee **streepjes** ligt het getal?",
+                  "Ligt het **links** of **rechts** van het **midden**? Zet je pijl **ongeveer** daar."
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 110\" style=\"width:100%;display:block\"><line x1=\"110\" y1=\"40\" x2=\"890\" y2=\"40\" stroke=\"#1d2b24\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"16\" x2=\"110.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><line x1=\"188.0\" y1=\"24\" x2=\"188.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"266.0\" y1=\"24\" x2=\"266.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"344.0\" y1=\"24\" x2=\"344.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"422.0\" y1=\"24\" x2=\"422.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"500.0\" y1=\"16\" x2=\"500.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"578.0\" y1=\"24\" x2=\"578.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"656.0\" y1=\"24\" x2=\"656.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"734.0\" y1=\"24\" x2=\"734.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"812.0\" y1=\"24\" x2=\"812.0\" y2=\"56\" stroke=\"#1d2b24\" stroke-width=\"3\"/><line x1=\"890.0\" y1=\"16\" x2=\"890.0\" y2=\"64\" stroke=\"#1d2b24\" stroke-width=\"4\"/><text x=\"110\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">0</text><text x=\"890\" y=\"100\" font-size=\"32\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#1d2b24\">1 biljoen</text></svg>"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 66\" style=\"width:100%;display:block\"><text x=\"110.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">0</text><text x=\"188.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">100</text><text x=\"266.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">200</text><text x=\"344.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">300</text><text x=\"422.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">400</text><text x=\"500.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">500</text><text x=\"578.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">600</text><text x=\"656.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">700</text><text x=\"734.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">800</text><text x=\"812.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">900</text><text x=\"890.0\" y=\"28\" font-size=\"26\" text-anchor=\"middle\" fill=\"#1f6fd1\" font-weight=\"700\">1 000</text><text x=\"500\" y=\"60\" font-size=\"24\" text-anchor=\"middle\" fill=\"#5b6b63\">sprongen van 100 miljard (getallen in miljarden)</text></svg>",
+          "verborgen": true
+        },
+        {
+          "type": "tekst",
+          "tekst": "Tussen **900 miljard** en **1 biljoen**",
+          "verborgen": true,
+          "stijl": "font-size:34px;text-align:center"
+        },
+        {
+          "type": "html",
+          "html": "<svg viewBox=\"0 0 1000 80\" style=\"width:100%;display:block\"><path d=\"M816.212,2 L800.212,30 L810.212,30 L810.212,46 L822.212,46 L822.212,30 L832.212,30 Z\" fill=\"#d6453d\"/><text x=\"836.212\" y=\"74\" font-size=\"26\" text-anchor=\"end\" fill=\"#d6453d\" font-weight=\"700\">links van het midden: dichter bij 900 miljard</text></svg>",
+          "verborgen": true
+        }
+      ]
+    }
+  ],
+  "voorbereiding": {
+    "benodigdheden": [
+      "Wisbordjes"
+    ],
+    "verloop": [
+      {
+        "fase": "Activeren voorkennis",
+        "wat": "Hoeveel nullen heeft een miljoen? Hoe noem je 1 000 000, 1 000 000 000 en 1 000 000 000 000? (miljoen 6, miljard 9, biljoen 12 nullen)"
+      },
+      {
+        "fase": "Lesdoel",
+        "wat": "Ik kan getallen tot een biljoen ongeveer op de getallenlijn plaatsen."
+      },
+      {
+        "fase": "Uitleg begrip",
+        "wat": "Hoeveel keer zoveel: 1000 × miljoen = miljard, 1000 × miljard = biljoen. Uitspreken in groepjes van drie: 25 473 811 629."
+      },
+      {
+        "fase": "Uitleg vaardigheid",
+        "wat": "Stappenplan: 1 hoe groot zijn de sprongen, 2 tussen welke twee streepjes, 3 links of rechts van het midden, pijl ongeveer zetten. Twaalf voorbeelden (ik-wij-jullie-jij en verlengde instructie naar eigen inzicht)."
+      }
+    ],
+    "secties": [
+      {
+        "kop": "Antwoorden voorbeelden",
+        "items": [
+          "Voorbeeld 1: 25 473 811 629 op 0 – 100 miljard: sprongen van 10 miljard, tussen 20 miljard en 30 miljard.",
+          "Voorbeeld 2: 638 245 117 op 0 – 1 miljard: sprongen van 100 miljoen, tussen 600 miljoen en 700 miljoen.",
+          "Voorbeeld 3: 7 380 512 op 0 – 10 miljoen: sprongen van 1 miljoen, tussen 7 miljoen en 8 miljoen.",
+          "Voorbeeld 4: 24 710 300 000 op 20 miljard – 30 miljard: sprongen van 1 miljard, tussen 24 miljard en 25 miljard.",
+          "Voorbeeld 5: 318 650 000 000 op 0 – 1 biljoen: sprongen van 100 miljard, tussen 300 miljard en 400 miljard.",
+          "Voorbeeld 6: 151 902 330 op 100 miljoen – 200 miljoen: sprongen van 10 miljoen, tussen 150 miljoen en 160 miljoen.",
+          "Voorbeeld 7: 46 815 000 op 0 – 100 miljoen: sprongen van 10 miljoen, tussen 40 miljoen en 50 miljoen.",
+          "Voorbeeld 8: 1 862 455 900 op 1 miljard – 2 miljard: sprongen van 100 miljoen, tussen 1 800 miljoen en 1 900 miljoen.",
+          "Voorbeeld 9: 583 120 000 000 op 500 miljard – 600 miljard: sprongen van 10 miljard, tussen 580 miljard en 590 miljard.",
+          "Voorbeeld 10: 6 049 770 000 op 0 – 10 miljard: sprongen van 1 miljard, tussen 6 miljard en 7 miljard.",
+          "Voorbeeld 11: 347 502 618 op 300 miljoen – 400 miljoen: sprongen van 10 miljoen, tussen 340 miljoen en 350 miljoen.",
+          "Voorbeeld 12: 905 400 000 000 op 0 – 1 biljoen: sprongen van 100 miljard, tussen 900 miljard en 1 biljoen."
+        ]
+      }
+    ]
+  }
+}
