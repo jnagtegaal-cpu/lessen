@@ -55,19 +55,22 @@
     },
     {
       "id": "g7-8-goedemorgen-donderdag",
-      "titel": "Goedemorgen: dagschema donderdag 29 oktober",
+      "titel": "Goedemorgen: dagschema donderdag 12 november",
       "groep": "7-8",
       "vak": "Dagopening",
       "onderwerp": "Dagschema",
-      "samenvatting": "Goedemorgenpagina voor donderdag met het dagschema en een raadsel.",
+      "duur": 10,
+      "samenvatting": "Goedemorgenpagina voor donderdag met het dagschema (groep 8 Cito bij rekenen en spelling).",
       "trefwoorden": [
         "goedemorgen",
         "dagschema",
         "dagopening",
-        "denkvraag",
-        "donderdag"
+        "donderdag",
+        "cito",
+        "wetenswaardig",
+        "wonderlijk gemaakt"
       ],
-      "gemaakt": "2026-10-29"
+      "gemaakt": "2026-11-12"
     },
     {
       "id": "g7-8-goedemorgen-maandag",
@@ -104,25 +107,6 @@
         "denkvraag"
       ],
       "gemaakt": "2026-11-06"
-    },
-    {
-      "id": "g7-8-goedemorgen-woensdag",
-      "titel": "Goedemorgen: dagschema woensdag 11 november",
-      "groep": "7-8",
-      "vak": "Dagopening",
-      "onderwerp": "Dagschema",
-      "duur": 10,
-      "samenvatting": "Goedemorgenpagina voor woensdag met het dagschema (groep 8 Cito bij rekenen en spelling).",
-      "trefwoorden": [
-        "goedemorgen",
-        "dagschema",
-        "dagopening",
-        "woensdag",
-        "cito",
-        "wetenswaardig",
-        "wonderlijk gemaakt"
-      ],
-      "gemaakt": "2026-11-11"
     },
     {
       "id": "g7-8-rekenen-boterhammenvraag",
