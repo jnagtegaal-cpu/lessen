@@ -37,7 +37,7 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:24px;min-height:600px\"><div style=\"font-size:90px;line-height:1\">✨</div><div style=\"font-size:40px;font-weight:800;line-height:1.25;color:#b5541c\">Vraagje</div><div style=\"font-size:42px;line-height:1.35\"><b>Heb jij wel eens een wonder meegemaakt?</b></div></div>"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:24px;min-height:600px\"><div style=\"font-size:40px;font-weight:800;line-height:1.25;color:#b5541c\">Vraagje</div><div style=\"font-size:42px;line-height:1.35\"><b>Heb jij wel eens een wonder meegemaakt?</b></div></div>"
               }
             ]
           ]
@@ -49,11 +49,11 @@
       "fase": "Dagopening: Gangkant begint",
       "achtergrond": "leeg",
       "uitlijning": "midden",
-      "notitie": "Dagopening. Eerst denkt iedereen na of leest het nog eens. Daarna begint de gangkant: vertel aan je schoudermaatje wat je denkt. Kun je niks bedenken? Vertel dan zo precies mogelijk wat er gebeurt bij dit wonder.",
+      "notitie": "Dagopening. Eerst denkt iedereen na of leest het nog eens. Daarna begint de gangkant: vertel aan je schoudermaatje wat je denkt. Kun je niks bedenken? Vertel dan zo precies mogelijk wat er gebeurt bij dit wonder. Alleen de vraag en 'denk er allemaal eens over na' staan meteen in beeld; de rest tik je één voor één aan.",
       "blokken": [
         {
           "type": "kop",
-          "tekst": "Wat kunnen we leren van dit wonder? ✨",
+          "tekst": "Wat kunnen we leren van dit wonder?",
           "stijl": "font-size:64px;text-align:center"
         },
         {
@@ -63,17 +63,20 @@
         },
         {
           "type": "html",
-          "html": "<div style=\"text-align:center;margin:20px 0\"><span style=\"display:inline-block;background:#1f6fd1;color:#fff;font-size:44px;font-weight:800;border-radius:999px;padding:10px 40px\">Gangkant begint</span></div>"
+          "html": "<div style=\"text-align:center;margin:20px 0\"><span style=\"display:inline-block;background:#1f6fd1;color:#fff;font-size:44px;font-weight:800;border-radius:999px;padding:10px 40px\">Gangkant begint</span></div>",
+          "verborgen": true
         },
         {
           "type": "tekst",
           "tekst": "Vertel aan je **schoudermaatje** wat je denkt.",
-          "stijl": "font-size:36px;text-align:center"
+          "stijl": "font-size:36px;text-align:center",
+          "verborgen": true
         },
         {
           "type": "tekst",
           "tekst": "Kun je niks bedenken? Vertel dan **zo precies mogelijk** wat er gebeurt bij dit wonder.",
-          "stijl": "font-size:30px;text-align:center;color:#5b6b63"
+          "stijl": "font-size:30px;text-align:center;color:#5b6b63",
+          "verborgen": true
         }
       ]
     },
@@ -81,11 +84,11 @@
       "fase": "Dagopening: Raamkant begint",
       "achtergrond": "leeg",
       "uitlijning": "midden",
-      "notitie": "Dagopening. Eerst denkt iedereen na of leest het nog eens. Daarna begint de raamkant: vertel aan je schoudermaatje wat je denkt. Kun je niks bedenken? Vertel dan zo precies mogelijk wat er gebeurt bij dit wonder.",
+      "notitie": "Dagopening. Eerst denkt iedereen na of leest het nog eens. Daarna begint de raamkant: vertel aan je schoudermaatje wat je denkt. Kun je niks bedenken? Vertel dan zo precies mogelijk wat er gebeurt bij dit wonder. Alleen de vraag en 'denk er allemaal eens over na' staan meteen in beeld; de rest tik je één voor één aan.",
       "blokken": [
         {
           "type": "kop",
-          "tekst": "Wat kunnen we leren van dit wonder? ✨",
+          "tekst": "Wat kunnen we leren van dit wonder?",
           "stijl": "font-size:64px;text-align:center"
         },
         {
@@ -95,17 +98,20 @@
         },
         {
           "type": "html",
-          "html": "<div style=\"text-align:center;margin:20px 0\"><span style=\"display:inline-block;background:#1f6fd1;color:#fff;font-size:44px;font-weight:800;border-radius:999px;padding:10px 40px\">Raamkant begint</span></div>"
+          "html": "<div style=\"text-align:center;margin:20px 0\"><span style=\"display:inline-block;background:#1f6fd1;color:#fff;font-size:44px;font-weight:800;border-radius:999px;padding:10px 40px\">Raamkant begint</span></div>",
+          "verborgen": true
         },
         {
           "type": "tekst",
           "tekst": "Vertel aan je **schoudermaatje** wat je denkt.",
-          "stijl": "font-size:36px;text-align:center"
+          "stijl": "font-size:36px;text-align:center",
+          "verborgen": true
         },
         {
           "type": "tekst",
           "tekst": "Kun je niks bedenken? Vertel dan **zo precies mogelijk** wat er gebeurt bij dit wonder.",
-          "stijl": "font-size:30px;text-align:center;color:#5b6b63"
+          "stijl": "font-size:30px;text-align:center;color:#5b6b63",
+          "verborgen": true
         }
       ]
     }
