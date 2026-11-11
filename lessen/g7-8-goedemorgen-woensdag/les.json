@@ -1,0 +1,80 @@
+{
+  "id": "g7-8-goedemorgen-woensdag",
+  "titel": "Goedemorgen: dagschema woensdag 11 november",
+  "groep": "7-8",
+  "vak": "Dagopening",
+  "onderwerp": "Dagschema",
+  "duur": 10,
+  "samenvatting": "Goedemorgenpagina voor woensdag met het dagschema (groep 8 Cito bij rekenen en spelling).",
+  "trefwoorden": [
+    "goedemorgen",
+    "dagschema",
+    "dagopening",
+    "woensdag",
+    "cito",
+    "wetenswaardig",
+    "wonderlijk gemaakt"
+  ],
+  "gemaakt": "2026-11-11",
+  "schermen": [
+    {
+      "fase": "Goedemorgen",
+      "achtergrond": "leeg",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "3fr",
+            "2fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;flex-direction:column;gap:10px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen <span style=\"font-weight:500\">(groep 8: Cito)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🌍</span><span>Wetenswaardig</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling <span style=\"font-weight:500\">(groep 8: Cito)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">💛</span><span>Wonderlijk gemaakt</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🏠</span><span>Naar huis</span></div></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:24px;min-height:600px\"><div style=\"font-size:96px;line-height:1\">🌞</div><div style=\"font-size:48px;font-weight:800;line-height:1.25;color:#b5541c\">Fijne woensdag!</div></div>"
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Dagschema voor woensdag 11 november."
+    }
+  ],
+  "voorbereiding": {
+    "verloop": [
+      {
+        "wat": "Dagopening"
+      },
+      {
+        "wat": "Rekenen (groep 8: Cito)"
+      },
+      {
+        "wat": "Pauze"
+      },
+      {
+        "wat": "Wetenswaardig"
+      },
+      {
+        "wat": "Spelling (groep 8: Cito)"
+      },
+      {
+        "wat": "Pauze"
+      },
+      {
+        "wat": "Stillezen"
+      },
+      {
+        "wat": "Wonderlijk gemaakt"
+      },
+      {
+        "wat": "Naar huis"
+      }
+    ]
+  }
+}
