@@ -37,7 +37,7 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:24px;min-height:600px\"><div style=\"font-size:40px;font-weight:800;line-height:1.25;color:#b5541c\">Vraagje</div><div style=\"font-size:42px;line-height:1.35\"><b>Heb jij wel eens een wonder meegemaakt?</b></div><div style=\"font-size:30px;line-height:1.35;background:#ffffff;border-radius:14px;padding:12px 16px\">📖 Pak je Bijbel en zoek <b>2 Koningen 6:1</b> op.</div></div>"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:24px;min-height:600px\"><div style=\"font-size:40px;font-weight:800;line-height:1.25;color:#b5541c\">Vraagje</div><div style=\"font-size:42px;line-height:1.35\"><b>Heb jij wel eens een wonder meegemaakt?</b></div><div style=\"font-size:30px;line-height:1.35;background:#ffffff;border-radius:14px;padding:12px 16px\">📖 Pak je Bijbel en zoek <b style=\"white-space:nowrap\">2 Koningen 6:1</b> op.</div></div>"
               }
             ]
           ]
