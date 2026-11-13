@@ -1,24 +1,24 @@
 {
   "id": "g7-8-goedemorgen-vrijdag",
-  "titel": "Goedemorgen: dagschema vrijdag 6 november",
+  "titel": "Goedemorgen: dagschema vrijdag 13 november",
   "groep": "7-8",
   "vak": "Dagopening",
   "onderwerp": "Dagschema",
-  "samenvatting": "Goedemorgenpagina voor vrijdag met het dagschema en een denkvraag: waarvoor zou je willen danken?",
+  "samenvatting": "Goedemorgenpagina voor vrijdag met het dagschema (groep 8 Cito, presentatie, lootjes trekken, gym).",
   "trefwoorden": [
     "goedemorgen",
     "dagschema",
     "dagopening",
     "vrijdag",
-    "danken",
-    "denkvraag"
+    "cito",
+    "lootjes",
+    "gym"
   ],
-  "gemaakt": "2026-11-06",
+  "gemaakt": "2026-11-13",
   "schermen": [
     {
       "fase": "Goedemorgen",
       "achtergrond": "leeg",
-      "notitie": "Dagschema voor vrijdag 6 november. Denkvraag bij binnenkomst: bedenk iets waarvoor je zou willen danken. Aan het eind: fijn weekend wensen.",
       "blokken": [
         {
           "type": "kolommen",
@@ -30,42 +30,52 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;flex-direction:column;gap:9px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">✍️</span><span>Werkwoordspelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🎤</span><span>Presentaties</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🤸</span><span>Gym</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">👋</span><span>Fijn weekend!</span></div></div>"
+                "html": "<div style=\"display:flex;flex-direction:column;gap:7px\"><div style=\"font-size:48px;font-weight:800;margin-bottom:2px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:20px;padding:0 16px;border-radius:12px;background:#eef7f1;font-size:27px;font-weight:700;line-height:1.4\"><span style=\"width:46px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:20px;padding:0 16px;border-radius:12px;background:#eef7f1;font-size:27px;font-weight:700;line-height:1.4\"><span style=\"width:46px;text-align:center\">➕</span><span>Rekenen <span style=\"font-weight:500\">(groep 8: Cito begrijpend lezen)</span></span></div><div style=\"display:flex;align-items:center;gap:20px;padding:0 16px;border-radius:12px;background:#eef7f1;font-size:27px;font-weight:700;line-height:1.4\"><span style=\"width:46px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:20px;padding:0 16px;border-radius:12px;background:#eef7f1;font-size:27px;font-weight:700;line-height:1.4\"><span style=\"width:46px;text-align:center\">📖</span><span>Taal <span style=\"font-weight:500\">(groep 8: Cito's afmaken)</span></span></div><div style=\"display:flex;align-items:center;gap:20px;padding:0 16px;border-radius:12px;background:#eef7f1;font-size:27px;font-weight:700;line-height:1.4\"><span style=\"width:46px;text-align:center\">🎤</span><span>Presentatie</span></div><div style=\"display:flex;align-items:center;gap:20px;padding:0 16px;border-radius:12px;background:#eef7f1;font-size:27px;font-weight:700;line-height:1.4\"><span style=\"width:46px;text-align:center\">📝</span><span>Memo, werkwoorden</span></div><div style=\"display:flex;align-items:center;gap:20px;padding:0 16px;border-radius:12px;background:#eef7f1;font-size:27px;font-weight:700;line-height:1.4\"><span style=\"width:46px;text-align:center\">📋</span><span>Vragenlijsten</span></div><div style=\"display:flex;align-items:center;gap:20px;padding:0 16px;border-radius:12px;background:#eef7f1;font-size:27px;font-weight:700;line-height:1.4\"><span style=\"width:46px;text-align:center\">📚</span><span>Lezen</span></div><div style=\"display:flex;align-items:center;gap:20px;padding:0 16px;border-radius:12px;background:#eef7f1;font-size:27px;font-weight:700;line-height:1.4\"><span style=\"width:46px;text-align:center\">🎁</span><span>Lootjes trekken</span></div><div style=\"display:flex;align-items:center;gap:20px;padding:0 16px;border-radius:12px;background:#eef7f1;font-size:27px;font-weight:700;line-height:1.4\"><span style=\"width:46px;text-align:center\">📚</span><span>Doorlezen <span style=\"font-weight:500\">(als er tijd is)</span></span></div><div style=\"display:flex;align-items:center;gap:20px;padding:0 16px;border-radius:12px;background:#eef7f1;font-size:27px;font-weight:700;line-height:1.4\"><span style=\"width:46px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:20px;padding:0 16px;border-radius:12px;background:#eef7f1;font-size:27px;font-weight:700;line-height:1.4\"><span style=\"width:46px;text-align:center\">🤸</span><span>Gym</span></div><div style=\"display:flex;align-items:center;gap:20px;padding:0 16px;border-radius:12px;background:#eef7f1;font-size:27px;font-weight:700;line-height:1.4\"><span style=\"width:46px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
               }
             ],
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:22px;min-height:560px\"><div style=\"font-size:90px;line-height:1\">🙏</div><div style=\"font-size:42px;font-weight:800;line-height:1.25;color:#b5541c\">Denk even na</div><div style=\"font-size:36px;line-height:1.4\">Bedenk iets waarvoor<br>je zou willen <b>danken</b>.</div></div>"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:24px;min-height:600px\"><div style=\"font-size:96px;line-height:1\">🎁</div><div style=\"font-size:48px;font-weight:800;line-height:1.25;color:#b5541c\">Fijne vrijdag!</div></div>"
               }
             ]
           ]
         }
-      ]
+      ],
+      "notitie": "Dagschema voor vrijdag 13 november."
     }
   ],
   "voorbereiding": {
     "verloop": [
       {
-        "wat": "Bij binnenkomst: denkvraag op het bord: bedenk iets waarvoor je zou willen danken"
-      },
-      {
         "wat": "Dagopening"
       },
       {
-        "wat": "Rekenen"
+        "wat": "Rekenen (groep 8: Cito begrijpend lezen)"
       },
       {
         "wat": "Pauze"
       },
       {
-        "wat": "Werkwoordspelling"
+        "wat": "Taal (groep 8: Cito's afmaken)"
       },
       {
-        "wat": "Presentaties"
+        "wat": "Presentatie"
       },
       {
-        "wat": "Stillezen"
+        "wat": "Memo, werkwoorden"
+      },
+      {
+        "wat": "Vragenlijsten"
+      },
+      {
+        "wat": "Lezen"
+      },
+      {
+        "wat": "Lootjes trekken"
+      },
+      {
+        "wat": "Doorlezen (als er tijd is)"
       },
       {
         "wat": "Pauze"
@@ -74,7 +84,7 @@
         "wat": "Gym"
       },
       {
-        "wat": "Fijn weekend wensen"
+        "wat": "Afsluiten"
       }
     ]
   }
