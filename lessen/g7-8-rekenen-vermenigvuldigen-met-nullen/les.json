@@ -1,0 +1,215 @@
+{
+  "id": "g7-8-rekenen-vermenigvuldigen-met-nullen",
+  "titel": "Vermenigvuldigen met tientallen, honderdtallen en duizendtallen",
+  "groep": "7-8",
+  "vak": "Rekenen",
+  "onderwerp": "Vermenigvuldigen",
+  "edi": true,
+  "samenvatting": "Korte les: sommen als 50 × 80 uitrekenen met een hulpsom en de nullen, met een stappenplan van drie stappen.",
+  "trefwoorden": [
+    "vermenigvuldigen",
+    "vermenigvuldigen met tientallen",
+    "honderdtallen",
+    "duizendtallen",
+    "nullen",
+    "hulpsom",
+    "stappenplan"
+  ],
+  "gemaakt": "2026-11-02",
+  "lesdoel": "Ik kan vermenigvuldigen met tientallen, honderdtallen en duizendtallen.",
+  "lesdoelInHoek": true,
+  "schermen": [
+    {
+      "fase": "Voorkennis ophalen",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "blokken": [
+        {
+          "type": "html",
+          "html": "<div style=\"text-align:center;font-size:110px;line-height:1\">🚆</div>"
+        },
+        {
+          "type": "vraag",
+          "tekst": "Je maakt **3 treinreizen** van **1000 kilometer**.\nHoeveel kilometer heb je dan afgelegd?"
+        },
+        {
+          "type": "groot",
+          "tekst": "3 × 1000",
+          "verborgen": true
+        },
+        {
+          "type": "tekst",
+          "tekst": "= **3000 km**",
+          "verborgen": true,
+          "stijl": "text-align:center;font-size:60px"
+        }
+      ],
+      "notitie": "Voorkennis ophalen vóór het lesdoel. Tik eerst de som 3 × 1000 aan, daarna het antwoord: 3000 km."
+    },
+    {
+      "fase": "Lesdoel",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "blokken": [
+        {
+          "type": "fase",
+          "tekst": "Rekenen"
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"font-size:72px;line-height:1.3;text-align:center;font-weight:700\">Ik kan vermenigvuldigen met tientallen, honderdtallen en duizendtallen.</div>"
+        }
+      ],
+      "notitie": "Lesdoel."
+    },
+    {
+      "fase": "Uitleg begrip (1)",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "subkop",
+          "tekst": "Kijk goed naar dit rijtje"
+        },
+        {
+          "type": "lijst",
+          "stapsgewijs": true,
+          "items": [
+            "5 × 5 = 25",
+            "5 × 50 = 250",
+            "5 × 500 = 2500",
+            "5 × 5000 = 25 000"
+          ],
+          "stijl": "font-size:58px;font-weight:700;line-height:1.5;list-style:none"
+        },
+        {
+          "type": "vraag",
+          "tekst": "Wat valt op?",
+          "verborgen": true
+        }
+      ],
+      "notitie": "Tik de regels één voor één aan. Daarna: wat valt op? (Er komt steeds een nul bij in de som, en dus ook in het antwoord. De hulpsom blijft 5 × 5 = 25.)"
+    },
+    {
+      "fase": "Uitleg begrip (2)",
+      "uitlijning": "midden",
+      "blokken": [
+        {
+          "type": "subkop",
+          "tekst": "En nu dit rijtje"
+        },
+        {
+          "type": "lijst",
+          "stapsgewijs": true,
+          "items": [
+            "5 × 5 = 25",
+            "50 × 5 = 250",
+            "50 × 50 = 2500",
+            "500 × 50 = 25 000"
+          ],
+          "stijl": "font-size:58px;font-weight:700;line-height:1.5;list-style:none"
+        },
+        {
+          "type": "vraag",
+          "tekst": "Wat valt op? Wat kunnen we hiermee?",
+          "verborgen": true
+        }
+      ],
+      "notitie": "Tik de regels één voor één aan. Hier zien ze dat de nullen ook vóór het keerteken mogen staan, of aan allebei de kanten: je telt alle nullen in de som."
+    },
+    {
+      "fase": "Uitleg vaardigheid",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Zo doe je het"
+              },
+              {
+                "type": "stappen",
+                "stapsgewijs": true,
+                "items": [
+                  "**Haal de nullen weg.** Welke hulpsom houd je over? Reken die uit.",
+                  "**Tel** alle nullen in de som.\n*Tip: tel de nullen in de som, niet in je antwoord.*",
+                  "**Zet** die nullen achter je antwoord."
+                ]
+              }
+            ],
+            [
+              {
+                "type": "subkop",
+                "tekst": "Sommen"
+              },
+              {
+                "type": "lijst",
+                "stapsgewijs": true,
+                "items": [
+                  "3 × 20 =",
+                  "4 × 300 =",
+                  "6 × 2000 =",
+                  "30 × 40 =",
+                  "20 × 300 =",
+                  "400 × 70 =",
+                  "5 × 40 =",
+                  "50 × 80 =",
+                  "600 × 50 ="
+                ],
+                "stijl": "font-size:40px;font-weight:700;line-height:1.35;list-style:none"
+              }
+            ]
+          ]
+        }
+      ],
+      "notitie": "Tik de stappen en de sommen één voor één aan en reken samen uit. Antwoorden: 3 × 20 = 60 · 4 × 300 = 1200 · 6 × 2000 = 12 000 · 30 × 40 = 1200 · 20 × 300 = 6000 · 400 × 70 = 28 000 · 5 × 40 = 200 · 50 × 80 = 4000 · 600 × 50 = 30 000. Let op bij de laatste drie: de hulpsom eindigt zelf al op een 0 (5 × 4 = 20, 5 × 8 = 40, 6 × 5 = 30). Die nul hoort bij de hulpsom en blijft staan.",
+      "lesdoelLinks": true
+    }
+  ],
+  "voorbereiding": {
+    "verloop": [
+      {
+        "fase": "Voorkennis ophalen",
+        "wat": "3 treinreizen van 1000 km: hoeveel kilometer heb je afgelegd? (3 × 1000 = 3000)"
+      },
+      {
+        "fase": "Lesdoel",
+        "wat": "Ik kan vermenigvuldigen met tientallen, honderdtallen en duizendtallen."
+      },
+      {
+        "fase": "Uitleg begrip",
+        "wat": "Rijtje 5 × 5, 5 × 50, 5 × 500, 5 × 5000: wat valt op? Daarna rijtje 5 × 5, 50 × 5, 50 × 50, 500 × 50: wat valt op, wat kunnen we hiermee?"
+      },
+      {
+        "fase": "Uitleg vaardigheid",
+        "wat": "Stappenplan in drie stappen: nullen weghalen en hulpsom uitrekenen, alle nullen in de som tellen, nullen achter het antwoord zetten. Daarna een rijtje sommen stap voor stap samen uitrekenen (ik-wij-jullie-jij naar eigen inzicht, klein groepje)."
+      }
+    ],
+    "secties": [
+      {
+        "kop": "Aandachtspunten",
+        "items": [
+          "Valkuil: de hulpsom eindigt zelf al op een 0, zoals bij 50 × 80 (5 × 8 = 40, dus 4000). Tel de nullen in de som, niet in het antwoord."
+        ]
+      },
+      {
+        "kop": "Antwoorden sommen",
+        "items": [
+          "3 × 20 = 60",
+          "4 × 300 = 1200",
+          "6 × 2000 = 12 000",
+          "30 × 40 = 1200",
+          "20 × 300 = 6000",
+          "400 × 70 = 28 000",
+          "5 × 40 = 200",
+          "50 × 80 = 4000",
+          "600 × 50 = 30 000"
+        ]
+      }
+    ]
+  }
+}

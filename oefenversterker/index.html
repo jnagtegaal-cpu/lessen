@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Oefenversterker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500&family=Share+Tech+Mono&display=swap">
+<style>
+/* Layout: één versterkerpaneel, secties als groepen knoppen zoals op het frontpaneel; groot voetschakelaar-blok onderaan */
+:root {
+  --tolex: #16181b;
+  --panel: #23262b;
+  --panel-2: #2c3036;
+  --line: #3b4048;
+  --text: #e7e3da;
+  --muted: #9aa0a8;
+  --amber: #f2a531;
+  --amber-dim: #6b4a1a;
+  --green: #6fd08c;
+  --red: #ff5b4d;
+  --f-label: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+  --f-body: "Barlow", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --f-mono: "Share Tech Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { background: var(--tolex); color: var(--text); }
+body {
+  margin: 0;
+  font-family: var(--f-body);
+  font-size: 15px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 16px 32px;
+}
+.wrap { max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+
+header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; }
+h1 { font-family: var(--f-label); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 1.6rem; margin: 0; }
+h1 span { color: var(--amber); }
+.sub { color: var(--muted); font-size: .9rem; margin: 0; }
+
+.start {
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px;
+}
+.start select { flex: 1 1 220px; min-width: 0; font: inherit; background: var(--panel-2); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 10px; }
+.btn {
+  font-family: var(--f-label); font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  font-size: 1.05rem; border-radius: 8px; border: 1px solid var(--line); padding: 12px 18px;
+  background: var(--panel-2); color: var(--text); cursor: pointer;
+}
+.btn.primary { background: var(--amber); color: #1a1206; border-color: var(--amber); }
+.btn:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.status { flex: 1 1 100%; color: var(--muted); font-size: .9rem; margin: 0; }
+.status.err { color: var(--red); }
+
+.meters { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; font-family: var(--f-mono); font-size: .9rem; color: var(--muted); }
+.meter { width: 160px; max-width: 40vw; height: 8px; background: var(--panel-2); border-radius: 4px; overflow: hidden; }
+.meter i { display: block; height: 100%; width: 0%; background: var(--green); transition: width 60ms linear; }
+.meter i.hot { background: var(--red); }
+
+.panel {
+  background: linear-gradient(180deg, var(--panel) 0%, #1e2125 100%);
+  border: 1px solid var(--line); border-radius: 12px; padding: 16px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px;
+}
+.section { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.section h2 {
+  margin: 0; font-family: var(--f-label); font-weight: 600; font-size: .85rem; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--line); padding-bottom: 6px;
+  display: flex; justify-content: space-between; align-items: center; gap: 8px;
+}
+.led { width: 10px; height: 10px; border-radius: 50%; background: var(--amber-dim); flex: none; }
+.led.on { background: var(--amber); box-shadow: 0 0 8px var(--amber); }
+
+.knob { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items: center; }
+.knob label { font-family: var(--f-label); font-weight: 600; letter-spacing: .1em; text-transform: uppercase; font-size: .95rem; }
+.knob output { font-family: var(--f-mono); font-size: 1rem; color: var(--amber); min-width: 3ch; text-align: right; font-variant-numeric: tabular-nums; }
+.knob input[type=range] { grid-column: 1 / -1; width: 100%; accent-color: var(--amber); height: 28px; }
+
+.toggle { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.toggle span { font-family: var(--f-label); font-weight: 600; letter-spacing: .1em; text-transform: uppercase; font-size: .95rem; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.seg button { font-family: var(--f-label); font-weight: 600; letter-spacing: .08em; font-size: .9rem; padding: 8px 12px; background: var(--panel-2); color: var(--muted); border: 0; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--amber); color: #1a1206; }
+.note { color: var(--muted); font-size: .82rem; margin: 0; line-height: 1.4; }
+
+.foot { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.switch {
+  font-family: var(--f-label); font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
+  font-size: 1.5rem; padding: 26px 16px; border-radius: 14px; border: 2px solid var(--line);
+  background: var(--panel-2); color: var(--text); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 14px;
+  user-select: none; -webkit-tap-highlight-color: transparent;
+}
+.switch .led { width: 14px; height: 14px; }
+.switch small { display: block; font-size: .8rem; letter-spacing: .1em; color: var(--muted); font-weight: 500; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; align-items: center; }
+.help { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.help h2 { font-family: var(--f-label); letter-spacing: .14em; text-transform: uppercase; font-size: .95rem; margin: 0 0 8px; }
+.help ol { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; max-width: 70ch; line-height: 1.45; }
+
+@media (prefers-reduced-motion: reduce) { .meter i { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Oefen<span>versterker</span></h1>
+    <p class="sub">Testversie · zelfde knoppen als je GX210 · zonder effecten</p>
+  </header>
+
+  <div class="start">
+    <button class="btn primary" id="startBtn" type="button">Start</button>
+    <select id="devSel" aria-label="Ingang kiezen"><option value="">Standaard ingang (kies Momix na start)</option></select>
+    <p class="status" id="status">Sluit gitaar en koptelefoon aan op de Momix, zet het volume van je gitaar open en druk op Start. Zet je koptelefoon eerst zacht.</p>
+    <div class="meters">
+      <span>Ingang</span><div class="meter" aria-hidden="true"><i id="inMeter"></i></div>
+      <span>Uitgang</span><div class="meter" aria-hidden="true"><i id="outMeter"></i></div>
+      <span id="lat">Vertraging: –</span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="section">
+      <h2>Ingang</h2>
+      <div class="toggle">
+        <span>Input</span>
+        <div class="seg" role="group" aria-label="Ingang HI of LO">
+          <button type="button" id="inHi" aria-pressed="true">HI</button>
+          <button type="button" id="inLo" aria-pressed="false">LO</button>
+        </div>
+      </div>
+      <p class="note">HI voor je Jet (single-coils). Vervormt Clean al snel, kies LO.</p>
+    </div>
+
+    <div class="section">
+      <h2>Clean <span class="led" id="ledClean"></span></h2>
+      <div class="knob"><label for="cleanVol">Clean volume</label><output id="cleanVolOut"></output><input id="cleanVol" type="range" min="1" max="10" step="0.5"></div>
+    </div>
+
+    <div class="section">
+      <h2>Overdrive <span class="led" id="ledOd"></span></h2>
+      <div class="knob"><label for="drive">Overdrive</label><output id="driveOut"></output><input id="drive" type="range" min="1" max="10" step="0.5"></div>
+      <div class="knob"><label for="morph">Morphing</label><output id="morphOut"></output><input id="morph" type="range" min="1" max="10" step="0.5"></div>
+      <div class="knob"><label for="presence">Presence</label><output id="presenceOut"></output><input id="presence" type="range" min="1" max="10" step="0.5"></div>
+      <div class="knob"><label for="odVol">Volume</label><output id="odVolOut"></output><input id="odVol" type="range" min="1" max="10" step="0.5"></div>
+      <div class="toggle">
+        <span>Mid boost</span>
+        <div class="seg" role="group" aria-label="Mid boost">
+          <button type="button" id="mbOff" aria-pressed="true">Uit</button>
+          <button type="button" id="mbOn" aria-pressed="false">Aan</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>EQ · beide kanalen</h2>
+      <div class="knob"><label for="bass">Bass</label><output id="bassOut"></output><input id="bass" type="range" min="1" max="10" step="0.5"></div>
+      <div class="knob"><label for="mid">Mid</label><output id="midOut"></output><input id="mid" type="range" min="1" max="10" step="0.5"></div>
+      <div class="knob"><label for="treble">Treble</label><output id="trebleOut"></output><input id="treble" type="range" min="1" max="10" step="0.5"></div>
+    </div>
+
+    <div class="section">
+      <h2>Master</h2>
+      <div class="knob"><label for="master">Master</label><output id="masterOut"></output><input id="master" type="range" min="1" max="10" step="0.5"></div>
+      <p class="note">Een begrenzer beschermt je oren tegen plotselinge pieken.</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <button class="switch" id="chanBtn" type="button" aria-label="Wissel kanaal">
+      <span class="led" id="ledSwitch"></span>
+      <span><span id="chanName">Clean</span><small>Tik om te wisselen · spatiebalk werkt ook</small></span>
+    </button>
+    <div class="row">
+      <button class="btn" id="resetBtn" type="button">Terug naar basisinstelling</button>
+      <span class="note" id="saveNote">Je instellingen worden op dit apparaat onthouden.</span>
+    </div>
+  </div>
+
+  <div class="help">
+    <h2>Lukt het niet?</h2>
+    <ol>
+      <li>Geen geluid: kies na Start de Momix in de lijst bovenaan.</li>
+      <li>Je hoort jezelf dubbel: zet het directe signaal (monitor) van de Momix uit of zacht.</li>
+      <li>Vertraging stoort: kijk welk getal er bij Vertraging staat en geef het aan Claude door.</li>
+      <li>Melding over microfoon: geef de pagina toestemming om de microfoon te gebruiken; de Momix telt als microfoon.</li>
+    </ol>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  // Basisinstelling uit het GX210-document (schaal 1–10)
+  var DEFAULTS = { cleanVol: 4, drive: 4, morph: 5, presence: 5, odVol: 3.5, bass: 5, mid: 6, treble: 5.5, master: 3, hi: true, midBoost: false, channel: "clean" };
+  var KEY = "oefenversterker-v1";
+  var KNOBS = ["cleanVol", "drive", "morph", "presence", "odVol", "bass", "mid", "treble", "master"];
+
+  var state = load();
+  var ctx = null, nodes = null, stream = null, source = null;
+
+  function load() {
+    var s = Object.assign({}, DEFAULTS);
+    try { var raw = localStorage.getItem(KEY); if (raw) Object.assign(s, JSON.parse(raw)); } catch (e) {}
+    return s;
+  }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+
+  var $ = function (id) { return document.getElementById(id); };
+  var statusEl = $("status");
+  function setStatus(msg, err) { statusEl.textContent = msg; statusEl.classList.toggle("err", !!err); }
+
+  // ---------- Klankmapping ----------
+  var n01 = function (v) { return (v - 1) / 9; };                 // knop 1–10 → 0–1
+  var vol = function (v) { var x = n01(v); return x * x * 2.2; };  // volume-curve
+  var eqDb = function (v, range) { return (v - 5.5) / 4.5 * range; };
+
+  function makeCurve(kind) {
+    var n = 2048, c = new Float32Array(n);
+    for (var i = 0; i < n; i++) {
+      var x = i / (n - 1) * 2 - 1;
+      if (kind === "clean") {
+        c[i] = Math.tanh(x * 1.4) / Math.tanh(1.4);
+      } else {
+        // asymmetrische buis-achtige vervorming
+        var y = x >= 0 ? Math.tanh(x * 2.2) : Math.tanh(x * 1.7) * 0.92;
+        c[i] = y;
+      }
+    }
+    return c;
+  }
+
+  function build() {
+    var A = ctx;
+    var N = {};
+    N.input = A.createGain(); N.input.channelCount = 1; N.input.channelCountMode = "explicit";
+    N.inMeter = A.createAnalyser(); N.inMeter.fftSize = 512;
+    N.hp = A.createBiquadFilter(); N.hp.type = "highpass"; N.hp.frequency.value = 70;
+
+    // Clean-kanaal
+    N.cleanPre = A.createGain(); N.cleanPre.gain.value = 1.6;
+    N.cleanShape = A.createWaveShaper(); N.cleanShape.curve = makeCurve("clean"); N.cleanShape.oversample = "2x";
+    N.cleanVol = A.createGain();
+    N.cleanSel = A.createGain();
+
+    // Overdrive-kanaal
+    N.odTight = A.createBiquadFilter(); N.odTight.type = "highpass"; N.odTight.frequency.value = 160;
+    N.midBoost = A.createBiquadFilter(); N.midBoost.type = "peaking"; N.midBoost.frequency.value = 800; N.midBoost.Q.value = 0.9;
+    N.odPre = A.createGain();
+    N.odShape = A.createWaveShaper(); N.odShape.curve = makeCurve("od"); N.odShape.oversample = "4x";
+    N.odShape2 = A.createWaveShaper(); N.odShape2.curve = makeCurve("od"); N.odShape2.oversample = "4x";
+    N.odInter = A.createGain();
+    N.morph = A.createBiquadFilter(); N.morph.type = "peaking"; N.morph.Q.value = 1.1; N.morph.gain.value = 5;
+    N.odSmooth = A.createBiquadFilter(); N.odSmooth.type = "lowpass"; N.odSmooth.frequency.value = 6500; N.odSmooth.Q.value = 0.5;
+    N.presence = A.createBiquadFilter(); N.presence.type = "highshelf"; N.presence.frequency.value = 2500;
+    N.odVol = A.createGain();
+    N.odSel = A.createGain();
+
+    // EQ voor beide kanalen
+    N.sum = A.createGain();
+    N.bass = A.createBiquadFilter(); N.bass.type = "lowshelf"; N.bass.frequency.value = 120;
+    N.mid = A.createBiquadFilter(); N.mid.type = "peaking"; N.mid.frequency.value = 650; N.mid.Q.value = 0.8;
+    N.treble = A.createBiquadFilter(); N.treble.type = "highshelf"; N.treble.frequency.value = 2800;
+
+    // Speakersimulatie 2x10"
+    N.cabHp = A.createBiquadFilter(); N.cabHp.type = "highpass"; N.cabHp.frequency.value = 85; N.cabHp.Q.value = 0.8;
+    N.cabLow = A.createBiquadFilter(); N.cabLow.type = "peaking"; N.cabLow.frequency.value = 130; N.cabLow.Q.value = 1.2; N.cabLow.gain.value = 3;
+    N.cabMid = A.createBiquadFilter(); N.cabMid.type = "peaking"; N.cabMid.frequency.value = 2200; N.cabMid.Q.value = 1.4; N.cabMid.gain.value = 3;
+    N.cabLp1 = A.createBiquadFilter(); N.cabLp1.type = "lowpass"; N.cabLp1.frequency.value = 5200; N.cabLp1.Q.value = 0.7;
+    N.cabLp2 = A.createBiquadFilter(); N.cabLp2.type = "lowpass"; N.cabLp2.frequency.value = 6000; N.cabLp2.Q.value = 0.7;
+
+    N.master = A.createGain();
+    N.limit = A.createDynamicsCompressor();
+    N.limit.threshold.value = -8; N.limit.knee.value = 4; N.limit.ratio.value = 20; N.limit.attack.value = 0.002; N.limit.release.value = 0.12;
+    N.outMeter = A.createAnalyser(); N.outMeter.fftSize = 512;
+
+    // Verbindingen
+    N.input.connect(N.inMeter);
+    N.input.connect(N.hp);
+    N.hp.connect(N.cleanPre).connect(N.cleanShape).connect(N.cleanVol).connect(N.cleanSel).connect(N.sum);
+    N.hp.connect(N.odTight).connect(N.midBoost).connect(N.odPre).connect(N.odShape).connect(N.odInter).connect(N.odShape2)
+        .connect(N.morph).connect(N.odSmooth).connect(N.presence).connect(N.odVol).connect(N.odSel).connect(N.sum);
+    N.sum.connect(N.bass).connect(N.mid).connect(N.treble)
+         .connect(N.cabHp).connect(N.cabLow).connect(N.cabMid).connect(N.cabLp1).connect(N.cabLp2)
+         .connect(N.master).connect(N.limit);
+    N.limit.connect(N.outMeter);
+    N.limit.connect(A.destination);
+    return N;
+  }
+
+  function ramp(param, value) {
+    if (!ctx) return;
+    param.setTargetAtTime(value, ctx.currentTime, 0.02);
+  }
+
+  function apply() {
+    if (!nodes) return;
+    var N = nodes, s = state;
+    ramp(N.input.gain, s.hi ? 1.0 : 0.5);
+    ramp(N.cleanVol.gain, vol(s.cleanVol) * 1.3);
+    var d = n01(s.drive);
+    ramp(N.odPre.gain, 2 + Math.pow(d, 2) * 60);
+    ramp(N.odInter.gain, 1 + d * 2.5);
+    ramp(N.midBoost.gain, s.midBoost ? 9 : 0);
+    ramp(N.morph.frequency, 350 * Math.pow(7, n01(s.morph)));     // 350 Hz → 2,4 kHz
+    ramp(N.presence.gain, eqDb(s.presence, 9));
+    ramp(N.odVol.gain, vol(s.odVol) * 0.55);
+    ramp(N.bass.gain, eqDb(s.bass, 12));
+    ramp(N.mid.gain, eqDb(s.mid, 10));
+    ramp(N.treble.gain, eqDb(s.treble, 12));
+    ramp(N.master.gain, vol(s.master) * 1.8);
+    var od = s.channel === "od";
+    ramp(N.cleanSel.gain, od ? 0 : 1);
+    ramp(N.odSel.gain, od ? 1 : 0);
+  }
+
+  // ---------- Bediening ----------
+  function renderControls() {
+    KNOBS.forEach(function (k) {
+      $(k).value = state[k];
+      $(k + "Out").textContent = String(state[k]).replace(".", ",");
+    });
+    $("inHi").setAttribute("aria-pressed", state.hi ? "true" : "false");
+    $("inLo").setAttribute("aria-pressed", state.hi ? "false" : "true");
+    $("mbOn").setAttribute("aria-pressed", state.midBoost ? "true" : "false");
+    $("mbOff").setAttribute("aria-pressed", state.midBoost ? "false" : "true");
+    var od = state.channel === "od";
+    $("ledClean").classList.toggle("on", !od);
+    $("ledOd").classList.toggle("on", od);
+    $("ledSwitch").classList.toggle("on", od);
+    $("chanName").textContent = od ? "Overdrive" : "Clean";
+  }
+  function update() { renderControls(); apply(); save(); }
+
+  KNOBS.forEach(function (k) {
+    $(k).addEventListener("input", function (e) { state[k] = parseFloat(e.target.value); update(); });
+  });
+  $("inHi").addEventListener("click", function () { state.hi = true; update(); });
+  $("inLo").addEventListener("click", function () { state.hi = false; update(); });
+  $("mbOn").addEventListener("click", function () { state.midBoost = true; update(); });
+  $("mbOff").addEventListener("click", function () { state.midBoost = false; update(); });
+  function toggleChannel() { state.channel = state.channel === "od" ? "clean" : "od"; update(); }
+  $("chanBtn").addEventListener("click", toggleChannel);
+  document.addEventListener("keydown", function (e) {
+    if (e.code === "Space" && e.target.tagName !== "INPUT" && e.target.tagName !== "SELECT" && e.target.tagName !== "BUTTON") { e.preventDefault(); toggleChannel(); }
+  });
+  $("resetBtn").addEventListener("click", function () { state = Object.assign({}, DEFAULTS); update(); $("saveNote").textContent = "Basisinstelling teruggezet."; });
+
+  // ---------- Audio starten ----------
+  async function openInput(deviceId) {
+    if (stream) stream.getTracks().forEach(function (t) { t.stop(); });
+    if (source) { try { source.disconnect(); } catch (e) {} }
+    var audio = { echoCancellation: false, noiseSuppression: false, autoGainControl: false, latency: 0 };
+    if (deviceId) audio.deviceId = { exact: deviceId };
+    stream = await navigator.mediaDevices.getUserMedia({ audio: audio });
+    source = ctx.createMediaStreamSource(stream);
+    source.connect(nodes.input);
+    var label = stream.getAudioTracks()[0] ? stream.getAudioTracks()[0].label : "";
+    setStatus("Ingang: " + (label || "onbekend") + ". Speel een akkoord; de groene balk bij Ingang moet bewegen.");
+  }
+
+  async function listDevices(selected) {
+    var sel = $("devSel");
+    try {
+      var devs = (await navigator.mediaDevices.enumerateDevices()).filter(function (d) { return d.kind === "audioinput"; });
+      sel.innerHTML = "";
+      devs.forEach(function (d, i) {
+        var o = document.createElement("option");
+        o.value = d.deviceId; o.textContent = d.label || ("Ingang " + (i + 1));
+        if (d.deviceId === selected) o.selected = true;
+        sel.appendChild(o);
+      });
+      // Momix of USB-apparaat automatisch kiezen
+      var usb = devs.find(function (d) { return /momix|joyo|usb/i.test(d.label); });
+      return usb && !selected ? usb.deviceId : null;
+    } catch (e) { return null; }
+  }
+
+  $("startBtn").addEventListener("click", async function () {
+    if (ctx) {
+      if (ctx.state === "running") { await ctx.suspend(); this.textContent = "Start"; setStatus("Gepauzeerd."); }
+      else { await ctx.resume(); this.textContent = "Pauze"; setStatus("Speelt weer."); }
+      return;
+    }
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+      setStatus("Deze browser geeft de pagina geen toegang tot de ingang. Open de pagina in Chrome via een https-adres.", true);
+      return;
+    }
+    try {
+      ctx = new (window.AudioContext || window.webkitAudioContext)({ latencyHint: 0 });
+      nodes = build();
+      apply();
+      await openInput(state.deviceId || null);
+      var usb = await listDevices(state.deviceId);
+      if (usb) { state.deviceId = usb; save(); await openInput(usb); await listDevices(usb); }
+      await ctx.resume();
+      this.textContent = "Pauze";
+      showLatency();
+      meterLoop();
+    } catch (e) {
+      var msg = e && e.name === "NotAllowedError"
+        ? "Geen toestemming voor de ingang. Sta microfoon-toegang toe voor deze pagina en probeer opnieuw."
+        : "Starten lukte niet (" + (e && (e.name || e.message)) + ").";
+      setStatus(msg, true);
+      if (ctx) { try { ctx.close(); } catch (x) {} } ctx = null; nodes = null;
+    }
+  });
+
+  $("devSel").addEventListener("change", async function (e) {
+    if (!ctx) return;
+    state.deviceId = e.target.value; save();
+    try { await openInput(e.target.value); } catch (x) { setStatus("Deze ingang kon niet geopend worden.", true); }
+  });
+
+  function showLatency() {
+    var ms = ((ctx.baseLatency || 0) + (ctx.outputLatency || 0)) * 1000;
+    $("lat").textContent = ms > 0 ? "Vertraging: ca. " + Math.round(ms) + " ms (+ ingang)" : "Vertraging: onbekend";
+  }
+
+  var buf = new Float32Array(512);
+  function peak(an) {
+    an.getFloatTimeDomainData(buf);
+    var m = 0; for (var i = 0; i < buf.length; i++) { var a = Math.abs(buf[i]); if (a > m) m = a; }
+    return m;
+  }
+  function meterLoop() {
+    if (!nodes) return;
+    var pi = peak(nodes.inMeter), po = peak(nodes.outMeter);
+    var a = $("inMeter"), b = $("outMeter");
+    a.style.width = Math.min(100, pi * 100) + "%"; a.classList.toggle("hot", pi > 0.95);
+    b.style.width = Math.min(100, po * 100) + "%"; b.classList.toggle("hot", po > 0.9);
+    requestAnimationFrame(meterLoop);
+  }
+
+  renderControls();
+})();
+</script>
+</body>
+</html>
