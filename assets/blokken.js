@@ -52,7 +52,7 @@ const Lesbord = (() => {
       case "kolommen": {
         const kol = b.kolommen || [];
         const breedtes = b.verhouding || kol.map(() => "1fr");
-        return `<div class="b-kolommen" style="grid-template-columns:${breedtes.join(" ")}">${kol
+        return `<div class="b-kolommen" style="grid-template-columns:${breedtes.join(" ")}${b.stijl ? ";" + esc(b.stijl) : ""}">${kol
           .map((k, ki) => `<div class="b-kolom">${(k || []).map((x, xi) => blok(x, lesmap, pad != null ? `${pad}.kolommen.${ki}.${xi}` : undefined)).join("")}</div>`)
           .join("")}</div>`;
       }
