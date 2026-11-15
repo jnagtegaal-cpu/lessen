@@ -109,6 +109,174 @@
       ]
     },
     {
+      "fase": "Uitleg — begrip: gelijknamige breuken optellen en aftrekken",
+      "achtergrond": "leeg",
+      "notitie": "Gelijknamig: de stukken zijn even groot, dus je telt de stukken bij elkaar (of haalt ze eraf). De noemer blijft hetzelfde. Tik per som het antwoord tevoorschijn.",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "Hoeveel pizza heb je?"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "kolommen",
+                "verhouding": [
+                  "3fr",
+                  "1fr"
+                ],
+                "kolommen": [
+                  [
+                    {
+                      "type": "html",
+                      "html": "<div style=\"display:flex;align-items:center;gap:22px\"><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"104\" height=\"104\" viewBox=\"0 0 104 104\" style=\"display:block;margin:0 auto\"><path d=\"M52,52 L52.0,6.0 A46,46 0 0 1 95.7,37.8 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L95.7,37.8 A46,46 0 0 1 79.0,89.2 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L79.0,89.2 A46,46 0 0 1 25.0,89.2 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L25.0,89.2 A46,46 0 0 1 8.3,37.8 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L8.3,37.8 A46,46 0 0 1 52.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">5</span></span></div><span style=\"font-size:48px;font-weight:800\">+</span><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"104\" height=\"104\" viewBox=\"0 0 104 104\" style=\"display:block;margin:0 auto\"><path d=\"M52,52 L52.0,6.0 A46,46 0 0 1 95.7,37.8 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L95.7,37.8 A46,46 0 0 1 79.0,89.2 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L79.0,89.2 A46,46 0 0 1 25.0,89.2 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L25.0,89.2 A46,46 0 0 1 8.3,37.8 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L8.3,37.8 A46,46 0 0 1 52.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">5</span></span></div><span style=\"font-size:48px;font-weight:800\">=</span></div>"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"display:flex;align-items:center;gap:10px\"><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"104\" height=\"104\" viewBox=\"0 0 104 104\" style=\"display:block;margin:0 auto\"><path d=\"M52,52 L52.0,6.0 A46,46 0 0 1 95.7,37.8 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L95.7,37.8 A46,46 0 0 1 79.0,89.2 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L79.0,89.2 A46,46 0 0 1 25.0,89.2 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L25.0,89.2 A46,46 0 0 1 8.3,37.8 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L8.3,37.8 A46,46 0 0 1 52.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">5</span></span></div></div>"
+                    }
+                  ]
+                ]
+              },
+              {
+                "type": "kolommen",
+                "verhouding": [
+                  "3fr",
+                  "1fr"
+                ],
+                "kolommen": [
+                  [
+                    {
+                      "type": "html",
+                      "html": "<div style=\"display:flex;align-items:center;gap:22px\"><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"104\" height=\"104\" viewBox=\"0 0 104 104\" style=\"display:block;margin:0 auto\"><path d=\"M52,52 L52.0,6.0 A46,46 0 0 1 91.8,29.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L91.8,29.0 A46,46 0 0 1 91.8,75.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L91.8,75.0 A46,46 0 0 1 52.0,98.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L52.0,98.0 A46,46 0 0 1 12.2,75.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L12.2,75.0 A46,46 0 0 1 12.2,29.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L12.2,29.0 A46,46 0 0 1 52.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">6</span></span></div><span style=\"font-size:48px;font-weight:800\">+</span><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"104\" height=\"104\" viewBox=\"0 0 104 104\" style=\"display:block;margin:0 auto\"><path d=\"M52,52 L52.0,6.0 A46,46 0 0 1 91.8,29.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L91.8,29.0 A46,46 0 0 1 91.8,75.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L91.8,75.0 A46,46 0 0 1 52.0,98.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L52.0,98.0 A46,46 0 0 1 12.2,75.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L12.2,75.0 A46,46 0 0 1 12.2,29.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L12.2,29.0 A46,46 0 0 1 52.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">4</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">6</span></span></div><span style=\"font-size:48px;font-weight:800\">=</span></div>"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"display:flex;align-items:center;gap:10px\"><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"104\" height=\"104\" viewBox=\"0 0 104 104\" style=\"display:block;margin:0 auto\"><path d=\"M52,52 L52.0,6.0 A46,46 0 0 1 91.8,29.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L91.8,29.0 A46,46 0 0 1 91.8,75.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L91.8,75.0 A46,46 0 0 1 52.0,98.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L52.0,98.0 A46,46 0 0 1 12.2,75.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L12.2,75.0 A46,46 0 0 1 12.2,29.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L12.2,29.0 A46,46 0 0 1 52.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">5</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">6</span></span></div></div>"
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type": "kolommen",
+                "verhouding": [
+                  "3fr",
+                  "1fr"
+                ],
+                "kolommen": [
+                  [
+                    {
+                      "type": "html",
+                      "html": "<div style=\"display:flex;align-items:center;gap:22px\"><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"104\" height=\"104\" viewBox=\"0 0 104 104\" style=\"display:block;margin:0 auto\"><path d=\"M52,52 L52.0,6.0 A46,46 0 0 1 84.5,19.5 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L84.5,19.5 A46,46 0 0 1 98.0,52.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L98.0,52.0 A46,46 0 0 1 84.5,84.5 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L84.5,84.5 A46,46 0 0 1 52.0,98.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L52.0,98.0 A46,46 0 0 1 19.5,84.5 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L19.5,84.5 A46,46 0 0 1 6.0,52.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L6.0,52.0 A46,46 0 0 1 19.5,19.5 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L19.5,19.5 A46,46 0 0 1 52.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">8</span></span></div><span style=\"font-size:48px;font-weight:800\">+</span><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"104\" height=\"104\" viewBox=\"0 0 104 104\" style=\"display:block;margin:0 auto\"><path d=\"M52,52 L52.0,6.0 A46,46 0 0 1 84.5,19.5 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L84.5,19.5 A46,46 0 0 1 98.0,52.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L98.0,52.0 A46,46 0 0 1 84.5,84.5 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L84.5,84.5 A46,46 0 0 1 52.0,98.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L52.0,98.0 A46,46 0 0 1 19.5,84.5 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L19.5,84.5 A46,46 0 0 1 6.0,52.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L6.0,52.0 A46,46 0 0 1 19.5,19.5 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L19.5,19.5 A46,46 0 0 1 52.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">8</span></span></div><span style=\"font-size:48px;font-weight:800\">=</span></div>"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"display:flex;align-items:center;gap:10px\"><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"104\" height=\"104\" viewBox=\"0 0 104 104\" style=\"display:block;margin:0 auto\"><path d=\"M52,52 L52.0,6.0 A46,46 0 0 1 84.5,19.5 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L84.5,19.5 A46,46 0 0 1 98.0,52.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L98.0,52.0 A46,46 0 0 1 84.5,84.5 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L84.5,84.5 A46,46 0 0 1 52.0,98.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L52.0,98.0 A46,46 0 0 1 19.5,84.5 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L19.5,84.5 A46,46 0 0 1 6.0,52.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L6.0,52.0 A46,46 0 0 1 19.5,19.5 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L19.5,19.5 A46,46 0 0 1 52.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">5</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">8</span></span></div></div>"
+                    }
+                  ]
+                ]
+              },
+              {
+                "type": "kolommen",
+                "verhouding": [
+                  "3fr",
+                  "1fr"
+                ],
+                "kolommen": [
+                  [
+                    {
+                      "type": "html",
+                      "html": "<div style=\"display:flex;align-items:center;gap:22px\"><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"104\" height=\"104\" viewBox=\"0 0 104 104\" style=\"display:block;margin:0 auto\"><path d=\"M52,52 L52.0,6.0 A46,46 0 0 1 95.7,37.8 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L95.7,37.8 A46,46 0 0 1 79.0,89.2 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L79.0,89.2 A46,46 0 0 1 25.0,89.2 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L25.0,89.2 A46,46 0 0 1 8.3,37.8 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L8.3,37.8 A46,46 0 0 1 52.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">4</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">5</span></span></div><span style=\"font-size:48px;font-weight:800\">−</span><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"104\" height=\"104\" viewBox=\"0 0 104 104\" style=\"display:block;margin:0 auto\"><path d=\"M52,52 L52.0,6.0 A46,46 0 0 1 95.7,37.8 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L95.7,37.8 A46,46 0 0 1 79.0,89.2 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L79.0,89.2 A46,46 0 0 1 25.0,89.2 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L25.0,89.2 A46,46 0 0 1 8.3,37.8 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L8.3,37.8 A46,46 0 0 1 52.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">5</span></span></div><span style=\"font-size:48px;font-weight:800\">=</span></div>"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "html",
+                      "verborgen": true,
+                      "html": "<div style=\"display:flex;align-items:center;gap:10px\"><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"104\" height=\"104\" viewBox=\"0 0 104 104\" style=\"display:block;margin:0 auto\"><path d=\"M52,52 L52.0,6.0 A46,46 0 0 1 95.7,37.8 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L95.7,37.8 A46,46 0 0 1 79.0,89.2 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L79.0,89.2 A46,46 0 0 1 25.0,89.2 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L25.0,89.2 A46,46 0 0 1 8.3,37.8 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M52,52 L8.3,37.8 A46,46 0 0 1 52.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">5</span></span></div></div>"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — begrip: ongelijknamige breuken",
+      "achtergrond": "leeg",
+      "notitie": "Wat gaat hier mis? Laat de kinderen nadenken. 3/9? 3/3 is een hele pizza, 3/6 is een halve: allebei fout. De stukken zijn niet even groot! Verdeel de pizza van 2/3 hieronder zelf in zesden (teken de streepjes): 2/3 = 4/6. Dan 4/6 + 1/6 = 5/6.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "vraag",
+                "tekst": "Wat gaat hier **mis**?"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:22px\"><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"132\" height=\"132\" viewBox=\"0 0 132 132\" style=\"display:block;margin:0 auto\"><path d=\"M66,66 L66.0,6.0 A60,60 0 0 1 118.0,96.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M66,66 L118.0,96.0 A60,60 0 0 1 14.0,96.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M66,66 L14.0,96.0 A60,60 0 0 1 66.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span></div><span style=\"font-size:48px;font-weight:800\">+</span><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px\"><svg width=\"132\" height=\"132\" viewBox=\"0 0 132 132\" style=\"display:block;margin:0 auto\"><path d=\"M66,66 L66.0,6.0 A60,60 0 0 1 118.0,36.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M66,66 L118.0,36.0 A60,60 0 0 1 118.0,96.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M66,66 L118.0,96.0 A60,60 0 0 1 66.0,126.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M66,66 L66.0,126.0 A60,60 0 0 1 14.0,96.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M66,66 L14.0,96.0 A60,60 0 0 1 14.0,36.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M66,66 L14.0,36.0 A60,60 0 0 1 66.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">6</span></span></div><span style=\"font-size:48px;font-weight:800\">= ?</span></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"font-size:30px;line-height:1.5\"><b>3/3?</b> Dat is een hele pizza. ✗<br><b>3/6?</b> Dat is een halve pizza. ✗</div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"background:#fff6e0;border:3px solid #d9822b;border-radius:14px;padding:10px 16px;font-size:30px;font-weight:700\">De stukken zijn niet even groot!</div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"font-size:30px;font-weight:700;text-align:center\">Maak er zesden van:</div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;justify-content:center\"><svg width=\"272\" height=\"272\" viewBox=\"0 0 272 272\" style=\"display:block;margin:0 auto\"><path d=\"M136,136 L136.0,6.0 A130,130 0 0 1 248.6,201.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M136,136 L248.6,201.0 A130,130 0 0 1 23.4,201.0 Z\" fill=\"#f2b54a\" stroke=\"#a8681c\" stroke-width=\"3\"/><path d=\"M136,136 L23.4,201.0 A130,130 0 0 1 136.0,6.0 Z\" fill=\"#fff8e8\" stroke=\"#a8681c\" stroke-width=\"3\"/></svg></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"display:flex;align-items:center;justify-content:center;gap:16px;font-size:44px;font-weight:800;color:#2f9e63\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:44px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span><span>=</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:44px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">4</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">6</span></span></div>"
+              },
+              {
+                "type": "html",
+                "verborgen": true,
+                "html": "<div style=\"display:flex;align-items:center;justify-content:center;gap:16px;font-size:44px;font-weight:800;color:#2f9e63\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:44px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">4</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">6</span></span><span>+</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:44px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">6</span></span><span>=</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:44px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">5</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">6</span></span></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
       "fase": "Uitleg — begrip: gelijknamig maken",
       "achtergrond": "leeg",
       "ruim": true,
