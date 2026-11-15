@@ -374,6 +374,25 @@
       "gemaakt": "2026-10-14"
     },
     {
+      "id": "g7-rekenen-breuken-optellen-aftrekken",
+      "titel": "Breuken optellen en aftrekken",
+      "groep": "7",
+      "vak": "Rekenen",
+      "onderwerp": "Breuken",
+      "edi": true,
+      "samenvatting": "Gelijknamige en ongelijknamige breuken optellen en aftrekken, waarbij je één breuk gelijknamig maakt.",
+      "trefwoorden": [
+        "breuken",
+        "optellen",
+        "aftrekken",
+        "gelijknamig",
+        "ongelijknamig",
+        "noemer",
+        "teller"
+      ],
+      "gemaakt": "2026-11-15"
+    },
+    {
       "id": "g7-rekenen-cijferend-vermenigvuldigen",
       "titel": "Cijferend vermenigvuldigen (64 × 32)",
       "groep": "7",
