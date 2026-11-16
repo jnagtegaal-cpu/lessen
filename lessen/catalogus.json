@@ -36,6 +36,40 @@
       ]
     },
     {
+      "id": "g7-8-engels-what-time-is-it",
+      "titel": "What time is it? Klokkijken in het Engels",
+      "groep": "7-8",
+      "vak": "Engels",
+      "blok": "Unit 3, lesson 1 (Just in time)",
+      "onderwerp": "Klokkijken",
+      "edi": true,
+      "samenvatting": "EDI-les Engels: hele uren, kwartieren en halve uren benoemen met een stappenplan, met twee loopspellen (Find your match en What time is it?) en een extra deel met minuten.",
+      "trefwoorden": [
+        "Engels",
+        "klokkijken",
+        "time",
+        "what time is it",
+        "o'clock",
+        "half past",
+        "quarter past",
+        "quarter to",
+        "loopspel",
+        "kaartjes",
+        "EDI"
+      ],
+      "gemaakt": "2026-11-16",
+      "bijlagen": [
+        {
+          "titel": "Spel 1: Find your match (kaartjes)",
+          "bestand": "spel1-find-your-match.pdf"
+        },
+        {
+          "titel": "Spel 2: What time is it? (vouwkaartjes)",
+          "bestand": "spel2-what-time-is-it.pdf"
+        }
+      ]
+    },
+    {
       "id": "g7-8-goedemorgen-dinsdag",
       "titel": "Goedemorgen: dagschema dinsdag 10 november",
       "groep": "7-8",
