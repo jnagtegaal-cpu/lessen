@@ -76,7 +76,7 @@
       "vak": "Dagopening",
       "onderwerp": "Dagschema",
       "duur": 10,
-      "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema (met Engels, weektaak en beloning) en een welkom.",
+      "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema (met brandoefening, Engels, weektaak en beloning) en een welkom.",
       "trefwoorden": [
         "goedemorgen",
         "dagschema",
@@ -84,7 +84,8 @@
         "dinsdag",
         "engels",
         "weektaak",
-        "beloning"
+        "beloning",
+        "brandoefening"
       ],
       "gemaakt": "2026-11-17"
     },

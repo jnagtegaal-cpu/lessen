@@ -5,7 +5,7 @@
   "vak": "Dagopening",
   "onderwerp": "Dagschema",
   "duur": 10,
-  "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema (met Engels, weektaak en beloning) en een welkom.",
+  "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema (met brandoefening, Engels, weektaak en beloning) en een welkom.",
   "trefwoorden": [
     "goedemorgen",
     "dagschema",
@@ -13,7 +13,8 @@
     "dinsdag",
     "engels",
     "weektaak",
-    "beloning"
+    "beloning",
+    "brandoefening"
   ],
   "gemaakt": "2026-11-17",
   "schermen": [
@@ -31,7 +32,7 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;flex-direction:column;gap:10px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🇬🇧</span><span>Engels</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">📋</span><span>Werken aan de weektaak</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🎉</span><span>Beloning</span></div></div>"
+                "html": "<div style=\"display:flex;flex-direction:column;gap:9px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🚒</span><span>Brandoefening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🇬🇧</span><span>Engels</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📋</span><span>Werken aan de weektaak</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:32px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🎉</span><span>Beloning</span></div></div>"
               }
             ],
             [
@@ -58,13 +59,16 @@
         "wat": "Rekenen"
       },
       {
+        "wat": "Pauze"
+      },
+      {
+        "wat": "Brandoefening"
+      },
+      {
         "wat": "Spelling"
       },
       {
         "wat": "Engels"
-      },
-      {
-        "wat": "Pauze"
       },
       {
         "wat": "Werken aan de weektaak"
