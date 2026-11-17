@@ -24,14 +24,15 @@
    "fase": "Vouwen: start",
    "achtergrond": "leeg",
    "uitlijning": "midden",
-   "notitie": "Klein groepje. Elk kind krijgt een rechthoekig blaadje en een kleurpotlood. Vertel: we gaan vouwen en kijken wat er met een breuk gebeurt.",
+   "notitie": "Lees het lesdoel samen. Klein groepje: elk kind krijgt een rechthoekig blaadje en een kleurpotlood. Vertel: we gaan vouwen en kijken wat er met een breuk gebeurt.",
    "blokken": [
     {
      "type": "html",
-     "html": "<div style=\"text-align:center\"><div style=\"font-size:110px;line-height:1\">📄✂️</div><div style=\"font-size:70px;font-weight:800;margin-top:20px\">We gaan vouwen!</div><div style=\"font-size:38px;color:#5b6b63;margin-top:20px\">Pak een blaadje en een kleurpotlood.</div></div>"
+     "html": "<div style=\"text-align:center\"><div style=\"font-size:64px;font-weight:800;line-height:1.25\">Ik kan laten zien dat breuken<br><span style=\"color:#d9822b\">even groot</span> kunnen zijn.</div><div style=\"font-size:100px;line-height:1;margin-top:40px\">📄✏️</div><div style=\"font-size:52px;font-weight:800;margin-top:16px\">We gaan vouwen!</div><div style=\"font-size:34px;color:#5b6b63;margin-top:14px\">Pak een blaadje en een kleurpotlood.</div></div>"
     }
    ],
-   "anker": "start"
+   "anker": "start",
+   "lesdoelVerbergen": true
   },
   {
    "fase": "Vouwen: vouw 1",
@@ -1074,6 +1075,10 @@
   ],
   "verloop": [
    {
+    "fase": "Lesdoel",
+    "wat": "Ik kan laten zien dat breuken even groot kunnen zijn."
+   },
+   {
     "fase": "Vouwen",
     "wat": "Klein groepje. Blaadje dubbel vouwen en de helft kleuren: ½. Steeds nog een keer dubbel vouwen: 2/4, 4/8, 8/16. Per keer vragen: hoeveel stukken, hoeveel gekleurd, welke breuk, is er meer of minder gekleurd?"
    },
@@ -1090,5 +1095,7 @@
     "wat": "Kiezen: breuken vereenvoudigen (3 opgaven) en/of breuken optellen en aftrekken (gelijknamig maken en 6 opgaven), met de stappenplannen van de eerdere lessen."
    }
   ]
- }
+ },
+ "lesdoel": "Ik kan laten zien dat breuken even groot kunnen zijn.",
+ "lesdoelInHoek": true
 }
