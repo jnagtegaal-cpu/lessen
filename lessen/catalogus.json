@@ -350,7 +350,7 @@
     },
     {
       "id": "g7-8-spelling-dictee",
-      "titel": "Dictee: groep 8 woorden met th en wr-, groep 7 woorden met i en ie en een Latijns voorvoegsel",
+      "titel": "Dictee: groep 8 woorden met wr- en th, groep 7 woorden met ch die klinkt als sj en woorden met i en ie",
       "groep": "7-8",
       "vak": "Spelling",
       "onderwerp": "Dictee",
@@ -360,11 +360,10 @@
         "spelling",
         "th",
         "wr",
-        "i en ie",
-        "latijns voorvoegsel",
-        "obsessie"
+        "ch als sj",
+        "i en ie"
       ],
-      "gemaakt": "2026-11-16",
+      "gemaakt": "2026-11-17",
       "pdfs": false
     },
     {
