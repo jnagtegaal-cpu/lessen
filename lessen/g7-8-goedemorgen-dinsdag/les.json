@@ -1,20 +1,21 @@
 {
   "id": "g7-8-goedemorgen-dinsdag",
-  "titel": "Goedemorgen: dagschema dinsdag 10 november",
+  "titel": "Goedemorgen: dagschema dinsdag 17 november",
   "groep": "7-8",
   "vak": "Dagopening",
   "onderwerp": "Dagschema",
   "duur": 10,
-  "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema (groep 8 Cito begrijpend lezen en werkwoordspelling) en Bijbel open bij 2 Koningen 1.",
+  "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema (met Engels, weektaak en beloning) en een welkom.",
   "trefwoorden": [
     "goedemorgen",
     "dagschema",
     "dagopening",
     "dinsdag",
-    "cito",
-    "wetenswaardig"
+    "engels",
+    "weektaak",
+    "beloning"
   ],
-  "gemaakt": "2026-11-10",
+  "gemaakt": "2026-11-17",
   "schermen": [
     {
       "fase": "Goedemorgen",
@@ -30,52 +31,52 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;flex-direction:column;gap:10px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening <span style=\"font-weight:500\">(2 Koningen)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen <span style=\"font-weight:500\">(groep 8: Cito begrijpend lezen)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling <span style=\"font-weight:500\">(groep 8: Cito werkwoordspelling)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">🌍</span><span>Wetenswaardig</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.55\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
+                "html": "<div style=\"display:flex;flex-direction:column;gap:10px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🇬🇧</span><span>Engels</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">📋</span><span>Werken aan de weektaak</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🎉</span><span>Beloning</span></div></div>"
               }
             ],
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:24px;min-height:600px\"><div style=\"font-size:96px;line-height:1\">📖</div><div style=\"font-size:44px;font-weight:800;line-height:1.3\">Zoek <span style=\"color:#b5541c\">2 Koningen 1</span> op in je Bijbel.</div></div>"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:24px;min-height:560px\"><div style=\"font-size:90px;line-height:1\">👋</div><div style=\"font-size:50px;font-weight:800;line-height:1.25\">Welkom op deze dinsdag!</div><div style=\"font-size:38px;line-height:1.4\">Leuk dat jullie er zijn. 😊</div></div>"
               }
             ]
           ]
         }
       ],
-      "notitie": "Dagschema voor dinsdag 10 november. Bij binnenkomst: zoek 2 Koningen 1 op in je Bijbel."
+      "notitie": "Dagschema voor dinsdag 17 november. Welkom op het bord, geen vraag."
     }
   ],
   "voorbereiding": {
     "verloop": [
       {
-        "wat": "Bij binnenkomst: zoek 2 Koningen 1 op in je Bijbel."
+        "wat": "Bij binnenkomst: welkom op het bord"
       },
       {
-        "wat": "Dagopening (2 Koningen)"
+        "wat": "Dagopening"
       },
       {
-        "wat": "Rekenen (groep 8: Cito begrijpend lezen)"
+        "wat": "Rekenen"
       },
       {
-        "wat": "Pauze"
+        "wat": "Spelling"
       },
       {
-        "wat": "Spelling (groep 8: Cito werkwoordspelling)"
-      },
-      {
-        "wat": "Taal"
+        "wat": "Engels"
       },
       {
         "wat": "Pauze"
+      },
+      {
+        "wat": "Werken aan de weektaak"
       },
       {
         "wat": "Stillezen"
       },
       {
-        "wat": "Wetenswaardig"
+        "wat": "Taal"
       },
       {
-        "wat": "Afsluiten"
+        "wat": "Beloning"
       }
     ]
   }
