@@ -14,7 +14,7 @@
     "gastles",
     "dode hoek",
     "grondwet",
-    "wonderlijk gemaakt"
+    "wetenswaardig"
   ],
   "gemaakt": "2026-11-19",
   "schermen": [
@@ -32,7 +32,7 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;flex-direction:column;gap:10px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🚛</span><span>Gastles dode hoek</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">📜</span><span>Gastles Grondwet</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">✨</span><span>Wonderlijk gemaakt</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
+                "html": "<div style=\"display:flex;flex-direction:column;gap:10px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🚛</span><span>Gastles dode hoek</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">📜</span><span>Gastles Grondwet</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🌍</span><span>Wetenswaardig</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
               }
             ],
             [
@@ -71,7 +71,7 @@
         "wat": "Stillezen"
       },
       {
-        "wat": "Wonderlijk gemaakt"
+        "wat": "Wetenswaardig"
       },
       {
         "wat": "Afsluiten"
