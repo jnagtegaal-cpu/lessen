@@ -1,21 +1,22 @@
 {
   "id": "g7-8-goedemorgen-donderdag",
-  "titel": "Goedemorgen: dagschema donderdag 12 november",
+  "titel": "Goedemorgen: dagschema donderdag 19 november",
   "groep": "7-8",
   "vak": "Dagopening",
   "onderwerp": "Dagschema",
   "duur": 10,
-  "samenvatting": "Goedemorgenpagina voor donderdag met het dagschema (groep 8 Cito bij rekenen en spelling).",
+  "samenvatting": "Goedemorgenpagina voor donderdag met het dagschema (gastles dode hoek en gastles Grondwet) en de vraag: weet jij wat de Grondwet is?",
   "trefwoorden": [
     "goedemorgen",
     "dagschema",
     "dagopening",
     "donderdag",
-    "cito",
-    "wetenswaardig",
+    "gastles",
+    "dode hoek",
+    "grondwet",
     "wonderlijk gemaakt"
   ],
-  "gemaakt": "2026-11-12",
+  "gemaakt": "2026-11-19",
   "schermen": [
     {
       "fase": "Goedemorgen",
@@ -31,119 +32,40 @@
             [
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;flex-direction:column;gap:10px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen <span style=\"font-weight:500\">(groep 8: Cito)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🌍</span><span>Wetenswaardig</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling <span style=\"font-weight:500\">(groep 8: Cito, juf Alet is in de klas)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🇬🇧</span><span>Engels <span style=\"font-weight:500\">(toets)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">💛</span><span>Wonderlijk gemaakt</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:30px;font-weight:700;line-height:1.45\"><span style=\"width:50px;text-align:center\">🏠</span><span>Naar huis</span></div></div>"
+                "html": "<div style=\"display:flex;flex-direction:column;gap:10px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🌞</span><span>Dagopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🚛</span><span>Gastles dode hoek</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">📜</span><span>Gastles Grondwet</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">✨</span><span>Wonderlijk gemaakt</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:33px;font-weight:700;line-height:1.6\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
               }
             ],
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:24px;min-height:600px\"><div style=\"font-size:40px;font-weight:800;line-height:1.25;color:#b5541c\">Vraagje</div><div style=\"font-size:42px;line-height:1.35\"><b>Heb jij wel eens een wonder meegemaakt?</b></div><div style=\"font-size:30px;line-height:1.35;background:#ffffff;border-radius:14px;padding:12px 16px\">📖 Pak je Bijbel en zoek <b style=\"white-space:nowrap\">2 Koningen 6:1</b> op.</div></div>"
+                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:24px;min-height:560px\"><div style=\"font-size:40px;font-weight:800;line-height:1.25;color:#b5541c\">Vraagje</div><div style=\"font-size:90px;line-height:1\">📜</div><div style=\"font-size:48px;line-height:1.3\"><b>Weet jij wat de Grondwet is?</b></div></div>"
               }
             ]
           ]
         }
       ],
-      "notitie": "Dagschema voor donderdag 12 november. Vraagje bij binnenkomst: heb jij wel eens een wonder meegemaakt? Bijbel pakken en 2 Koningen 6:1 opzoeken."
-    },
-    {
-      "fase": "Dagopening: Gangkant begint",
-      "achtergrond": "leeg",
-      "uitlijning": "midden",
-      "notitie": "Dagopening. Eerst denkt iedereen na of leest het nog eens. Daarna begint de gangkant: vertel aan je schoudermaatje wat je denkt. Kun je niks bedenken? Vertel dan zo precies mogelijk wat er gebeurt bij dit wonder. Alleen de vraag en 'denk er allemaal eens over na' staan meteen in beeld; de rest tik je één voor één aan.",
-      "blokken": [
-        {
-          "type": "kop",
-          "tekst": "Wat kunnen we leren van dit wonder?",
-          "stijl": "font-size:64px;text-align:center"
-        },
-        {
-          "type": "tekst",
-          "tekst": "Denk er allemaal eens over na. Of lees het nog eens.",
-          "stijl": "font-size:40px;text-align:center"
-        },
-        {
-          "type": "html",
-          "html": "<div style=\"text-align:center;margin:20px 0\"><span style=\"display:inline-block;background:#1f6fd1;color:#fff;font-size:44px;font-weight:800;border-radius:999px;padding:10px 40px\">Gangkant begint</span></div>",
-          "verborgen": true
-        },
-        {
-          "type": "tekst",
-          "tekst": "Vertel aan je **schoudermaatje** wat je denkt.",
-          "stijl": "font-size:36px;text-align:center",
-          "verborgen": true
-        },
-        {
-          "type": "tekst",
-          "tekst": "Kun je niks bedenken? Vertel dan **zo precies mogelijk** wat er gebeurt bij dit wonder.",
-          "stijl": "font-size:30px;text-align:center;color:#5b6b63",
-          "verborgen": true
-        }
-      ]
-    },
-    {
-      "fase": "Dagopening: Raamkant begint",
-      "achtergrond": "leeg",
-      "uitlijning": "midden",
-      "notitie": "Dagopening. Eerst denkt iedereen na of leest het nog eens. Daarna begint de raamkant: vertel aan je schoudermaatje wat je denkt. Kun je niks bedenken? Vertel dan zo precies mogelijk wat er gebeurt bij dit wonder. Alleen de vraag en 'denk er allemaal eens over na' staan meteen in beeld; de rest tik je één voor één aan.",
-      "blokken": [
-        {
-          "type": "kop",
-          "tekst": "Wat kunnen we leren van dit wonder?",
-          "stijl": "font-size:64px;text-align:center"
-        },
-        {
-          "type": "tekst",
-          "tekst": "Denk er allemaal eens over na. Of lees het nog eens.",
-          "stijl": "font-size:40px;text-align:center"
-        },
-        {
-          "type": "html",
-          "html": "<div style=\"text-align:center;margin:20px 0\"><span style=\"display:inline-block;background:#1f6fd1;color:#fff;font-size:44px;font-weight:800;border-radius:999px;padding:10px 40px\">Raamkant begint</span></div>",
-          "verborgen": true
-        },
-        {
-          "type": "tekst",
-          "tekst": "Vertel aan je **schoudermaatje** wat je denkt.",
-          "stijl": "font-size:36px;text-align:center",
-          "verborgen": true
-        },
-        {
-          "type": "tekst",
-          "tekst": "Kun je niks bedenken? Vertel dan **zo precies mogelijk** wat er gebeurt bij dit wonder.",
-          "stijl": "font-size:30px;text-align:center;color:#5b6b63",
-          "verborgen": true
-        }
-      ]
+      "notitie": "Dagschema voor donderdag 19 november. Vraagje bij binnenkomst: weet jij wat de Grondwet is?"
     }
   ],
   "voorbereiding": {
     "verloop": [
       {
-        "wat": "Bij binnenkomst: vraagje op het bord: heb jij wel eens een wonder meegemaakt? Bijbel pakken en 2 Koningen 6:1 opzoeken."
+        "wat": "Bij binnenkomst: weet jij wat de Grondwet is?"
       },
       {
         "wat": "Dagopening"
       },
       {
-        "wat": "Dagopening: wat kunnen we leren van dit wonder? Eerst de gangkant, dan de raamkant vertelt het aan het schoudermaatje (scherm 2 en 3)."
-      },
-      {
-        "wat": "Rekenen (groep 8: Cito)"
+        "wat": "Gastles dode hoek"
       },
       {
         "wat": "Pauze"
       },
       {
-        "wat": "Wetenswaardig"
-      },
-      {
-        "wat": "Spelling (groep 8: Cito, juf Alet is in de klas)"
+        "wat": "Gastles Grondwet"
       },
       {
         "wat": "Pauze"
-      },
-      {
-        "wat": "Engels (toets)"
       },
       {
         "wat": "Stillezen"
@@ -152,7 +74,7 @@
         "wat": "Wonderlijk gemaakt"
       },
       {
-        "wat": "Naar huis"
+        "wat": "Afsluiten"
       }
     ]
   }
