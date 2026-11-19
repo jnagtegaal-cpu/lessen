@@ -535,6 +535,25 @@
       "gemaakt": "2026-10-12"
     },
     {
+      "id": "g8-rekenen-breuken-vermenigvuldigen",
+      "titel": "Breuken vermenigvuldigen",
+      "groep": "8",
+      "vak": "Rekenen",
+      "onderwerp": "Breuken",
+      "edi": true,
+      "samenvatting": "Een breuk keer een breuk: keer = 'setjes van', dus 1/3 × 3/4 = het derde deel van 3/4. Je herschrijft de tweede breuk zodat je er makkelijk het deel van kunt nemen (geen 'boven keer boven' trucje).",
+      "trefwoorden": [
+        "breuken",
+        "vermenigvuldigen",
+        "keer",
+        "deel van",
+        "herschrijven",
+        "cake",
+        "stappenplan"
+      ],
+      "gemaakt": "2026-11-19"
+    },
+    {
       "id": "g8-rekenen-kubieke-maten-liter",
       "titel": "Kubieke maten omrekenen in litermaten en andersom",
       "groep": "8",

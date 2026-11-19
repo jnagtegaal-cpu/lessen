@@ -1,0 +1,582 @@
+{
+  "id": "g8-rekenen-breuken-vermenigvuldigen",
+  "titel": "Breuken vermenigvuldigen",
+  "groep": "8",
+  "vak": "Rekenen",
+  "onderwerp": "Breuken",
+  "edi": true,
+  "samenvatting": "Een breuk keer een breuk: keer = 'setjes van', dus 1/3 × 3/4 = het derde deel van 3/4. Je herschrijft de tweede breuk zodat je er makkelijk het deel van kunt nemen (geen 'boven keer boven' trucje).",
+  "trefwoorden": [
+    "breuken",
+    "vermenigvuldigen",
+    "keer",
+    "deel van",
+    "herschrijven",
+    "cake",
+    "stappenplan"
+  ],
+  "gemaakt": "2026-11-19",
+  "lesdoel": "Ik kan breuken vermenigvuldigen.",
+  "lesdoelInHoek": true,
+  "schermen": [
+    {
+      "fase": "Activeren voorkennis: wat is keer?",
+      "achtergrond": "leeg",
+      "lesdoelVerbergen": true,
+      "notitie": "Wat betekent keer eigenlijk? Maatjes overleggen kort, dan een willekeurige beurt. Tik daarna de uitleg tevoorschijn: 5 × 4 = 5 setjes van 4. Dan 1/2 × 8: een half setje van 8 = de helft van 8 = 4.",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "Wat betekent **keer** eigenlijk?"
+        },
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center;font-size:64px;font-weight:800\">5 × 4</div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;gap:12px;justify-content:center;flex-wrap:wrap\"><span style=\"display:inline-flex;flex-wrap:wrap;width:192px;justify-content:center;border:3px dashed #8fb5a0;border-radius:14px;padding:8px\"><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span></span><span style=\"display:inline-flex;flex-wrap:wrap;width:192px;justify-content:center;border:3px dashed #8fb5a0;border-radius:14px;padding:8px\"><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span></span><span style=\"display:inline-flex;flex-wrap:wrap;width:192px;justify-content:center;border:3px dashed #8fb5a0;border-radius:14px;padding:8px\"><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span></span><span style=\"display:inline-flex;flex-wrap:wrap;width:192px;justify-content:center;border:3px dashed #8fb5a0;border-radius:14px;padding:8px\"><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span></span><span style=\"display:inline-flex;flex-wrap:wrap;width:192px;justify-content:center;border:3px dashed #8fb5a0;border-radius:14px;padding:8px\"><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span></span></div>",
+                "verborgen": true
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center;font-size:40px;font-weight:700\"><span style=\"color:#d9822b\">5 setjes van</span> 4</div>",
+                "verborgen": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center\"><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:56px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:56px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">2</span></span><span>×</span><span>8</span></span></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;justify-content:center\"><span style=\"display:inline-flex;flex-wrap:wrap;width:192px;justify-content:center;border:3px dashed #8fb5a0;border-radius:14px;padding:8px\"><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#f2a33a;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#fff;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#fff;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#fff;border:3px solid #1d2b24;margin:3px\"></span><span style=\"display:inline-block;width:30px;height:30px;border-radius:50%;background:#fff;border:3px solid #1d2b24;margin:3px\"></span></span></div>",
+                "verborgen": true
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"text-align:center;font-size:40px;font-weight:700\"><span style=\"color:#d9822b\">een half setje van</span> 8 = 4</div>",
+                "verborgen": true
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"background:#fff6e0;border:3px solid #d9822b;border-radius:16px;padding:14px 22px;font-size:36px;line-height:1.35\"><b style=\"color:#b5541c\">Keer</b> = <b>setjes van</b> &nbsp;·&nbsp; 5 × 4 = 5 setjes van 4</div>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Lesdoel",
+      "achtergrond": "leeg",
+      "uitlijning": "midden",
+      "lesdoelVerbergen": true,
+      "notitie": "Ik lees voor, de klas leest mee, maatjes lezen het aan elkaar voor, dan een willekeurige beurt.",
+      "blokken": [
+        {
+          "type": "html",
+          "html": "<div style=\"font-size:84px;line-height:1.25;text-align:center;font-weight:700\">Ik kan <span style=\"color:#d9822b\">breuken</span> <span style=\"color:#1f6fd1\">vermenigvuldigen</span>.</div><div style=\"margin-top:24px;text-align:center;font-size:26px;color:#5b6b63\"><span style=\"color:#d9822b;font-weight:700\">oranje</span> = begrip · <span style=\"color:#1f6fd1;font-weight:700\">blauw</span> = vaardigheid</div><div style=\"margin-top:40px;text-align:center\"><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:72px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:72px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:72px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:4px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span></span></div>"
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — begrip: keer met een breuk",
+      "achtergrond": "leeg",
+      "notitie": "Er ligt nog 3/4 cake. Je eet een derde deel daarvan op. Hoeveel cake eet je? Eerst de cake, dan tikken: het derde deel van 3 stukken is 1 stuk, dus 1/4 van de hele cake. Dan de definitie tevoorschijn tikken en samen lezen.",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "Er ligt nog **3/4 cake**. Je eet **een derde deel** daarvan op. Hoeveel van de hele cake eet je op?"
+        },
+        {
+          "type": "kolommen",
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:10px\"><svg width=\"428\" height=\"238\" viewBox=\"0 0 428 238\"><rect x=\"4.0\" y=\"4.0\" width=\"105.0\" height=\"230.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"109.0\" y=\"4.0\" width=\"105.0\" height=\"230.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"214.0\" y=\"4.0\" width=\"105.0\" height=\"230.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"319.0\" y=\"4.0\" width=\"105.0\" height=\"230.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/></svg><div style=\"font-size:34px;font-weight:700;text-align:center;line-height:1.3\">Er is nog <span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span> cake</div></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:10px\"><svg width=\"428\" height=\"238\" viewBox=\"0 0 428 238\"><rect x=\"4.0\" y=\"4.0\" width=\"105.0\" height=\"230.0\" fill=\"#d6453d\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"109.0\" y=\"4.0\" width=\"105.0\" height=\"230.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"214.0\" y=\"4.0\" width=\"105.0\" height=\"230.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"319.0\" y=\"4.0\" width=\"105.0\" height=\"230.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/></svg><div style=\"font-size:34px;font-weight:700;text-align:center;line-height:1.3\">Het derde deel van <span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span> = <span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:34px;color:#d6453d;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span></div></div>",
+                "verborgen": true
+              }
+            ]
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"background:#fff6e0;border:3px solid #d9822b;border-radius:16px;padding:14px 22px;font-size:36px;line-height:1.35\"><b style=\"color:#b5541c\">Keer met een breuk:</b> je neemt <b>een deel van</b>.<br><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:40px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:40px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:40px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span></span> = <b>het derde deel van</b> <span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:40px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span></div>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — begrip: anders opschrijven",
+      "achtergrond": "leeg",
+      "notitie": "1/2 × 1/3 = een half setje van 1/3. Er ligt 1/3 cake. De helft van één stuk? Lastig! Snijd elk stuk in tweeën: 1/3 = 2/6. Nu is de helft makkelijk: 1/6. Laat zien: je schrijft de breuk anders op, zodat je er makkelijk het deel van kunt nemen.",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "Er ligt nog **1/3 cake**. Je eet **de helft** daarvan op. Hoeveel van de hele cake is dat?"
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"text-align:center\"><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:48px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:48px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">2</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:48px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span></span></div>"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:10px\"><svg width=\"338\" height=\"198\" viewBox=\"0 0 338 198\"><rect x=\"4.0\" y=\"4.0\" width=\"110.0\" height=\"190.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"114.0\" y=\"4.0\" width=\"110.0\" height=\"190.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/><rect x=\"224.0\" y=\"4.0\" width=\"110.0\" height=\"190.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/></svg><div style=\"font-size:34px;font-weight:700;text-align:center;line-height:1.3\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:32px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span> cake</div></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:10px\"><svg width=\"338\" height=\"198\" viewBox=\"0 0 338 198\"><rect x=\"4.0\" y=\"4.0\" width=\"110.0\" height=\"95.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"4.0\" y=\"99.0\" width=\"110.0\" height=\"95.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"114.0\" y=\"4.0\" width=\"110.0\" height=\"95.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/><rect x=\"114.0\" y=\"99.0\" width=\"110.0\" height=\"95.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/><rect x=\"224.0\" y=\"4.0\" width=\"110.0\" height=\"95.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/><rect x=\"224.0\" y=\"99.0\" width=\"110.0\" height=\"95.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/></svg><div style=\"font-size:34px;font-weight:700;text-align:center;line-height:1.3\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:32px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span> = <span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:32px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">6</span></span></div></div>",
+                "verborgen": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:10px\"><svg width=\"338\" height=\"198\" viewBox=\"0 0 338 198\"><rect x=\"4.0\" y=\"4.0\" width=\"110.0\" height=\"95.0\" fill=\"#d6453d\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"4.0\" y=\"99.0\" width=\"110.0\" height=\"95.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"114.0\" y=\"4.0\" width=\"110.0\" height=\"95.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/><rect x=\"114.0\" y=\"99.0\" width=\"110.0\" height=\"95.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/><rect x=\"224.0\" y=\"4.0\" width=\"110.0\" height=\"95.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/><rect x=\"224.0\" y=\"99.0\" width=\"110.0\" height=\"95.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/></svg><div style=\"font-size:34px;font-weight:700;text-align:center;line-height:1.3\">de helft van <span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:32px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">6</span></span> = <span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:32px;color:#d6453d;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">6</span></span></div></div>",
+                "verborgen": true
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — begrip: controle van begrip",
+      "achtergrond": "leeg",
+      "notitie": "Vraag 1: maatjes overleggen, dan een willekeurige beurt. Antwoord A: je neemt een deel van 3/4. B is plus. Vraag 2: kleiner, want je neemt er een deel van. Keer met een breuk (kleiner dan 1) maakt het dus kleiner, niet groter!",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "1. Welk verhaal past bij **1/3 × 3/4**?"
+        },
+        {
+          "type": "lijst",
+          "items": [
+            "**A.** Er ligt 3/4 pizza. Je eet een derde deel daarvan op.",
+            "**B.** Er ligt 3/4 pizza. Je krijgt er 1/3 pizza bij."
+          ]
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"font-size:36px;font-weight:700;color:#2f9e63\">A: je neemt een deel van 3/4.</div>",
+          "verborgen": true
+        },
+        {
+          "type": "vraag",
+          "tekst": "2. Is **1/2 × 1/3** groter of kleiner dan 1/3? Waarom?"
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"font-size:36px;font-weight:700;color:#2f9e63\">Kleiner! Je neemt er een deel van.</div>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — vaardigheid: stappenplan",
+      "achtergrond": "leeg",
+      "notitie": "Stappenplan één voor één tevoorschijn tikken en samen lezen. Let op: je herschrijft alleen de tweede breuk. Je maakt niet gelijknamig!",
+      "blokken": [
+        {
+          "type": "kop",
+          "tekst": "Zo vermenigvuldig je breuken"
+        },
+        {
+          "type": "stappen",
+          "items": [
+            "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+            "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
+            "**Neem het deel** van de herschreven breuk."
+          ],
+          "stapsgewijs": true
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"background:#fdecea;border:3px solid #d6453d;border-radius:16px;padding:14px 22px;font-size:36px;line-height:1.35\">⚠️ Je herschrijft <b>alleen de tweede breuk</b>. Je maakt ze <b>niet gelijknamig</b>!</div>",
+          "verborgen": true
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — vaardigheid: ik doe voor",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Hardop denken. Stap 1: het derde deel van 1/6. Stap 2: van 1/6 kun je niet makkelijk een derde nemen, dus keer 3 boven en onder: 1/6 = 3/18. Stap 3: het derde deel van 3/18 = 1/18. Check: kleiner dan 1/6? Ja.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Ik doe voor"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><span style=\"font-size:34px\">Reken uit:</span><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:60px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">6</span></span><span>=</span></span></div>"
+              },
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+                  "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
+                  "**Neem het deel** van de herschreven breuk."
+                ],
+                "stijl": "font-size:.6em",
+                "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Begeleide inoefening — wij samen",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Samen per stap, met willekeurige beurten. Stap 1: het vierde deel van 1/3. Stap 2: 1/3 = 4/12. Stap 3: het vierde deel van 4/12 = 1/12.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Wij samen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><span style=\"font-size:34px\">Reken uit:</span><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:60px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span><span>=</span></span></div>"
+              },
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+                  "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
+                  "**Neem het deel** van de herschreven breuk."
+                ],
+                "stijl": "font-size:.6em",
+                "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Uitleg — vaardigheid: ik doe voor (teller groter dan 1)",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Nu heeft de tweede breuk een teller groter dan 1. Stap 1: het derde deel van 4/5. Stap 2: 4 kun je niet door 3 delen, dus keer 3: 4/5 = 12/15. Stap 3: het derde deel van 12/15 = 4/15.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Ik doe voor"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><span style=\"font-size:34px\">Reken uit:</span><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:60px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">4</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">5</span></span><span>=</span></span></div>"
+              },
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+                  "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
+                  "**Neem het deel** van de herschreven breuk."
+                ],
+                "stijl": "font-size:.6em",
+                "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Begeleide inoefening — wij samen",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Samen per stap, met willekeurige beurten. Stap 1: de helft van 3/5. Stap 2: 3/5 = 6/10. Stap 3: de helft van 6/10 = 3/10.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Wij samen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><span style=\"font-size:34px\">Reken uit:</span><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:60px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">2</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">5</span></span><span>=</span></span></div>"
+              },
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+                  "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
+                  "**Neem het deel** van de herschreven breuk."
+                ],
+                "stijl": "font-size:.6em",
+                "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Begeleide inoefening — jullie",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Tweetallen. Maatje A rekent 1/2 × 6/5, maatje B rekent 1/3 × 5/4. Daarna leggen ze aan elkaar uit wat ze deden, A begint. Dan de vraag: bij welke som hoefde je niet te herschrijven? Willekeurige beurt. Antwoorden: de helft van 6/5 = 3/5 (niet herschrijven, 6 kun je al door 2 delen). 5/4 = 15/12, het derde deel = 5/12.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Jullie samen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;flex-direction:column;gap:10px\"><div style=\"display:flex;align-items:center;gap:20px\"><span style=\"font-size:32px;font-weight:700;color:#d9822b;white-space:nowrap\">Maatje A</span><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:42px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:42px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">2</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:42px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">6</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">5</span></span><span>=</span></span></div><div style=\"display:flex;align-items:center;gap:20px\"><span style=\"font-size:32px;font-weight:700;color:#1f6fd1;white-space:nowrap\">Maatje B</span><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:42px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:42px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:42px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">5</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span><span>=</span></span></div></div>"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"background:#eef7f1;border:3px solid #2f9e63;border-radius:16px;padding:8px 16px;font-size:24px;line-height:1.35\">Leg uit aan je maatje: <i>\"Ik nam het … deel van …, dus ik schreef … anders op als …\"</i><br><b>Bij welke som hoefde je niet te herschrijven? Waarom?</b></div>",
+                "verborgen": true
+              },
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+                  "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
+                  "**Neem het deel** van de herschreven breuk."
+                ],
+                "stijl": "font-size:.6em",
+                "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ],
+      "lesdoelVerbergen": true
+    },
+    {
+      "fase": "Begeleide inoefening — jij",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Iedereen zelf op het wisbordje, als controle van begrip. Antwoord: 3/5 = 12/20, het vierde deel van 12/20 = 3/20.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Jij alleen"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><span style=\"font-size:34px\">Reken uit:</span><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:60px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">5</span></span><span>=</span></span></div>"
+              },
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+                  "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
+                  "**Neem het deel** van de herschreven breuk."
+                ],
+                "stijl": "font-size:.6em",
+                "stapsgewijs": true
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:44px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">20</span></span></div>",
+                "verborgen": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "voorbereiding": {
+    "benodigdheden": [
+      "Wisbordjes"
+    ],
+    "verloop": [
+      {
+        "fase": "Activeren voorkennis",
+        "wat": "Wat is keer? Keer = setjes van: 5 × 4 = 5 setjes van 4, en 1/2 × 8 = een half setje van 8."
+      },
+      {
+        "fase": "Lesdoel",
+        "wat": "Ik kan breuken vermenigvuldigen."
+      },
+      {
+        "fase": "Uitleg — begrip",
+        "wat": "In de context van een cake: 1/3 van 3/4 cake, en de helft van 1/3 cake (1/3 = 2/6). Keer met een breuk = een deel van nemen."
+      },
+      {
+        "fase": "Controle van begrip",
+        "wat": "Welk verhaal past bij 1/3 × 3/4? En: wordt het antwoord groter of kleiner? (kleiner, je neemt er een deel van)"
+      },
+      {
+        "fase": "Uitleg — vaardigheid",
+        "wat": "Stappenplan: welk deel neem je, herschrijf de tweede breuk, neem het deel. Geen tekeningen in het stappenplan."
+      },
+      {
+        "fase": "Ik doe voor / wij samen",
+        "wat": "Ik: 1/3 × 1/6. Wij: 1/4 × 1/3. Dan met een tweede breuk met een teller groter dan 1. Ik: 1/3 × 4/5. Wij: 1/2 × 3/5."
+      },
+      {
+        "fase": "Jullie",
+        "wat": "Tweetallen: A rekent 1/2 × 6/5, B rekent 1/3 × 5/4. Uitleggen aan elkaar, A begint. Bij welke som hoefde je niet te herschrijven? Willekeurige beurt."
+      },
+      {
+        "fase": "Jij",
+        "wat": "1/4 × 3/5 op het wisbordje."
+      }
+    ],
+    "secties": [
+      {
+        "kop": "Stappenplan",
+        "items": [
+          "1. Welk deel neem je van de tweede breuk?",
+          "2. Herschrijf de tweede breuk, zodat je er makkelijk dat deel van kunt nemen.",
+          "3. Neem het deel van de herschreven breuk."
+        ]
+      },
+      {
+        "kop": "Aandachtspunten",
+        "items": [
+          "De eerste breuk heeft altijd teller 1. De tweede breuk kan een teller groter dan 1 hebben, en kan ook groter zijn dan 1.",
+          "Valkuil: ze zijn gewend om gelijknamig te maken. Je herschrijft alleen de tweede breuk.",
+          "Niet het trucje 'boven keer boven, onder keer onder'."
+        ]
+      }
+    ]
+  }
+}
