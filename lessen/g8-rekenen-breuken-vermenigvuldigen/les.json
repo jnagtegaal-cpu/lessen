@@ -760,6 +760,51 @@
           ]
         }
       ]
+    },
+    {
+      "fase": "Verlengde instructie: met plaatje",
+      "achtergrond": "leeg",
+      "notitie": "1/4 × 3/4 = het vierde deel van 3/4. Van 3 stukken kun je niet makkelijk een vierde nemen. Snijd elk stuk in 4: 3/4 = 12/16. Het vierde deel van 12 stukjes is 3 stukjes: 3/16.",
+      "blokken": [
+        {
+          "type": "vraag",
+          "tekst": "Er ligt nog **3/4 cake**. Je eet **het vierde deel** daarvan op. Hoeveel van de hele cake is dat?"
+        },
+        {
+          "type": "html",
+          "html": "<div style=\"text-align:center\"><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:48px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:48px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:48px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span></span></div>"
+        },
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "1fr",
+            "1fr",
+            "1fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:10px\"><svg width=\"338\" height=\"228\" viewBox=\"0 0 338 228\"><rect x=\"4.0\" y=\"4.0\" width=\"82.5\" height=\"220.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"86.5\" y=\"4.0\" width=\"82.5\" height=\"220.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"169.0\" y=\"4.0\" width=\"82.5\" height=\"220.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"251.5\" y=\"4.0\" width=\"82.5\" height=\"220.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/></svg><div style=\"font-size:34px;font-weight:700;text-align:center;line-height:1.3\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:32px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span> cake</div></div>"
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:10px\"><svg width=\"338\" height=\"228\" viewBox=\"0 0 338 228\"><rect x=\"4.0\" y=\"4.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"4.0\" y=\"59.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"4.0\" y=\"114.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"4.0\" y=\"169.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"86.5\" y=\"4.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"86.5\" y=\"59.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"86.5\" y=\"114.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"86.5\" y=\"169.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"169.0\" y=\"4.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"169.0\" y=\"59.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"169.0\" y=\"114.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"169.0\" y=\"169.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"251.5\" y=\"4.0\" width=\"82.5\" height=\"55.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/><rect x=\"251.5\" y=\"59.0\" width=\"82.5\" height=\"55.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/><rect x=\"251.5\" y=\"114.0\" width=\"82.5\" height=\"55.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/><rect x=\"251.5\" y=\"169.0\" width=\"82.5\" height=\"55.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/></svg><div style=\"font-size:34px;font-weight:700;text-align:center;line-height:1.3\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:32px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span> = <span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:32px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">12</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">16</span></span></div></div>",
+                "verborgen": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:10px\"><svg width=\"338\" height=\"228\" viewBox=\"0 0 338 228\"><rect x=\"4.0\" y=\"4.0\" width=\"82.5\" height=\"55.0\" fill=\"#d6453d\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"4.0\" y=\"59.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"4.0\" y=\"114.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"4.0\" y=\"169.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"86.5\" y=\"4.0\" width=\"82.5\" height=\"55.0\" fill=\"#d6453d\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"86.5\" y=\"59.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"86.5\" y=\"114.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"86.5\" y=\"169.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"169.0\" y=\"4.0\" width=\"82.5\" height=\"55.0\" fill=\"#d6453d\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"169.0\" y=\"59.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"169.0\" y=\"114.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"169.0\" y=\"169.0\" width=\"82.5\" height=\"55.0\" fill=\"#f2a33a\" stroke=\"#1d2b24\" stroke-width=\"3\"/><rect x=\"251.5\" y=\"4.0\" width=\"82.5\" height=\"55.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/><rect x=\"251.5\" y=\"59.0\" width=\"82.5\" height=\"55.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/><rect x=\"251.5\" y=\"114.0\" width=\"82.5\" height=\"55.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/><rect x=\"251.5\" y=\"169.0\" width=\"82.5\" height=\"55.0\" fill=\"#ffffff\" stroke=\"#1d2b24\" stroke-width=\"3\" stroke-dasharray=\"8 6\"/></svg><div style=\"font-size:34px;font-weight:700;text-align:center;line-height:1.3\"><span style=\"white-space:nowrap;font-size:30px\">het vierde deel van <span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:30px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">12</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">16</span></span> = <span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:30px;color:#d6453d;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">16</span></span></span></div></div>",
+                "verborgen": true
+              }
+            ]
+          ]
+        }
+      ]
     }
   ],
   "voorbereiding": {
@@ -801,7 +846,7 @@
       },
       {
         "fase": "Verlengde instructie",
-        "wat": "Meer sommen met het stappenplan: 1/5 × 1/2, 1/3 × 2/3, 1/4 × 2/3, 1/2 × 5/3, 1/3 × 9/10."
+        "wat": "Meer sommen met het stappenplan: 1/5 × 1/2, 1/3 × 2/3, 1/4 × 2/3, 1/2 × 5/3, 1/3 × 9/10. Daarna 1/4 × 3/4 met een plaatje van de cake (3/4 = 12/16, het vierde deel = 3/16)."
       }
     ],
     "secties": [
