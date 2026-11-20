@@ -209,7 +209,7 @@
         {
           "type": "stappen",
           "items": [
-            "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+            "**Welk deel** neem je van de tweede breuk?",
             "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
             "**Neem het deel** van de herschreven breuk."
           ],
@@ -252,7 +252,7 @@
               {
                 "type": "stappen",
                 "items": [
-                  "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+                  "**Welk deel** neem je van de tweede breuk?",
                   "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
                   "**Neem het deel** van de herschreven breuk."
                 ],
@@ -300,7 +300,7 @@
               {
                 "type": "stappen",
                 "items": [
-                  "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+                  "**Welk deel** neem je van de tweede breuk?",
                   "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
                   "**Neem het deel** van de herschreven breuk."
                 ],
@@ -348,7 +348,7 @@
               {
                 "type": "stappen",
                 "items": [
-                  "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+                  "**Welk deel** neem je van de tweede breuk?",
                   "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
                   "**Neem het deel** van de herschreven breuk."
                 ],
@@ -396,7 +396,7 @@
               {
                 "type": "stappen",
                 "items": [
-                  "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+                  "**Welk deel** neem je van de tweede breuk?",
                   "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
                   "**Neem het deel** van de herschreven breuk."
                 ],
@@ -449,7 +449,7 @@
               {
                 "type": "stappen",
                 "items": [
-                  "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+                  "**Welk deel** neem je van de tweede breuk?",
                   "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
                   "**Neem het deel** van de herschreven breuk."
                 ],
@@ -498,7 +498,7 @@
               {
                 "type": "stappen",
                 "items": [
-                  "**Welk deel** neem je van de tweede breuk?\n*1/3 × 1/6 → het derde deel van 1/6*",
+                  "**Welk deel** neem je van de tweede breuk?",
                   "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
                   "**Neem het deel** van de herschreven breuk."
                 ],
@@ -509,6 +509,246 @@
                 "type": "html",
                 "html": "<div style=\"display:flex;align-items:center;gap:22px;font-size:34px\"><span>Antwoord:</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:44px;color:#2f9e63;vertical-align:middle\"><span style=\"padding:0 .18em\">3</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">20</span></span></div>",
                 "verborgen": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Verlengde instructie",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Stap 1: het vijfde deel van 1/2. Stap 2: 1/2 = 5/10. Stap 3: het vijfde deel van 5/10 = 1/10.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Verlengde instructie 1"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><span style=\"font-size:34px\">Reken uit:</span><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:60px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">5</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">2</span></span><span>=</span></span></div>"
+              },
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welk deel** neem je van de tweede breuk?",
+                  "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
+                  "**Neem het deel** van de herschreven breuk."
+                ],
+                "stijl": "font-size:.6em",
+                "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Verlengde instructie",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Stap 1: het derde deel van 2/3. Stap 2: 2 kun je niet door 3 delen: 2/3 = 6/9. Stap 3: het derde deel van 6/9 = 2/9.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Verlengde instructie 2"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><span style=\"font-size:34px\">Reken uit:</span><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:60px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span><span>=</span></span></div>"
+              },
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welk deel** neem je van de tweede breuk?",
+                  "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
+                  "**Neem het deel** van de herschreven breuk."
+                ],
+                "stijl": "font-size:.6em",
+                "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Verlengde instructie",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Stap 1: het vierde deel van 2/3. Stap 2: keer 4 kan (8/12, het vierde deel = 2/12 = 1/6), maar keer 2 is ook genoeg: 2/3 = 4/6, het vierde deel = 1/6. Mooi om te bespreken: je zoekt een teller waar je makkelijk het deel van kunt nemen.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Verlengde instructie 3"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><span style=\"font-size:34px\">Reken uit:</span><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:60px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">4</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">2</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span><span>=</span></span></div>"
+              },
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welk deel** neem je van de tweede breuk?",
+                  "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
+                  "**Neem het deel** van de herschreven breuk."
+                ],
+                "stijl": "font-size:.6em",
+                "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Verlengde instructie",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "De tweede breuk is groter dan 1. Stap 1: de helft van 5/3. Stap 2: 5/3 = 10/6. Stap 3: de helft van 10/6 = 5/6.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Verlengde instructie 4"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><span style=\"font-size:34px\">Reken uit:</span><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:60px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">2</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">5</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span><span>=</span></span></div>"
+              },
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welk deel** neem je van de tweede breuk?",
+                  "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
+                  "**Neem het deel** van de herschreven breuk."
+                ],
+                "stijl": "font-size:.6em",
+                "stapsgewijs": true
+              }
+            ],
+            [
+              {
+                "type": "html",
+                "html": "<div style=\"flex:1;min-height:400px;border:2px solid #b9d3c3;border-radius:12px;background-color:#fff;background-image:linear-gradient(90deg,transparent 86px,#d6453d 86px,#d6453d 89px,transparent 89px),linear-gradient(#cfe0f0 1.5px,transparent 1.5px),linear-gradient(90deg,#cfe0f0 1.5px,transparent 1.5px);background-size:100% 100%,40px 80px,40px 80px;background-repeat:no-repeat,repeat,repeat;background-position:0 0,-1px -1px,-1px -1px\"></div>"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fase": "Verlengde instructie",
+      "achtergrond": "leeg",
+      "ruim": true,
+      "lesdoelLinks": true,
+      "notitie": "Stap 1: het derde deel van 9/10. Stap 2: niet nodig, 9 kun je al door 3 delen! Stap 3: 3/10.",
+      "blokken": [
+        {
+          "type": "kolommen",
+          "verhouding": [
+            "5fr",
+            "6fr"
+          ],
+          "kolommen": [
+            [
+              {
+                "type": "subkop",
+                "tekst": "Verlengde instructie 5"
+              },
+              {
+                "type": "html",
+                "html": "<div style=\"display:flex;align-items:center;gap:24px\"><span style=\"font-size:34px\">Reken uit:</span><span style=\"display:inline-flex;align-items:center;gap:18px;font-weight:800;font-size:60px;color:#1d2b24\"><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">1</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">3</span></span><span>×</span><span style=\"display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-weight:800;font-size:60px;color:#1d2b24;vertical-align:middle\"><span style=\"padding:0 .18em\">9</span><span style=\"align-self:stretch;border-top:3px solid currentColor;margin:.06em 0\"></span><span style=\"padding:0 .18em\">10</span></span><span>=</span></span></div>"
+              },
+              {
+                "type": "subkop",
+                "tekst": "Stappenplan"
+              },
+              {
+                "type": "stappen",
+                "items": [
+                  "**Welk deel** neem je van de tweede breuk?",
+                  "**Herschrijf de tweede breuk**, zodat je er makkelijk dat deel van kunt nemen.",
+                  "**Neem het deel** van de herschreven breuk."
+                ],
+                "stijl": "font-size:.6em",
+                "stapsgewijs": true
               }
             ],
             [
@@ -558,6 +798,10 @@
       {
         "fase": "Jij",
         "wat": "1/4 × 3/5 op het wisbordje."
+      },
+      {
+        "fase": "Verlengde instructie",
+        "wat": "Meer sommen met het stappenplan: 1/5 × 1/2, 1/3 × 2/3, 1/4 × 2/3, 1/2 × 5/3, 1/3 × 9/10."
       }
     ],
     "secties": [
