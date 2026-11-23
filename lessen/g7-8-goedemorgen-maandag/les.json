@@ -1,44 +1,45 @@
 {
   "id": "g7-8-goedemorgen-maandag",
-  "titel": "Goedemorgen: dagschema maandag 16 november",
+  "titel": "Goedemorgen: dagschema maandag 23 november",
   "groep": "7-8",
   "vak": "Dagopening",
   "onderwerp": "Dagschema",
   "duur": 10,
-  "samenvatting": "Goedemorgenpagina voor maandag met het dagschema en een welkom.",
+  "samenvatting": "Goedemorgenpagina voor maandag met het dagschema en de opdracht: kies een boek dat je kunt aanraden aan anderen.",
   "trefwoorden": [
     "goedemorgen",
     "dagschema",
     "weekopening",
     "maandag",
-    "tekenen",
-    "spelling",
-    "weektaak"
+    "boekenbabbel",
+    "rekenen",
+    "stillezen",
+    "tekenen"
   ],
-  "gemaakt": "2026-11-16",
+  "gemaakt": "2026-11-23",
   "schermen": [
     {
       "fase": "Goedemorgen",
       "achtergrond": "leeg",
-      "notitie": "Dagschema voor maandag 16 november. Welkom op het bord, geen vraag.",
+      "notitie": "Dagschema voor maandag 23 november. De eerste pauze is iets later dan normaal. Opdracht bij binnenkomst: kies een boek dat je kunt aanraden aan anderen.",
       "blokken": [
         {
           "type": "kolommen",
           "verhouding": [
-            "3fr",
-            "2fr"
+            "1fr",
+            "1fr"
           ],
           "kolommen": [
             [
               {
                 "type": "html",
-                "html": "<div style=\"display:flex;flex-direction:column;gap:9px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🌞</span><span>Weekopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🔤</span><span>Spelling</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📖</span><span>Taal</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">⚡</span><span>Automatiseren</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📚</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">💡</span><span>Wetenswaardig</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:0 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
+                "html": "<div style=\"display:flex;flex-direction:column;gap:11px\"><div style=\"font-size:52px;font-weight:800;margin-bottom:4px\">Goedemorgen! ☀️</div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🌞</span><span>Weekopening</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📚</span><span>Gastproject Boekenbabbel</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze <span style=\"font-weight:500;font-size:26px\">(iets later dan normaal)</span></span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">➕</span><span>Rekenen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🍎</span><span>Pauze</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">📖</span><span>Stillezen</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">🎨</span><span>Tekenen met juf Elmien</span></div><div style=\"display:flex;align-items:center;gap:22px;padding:2px 16px;border-radius:14px;background:#eef7f1;font-size:31px;font-weight:700;line-height:1.5\"><span style=\"width:50px;text-align:center\">👋</span><span>Afsluiten</span></div></div>"
               }
             ],
             [
               {
                 "type": "html",
-                "html": "<div style=\"background:#fff6e0;border:4px dashed #d9822b;border-radius:20px;padding:34px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:24px;min-height:560px\"><div style=\"font-size:90px;line-height:1\">👋</div><div style=\"font-size:50px;font-weight:800;line-height:1.25\">Welkom op deze maandag!</div><div style=\"font-size:38px;line-height:1.4\">Leuk dat jullie er zijn. 😊</div></div>"
+                "html": "<div style=\"background:#fff1d6;border:8px solid #d9822b;border-radius:24px;padding:36px 30px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:26px;min-height:640px;box-shadow:0 8px 0 #e8b27a\"><div style=\"display:inline-block;align-self:center;background:#d9822b;color:#fff;font-size:34px;font-weight:800;letter-spacing:2px;padding:6px 26px;border-radius:999px\">BELANGRIJK!</div><div style=\"font-size:100px;line-height:1\">📚👍</div><div style=\"font-size:54px;font-weight:800;line-height:1.25;color:#7a3a10\">Kies een boek dat jij kunt <span style=\"white-space:nowrap\">aanraden</span> aan anderen.</div></div>"
               }
             ]
           ]
@@ -49,10 +50,16 @@
   "voorbereiding": {
     "verloop": [
       {
-        "wat": "Bij binnenkomst: welkom op het bord"
+        "wat": "Bij binnenkomst: kies een boek dat je kunt aanraden aan anderen"
       },
       {
         "wat": "Weekopening"
+      },
+      {
+        "wat": "Gastproject Boekenbabbel"
+      },
+      {
+        "wat": "Pauze (iets later dan normaal)"
       },
       {
         "wat": "Rekenen"
@@ -61,22 +68,10 @@
         "wat": "Pauze"
       },
       {
-        "wat": "Spelling"
-      },
-      {
-        "wat": "Taal"
-      },
-      {
-        "wat": "Automatiseren"
-      },
-      {
-        "wat": "Pauze"
-      },
-      {
         "wat": "Stillezen"
       },
       {
-        "wat": "Wetenswaardig"
+        "wat": "Tekenen met juf Elmien"
       },
       {
         "wat": "Afsluiten"
