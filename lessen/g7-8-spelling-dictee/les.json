@@ -1,6 +1,6 @@
 {
   "id": "g7-8-spelling-dictee",
-  "titel": "Dictee: groep 8 woorden met wr- en th, groep 7 woorden met ch die klinkt als sj en woorden met i en ie",
+  "titel": "Dictee: groep 8 meervouden op -esen, -elen en -iken en woorden met wr-, groep 7 gebiedende wijs en ch die klinkt als sj",
   "groep": "7-8",
   "vak": "Spelling",
   "onderwerp": "Dictee",
@@ -8,18 +8,18 @@
   "trefwoorden": [
     "dictee",
     "spelling",
-    "th",
+    "meervouden esen elen iken",
     "wr",
-    "ch als sj",
-    "i en ie"
+    "gebiedende wijs",
+    "ch als sj"
   ],
-  "gemaakt": "2026-11-17",
+  "gemaakt": "2026-11-24",
   "pdfs": false,
   "schermen": [
     {
       "fase": "Dictee groep 8",
       "achtergrond": "leeg",
-      "notitie": "Groep 8. Tik elk woord en daarna de zin aan om ze te laten zien. Toetswoorden (blok 3): wrijving, fotosynthese, synthetisch.",
+      "notitie": "Groep 8. Tik elk woord en daarna de zin aan om ze te laten zien. Toetswoorden (blok 3): bangeriken, wrikken, amandelen, luiwammesen.",
       "blokken": [
         {
           "type": "kop",
@@ -31,11 +31,11 @@
           "stapsgewijs": true,
           "stijl": "font-size:48px;font-weight:700",
           "items": [
-            "wrijving",
-            "fotosynthese",
-            "wreed",
-            "synthetisch",
-            "bibliotheek"
+            "bangeriken",
+            "wrikken",
+            "amandelen",
+            "luiwammesen",
+            "wratten"
           ]
         },
         {
@@ -46,14 +46,14 @@
           "type": "tekst",
           "verborgen": true,
           "stijl": "font-size:48px;font-weight:700;line-height:1.3",
-          "tekst": "Na de marathon had opa een pijnlijk gewricht."
+          "tekst": "De haviken vlogen boven het wrak in de haven."
         }
       ]
     },
     {
       "fase": "Dictee groep 7",
       "achtergrond": "leeg",
-      "notitie": "Groep 7. Tik elk woord en daarna de zin aan om ze te laten zien. Toetswoorden (blok 3): chirurg, chimpansee, capuchon.",
+      "notitie": "Groep 7. Tik elk woord en daarna de zin aan om ze te laten zien. Gebiedende wijs, zeg het in een zin: \"Word eens wakker!\" en \"Verspreid de pakketten.\" Toetswoorden (blok 3): charmant, brochure, chantage, machine (in de zin).",
       "blokken": [
         {
           "type": "kop",
@@ -65,11 +65,11 @@
           "stapsgewijs": true,
           "stijl": "font-size:48px;font-weight:700",
           "items": [
-            "chirurg",
-            "verdrietig",
-            "chimpansee",
-            "competitie",
-            "capuchon"
+            "charmant",
+            "Word",
+            "brochure",
+            "Verspreid",
+            "chantage"
           ]
         },
         {
@@ -80,7 +80,7 @@
           "type": "tekst",
           "verborgen": true,
           "stijl": "font-size:48px;font-weight:700;line-height:1.3",
-          "tekst": "De chagrijnige chef was dol op macaroni met ketchup."
+          "tekst": "Start de machine en haast je naar de lunch."
         }
       ]
     }

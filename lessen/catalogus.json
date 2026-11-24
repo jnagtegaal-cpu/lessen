@@ -350,7 +350,7 @@
     },
     {
       "id": "g7-8-spelling-dictee",
-      "titel": "Dictee: groep 8 woorden met wr- en th, groep 7 woorden met ch die klinkt als sj en woorden met i en ie",
+      "titel": "Dictee: groep 8 meervouden op -esen, -elen en -iken en woorden met wr-, groep 7 gebiedende wijs en ch die klinkt als sj",
       "groep": "7-8",
       "vak": "Spelling",
       "onderwerp": "Dictee",
@@ -358,12 +358,12 @@
       "trefwoorden": [
         "dictee",
         "spelling",
-        "th",
+        "meervouden esen elen iken",
         "wr",
-        "ch als sj",
-        "i en ie"
+        "gebiedende wijs",
+        "ch als sj"
       ],
-      "gemaakt": "2026-11-17",
+      "gemaakt": "2026-11-24",
       "pdfs": false
     },
     {
