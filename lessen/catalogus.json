@@ -71,23 +71,22 @@
     },
     {
       "id": "g7-8-goedemorgen-dinsdag",
-      "titel": "Goedemorgen: dagschema dinsdag 17 november",
+      "titel": "Goedemorgen: dagschema dinsdag 24 november",
       "groep": "7-8",
       "vak": "Dagopening",
       "onderwerp": "Dagschema",
       "duur": 10,
-      "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema (met brandoefening, Engels, weektaak en beloning) en een welkom.",
+      "samenvatting": "Goedemorgenpagina voor dinsdag met het dagschema in een donkere kerstavondsfeer, en Bijbel open bij Jesaja 6.",
       "trefwoorden": [
         "goedemorgen",
         "dagschema",
-        "dagopening",
         "dinsdag",
-        "engels",
-        "weektaak",
-        "beloning",
-        "brandoefening"
+        "brandoefening",
+        "kerst",
+        "winter",
+        "bijbel"
       ],
-      "gemaakt": "2026-11-17"
+      "gemaakt": "2026-11-24"
     },
     {
       "id": "g7-8-goedemorgen-donderdag",
@@ -145,24 +144,6 @@
         "gym"
       ],
       "gemaakt": "2026-11-20"
-    },
-    {
-      "id": "g7-8-goedemorgen-woensdag",
-      "titel": "Goedemorgen: dagschema woensdag 25 november",
-      "groep": "7-8",
-      "vak": "Dagopening",
-      "onderwerp": "Dagschema",
-      "duur": 10,
-      "samenvatting": "Goedemorgenpagina voor woensdag met het dagschema en een warme kerstsfeer.",
-      "trefwoorden": [
-        "goedemorgen",
-        "dagschema",
-        "woensdag",
-        "brandoefening",
-        "kerst",
-        "winter"
-      ],
-      "gemaakt": "2026-11-25"
     },
     {
       "id": "g7-8-rekenen-boterhammenvraag",
