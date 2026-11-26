@@ -63,20 +63,28 @@
     .link { background: none; border: 0; color: var(--zacht); font: inherit; font-size: 17px; text-decoration: underline; cursor: pointer; padding: 0; }
     .opslag { font-size: 15px; color: var(--zacht); text-align: right; min-height: 1.2em; margin-top: 10px; }
     @media (max-width: 520px) { .zin { font-size: 24px; } .knop { font-size: 19px; padding: 12px 16px; } }
+    .opdrachten { display: grid; gap: 12px; }
+    .opdracht { display: flex; justify-content: space-between; align-items: center; gap: 14px; text-align: left; width: 100%; font: inherit; font-size: 24px; padding: 18px 20px; border-radius: 14px; border: 3px solid var(--rand); background: #fff; color: var(--tekst); cursor: pointer; }
+    .opdracht:hover { border-color: var(--accent); }
+    .opdracht .soort { display: block; font-size: 15px; color: var(--zacht); font-weight: 400; }
+    .opdracht .pijl { flex: none; font-weight: 700; color: var(--kop); }
+    .opdracht.gedaan { background: #eef1ef; }
+    .opdracht.gedaan .pijl { color: var(--zacht); }
+    #naarLijst.link { display: inline-block; margin-bottom: 14px; }
   </style>
 </head>
 <body>
   <main>
-    <h1 id="titel">Opdracht</h1>
+    <h1 id="titel">Opdrachten</h1>
     <p class="sub" id="sub">Even laden…</p>
     <div class="vlak" id="inhoud"></div>
   </main>
   <script src="assets/live-config.js?v=4845a280"></script>
   <script src="assets/live.js?v=d20cbb44"></script>
   <script>
-  // Lesbord — leerlingopdracht maken. Vaste link voor de leerlingen. Zie LESFORMAAT.md ("Leerlingopdrachten").
+  // Lesbord — leerlingopdrachten maken. Vaste link voor de leerlingen. Zie LESFORMAAT.md ("Leerlingopdrachten").
   (() => {
-    const PLEK = "KLASTOETS";                 // vaste plek in de database waar staat welke toets klaarstaat
+    const PLEK = "KLASTOETS";                 // vaste plek in de database: welke opdrachten klaarstaan
     const $ = (id) => document.getElementById(id);
     const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
     const opslag = {
@@ -84,46 +92,100 @@
       zet(k, v) { try { v === null ? localStorage.removeItem(k) : localStorage.setItem(k, JSON.stringify(v)); } catch {} },
     };
     const apparaat = opslag.lees("toets-apparaat") || (() => { const a = Math.random().toString(36).slice(2, 10); opslag.zet("toets-apparaat", a); return a; })();
+    const mijnLetters = () => opslag.lees("opdracht-letters") || {};      // per ronde: welke letter op dit apparaat
+    const zetMijnLetter = (k, l) => { const m = mijnLetters(); if (l) m[k] = l; else delete m[k]; opslag.zet("opdracht-letters", m); };
 
-    let actief = null, toets = null, klas = null, kamer = null, leerlingen = {};
-    let ik = null, antwoorden = [], nu = 0, fase = "wachten", stopKamer = null, schrijfTimer = null;
+    let rondes = {}, overzicht = [], klas = null;
+    let huidig = null, toets = null, kamer = null, leerlingen = {}, stopKamer = null;
+    let ik = null, antwoorden = [], nu = 0, fase = "lijst", schrijfTimer = null;
 
     const meld = (tekst, fout) => `<p class="melding${fout ? " fout" : ""}">${esc(tekst)}</p>`;
+    const titelVan = (id) => (overzicht.find((t) => t.id === id) || {}).titel || "Opdracht";
+    const soortVan = (id) => (overzicht.find((t) => t.id === id) || {}).soort || "";
+    async function laadJson(pad) { const r = await fetch(pad, { cache: "no-store" }); if (!r.ok) throw new Error(pad); return r.json(); }
+    const terugKnop = `<button class="link" id="naarLijst">← Alle opdrachten</button>`;
+    function koppelTerug() { const b = $("naarLijst"); if (b) b.onclick = naarLijst; }
 
-    async function laadJson(pad) {
-      const r = await fetch(pad, { cache: "no-store" });
-      if (!r.ok) throw new Error(pad);
-      return r.json();
+    function naarLijst() {
+      if (stopKamer) { stopKamer(); stopKamer = null; }
+      huidig = null; toets = null; kamer = null; leerlingen = {}; ik = null; fase = "lijst";
+      teken();
     }
 
     function teken() {
       const el = $("inhoud");
       if (!Live.beschikbaar()) { el.innerHTML = meld("Deze functie staat uit.", true); return; }
-      if (!actief || !toets) {
-        $("titel").textContent = "Opdracht"; $("sub").textContent = "";
-        el.innerHTML = `<div class="midden"><p class="groot">Even wachten</p><p>Er staat nu geen opdracht klaar.<br>Zodra je leerkracht een opdracht klaarzet, verschijnt hij hier vanzelf.</p></div>`;
-        return;
-      }
+      if (!huidig) return tekenLijst(el);
+      if (!toets || !kamer) { el.innerHTML = `<p>Even laden…</p>`; return; }
       $("titel").textContent = toets.titel;
       if (fase === "ingeleverd") {
         $("sub").textContent = "";
-        el.innerHTML = `<div class="midden"><p class="groot">Ingeleverd!</p><p>Goed gedaan, <b>${esc(ik)}</b>. Je bent klaar.</p></div>`;
-        return;
+        el.innerHTML = `<div class="midden"><p class="groot">Ingeleverd!</p><p>Goed gedaan, <b>${esc(ik)}</b>. Je bent klaar met deze opdracht.</p>
+          <button class="knop breed" id="naarLijst">Terug naar de opdrachten</button></div>`;
+        return koppelTerug();
       }
-      if (actief.gesloten || (kamerInfo() && kamerInfo().gesloten)) {
-        el.innerHTML = `<div class="midden"><p class="groot">De opdracht is gesloten</p><p>Je kunt nu niets meer veranderen. Wat je had ingevuld, is bewaard.</p></div>`;
-        return;
+      if (!rondes[huidig] || (kamer.info && kamer.info.gesloten)) {
+        $("sub").textContent = "";
+        el.innerHTML = `<div class="midden"><p class="groot">Deze opdracht is afgesloten</p><p>Je kunt niets meer veranderen. Wat je had ingevuld, is bewaard.</p>
+          <button class="knop breed" id="naarLijst">Terug naar de opdrachten</button></div>`;
+        return koppelTerug();
       }
       if (!ik) return tekenLetters(el);
       if (fase === "bevestig") return tekenBevestig(el);
       if (fase === "overzicht") return tekenOverzicht(el);
       tekenVraag(el);
     }
-    const kamerInfo = () => (kamer && kamer.info) || null;
+
+    function tekenLijst(el) {
+      $("titel").textContent = "Opdrachten";
+      const lijst = Object.entries(rondes).sort((a, b) => (a[1].gestart || 0) - (b[1].gestart || 0));
+      if (!lijst.length) {
+        $("sub").textContent = "";
+        el.innerHTML = `<div class="midden"><p class="groot">Even wachten</p><p>Er staat nu geen opdracht klaar.<br>Zodra je leerkracht een opdracht klaarzet, verschijnt hij hier vanzelf.</p></div>`;
+        return;
+      }
+      $("sub").textContent = "Tik op de opdracht die je gaat maken.";
+      const m = mijnLetters(), klaar = opslag.lees("opdracht-klaar") || {};
+      el.innerHTML = `<div class="opdrachten">${lijst.map(([k, r]) => `
+        <button class="opdracht${klaar[k] ? " gedaan" : ""}" data-k="${esc(k)}">
+          <span><span class="soort">${esc(soortVan(r.toets))}</span><b>${esc(titelVan(r.toets))}</b></span>
+          <span class="pijl">${klaar[k] ? "✓ Klaar" : m[k] ? "Verder →" : "→"}</span>
+        </button>`).join("")}</div>`;
+      el.querySelectorAll(".opdracht").forEach((b) => b.onclick = () => open(b.dataset.k));
+    }
+
+    async function open(k) {
+      huidig = k; fase = "laden"; teken();
+      try {
+        toets = await laadJson(`opdrachten/${encodeURIComponent(rondes[k].toets)}/opdracht.json`);
+      } catch { $("inhoud").innerHTML = meld("De opdracht kon niet geladen worden. Herlaad de pagina.", true); return; }
+      let eerste = true;
+      stopKamer = Live.luister(k, "", (w) => {
+        if (huidig !== k) return;
+        kamer = w || {}; leerlingen = kamer.leerlingen || {};
+        if (eerste) {
+          eerste = false;
+          const l = mijnLetters()[k];
+          if (l && leerlingen[l] && leerlingen[l].apparaat === apparaat) {       // verder waar je was
+            ik = l; antwoorden = toets.vragen.map((_, i) => (leerlingen[l].antwoorden || [])[i] || "");
+            fase = leerlingen[l].ingeleverd ? "ingeleverd" : "vraag"; nu = 0;
+          } else {
+            const vorige = opslag.lees("opdracht-laatste-letter");
+            if (vorige && !(leerlingen[vorige] && leerlingen[vorige].ingeleverd)) { ik = vorige; fase = "bevestig"; }
+            else { ik = null; fase = "letters"; }
+          }
+          return teken();
+        }
+        // De leerkracht heeft deze letter vrijgegeven.
+        if (ik && fase === "ingeleverd" && !leerlingen[ik]) { ik = null; fase = "letters"; zetMijnLetter(k, null); }
+        if (fase !== "vraag" && fase !== "overzicht") teken();
+        else if (kamer.info && kamer.info.gesloten) teken();
+      });
+    }
 
     function tekenLetters(el) {
       $("sub").textContent = "Tik op jouw letter.";
-      let h = "";
+      let h = terugKnop;
       for (const g of klas.groepen) {
         h += `<h2>${esc(g.naam)}</h2><div class="letters">`;
         for (const l of g.letters) {
@@ -132,30 +194,31 @@
         }
         h += `</div>`;
       }
-      el.innerHTML = h;
+      el.innerHTML = h; koppelTerug();
       el.querySelectorAll(".letter").forEach((b) => b.onclick = () => { ik = b.dataset.l; fase = "bevestig"; teken(); });
     }
 
     function tekenBevestig(el) {
       $("sub").textContent = "";
       const ander = leerlingen[ik] && leerlingen[ik].apparaat && leerlingen[ik].apparaat !== apparaat;
-      el.innerHTML = `<div class="midden"><p>Jij bent</p><p class="groot">${esc(ik)}</p><p>Klopt dat?</p></div>
+      el.innerHTML = `${terugKnop}<div class="midden"><p>Jij bent</p><p class="groot">${esc(ik)}</p><p>Klopt dat?</p></div>
         ${ander ? meld("Let op: deze letter is al gekozen op een ander apparaat. Weet je zeker dat dit jouw letter is?", true) : ""}
-        <div class="rij"><button class="knop licht" id="nee">Nee, terug</button><button class="knop" id="ja">Ja, begin</button></div>`;
-      $("nee").onclick = () => { ik = null; fase = "wachten"; teken(); };
+        <div class="rij"><button class="knop licht" id="nee">Nee, andere letter</button><button class="knop" id="ja">Ja, begin</button></div>`;
+      koppelTerug();
+      $("nee").onclick = () => { ik = null; fase = "letters"; teken(); };
       $("ja").onclick = async () => {
         const oud = (leerlingen[ik] && leerlingen[ik].antwoorden) || [];
         antwoorden = toets.vragen.map((_, i) => oud[i] || "");
         nu = 0; fase = "vraag";
-        opslag.zet("toets-ik", { kamer: actief.kamer, ik });
-        try { await Live.schrijf(actief.kamer, `leerlingen/${ik}`, { apparaat, gestart: Date.now(), antwoorden }, "PATCH"); } catch {}
+        zetMijnLetter(huidig, ik); opslag.zet("opdracht-laatste-letter", ik);
+        try { await Live.schrijf(huidig, `leerlingen/${ik}`, { apparaat, gestart: Date.now(), antwoorden }, "PATCH"); } catch {}
         teken();
       };
     }
 
     function tekenVraag(el) {
       const v = toets.vragen[nu];
-      $("sub").innerHTML = esc(toets.opdracht || "");
+      $("sub").textContent = toets.opdracht || "";
       el.innerHTML = `
         <div class="kopregel"><span class="wie">${esc(ik)}</span><span class="teller">Vraag ${nu + 1} van ${toets.vragen.length}</span></div>
         <div class="ww">${esc(v.ww)}</div>
@@ -192,7 +255,8 @@
         b.disabled = true; b.textContent = "Bezig…";
         try {
           clearTimeout(schrijfTimer);
-          await Live.schrijf(actief.kamer, `leerlingen/${ik}`, { apparaat, antwoorden, bijgewerkt: Date.now(), ingeleverd: Date.now() }, "PATCH");
+          await Live.schrijf(huidig, `leerlingen/${ik}`, { apparaat, antwoorden, bijgewerkt: Date.now(), ingeleverd: Date.now() }, "PATCH");
+          const klaar = opslag.lees("opdracht-klaar") || {}; klaar[huidig] = ik; opslag.zet("opdracht-klaar", klaar);
           fase = "ingeleverd"; teken();
         } catch (e) {
           b.disabled = false; b.textContent = "Inleveren"; delete b.dataset.zeker;
@@ -201,47 +265,30 @@
       };
     }
 
-    // Antwoorden tussendoor bewaren (zodat de leerkracht live meekijkt en er niets verloren gaat).
+    // Antwoorden tussendoor bewaren (de leerkracht kijkt live mee, en er gaat niets verloren).
     function bewaar() {
       clearTimeout(schrijfTimer);
       const o = $("opslag"); if (o) o.textContent = "";
+      const k = huidig, l = ik;
       schrijfTimer = setTimeout(async () => {
         try {
-          await Live.schrijf(actief.kamer, `leerlingen/${ik}`, { apparaat, antwoorden, bijgewerkt: Date.now() }, "PATCH");
+          await Live.schrijf(k, `leerlingen/${l}`, { apparaat, antwoorden, bijgewerkt: Date.now() }, "PATCH");
           const o2 = $("opslag"); if (o2) o2.textContent = "✓ Bewaard";
         } catch { const o2 = $("opslag"); if (o2) o2.textContent = "Niet bewaard, geen internet?"; }
       }, 700);
     }
 
-    async function nieuweToets(a) {
-      if (stopKamer) { stopKamer(); stopKamer = null; }
-      actief = a; toets = null; kamer = null; leerlingen = {}; ik = null; fase = "wachten";
-      if (!a || !a.kamer || !a.toets) { teken(); return; }
-      try {
-        [toets, klas] = await Promise.all([laadJson(`opdrachten/${encodeURIComponent(a.toets)}/opdracht.json`), klas || laadJson("opdrachten/klas.json")]);
-      } catch (e) { $("inhoud").innerHTML = meld("De opdracht kon niet geladen worden. Herlaad de pagina.", true); return; }
-      const vorig = opslag.lees("toets-ik");
-      stopKamer = Live.luister(a.kamer, "", (w) => {
-        kamer = w || {}; leerlingen = kamer.leerlingen || {};
-        // Herladen tijdens de toets: verder waar je was.
-        if (!ik && vorig && vorig.kamer === a.kamer && leerlingen[vorig.ik] && leerlingen[vorig.ik].apparaat === apparaat) {
-          ik = vorig.ik; antwoorden = toets.vragen.map((_, i) => (leerlingen[ik].antwoorden || [])[i] || "");
-          fase = leerlingen[ik].ingeleverd ? "ingeleverd" : "vraag";
-          teken(); return;
-        }
-        // De leerkracht heeft deze letter vrijgegeven: opnieuw beginnen.
-        if (ik && fase === "ingeleverd" && !leerlingen[ik]) { ik = null; fase = "wachten"; opslag.zet("toets-ik", null); }
-        if (!ik || fase === "wachten" || fase === "ingeleverd" || (kamerInfo() && kamerInfo().gesloten)) teken();
+    async function begin() {
+      if (!Live.beschikbaar()) { teken(); return; }
+      try { [overzicht, klas] = await Promise.all([laadJson("opdrachten/overzicht.json").then((o) => o.opdrachten || []), laadJson("opdrachten/klas.json")]); }
+      catch { $("inhoud").innerHTML = meld("De opdrachten konden niet geladen worden. Herlaad de pagina.", true); return; }
+      Live.luister(PLEK, "actief", (a) => {
+        // Ook het oude formaat (één opdracht) begrijpen.
+        rondes = !a ? {} : typeof a.kamer === "string" ? { [a.kamer]: { toets: a.toets, gestart: a.gestart } } : a;
+        if (!huidig || fase === "lijst" || fase === "letters" || fase === "bevestig" || fase === "ingeleverd" || !rondes[huidig]) teken();
       });
-      teken();
     }
-
-    if (!Live.beschikbaar()) { teken(); return; }
-    let laatste = "";
-    Live.luister(PLEK, "actief", (a) => {
-      const sleutel = a ? `${a.kamer}|${a.toets}` : "";
-      if (sleutel !== laatste) { laatste = sleutel; nieuweToets(a); }
-    });
+    begin();
   })();
   </script>
 </body>

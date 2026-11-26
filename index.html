@@ -114,7 +114,7 @@
     });
 
     document.getElementById("kop-acties").innerHTML = beheer
-      ? `<a class="kop-link" href="leerlingopdrachten.html">Leerlingopdrachten</a><a class="knop hoofd" href="bewerk.html">+ Nieuwe les</a><a class="ikoon-knop" href="sleutel.html" title="Sleutel" aria-label="Sleutel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M15 8l2 2"/></svg></a>`
+      ? `<a class="knop" href="leerlingopdrachten.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12l2 2 4-4M9 17h6"/></svg>Leerlingopdrachten</a><a class="knop hoofd" href="bewerk.html">+ Nieuwe les</a><a class="ikoon-knop" href="sleutel.html" title="Sleutel" aria-label="Sleutel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M15 8l2 2"/></svg></a>`
       : `<a class="kop-link" href="sleutel.html">Lessen beheren</a>`;
 
     document.getElementById("raster").addEventListener("click", async (e) => {

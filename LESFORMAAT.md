@@ -235,9 +235,12 @@ Na het onthullen zet **Punten toekennen** de punten in één keer in het scorebo
 
 Leerlingen maken een opdracht op hun eigen apparaat. De leerkracht ziet de resultaten direct binnenkomen.
 
-- **Vaste link voor de leerlingen:** `opdracht.html`. Staat er geen opdracht klaar, dan zien ze "Even wachten". Ze tikken op hun letter (uit `opdrachten/klas.json`: 7A–7P en 8A–8F, zonder namen), vullen per zin het werkwoord in, kijken alles na en leveren in. Hun score zien ze niet.
-- **Voor de leerkracht:** `leerlingopdrachten.html` (in het Lesbord bovenaan, alleen met de sleutel). Daar zet je een opdracht klaar en sluit je hem weer. Je ziet per letter de score en wat er fout ging, en per zin hoeveel procent het goed had. Je kunt alles downloaden voor Excel (in de volgorde van de letters), een letter vrijgeven of de resultaten wissen.
-- **Opslag:** in de Firebase-database van Live. `rooms/KLASTOETS` houdt bij welke opdracht klaarstaat en welke rondes er geweest zijn. Elke ronde heeft een eigen kamer met een willekeurige code. Bewaar daar alleen letters, geen namen.
+- **Vaste link voor de leerlingen:** `opdracht.html`. Ze zien alle opdrachten die klaarstaan onder elkaar, tikken er een aan, kiezen hun letter (uit `opdrachten/klas.json`: 7A–7P en 8A–8F, zonder namen), vullen in en leveren in. Hun score zien ze niet. Wat ze al hebben ingeleverd, krijgt op hun apparaat "✓ Klaar". Staat er niets klaar, dan zien ze "Even wachten".
+- **Voor de leerkracht:** `leerlingopdrachten.html` (knop **Leerlingopdrachten** in het Lesbord, alleen met de sleutel). Daar staan de opdrachten als blokjes, per soort (bijvoorbeeld Toetsen):
+  - **Zet klaar:** de opdracht verschijnt bij de leerlingen. Er kunnen meerdere opdrachten tegelijk klaarstaan.
+  - Tik op een blokje voor de resultaten: per letter de score en wat er fout ging, per zin het percentage goed. Hier kun je ook downloaden voor Excel (in de volgorde van de letters) en een letter vrijgeven.
+  - **Af en archiveren:** de opdracht verdwijnt bij de leerlingen en komt in het **Archief**, per datum. Vanuit het archief kun je de resultaten altijd terugzien en downloaden, of ze wissen.
+- **Opslag:** in de Firebase-database van Live. `rooms/KLASTOETS/actief/<kamer>` geeft de opdrachten die klaarstaan, en `rooms/KLASTOETS/geschiedenis/<kamer>` alle rondes (met `af` als ze gearchiveerd zijn). Elke ronde heeft een eigen kamer met een willekeurige code. Bewaar daar alleen letters, geen namen.
 
 **Een opdracht toevoegen:** maak `opdrachten/<id>/opdracht.json` en zet hem in `opdrachten/overzicht.json` (met `soort`: de subgroep in het menu, bijvoorbeeld `Toetsen`).
 

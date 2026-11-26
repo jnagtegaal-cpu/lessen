@@ -7,222 +7,288 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css?v=8b111501">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232f9e63'/%3E%3Crect x='7' y='9' width='18' height='12' rx='2' fill='none' stroke='white' stroke-width='2.4'/%3E%3Cpath d='M13 25h6M16 21v4' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
   <style>
-    :root { --achter: #f6faf7; --vlak: #fff; --rand: #dfe9e2; --tekst: #1d2b24; --zacht: #52635a; --accent: #2f9e63; --kop: #1f7a4a; --label: #e3f4ea; --fout: #c0392b; --foutlicht: #fde8e6; }
-    * { box-sizing: border-box; }
-    body { margin: 0; font: 17px/1.45 "Atkinson Hyperlegible", system-ui, sans-serif; color: var(--tekst); background: var(--achter); }
-    main { max-width: 1400px; margin: 0 auto; padding: 18px 16px 60px; }
-    h1 { font-size: 28px; color: var(--kop); margin: 6px 0 14px; }
-    h2 { font-size: 20px; margin: 0 0 10px; }
-    .vlak { background: var(--vlak); border: 1px solid var(--rand); border-radius: 14px; padding: 18px; margin-bottom: 16px; box-shadow: 0 6px 20px rgba(20,50,35,.06); }
-    .knop { font: inherit; font-weight: 700; padding: 9px 16px; border: 0; border-radius: 10px; background: var(--accent); color: #fff; cursor: pointer; }
-    .knop.licht { background: #fff; color: var(--kop); border: 2px solid var(--rand); }
-    .knop.rood { background: #fff; color: var(--fout); border: 2px solid #f1c3be; }
-    .knop:disabled { opacity: .45; cursor: default; }
-    .rij { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-    select { font: inherit; padding: 8px 10px; border-radius: 10px; border: 2px solid var(--rand); background: #fff; max-width: 100%; }
-    .link-vak { font: 700 18px monospace; background: var(--label); color: var(--kop); padding: 8px 12px; border-radius: 10px; word-break: break-all; }
-    .zacht { color: var(--zacht); }
-    .status { display: inline-block; padding: 3px 12px; border-radius: 999px; font-weight: 700; font-size: 15px; }
-    .status.aan { background: var(--label); color: var(--kop); }
-    .status.uit { background: #eef1ef; color: var(--zacht); }
+    .sectie { margin: 30px 0 12px; font-size: 20px; color: var(--groen-donker); }
+    .sectie:first-child { margin-top: 0; }
+    .kaart.klikbaar { cursor: pointer; transition: border-color .15s; }
+    .kaart.klikbaar:hover { border-color: var(--groen); }
+    .kaart.actief { border: 2px solid var(--groen); }
+    .label.rood { background: #fde8e6; color: #b3372f; }
+    .archief { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--schaduw); overflow: hidden; }
+    .archief h3 { margin: 0; padding: 12px 18px; font-size: 15px; background: #f3f8f5; color: var(--ink-soft); border-top: 1px solid var(--line); }
+    .archief h3:first-child { border-top: 0; }
+    .archief a { display: flex; justify-content: space-between; gap: 12px; padding: 12px 18px; border-top: 1px solid var(--line); color: var(--ink); text-decoration: none; }
+    .archief a:hover { background: #f8fbf9; }
+    .archief .zacht, .zacht { color: var(--ink-soft); }
+    .leeg-klein { color: var(--ink-soft); padding: 14px 18px; }
+    .terug { display: inline-block; margin-bottom: 14px; color: var(--groen-donker); text-decoration: none; font-weight: 700; }
+    .detail-kop { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 14px; margin-bottom: 16px; }
+    .detail-kop h1 { margin: 0 0 6px; font-size: 28px; }
+    .detail-kop .knoppen { display: flex; flex-wrap: wrap; gap: 8px; }
+    .vlak { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--schaduw); padding: 18px; }
     .tabelvak { overflow-x: auto; }
     table { border-collapse: collapse; font-size: 15px; white-space: nowrap; }
-    th, td { border: 1px solid var(--rand); padding: 5px 8px; text-align: center; }
-    th { background: #f3f8f5; position: sticky; top: 0; }
+    th, td { border: 1px solid var(--line); padding: 5px 8px; text-align: center; }
+    th { background: #f3f8f5; }
     td.l { font-weight: 700; text-align: left; }
-    td.goed { color: var(--kop); }
-    td.fout { background: var(--foutlicht); color: var(--fout); font-weight: 700; }
-    td.leeg { color: #b5c0ba; }
-    tr.klaar td.l { background: var(--label); }
+    td.goed { color: var(--groen-donker); }
+    td.fout { background: #fde8e6; color: #b3372f; font-weight: 700; }
+    td.niets { color: #b5c0ba; }
+    tr.klaar td.l { background: var(--groen-licht); }
     tfoot td { font-weight: 700; background: #f8faf9; }
-    .vraagkop { font-size: 12px; font-weight: 400; color: var(--zacht); display: block; }
-    .melding { padding: 10px 14px; border-radius: 10px; background: rgba(127,127,127,.1); margin-top: 10px; }
-    .melding.fout { color: var(--fout); }
-    .klein { font-size: 14px; }
-    h3 { font-size: 17px; margin: 18px 0 6px; color: var(--kop); }
-    .lijst { list-style: none; margin: 0; padding: 0; }
-    .lijst li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 0; border-top: 1px solid var(--rand); }
-    .terug { margin: 0; font-size: 15px; }
-    .x { background: none; border: 0; color: var(--zacht); cursor: pointer; font: inherit; text-decoration: underline; padding: 0; }
+    .vraagkop { font-size: 12px; font-weight: 400; color: var(--ink-soft); display: block; }
+    .x { background: none; border: 0; color: var(--ink-soft); cursor: pointer; font: inherit; font-size: 14px; text-decoration: underline; padding: 0; }
+    .melding { padding: 12px 16px; border-radius: 10px; background: #fde8e6; color: #b3372f; }
+    .voet { margin-top: 36px; font-size: 14px; color: var(--ink-soft); }
+    .voet button { background: none; border: 0; padding: 0; font: inherit; color: var(--groen-donker); text-decoration: underline; cursor: pointer; }
   </style>
 </head>
 <body>
-  <main>
-    <p class="terug"><a href="./">← Lesbord</a></p>
-    <h1>Leerlingopdrachten</h1>
-    <div id="inhoud"><div class="vlak">Even laden…</div></div>
-  </main>
+  <header class="kop">
+    <div class="kop-binnen">
+      <a class="merk" href="./">
+        <span class="merk-logo" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></svg>
+        </span>
+        <span><span class="merk-naam">Lesbord</span><br><span class="merk-sub">Leerlingopdrachten</span></span>
+      </a>
+    </div>
+  </header>
+
+  <main class="inhoud" id="inhoud"><p class="zacht">Even laden…</p></main>
+
   <script src="assets/live-config.js?v=4845a280"></script>
   <script src="assets/live.js?v=d20cbb44"></script>
-  <script src="assets/github.js"></script>
+  <script src="assets/github.js?v=c43a0d22"></script>
   <script>
-  // Lesbord — leerlingopdrachten klaarzetten en resultaten bekijken. Alleen met de GitHub-sleutel van de leerkracht.
+  // Lesbord — leerlingopdrachten klaarzetten, resultaten bekijken en archiveren. Zie LESFORMAAT.md ("Leerlingopdrachten").
   (() => {
     const PLEK = "KLASTOETS";
     const $ = (id) => document.getElementById(id);
     const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-    const kinderLink = new URL("opdracht.html", location.href).href.replace(/\?.*$/, "");
-    const tijd = (t) => t ? new Date(t).toLocaleString("nl-NL", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "";
+    const datum = (t) => new Date(t).toLocaleDateString("nl-NL", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+    const uur = (t) => new Date(t).toLocaleTimeString("nl-NL", { hour: "2-digit", minute: "2-digit" });
     const normaal = (s) => String(s || "").trim().replace(/\s+/g, " ").toLowerCase();
-    const ontcijfer = (a) => {
-      const b = Uint8Array.from(atob(a), (c) => c.charCodeAt(0)).reverse();
-      return JSON.parse(new TextDecoder().decode(b));
-    };
+    const ontcijfer = (a) => JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(a), (c) => c.charCodeAt(0)).reverse()));
 
-    let overzicht = [], klas = null, plek = {}, gekozen = null, toetsen = {}, kamer = null, stopKamer = null;
+    let overzicht = [], klas = null, plek = {}, kamers = {}, luisteraars = {}, opdrachten = {};
 
     async function laadJson(pad) { const r = await fetch(pad, { cache: "no-store" }); if (!r.ok) throw new Error(pad); return r.json(); }
-    async function laadToets(id) {
-      if (!toetsen[id]) {
+    async function laadOpdracht(id) {
+      if (!opdrachten[id]) {
         const t = await laadJson(`opdrachten/${encodeURIComponent(id)}/opdracht.json`);
         t.vragen.forEach((v) => v.goed = ontcijfer(v.a));
-        toetsen[id] = t;
+        opdrachten[id] = t;
       }
-      return toetsen[id];
+      return opdrachten[id];
     }
-    const titelVan = (id) => (overzicht.find((t) => t.id === id) || {}).titel || id;
-
-    function tekenAlles() {
+    const info = (id) => overzicht.find((t) => t.id === id) || { id, titel: id };
+    // Welke rondes staan klaar voor de leerlingen? (ook het oude formaat met één ronde)
+    function actieveRondes() {
       const a = plek.actief;
-      const hist = Object.entries(plek.geschiedenis || {}).sort((x, y) => (y[1].gestart || 0) - (x[1].gestart || 0));
-      if (!gekozen && hist.length) kies(hist[0][0]);
-      let h = `<div class="vlak"><h2>Klaarzetten</h2>
-        <p>Link voor de kinderen (altijd dezelfde):</p>
-        <p class="rij"><span class="link-vak">${esc(kinderLink)}</span><button class="knop licht" id="kopieer">Kopieer</button></p>`;
-      if (a) {
-        h += `<p class="rij"><span class="status aan">Staat klaar</span> <b>${esc(titelVan(a.toets))}</b> <span class="zacht">sinds ${esc(tijd(a.gestart))}</span>
-          <button class="knop rood" id="sluit">Sluit de opdracht</button></p>
-          <p class="zacht klein">Na het sluiten kunnen de kinderen niets meer veranderen. De resultaten blijven hieronder staan tot je ze wist.</p>`;
-      } else {
-        h += `<p class="rij"><span class="status uit">Er staat nu geen opdracht klaar</span></p>`;
-      }
-      for (const soort of [...new Set(overzicht.map((t) => t.soort || "Overig"))]) {
-        h += `<h3>${esc(soort)}</h3><ul class="lijst">${overzicht.filter((t) => (t.soort || "Overig") === soort).map((t) =>
-          `<li><span><b>${esc(t.titel)}</b> <span class="zacht">· groep ${esc(t.groep)} · ${t.vragen} vragen</span></span>
-           <button class="knop" data-start="${esc(t.id)}"${a ? " disabled" : ""}>Zet klaar</button></li>`).join("")}</ul>`;
-      }
-      h += `</div>`;
-      if (hist.length) {
-        h += `<div class="vlak"><div class="rij" style="justify-content:space-between"><h2 style="margin:0">Resultaten</h2>
-          <span class="rij"><select id="hist">${hist.map(([k, v]) => `<option value="${esc(k)}"${k === gekozen ? " selected" : ""}>${esc(titelVan(v.toets))} · ${esc(tijd(v.gestart))}${a && a.kamer === k ? " (nu bezig)" : ""}</option>`).join("")}</select>
-          <button class="knop licht" id="download">Download voor Excel</button>
-          <button class="knop rood" id="wis">Wis deze resultaten</button></span></div>
-          <div id="resultaten" style="margin-top:14px"></div></div>`;
-      }
-      $("inhoud").innerHTML = h;
-      $("kopieer").onclick = async () => { try { await navigator.clipboard.writeText(kinderLink); $("kopieer").textContent = "Gekopieerd ✓"; } catch {} };
-      document.querySelectorAll("[data-start]").forEach((b) => b.onclick = () => start(b.dataset.start));
-      if ($("sluit")) $("sluit").onclick = sluit;
-      if ($("hist")) $("hist").onchange = (e) => kies(e.target.value);
-      if ($("download")) $("download").onclick = download;
-      if ($("wis")) $("wis").onclick = wis;
-      tekenResultaten();
+      if (!a) return {};
+      if (typeof a.kamer === "string") return { [a.kamer]: { toets: a.toets, gestart: a.gestart } };
+      return a;
+    }
+    const rondeVanOpdracht = (id) => Object.entries(actieveRondes()).find(([, r]) => r.toets === id);
+    const geschiedenis = () => Object.entries(plek.geschiedenis || {}).sort((x, y) => (y[1].gestart || 0) - (x[1].gestart || 0));
+
+    function volg(k) {
+      if (luisteraars[k]) return;
+      luisteraars[k] = Live.luister(k, "", (w) => { kamers[k] = w || {}; teken(true); });
+    }
+    function telling(k) {
+      const ll = (kamers[k] && kamers[k].leerlingen) || {};
+      const v = Object.values(ll);
+      return { klaar: v.filter((x) => x.ingeleverd).length, bezig: v.filter((x) => !x.ingeleverd).length };
     }
 
-    async function start(id) {
-      const k = Live.maakCode() + Live.maakCode().slice(0, 2);
-      const nu = Date.now();
-      try {
-        await Live.schrijf(k, "info", { toets: id, gestart: nu });
-        await Live.schrijf(PLEK, `geschiedenis/${k}`, { toets: id, gestart: nu });
-        await Live.schrijf(PLEK, "actief", { toets: id, kamer: k, gestart: nu });
-        gekozen = null; kies(k);
-      } catch (e) { alert("Klaarzetten lukte niet: " + e.message); }
-    }
-    async function sluit() {
-      const b = $("sluit");
-      if (!b.dataset.zeker) { b.dataset.zeker = 1; b.textContent = "Zeker? Tik nog een keer"; return; }
+    // ---------- Acties ----------
+    async function zetKlaar(id) {
+      const k = Live.maakCode() + Live.maakCode().slice(0, 2), nu = Date.now();
       const a = plek.actief;
-      try { await Live.schrijf(a.kamer, "info/gesloten", Date.now()); await Live.schrijf(PLEK, "actief", null, "DELETE"); }
-      catch (e) { alert("Sluiten lukte niet: " + e.message); }
+      if (a && typeof a.kamer === "string") await Live.schrijf(PLEK, "actief", { [a.kamer]: { toets: a.toets, gestart: a.gestart } });
+      await Live.schrijf(k, "info", { toets: id, gestart: nu });
+      await Live.schrijf(PLEK, `geschiedenis/${k}`, { toets: id, gestart: nu });
+      await Live.schrijf(PLEK, `actief/${k}`, { toets: id, gestart: nu });
+      location.hash = `r=${k}`;
     }
-    async function wis() {
-      const b = $("wis");
-      if (plek.actief && plek.actief.kamer === gekozen) { alert("Sluit eerst de opdracht, daarna kun je de resultaten wissen."); return; }
-      if (!b.dataset.zeker) { b.dataset.zeker = 1; b.textContent = "Echt wissen? Download eerst! Tik nog een keer"; return; }
-      try { await Live.schrijf(gekozen, "", null, "DELETE"); await Live.schrijf(PLEK, `geschiedenis/${gekozen}`, null, "DELETE"); gekozen = null; if (stopKamer) stopKamer(); kamer = null; }
-      catch (e) { alert("Wissen lukte niet: " + e.message); }
+    async function af(k) {
+      const nu = Date.now(), a = plek.actief;
+      await Live.schrijf(k, "info/gesloten", nu);
+      await Live.schrijf(PLEK, `geschiedenis/${k}/af`, nu);
+      if (a && typeof a.kamer === "string") await Live.schrijf(PLEK, "actief", null, "DELETE");
+      else await Live.schrijf(PLEK, `actief/${k}`, null, "DELETE");
+    }
+    async function wis(k) {
+      await Live.schrijf(k, "", null, "DELETE");
+      await Live.schrijf(PLEK, `geschiedenis/${k}`, null, "DELETE");
+      location.hash = "";
+    }
+    // Knop die eerst om bevestiging vraagt.
+    function zeker(knop, vraag, doe) {
+      knop.onclick = async (e) => {
+        e.stopPropagation();
+        if (!knop.dataset.zeker) { knop.dataset.zeker = 1; knop.dataset.oud = knop.textContent; knop.textContent = vraag; return; }
+        knop.disabled = true;
+        try { await doe(); } catch (err) { alert("Dat lukte niet: " + err.message); knop.disabled = false; }
+        delete knop.dataset.zeker; teken();
+      };
     }
 
-    function kies(k) {
-      if (k === gekozen) return;
-      gekozen = k; kamer = null;
-      if (stopKamer) stopKamer();
-      stopKamer = Live.luister(k, "", (w) => { kamer = w; tekenResultaten(); });
+    // ---------- Weergave ----------
+    function teken(doorData) {
+      if (doorData && document.querySelector("[data-zeker]")) return; // niet verversen terwijl een knop om bevestiging vraagt
+      const h = new URLSearchParams(location.hash.slice(1));
+      if (h.get("r")) return tekenRonde(h.get("r"));
+      if (h.get("o")) return tekenOpdracht(h.get("o"));
+      tekenOverzicht();
     }
 
-    function scoreVan(t, l) {
-      const ant = (l && l.antwoorden) || [];
-      return t.vragen.map((v, i) => {
-        const g = ant[i] || "";
-        return { gegeven: g, ingevuld: !!g.trim(), goed: v.goed.some((x) => normaal(x) === normaal(g)) };
+    function tekenOverzicht() {
+      const act = actieveRondes();
+      Object.keys(act).forEach(volg);
+      let html = "";
+      const soorten = [...new Set(overzicht.map((t) => t.soort || "Overig"))];
+      for (const soort of soorten) {
+        html += `<h2 class="sectie">${esc(soort)}</h2><div class="raster">`;
+        for (const t of overzicht.filter((x) => (x.soort || "Overig") === soort)) {
+          const r = rondeVanOpdracht(t.id);
+          const tel = r ? telling(r[0]) : null;
+          html += `<article class="kaart klikbaar${r ? " actief" : ""}" data-open="${esc(t.id)}">
+            <div class="kaart-meta"><span class="label">Groep ${esc(t.groep)}</span><span class="label grijs">${t.vragen} vragen</span>${r ? `<span class="label">Staat klaar</span>` : ""}</div>
+            <h2>${esc(t.titel)}</h2>
+            <p>${r ? `Sinds ${esc(uur(r[1].gestart))} · <b>${tel.klaar}</b> ingeleverd · ${tel.bezig} bezig` : "Staat niet klaar voor de leerlingen."}</p>
+            <div class="kaart-acties">${r
+              ? `<button class="knop" data-bekijk="${esc(r[0])}">Resultaten</button><button class="knop hoofd" data-af="${esc(r[0])}">Af en archiveren</button>`
+              : `<button class="knop hoofd" data-klaar="${esc(t.id)}">Zet klaar</button>`}</div>
+          </article>`;
+        }
+        html += `</div>`;
+      }
+      // Archief: afgevinkte rondes, per dag.
+      const arch = geschiedenis().filter(([, r]) => r.af);
+      html += `<h2 class="sectie">Archief</h2><div class="archief">`;
+      if (!arch.length) html += `<div class="leeg-klein">Nog niets gearchiveerd. Tik op <b>Af en archiveren</b> als een opdracht klaar is.</div>`;
+      let dag = "";
+      for (const [k, r] of arch) {
+        const d = datum(r.gestart);
+        if (d !== dag) { dag = d; html += `<h3>${esc(d.charAt(0).toUpperCase() + d.slice(1))}</h3>`; }
+        html += `<a href="#r=${esc(k)}"><span><b>${esc(info(r.toets).titel)}</b> <span class="zacht">· ${esc(info(r.toets).soort || "")}</span></span><span class="zacht">${esc(uur(r.gestart))}</span></a>`;
+      }
+      html += `</div><p class="voet">De leerlingen gebruiken altijd dezelfde link: <b>${esc(kinderLink())}</b> <button id="kopieer">kopieer</button></p>`;
+      $("inhoud").innerHTML = html;
+      $("kopieer").onclick = async () => { try { await navigator.clipboard.writeText(kinderLink()); $("kopieer").textContent = "gekopieerd ✓"; } catch {} };
+      document.querySelectorAll("[data-open]").forEach((el) => el.onclick = () => {
+        const r = rondeVanOpdracht(el.dataset.open);
+        location.hash = r ? `r=${r[0]}` : `o=${el.dataset.open}`;
       });
+      document.querySelectorAll("[data-bekijk]").forEach((b) => b.onclick = (e) => { e.stopPropagation(); location.hash = `r=${b.dataset.bekijk}`; });
+      document.querySelectorAll("[data-klaar]").forEach((b) => b.onclick = async (e) => {
+        e.stopPropagation(); b.disabled = true;
+        try { await zetKlaar(b.dataset.klaar); } catch (err) { alert("Klaarzetten lukte niet: " + err.message); b.disabled = false; }
+      });
+      document.querySelectorAll("[data-af]").forEach((b) => zeker(b, "Zeker? Tik nog een keer", () => af(b.dataset.af)));
+    }
+    const kinderLink = () => new URL("opdracht.html", location.href).href.replace(/[?#].*$/, "");
+
+    // Een opdracht die nu niet klaarstaat: klaarzetten, of eerdere rondes bekijken.
+    function tekenOpdracht(id) {
+      const r = rondeVanOpdracht(id);
+      if (r) { location.hash = `r=${r[0]}`; return; }
+      const t = info(id);
+      const eerder = geschiedenis().filter(([, x]) => x.toets === id);
+      $("inhoud").innerHTML = `<a class="terug" href="#">← Alle opdrachten</a>
+        <div class="detail-kop"><div><h1>${esc(t.titel)}</h1><div class="kaart-meta"><span class="label">Groep ${esc(t.groep)}</span><span class="label grijs">${t.vragen} vragen</span><span class="label grijs">Staat niet klaar</span></div></div>
+        <div class="knoppen"><button class="knop hoofd" id="klaar">Zet klaar</button></div></div>
+        <h2 class="sectie">Eerder gemaakt</h2><div class="archief">${eerder.length ? eerder.map(([k, x]) => `<a href="#r=${esc(k)}"><span>${esc(datum(x.gestart))}</span><span class="zacht">${esc(uur(x.gestart))}</span></a>`).join("") : `<div class="leeg-klein">Deze opdracht is nog niet eerder gemaakt.</div>`}</div>`;
+      $("klaar").onclick = async () => { $("klaar").disabled = true; try { await zetKlaar(id); } catch (err) { alert(err.message); $("klaar").disabled = false; } };
     }
 
-    async function tekenResultaten() {
-      const el = $("resultaten"); if (!el) return;
-      if (!kamer || !kamer.info) { el.innerHTML = `<p class="zacht">Laden…</p>`; return; }
-      const t = await laadToets(kamer.info.toets).catch(() => null);
-      if (!t) { el.innerHTML = `<p class="melding fout">Deze opdracht is niet meer te vinden.</p>`; return; }
+    function letters(ll) {
+      const l = klas.groepen.flatMap((g) => g.letters);
+      Object.keys(ll).forEach((x) => { if (!l.includes(x)) l.push(x); });
+      return l;
+    }
+    function score(t, d) {
+      const ant = (d && d.antwoorden) || [];
+      return t.vragen.map((v, i) => { const g = ant[i] || ""; return { gegeven: g, ingevuld: !!g.trim(), goed: v.goed.some((x) => normaal(x) === normaal(g)) }; });
+    }
+
+    async function tekenRonde(k) {
+      volg(k);
+      const kamer = kamers[k];
+      if (!kamer) { $("inhoud").innerHTML = `<a class="terug" href="#">← Alle opdrachten</a><p class="zacht">Laden…</p>`; return; }
+      if (!kamer.info) { $("inhoud").innerHTML = `<a class="terug" href="#">← Alle opdrachten</a><p class="melding">Deze resultaten bestaan niet meer.</p>`; return; }
+      const t = await laadOpdracht(kamer.info.toets).catch(() => null);
+      if (!t) { $("inhoud").innerHTML = `<a class="terug" href="#">← Alle opdrachten</a><p class="melding">Deze opdracht is niet meer te vinden.</p>`; return; }
+      const actief = !!actieveRondes()[k];
       const ll = kamer.leerlingen || {};
-      const letters = klas.groepen.flatMap((g) => g.letters);
-      Object.keys(ll).forEach((l) => { if (!letters.includes(l)) letters.push(l); });
-      const telGoed = t.vragen.map(() => 0); let klaar = 0, bezig = 0;
-      let rijen = "";
-      for (const l of letters) {
+      const telGoed = t.vragen.map(() => 0); let klaar = 0, bezig = 0, rijen = "";
+      const lijst = letters(ll);
+      for (const l of lijst) {
         const d = ll[l];
-        if (!d) { rijen += `<tr><td class="l">${esc(l)}</td><td class="zacht">niet begonnen</td><td></td>${t.vragen.map(() => `<td class="leeg">·</td>`).join("")}<td></td></tr>`; continue; }
-        const s = scoreVan(t, d); const goed = s.filter((x) => x.goed).length;
+        if (!d) { rijen += `<tr><td class="l">${esc(l)}</td><td class="zacht">niet begonnen</td><td></td>${t.vragen.map(() => `<td class="niets">·</td>`).join("")}<td></td></tr>`; continue; }
+        const s = score(t, d), goed = s.filter((x) => x.goed).length;
         if (d.ingeleverd) { klaar++; s.forEach((x, i) => { if (x.goed) telGoed[i]++; }); } else bezig++;
         rijen += `<tr class="${d.ingeleverd ? "klaar" : ""}"><td class="l">${esc(l)}</td>
           <td>${d.ingeleverd ? "✓ ingeleverd" : `bezig (${s.filter((x) => x.ingevuld).length}/${t.vragen.length})`}</td>
           <td><b>${goed}</b>/${t.vragen.length}</td>
-          ${s.map((x) => x.goed ? `<td class="goed">✓</td>` : x.ingevuld ? `<td class="fout" title="Ingevuld: ${esc(x.gegeven)}">${esc(x.gegeven)}</td>` : `<td class="leeg">–</td>`).join("")}
-          <td><button class="x" data-vrij="${esc(l)}" title="Wist de antwoorden van deze letter, zodat het kind opnieuw kan beginnen">vrijgeven</button></td></tr>`;
+          ${s.map((x) => x.goed ? `<td class="goed">✓</td>` : x.ingevuld ? `<td class="fout">${esc(x.gegeven)}</td>` : `<td class="niets">–</td>`).join("")}
+          <td>${actief ? `<button class="x" data-vrij="${esc(l)}" title="Wist de antwoorden van deze letter, zodat het kind opnieuw kan beginnen">vrijgeven</button>` : ""}</td></tr>`;
       }
-      el.innerHTML = `<p><b>${klaar}</b> ingeleverd · <b>${bezig}</b> bezig · <b>${letters.length - klaar - bezig}</b> niet begonnen${kamer.info.gesloten ? ` · <span class="status uit">gesloten</span>` : ""}</p>
-        <div class="tabelvak"><table>
-          <thead><tr><th>Letter</th><th>Status</th><th>Score</th>${t.vragen.map((v, i) => `<th title="${esc(v.voor)} … ${esc(v.na)}">${i + 1}<span class="vraagkop">${esc(v.goed[0])}</span></th>`).join("")}<th></th></tr></thead>
-          <tbody>${rijen}</tbody>
-          <tfoot><tr><td class="l">Goed</td><td colspan="2">van de ${klaar} ingeleverd</td>${telGoed.map((n) => `<td>${klaar ? Math.round(100 * n / klaar) + "%" : ""}</td>`).join("")}<td></td></tr></tfoot>
-        </table></div>
-        <p class="zacht klein">Een rood vakje laat zien wat het kind invulde. Bovenaan elke kolom staat het goede antwoord. Hoofdletters en spaties tellen niet mee.</p>`;
-      el.querySelectorAll("[data-vrij]").forEach((b) => b.onclick = async () => {
-        if (!b.dataset.zeker) { b.dataset.zeker = 1; b.textContent = "zeker?"; return; }
-        try { await Live.schrijf(gekozen, `leerlingen/${b.dataset.vrij}`, null, "DELETE"); } catch (e) { alert(e.message); }
-      });
+      const status = actief ? `<span class="label">Staat klaar sinds ${esc(uur(kamer.info.gestart))}</span>`
+        : `<span class="label grijs">Gearchiveerd</span>`;
+      $("inhoud").innerHTML = `<a class="terug" href="#">← Alle opdrachten</a>
+        <div class="detail-kop"><div><h1>${esc(t.titel)}</h1>
+          <div class="kaart-meta"><span class="label grijs">${esc(datum(kamer.info.gestart))}</span>${status}</div></div>
+          <div class="knoppen">
+            <button class="knop" id="download">Download voor Excel</button>
+            ${actief ? `<button class="knop hoofd" id="af">Af en archiveren</button>` : `<button class="knop rood" id="wis">Wis uit archief</button>`}
+          </div></div>
+        <div class="vlak">
+          <p style="margin-top:0"><b>${klaar}</b> ingeleverd · <b>${bezig}</b> bezig · <b>${lijst.length - klaar - bezig}</b> niet begonnen</p>
+          <div class="tabelvak"><table>
+            <thead><tr><th>Letter</th><th>Status</th><th>Score</th>${t.vragen.map((v, i) => `<th title="${esc(v.voor)} … ${esc(v.na)}">${i + 1}<span class="vraagkop">${esc(v.goed[0])}</span></th>`).join("")}<th></th></tr></thead>
+            <tbody>${rijen}</tbody>
+            <tfoot><tr><td class="l">Goed</td><td colspan="2">van de ${klaar} ingeleverd</td>${telGoed.map((n) => `<td>${klaar ? Math.round(100 * n / klaar) + "%" : ""}</td>`).join("")}<td></td></tr></tfoot>
+          </table></div>
+          <p class="zacht" style="font-size:14px;margin-bottom:0">Een rood vakje laat zien wat het kind invulde. Bovenaan elke kolom staat het goede antwoord. Hoofdletters en spaties tellen niet mee.</p>
+        </div>`;
+      $("download").onclick = () => download(t, kamer);
+      if ($("af")) zeker($("af"), "Zeker? Tik nog een keer", () => af(k));
+      if ($("wis")) zeker($("wis"), "Echt wissen? Download eerst! Tik nog een keer", () => wis(k));
+      document.querySelectorAll("[data-vrij]").forEach((b) => zeker(b, "zeker?", () => Live.schrijf(k, `leerlingen/${b.dataset.vrij}`, null, "DELETE")));
     }
 
-    async function download() {
-      if (!kamer || !kamer.info) return;
-      const t = await laadToets(kamer.info.toets);
+    function download(t, kamer) {
       const ll = kamer.leerlingen || {};
-      const letters = klas.groepen.flatMap((g) => g.letters);
-      Object.keys(ll).forEach((l) => { if (!letters.includes(l)) letters.push(l); });
       const cel = (s) => `"${String(s ?? "").replace(/"/g, '""')}"`;
       const regels = [["Letter", "Status", "Score", ...t.vragen.map((v, i) => `${i + 1}. ${v.goed[0]}`)].map(cel).join(";")];
-      for (const l of letters) {
+      for (const l of letters(ll)) {
         const d = ll[l];
         if (!d) { regels.push([l, "niet begonnen", ""].map(cel).join(";")); continue; }
-        const s = scoreVan(t, d);
+        const s = score(t, d);
         regels.push([l, d.ingeleverd ? "ingeleverd" : "niet ingeleverd", s.filter((x) => x.goed).length, ...s.map((x) => x.goed ? "goed" : (x.gegeven || ""))].map(cel).join(";"));
       }
-      const blob = new Blob(["﻿" + regels.join("\r\n")], { type: "text/csv;charset=utf-8" });
-      const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob(["﻿" + regels.join("\r\n")], { type: "text/csv;charset=utf-8" }));
       a.download = `${t.id}-${new Date(kamer.info.gestart).toISOString().slice(0, 10)}.csv`; a.click();
     }
 
     async function begin() {
-      if (!Live.beschikbaar()) { $("inhoud").innerHTML = `<div class="vlak">De live-functie staat uit (zie assets/live-config.js).</div>`; return; }
+      if (!Live.beschikbaar()) { $("inhoud").innerHTML = `<p class="melding">De live-functie staat uit (zie assets/live-config.js).</p>`; return; }
       const testModus = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && new URLSearchParams(location.search).has("live");
       if (!testModus) {
-        if (!GitHub.heeftSleutel()) { $("inhoud").innerHTML = `<div class="vlak">Deze pagina is alleen voor de leerkracht. Vul eerst je sleutel in op <a href="sleutel.html">de sleutelpagina</a>.</div>`; return; }
-        try { await GitHub.test(); } catch (e) { $("inhoud").innerHTML = `<div class="vlak melding fout">${esc(e.message)} <a href="sleutel.html">Naar de sleutelpagina</a></div>`; return; }
+        if (!GitHub.heeftSleutel()) { $("inhoud").innerHTML = `<p>Deze pagina is alleen voor de leerkracht. Vul eerst je sleutel in op <a href="sleutel.html">de sleutelpagina</a>.</p>`; return; }
+        try { await GitHub.test(); } catch (e) { $("inhoud").innerHTML = `<p class="melding">${esc(e.message)} <a href="sleutel.html">Naar de sleutelpagina</a></p>`; return; }
       }
       try { [overzicht, klas] = await Promise.all([laadJson("opdrachten/overzicht.json").then((o) => o.opdrachten || []), laadJson("opdrachten/klas.json")]); }
-      catch { $("inhoud").innerHTML = `<div class="vlak melding fout">Het overzicht van de opdrachten kon niet geladen worden.</div>`; return; }
-      Live.luister(PLEK, "", (w) => { plek = w || {}; tekenAlles(); });
+      catch { $("inhoud").innerHTML = `<p class="melding">Het overzicht van de opdrachten kon niet geladen worden.</p>`; return; }
+      window.addEventListener("hashchange", () => { window.scrollTo(0, 0); teken(); });
+      Live.luister(PLEK, "", (w) => { plek = w || {}; teken(true); });
     }
     begin();
   })();
