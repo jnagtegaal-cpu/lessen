@@ -1,6 +1,44 @@
 {
   "lessen": [
     {
+      "id": "g7-8-engels-dates",
+      "titel": "Dates: data zeggen in het Engels",
+      "groep": "7-8",
+      "vak": "Engels",
+      "blok": "Unit 3, lesson 2 (Just in time)",
+      "onderwerp": "Data",
+      "samenvatting": "Praatles Engels: herhaling klokkijken, dan maanden, dagen en rangtelwoorden en met een stappenplan data zeggen. Met Find your match (klokken en data) en mix en ruil met agendakaartjes (What are you going to do on the …?).",
+      "trefwoorden": [
+        "Engels",
+        "dates",
+        "datum",
+        "months",
+        "days",
+        "first second third",
+        "rangtelwoorden",
+        "diary",
+        "going to",
+        "find your match",
+        "mix en ruil",
+        "kaartjes"
+      ],
+      "gemaakt": "2026-11-26",
+      "bijlagen": [
+        {
+          "titel": "Find your match: klokken (kaartjes)",
+          "bestand": "klokken-find-your-match.pdf"
+        },
+        {
+          "titel": "Find your match: data (kaartjes)",
+          "bestand": "data-find-your-match.pdf"
+        },
+        {
+          "titel": "Mix en ruil: agendakaartjes",
+          "bestand": "agendakaartjes.pdf"
+        }
+      ]
+    },
+    {
       "id": "g7-8-engels-shopping",
       "titel": "Shopping: iets kopen in een winkel",
       "groep": "7-8",
