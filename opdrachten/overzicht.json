@@ -1,0 +1,13 @@
+{
+  "uitleg": "Alle leerlingopdrachten. 'soort' is de subgroep in het menu (bijvoorbeeld Toetsen).",
+  "opdrachten": [
+    {
+      "id": "g7-8-werkwoorden-toets-1",
+      "titel": "Werkwoordentoets",
+      "soort": "Toetsen",
+      "groep": "7-8",
+      "gemaakt": "2026-11-27",
+      "vragen": 20
+    }
+  ]
+}

@@ -230,3 +230,21 @@ Soorten vragen (`soort`):
 Na het onthullen zet **Punten toekennen** de punten in één keer in het scorebord. **Opnieuw** begint het spel op dat scherm opnieuw. De stand van elk spel wordt in de browser bewaard, dus herladen kan gewoon.
 
 **Let op:** de kamercode is de enige beveiliging. Gebruik live niet voor gevoelige gegevens. Voor lessen met leerlingen: laat ze geen namen of persoonlijke gegevens invullen en stem af met school wat daar mag.
+
+## Leerlingopdrachten (zoals toetsen)
+
+Leerlingen maken een opdracht op hun eigen apparaat. De leerkracht ziet de resultaten direct binnenkomen.
+
+- **Vaste link voor de leerlingen:** `opdracht.html`. Staat er geen opdracht klaar, dan zien ze "Even wachten". Ze tikken op hun letter (uit `opdrachten/klas.json`: 7A–7P en 8A–8F, zonder namen), vullen per zin het werkwoord in, kijken alles na en leveren in. Hun score zien ze niet.
+- **Voor de leerkracht:** `leerlingopdrachten.html` (in het Lesbord bovenaan, alleen met de sleutel). Daar zet je een opdracht klaar en sluit je hem weer. Je ziet per letter de score en wat er fout ging, en per zin hoeveel procent het goed had. Je kunt alles downloaden voor Excel (in de volgorde van de letters), een letter vrijgeven of de resultaten wissen.
+- **Opslag:** in de Firebase-database van Live. `rooms/KLASTOETS` houdt bij welke opdracht klaarstaat en welke rondes er geweest zijn. Elke ronde heeft een eigen kamer met een willekeurige code. Bewaar daar alleen letters, geen namen.
+
+**Een opdracht toevoegen:** maak `opdrachten/<id>/opdracht.json` en zet hem in `opdrachten/overzicht.json` (met `soort`: de subgroep in het menu, bijvoorbeeld `Toetsen`).
+
+```json
+{ "id": "g7-8-werkwoorden-toets-1", "titel": "Werkwoordentoets", "soort": "Toetsen", "groep": "7-8",
+  "opdracht": "Schrijf het werkwoord in de goede vorm op de lijn.",
+  "vragen": [ { "ww": "antwoorden", "voor": "Hij", "na": "altijd netjes op de vragen.", "a": "<gecodeerd>" } ] }
+```
+
+`a` is de lijst met goede antwoorden, gecodeerd zodat leerlingen ze niet zomaar kunnen lezen: `base64(omgekeerde UTF-8-bytes van JSON)`. In Python: `base64.b64encode(json.dumps(["antwoordt"]).encode()[::-1]).decode()`. Bij het nakijken tellen hoofdletters en extra spaties niet mee.

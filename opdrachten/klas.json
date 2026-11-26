@@ -1,0 +1,37 @@
+{
+  "uitleg": "De letters waarmee leerlingen inloggen. Wie bij welke letter hoort, staat alleen op papier bij de leerkracht.",
+  "groepen": [
+    {
+      "naam": "Groep 7",
+      "letters": [
+        "7A",
+        "7B",
+        "7C",
+        "7D",
+        "7E",
+        "7F",
+        "7G",
+        "7H",
+        "7I",
+        "7J",
+        "7K",
+        "7L",
+        "7M",
+        "7N",
+        "7O",
+        "7P"
+      ]
+    },
+    {
+      "naam": "Groep 8",
+      "letters": [
+        "8A",
+        "8B",
+        "8C",
+        "8D",
+        "8E",
+        "8F"
+      ]
+    }
+  ]
+}

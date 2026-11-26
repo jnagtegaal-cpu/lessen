@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leerlingopdrachten · Lesbord</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --achter: #f6faf7; --vlak: #fff; --rand: #dfe9e2; --tekst: #1d2b24; --zacht: #52635a; --accent: #2f9e63; --kop: #1f7a4a; --label: #e3f4ea; --fout: #c0392b; --foutlicht: #fde8e6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 17px/1.45 "Atkinson Hyperlegible", system-ui, sans-serif; color: var(--tekst); background: var(--achter); }
+    main { max-width: 1400px; margin: 0 auto; padding: 18px 16px 60px; }
+    h1 { font-size: 28px; color: var(--kop); margin: 6px 0 14px; }
+    h2 { font-size: 20px; margin: 0 0 10px; }
+    .vlak { background: var(--vlak); border: 1px solid var(--rand); border-radius: 14px; padding: 18px; margin-bottom: 16px; box-shadow: 0 6px 20px rgba(20,50,35,.06); }
+    .knop { font: inherit; font-weight: 700; padding: 9px 16px; border: 0; border-radius: 10px; background: var(--accent); color: #fff; cursor: pointer; }
+    .knop.licht { background: #fff; color: var(--kop); border: 2px solid var(--rand); }
+    .knop.rood { background: #fff; color: var(--fout); border: 2px solid #f1c3be; }
+    .knop:disabled { opacity: .45; cursor: default; }
+    .rij { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    select { font: inherit; padding: 8px 10px; border-radius: 10px; border: 2px solid var(--rand); background: #fff; max-width: 100%; }
+    .link-vak { font: 700 18px monospace; background: var(--label); color: var(--kop); padding: 8px 12px; border-radius: 10px; word-break: break-all; }
+    .zacht { color: var(--zacht); }
+    .status { display: inline-block; padding: 3px 12px; border-radius: 999px; font-weight: 700; font-size: 15px; }
+    .status.aan { background: var(--label); color: var(--kop); }
+    .status.uit { background: #eef1ef; color: var(--zacht); }
+    .tabelvak { overflow-x: auto; }
+    table { border-collapse: collapse; font-size: 15px; white-space: nowrap; }
+    th, td { border: 1px solid var(--rand); padding: 5px 8px; text-align: center; }
+    th { background: #f3f8f5; position: sticky; top: 0; }
+    td.l { font-weight: 700; text-align: left; }
+    td.goed { color: var(--kop); }
+    td.fout { background: var(--foutlicht); color: var(--fout); font-weight: 700; }
+    td.leeg { color: #b5c0ba; }
+    tr.klaar td.l { background: var(--label); }
+    tfoot td { font-weight: 700; background: #f8faf9; }
+    .vraagkop { font-size: 12px; font-weight: 400; color: var(--zacht); display: block; }
+    .melding { padding: 10px 14px; border-radius: 10px; background: rgba(127,127,127,.1); margin-top: 10px; }
+    .melding.fout { color: var(--fout); }
+    .klein { font-size: 14px; }
+    h3 { font-size: 17px; margin: 18px 0 6px; color: var(--kop); }
+    .lijst { list-style: none; margin: 0; padding: 0; }
+    .lijst li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 0; border-top: 1px solid var(--rand); }
+    .terug { margin: 0; font-size: 15px; }
+    .x { background: none; border: 0; color: var(--zacht); cursor: pointer; font: inherit; text-decoration: underline; padding: 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="terug"><a href="./">← Lesbord</a></p>
+    <h1>Leerlingopdrachten</h1>
+    <div id="inhoud"><div class="vlak">Even laden…</div></div>
+  </main>
+  <script src="assets/live-config.js?v=4845a280"></script>
+  <script src="assets/live.js?v=d20cbb44"></script>
+  <script src="assets/github.js"></script>
+  <script>
+  // Lesbord — leerlingopdrachten klaarzetten en resultaten bekijken. Alleen met de GitHub-sleutel van de leerkracht.
+  (() => {
+    const PLEK = "KLASTOETS";
+    const $ = (id) => document.getElementById(id);
+    const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+    const kinderLink = new URL("opdracht.html", location.href).href.replace(/\?.*$/, "");
+    const tijd = (t) => t ? new Date(t).toLocaleString("nl-NL", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "";
+    const normaal = (s) => String(s || "").trim().replace(/\s+/g, " ").toLowerCase();
+    const ontcijfer = (a) => {
+      const b = Uint8Array.from(atob(a), (c) => c.charCodeAt(0)).reverse();
+      return JSON.parse(new TextDecoder().decode(b));
+    };
+
+    let overzicht = [], klas = null, plek = {}, gekozen = null, toetsen = {}, kamer = null, stopKamer = null;
+
+    async function laadJson(pad) { const r = await fetch(pad, { cache: "no-store" }); if (!r.ok) throw new Error(pad); return r.json(); }
+    async function laadToets(id) {
+      if (!toetsen[id]) {
+        const t = await laadJson(`opdrachten/${encodeURIComponent(id)}/opdracht.json`);
+        t.vragen.forEach((v) => v.goed = ontcijfer(v.a));
+        toetsen[id] = t;
+      }
+      return toetsen[id];
+    }
+    const titelVan = (id) => (overzicht.find((t) => t.id === id) || {}).titel || id;
+
+    function tekenAlles() {
+      const a = plek.actief;
+      const hist = Object.entries(plek.geschiedenis || {}).sort((x, y) => (y[1].gestart || 0) - (x[1].gestart || 0));
+      if (!gekozen && hist.length) kies(hist[0][0]);
+      let h = `<div class="vlak"><h2>Klaarzetten</h2>
+        <p>Link voor de kinderen (altijd dezelfde):</p>
+        <p class="rij"><span class="link-vak">${esc(kinderLink)}</span><button class="knop licht" id="kopieer">Kopieer</button></p>`;
+      if (a) {
+        h += `<p class="rij"><span class="status aan">Staat klaar</span> <b>${esc(titelVan(a.toets))}</b> <span class="zacht">sinds ${esc(tijd(a.gestart))}</span>
+          <button class="knop rood" id="sluit">Sluit de opdracht</button></p>
+          <p class="zacht klein">Na het sluiten kunnen de kinderen niets meer veranderen. De resultaten blijven hieronder staan tot je ze wist.</p>`;
+      } else {
+        h += `<p class="rij"><span class="status uit">Er staat nu geen opdracht klaar</span></p>`;
+      }
+      for (const soort of [...new Set(overzicht.map((t) => t.soort || "Overig"))]) {
+        h += `<h3>${esc(soort)}</h3><ul class="lijst">${overzicht.filter((t) => (t.soort || "Overig") === soort).map((t) =>
+          `<li><span><b>${esc(t.titel)}</b> <span class="zacht">· groep ${esc(t.groep)} · ${t.vragen} vragen</span></span>
+           <button class="knop" data-start="${esc(t.id)}"${a ? " disabled" : ""}>Zet klaar</button></li>`).join("")}</ul>`;
+      }
+      h += `</div>`;
+      if (hist.length) {
+        h += `<div class="vlak"><div class="rij" style="justify-content:space-between"><h2 style="margin:0">Resultaten</h2>
+          <span class="rij"><select id="hist">${hist.map(([k, v]) => `<option value="${esc(k)}"${k === gekozen ? " selected" : ""}>${esc(titelVan(v.toets))} · ${esc(tijd(v.gestart))}${a && a.kamer === k ? " (nu bezig)" : ""}</option>`).join("")}</select>
+          <button class="knop licht" id="download">Download voor Excel</button>
+          <button class="knop rood" id="wis">Wis deze resultaten</button></span></div>
+          <div id="resultaten" style="margin-top:14px"></div></div>`;
+      }
+      $("inhoud").innerHTML = h;
+      $("kopieer").onclick = async () => { try { await navigator.clipboard.writeText(kinderLink); $("kopieer").textContent = "Gekopieerd ✓"; } catch {} };
+      document.querySelectorAll("[data-start]").forEach((b) => b.onclick = () => start(b.dataset.start));
+      if ($("sluit")) $("sluit").onclick = sluit;
+      if ($("hist")) $("hist").onchange = (e) => kies(e.target.value);
+      if ($("download")) $("download").onclick = download;
+      if ($("wis")) $("wis").onclick = wis;
+      tekenResultaten();
+    }
+
+    async function start(id) {
+      const k = Live.maakCode() + Live.maakCode().slice(0, 2);
+      const nu = Date.now();
+      try {
+        await Live.schrijf(k, "info", { toets: id, gestart: nu });
+        await Live.schrijf(PLEK, `geschiedenis/${k}`, { toets: id, gestart: nu });
+        await Live.schrijf(PLEK, "actief", { toets: id, kamer: k, gestart: nu });
+        gekozen = null; kies(k);
+      } catch (e) { alert("Klaarzetten lukte niet: " + e.message); }
+    }
+    async function sluit() {
+      const b = $("sluit");
+      if (!b.dataset.zeker) { b.dataset.zeker = 1; b.textContent = "Zeker? Tik nog een keer"; return; }
+      const a = plek.actief;
+      try { await Live.schrijf(a.kamer, "info/gesloten", Date.now()); await Live.schrijf(PLEK, "actief", null, "DELETE"); }
+      catch (e) { alert("Sluiten lukte niet: " + e.message); }
+    }
+    async function wis() {
+      const b = $("wis");
+      if (plek.actief && plek.actief.kamer === gekozen) { alert("Sluit eerst de opdracht, daarna kun je de resultaten wissen."); return; }
+      if (!b.dataset.zeker) { b.dataset.zeker = 1; b.textContent = "Echt wissen? Download eerst! Tik nog een keer"; return; }
+      try { await Live.schrijf(gekozen, "", null, "DELETE"); await Live.schrijf(PLEK, `geschiedenis/${gekozen}`, null, "DELETE"); gekozen = null; if (stopKamer) stopKamer(); kamer = null; }
+      catch (e) { alert("Wissen lukte niet: " + e.message); }
+    }
+
+    function kies(k) {
+      if (k === gekozen) return;
+      gekozen = k; kamer = null;
+      if (stopKamer) stopKamer();
+      stopKamer = Live.luister(k, "", (w) => { kamer = w; tekenResultaten(); });
+    }
+
+    function scoreVan(t, l) {
+      const ant = (l && l.antwoorden) || [];
+      return t.vragen.map((v, i) => {
+        const g = ant[i] || "";
+        return { gegeven: g, ingevuld: !!g.trim(), goed: v.goed.some((x) => normaal(x) === normaal(g)) };
+      });
+    }
+
+    async function tekenResultaten() {
+      const el = $("resultaten"); if (!el) return;
+      if (!kamer || !kamer.info) { el.innerHTML = `<p class="zacht">Laden…</p>`; return; }
+      const t = await laadToets(kamer.info.toets).catch(() => null);
+      if (!t) { el.innerHTML = `<p class="melding fout">Deze opdracht is niet meer te vinden.</p>`; return; }
+      const ll = kamer.leerlingen || {};
+      const letters = klas.groepen.flatMap((g) => g.letters);
+      Object.keys(ll).forEach((l) => { if (!letters.includes(l)) letters.push(l); });
+      const telGoed = t.vragen.map(() => 0); let klaar = 0, bezig = 0;
+      let rijen = "";
+      for (const l of letters) {
+        const d = ll[l];
+        if (!d) { rijen += `<tr><td class="l">${esc(l)}</td><td class="zacht">niet begonnen</td><td></td>${t.vragen.map(() => `<td class="leeg">·</td>`).join("")}<td></td></tr>`; continue; }
+        const s = scoreVan(t, d); const goed = s.filter((x) => x.goed).length;
+        if (d.ingeleverd) { klaar++; s.forEach((x, i) => { if (x.goed) telGoed[i]++; }); } else bezig++;
+        rijen += `<tr class="${d.ingeleverd ? "klaar" : ""}"><td class="l">${esc(l)}</td>
+          <td>${d.ingeleverd ? "✓ ingeleverd" : `bezig (${s.filter((x) => x.ingevuld).length}/${t.vragen.length})`}</td>
+          <td><b>${goed}</b>/${t.vragen.length}</td>
+          ${s.map((x) => x.goed ? `<td class="goed">✓</td>` : x.ingevuld ? `<td class="fout" title="Ingevuld: ${esc(x.gegeven)}">${esc(x.gegeven)}</td>` : `<td class="leeg">–</td>`).join("")}
+          <td><button class="x" data-vrij="${esc(l)}" title="Wist de antwoorden van deze letter, zodat het kind opnieuw kan beginnen">vrijgeven</button></td></tr>`;
+      }
+      el.innerHTML = `<p><b>${klaar}</b> ingeleverd · <b>${bezig}</b> bezig · <b>${letters.length - klaar - bezig}</b> niet begonnen${kamer.info.gesloten ? ` · <span class="status uit">gesloten</span>` : ""}</p>
+        <div class="tabelvak"><table>
+          <thead><tr><th>Letter</th><th>Status</th><th>Score</th>${t.vragen.map((v, i) => `<th title="${esc(v.voor)} … ${esc(v.na)}">${i + 1}<span class="vraagkop">${esc(v.goed[0])}</span></th>`).join("")}<th></th></tr></thead>
+          <tbody>${rijen}</tbody>
+          <tfoot><tr><td class="l">Goed</td><td colspan="2">van de ${klaar} ingeleverd</td>${telGoed.map((n) => `<td>${klaar ? Math.round(100 * n / klaar) + "%" : ""}</td>`).join("")}<td></td></tr></tfoot>
+        </table></div>
+        <p class="zacht klein">Een rood vakje laat zien wat het kind invulde. Bovenaan elke kolom staat het goede antwoord. Hoofdletters en spaties tellen niet mee.</p>`;
+      el.querySelectorAll("[data-vrij]").forEach((b) => b.onclick = async () => {
+        if (!b.dataset.zeker) { b.dataset.zeker = 1; b.textContent = "zeker?"; return; }
+        try { await Live.schrijf(gekozen, `leerlingen/${b.dataset.vrij}`, null, "DELETE"); } catch (e) { alert(e.message); }
+      });
+    }
+
+    async function download() {
+      if (!kamer || !kamer.info) return;
+      const t = await laadToets(kamer.info.toets);
+      const ll = kamer.leerlingen || {};
+      const letters = klas.groepen.flatMap((g) => g.letters);
+      Object.keys(ll).forEach((l) => { if (!letters.includes(l)) letters.push(l); });
+      const cel = (s) => `"${String(s ?? "").replace(/"/g, '""')}"`;
+      const regels = [["Letter", "Status", "Score", ...t.vragen.map((v, i) => `${i + 1}. ${v.goed[0]}`)].map(cel).join(";")];
+      for (const l of letters) {
+        const d = ll[l];
+        if (!d) { regels.push([l, "niet begonnen", ""].map(cel).join(";")); continue; }
+        const s = scoreVan(t, d);
+        regels.push([l, d.ingeleverd ? "ingeleverd" : "niet ingeleverd", s.filter((x) => x.goed).length, ...s.map((x) => x.goed ? "goed" : (x.gegeven || ""))].map(cel).join(";"));
+      }
+      const blob = new Blob(["﻿" + regels.join("\r\n")], { type: "text/csv;charset=utf-8" });
+      const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+      a.download = `${t.id}-${new Date(kamer.info.gestart).toISOString().slice(0, 10)}.csv`; a.click();
+    }
+
+    async function begin() {
+      if (!Live.beschikbaar()) { $("inhoud").innerHTML = `<div class="vlak">De live-functie staat uit (zie assets/live-config.js).</div>`; return; }
+      const testModus = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && new URLSearchParams(location.search).has("live");
+      if (!testModus) {
+        if (!GitHub.heeftSleutel()) { $("inhoud").innerHTML = `<div class="vlak">Deze pagina is alleen voor de leerkracht. Vul eerst je sleutel in op <a href="sleutel.html">de sleutelpagina</a>.</div>`; return; }
+        try { await GitHub.test(); } catch (e) { $("inhoud").innerHTML = `<div class="vlak melding fout">${esc(e.message)} <a href="sleutel.html">Naar de sleutelpagina</a></div>`; return; }
+      }
+      try { [overzicht, klas] = await Promise.all([laadJson("opdrachten/overzicht.json").then((o) => o.opdrachten || []), laadJson("opdrachten/klas.json")]); }
+      catch { $("inhoud").innerHTML = `<div class="vlak melding fout">Het overzicht van de opdrachten kon niet geladen worden.</div>`; return; }
+      Live.luister(PLEK, "", (w) => { plek = w || {}; tekenAlles(); });
+    }
+    begin();
+  })();
+  </script>
+</body>
+</html>
