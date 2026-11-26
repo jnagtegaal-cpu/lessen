@@ -928,3 +928,21 @@ body.ed { background: #e9f1ec; }
 .ed-tekstdialoog h3 { margin: 0 0 10px; }
 .ed-tekstdialoog textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 20px; padding: 10px; border: 2px solid #b9d3c3; border-radius: 10px; }
 .ed-tekstdialoog .knoppen-rij { display: flex; justify-content: flex-end; gap: 8px; margin-top: 10px; }
+
+/* ---------- Thema kerst: donkere kerstavond, ook rond het scherm ---------- */
+body.bord.thema-kerst { background: #0b1024; color: #fff3d6; }
+.thema-kerst .podium { background: radial-gradient(ellipse 90% 80% at 50% 100%, #2a2238 0%, #141a36 50%, #0b1024 100%); }
+.thema-kerst .dia-houder { background: #0d1228; border-radius: 10px; box-shadow: 0 0 0 1px rgba(255,205,110,.25), 0 0 60px rgba(255,190,80,.18); }
+.dia.thema-kerst { background: #0d1228; color: #fff3d6; }
+.thema-kerst .bord-top, .thema-kerst .gereedschap { background: #0b1024; border-color: rgba(255,205,110,.18); color: #fff3d6; padding-top: 6px; padding-bottom: 6px; min-height: 0; }
+.thema-kerst .bord-top .titel { color: #ffd36e; }
+.thema-kerst .groep-gereedschap { border-color: rgba(255,205,110,.18); }
+.thema-kerst .ikoon-knop { background: rgba(255,214,120,.08); border-color: rgba(255,205,110,.25); color: #fff3d6; width: 42px; height: 42px; }
+.thema-kerst .teller-dia { color: #fff3d6; }
+.thema-kerst .ikoon-knop:hover { border-color: #ffd36e; }
+.thema-kerst .ikoon-knop[aria-pressed="true"] { background: rgba(255,205,110,.25); border-color: #ffd36e; color: #ffd36e; }
+.thema-kerst .label { background: rgba(255,205,110,.18); color: #ffd36e; }
+.thema-kerst .kleur { border-color: #0b1024; box-shadow: 0 0 0 1.5px rgba(255,205,110,.35); }
+.thema-kerst .dikte { background: rgba(255,214,120,.08); border-color: rgba(255,205,110,.25); width: 42px; height: 42px; }
+.thema-kerst .dikte span { background: #fff3d6; }
+.thema-kerst .dikte[aria-pressed="true"] { background: rgba(255,205,110,.25); border-color: #ffd36e; }

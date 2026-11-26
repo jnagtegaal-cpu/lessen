@@ -22,7 +22,7 @@
   // ---------- Schalen ----------
   function pasAan() {
     const r = podium.getBoundingClientRect();
-    const marge = window.innerWidth < 700 ? 8 : 24;
+    const marge = document.body.classList.contains("thema-kerst") ? 4 : window.innerWidth < 700 ? 8 : 24;
     st.schaal = Math.min((r.width - marge * 2) / B, (r.height - marge * 2) / H);
     const w = Math.round(B * st.schaal), h = Math.round(H * st.schaal);
     houder.style.width = w + "px"; houder.style.height = h + "px";

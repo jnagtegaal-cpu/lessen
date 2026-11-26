@@ -186,6 +186,7 @@ Het scorebord staat in `assets/score.js`.
 ## Thema en grapjes
 
 - **`"thema": "pub"`** (op het hoogste niveau van `les.json`) geeft de les een pub-look: houten planken, een krijtbord, bierviltjes als letters en een houten scorebalk. Zonder `thema` blijft de gewone groene stijl.
+- **`"thema": "kerst"`** geeft een donkere kerstavondsfeer rond het hele bord: donkere balken boven en onder, een donkere achtergrond rond het scherm en een kleinere rand, zodat het scherm groter wordt. Het scherm zelf maak je met een `html`-blok (bijvoorbeeld lampjes, sneeuw en sterren), zie de dagplanning van donderdag.
 - **`"grap"`** bij een scherm zet een kort grapje op een briefje in de hoek, bijvoorbeeld `"grap": "Wie vals speelt, trakteert."`. Werkt ook zonder thema.
 
 ## Live: telefoons laten meedoen
