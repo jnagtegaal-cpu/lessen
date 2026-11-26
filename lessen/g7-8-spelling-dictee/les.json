@@ -1,6 +1,6 @@
 {
   "id": "g7-8-spelling-dictee",
-  "titel": "Dictee: groep 8 meervouden op -esen, -elen en -iken en voltooid deelwoord van klankvaste werkwoorden, groep 7 woorden met een achtervoegsel en gebiedende wijs",
+  "titel": "Dictee: groep 8 woorden met ou als oe en meervouden op -esen, -elen en -iken, groep 7 woorden met een achtervoegsel en gebiedende wijs",
   "groep": "7-8",
   "vak": "Spelling",
   "onderwerp": "Dictee",
@@ -8,9 +8,8 @@
   "trefwoorden": [
     "dictee",
     "spelling",
+    "ou als oe",
     "meervouden -esen -elen -iken",
-    "voltooid deelwoord",
-    "klankvaste werkwoorden",
     "achtervoegsel",
     "gebiedende wijs"
   ],
@@ -20,7 +19,7 @@
     {
       "fase": "Dictee groep 8",
       "achtergrond": "leeg",
-      "notitie": "Groep 8. Tik elk woord en daarna de zin aan om ze te laten zien. Toetswoorden (blok 3): monniken, griepverschijnselen.",
+      "notitie": "Groep 8. Tik elk woord en daarna de zin aan om ze te laten zien. Toetswoorden (blok 3): monniken, douane, griepverschijnselen, souvenir.",
       "blokken": [
         {
           "type": "kop",
@@ -33,10 +32,10 @@
           "stijl": "font-size:48px;font-weight:700",
           "items": [
             "monniken",
-            "verdwaald",
+            "douane",
             "griepverschijnselen",
-            "perziken",
-            "geslurpt"
+            "souvenir",
+            "perziken"
           ]
         },
         {
@@ -47,7 +46,7 @@
           "type": "tekst",
           "verborgen": true,
           "stijl": "font-size:48px;font-weight:700;line-height:1.3",
-          "tekst": "De slechteriken hebben alle wasmiddelen in de winkel verstopt."
+          "tekst": "De journalist schreef twee artikelen over de nieuwe route."
         }
       ]
     },
