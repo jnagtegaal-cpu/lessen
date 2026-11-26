@@ -1,0 +1,874 @@
+{
+ "id": "g7-8-engels-dates",
+ "titel": "Dates: data zeggen in het Engels",
+ "groep": "7-8",
+ "vak": "Engels",
+ "blok": "Unit 3, lesson 2 (Just in time)",
+ "onderwerp": "Data",
+ "samenvatting": "Praatles Engels: herhaling klokkijken, dan maanden, dagen en rangtelwoorden en met een stappenplan data zeggen. Met Find your match (klokken en data) en mix en ruil met agendakaartjes (What are you going to do on the …?).",
+ "trefwoorden": [
+  "Engels",
+  "dates",
+  "datum",
+  "months",
+  "days",
+  "first second third",
+  "rangtelwoorden",
+  "diary",
+  "going to",
+  "find your match",
+  "mix en ruil",
+  "kaartjes"
+ ],
+ "gemaakt": "2026-11-26",
+ "lesdoel": "I can say the date in English.",
+ "lesdoelInHoek": true,
+ "bijlagen": [
+  {
+   "titel": "Find your match: klokken (kaartjes)",
+   "bestand": "klokken-find-your-match.pdf"
+  },
+  {
+   "titel": "Find your match: data (kaartjes)",
+   "bestand": "data-find-your-match.pdf"
+  },
+  {
+   "titel": "Mix en ruil: agendakaartjes",
+   "bestand": "agendakaartjes.pdf"
+  }
+ ],
+ "schermen": [
+  {
+   "fase": "Herhaling: vorige les",
+   "achtergrond": "leeg",
+   "lesdoelVerbergen": true,
+   "notitie": "Herhaling van de vorige les (What time is it?). Stel de vragen in het Engels; de kinderen mogen in het Nederlands of Engels antwoorden. Tik de vragen één voor één aan. Eerst denken, dan fluisteren naar je maatje, dan een willekeurige beurt.",
+   "blokken": [
+    {
+     "type": "kop",
+     "tekst": "What did we learn last lesson? 🤔"
+    },
+    {
+     "type": "lijst",
+     "stapsgewijs": true,
+     "stijl": "font-size:44px;line-height:1.8",
+     "items": [
+      "How do you ask the time in English?",
+      "What do you say when the long hand is on the **12**? And on the **3**, **6** and **9**?",
+      "What do **past** and **to** mean?",
+      "How do you say **half vier** in English?"
+     ]
+    }
+   ]
+  },
+  {
+   "fase": "Herhaling: hoe werkt de klok?",
+   "achtergrond": "leeg",
+   "notitie": "Laat de twee helften zien. Rechts (van 12 naar 6) is het uur net geweest: dat is PAST (over). Links (van 6 naar 12) komt het volgende uur eraan: dat is TO (voor). Tik daarna de vier plekken van de grote wijzer één voor één aan. Bij half: in het Engels kijk je terug (half past three), in het Nederlands vooruit (half vier).",
+   "blokken": [
+    {
+     "type": "kop",
+     "tekst": "How does the clock work?"
+    },
+    {
+     "type": "kolommen",
+     "verhouding": [
+      "1fr",
+      "1.1fr"
+     ],
+     "kolommen": [
+      [
+       {
+        "type": "html",
+        "html": "<div style=\"position:relative;width:560px;height:560px;margin:0 auto\"><svg width=\"560\" height=\"560\" viewBox=\"0 0 560 560\"><path d=\"M280.0,280.0 L280.0,6.0 A274.0,274.0 0 0 1 280.0,554.0 Z\" fill=\"#dff3e7\"/><path d=\"M280.0,280.0 L280.0,554.0 A274.0,274.0 0 0 1 280.0,6.0 Z\" fill=\"#fde9d4\"/><circle cx=\"280.0\" cy=\"280.0\" r=\"274.0\" fill=\"none\" stroke=\"#1f6fd1\" stroke-width=\"12.444444444444445\"/><line x1=\"280.0\" y1=\"44.4\" x2=\"280.0\" y2=\"14.2\" stroke=\"#333\" stroke-width=\"6.22\"/><line x1=\"306.3\" y1=\"29.3\" x2=\"307.8\" y2=\"15.7\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"332.4\" y1=\"33.4\" x2=\"335.3\" y2=\"20.0\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"357.9\" y1=\"40.3\" x2=\"362.1\" y2=\"27.2\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"382.5\" y1=\"49.7\" x2=\"388.1\" y2=\"37.2\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"397.8\" y1=\"75.9\" x2=\"412.9\" y2=\"49.8\" stroke=\"#333\" stroke-width=\"6.22\"/><line x1=\"428.2\" y1=\"76.1\" x2=\"436.2\" y2=\"65.0\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"448.7\" y1=\"92.7\" x2=\"457.8\" y2=\"82.5\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"467.3\" y1=\"111.3\" x2=\"477.5\" y2=\"102.2\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"483.9\" y1=\"131.8\" x2=\"495.0\" y2=\"123.8\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"484.1\" y1=\"162.2\" x2=\"510.2\" y2=\"147.1\" stroke=\"#333\" stroke-width=\"6.22\"/><line x1=\"510.3\" y1=\"177.5\" x2=\"522.8\" y2=\"171.9\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"519.7\" y1=\"202.1\" x2=\"532.8\" y2=\"197.9\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"526.6\" y1=\"227.6\" x2=\"540.0\" y2=\"224.7\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"530.7\" y1=\"253.7\" x2=\"544.3\" y2=\"252.2\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"515.6\" y1=\"280.0\" x2=\"545.8\" y2=\"280.0\" stroke=\"#333\" stroke-width=\"6.22\"/><line x1=\"530.7\" y1=\"306.3\" x2=\"544.3\" y2=\"307.8\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"526.6\" y1=\"332.4\" x2=\"540.0\" y2=\"335.3\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"519.7\" y1=\"357.9\" x2=\"532.8\" y2=\"362.1\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"510.3\" y1=\"382.5\" x2=\"522.8\" y2=\"388.1\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"484.1\" y1=\"397.8\" x2=\"510.2\" y2=\"412.9\" stroke=\"#333\" stroke-width=\"6.22\"/><line x1=\"483.9\" y1=\"428.2\" x2=\"495.0\" y2=\"436.2\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"467.3\" y1=\"448.7\" x2=\"477.5\" y2=\"457.8\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"448.7\" y1=\"467.3\" x2=\"457.8\" y2=\"477.5\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"428.2\" y1=\"483.9\" x2=\"436.2\" y2=\"495.0\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"397.8\" y1=\"484.1\" x2=\"412.9\" y2=\"510.2\" stroke=\"#333\" stroke-width=\"6.22\"/><line x1=\"382.5\" y1=\"510.3\" x2=\"388.1\" y2=\"522.8\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"357.9\" y1=\"519.7\" x2=\"362.1\" y2=\"532.8\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"332.4\" y1=\"526.6\" x2=\"335.3\" y2=\"540.0\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"306.3\" y1=\"530.7\" x2=\"307.8\" y2=\"544.3\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"280.0\" y1=\"515.6\" x2=\"280.0\" y2=\"545.8\" stroke=\"#333\" stroke-width=\"6.22\"/><line x1=\"253.7\" y1=\"530.7\" x2=\"252.2\" y2=\"544.3\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"227.6\" y1=\"526.6\" x2=\"224.7\" y2=\"540.0\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"202.1\" y1=\"519.7\" x2=\"197.9\" y2=\"532.8\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"177.5\" y1=\"510.3\" x2=\"171.9\" y2=\"522.8\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"162.2\" y1=\"484.1\" x2=\"147.1\" y2=\"510.2\" stroke=\"#333\" stroke-width=\"6.22\"/><line x1=\"131.8\" y1=\"483.9\" x2=\"123.8\" y2=\"495.0\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"111.3\" y1=\"467.3\" x2=\"102.2\" y2=\"477.5\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"92.7\" y1=\"448.7\" x2=\"82.5\" y2=\"457.8\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"76.1\" y1=\"428.2\" x2=\"65.0\" y2=\"436.2\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"75.9\" y1=\"397.8\" x2=\"49.8\" y2=\"412.9\" stroke=\"#333\" stroke-width=\"6.22\"/><line x1=\"49.7\" y1=\"382.5\" x2=\"37.2\" y2=\"388.1\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"40.3\" y1=\"357.9\" x2=\"27.2\" y2=\"362.1\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"33.4\" y1=\"332.4\" x2=\"20.0\" y2=\"335.3\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"29.3\" y1=\"306.3\" x2=\"15.7\" y2=\"307.8\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"44.4\" y1=\"280.0\" x2=\"14.2\" y2=\"280.0\" stroke=\"#333\" stroke-width=\"6.22\"/><line x1=\"29.3\" y1=\"253.7\" x2=\"15.7\" y2=\"252.2\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"33.4\" y1=\"227.6\" x2=\"20.0\" y2=\"224.7\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"40.3\" y1=\"202.1\" x2=\"27.2\" y2=\"197.9\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"49.7\" y1=\"177.5\" x2=\"37.2\" y2=\"171.9\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"75.9\" y1=\"162.2\" x2=\"49.8\" y2=\"147.1\" stroke=\"#333\" stroke-width=\"6.22\"/><line x1=\"76.1\" y1=\"131.8\" x2=\"65.0\" y2=\"123.8\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"92.7\" y1=\"111.3\" x2=\"82.5\" y2=\"102.2\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"111.3\" y1=\"92.7\" x2=\"102.2\" y2=\"82.5\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"131.8\" y1=\"76.1\" x2=\"123.8\" y2=\"65.0\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"162.2\" y1=\"75.9\" x2=\"147.1\" y2=\"49.8\" stroke=\"#333\" stroke-width=\"6.22\"/><line x1=\"177.5\" y1=\"49.7\" x2=\"171.9\" y2=\"37.2\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"202.1\" y1=\"40.3\" x2=\"197.9\" y2=\"27.2\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"227.6\" y1=\"33.4\" x2=\"224.7\" y2=\"20.0\" stroke=\"#333\" stroke-width=\"2.55\"/><line x1=\"253.7\" y1=\"29.3\" x2=\"252.2\" y2=\"15.7\" stroke=\"#333\" stroke-width=\"2.55\"/><text x=\"378.6\" y=\"131.6\" font-size=\"62\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">1</text><text x=\"450.8\" y=\"203.8\" font-size=\"62\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">2</text><text x=\"477.3\" y=\"302.4\" font-size=\"62\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">3</text><text x=\"450.8\" y=\"401.0\" font-size=\"62\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">4</text><text x=\"378.6\" y=\"473.2\" font-size=\"62\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">5</text><text x=\"280.0\" y=\"499.7\" font-size=\"62\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">6</text><text x=\"181.4\" y=\"473.2\" font-size=\"62\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">7</text><text x=\"109.2\" y=\"401.0\" font-size=\"62\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">8</text><text x=\"82.7\" y=\"302.4\" font-size=\"62\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">9</text><text x=\"109.2\" y=\"203.8\" font-size=\"62\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">10</text><text x=\"181.4\" y=\"131.6\" font-size=\"62\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">11</text><text x=\"280.0\" y=\"105.1\" font-size=\"62\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">12</text><circle cx=\"280.0\" cy=\"280.0\" r=\"14.0\" fill=\"#1d2b24\"/></svg><div style=\"position:absolute;left:330px;top:315px;font-size:44px;font-weight:800;color:#2f9e63\">past</div><div style=\"position:absolute;left:330px;top:367px;font-size:26px;color:#2f9e63\">over</div><div style=\"position:absolute;left:170px;top:315px;font-size:44px;font-weight:800;color:#d9822b\">to</div><div style=\"position:absolute;left:170px;top:367px;font-size:26px;color:#d9822b\">voor</div></div>"
+       }
+      ],
+      [
+       {
+        "type": "subkop",
+        "tekst": "Kijk naar de grote wijzer"
+       },
+       {
+        "type": "lijst",
+        "stapsgewijs": true,
+        "items": [
+         "op de **12**: *o'clock* · uur",
+         "op de **3**: *a quarter past* · kwart over",
+         "op de **6**: *half past* · half … ⚠️",
+         "op de **9**: *a quarter to* · kwart voor"
+        ],
+        "stijl": "font-size:38px;line-height:1.7"
+       }
+      ]
+     ]
+    }
+   ],
+   "lesdoelVerbergen": true
+  },
+  {
+   "fase": "Herhaling: Nederlands en Engels",
+   "achtergrond": "leeg",
+   "notitie": "Lees eerst samen de Nederlandse tijd. Laat de klas raden hoe het in het Engels is (maatjesbeurt), en tik dan het Engels aan. Wijs bij elke klok de grote wijzer aan.",
+   "blokken": [
+    {
+     "type": "kop",
+     "tekst": "Nederlands → English"
+    },
+    {
+     "type": "kolommen",
+     "verhouding": [
+      "1fr",
+      "1fr",
+      "1fr",
+      "1fr"
+     ],
+     "kolommen": [
+      [
+       {
+        "type": "html",
+        "html": "<div style=\"text-align:center\"><svg width=\"260\" height=\"260\" viewBox=\"0 0 260 260\"><circle cx=\"130.0\" cy=\"130.0\" r=\"124.0\" fill=\"#fff\" stroke=\"#1f6fd1\" stroke-width=\"5.777777777777778\"/><line x1=\"130.0\" y1=\"23.4\" x2=\"130.0\" y2=\"9.7\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"141.9\" y1=\"16.5\" x2=\"142.6\" y2=\"10.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"153.7\" y1=\"18.4\" x2=\"155.0\" y2=\"12.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"165.3\" y1=\"21.5\" x2=\"167.2\" y2=\"15.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"176.4\" y1=\"25.8\" x2=\"178.9\" y2=\"20.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"183.3\" y1=\"37.6\" x2=\"190.1\" y2=\"25.8\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"197.1\" y1=\"37.7\" x2=\"200.7\" y2=\"32.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"206.3\" y1=\"45.2\" x2=\"210.5\" y2=\"40.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"214.8\" y1=\"53.7\" x2=\"219.4\" y2=\"49.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"222.3\" y1=\"62.9\" x2=\"227.3\" y2=\"59.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"222.4\" y1=\"76.7\" x2=\"234.2\" y2=\"69.9\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"234.2\" y1=\"83.6\" x2=\"239.9\" y2=\"81.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"238.5\" y1=\"94.7\" x2=\"244.4\" y2=\"92.8\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"241.6\" y1=\"106.3\" x2=\"247.7\" y2=\"105.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"243.5\" y1=\"118.1\" x2=\"249.6\" y2=\"117.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"236.6\" y1=\"130.0\" x2=\"250.3\" y2=\"130.0\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"243.5\" y1=\"141.9\" x2=\"249.6\" y2=\"142.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"241.6\" y1=\"153.7\" x2=\"247.7\" y2=\"155.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"238.5\" y1=\"165.3\" x2=\"244.4\" y2=\"167.2\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"234.2\" y1=\"176.4\" x2=\"239.9\" y2=\"178.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"222.4\" y1=\"183.3\" x2=\"234.2\" y2=\"190.1\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"222.3\" y1=\"197.1\" x2=\"227.3\" y2=\"200.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"214.8\" y1=\"206.3\" x2=\"219.4\" y2=\"210.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"206.3\" y1=\"214.8\" x2=\"210.5\" y2=\"219.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"197.1\" y1=\"222.3\" x2=\"200.7\" y2=\"227.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"183.3\" y1=\"222.4\" x2=\"190.1\" y2=\"234.2\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"176.4\" y1=\"234.2\" x2=\"178.9\" y2=\"239.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"165.3\" y1=\"238.5\" x2=\"167.2\" y2=\"244.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"153.7\" y1=\"241.6\" x2=\"155.0\" y2=\"247.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"141.9\" y1=\"243.5\" x2=\"142.6\" y2=\"249.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"130.0\" y1=\"236.6\" x2=\"130.0\" y2=\"250.3\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"118.1\" y1=\"243.5\" x2=\"117.4\" y2=\"249.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"106.3\" y1=\"241.6\" x2=\"105.0\" y2=\"247.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"94.7\" y1=\"238.5\" x2=\"92.8\" y2=\"244.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"83.6\" y1=\"234.2\" x2=\"81.1\" y2=\"239.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"76.7\" y1=\"222.4\" x2=\"69.9\" y2=\"234.2\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"62.9\" y1=\"222.3\" x2=\"59.3\" y2=\"227.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"53.7\" y1=\"214.8\" x2=\"49.5\" y2=\"219.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"45.2\" y1=\"206.3\" x2=\"40.6\" y2=\"210.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"37.7\" y1=\"197.1\" x2=\"32.7\" y2=\"200.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"37.6\" y1=\"183.3\" x2=\"25.8\" y2=\"190.1\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"25.8\" y1=\"176.4\" x2=\"20.1\" y2=\"178.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"21.5\" y1=\"165.3\" x2=\"15.6\" y2=\"167.2\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"18.4\" y1=\"153.7\" x2=\"12.3\" y2=\"155.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"16.5\" y1=\"141.9\" x2=\"10.4\" y2=\"142.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"23.4\" y1=\"130.0\" x2=\"9.7\" y2=\"130.0\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"16.5\" y1=\"118.1\" x2=\"10.4\" y2=\"117.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"18.4\" y1=\"106.3\" x2=\"12.3\" y2=\"105.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"21.5\" y1=\"94.7\" x2=\"15.6\" y2=\"92.8\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"25.8\" y1=\"83.6\" x2=\"20.1\" y2=\"81.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"37.6\" y1=\"76.7\" x2=\"25.8\" y2=\"69.9\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"37.7\" y1=\"62.9\" x2=\"32.7\" y2=\"59.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"45.2\" y1=\"53.7\" x2=\"40.6\" y2=\"49.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"53.7\" y1=\"45.2\" x2=\"49.5\" y2=\"40.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"62.9\" y1=\"37.7\" x2=\"59.3\" y2=\"32.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"76.7\" y1=\"37.6\" x2=\"69.9\" y2=\"25.8\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"83.6\" y1=\"25.8\" x2=\"81.1\" y2=\"20.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"94.7\" y1=\"21.5\" x2=\"92.8\" y2=\"15.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"106.3\" y1=\"18.4\" x2=\"105.0\" y2=\"12.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"118.1\" y1=\"16.5\" x2=\"117.4\" y2=\"10.4\" stroke=\"#333\" stroke-width=\"1.18\"/><text x=\"174.6\" y=\"63.1\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">1</text><text x=\"207.3\" y=\"95.8\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">2</text><text x=\"219.3\" y=\"140.4\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">3</text><text x=\"207.3\" y=\"185.0\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">4</text><text x=\"174.6\" y=\"217.7\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">5</text><text x=\"130.0\" y=\"229.7\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">6</text><text x=\"85.4\" y=\"217.7\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">7</text><text x=\"52.7\" y=\"185.0\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">8</text><text x=\"40.7\" y=\"140.4\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">9</text><text x=\"52.7\" y=\"95.8\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">10</text><text x=\"85.4\" y=\"63.1\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">11</text><text x=\"130.0\" y=\"51.1\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">12</text><line x1=\"130.0\" y1=\"130.0\" x2=\"189.5\" y2=\"130.0\" stroke=\"#1d2b24\" stroke-width=\"9.3\" stroke-linecap=\"round\"/><line x1=\"130.0\" y1=\"130.0\" x2=\"130.0\" y2=\"55.6\" stroke=\"#d6453d\" stroke-width=\"5.2\" stroke-linecap=\"round\"/><circle cx=\"130.0\" cy=\"130.0\" r=\"6.5\" fill=\"#1d2b24\"/></svg></div>"
+       },
+       {
+        "type": "tekst",
+        "tekst": "drie uur",
+        "stijl": "text-align:center;font-size:32px;color:#5b6b63"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**three o'clock**",
+        "verborgen": true,
+        "stijl": "text-align:center;font-size:34px"
+       }
+      ],
+      [
+       {
+        "type": "html",
+        "html": "<div style=\"text-align:center\"><svg width=\"260\" height=\"260\" viewBox=\"0 0 260 260\"><circle cx=\"130.0\" cy=\"130.0\" r=\"124.0\" fill=\"#fff\" stroke=\"#1f6fd1\" stroke-width=\"5.777777777777778\"/><line x1=\"130.0\" y1=\"23.4\" x2=\"130.0\" y2=\"9.7\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"141.9\" y1=\"16.5\" x2=\"142.6\" y2=\"10.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"153.7\" y1=\"18.4\" x2=\"155.0\" y2=\"12.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"165.3\" y1=\"21.5\" x2=\"167.2\" y2=\"15.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"176.4\" y1=\"25.8\" x2=\"178.9\" y2=\"20.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"183.3\" y1=\"37.6\" x2=\"190.1\" y2=\"25.8\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"197.1\" y1=\"37.7\" x2=\"200.7\" y2=\"32.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"206.3\" y1=\"45.2\" x2=\"210.5\" y2=\"40.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"214.8\" y1=\"53.7\" x2=\"219.4\" y2=\"49.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"222.3\" y1=\"62.9\" x2=\"227.3\" y2=\"59.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"222.4\" y1=\"76.7\" x2=\"234.2\" y2=\"69.9\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"234.2\" y1=\"83.6\" x2=\"239.9\" y2=\"81.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"238.5\" y1=\"94.7\" x2=\"244.4\" y2=\"92.8\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"241.6\" y1=\"106.3\" x2=\"247.7\" y2=\"105.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"243.5\" y1=\"118.1\" x2=\"249.6\" y2=\"117.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"236.6\" y1=\"130.0\" x2=\"250.3\" y2=\"130.0\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"243.5\" y1=\"141.9\" x2=\"249.6\" y2=\"142.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"241.6\" y1=\"153.7\" x2=\"247.7\" y2=\"155.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"238.5\" y1=\"165.3\" x2=\"244.4\" y2=\"167.2\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"234.2\" y1=\"176.4\" x2=\"239.9\" y2=\"178.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"222.4\" y1=\"183.3\" x2=\"234.2\" y2=\"190.1\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"222.3\" y1=\"197.1\" x2=\"227.3\" y2=\"200.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"214.8\" y1=\"206.3\" x2=\"219.4\" y2=\"210.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"206.3\" y1=\"214.8\" x2=\"210.5\" y2=\"219.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"197.1\" y1=\"222.3\" x2=\"200.7\" y2=\"227.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"183.3\" y1=\"222.4\" x2=\"190.1\" y2=\"234.2\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"176.4\" y1=\"234.2\" x2=\"178.9\" y2=\"239.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"165.3\" y1=\"238.5\" x2=\"167.2\" y2=\"244.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"153.7\" y1=\"241.6\" x2=\"155.0\" y2=\"247.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"141.9\" y1=\"243.5\" x2=\"142.6\" y2=\"249.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"130.0\" y1=\"236.6\" x2=\"130.0\" y2=\"250.3\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"118.1\" y1=\"243.5\" x2=\"117.4\" y2=\"249.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"106.3\" y1=\"241.6\" x2=\"105.0\" y2=\"247.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"94.7\" y1=\"238.5\" x2=\"92.8\" y2=\"244.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"83.6\" y1=\"234.2\" x2=\"81.1\" y2=\"239.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"76.7\" y1=\"222.4\" x2=\"69.9\" y2=\"234.2\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"62.9\" y1=\"222.3\" x2=\"59.3\" y2=\"227.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"53.7\" y1=\"214.8\" x2=\"49.5\" y2=\"219.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"45.2\" y1=\"206.3\" x2=\"40.6\" y2=\"210.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"37.7\" y1=\"197.1\" x2=\"32.7\" y2=\"200.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"37.6\" y1=\"183.3\" x2=\"25.8\" y2=\"190.1\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"25.8\" y1=\"176.4\" x2=\"20.1\" y2=\"178.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"21.5\" y1=\"165.3\" x2=\"15.6\" y2=\"167.2\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"18.4\" y1=\"153.7\" x2=\"12.3\" y2=\"155.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"16.5\" y1=\"141.9\" x2=\"10.4\" y2=\"142.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"23.4\" y1=\"130.0\" x2=\"9.7\" y2=\"130.0\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"16.5\" y1=\"118.1\" x2=\"10.4\" y2=\"117.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"18.4\" y1=\"106.3\" x2=\"12.3\" y2=\"105.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"21.5\" y1=\"94.7\" x2=\"15.6\" y2=\"92.8\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"25.8\" y1=\"83.6\" x2=\"20.1\" y2=\"81.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"37.6\" y1=\"76.7\" x2=\"25.8\" y2=\"69.9\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"37.7\" y1=\"62.9\" x2=\"32.7\" y2=\"59.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"45.2\" y1=\"53.7\" x2=\"40.6\" y2=\"49.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"53.7\" y1=\"45.2\" x2=\"49.5\" y2=\"40.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"62.9\" y1=\"37.7\" x2=\"59.3\" y2=\"32.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"76.7\" y1=\"37.6\" x2=\"69.9\" y2=\"25.8\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"83.6\" y1=\"25.8\" x2=\"81.1\" y2=\"20.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"94.7\" y1=\"21.5\" x2=\"92.8\" y2=\"15.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"106.3\" y1=\"18.4\" x2=\"105.0\" y2=\"12.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"118.1\" y1=\"16.5\" x2=\"117.4\" y2=\"10.4\" stroke=\"#333\" stroke-width=\"1.18\"/><text x=\"174.6\" y=\"63.1\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">1</text><text x=\"207.3\" y=\"95.8\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">2</text><text x=\"219.3\" y=\"140.4\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">3</text><text x=\"207.3\" y=\"185.0\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">4</text><text x=\"174.6\" y=\"217.7\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">5</text><text x=\"130.0\" y=\"229.7\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">6</text><text x=\"85.4\" y=\"217.7\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">7</text><text x=\"52.7\" y=\"185.0\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">8</text><text x=\"40.7\" y=\"140.4\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">9</text><text x=\"52.7\" y=\"95.8\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">10</text><text x=\"85.4\" y=\"63.1\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">11</text><text x=\"130.0\" y=\"51.1\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">12</text><line x1=\"130.0\" y1=\"130.0\" x2=\"189.0\" y2=\"137.8\" stroke=\"#1d2b24\" stroke-width=\"9.3\" stroke-linecap=\"round\"/><line x1=\"130.0\" y1=\"130.0\" x2=\"204.4\" y2=\"130.0\" stroke=\"#d6453d\" stroke-width=\"5.2\" stroke-linecap=\"round\"/><circle cx=\"130.0\" cy=\"130.0\" r=\"6.5\" fill=\"#1d2b24\"/></svg></div>"
+       },
+       {
+        "type": "tekst",
+        "tekst": "kwart over drie",
+        "stijl": "text-align:center;font-size:32px;color:#5b6b63"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**a quarter past three**",
+        "verborgen": true,
+        "stijl": "text-align:center;font-size:34px"
+       }
+      ],
+      [
+       {
+        "type": "html",
+        "html": "<div style=\"text-align:center\"><svg width=\"260\" height=\"260\" viewBox=\"0 0 260 260\"><circle cx=\"130.0\" cy=\"130.0\" r=\"124.0\" fill=\"#fff\" stroke=\"#1f6fd1\" stroke-width=\"5.777777777777778\"/><line x1=\"130.0\" y1=\"23.4\" x2=\"130.0\" y2=\"9.7\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"141.9\" y1=\"16.5\" x2=\"142.6\" y2=\"10.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"153.7\" y1=\"18.4\" x2=\"155.0\" y2=\"12.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"165.3\" y1=\"21.5\" x2=\"167.2\" y2=\"15.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"176.4\" y1=\"25.8\" x2=\"178.9\" y2=\"20.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"183.3\" y1=\"37.6\" x2=\"190.1\" y2=\"25.8\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"197.1\" y1=\"37.7\" x2=\"200.7\" y2=\"32.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"206.3\" y1=\"45.2\" x2=\"210.5\" y2=\"40.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"214.8\" y1=\"53.7\" x2=\"219.4\" y2=\"49.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"222.3\" y1=\"62.9\" x2=\"227.3\" y2=\"59.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"222.4\" y1=\"76.7\" x2=\"234.2\" y2=\"69.9\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"234.2\" y1=\"83.6\" x2=\"239.9\" y2=\"81.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"238.5\" y1=\"94.7\" x2=\"244.4\" y2=\"92.8\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"241.6\" y1=\"106.3\" x2=\"247.7\" y2=\"105.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"243.5\" y1=\"118.1\" x2=\"249.6\" y2=\"117.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"236.6\" y1=\"130.0\" x2=\"250.3\" y2=\"130.0\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"243.5\" y1=\"141.9\" x2=\"249.6\" y2=\"142.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"241.6\" y1=\"153.7\" x2=\"247.7\" y2=\"155.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"238.5\" y1=\"165.3\" x2=\"244.4\" y2=\"167.2\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"234.2\" y1=\"176.4\" x2=\"239.9\" y2=\"178.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"222.4\" y1=\"183.3\" x2=\"234.2\" y2=\"190.1\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"222.3\" y1=\"197.1\" x2=\"227.3\" y2=\"200.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"214.8\" y1=\"206.3\" x2=\"219.4\" y2=\"210.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"206.3\" y1=\"214.8\" x2=\"210.5\" y2=\"219.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"197.1\" y1=\"222.3\" x2=\"200.7\" y2=\"227.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"183.3\" y1=\"222.4\" x2=\"190.1\" y2=\"234.2\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"176.4\" y1=\"234.2\" x2=\"178.9\" y2=\"239.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"165.3\" y1=\"238.5\" x2=\"167.2\" y2=\"244.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"153.7\" y1=\"241.6\" x2=\"155.0\" y2=\"247.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"141.9\" y1=\"243.5\" x2=\"142.6\" y2=\"249.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"130.0\" y1=\"236.6\" x2=\"130.0\" y2=\"250.3\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"118.1\" y1=\"243.5\" x2=\"117.4\" y2=\"249.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"106.3\" y1=\"241.6\" x2=\"105.0\" y2=\"247.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"94.7\" y1=\"238.5\" x2=\"92.8\" y2=\"244.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"83.6\" y1=\"234.2\" x2=\"81.1\" y2=\"239.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"76.7\" y1=\"222.4\" x2=\"69.9\" y2=\"234.2\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"62.9\" y1=\"222.3\" x2=\"59.3\" y2=\"227.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"53.7\" y1=\"214.8\" x2=\"49.5\" y2=\"219.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"45.2\" y1=\"206.3\" x2=\"40.6\" y2=\"210.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"37.7\" y1=\"197.1\" x2=\"32.7\" y2=\"200.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"37.6\" y1=\"183.3\" x2=\"25.8\" y2=\"190.1\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"25.8\" y1=\"176.4\" x2=\"20.1\" y2=\"178.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"21.5\" y1=\"165.3\" x2=\"15.6\" y2=\"167.2\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"18.4\" y1=\"153.7\" x2=\"12.3\" y2=\"155.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"16.5\" y1=\"141.9\" x2=\"10.4\" y2=\"142.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"23.4\" y1=\"130.0\" x2=\"9.7\" y2=\"130.0\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"16.5\" y1=\"118.1\" x2=\"10.4\" y2=\"117.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"18.4\" y1=\"106.3\" x2=\"12.3\" y2=\"105.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"21.5\" y1=\"94.7\" x2=\"15.6\" y2=\"92.8\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"25.8\" y1=\"83.6\" x2=\"20.1\" y2=\"81.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"37.6\" y1=\"76.7\" x2=\"25.8\" y2=\"69.9\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"37.7\" y1=\"62.9\" x2=\"32.7\" y2=\"59.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"45.2\" y1=\"53.7\" x2=\"40.6\" y2=\"49.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"53.7\" y1=\"45.2\" x2=\"49.5\" y2=\"40.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"62.9\" y1=\"37.7\" x2=\"59.3\" y2=\"32.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"76.7\" y1=\"37.6\" x2=\"69.9\" y2=\"25.8\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"83.6\" y1=\"25.8\" x2=\"81.1\" y2=\"20.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"94.7\" y1=\"21.5\" x2=\"92.8\" y2=\"15.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"106.3\" y1=\"18.4\" x2=\"105.0\" y2=\"12.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"118.1\" y1=\"16.5\" x2=\"117.4\" y2=\"10.4\" stroke=\"#333\" stroke-width=\"1.18\"/><text x=\"174.6\" y=\"63.1\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">1</text><text x=\"207.3\" y=\"95.8\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">2</text><text x=\"219.3\" y=\"140.4\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">3</text><text x=\"207.3\" y=\"185.0\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">4</text><text x=\"174.6\" y=\"217.7\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">5</text><text x=\"130.0\" y=\"229.7\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">6</text><text x=\"85.4\" y=\"217.7\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">7</text><text x=\"52.7\" y=\"185.0\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">8</text><text x=\"40.7\" y=\"140.4\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">9</text><text x=\"52.7\" y=\"95.8\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">10</text><text x=\"85.4\" y=\"63.1\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">11</text><text x=\"130.0\" y=\"51.1\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">12</text><line x1=\"130.0\" y1=\"130.0\" x2=\"187.5\" y2=\"145.4\" stroke=\"#1d2b24\" stroke-width=\"9.3\" stroke-linecap=\"round\"/><line x1=\"130.0\" y1=\"130.0\" x2=\"130.0\" y2=\"204.4\" stroke=\"#d6453d\" stroke-width=\"5.2\" stroke-linecap=\"round\"/><circle cx=\"130.0\" cy=\"130.0\" r=\"6.5\" fill=\"#1d2b24\"/></svg></div>"
+       },
+       {
+        "type": "tekst",
+        "tekst": "half vier",
+        "stijl": "text-align:center;font-size:32px;color:#5b6b63"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**half past three**",
+        "verborgen": true,
+        "stijl": "text-align:center;font-size:34px"
+       }
+      ],
+      [
+       {
+        "type": "html",
+        "html": "<div style=\"text-align:center\"><svg width=\"260\" height=\"260\" viewBox=\"0 0 260 260\"><circle cx=\"130.0\" cy=\"130.0\" r=\"124.0\" fill=\"#fff\" stroke=\"#1f6fd1\" stroke-width=\"5.777777777777778\"/><line x1=\"130.0\" y1=\"23.4\" x2=\"130.0\" y2=\"9.7\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"141.9\" y1=\"16.5\" x2=\"142.6\" y2=\"10.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"153.7\" y1=\"18.4\" x2=\"155.0\" y2=\"12.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"165.3\" y1=\"21.5\" x2=\"167.2\" y2=\"15.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"176.4\" y1=\"25.8\" x2=\"178.9\" y2=\"20.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"183.3\" y1=\"37.6\" x2=\"190.1\" y2=\"25.8\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"197.1\" y1=\"37.7\" x2=\"200.7\" y2=\"32.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"206.3\" y1=\"45.2\" x2=\"210.5\" y2=\"40.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"214.8\" y1=\"53.7\" x2=\"219.4\" y2=\"49.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"222.3\" y1=\"62.9\" x2=\"227.3\" y2=\"59.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"222.4\" y1=\"76.7\" x2=\"234.2\" y2=\"69.9\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"234.2\" y1=\"83.6\" x2=\"239.9\" y2=\"81.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"238.5\" y1=\"94.7\" x2=\"244.4\" y2=\"92.8\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"241.6\" y1=\"106.3\" x2=\"247.7\" y2=\"105.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"243.5\" y1=\"118.1\" x2=\"249.6\" y2=\"117.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"236.6\" y1=\"130.0\" x2=\"250.3\" y2=\"130.0\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"243.5\" y1=\"141.9\" x2=\"249.6\" y2=\"142.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"241.6\" y1=\"153.7\" x2=\"247.7\" y2=\"155.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"238.5\" y1=\"165.3\" x2=\"244.4\" y2=\"167.2\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"234.2\" y1=\"176.4\" x2=\"239.9\" y2=\"178.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"222.4\" y1=\"183.3\" x2=\"234.2\" y2=\"190.1\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"222.3\" y1=\"197.1\" x2=\"227.3\" y2=\"200.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"214.8\" y1=\"206.3\" x2=\"219.4\" y2=\"210.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"206.3\" y1=\"214.8\" x2=\"210.5\" y2=\"219.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"197.1\" y1=\"222.3\" x2=\"200.7\" y2=\"227.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"183.3\" y1=\"222.4\" x2=\"190.1\" y2=\"234.2\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"176.4\" y1=\"234.2\" x2=\"178.9\" y2=\"239.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"165.3\" y1=\"238.5\" x2=\"167.2\" y2=\"244.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"153.7\" y1=\"241.6\" x2=\"155.0\" y2=\"247.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"141.9\" y1=\"243.5\" x2=\"142.6\" y2=\"249.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"130.0\" y1=\"236.6\" x2=\"130.0\" y2=\"250.3\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"118.1\" y1=\"243.5\" x2=\"117.4\" y2=\"249.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"106.3\" y1=\"241.6\" x2=\"105.0\" y2=\"247.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"94.7\" y1=\"238.5\" x2=\"92.8\" y2=\"244.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"83.6\" y1=\"234.2\" x2=\"81.1\" y2=\"239.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"76.7\" y1=\"222.4\" x2=\"69.9\" y2=\"234.2\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"62.9\" y1=\"222.3\" x2=\"59.3\" y2=\"227.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"53.7\" y1=\"214.8\" x2=\"49.5\" y2=\"219.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"45.2\" y1=\"206.3\" x2=\"40.6\" y2=\"210.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"37.7\" y1=\"197.1\" x2=\"32.7\" y2=\"200.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"37.6\" y1=\"183.3\" x2=\"25.8\" y2=\"190.1\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"25.8\" y1=\"176.4\" x2=\"20.1\" y2=\"178.9\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"21.5\" y1=\"165.3\" x2=\"15.6\" y2=\"167.2\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"18.4\" y1=\"153.7\" x2=\"12.3\" y2=\"155.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"16.5\" y1=\"141.9\" x2=\"10.4\" y2=\"142.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"23.4\" y1=\"130.0\" x2=\"9.7\" y2=\"130.0\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"16.5\" y1=\"118.1\" x2=\"10.4\" y2=\"117.4\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"18.4\" y1=\"106.3\" x2=\"12.3\" y2=\"105.0\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"21.5\" y1=\"94.7\" x2=\"15.6\" y2=\"92.8\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"25.8\" y1=\"83.6\" x2=\"20.1\" y2=\"81.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"37.6\" y1=\"76.7\" x2=\"25.8\" y2=\"69.9\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"37.7\" y1=\"62.9\" x2=\"32.7\" y2=\"59.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"45.2\" y1=\"53.7\" x2=\"40.6\" y2=\"49.5\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"53.7\" y1=\"45.2\" x2=\"49.5\" y2=\"40.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"62.9\" y1=\"37.7\" x2=\"59.3\" y2=\"32.7\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"76.7\" y1=\"37.6\" x2=\"69.9\" y2=\"25.8\" stroke=\"#333\" stroke-width=\"2.89\"/><line x1=\"83.6\" y1=\"25.8\" x2=\"81.1\" y2=\"20.1\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"94.7\" y1=\"21.5\" x2=\"92.8\" y2=\"15.6\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"106.3\" y1=\"18.4\" x2=\"105.0\" y2=\"12.3\" stroke=\"#333\" stroke-width=\"1.18\"/><line x1=\"118.1\" y1=\"16.5\" x2=\"117.4\" y2=\"10.4\" stroke=\"#333\" stroke-width=\"1.18\"/><text x=\"174.6\" y=\"63.1\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">1</text><text x=\"207.3\" y=\"95.8\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">2</text><text x=\"219.3\" y=\"140.4\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">3</text><text x=\"207.3\" y=\"185.0\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">4</text><text x=\"174.6\" y=\"217.7\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">5</text><text x=\"130.0\" y=\"229.7\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">6</text><text x=\"85.4\" y=\"217.7\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">7</text><text x=\"52.7\" y=\"185.0\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">8</text><text x=\"40.7\" y=\"140.4\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">9</text><text x=\"52.7\" y=\"95.8\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">10</text><text x=\"85.4\" y=\"63.1\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">11</text><text x=\"130.0\" y=\"51.1\" font-size=\"29\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">12</text><line x1=\"130.0\" y1=\"130.0\" x2=\"185.0\" y2=\"152.8\" stroke=\"#1d2b24\" stroke-width=\"9.3\" stroke-linecap=\"round\"/><line x1=\"130.0\" y1=\"130.0\" x2=\"55.6\" y2=\"130.0\" stroke=\"#d6453d\" stroke-width=\"5.2\" stroke-linecap=\"round\"/><circle cx=\"130.0\" cy=\"130.0\" r=\"6.5\" fill=\"#1d2b24\"/></svg></div>"
+       },
+       {
+        "type": "tekst",
+        "tekst": "kwart voor vier",
+        "stijl": "text-align:center;font-size:32px;color:#5b6b63"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**a quarter to four**",
+        "verborgen": true,
+        "stijl": "text-align:center;font-size:34px"
+       }
+      ]
+     ]
+    }
+   ],
+   "lesdoelVerbergen": true
+  },
+  {
+   "fase": "Herhaling: pas op met half",
+   "achtergrond": "leeg",
+   "notitie": "Dé valkuil. Nederlands: half vier = de helft op weg naar vier, je kijkt vooruit. Engels: half past three = een half uur na drie, je kijkt terug. Zeg je in het Engels 'half four', dan denkt een Engelsman aan half vijf! Laat de klas het nazeggen: half vier … half past three.",
+   "blokken": [
+    {
+     "type": "kop",
+     "tekst": "Watch out! ⚠️"
+    },
+    {
+     "type": "kolommen",
+     "verhouding": [
+      "1fr",
+      "1.2fr"
+     ],
+     "kolommen": [
+      [
+       {
+        "type": "html",
+        "html": "<div style=\"text-align:center\"><svg width=\"440\" height=\"440\" viewBox=\"0 0 440 440\"><circle cx=\"220.0\" cy=\"220.0\" r=\"214.0\" fill=\"#fff\" stroke=\"#1f6fd1\" stroke-width=\"9.777777777777779\"/><line x1=\"220.0\" y1=\"36.0\" x2=\"220.0\" y2=\"12.4\" stroke=\"#333\" stroke-width=\"4.89\"/><line x1=\"240.6\" y1=\"24.2\" x2=\"241.7\" y2=\"13.6\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"260.9\" y1=\"27.4\" x2=\"263.2\" y2=\"17.0\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"280.8\" y1=\"32.8\" x2=\"284.1\" y2=\"22.6\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"300.1\" y1=\"40.1\" x2=\"304.4\" y2=\"30.4\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"312.0\" y1=\"60.6\" x2=\"323.8\" y2=\"40.2\" stroke=\"#333\" stroke-width=\"4.89\"/><line x1=\"335.7\" y1=\"60.7\" x2=\"342.0\" y2=\"52.1\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"351.7\" y1=\"73.7\" x2=\"358.9\" y2=\"65.7\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"366.3\" y1=\"88.3\" x2=\"374.3\" y2=\"81.1\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"379.3\" y1=\"104.3\" x2=\"387.9\" y2=\"98.0\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"379.4\" y1=\"128.0\" x2=\"399.8\" y2=\"116.2\" stroke=\"#333\" stroke-width=\"4.89\"/><line x1=\"399.9\" y1=\"139.9\" x2=\"409.6\" y2=\"135.6\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"407.2\" y1=\"159.2\" x2=\"417.4\" y2=\"155.9\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"412.6\" y1=\"179.1\" x2=\"423.0\" y2=\"176.8\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"415.8\" y1=\"199.4\" x2=\"426.4\" y2=\"198.3\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"404.0\" y1=\"220.0\" x2=\"427.6\" y2=\"220.0\" stroke=\"#333\" stroke-width=\"4.89\"/><line x1=\"415.8\" y1=\"240.6\" x2=\"426.4\" y2=\"241.7\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"412.6\" y1=\"260.9\" x2=\"423.0\" y2=\"263.2\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"407.2\" y1=\"280.8\" x2=\"417.4\" y2=\"284.1\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"399.9\" y1=\"300.1\" x2=\"409.6\" y2=\"304.4\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"379.4\" y1=\"312.0\" x2=\"399.8\" y2=\"323.8\" stroke=\"#333\" stroke-width=\"4.89\"/><line x1=\"379.3\" y1=\"335.7\" x2=\"387.9\" y2=\"342.0\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"366.3\" y1=\"351.7\" x2=\"374.3\" y2=\"358.9\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"351.7\" y1=\"366.3\" x2=\"358.9\" y2=\"374.3\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"335.7\" y1=\"379.3\" x2=\"342.0\" y2=\"387.9\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"312.0\" y1=\"379.4\" x2=\"323.8\" y2=\"399.8\" stroke=\"#333\" stroke-width=\"4.89\"/><line x1=\"300.1\" y1=\"399.9\" x2=\"304.4\" y2=\"409.6\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"280.8\" y1=\"407.2\" x2=\"284.1\" y2=\"417.4\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"260.9\" y1=\"412.6\" x2=\"263.2\" y2=\"423.0\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"240.6\" y1=\"415.8\" x2=\"241.7\" y2=\"426.4\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"220.0\" y1=\"404.0\" x2=\"220.0\" y2=\"427.6\" stroke=\"#333\" stroke-width=\"4.89\"/><line x1=\"199.4\" y1=\"415.8\" x2=\"198.3\" y2=\"426.4\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"179.1\" y1=\"412.6\" x2=\"176.8\" y2=\"423.0\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"159.2\" y1=\"407.2\" x2=\"155.9\" y2=\"417.4\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"139.9\" y1=\"399.9\" x2=\"135.6\" y2=\"409.6\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"128.0\" y1=\"379.4\" x2=\"116.2\" y2=\"399.8\" stroke=\"#333\" stroke-width=\"4.89\"/><line x1=\"104.3\" y1=\"379.3\" x2=\"98.0\" y2=\"387.9\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"88.3\" y1=\"366.3\" x2=\"81.1\" y2=\"374.3\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"73.7\" y1=\"351.7\" x2=\"65.7\" y2=\"358.9\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"60.7\" y1=\"335.7\" x2=\"52.1\" y2=\"342.0\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"60.6\" y1=\"312.0\" x2=\"40.2\" y2=\"323.8\" stroke=\"#333\" stroke-width=\"4.89\"/><line x1=\"40.1\" y1=\"300.1\" x2=\"30.4\" y2=\"304.4\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"32.8\" y1=\"280.8\" x2=\"22.6\" y2=\"284.1\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"27.4\" y1=\"260.9\" x2=\"17.0\" y2=\"263.2\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"24.2\" y1=\"240.6\" x2=\"13.6\" y2=\"241.7\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"36.0\" y1=\"220.0\" x2=\"12.4\" y2=\"220.0\" stroke=\"#333\" stroke-width=\"4.89\"/><line x1=\"24.2\" y1=\"199.4\" x2=\"13.6\" y2=\"198.3\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"27.4\" y1=\"179.1\" x2=\"17.0\" y2=\"176.8\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"32.8\" y1=\"159.2\" x2=\"22.6\" y2=\"155.9\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"40.1\" y1=\"139.9\" x2=\"30.4\" y2=\"135.6\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"60.6\" y1=\"128.0\" x2=\"40.2\" y2=\"116.2\" stroke=\"#333\" stroke-width=\"4.89\"/><line x1=\"60.7\" y1=\"104.3\" x2=\"52.1\" y2=\"98.0\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"73.7\" y1=\"88.3\" x2=\"65.7\" y2=\"81.1\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"88.3\" y1=\"73.7\" x2=\"81.1\" y2=\"65.7\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"104.3\" y1=\"60.7\" x2=\"98.0\" y2=\"52.1\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"128.0\" y1=\"60.6\" x2=\"116.2\" y2=\"40.2\" stroke=\"#333\" stroke-width=\"4.89\"/><line x1=\"139.9\" y1=\"40.1\" x2=\"135.6\" y2=\"30.4\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"159.2\" y1=\"32.8\" x2=\"155.9\" y2=\"22.6\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"179.1\" y1=\"27.4\" x2=\"176.8\" y2=\"17.0\" stroke=\"#333\" stroke-width=\"2.00\"/><line x1=\"199.4\" y1=\"24.2\" x2=\"198.3\" y2=\"13.6\" stroke=\"#333\" stroke-width=\"2.00\"/><text x=\"297.0\" y=\"104.2\" font-size=\"48\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">1</text><text x=\"353.4\" y=\"160.6\" font-size=\"48\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">2</text><text x=\"374.1\" y=\"237.6\" font-size=\"48\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">3</text><text x=\"353.4\" y=\"314.6\" font-size=\"48\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">4</text><text x=\"297.0\" y=\"371.0\" font-size=\"48\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">5</text><text x=\"220.0\" y=\"391.7\" font-size=\"48\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">6</text><text x=\"143.0\" y=\"371.0\" font-size=\"48\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">7</text><text x=\"86.6\" y=\"314.6\" font-size=\"48\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">8</text><text x=\"65.9\" y=\"237.6\" font-size=\"48\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">9</text><text x=\"86.6\" y=\"160.6\" font-size=\"48\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">10</text><text x=\"143.0\" y=\"104.2\" font-size=\"48\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">11</text><text x=\"220.0\" y=\"83.5\" font-size=\"48\" font-weight=\"700\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" fill=\"#1d2b24\">12</text><line x1=\"220.0\" y1=\"220.0\" x2=\"319.2\" y2=\"246.6\" stroke=\"#1d2b24\" stroke-width=\"15.7\" stroke-linecap=\"round\"/><line x1=\"220.0\" y1=\"220.0\" x2=\"220.0\" y2=\"348.4\" stroke=\"#d6453d\" stroke-width=\"8.8\" stroke-linecap=\"round\"/><circle cx=\"220.0\" cy=\"220.0\" r=\"11.0\" fill=\"#1d2b24\"/></svg></div>"
+       }
+      ],
+      [
+       {
+        "type": "tekst",
+        "tekst": "Nederlands: **half vier**\nje kijkt **vooruit** naar 4 ➡️",
+        "stijl": "font-size:40px;line-height:1.5"
+       },
+       {
+        "type": "tekst",
+        "tekst": "English: **half past three**\nje kijkt **terug** naar 3 ⬅️",
+        "verborgen": true,
+        "stijl": "font-size:40px;line-height:1.5;color:#2f9e63"
+       },
+       {
+        "type": "tekst",
+        "tekst": "❌ half four",
+        "verborgen": true,
+        "stijl": "font-size:40px;color:#d6453d"
+       }
+      ]
+     ]
+    }
+   ],
+   "lesdoelVerbergen": true
+  },
+  {
+   "fase": "Herhaling: find your match (klokken)",
+   "achtergrond": "leeg",
+   "notitie": "Werkvorm van de vorige les. Deel de kaartjes van Find your match (klokken) uit: de helft een klok, de helft een tijd in woorden. Loop rond, vraag What time is it?, zoek je match en zeg samen de tijd. Daarna ruilen en nog een ronde. Kaartjes staan bij de bijlagen.",
+   "blokken": [
+    {
+     "type": "kop",
+     "tekst": "Find your match 🃏"
+    },
+    {
+     "type": "kolommen",
+     "verhouding": [
+      "1.6fr",
+      "1fr"
+     ],
+     "kolommen": [
+      [
+       {
+        "type": "stappen",
+        "stapsgewijs": true,
+        "items": [
+         "Je krijgt een kaartje: een **klok** of een **tijd**.",
+         "Loop rond. Laat je kaartje zien en vraag: *What time is it?*",
+         "Past jouw kaartje bij het andere? Zeg samen: *It's …!*",
+         "Ga samen naast elkaar staan.",
+         "Ruil je kaartje en speel nog een keer."
+        ]
+       }
+      ],
+      [
+       {
+        "type": "vraag",
+        "tekst": "Zeg tegen je maatje:\n*What time is it?*\n*It's half past four.*\n*Yes, we match!*",
+        "verborgen": true
+       }
+      ]
+     ]
+    }
+   ],
+   "lesdoelVerbergen": true
+  },
+  {
+   "fase": "Lesdoel",
+   "achtergrond": "leeg",
+   "uitlijning": "midden",
+   "lesdoelVerbergen": true,
+   "notitie": "Lees het lesdoel samen. Vandaag: data zeggen in het Engels, en vertellen wat je op een datum gaat doen.",
+   "blokken": [
+    {
+     "type": "html",
+     "html": "<div style=\"text-align:center\"><div style=\"font-size:110px;line-height:1\">📅</div><div style=\"font-size:76px;font-weight:800;line-height:1.25;margin-top:20px\">I can say the date<br>in English.</div><div style=\"font-size:34px;color:#5b6b63;margin-top:26px\">Ik kan in het Engels zeggen welke datum het is.</div></div>"
+    }
+   ]
+  },
+  {
+   "fase": "De maanden",
+   "achtergrond": "leeg",
+   "notitie": "Welke maanden ken je al in het Engels? Laat de kinderen ze om de beurt noemen (maatje, dan willekeurige beurt). Tik ze in de goede volgorde aan. Let op de uitspraak en de hoofdletter: in het Engels schrijf je maanden met een hoofdletter.",
+   "blokken": [
+    {
+     "type": "kop",
+     "tekst": "The months of the year 🗓️"
+    },
+    {
+     "type": "kolommen",
+     "verhouding": [
+      "1fr",
+      "1fr",
+      "1fr"
+     ],
+     "kolommen": [
+      [
+       {
+        "type": "tekst",
+        "tekst": "**1.** January",
+        "verborgen": true,
+        "stijl": "font-size:40px;margin:6px 0"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**2.** February",
+        "verborgen": true,
+        "stijl": "font-size:40px;margin:6px 0"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**3.** March",
+        "verborgen": true,
+        "stijl": "font-size:40px;margin:6px 0"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**4.** April",
+        "verborgen": true,
+        "stijl": "font-size:40px;margin:6px 0"
+       }
+      ],
+      [
+       {
+        "type": "tekst",
+        "tekst": "**5.** May",
+        "verborgen": true,
+        "stijl": "font-size:40px;margin:6px 0"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**6.** June",
+        "verborgen": true,
+        "stijl": "font-size:40px;margin:6px 0"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**7.** July",
+        "verborgen": true,
+        "stijl": "font-size:40px;margin:6px 0"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**8.** August",
+        "verborgen": true,
+        "stijl": "font-size:40px;margin:6px 0"
+       }
+      ],
+      [
+       {
+        "type": "tekst",
+        "tekst": "**9.** September",
+        "verborgen": true,
+        "stijl": "font-size:40px;margin:6px 0"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**10.** October",
+        "verborgen": true,
+        "stijl": "font-size:40px;margin:6px 0"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**11.** November",
+        "verborgen": true,
+        "stijl": "font-size:40px;margin:6px 0"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**12.** December",
+        "verborgen": true,
+        "stijl": "font-size:40px;margin:6px 0"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "tekst",
+     "tekst": "Let op: in het Engels krijgen maanden een **hoofdletter**.",
+     "verborgen": true,
+     "stijl": "font-size:32px;color:#b5541c;margin-top:12px"
+    }
+   ]
+  },
+  {
+   "fase": "Waar vind je de data?",
+   "achtergrond": "leeg",
+   "notitie": "Waar zie je de dagen en de maanden? In een agenda (diary) of op een kalender, bijvoorbeeld op je laptop of telefoon (calendar). Laat de kinderen eerst raden, tik dan de woorden aan. Let op: diary is in het Engels een agenda, niet alleen een dagboek.",
+   "blokken": [
+    {
+     "type": "kop",
+     "tekst": "Where do you find the days and months?"
+    },
+    {
+     "type": "kolommen",
+     "verhouding": [
+      "1fr",
+      "1fr"
+     ],
+     "kolommen": [
+      [
+       {
+        "type": "html",
+        "html": "<div style=\"text-align:center\"><svg width=\"420\" height=\"320\" viewBox=\"0 0 420 320\"><rect x=\"10\" y=\"10\" width=\"400\" height=\"300\" rx=\"16\" fill=\"#7cc36e\"/><rect x=\"24\" y=\"22\" width=\"182\" height=\"276\" fill=\"#cfe4f5\"/><rect x=\"214\" y=\"22\" width=\"182\" height=\"276\" fill=\"#cfe4f5\"/><line x1=\"210\" y1=\"18\" x2=\"210\" y2=\"302\" stroke=\"#3c7a33\" stroke-width=\"5\"/>\n<g font-family=\"Arial\" font-size=\"20\" font-weight=\"700\" fill=\"#1f6fd1\"><text x=\"36\" y=\"52\">MON</text><text x=\"36\" y=\"142\">TUE</text><text x=\"36\" y=\"232\">WED</text><text x=\"226\" y=\"52\">THU</text><text x=\"226\" y=\"142\">FRI</text><text x=\"226\" y=\"214\">SAT</text><text x=\"226\" y=\"262\">SUN</text></g>\n<g stroke=\"#9db9d3\" stroke-width=\"2\"><line x1=\"36\" y1=\"70\" x2=\"196\" y2=\"70\"/><line x1=\"226\" y1=\"70\" x2=\"386\" y2=\"70\"/><line x1=\"36\" y1=\"92\" x2=\"196\" y2=\"92\"/><line x1=\"226\" y1=\"92\" x2=\"386\" y2=\"92\"/><line x1=\"36\" y1=\"114\" x2=\"196\" y2=\"114\"/><line x1=\"226\" y1=\"114\" x2=\"386\" y2=\"114\"/><line x1=\"36\" y1=\"160\" x2=\"196\" y2=\"160\"/><line x1=\"226\" y1=\"160\" x2=\"386\" y2=\"160\"/><line x1=\"36\" y1=\"182\" x2=\"196\" y2=\"182\"/><line x1=\"226\" y1=\"182\" x2=\"386\" y2=\"182\"/><line x1=\"36\" y1=\"204\" x2=\"196\" y2=\"204\"/><line x1=\"226\" y1=\"204\" x2=\"386\" y2=\"204\"/><line x1=\"36\" y1=\"250\" x2=\"196\" y2=\"250\"/><line x1=\"226\" y1=\"250\" x2=\"386\" y2=\"250\"/><line x1=\"36\" y1=\"272\" x2=\"196\" y2=\"272\"/><line x1=\"226\" y1=\"272\" x2=\"386\" y2=\"272\"/></g></svg></div>"
+       },
+       {
+        "type": "groot",
+        "tekst": "diary",
+        "verborgen": true,
+        "stijl": "text-align:center"
+       },
+       {
+        "type": "tekst",
+        "tekst": "agenda",
+        "verborgen": true,
+        "stijl": "text-align:center;font-size:32px;color:#5b6b63"
+       }
+      ],
+      [
+       {
+        "type": "html",
+        "html": "<div style=\"text-align:center\"><svg width=\"440\" height=\"320\" viewBox=\"0 0 440 320\"><rect x=\"50\" y=\"20\" width=\"340\" height=\"230\" rx=\"14\" fill=\"#2b2f36\"/><rect x=\"66\" y=\"36\" width=\"308\" height=\"198\" fill=\"#fff\"/><rect x=\"66\" y=\"36\" width=\"308\" height=\"34\" fill=\"#d6453d\"/><text x=\"220\" y=\"60\" font-family=\"Arial\" font-size=\"20\" font-weight=\"700\" fill=\"#fff\" text-anchor=\"middle\">November</text><rect x=\"76\" y=\"80\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"94\" y=\"97\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">1</text><rect x=\"118\" y=\"80\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"136\" y=\"97\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">2</text><rect x=\"160\" y=\"80\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"178\" y=\"97\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">3</text><rect x=\"202\" y=\"80\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"220\" y=\"97\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">4</text><rect x=\"244\" y=\"80\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"262\" y=\"97\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">5</text><rect x=\"286\" y=\"80\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"304\" y=\"97\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">6</text><rect x=\"328\" y=\"80\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"346\" y=\"97\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">7</text><rect x=\"76\" y=\"110\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"94\" y=\"127\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">8</text><rect x=\"118\" y=\"110\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"136\" y=\"127\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">9</text><rect x=\"160\" y=\"110\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"178\" y=\"127\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">10</text><rect x=\"202\" y=\"110\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"220\" y=\"127\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">11</text><rect x=\"244\" y=\"110\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"262\" y=\"127\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">12</text><rect x=\"286\" y=\"110\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"304\" y=\"127\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">13</text><rect x=\"328\" y=\"110\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"346\" y=\"127\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">14</text><rect x=\"76\" y=\"140\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"94\" y=\"157\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">15</text><rect x=\"118\" y=\"140\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"136\" y=\"157\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">16</text><rect x=\"160\" y=\"140\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"178\" y=\"157\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">17</text><rect x=\"202\" y=\"140\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"220\" y=\"157\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">18</text><rect x=\"244\" y=\"140\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"262\" y=\"157\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">19</text><rect x=\"286\" y=\"140\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"304\" y=\"157\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">20</text><rect x=\"328\" y=\"140\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"346\" y=\"157\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">21</text><rect x=\"76\" y=\"170\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"94\" y=\"187\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">22</text><rect x=\"118\" y=\"170\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"136\" y=\"187\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">23</text><rect x=\"160\" y=\"170\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"178\" y=\"187\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">24</text><rect x=\"202\" y=\"170\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"220\" y=\"187\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">25</text><rect x=\"244\" y=\"170\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#fde9d4\"/><text x=\"262\" y=\"187\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">26</text><rect x=\"286\" y=\"170\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"304\" y=\"187\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">27</text><rect x=\"328\" y=\"170\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"346\" y=\"187\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">28</text><rect x=\"76\" y=\"200\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"94\" y=\"217\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">29</text><rect x=\"118\" y=\"200\" width=\"36\" height=\"24\" rx=\"4\" fill=\"#eef3fd\"/><text x=\"136\" y=\"217\" font-family=\"Arial\" font-size=\"14\" text-anchor=\"middle\" fill=\"#1d2b24\">30</text><path d=\"M20,256 h400 l-24,36 h-352 z\" fill=\"#8a919c\"/></svg></div>"
+       },
+       {
+        "type": "groot",
+        "tekst": "calendar",
+        "verborgen": true,
+        "stijl": "text-align:center"
+       },
+       {
+        "type": "tekst",
+        "tekst": "kalender",
+        "verborgen": true,
+        "stijl": "text-align:center;font-size:32px;color:#5b6b63"
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "fase": "De dagen van de week",
+   "achtergrond": "leeg",
+   "notitie": "Herhaling: de dagen van de week. Laat ze om de beurt noemen en tik ze aan. Vraag daarna: What day is it today? What day is it tomorrow? Ook dagen krijgen in het Engels een hoofdletter. In een Engelse agenda begint de week vaak op maandag (MON), soms op zondag.",
+   "blokken": [
+    {
+     "type": "kop",
+     "tekst": "The days of the week"
+    },
+    {
+     "type": "lijst",
+     "genummerd": true,
+     "stapsgewijs": true,
+     "items": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+     ],
+     "stijl": "font-size:42px;line-height:1.55;columns:2"
+    },
+    {
+     "type": "vraag",
+     "tekst": "*What day is it today?*  ·  *What day is it tomorrow?*",
+     "verborgen": true
+    }
+   ]
+  },
+  {
+   "fase": "Rangtelwoorden",
+   "achtergrond": "leeg",
+   "notitie": "Voor een datum gebruik je in het Engels een rangtelwoord, net als in het Nederlands (de eerste, de tweede). Let op de uitzonderingen in rood: first, second, third. De rest krijgt -th (fourth, fifth). Let ook op fifth, eighth, ninth en twelfth. Daarna: 21st, 22nd, 23rd volgen weer first, second, third. Koor: lees de rij samen hardop.",
+   "blokken": [
+    {
+     "type": "kop",
+     "tekst": "First, second, third …"
+    },
+    {
+     "type": "kolommen",
+     "verhouding": [
+      "1fr",
+      "1fr",
+      "1.4fr"
+     ],
+     "kolommen": [
+      [
+       {
+        "type": "html",
+        "html": "<div style=\"font-size:34px;padding:3px 0\"><b style=\"display:inline-block;width:56px;color:#5b6b63\">1</b><span style=color:#d6453d;font-weight:800>first</span></div><div style=\"font-size:34px;padding:3px 0\"><b style=\"display:inline-block;width:56px;color:#5b6b63\">2</b><span style=color:#d6453d;font-weight:800>second</span></div><div style=\"font-size:34px;padding:3px 0\"><b style=\"display:inline-block;width:56px;color:#5b6b63\">3</b><span style=color:#d6453d;font-weight:800>third</span></div><div style=\"font-size:34px;padding:3px 0\"><b style=\"display:inline-block;width:56px;color:#5b6b63\">4</b>fourth</div><div style=\"font-size:34px;padding:3px 0\"><b style=\"display:inline-block;width:56px;color:#5b6b63\">5</b>fifth</div><div style=\"font-size:34px;padding:3px 0\"><b style=\"display:inline-block;width:56px;color:#5b6b63\">6</b>sixth</div>"
+       }
+      ],
+      [
+       {
+        "type": "html",
+        "html": "<div style=\"font-size:34px;padding:3px 0\"><b style=\"display:inline-block;width:56px;color:#5b6b63\">7</b>seventh</div><div style=\"font-size:34px;padding:3px 0\"><b style=\"display:inline-block;width:56px;color:#5b6b63\">8</b>eighth</div><div style=\"font-size:34px;padding:3px 0\"><b style=\"display:inline-block;width:56px;color:#5b6b63\">9</b>ninth</div><div style=\"font-size:34px;padding:3px 0\"><b style=\"display:inline-block;width:56px;color:#5b6b63\">10</b>tenth</div><div style=\"font-size:34px;padding:3px 0\"><b style=\"display:inline-block;width:56px;color:#5b6b63\">11</b>eleventh</div><div style=\"font-size:34px;padding:3px 0\"><b style=\"display:inline-block;width:56px;color:#5b6b63\">12</b>twelfth</div>"
+       }
+      ],
+      [
+       {
+        "type": "vraag",
+        "tekst": "**1, 2, 3**: first, second, third\nDe rest: **+ th**"
+       },
+       {
+        "type": "tekst",
+        "tekst": "20 twentieth\n21 twenty-**first**\n22 twenty-**second**\n23 twenty-**third**\n24 twenty-fourth\n30 thirtieth\n31 thirty-**first**",
+        "verborgen": true,
+        "stijl": "font-size:32px;line-height:1.5"
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "fase": "Ik doe het voor: hoe zeg je de datum?",
+   "achtergrond": "leeg",
+   "notitie": "Doe voor en denk hardop. 'Stap 1: de dag is 30. Dat wordt thirtieth. Stap 2: de maand is 04, dat is April. Stap 3: the thirtieth of April.' Tik per datum het antwoord aan. Vergeet the en of niet!",
+   "blokken": [
+    {
+     "type": "kolommen",
+     "verhouding": [
+      "1.15fr",
+      "1fr"
+     ],
+     "kolommen": [
+      [
+       {
+        "type": "subkop",
+        "tekst": "How do you say the date?"
+       },
+       {
+        "type": "stappen",
+        "items": [
+         "Kijk naar de **dag**. Welk rangtelwoord? *first, second, third* … *+ th*",
+         "Kijk naar de **maand**. Welke maand is het? *(01 = January, 02 = February …)*",
+         "Zeg het: **the** + dag + **of** + maand."
+        ],
+        "stapsgewijs": true
+       }
+      ],
+      [
+       {
+        "type": "html",
+        "html": ""
+       },
+       {
+        "type": "tekst",
+        "tekst": "**01-01**",
+        "stijl": "font-size:46px;margin-top:10px"
+       },
+       {
+        "type": "tekst",
+        "tekst": "the first of January",
+        "verborgen": true,
+        "stijl": "font-size:36px;color:#2f9e63"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**30-04**",
+        "stijl": "font-size:46px;margin-top:10px"
+       },
+       {
+        "type": "tekst",
+        "tekst": "the thirtieth of April",
+        "verborgen": true,
+        "stijl": "font-size:36px;color:#2f9e63"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**26-12**",
+        "stijl": "font-size:46px;margin-top:10px"
+       },
+       {
+        "type": "tekst",
+        "tekst": "the twenty-sixth of December",
+        "verborgen": true,
+        "stijl": "font-size:36px;color:#2f9e63"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**31-12**",
+        "stijl": "font-size:46px;margin-top:10px"
+       },
+       {
+        "type": "tekst",
+        "tekst": "the thirty-first of December",
+        "verborgen": true,
+        "stijl": "font-size:36px;color:#2f9e63"
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "fase": "Wij samen: data zeggen",
+   "achtergrond": "leeg",
+   "lesdoelVerbergen": true,
+   "notitie": "Per datum: iedereen denkt, fluistert het tegen zijn maatje, dan een willekeurige beurt in een hele zin: It's the … of … Tik daarna het antwoord aan. Let op de valkuilen: second, twenty-first, third, twelfth.",
+   "blokken": [
+    {
+     "type": "kop",
+     "tekst": "What's the date?"
+    },
+    {
+     "type": "stappen",
+     "items": [
+      "Kijk naar de **dag**. Welk rangtelwoord? *first, second, third* … *+ th*",
+      "Kijk naar de **maand**. Welke maand is het? *(01 = January, 02 = February …)*",
+      "Zeg het: **the** + dag + **of** + maand."
+     ],
+     "stijl": "font-size:30px"
+    },
+    {
+     "type": "kolommen",
+     "verhouding": [
+      "1fr",
+      "1fr",
+      "1fr"
+     ],
+     "kolommen": [
+      [
+       {
+        "type": "groot",
+        "tekst": "02-02",
+        "stijl": "text-align:center;font-size:64px"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**the second of February**",
+        "verborgen": true,
+        "stijl": "text-align:center;font-size:30px"
+       }
+      ],
+      [
+       {
+        "type": "groot",
+        "tekst": "13-08",
+        "stijl": "text-align:center;font-size:64px"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**the thirteenth of August**",
+        "verborgen": true,
+        "stijl": "text-align:center;font-size:30px"
+       }
+      ],
+      [
+       {
+        "type": "groot",
+        "tekst": "21-06",
+        "stijl": "text-align:center;font-size:64px"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**the twenty-first of June**",
+        "verborgen": true,
+        "stijl": "text-align:center;font-size:30px"
+       }
+      ]
+     ]
+    },
+    {
+     "type": "kolommen",
+     "verhouding": [
+      "1fr",
+      "1fr",
+      "1fr"
+     ],
+     "kolommen": [
+      [
+       {
+        "type": "groot",
+        "tekst": "05-05",
+        "stijl": "text-align:center;font-size:64px"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**the fifth of May**",
+        "verborgen": true,
+        "stijl": "text-align:center;font-size:30px"
+       }
+      ],
+      [
+       {
+        "type": "groot",
+        "tekst": "03-10",
+        "stijl": "text-align:center;font-size:64px"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**the third of October**",
+        "verborgen": true,
+        "stijl": "text-align:center;font-size:30px"
+       }
+      ],
+      [
+       {
+        "type": "groot",
+        "tekst": "12-03",
+        "stijl": "text-align:center;font-size:64px"
+       },
+       {
+        "type": "tekst",
+        "tekst": "**the twelfth of March**",
+        "verborgen": true,
+        "stijl": "text-align:center;font-size:30px"
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "fase": "Jullie: find your match (data)",
+   "achtergrond": "leeg",
+   "notitie": "Deel de kaartjes van Find your match (data) uit: de helft van de klas een datum in cijfers (blauwe rand), de andere helft dezelfde datum in woorden (oranje rand). Ze lopen rond en vragen: What's the date? Bij een match zeggen ze de datum samen. Willekeurige beurt: een tweetal leest hun datum voor. Daarna ruilen en nog een ronde.",
+   "blokken": [
+    {
+     "type": "kop",
+     "tekst": "Find your match 📅"
+    },
+    {
+     "type": "kolommen",
+     "verhouding": [
+      "1.6fr",
+      "1fr"
+     ],
+     "kolommen": [
+      [
+       {
+        "type": "stappen",
+        "stapsgewijs": true,
+        "items": [
+         "Je krijgt een kaartje: een datum in **cijfers** of in **woorden**.",
+         "Loop rond. Laat je kaartje zien en vraag: *What's the date?*",
+         "Past jouw kaartje bij het andere? Zeg samen: *It's the …!*",
+         "Ga samen naast elkaar staan.",
+         "Ruil je kaartje en speel nog een keer."
+        ]
+       }
+      ],
+      [
+       {
+        "type": "vraag",
+        "tekst": "*What's the date?*\n*It's the seventh of December.*\n*Yes, we match!*",
+        "verborgen": true
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "fase": "Activities",
+   "achtergrond": "leeg",
+   "notitie": "De activiteiten op de agendakaartjes. Lees ze samen (koor). Wijs er een paar aan: what is this? Wie een woord niet kent, kijkt naar het plaatje.",
+   "blokken": [
+    {
+     "type": "kop",
+     "tekst": "What are you going to do? 🎒"
+    },
+    {
+     "type": "html",
+     "html": "<div style=\"display:grid;grid-template-columns:repeat(4,1fr);gap:12px\"><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">🛍️</span>go shopping</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">⚽</span>play football</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">🏊</span>go swimming</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">🚲</span>ride my bike</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">👵</span>visit my grandma</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">🎬</span>go to the cinema</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">🎂</span>bake a cake</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">📖</span>read a book</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">🏖️</span>go to the beach</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">📺</span>watch TV</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">🎮</span>play games</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">🦁</span>go to the zoo</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">🎹</span>play the piano</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">🎉</span>have a party</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">⛸️</span>go skating</div><div style=\"background:#eef7f1;border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700\"><span style=\"font-size:44px\">🐕</span>walk the dog</div></div>"
+    }
+   ]
+  },
+  {
+   "fase": "Jullie: mix en ruil (agenda)",
+   "achtergrond": "leeg",
+   "notitie": "Iedereen krijgt een agendakaartje. Bovenaan staat een datum: daarover stel jij de vraag. Onderaan staat een activiteit: dat is jouw antwoord. A vraagt met zijn datum: What are you going to do on the seventh of December? B antwoordt met de datum van A en zijn eigen activiteit: On the seventh of December, I am going to go swimming. Dan vraagt B. Daarna ruilen ze hun kaartjes en zoeken ze een nieuw maatje. Tik de stappen één voor één aan.",
+   "blokken": [
+    {
+     "type": "kop",
+     "tekst": "Mix and swap: my diary 📒"
+    },
+    {
+     "type": "kolommen",
+     "verhouding": [
+      "1.25fr",
+      "1fr"
+     ],
+     "kolommen": [
+      [
+       {
+        "type": "stappen",
+        "stapsgewijs": true,
+        "items": [
+         "Bovenaan je kaartje staat een **datum**: daarover stel jij de vraag.",
+         "Onderaan staat een **activiteit**: dat is jouw antwoord.",
+         "Zoek een maatje. A vraagt: *What are you going to do on the …?*",
+         "B antwoordt: *On the …, I am going to …*",
+         "Wissel: nu vraagt B. Daarna **ruil** je je kaartje en zoek je een nieuw maatje."
+        ]
+       }
+      ],
+      [
+       {
+        "type": "vraag",
+        "tekst": "**A:** *What are you going to do on the seventh of December?*",
+        "verborgen": true
+       },
+       {
+        "type": "vraag",
+        "tekst": "**B:** *On the seventh of December, I am going to go swimming.*",
+        "verborgen": true
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "voorbereiding": {
+  "benodigdheden": [
+   "Kaartjes Find your match: klokken (van de vorige les), uitgeknipt",
+   "Kaartjes Find your match: data (16 paren), uitgeknipt",
+   "Agendakaartjes voor mix en ruil (32 stuks), uitgeknipt"
+  ],
+  "verloop": [
+   {
+    "fase": "Herhaling",
+    "wat": "What did we learn last lesson? Vragen in het Engels op het bord. Dan de klok weer laten zien en het uit de kinderen laten komen: past en to, o'clock, quarter past, half past, quarter to, en de valkuil met half."
+   },
+   {
+    "fase": "Herhaling: werkvorm",
+    "wat": "Find your match met de kloktijden."
+   },
+   {
+    "fase": "Lesdoel",
+    "wat": "I can say the date in English."
+   },
+   {
+    "fase": "Maanden, agenda en dagen",
+    "wat": "De maanden op een rij. Waar vind je ze: diary (agenda) en calendar (kalender). De dagen van de week herhalen."
+   },
+   {
+    "fase": "Hoe zeg je de datum?",
+    "wat": "Rangtelwoorden 1–12 (first, second, third, de rest + th), en verder tot 31. Stappenplan: 1) dag, welk rangtelwoord; 2) welke maand; 3) the + dag + of + maand. Voordoen: 01-01, 30-04, 26-12, 31-12. Samen: zes data met willekeurige beurten."
+   },
+   {
+    "fase": "Jullie: find your match",
+    "wat": "Datum in cijfers en in woorden bij elkaar zoeken."
+   },
+   {
+    "fase": "Jullie: mix en ruil",
+    "wat": "Agendakaartjes: met je datum vragen What are you going to do on the …?, met je activiteit antwoorden On the …, I am going to … Wisselen, ruilen, nieuw maatje."
+   }
+  ]
+ }
+}
