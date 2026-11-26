@@ -12,6 +12,7 @@
   <style>
     .sectie { margin: 30px 0 12px; font-size: 20px; color: var(--groen-donker); }
     .sectie:first-child { margin-top: 0; }
+    .vakken { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
     .kaart.klikbaar { cursor: pointer; transition: border-color .15s; }
     .kaart.klikbaar:hover { border-color: var(--groen); }
     .kaart.actief { border: 2px solid var(--groen); }
@@ -73,7 +74,7 @@
     const normaal = (s) => String(s || "").trim().replace(/\s+/g, " ").toLowerCase();
     const ontcijfer = (a) => JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(a), (c) => c.charCodeAt(0)).reverse()));
 
-    let overzicht = [], klas = null, plek = {}, kamers = {}, luisteraars = {}, opdrachten = {};
+    let vakLijst = [], overzicht = [], klas = null, plek = {}, kamers = {}, luisteraars = {}, opdrachten = {};
 
     async function laadJson(pad) { const r = await fetch(pad, { cache: "no-store" }); if (!r.ok) throw new Error(pad); return r.json(); }
     async function laadOpdracht(id) {
@@ -144,43 +145,18 @@
       const h = new URLSearchParams(location.hash.slice(1));
       if (h.get("r")) return tekenRonde(h.get("r"));
       if (h.get("o")) return tekenOpdracht(h.get("o"));
+      if (h.get("v")) return tekenVak(h.get("v"));
       tekenOverzicht();
     }
 
-    function tekenOverzicht() {
-      const act = actieveRondes();
-      Object.keys(act).forEach(volg);
-      let html = "";
-      const soorten = [...new Set(overzicht.map((t) => t.soort || "Overig"))];
-      for (const soort of soorten) {
-        html += `<h2 class="sectie">${esc(soort)}</h2><div class="raster">`;
-        for (const t of overzicht.filter((x) => (x.soort || "Overig") === soort)) {
-          const r = rondeVanOpdracht(t.id);
-          const tel = r ? telling(r[0]) : null;
-          html += `<article class="kaart klikbaar${r ? " actief" : ""}" data-open="${esc(t.id)}">
-            <div class="kaart-meta"><span class="label">Groep ${esc(t.groep)}</span><span class="label grijs">${t.vragen} vragen</span>${r ? `<span class="label">Staat klaar</span>` : ""}</div>
-            <h2>${esc(t.titel)}</h2>
-            <p>${r ? `Sinds ${esc(uur(r[1].gestart))} · <b>${tel.klaar}</b> ingeleverd · ${tel.bezig} bezig` : "Staat niet klaar voor de leerlingen."}</p>
-            <div class="kaart-acties">${r
-              ? `<button class="knop" data-bekijk="${esc(r[0])}">Resultaten</button><button class="knop hoofd" data-af="${esc(r[0])}">Af en archiveren</button>`
-              : `<button class="knop hoofd" data-klaar="${esc(t.id)}">Zet klaar</button>`}</div>
-          </article>`;
-        }
-        html += `</div>`;
-      }
-      // Archief: afgevinkte rondes, per dag.
-      const arch = geschiedenis().filter(([, r]) => r.af);
-      html += `<h2 class="sectie">Archief</h2><div class="archief">`;
-      if (!arch.length) html += `<div class="leeg-klein">Nog niets gearchiveerd. Tik op <b>Af en archiveren</b> als een opdracht klaar is.</div>`;
-      let dag = "";
-      for (const [k, r] of arch) {
-        const d = datum(r.gestart);
-        if (d !== dag) { dag = d; html += `<h3>${esc(d.charAt(0).toUpperCase() + d.slice(1))}</h3>`; }
-        html += `<a href="#r=${esc(k)}"><span><b>${esc(info(r.toets).titel)}</b> <span class="zacht">· ${esc(info(r.toets).soort || "")}</span></span><span class="zacht">${esc(uur(r.gestart))}</span></a>`;
-      }
-      html += `</div><p class="voet">De leerlingen gebruiken altijd dezelfde link: <b>${esc(kinderLink())}</b> <button id="kopieer">kopieer</button></p>`;
-      $("inhoud").innerHTML = html;
-      $("kopieer").onclick = async () => { try { await navigator.clipboard.writeText(kinderLink()); $("kopieer").textContent = "gekopieerd ✓"; } catch {} };
+    const vakVan = (id) => info(id).vak || "Overig";
+    function vakken() {
+      const v = [...vakLijst];
+      overzicht.forEach((t) => { if (!v.includes(vakVan(t.id))) v.push(vakVan(t.id)); });
+      return v;
+    }
+
+    function koppelKaarten() {
       document.querySelectorAll("[data-open]").forEach((el) => el.onclick = () => {
         const r = rondeVanOpdracht(el.dataset.open);
         location.hash = r ? `r=${r[0]}` : `o=${el.dataset.open}`;
@@ -192,6 +168,58 @@
       });
       document.querySelectorAll("[data-af]").forEach((b) => zeker(b, "Zeker? Tik nog een keer", () => af(b.dataset.af)));
     }
+
+    // Eén vak: de opdrachten als blokjes.
+    function tekenVak(vak) {
+      Object.keys(actieveRondes()).forEach(volg);
+      const lijst = overzicht.filter((t) => vakVan(t.id) === vak);
+      let html = `<a class="terug" href="#">← Alle vakken</a><h1 style="margin:0 0 16px">${esc(vak)}</h1>`;
+      if (!lijst.length) html += `<div class="archief"><div class="leeg-klein">Er zijn nog geen opdrachten voor ${esc(vak)}. Vraag Claude om er een te maken.</div></div>`;
+      html += `<div class="raster">`;
+      for (const t of lijst) {
+        const r = rondeVanOpdracht(t.id);
+        const tel = r ? telling(r[0]) : null;
+        html += `<article class="kaart klikbaar${r ? " actief" : ""}" data-open="${esc(t.id)}">
+          <div class="kaart-meta"><span class="label">Groep ${esc(t.groep)}</span><span class="label grijs">${t.vragen} vragen</span>${r ? `<span class="label">Staat klaar</span>` : ""}</div>
+          <h2>${esc(t.titel)}</h2>
+          <p>${r ? `Sinds ${esc(uur(r[1].gestart))} · <b>${tel.klaar}</b> ingeleverd · ${tel.bezig} bezig` : "Staat niet klaar voor de leerlingen."}</p>
+          <div class="kaart-acties">${r
+            ? `<button class="knop" data-bekijk="${esc(r[0])}">Resultaten</button><button class="knop hoofd" data-af="${esc(r[0])}">Af en archiveren</button>`
+            : `<button class="knop hoofd" data-klaar="${esc(t.id)}">Zet klaar</button>`}</div>
+        </article>`;
+      }
+      $("inhoud").innerHTML = html + `</div>`;
+      koppelKaarten();
+    }
+
+    // Startpagina: eerst de vakken, daaronder wat nu klaarstaat en het archief.
+    function tekenOverzicht() {
+      const act = actieveRondes();
+      Object.keys(act).forEach(volg);
+      let html = `<h2 class="sectie">Vakken</h2><div class="raster vakken">`;
+      for (const vak of vakken()) {
+        const lijst = overzicht.filter((t) => vakVan(t.id) === vak);
+        const klaar = lijst.filter((t) => rondeVanOpdracht(t.id)).length;
+        html += `<a class="kaart klikbaar${klaar ? " actief" : ""}" href="#v=${encodeURIComponent(vak)}" style="text-decoration:none;color:inherit">
+          <h2>${esc(vak)}</h2>
+          <p>${lijst.length ? `${lijst.length} ${lijst.length === 1 ? "opdracht" : "opdrachten"}` : "Nog geen opdrachten"}${klaar ? ` · <b style="color:var(--groen-donker)">${klaar} staat klaar</b>` : ""}</p>
+        </a>`;
+      }
+      html += `</div>`;
+      // Archief: afgevinkte rondes, per dag.
+      const arch = geschiedenis().filter(([, r]) => r.af);
+      html += `<h2 class="sectie">Archief</h2><div class="archief">`;
+      if (!arch.length) html += `<div class="leeg-klein">Nog niets gearchiveerd. Tik op <b>Af en archiveren</b> als een opdracht klaar is.</div>`;
+      let dag = "";
+      for (const [k, r] of arch) {
+        const d = datum(r.gestart);
+        if (d !== dag) { dag = d; html += `<h3>${esc(d.charAt(0).toUpperCase() + d.slice(1))}</h3>`; }
+        html += `<a href="#r=${esc(k)}"><span><b>${esc(info(r.toets).titel)}</b> <span class="zacht">· ${esc(vakVan(r.toets))}</span></span><span class="zacht">${esc(uur(r.gestart))}</span></a>`;
+      }
+      html += `</div><p class="voet">De leerlingen gebruiken altijd dezelfde link: <b>${esc(kinderLink())}</b> <button id="kopieer">kopieer</button></p>`;
+      $("inhoud").innerHTML = html;
+      $("kopieer").onclick = async () => { try { await navigator.clipboard.writeText(kinderLink()); $("kopieer").textContent = "gekopieerd ✓"; } catch {} };
+    }
     const kinderLink = () => new URL("opdracht.html", location.href).href.replace(/[?#].*$/, "");
 
     // Een opdracht die nu niet klaarstaat: klaarzetten, of eerdere rondes bekijken.
@@ -199,8 +227,9 @@
       const r = rondeVanOpdracht(id);
       if (r) { location.hash = `r=${r[0]}`; return; }
       const t = info(id);
+      const terugNaar = `#v=${encodeURIComponent(vakVan(id))}`;
       const eerder = geschiedenis().filter(([, x]) => x.toets === id);
-      $("inhoud").innerHTML = `<a class="terug" href="#">← Alle opdrachten</a>
+      $("inhoud").innerHTML = `<a class="terug" href="${terugNaar}">← ${esc(vakVan(id))}</a>
         <div class="detail-kop"><div><h1>${esc(t.titel)}</h1><div class="kaart-meta"><span class="label">Groep ${esc(t.groep)}</span><span class="label grijs">${t.vragen} vragen</span><span class="label grijs">Staat niet klaar</span></div></div>
         <div class="knoppen"><button class="knop hoofd" id="klaar">Zet klaar</button></div></div>
         <h2 class="sectie">Eerder gemaakt</h2><div class="archief">${eerder.length ? eerder.map(([k, x]) => `<a href="#r=${esc(k)}"><span>${esc(datum(x.gestart))}</span><span class="zacht">${esc(uur(x.gestart))}</span></a>`).join("") : `<div class="leeg-klein">Deze opdracht is nog niet eerder gemaakt.</div>`}</div>`;
@@ -220,11 +249,12 @@
     async function tekenRonde(k) {
       volg(k);
       const kamer = kamers[k];
-      if (!kamer) { $("inhoud").innerHTML = `<a class="terug" href="#">← Alle opdrachten</a><p class="zacht">Laden…</p>`; return; }
-      if (!kamer.info) { $("inhoud").innerHTML = `<a class="terug" href="#">← Alle opdrachten</a><p class="melding">Deze resultaten bestaan niet meer.</p>`; return; }
+      if (!kamer) { $("inhoud").innerHTML = `<a class="terug" href="#">← Terug</a><p class="zacht">Laden…</p>`; return; }
+      if (!kamer.info) { $("inhoud").innerHTML = `<a class="terug" href="#">← Terug</a><p class="melding">Deze resultaten bestaan niet meer.</p>`; return; }
       const t = await laadOpdracht(kamer.info.toets).catch(() => null);
-      if (!t) { $("inhoud").innerHTML = `<a class="terug" href="#">← Alle opdrachten</a><p class="melding">Deze opdracht is niet meer te vinden.</p>`; return; }
+      if (!t) { $("inhoud").innerHTML = `<a class="terug" href="#">← Terug</a><p class="melding">Deze opdracht is niet meer te vinden.</p>`; return; }
       const actief = !!actieveRondes()[k];
+      const terug = actief ? `<a class="terug" href="#v=${encodeURIComponent(vakVan(t.id))}">← ${esc(vakVan(t.id))}</a>` : `<a class="terug" href="#">← Terug</a>`;
       const ll = kamer.leerlingen || {};
       const telGoed = t.vragen.map(() => 0); let klaar = 0, bezig = 0, rijen = "";
       const lijst = letters(ll);
@@ -241,9 +271,9 @@
       }
       const status = actief ? `<span class="label">Staat klaar sinds ${esc(uur(kamer.info.gestart))}</span>`
         : `<span class="label grijs">Gearchiveerd</span>`;
-      $("inhoud").innerHTML = `<a class="terug" href="#">← Alle opdrachten</a>
+      $("inhoud").innerHTML = `${terug}
         <div class="detail-kop"><div><h1>${esc(t.titel)}</h1>
-          <div class="kaart-meta"><span class="label grijs">${esc(datum(kamer.info.gestart))}</span>${status}</div></div>
+          <div class="kaart-meta"><span class="label grijs">${esc(vakVan(t.id))}</span><span class="label grijs">${esc(datum(kamer.info.gestart))}</span>${status}</div></div>
           <div class="knoppen">
             <button class="knop" id="download">Download voor Excel</button>
             ${actief ? `<button class="knop hoofd" id="af">Af en archiveren</button>` : `<button class="knop rood" id="wis">Wis uit archief</button>`}
@@ -285,7 +315,7 @@
         if (!GitHub.heeftSleutel()) { $("inhoud").innerHTML = `<p>Deze pagina is alleen voor de leerkracht. Vul eerst je sleutel in op <a href="sleutel.html">de sleutelpagina</a>.</p>`; return; }
         try { await GitHub.test(); } catch (e) { $("inhoud").innerHTML = `<p class="melding">${esc(e.message)} <a href="sleutel.html">Naar de sleutelpagina</a></p>`; return; }
       }
-      try { [overzicht, klas] = await Promise.all([laadJson("opdrachten/overzicht.json").then((o) => o.opdrachten || []), laadJson("opdrachten/klas.json")]); }
+      try { [overzicht, klas] = await Promise.all([laadJson("opdrachten/overzicht.json").then((o) => { vakLijst = o.vakken || []; return o.opdrachten || []; }), laadJson("opdrachten/klas.json")]); }
       catch { $("inhoud").innerHTML = `<p class="melding">Het overzicht van de opdrachten kon niet geladen worden.</p>`; return; }
       window.addEventListener("hashchange", () => { window.scrollTo(0, 0); teken(); });
       Live.luister(PLEK, "", (w) => { plek = w || {}; teken(true); });

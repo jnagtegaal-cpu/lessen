@@ -66,7 +66,8 @@
     .opdrachten { display: grid; gap: 12px; }
     .opdracht { display: flex; justify-content: space-between; align-items: center; gap: 14px; text-align: left; width: 100%; font: inherit; font-size: 24px; padding: 18px 20px; border-radius: 14px; border: 3px solid var(--rand); background: #fff; color: var(--tekst); cursor: pointer; }
     .opdracht:hover { border-color: var(--accent); }
-    .opdracht .soort { display: block; font-size: 15px; color: var(--zacht); font-weight: 400; }
+    .opdracht.uit { background: #f3f5f4; color: #a3b0a8; border-color: #eef1ef; cursor: default; }
+    #naarVakken.link { display: inline-block; margin-bottom: 14px; }
     .opdracht .pijl { flex: none; font-weight: 700; color: var(--kop); }
     .opdracht.gedaan { background: #eef1ef; }
     .opdracht.gedaan .pijl { color: var(--zacht); }
@@ -101,9 +102,10 @@
 
     const meld = (tekst, fout) => `<p class="melding${fout ? " fout" : ""}">${esc(tekst)}</p>`;
     const titelVan = (id) => (overzicht.find((t) => t.id === id) || {}).titel || "Opdracht";
-    const soortVan = (id) => (overzicht.find((t) => t.id === id) || {}).soort || "";
+    const vakVan = (id) => (overzicht.find((t) => t.id === id) || {}).vak || "Overig";
+    let vakLijst = [], gekozenVak = null;
     async function laadJson(pad) { const r = await fetch(pad, { cache: "no-store" }); if (!r.ok) throw new Error(pad); return r.json(); }
-    const terugKnop = `<button class="link" id="naarLijst">← Alle opdrachten</button>`;
+    const terugKnop = `<button class="link" id="naarLijst">← Terug</button>`;
     function koppelTerug() { const b = $("naarLijst"); if (b) b.onclick = naarLijst; }
 
     function naarLijst() {
@@ -140,18 +142,34 @@
       $("titel").textContent = "Opdrachten";
       const lijst = Object.entries(rondes).sort((a, b) => (a[1].gestart || 0) - (b[1].gestart || 0));
       if (!lijst.length) {
-        $("sub").textContent = "";
+        gekozenVak = null; $("sub").textContent = "";
         el.innerHTML = `<div class="midden"><p class="groot">Even wachten</p><p>Er staat nu geen opdracht klaar.<br>Zodra je leerkracht een opdracht klaarzet, verschijnt hij hier vanzelf.</p></div>`;
         return;
       }
-      $("sub").textContent = "Tik op de opdracht die je gaat maken.";
       const m = mijnLetters(), klaar = opslag.lees("opdracht-klaar") || {};
-      el.innerHTML = `<div class="opdrachten">${lijst.map(([k, r]) => `
+      if (gekozenVak && !lijst.some(([, r]) => vakVan(r.toets) === gekozenVak)) gekozenVak = null;
+      if (!gekozenVak) {
+        // Eerst het vak kiezen.
+        const vakken = [...vakLijst]; lijst.forEach(([, r]) => { if (!vakken.includes(vakVan(r.toets))) vakken.push(vakVan(r.toets)); });
+        $("sub").textContent = "Kies eerst het vak.";
+        el.innerHTML = `<div class="opdrachten">${vakken.map((v) => {
+          const n = lijst.filter(([, r]) => vakVan(r.toets) === v);
+          const open = n.filter(([k]) => !klaar[k]).length;
+          return `<button class="opdracht${n.length ? "" : " uit"}" data-vak="${esc(v)}"${n.length ? "" : " disabled"}>
+            <b>${esc(v)}</b><span class="pijl">${!n.length ? "" : open ? `${open} ${open === 1 ? "opdracht" : "opdrachten"} →` : "✓ Klaar"}</span></button>`;
+        }).join("")}</div>`;
+        el.querySelectorAll("[data-vak]").forEach((b) => b.onclick = () => { gekozenVak = b.dataset.vak; teken(); });
+        return;
+      }
+      $("titel").textContent = gekozenVak;
+      $("sub").textContent = "Tik op de opdracht die je gaat maken.";
+      el.innerHTML = `<button class="link" id="naarVakken">← Alle vakken</button><div class="opdrachten">${lijst.filter(([, r]) => vakVan(r.toets) === gekozenVak).map(([k, r]) => `
         <button class="opdracht${klaar[k] ? " gedaan" : ""}" data-k="${esc(k)}">
-          <span><span class="soort">${esc(soortVan(r.toets))}</span><b>${esc(titelVan(r.toets))}</b></span>
+          <b>${esc(titelVan(r.toets))}</b>
           <span class="pijl">${klaar[k] ? "✓ Klaar" : m[k] ? "Verder →" : "→"}</span>
         </button>`).join("")}</div>`;
-      el.querySelectorAll(".opdracht").forEach((b) => b.onclick = () => open(b.dataset.k));
+      $("naarVakken").onclick = () => { gekozenVak = null; teken(); };
+      el.querySelectorAll("[data-k]").forEach((b) => b.onclick = () => open(b.dataset.k));
     }
 
     async function open(k) {
@@ -280,7 +298,7 @@
 
     async function begin() {
       if (!Live.beschikbaar()) { teken(); return; }
-      try { [overzicht, klas] = await Promise.all([laadJson("opdrachten/overzicht.json").then((o) => o.opdrachten || []), laadJson("opdrachten/klas.json")]); }
+      try { [overzicht, klas] = await Promise.all([laadJson("opdrachten/overzicht.json").then((o) => { vakLijst = o.vakken || []; return o.opdrachten || []; }), laadJson("opdrachten/klas.json")]); }
       catch { $("inhoud").innerHTML = meld("De opdrachten konden niet geladen worden. Herlaad de pagina.", true); return; }
       Live.luister(PLEK, "actief", (a) => {
         // Ook het oude formaat (één opdracht) begrijpen.

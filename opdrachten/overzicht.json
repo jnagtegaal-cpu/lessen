@@ -1,13 +1,20 @@
 {
-  "uitleg": "Alle leerlingopdrachten. 'soort' is de subgroep in het menu (bijvoorbeeld Toetsen).",
+  "uitleg": "Alle leerlingopdrachten. 'vak' is een van de vakken hieronder (werkwoordspelling hoort bij Spelling).",
+  "vakken": [
+    "Rekenen",
+    "Spelling",
+    "Taal",
+    "Wetenswaardig",
+    "Engels"
+  ],
   "opdrachten": [
     {
       "id": "g7-8-werkwoorden-toets-1",
       "titel": "Werkwoordentoets",
-      "soort": "Toetsen",
       "groep": "7-8",
       "gemaakt": "2026-11-27",
-      "vragen": 20
+      "vragen": 20,
+      "vak": "Spelling"
     }
   ]
 }
