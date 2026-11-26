@@ -1,6 +1,6 @@
 {
   "id": "g7-8-spelling-dictee",
-  "titel": "Dictee: groep 8 meervouden op -esen, -elen en -iken en woorden met wr-, groep 7 gebiedende wijs en ch die klinkt als sj",
+  "titel": "Dictee: groep 8 meervouden op -esen, -elen en -iken en voltooid deelwoord van klankvaste werkwoorden, groep 7 woorden met een achtervoegsel en gebiedende wijs",
   "groep": "7-8",
   "vak": "Spelling",
   "onderwerp": "Dictee",
@@ -8,18 +8,19 @@
   "trefwoorden": [
     "dictee",
     "spelling",
-    "meervouden esen elen iken",
-    "wr",
-    "gebiedende wijs",
-    "ch als sj"
+    "meervouden -esen -elen -iken",
+    "voltooid deelwoord",
+    "klankvaste werkwoorden",
+    "achtervoegsel",
+    "gebiedende wijs"
   ],
-  "gemaakt": "2026-11-24",
+  "gemaakt": "2026-11-26",
   "pdfs": false,
   "schermen": [
     {
       "fase": "Dictee groep 8",
       "achtergrond": "leeg",
-      "notitie": "Groep 8. Tik elk woord en daarna de zin aan om ze te laten zien. Toetswoorden (blok 3): bangeriken, wrikken, amandelen, luiwammesen.",
+      "notitie": "Groep 8. Tik elk woord en daarna de zin aan om ze te laten zien. Toetswoorden (blok 3): monniken, griepverschijnselen.",
       "blokken": [
         {
           "type": "kop",
@@ -31,11 +32,11 @@
           "stapsgewijs": true,
           "stijl": "font-size:48px;font-weight:700",
           "items": [
-            "bangeriken",
-            "wrikken",
-            "amandelen",
-            "luiwammesen",
-            "wratten"
+            "monniken",
+            "verdwaald",
+            "griepverschijnselen",
+            "perziken",
+            "geslurpt"
           ]
         },
         {
@@ -46,14 +47,14 @@
           "type": "tekst",
           "verborgen": true,
           "stijl": "font-size:48px;font-weight:700;line-height:1.3",
-          "tekst": "De haviken vlogen boven het wrak in de haven."
+          "tekst": "De slechteriken hebben alle wasmiddelen in de winkel verstopt."
         }
       ]
     },
     {
       "fase": "Dictee groep 7",
       "achtergrond": "leeg",
-      "notitie": "Groep 7. Tik elk woord en daarna de zin aan om ze te laten zien. Gebiedende wijs, zeg het in een zin: \"Word eens wakker!\" en \"Verspreid de pakketten.\" Toetswoorden (blok 3): charmant, brochure, chantage, machine (in de zin).",
+      "notitie": "Groep 7. Tik elk woord en daarna de zin aan om ze te laten zien. Toetswoorden (blok 3): breekbaar, wandelaar, zinloos. Meld en Houd zijn gebiedende wijs, dus met een hoofdletter (zeg ze als opdracht: Meld je! Houd vast!).",
       "blokken": [
         {
           "type": "kop",
@@ -65,11 +66,11 @@
           "stapsgewijs": true,
           "stijl": "font-size:48px;font-weight:700",
           "items": [
-            "charmant",
-            "Word",
-            "brochure",
-            "Verspreid",
-            "chantage"
+            "breekbaar",
+            "Meld",
+            "wandelaar",
+            "zinloos",
+            "Houd"
           ]
         },
         {
@@ -80,7 +81,7 @@
           "type": "tekst",
           "verborgen": true,
           "stijl": "font-size:48px;font-weight:700;line-height:1.3",
-          "tekst": "Start de machine en haast je naar de lunch."
+          "tekst": "Vertel de makelaar dat het nieuwe plan haalbaar is."
         }
       ]
     }

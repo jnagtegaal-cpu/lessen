@@ -387,7 +387,7 @@
     },
     {
       "id": "g7-8-spelling-dictee",
-      "titel": "Dictee: groep 8 meervouden op -esen, -elen en -iken en woorden met wr-, groep 7 gebiedende wijs en ch die klinkt als sj",
+      "titel": "Dictee: groep 8 meervouden op -esen, -elen en -iken en voltooid deelwoord van klankvaste werkwoorden, groep 7 woorden met een achtervoegsel en gebiedende wijs",
       "groep": "7-8",
       "vak": "Spelling",
       "onderwerp": "Dictee",
@@ -395,12 +395,13 @@
       "trefwoorden": [
         "dictee",
         "spelling",
-        "meervouden esen elen iken",
-        "wr",
-        "gebiedende wijs",
-        "ch als sj"
+        "meervouden -esen -elen -iken",
+        "voltooid deelwoord",
+        "klankvaste werkwoorden",
+        "achtervoegsel",
+        "gebiedende wijs"
       ],
-      "gemaakt": "2026-11-24",
+      "gemaakt": "2026-11-26",
       "pdfs": false
     },
     {
