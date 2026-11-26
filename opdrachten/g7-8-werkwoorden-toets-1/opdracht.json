@@ -6,10 +6,10 @@
   "opdracht": "Schrijf het werkwoord in de goede vorm op de lijn.",
   "vragen": [
     {
-      "ww": "antwoorden",
-      "voor": "Hij",
-      "na": "altijd netjes op de vragen.",
-      "a": "XSJ0ZHJvb3d0bmEiWw=="
+      "ww": "fietsen",
+      "voor": "Gisteren",
+      "na": "wij naar het strand.",
+      "a": "XSJuZXRzdGVpZiJb"
     },
     {
       "ww": "rijden",
@@ -18,58 +18,10 @@
       "a": "XSJ0ZGppciJb"
     },
     {
-      "ww": "worden",
-      "voor": "",
-      "na": "jij later ook dierenarts?",
-      "a": "XSJkcm9XIls="
-    },
-    {
-      "ww": "vinden",
-      "voor": "Wat",
-      "na": "jij van dit boek?",
-      "a": "XSJkbml2Ils="
-    },
-    {
       "ww": "zetten",
-      "voor": "De juf",
-      "na": "de stoelen in een kring.",
-      "a": "XSJ0ZXoiWw=="
-    },
-    {
-      "ww": "houden",
-      "voor": "Mijn broer",
-      "na": "niet van spruitjes.",
-      "a": "XSJ0ZHVvaCJb"
-    },
-    {
-      "ww": "laten",
-      "voor": "Jij",
-      "na": "de hond elke ochtend uit.",
-      "a": "XSJ0YWFsIls="
-    },
-    {
-      "ww": "fietsen",
-      "voor": "Gisteren",
-      "na": "wij naar het strand.",
-      "a": "XSJuZXRzdGVpZiJb"
-    },
-    {
-      "ww": "verhuizen",
-      "voor": "Vorig jaar",
-      "na": "mijn buren naar Spanje.",
-      "a": "XSJuZWRzaXVocmV2Ils="
-    },
-    {
-      "ww": "praten",
-      "voor": "De kinderen",
-      "na": "de hele les door.",
-      "a": "XSJuZXR0YWFycCJb"
-    },
-    {
-      "ww": "antwoorden",
-      "voor": "De jongen",
-      "na": "gisteren heel beleefd.",
-      "a": "XSJlZGRyb293dG5hIls="
+      "voor": "Wie heeft de koffie",
+      "na": "?",
+      "a": "XSJ0ZXplZyJb"
     },
     {
       "ww": "lopen",
@@ -78,40 +30,10 @@
       "a": "XSJwZWlsIls="
     },
     {
-      "ww": "plakken",
-      "voor": "Vorige week",
-      "na": "ik foto's in mijn album.",
-      "a": "XSJldGthbHAiWw=="
-    },
-    {
-      "ww": "leven",
-      "voor": "Lang geleden",
-      "na": "hier dinosaurussen.",
-      "a": "XSJuZWRmZWVsIls="
-    },
-    {
-      "ww": "missen",
-      "voor": "Ik heb de bus helaas",
-      "na": ".",
-      "a": "XSJ0c2ltZWciWw=="
-    },
-    {
-      "ww": "beloven",
-      "voor": "Opa heeft ons een ijsje",
-      "na": ".",
-      "a": "XSJkZm9vbGViIls="
-    },
-    {
-      "ww": "zetten",
-      "voor": "Wie heeft de koffie",
-      "na": "?",
-      "a": "XSJ0ZXplZyJb"
-    },
-    {
-      "ww": "verbranden",
-      "voor": "Het brood is in de oven",
-      "na": ".",
-      "a": "XSJkbmFyYnJldiJb"
+      "ww": "vinden",
+      "voor": "Wat",
+      "na": "jij van dit boek?",
+      "a": "XSJkbml2Ils="
     },
     {
       "ww": "schrijven",
@@ -120,10 +42,88 @@
       "a": "XSJuZXZlcmhjc2VnIls="
     },
     {
+      "ww": "praten",
+      "voor": "De kinderen",
+      "na": "de hele les door.",
+      "a": "XSJuZXR0YWFycCJb"
+    },
+    {
+      "ww": "houden",
+      "voor": "Mijn broer",
+      "na": "niet van spruitjes.",
+      "a": "XSJ0ZHVvaCJb"
+    },
+    {
+      "ww": "missen",
+      "voor": "Ik heb de bus helaas",
+      "na": ".",
+      "a": "XSJ0c2ltZWciWw=="
+    },
+    {
+      "ww": "antwoorden",
+      "voor": "Hij",
+      "na": "altijd netjes op de vragen.",
+      "a": "XSJ0ZHJvb3d0bmEiWw=="
+    },
+    {
+      "ww": "plakken",
+      "voor": "Vorige week",
+      "na": "ik foto's in mijn album.",
+      "a": "XSJldGthbHAiWw=="
+    },
+    {
+      "ww": "verbranden",
+      "voor": "Het brood is in de oven",
+      "na": ".",
+      "a": "XSJkbmFyYnJldiJb"
+    },
+    {
+      "ww": "worden",
+      "voor": "",
+      "na": "jij later ook dierenarts?",
+      "a": "XSJkcm9XIls="
+    },
+    {
+      "ww": "verhuizen",
+      "voor": "Vorig jaar",
+      "na": "mijn buren naar Spanje.",
+      "a": "XSJuZWRzaXVocmV2Ils="
+    },
+    {
+      "ww": "laten",
+      "voor": "Jij",
+      "na": "de hond elke ochtend uit.",
+      "a": "XSJ0YWFsIls="
+    },
+    {
       "ww": "bereiken",
       "voor": "We hebben de top van de berg",
       "na": ".",
       "a": "XSJ0a2llcmViIls="
+    },
+    {
+      "ww": "antwoorden",
+      "voor": "De jongen",
+      "na": "gisteren heel beleefd.",
+      "a": "XSJlZGRyb293dG5hIls="
+    },
+    {
+      "ww": "zetten",
+      "voor": "De juf",
+      "na": "de stoelen in een kring.",
+      "a": "XSJ0ZXoiWw=="
+    },
+    {
+      "ww": "leven",
+      "voor": "Lang geleden",
+      "na": "hier dinosaurussen.",
+      "a": "XSJuZWRmZWVsIls="
+    },
+    {
+      "ww": "beloven",
+      "voor": "Opa heeft ons een ijsje",
+      "na": ".",
+      "a": "XSJkZm9vbGViIls="
     }
   ],
   "soort": "Toetsen"
