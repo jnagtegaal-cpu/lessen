@@ -108,6 +108,17 @@
     const terugKnop = `<button class="link" id="naarLijst">← Terug</button>`;
     function koppelTerug() { const b = $("naarLijst"); if (b) b.onclick = naarLijst; }
 
+    // Een opdracht kan klaarstaan voor bepaalde leerlingen (letters in "voor"). Leeg = iedereen.
+    const voorWie = (r) => (r && Array.isArray(r.voor) && r.voor.length) ? r.voor : null;
+    const magIk = (r, l) => !voorWie(r) || voorWie(r).includes(l);
+    // De letter die op dit apparaat het laatst gekozen is (om alleen de eigen opdrachten te tonen).
+    const bekendeLetter = () => opslag.lees("opdracht-laatste-letter");
+    // Welke opdrachten ziet dit apparaat? Is de letter bekend, dan alleen die voor iedereen of voor deze letter.
+    function zichtbareRondes() {
+      const l = bekendeLetter();
+      return Object.entries(rondes).filter(([, r]) => !l || magIk(r, l));
+    }
+
     function naarLijst() {
       if (stopKamer) { stopKamer(); stopKamer = null; }
       huidig = null; toets = null; kamer = null; leerlingen = {}; ik = null; fase = "lijst";
@@ -140,11 +151,14 @@
 
     function tekenLijst(el) {
       $("titel").textContent = "Opdrachten";
-      const lijst = Object.entries(rondes).sort((a, b) => (a[1].gestart || 0) - (b[1].gestart || 0));
+      const lijst = zichtbareRondes().sort((a, b) => (a[1].gestart || 0) - (b[1].gestart || 0));
+      const bekend = bekendeLetter();
+      const wieRegel = bekend ? `<p class="midden" style="margin:18px 0 0;font-size:17px;color:var(--zacht)">Je bent <b>${esc(bekend)}</b> · <button class="link" id="nietIk">Ben je niet ${esc(bekend)}? Tik hier.</button></p>` : "";
+      const koppelWie = () => { const b = $("nietIk"); if (b) b.onclick = () => { opslag.zet("opdracht-laatste-letter", null); gekozenVak = null; teken(); }; };
       if (!lijst.length) {
         gekozenVak = null; $("sub").textContent = "";
-        el.innerHTML = `<div class="midden"><p class="groot">Even wachten</p><p>Er staat nu geen opdracht klaar.<br>Zodra je leerkracht een opdracht klaarzet, verschijnt hij hier vanzelf.</p></div>`;
-        return;
+        el.innerHTML = `<div class="midden"><p class="groot">Even wachten</p><p>Er staat nu geen opdracht voor je klaar.<br>Zodra je leerkracht een opdracht klaarzet, verschijnt hij hier vanzelf.</p></div>${wieRegel}`;
+        return koppelWie();
       }
       const m = mijnLetters(), klaar = opslag.lees("opdracht-klaar") || {};
       if (gekozenVak && !lijst.some(([, r]) => vakVan(r.toets) === gekozenVak)) gekozenVak = null;
@@ -157,7 +171,8 @@
           const open = n.filter(([k]) => !klaar[k]).length;
           return `<button class="opdracht${n.length ? "" : " uit"}" data-vak="${esc(v)}"${n.length ? "" : " disabled"}>
             <b>${esc(v)}</b><span class="pijl">${!n.length ? "" : open ? `${open} ${open === 1 ? "opdracht" : "opdrachten"} →` : "✓ Klaar"}</span></button>`;
-        }).join("")}</div>`;
+        }).join("")}</div>${wieRegel}`;
+        koppelWie();
         el.querySelectorAll("[data-vak]").forEach((b) => b.onclick = () => { gekozenVak = b.dataset.vak; teken(); });
         return;
       }
@@ -189,7 +204,7 @@
             fase = leerlingen[l].ingeleverd ? "ingeleverd" : "vraag"; nu = 0;
           } else {
             const vorige = opslag.lees("opdracht-laatste-letter");
-            if (vorige && !(leerlingen[vorige] && leerlingen[vorige].ingeleverd)) { ik = vorige; fase = "bevestig"; }
+            if (vorige && magIk(rondes[k], vorige) && !(leerlingen[vorige] && leerlingen[vorige].ingeleverd)) { ik = vorige; fase = "bevestig"; }
             else { ik = null; fase = "letters"; }
           }
           return teken();
@@ -202,11 +217,14 @@
     }
 
     function tekenLetters(el) {
-      $("sub").textContent = "Tik op jouw letter.";
+      $("sub").textContent = voorWie(rondes[huidig]) ? "Deze opdracht is voor een paar leerlingen. Tik op jouw letter." : "Tik op jouw letter.";
       let h = terugKnop;
+      const r = rondes[huidig];
       for (const g of klas.groepen) {
+        const mag = g.letters.filter((l) => magIk(r, l));
+        if (!mag.length) continue;
         h += `<h2>${esc(g.naam)}</h2><div class="letters">`;
-        for (const l of g.letters) {
+        for (const l of mag) {
           const klaar = leerlingen[l] && leerlingen[l].ingeleverd;
           h += `<button class="letter" data-l="${esc(l)}"${klaar ? " disabled title=\"Al ingeleverd\"" : ""}>${esc(l)}</button>`;
         }

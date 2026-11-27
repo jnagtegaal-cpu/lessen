@@ -42,6 +42,13 @@
     .vraagkop { font-size: 12px; font-weight: 400; color: var(--ink-soft); display: block; }
     .x { background: none; border: 0; color: var(--ink-soft); cursor: pointer; font: inherit; font-size: 14px; text-decoration: underline; padding: 0; }
     .melding { padding: 12px 16px; border-radius: 10px; background: #fde8e6; color: #b3372f; }
+    .kiezer h3 { margin: 14px 0 8px; font-size: 16px; display: flex; gap: 12px; align-items: baseline; }
+    .kiezer h3:first-child { margin-top: 0; }
+    .kiesletters { display: grid; grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 8px; }
+    .kiesletter { font: 700 18px/1 inherit; font-family: inherit; padding: 12px 0; border-radius: 10px; border: 2px solid var(--line); background: #fff; color: var(--ink); cursor: pointer; }
+    .kiesletter:hover { border-color: var(--groen); }
+    .kiesletter[aria-pressed="true"] { background: var(--groen); border-color: var(--groen); color: #fff; }
+    .kiezer .onder { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; }
     .voet { margin-top: 36px; font-size: 14px; color: var(--ink-soft); }
     .voet button { background: none; border: 0; padding: 0; font: inherit; color: var(--groen-donker); text-decoration: underline; cursor: pointer; }
   </style>
@@ -75,6 +82,7 @@
     const ontcijfer = (a) => JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(a), (c) => c.charCodeAt(0)).reverse()));
 
     let vakLijst = [], overzicht = [], klas = null, plek = {}, kamers = {}, luisteraars = {}, opdrachten = {};
+    let keuze = { waar: "", letters: new Set() };   // letters die in de kiezer zijn aangetikt (blijft staan als de pagina ververst)
 
     async function laadJson(pad) { const r = await fetch(pad, { cache: "no-store" }); if (!r.ok) throw new Error(pad); return r.json(); }
     async function laadOpdracht(id) {
@@ -93,6 +101,12 @@
       if (typeof a.kamer === "string") return { [a.kamer]: { toets: a.toets, gestart: a.gestart } };
       return a;
     }
+    // Voor wie staat een ronde klaar? Leeg = de hele klas.
+    const voorWie = (r) => (r && Array.isArray(r.voor) && r.voor.length) ? r.voor : null;
+    const voorTekst = (v) => v.length <= 4 ? `Voor ${v.join(", ")}` : `Voor ${v.length} leerlingen`;
+    const voorLabel = (r) => { const v = voorWie(r); return v ? `<span class="label" title="${esc(v.join(", "))}">${esc(voorTekst(v))}</span>` : ""; };
+    const alleLetters = () => klas.groepen.flatMap((g) => g.letters);
+    const sorteer = (l) => { const a = alleLetters(); return [...l].sort((x, y) => (a.indexOf(x) + 1 || 999) - (a.indexOf(y) + 1 || 999)); };
     const rondeVanOpdracht = (id) => Object.entries(actieveRondes()).find(([, r]) => r.toets === id);
     const geschiedenis = () => Object.entries(plek.geschiedenis || {}).sort((x, y) => (y[1].gestart || 0) - (x[1].gestart || 0));
 
@@ -107,14 +121,53 @@
     }
 
     // ---------- Acties ----------
-    async function zetKlaar(id) {
+    // voor: lijst met letters (alleen die leerlingen zien de opdracht), of leeg = de hele klas.
+    async function zetKlaar(id, voor) {
       const k = Live.maakCode() + Live.maakCode().slice(0, 2), nu = Date.now();
       const a = plek.actief;
+      const r = { toets: id, gestart: nu };
+      if (voor && voor.length) r.voor = sorteer(voor);
       if (a && typeof a.kamer === "string") await Live.schrijf(PLEK, "actief", { [a.kamer]: { toets: a.toets, gestart: a.gestart } });
-      await Live.schrijf(k, "info", { toets: id, gestart: nu });
-      await Live.schrijf(PLEK, `geschiedenis/${k}`, { toets: id, gestart: nu });
-      await Live.schrijf(PLEK, `actief/${k}`, { toets: id, gestart: nu });
+      await Live.schrijf(k, "info", r);
+      await Live.schrijf(PLEK, `geschiedenis/${k}`, r);
+      await Live.schrijf(PLEK, `actief/${k}`, r);
+      keuze = { waar: "", letters: new Set() };
       location.hash = `r=${k}`;
+    }
+    // Andere leerlingen kiezen voor een opdracht die al klaarstaat.
+    async function zetVoor(k, voor) {
+      const v = voor && voor.length ? sorteer(voor) : null;
+      await Live.schrijf(k, "info/voor", v, v ? "PUT" : "DELETE");
+      await Live.schrijf(PLEK, `geschiedenis/${k}/voor`, v, v ? "PUT" : "DELETE");
+      await Live.schrijf(PLEK, `actief/${k}/voor`, v, v ? "PUT" : "DELETE");
+      keuze = { waar: "", letters: new Set() };
+    }
+
+    // Letters aantikken: alleen deze leerlingen krijgen de opdracht.
+    function kiezer(waar, begin, knopTekst) {
+      if (keuze.waar !== waar) keuze = { waar, letters: new Set(begin || []) };
+      const n = keuze.letters.size;
+      let h = `<div class="kiezer">`;
+      for (const g of klas.groepen) {
+        const alles = g.letters.every((l) => keuze.letters.has(l));
+        h += `<h3>${esc(g.naam)} <button class="x" data-groep="${esc(g.naam)}">${alles ? "niemand" : "hele groep"}</button></h3><div class="kiesletters">`;
+        h += g.letters.map((l) => `<button class="kiesletter" data-kies="${esc(l)}" aria-pressed="${keuze.letters.has(l)}">${esc(l)}</button>`).join("");
+        h += `</div>`;
+      }
+      return h + `<div class="onder"><button class="knop hoofd" id="kiesKlaar"${n ? "" : " disabled"}>${esc(knopTekst(n))}</button>
+        ${n ? `<span class="zacht">${esc(sorteer(keuze.letters).join(", "))}</span>` : `<span class="zacht">Tik de letters aan van de leerlingen die de opdracht krijgen.</span>`}</div></div>`;
+    }
+    function koppelKiezer(doe) {
+      document.querySelectorAll("[data-kies]").forEach((b) => b.onclick = () => {
+        const l = b.dataset.kies; keuze.letters.has(l) ? keuze.letters.delete(l) : keuze.letters.add(l); teken();
+      });
+      document.querySelectorAll("[data-groep]").forEach((b) => b.onclick = () => {
+        const g = klas.groepen.find((x) => x.naam === b.dataset.groep);
+        const alles = g.letters.every((l) => keuze.letters.has(l));
+        g.letters.forEach((l) => alles ? keuze.letters.delete(l) : keuze.letters.add(l)); teken();
+      });
+      const k = $("kiesKlaar");
+      if (k) k.onclick = async () => { k.disabled = true; try { await doe([...keuze.letters]); } catch (err) { alert("Dat lukte niet: " + err.message); k.disabled = false; } teken(); };
     }
     async function af(k) {
       const nu = Date.now(), a = plek.actief;
@@ -166,6 +219,7 @@
         e.stopPropagation(); b.disabled = true;
         try { await zetKlaar(b.dataset.klaar); } catch (err) { alert("Klaarzetten lukte niet: " + err.message); b.disabled = false; }
       });
+      document.querySelectorAll("[data-kiesvoor]").forEach((b) => b.onclick = (e) => { e.stopPropagation(); location.hash = `o=${b.dataset.kiesvoor}`; });
       document.querySelectorAll("[data-af]").forEach((b) => zeker(b, "Zeker? Tik nog een keer", () => af(b.dataset.af)));
     }
 
@@ -180,12 +234,12 @@
         const r = rondeVanOpdracht(t.id);
         const tel = r ? telling(r[0]) : null;
         html += `<article class="kaart klikbaar${r ? " actief" : ""}" data-open="${esc(t.id)}">
-          <div class="kaart-meta"><span class="label">Groep ${esc(t.groep)}</span><span class="label grijs">${t.vragen} vragen</span>${r ? `<span class="label">Staat klaar</span>` : ""}</div>
+          <div class="kaart-meta"><span class="label">Groep ${esc(t.groep)}</span><span class="label grijs">${t.vragen} vragen</span>${r ? `<span class="label">Staat klaar</span>${voorLabel(r[1])}` : ""}</div>
           <h2>${esc(t.titel)}</h2>
           <p>${r ? `Sinds ${esc(uur(r[1].gestart))} · <b>${tel.klaar}</b> ingeleverd · ${tel.bezig} bezig` : "Staat niet klaar voor de leerlingen."}</p>
           <div class="kaart-acties">${r
             ? `<button class="knop" data-bekijk="${esc(r[0])}">Resultaten</button><button class="knop hoofd" data-af="${esc(r[0])}">Af en archiveren</button>`
-            : `<button class="knop hoofd" data-klaar="${esc(t.id)}">Zet klaar</button>`}</div>
+            : `<button class="knop hoofd" data-klaar="${esc(t.id)}">Zet klaar voor iedereen</button><button class="knop" data-kiesvoor="${esc(t.id)}">Kies leerlingen</button>`}</div>
         </article>`;
       }
       $("inhoud").innerHTML = html + `</div>`;
@@ -214,7 +268,7 @@
       for (const [k, r] of arch) {
         const d = datum(r.gestart);
         if (d !== dag) { dag = d; html += `<h3>${esc(d.charAt(0).toUpperCase() + d.slice(1))}</h3>`; }
-        html += `<a href="#r=${esc(k)}"><span><b>${esc(info(r.toets).titel)}</b> <span class="zacht">· ${esc(vakVan(r.toets))}</span></span><span class="zacht">${esc(uur(r.gestart))}</span></a>`;
+        html += `<a href="#r=${esc(k)}"><span><b>${esc(info(r.toets).titel)}</b> <span class="zacht">· ${esc(vakVan(r.toets))}${voorWie(r) ? ` · ${esc(voorTekst(voorWie(r)).toLowerCase())}` : ""}</span></span><span class="zacht">${esc(uur(r.gestart))}</span></a>`;
       }
       html += `</div><p class="voet">De leerlingen gebruiken altijd dezelfde link: <b>${esc(kinderLink())}</b> <button id="kopieer">kopieer</button></p>`;
       $("inhoud").innerHTML = html;
@@ -231,13 +285,16 @@
       const eerder = geschiedenis().filter(([, x]) => x.toets === id);
       $("inhoud").innerHTML = `<a class="terug" href="${terugNaar}">← ${esc(vakVan(id))}</a>
         <div class="detail-kop"><div><h1>${esc(t.titel)}</h1><div class="kaart-meta"><span class="label">Groep ${esc(t.groep)}</span><span class="label grijs">${t.vragen} vragen</span><span class="label grijs">Staat niet klaar</span></div></div>
-        <div class="knoppen"><button class="knop hoofd" id="klaar">Zet klaar</button></div></div>
-        <h2 class="sectie">Eerder gemaakt</h2><div class="archief">${eerder.length ? eerder.map(([k, x]) => `<a href="#r=${esc(k)}"><span>${esc(datum(x.gestart))}</span><span class="zacht">${esc(uur(x.gestart))}</span></a>`).join("") : `<div class="leeg-klein">Deze opdracht is nog niet eerder gemaakt.</div>`}</div>`;
+        <div class="knoppen"><button class="knop hoofd" id="klaar">Zet klaar voor iedereen</button></div></div>
+        <h2 class="sectie">Of alleen voor bepaalde leerlingen</h2><div class="vlak">${kiezer(`o=${id}`, [], (n) => n ? `Zet klaar voor ${n} ${n === 1 ? "leerling" : "leerlingen"}` : "Zet klaar")}</div>
+        <h2 class="sectie">Eerder gemaakt</h2><div class="archief">${eerder.length ? eerder.map(([k, x]) => `<a href="#r=${esc(k)}"><span>${esc(datum(x.gestart))}${voorWie(x) ? ` <span class="zacht">· ${esc(voorTekst(voorWie(x)).toLowerCase())}</span>` : ""}</span><span class="zacht">${esc(uur(x.gestart))}</span></a>`).join("") : `<div class="leeg-klein">Deze opdracht is nog niet eerder gemaakt.</div>`}</div>`;
       $("klaar").onclick = async () => { $("klaar").disabled = true; try { await zetKlaar(id); } catch (err) { alert(err.message); $("klaar").disabled = false; } };
+      koppelKiezer((l) => zetKlaar(id, l));
     }
 
-    function letters(ll) {
-      const l = klas.groepen.flatMap((g) => g.letters);
+    // Welke letters komen in de tabel? Bij een opdracht voor bepaalde leerlingen alleen die (plus wie toch begon).
+    function letters(ll, voor) {
+      const l = voor ? [...voor] : alleLetters();
       Object.keys(ll).forEach((x) => { if (!l.includes(x)) l.push(x); });
       return l;
     }
@@ -248,6 +305,7 @@
 
     async function tekenRonde(k) {
       volg(k);
+      const h = new URLSearchParams(location.hash.slice(1));
       const kamer = kamers[k];
       if (!kamer) { $("inhoud").innerHTML = `<a class="terug" href="#">← Terug</a><p class="zacht">Laden…</p>`; return; }
       if (!kamer.info) { $("inhoud").innerHTML = `<a class="terug" href="#">← Terug</a><p class="melding">Deze resultaten bestaan niet meer.</p>`; return; }
@@ -257,7 +315,9 @@
       const terug = actief ? `<a class="terug" href="#v=${encodeURIComponent(vakVan(t.id))}">← ${esc(vakVan(t.id))}</a>` : `<a class="terug" href="#">← Terug</a>`;
       const ll = kamer.leerlingen || {};
       const telGoed = t.vragen.map(() => 0); let klaar = 0, bezig = 0, rijen = "";
-      const lijst = letters(ll);
+      const voor = voorWie(kamer.info);
+      const lijst = letters(ll, voor);
+      const pasAan = h.get("kies") === "1";
       for (const l of lijst) {
         const d = ll[l];
         if (!d) { rijen += `<tr><td class="l">${esc(l)}</td><td class="zacht">niet begonnen</td><td></td>${t.vragen.map(() => `<td class="niets">·</td>`).join("")}<td></td></tr>`; continue; }
@@ -273,11 +333,13 @@
         : `<span class="label grijs">Gearchiveerd</span>`;
       $("inhoud").innerHTML = `${terug}
         <div class="detail-kop"><div><h1>${esc(t.titel)}</h1>
-          <div class="kaart-meta"><span class="label grijs">${esc(vakVan(t.id))}</span><span class="label grijs">${esc(datum(kamer.info.gestart))}</span>${status}</div></div>
+          <div class="kaart-meta"><span class="label grijs">${esc(vakVan(t.id))}</span><span class="label grijs">${esc(datum(kamer.info.gestart))}</span>${status}${voor ? voorLabel(kamer.info) : `<span class="label grijs">Voor iedereen</span>`}</div></div>
           <div class="knoppen">
+            ${actief && !pasAan ? `<button class="knop" id="pasAan">Leerlingen aanpassen</button>` : ""}
             <button class="knop" id="download">Download voor Excel</button>
             ${actief ? `<button class="knop hoofd" id="af">Af en archiveren</button>` : `<button class="knop rood" id="wis">Wis uit archief</button>`}
           </div></div>
+        ${actief && pasAan ? `<div class="vlak" style="margin-bottom:16px"><p style="margin-top:0"><b>Voor wie staat deze opdracht klaar?</b> <button class="x" id="iedereen">voor iedereen</button> · <a class="x" href="#r=${esc(k)}">annuleren</a></p>${kiezer(`r=${k}`, voor || [], () => "Opslaan")}</div>` : ""}
         <div class="vlak">
           <p style="margin-top:0"><b>${klaar}</b> ingeleverd · <b>${bezig}</b> bezig · <b>${lijst.length - klaar - bezig}</b> niet begonnen</p>
           <div class="tabelvak"><table>
@@ -288,6 +350,9 @@
           <p class="zacht" style="font-size:14px;margin-bottom:0">Een rood vakje laat zien wat het kind invulde. Bovenaan elke kolom staat het goede antwoord. Hoofdletters en spaties tellen niet mee.</p>
         </div>`;
       $("download").onclick = () => download(t, kamer);
+      if ($("pasAan")) $("pasAan").onclick = () => { keuze = { waar: "" }; location.hash = `r=${k}&kies=1`; };
+      if ($("iedereen")) $("iedereen").onclick = async () => { await zetVoor(k, null); location.hash = `r=${k}`; };
+      if (pasAan) koppelKiezer(async (l) => { await zetVoor(k, l); location.hash = `r=${k}`; });
       if ($("af")) zeker($("af"), "Zeker? Tik nog een keer", () => af(k));
       if ($("wis")) zeker($("wis"), "Echt wissen? Download eerst! Tik nog een keer", () => wis(k));
       document.querySelectorAll("[data-vrij]").forEach((b) => zeker(b, "zeker?", () => Live.schrijf(k, `leerlingen/${b.dataset.vrij}`, null, "DELETE")));
@@ -297,7 +362,7 @@
       const ll = kamer.leerlingen || {};
       const cel = (s) => `"${String(s ?? "").replace(/"/g, '""')}"`;
       const regels = [["Letter", "Status", "Score", ...t.vragen.map((v, i) => `${i + 1}. ${v.goed[0]}`)].map(cel).join(";")];
-      for (const l of letters(ll)) {
+      for (const l of letters(ll, voorWie(kamer.info))) {
         const d = ll[l];
         if (!d) { regels.push([l, "niet begonnen", ""].map(cel).join(";")); continue; }
         const s = score(t, d);
