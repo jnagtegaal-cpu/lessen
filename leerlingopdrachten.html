@@ -90,12 +90,13 @@
       if (!opdrachten[id]) {
         const t = await laadJson(`opdrachten/${encodeURIComponent(id)}/opdracht.json`);
         if (t.soort === "woorden") t.woorden.forEach((w) => w.woord = ontcijfer(w.a)[0]);
+        else if (t.soort === "sommen") t.vragen.forEach((v) => v.antwoord = ontcijfer(v.a)[0]);
         else t.vragen.forEach((v) => v.goed = ontcijfer(v.a));
         opdrachten[id] = t;
       }
       return opdrachten[id];
     }
-    const aantal = (t) => t.soort === "woorden" ? `${t.vragen} woorden × 2` : `${t.vragen} vragen`;
+    const aantal = (t) => t.soort === "woorden" ? `${t.vragen} woorden × 2` : t.soort === "sommen" ? `${t.vragen} sommen` : `${t.vragen} vragen`;
     const info = (id) => overzicht.find((t) => t.id === id) || { id, titel: id };
     // Welke rondes staan klaar voor de leerlingen? (ook het oude formaat met één ronde)
     function actieveRondes() {
@@ -315,6 +316,7 @@
       const t = await laadOpdracht(kamer.info.toets).catch(() => null);
       if (!t) { $("inhoud").innerHTML = `<a class="terug" href="#">← Terug</a><p class="melding">Deze opdracht is niet meer te vinden.</p>`; return; }
       if (t.soort === "woorden") return tekenWoordenRonde(k, kamer, t, h);
+      if (t.soort === "sommen") return tekenSommenRonde(k, kamer, t, h);
       const actief = !!actieveRondes()[k];
       const terug = actief ? `<a class="terug" href="#v=${encodeURIComponent(vakVan(t.id))}">← ${esc(vakVan(t.id))}</a>` : `<a class="terug" href="#">← Terug</a>`;
       const ll = kamer.leerlingen || {};
@@ -415,6 +417,74 @@
       if ($("wis")) zeker($("wis"), "Echt wissen? Download eerst! Tik nog een keer", () => wis(k));
       document.querySelectorAll("[data-vrij]").forEach((b) => zeker(b, "zeker?", () => Live.schrijf(k, `leerlingen/${b.dataset.vrij}`, null, "DELETE")));
     }
+    // ---------- Sommen: per leerling per som meteen goed, na pogingen goed, overgeslagen of nog open ----------
+    function somStand(t, d) {
+      const g = (d && d.goed) || {}, f = (d && d.fouten) || {}, over = d && d.overgeslagen;
+      return t.vragen.map((_, i) => ({ goed: !!g["v" + i], fout: f["v" + i] || [], over: over === "v" + i }));
+    }
+    function tekenSommenRonde(k, kamer, t, h) {
+      const actief = !!actieveRondes()[k], n = t.vragen.length;
+      const terug = actief ? `<a class="terug" href="#v=${encodeURIComponent(vakVan(t.id))}">← ${esc(vakVan(t.id))}</a>` : `<a class="terug" href="#">← Terug</a>`;
+      const ll = kamer.leerlingen || {}, voor = voorWie(kamer.info), lijst = letters(ll, voor), pasAan = h.get("kies") === "1";
+      let klaar = 0, bezig = 0, rijen = "";
+      const meteen = t.vragen.map(() => 0), gedaan = t.vragen.map(() => 0);
+      for (const l of lijst) {
+        const d = ll[l];
+        if (!d) { rijen += `<tr><td class="l">${esc(l)}</td><td class="zacht">niet begonnen</td><td></td>${t.vragen.map(() => `<td class="niets">·</td>`).join("")}<td></td></tr>`; continue; }
+        const st = somStand(t, d), aantalGoed = st.filter((x) => x.goed).length;
+        d.ingeleverd ? klaar++ : bezig++;
+        st.forEach((x, i) => { if (x.goed) { gedaan[i]++; if (!x.fout.length) meteen[i]++; } });
+        rijen += `<tr class="${d.ingeleverd ? "klaar" : ""}"><td class="l">${esc(l)}</td>
+          <td>${d.ingeleverd ? "✓ klaar" : `bezig (${aantalGoed}/${n} goed)`}</td>
+          <td><b>${st.filter((x) => x.goed && !x.fout.length).length}</b>/${n}</td>
+          ${st.map((x) => {
+            const fout = x.fout.length ? `<span class="rood" title="${esc(x.fout.join("; "))}">${esc(x.fout.join("; "))}</span>` : "";
+            if (x.goed) return `<td class="${x.fout.length ? "fout" : "goed"}" style="font-weight:400">${fout ? fout + "<br>✓" : "✓"}</td>`;
+            return `<td class="${x.fout.length ? "fout" : "niets"}" style="font-weight:400">${fout}${x.over ? `${fout ? "<br>" : ""}<span class="zacht">overgeslagen</span>` : fout ? "" : "·"}</td>`;
+          }).join("")}
+          <td>${actief ? `<button class="x" data-vrij="${esc(l)}" title="Wist de voortgang van deze letter, zodat het kind opnieuw kan beginnen">vrijgeven</button>` : ""}</td></tr>`;
+      }
+      const status = actief ? `<span class="label">Staat klaar sinds ${esc(uur(kamer.info.gestart))}</span>` : `<span class="label grijs">Gearchiveerd</span>`;
+      $("inhoud").innerHTML = `${terug}
+        <div class="detail-kop"><div><h1>${esc(t.titel)}</h1>
+          <div class="kaart-meta"><span class="label grijs">${esc(vakVan(t.id))}</span><span class="label grijs">${esc(datum(kamer.info.gestart))}</span>${status}${voor ? voorLabel(kamer.info) : `<span class="label grijs">Voor iedereen</span>`}</div></div>
+          <div class="knoppen">
+            ${actief && !pasAan ? `<button class="knop" id="pasAan">Leerlingen aanpassen</button>` : ""}
+            <button class="knop" id="download">Download voor Excel</button>
+            ${actief ? `<button class="knop hoofd" id="af">Af en archiveren</button>` : `<button class="knop rood" id="wis">Wis uit archief</button>`}
+          </div></div>
+        ${actief && pasAan ? `<div class="vlak" style="margin-bottom:16px"><p style="margin-top:0"><b>Voor wie staat deze opdracht klaar?</b> <button class="x" id="iedereen">voor iedereen</button> · <a class="x" href="#r=${esc(k)}">annuleren</a></p>${kiezer(`r=${k}`, voor || [], () => "Opslaan")}</div>` : ""}
+        <div class="vlak">
+          <p style="margin-top:0"><b>${klaar}</b> klaar · <b>${bezig}</b> bezig · <b>${lijst.length - klaar - bezig}</b> niet begonnen</p>
+          <div class="tabelvak"><table>
+            <thead><tr><th>Letter</th><th>Status</th><th>Meteen<br>goed</th>${t.vragen.map((v, i) => `<th>Som ${i + 1}<span class="vraagkop">${esc(v.antwoord)}${v.eenheid ? " " + esc(v.eenheid) : ""}</span></th>`).join("")}<th></th></tr></thead>
+            <tbody>${rijen}</tbody>
+            <tfoot><tr><td class="l">Meteen goed</td><td colspan="2">van wie de som goed heeft</td>${meteen.map((m, i) => `<td>${gedaan[i] ? `${m}/${gedaan[i]}` : ""}</td>`).join("")}<td></td></tr></tfoot>
+          </table></div>
+          <p class="zacht" style="font-size:14px;margin-bottom:0">✓ = goed. Rood = wat het kind eerst fout invulde; het probeerde het daarna opnieuw. De kinderen zien het goede antwoord nooit. Bovenaan elke kolom staat het goede antwoord (alleen voor jou).</p>
+        </div>`;
+      $("download").onclick = () => {
+        const cel = (x) => `"${String(x ?? "").replace(/"/g, '""')}"`;
+        const regels = [["Letter", "Status", "Meteen goed", ...t.vragen.map((v, i) => `Som ${i + 1} (${v.antwoord})`)].map(cel).join(";")];
+        for (const l of letters(ll, voor)) {
+          const d = ll[l];
+          if (!d) { regels.push([l, "niet begonnen"].map(cel).join(";")); continue; }
+          const st = somStand(t, d);
+          regels.push([l, d.ingeleverd ? "klaar" : "bezig", st.filter((x) => x.goed && !x.fout.length).length,
+            ...st.map((x) => (x.fout.length ? "fout: " + x.fout.join(", ") + (x.goed ? " → goed" : "") : x.goed ? "goed" : x.over ? "overgeslagen" : ""))].map(cel).join(";"));
+        }
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(new Blob(["\uFEFF" + regels.join("\r\n")], { type: "text/csv;charset=utf-8" }));
+        a.download = `${t.id}-${new Date(kamer.info.gestart).toISOString().slice(0, 10)}.csv`; a.click();
+      };
+      if ($("pasAan")) $("pasAan").onclick = () => { keuze = { waar: "" }; location.hash = `r=${k}&kies=1`; };
+      if ($("iedereen")) $("iedereen").onclick = async () => { await zetVoor(k, null); location.hash = `r=${k}`; };
+      if (pasAan) koppelKiezer(async (l) => { await zetVoor(k, l); location.hash = `r=${k}`; });
+      if ($("af")) zeker($("af"), "Zeker? Tik nog een keer", () => af(k));
+      if ($("wis")) zeker($("wis"), "Echt wissen? Download eerst! Tik nog een keer", () => wis(k));
+      document.querySelectorAll("[data-vrij]").forEach((b) => zeker(b, "zeker?", () => Live.schrijf(k, `leerlingen/${b.dataset.vrij}`, null, "DELETE")));
+    }
+
     function downloadWoorden(t, kamer) {
       const ll = kamer.leerlingen || {}, n = t.woorden.length;
       const cel = (s) => `"${String(s ?? "").replace(/"/g, '""')}"`;

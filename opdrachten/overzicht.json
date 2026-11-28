@@ -25,6 +25,15 @@
       "vragen": 25,
       "vak": "Weektaak",
       "soort": "woorden"
+    },
+    {
+      "id": "g8-rekenen-redactiesommen-1",
+      "titel": "Redactiesommen (werkblad 1)",
+      "groep": "8",
+      "gemaakt": "2026-11-28",
+      "vragen": 10,
+      "vak": "Weektaak",
+      "soort": "sommen"
     }
   ]
 }

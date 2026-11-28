@@ -90,6 +90,27 @@
     .terugmelding { text-align: center; min-height: 1.5em; margin-top: 10px; font-weight: 700; }
     .terugmelding.fout { color: var(--fout); }
     .terugmelding.goed { color: var(--kop); }
+    /* Sommen (antwoord van het werkblad invullen) */
+    .letop { background: #fff4d6; border: 3px solid #f0d58a; border-radius: 14px; padding: 16px 18px; }
+    .letop b { color: #7a5a00; }
+    .somnr { text-align: center; font-size: 64px; font-weight: 700; color: var(--kop); line-height: 1; margin: 6px 0 2px; }
+    .somuitleg { text-align: center; color: var(--zacht); margin: 0 0 16px; }
+    .antwoordrij { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    .antwoordrij .typ { width: 9em; margin: 0; }
+    .eenheid { font-size: 26px; font-weight: 700; }
+    .breuk { display: inline-flex; flex-direction: column; align-items: center; gap: 6px; }
+    .breuk .typ { width: 4.5em; }
+    .breuk .streep { width: 6em; height: 5px; border-radius: 3px; background: var(--tekst); }
+    .keuzes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .keuzes button { font: inherit; font-size: 28px; font-weight: 700; padding: 16px; border-radius: 14px; border: 3px solid var(--rand); background: #fff; color: var(--tekst); cursor: pointer; }
+    .keuzes button[aria-pressed="true"] { border-color: var(--accent); background: var(--label); color: var(--kop); }
+    .somknoppen { display: flex; gap: 12px; margin-top: 16px; }
+    .somknoppen .knop { flex: 1; }
+    .sombollen { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 18px; }
+    .sombol { width: 38px; height: 38px; border-radius: 50%; border: 2px solid var(--rand); display: grid; place-items: center; font: 700 15px sans-serif; color: var(--zacht); background: #fff; }
+    .sombol.goed { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .sombol.over { background: #fff4d6; border-color: #f0d58a; color: #7a5a00; }
+    .sombol.hier { outline: 3px solid var(--accent); outline-offset: 2px; }
   </style>
 </head>
 <body>
@@ -120,6 +141,8 @@
     let stap = 0, fouten = {}, woordenLijst = [];   // bij soort "woorden": waar het kind is en wat het fout typte
     const ontcijfer = (a) => JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(a), (c) => c.charCodeAt(0)).reverse()));
     const isWoorden = () => toets && toets.soort === "woorden";
+    const isSommen = () => toets && toets.soort === "sommen";
+    let goedSet = {}, overgeslagen = null, somNu = 0, somKeuze = null;   // bij soort "sommen"
 
     const meld = (tekst, fout) => `<p class="melding${fout ? " fout" : ""}">${esc(tekst)}</p>`;
     const titelVan = (id) => (overzicht.find((t) => t.id === id) || {}).titel || "Opdracht";
@@ -154,7 +177,7 @@
       $("titel").textContent = toets.titel;
       if (fase === "ingeleverd") {
         $("sub").textContent = "";
-        el.innerHTML = `<div class="midden"><p class="groot">Ingeleverd!</p><p>Goed gedaan, <b>${esc(ik)}</b>. Je bent klaar met deze opdracht.</p>
+        el.innerHTML = `<div class="midden"><p class="groot">Ingeleverd!</p><p>Goed gedaan, <b>${esc(ik)}</b>. Je bent klaar met deze opdracht.</p>${isSommen() ? `<p class="letop"><b>Vergeet niet:</b> lever ook je aantekeningenblad in.</p>` : ""}
           <button class="knop breed" id="naarLijst">Terug naar de opdrachten</button></div>`;
         return koppelTerug();
       }
@@ -169,6 +192,8 @@
       if (fase === "overzicht") return tekenOverzicht(el);
       if (fase === "woord") return tekenWoord(el);
       if (fase === "tussen") return tekenTussen(el);
+      if (fase === "letop") return tekenLetOp(el);
+      if (fase === "som") return tekenSom(el);
       tekenVraag(el);
     }
 
@@ -223,7 +248,10 @@
         if (eerste) {
           eerste = false;
           const l = mijnLetters()[k];
-          if (l && leerlingen[l] && leerlingen[l].apparaat === apparaat && isWoorden()) {
+          if (l && leerlingen[l] && leerlingen[l].apparaat === apparaat && isSommen()) {
+            ik = l; laadSomStand(leerlingen[l]);
+            fase = leerlingen[l].ingeleverd ? "ingeleverd" : "letop";
+          } else if (l && leerlingen[l] && leerlingen[l].apparaat === apparaat && isWoorden()) {
             ik = l; stap = leerlingen[l].stap || 0; fouten = leerlingen[l].fouten || {};
             fase = leerlingen[l].ingeleverd ? "ingeleverd" : "woord";
           } else if (l && leerlingen[l] && leerlingen[l].apparaat === apparaat) {       // verder waar je was
@@ -238,7 +266,7 @@
         }
         // De leerkracht heeft deze letter vrijgegeven.
         if (ik && fase === "ingeleverd" && !leerlingen[ik]) { ik = null; fase = "letters"; zetMijnLetter(k, null); }
-        if (fase !== "vraag" && fase !== "overzicht" && fase !== "woord" && fase !== "tussen") teken();
+        if (fase !== "vraag" && fase !== "overzicht" && fase !== "woord" && fase !== "tussen" && fase !== "som" && fase !== "letop") teken();
         else if (kamer.info && kamer.info.gesloten) teken();
       });
     }
@@ -270,6 +298,13 @@
       koppelTerug();
       $("nee").onclick = () => { ik = null; fase = "letters"; teken(); };
       $("ja").onclick = async () => {
+        if (isSommen()) {
+          const oud = leerlingen[ik] || {};
+          laadSomStand(oud); fase = "letop";
+          zetMijnLetter(huidig, ik); opslag.zet("opdracht-laatste-letter", ik);
+          try { await Live.schrijf(huidig, `leerlingen/${ik}`, { apparaat, gestart: oud.gestart || Date.now() }, "PATCH"); } catch {}
+          return teken();
+        }
         if (isWoorden()) {
           const oud = leerlingen[ik] || {};
           stap = oud.stap || 0; fouten = oud.fouten || {}; fase = "woord";
@@ -395,6 +430,107 @@
         <p>Nu komen dezelfde woorden nog een keer. Je ziet alleen het plaatje en de eerste letter.<br>Typ het woord <b>uit je hoofd</b>.</p>
         <button class="knop breed" id="verder">Begin ronde 2</button></div>`;
       $("verder").onclick = () => { fase = "woord"; teken(); };
+    }
+
+    // ---------- Sommen: het antwoord van het werkblad invullen ----------
+    // Fout? Opnieuw proberen. Het goede antwoord wordt nooit getoond. Eén som tegelijk mag overgeslagen worden.
+    // Bewaard: goed["v<i>"] = tijd, fouten["v<i>"] = foute pogingen, overgeslagen = "v<i>" of null.
+    function laadSomStand(d) {
+      d = d || {}; goedSet = d.goed || {}; fouten = d.fouten || {};
+      overgeslagen = typeof d.overgeslagen === "string" ? +d.overgeslagen.slice(1) : null;
+      somNu = volgendeSom();
+    }
+    const somGoed = (i) => !!goedSet["v" + i];
+    function volgendeSom() {
+      const n = toets.vragen.length;
+      for (let i = 0; i < n; i++) if (!somGoed(i) && i !== overgeslagen) return i;
+      if (overgeslagen !== null && !somGoed(overgeslagen)) return overgeslagen;
+      return -1;
+    }
+    function getal(x) {
+      let t = String(x || "").replace(/[\s€]/g, "");
+      if (t.includes(",")) t = t.replace(/\./g, "").replace(",", ".");
+      else if (/^\d{1,3}(\.\d{3})+$/.test(t)) t = t.replace(/\./g, "");
+      return /^-?\d+(\.\d+)?$/.test(t) ? parseFloat(t) : NaN;
+    }
+    function somKlopt(v, ant) {
+      const goed = ontcijfer(v.a)[0];
+      if (v.soort === "keuze") return ant === goed;
+      if (v.soort === "breuk") {
+        const [a, b] = ant.split("/").map(getal), [c, d] = goed.split("/").map(getal);
+        return b > 0 && Math.abs(a * d - c * b) < 1e-9;
+      }
+      return Math.abs(getal(ant) - getal(goed)) < 1e-9;
+    }
+    function tekenLetOp(el) {
+      $("sub").textContent = toets.opdracht || "";
+      el.innerHTML = `<div class="kopregel"><span class="wie">${esc(ik)}</span><span class="teller">${Object.keys(goedSet).length} van ${toets.vragen.length} goed</span></div>
+        <div class="letop"><p style="margin:0 0 8px"><b>Let op!</b></p><p style="margin:0">${esc(toets.letOp || "")}</p></div>
+        <button class="knop breed" id="begin">${Object.keys(goedSet).length ? "Verder" : "Begin"}</button>`;
+      $("begin").onclick = () => { fase = "som"; teken(); };
+    }
+    function tekenSom(el) {
+      const n = toets.vragen.length;
+      somNu = volgendeSom();
+      if (somNu < 0) { fase = "ingeleverd"; return teken(); }
+      const v = toets.vragen[somNu], pogingen = (fouten["v" + somNu] || []).length;
+      const kanOverslaan = overgeslagen === null && toets.vragen.some((_, i) => i !== somNu && !somGoed(i));
+      $("sub").textContent = "Vul het antwoord in dat je op je blad hebt uitgerekend.";
+      somKeuze = null;
+      const veld = v.soort === "keuze"
+        ? `<div class="keuzes">${v.opties.map((o) => `<button data-o="${esc(o)}" aria-pressed="false">${esc(o)}</button>`).join("")}</div>${v.eenheid ? `<p class="midden" style="margin:8px 0 0">${esc(v.eenheid)}</p>` : ""}`
+        : v.soort === "breuk"
+        ? `<div class="antwoordrij"><div class="breuk"><input class="typ" id="teller" inputmode="numeric" autocomplete="off" aria-label="Teller"><div class="streep"></div><input class="typ" id="noemer" inputmode="numeric" autocomplete="off" aria-label="Noemer"></div>${v.eenheid ? `<span class="eenheid">${esc(v.eenheid)}</span>` : ""}</div>`
+        : `<div class="antwoordrij"><input class="typ" id="antw" inputmode="decimal" autocomplete="off" aria-label="Antwoord">${v.eenheid ? `<span class="eenheid">${esc(v.eenheid)}</span>` : ""}</div>`;
+      el.innerHTML = `
+        <div class="kopregel"><span class="wie">${esc(ik)}</span><span class="teller">${Object.keys(goedSet).length} van ${n} goed</span></div>
+        <div class="somnr">Som ${somNu + 1}</div>
+        <p class="somuitleg">${v.soort === "keuze" ? "Tik op het goede antwoord." : v.soort === "breuk" ? "Vul de breuk in." : "Vul je antwoord in."}</p>
+        ${veld}
+        <div class="terugmelding${pogingen ? " fout" : ""}" id="terugmelding">${pogingen ? "Nog niet goed. Probeer het nog een keer." : ""}</div>
+        <div class="somknoppen">
+          ${kanOverslaan ? `<button class="knop licht" id="overslaan">Sla over</button>` : ""}
+          <button class="knop" id="controleer">Controleer</button>
+        </div>
+        ${overgeslagen !== null && overgeslagen !== somNu ? `<p class="midden" style="font-size:16px;color:var(--zacht);margin:10px 0 0">Som ${overgeslagen + 1} heb je overgeslagen. Die komt straks terug.</p>` : ""}
+        <div class="sombollen">${toets.vragen.map((_, i) => `<span class="sombol${somGoed(i) ? " goed" : i === overgeslagen ? " over" : ""}${i === somNu ? " hier" : ""}">${i + 1}</span>`).join("")}</div>
+        <div class="opslag" id="opslag"></div>`;
+      el.querySelectorAll("[data-o]").forEach((b) => b.onclick = () => {
+        somKeuze = b.dataset.o; el.querySelectorAll("[data-o]").forEach((x) => x.setAttribute("aria-pressed", x === b));
+      });
+      const eerste = el.querySelector(".typ"); if (eerste) eerste.focus();
+      el.querySelectorAll(".typ").forEach((x) => x.onkeydown = (e) => { if (e.key === "Enter") { e.preventDefault(); $("controleer").click(); } });
+      if ($("overslaan")) $("overslaan").onclick = async () => {
+        overgeslagen = somNu;
+        try { await Live.schrijf(huidig, `leerlingen/${ik}/overgeslagen`, "v" + somNu); } catch {}
+        teken();
+      };
+      let bezig = false;
+      $("controleer").onclick = async () => {
+        if (bezig) return;
+        const ant = v.soort === "keuze" ? somKeuze : v.soort === "breuk" ? `${$("teller").value.trim()}/${$("noemer").value.trim()}` : $("antw").value.trim();
+        if (!ant || ant === "/" || (v.soort === "breuk" && (!$("teller").value.trim() || !$("noemer").value.trim()))) return;
+        bezig = true;
+        const i = somNu;
+        if (somKlopt(v, ant)) {
+          goedSet["v" + i] = Date.now();
+          const data = { apparaat, bijgewerkt: Date.now(), [`goed/v${i}`]: goedSet["v" + i] };
+          if (overgeslagen === i) { overgeslagen = null; data.overgeslagen = null; }
+          const klaar = toets.vragen.every((_, j) => somGoed(j));
+          if (klaar) data.ingeleverd = Date.now();
+          $("terugmelding").className = "terugmelding goed"; $("terugmelding").textContent = "Goed zo!";
+          try { await Live.schrijf(huidig, `leerlingen/${ik}`, data, "PATCH"); } catch { $("opslag").textContent = "Niet bewaard, geen internet?"; }
+          if (klaar) { const k = opslag.lees("opdracht-klaar") || {}; k[huidig] = ik; opslag.zet("opdracht-klaar", k); }
+          setTimeout(() => { fase = klaar ? "ingeleverd" : "som"; teken(); }, 700);
+        } else {
+          const lijst = fouten["v" + i] = [...(fouten["v" + i] || []), ant];
+          Live.schrijf(huidig, `leerlingen/${ik}/fouten/v${i}`, lijst).catch(() => {});
+          el.querySelectorAll(".typ").forEach((x) => { x.value = ""; x.classList.add("fout"); });
+          $("terugmelding").className = "terugmelding fout"; $("terugmelding").textContent = "Nog niet goed. Probeer het nog een keer.";
+          if (eerste) eerste.focus();
+          bezig = false;
+        }
+      };
     }
 
     // Antwoorden tussendoor bewaren (de leerkracht kijkt live mee, en er gaat niets verloren).

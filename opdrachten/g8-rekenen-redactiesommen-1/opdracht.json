@@ -1,0 +1,73 @@
+{
+  "id": "g8-rekenen-redactiesommen-1",
+  "titel": "Redactiesommen (werkblad 1)",
+  "groep": "8",
+  "vak": "Weektaak",
+  "soort": "sommen",
+  "gemaakt": "2026-11-28",
+  "opdracht": "De sommen staan op je werkblad.",
+  "letOp": "Om deze taak af te maken, lever je ook een aantekeningenblad in. Daarop staan je aantekeningen netjes opgeschreven. Zet bij elke som het nummer in de kantlijn, schrijf je aantekeningen op, en vul daarna het antwoord hier in. Het antwoord staat dus op je blad én hier.",
+  "vragen": [
+    {
+      "soort": "getal",
+      "a": "XSIzNyJb",
+      "eenheid": "potloden"
+    },
+    {
+      "soort": "getal",
+      "a": "XSI1MiwwMiJb",
+      "eenheid": "euro"
+    },
+    {
+      "soort": "keuze",
+      "a": "XSIwMDUyIls=",
+      "eenheid": "gram",
+      "opties": [
+        "2300",
+        "2500",
+        "2600",
+        "2400"
+      ]
+    },
+    {
+      "soort": "getal",
+      "a": "XSIwMDg0Ils=",
+      "eenheid": "mensen"
+    },
+    {
+      "soort": "getal",
+      "a": "XSIzIls=",
+      "eenheid": "mensen"
+    },
+    {
+      "soort": "getal",
+      "a": "XSIwMDkwMSJb",
+      "eenheid": "koffiebekertjes"
+    },
+    {
+      "soort": "breuk",
+      "a": "XSI1LzIiWw=="
+    },
+    {
+      "soort": "breuk",
+      "a": "XSIwMi83Ils=",
+      "eenheid": "liter"
+    },
+    {
+      "soort": "getal",
+      "a": "XSIyNyJb",
+      "eenheid": "kinderen"
+    },
+    {
+      "soort": "keuze",
+      "a": "XSIwMDgxIls=",
+      "eenheid": "kinderen",
+      "opties": [
+        "2000",
+        "2100",
+        "1800",
+        "1500"
+      ]
+    }
+  ]
+}
