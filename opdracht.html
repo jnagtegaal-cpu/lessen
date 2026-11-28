@@ -378,6 +378,13 @@
           Live.schrijf(huidig, `leerlingen/${ik}/fouten/w${stap}`, lijst).catch(() => {});
           typ.value = ""; typ.classList.add("fout"); if (woord) woord.classList.remove("weg");
           $("terugmelding").className = "terugmelding fout"; $("terugmelding").textContent = "Nog niet goed. Probeer het nog een keer.";
+          // Ronde 2: na 3 foute pogingen komt het woord even in beeld (4 seconden).
+          const hint = el.querySelector(".hint");
+          if (hint && lijst.length >= 3) {
+            const oud = hint.innerHTML, mijnStap = stap;
+            hint.textContent = w.woord; $("terugmelding").textContent = "Kijk goed naar het woord. Zo meteen typ je het weer uit je hoofd.";
+            setTimeout(() => { if (stap === mijnStap && el.contains(hint)) { hint.innerHTML = oud; } }, 4000);
+          }
           bezig = false; typ.focus();
         }
       }
