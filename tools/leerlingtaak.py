@@ -94,6 +94,9 @@ def klaar(opdracht_id, letters):
     r = {"toets": opdracht_id, "gestart": int(time.time() * 1000)}
     if letters:
         r["voor"] = letters
+    oud = db("GET", f"{PLEK}/actief") if not PROEF else None
+    if isinstance(oud, dict) and isinstance(oud.get("kamer"), str):  # oud formaat eerst omzetten, net als de app
+        db("PUT", f"{PLEK}/actief", {oud["kamer"]: {"toets": oud.get("toets"), "gestart": oud.get("gestart")}})
     db("PUT", f"{k}/info", r)
     db("PUT", f"{PLEK}/geschiedenis/{k}", r)
     db("PUT", f"{PLEK}/actief/{k}", r)
