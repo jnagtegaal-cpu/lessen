@@ -95,6 +95,9 @@
     .letop b { color: #7a5a00; }
     .somnr { text-align: center; font-size: 64px; font-weight: 700; color: var(--kop); line-height: 1; margin: 6px 0 2px; }
     .somuitleg { text-align: center; color: var(--zacht); margin: 0 0 16px; }
+    .somtekst { font-size: 22px; line-height: 1.6; margin: 10px 0 14px; }
+    .bk { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; font-weight: 700; line-height: 1.1; margin: 0 3px; }
+    .bk span:first-child { border-bottom: 2px solid currentColor; padding: 0 3px; }
     .antwoordrij { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
     .antwoordrij .typ { width: 9em; margin: 0; }
     .eenheid { font-size: 26px; font-weight: 700; }
@@ -462,6 +465,8 @@
       }
       return Math.abs(getal(ant) - getal(goed)) < 1e-9;
     }
+    // Somtekst: {3/5} wordt een breuk boven elkaar.
+    const somTekst = (t) => esc(t).replace(/\{(\d+)\/(\d+)\}/g, '<span class="bk"><span>$1</span><span>$2</span></span>');
     function tekenLetOp(el) {
       $("sub").textContent = toets.opdracht || "";
       el.innerHTML = `<div class="kopregel"><span class="wie">${esc(ik)}</span><span class="teller">${Object.keys(goedSet).length} van ${toets.vragen.length} goed</span></div>
@@ -475,7 +480,7 @@
       if (somNu < 0) { fase = "ingeleverd"; return teken(); }
       const v = toets.vragen[somNu], pogingen = (fouten["v" + somNu] || []).length;
       const kanOverslaan = overgeslagen === null && toets.vragen.some((_, i) => i !== somNu && !somGoed(i));
-      $("sub").textContent = "Vul het antwoord in dat je op je blad hebt uitgerekend.";
+      $("sub").textContent = toets.opdracht || "Vul het antwoord in dat je op je blad hebt uitgerekend.";
       somKeuze = null;
       const veld = v.soort === "keuze"
         ? `<div class="keuzes">${v.opties.map((o) => `<button data-o="${esc(o)}" aria-pressed="false">${esc(o)}</button>`).join("")}</div>${v.eenheid ? `<p class="midden" style="margin:8px 0 0">${esc(v.eenheid)}</p>` : ""}`
@@ -485,6 +490,7 @@
       el.innerHTML = `
         <div class="kopregel"><span class="wie">${esc(ik)}</span><span class="teller">${Object.keys(goedSet).length} van ${n} goed</span></div>
         <div class="somnr">Som ${somNu + 1}</div>
+        ${v.tekst ? `<p class="somtekst">${somTekst(v.tekst)}</p>` : ""}
         <p class="somuitleg">${v.soort === "keuze" ? "Tik op het goede antwoord." : v.soort === "breuk" ? "Vul de breuk in." : "Vul je antwoord in."}</p>
         ${veld}
         <div class="terugmelding${pogingen ? " fout" : ""}" id="terugmelding">${pogingen ? "Nog niet goed. Probeer het nog een keer." : ""}</div>

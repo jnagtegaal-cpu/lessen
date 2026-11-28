@@ -5,18 +5,20 @@
   "vak": "Weektaak",
   "soort": "sommen",
   "gemaakt": "2026-11-28",
-  "opdracht": "De sommen staan op je werkblad.",
+  "opdracht": "Lees de som, reken hem uit op je aantekeningenblad en vul het antwoord in.",
   "letOp": "Om deze taak af te maken, lever je ook een aantekeningenblad in. Daarop staan je aantekeningen netjes opgeschreven. Zet bij elke som het nummer in de kantlijn, schrijf je aantekeningen op, en vul daarna het antwoord hier in. Het antwoord staat dus op je blad én hier.",
   "vragen": [
     {
       "soort": "getal",
       "a": "XSIzNyJb",
-      "eenheid": "potloden"
+      "eenheid": "potloden",
+      "tekst": "Een school koopt 876 nieuwe potloden. Die worden eerlijk verdeeld over 12 klassen. Hoeveel potloden krijgt elke klas?"
     },
     {
       "soort": "getal",
       "a": "XSI1MiwwMiJb",
-      "eenheid": "euro"
+      "eenheid": "euro",
+      "tekst": "Mohammed spaart 4 weken lang. Hij stopt in zijn spaarpot: € 22,50, € 19,75, € 19,50 en € 19,25. Hoeveel euro spaart hij gemiddeld per week?"
     },
     {
       "soort": "keuze",
@@ -27,36 +29,43 @@
         "2500",
         "2600",
         "2400"
-      ]
+      ],
+      "tekst": "Puck gaat met € 34,60 naar de kaaswinkel. Oude kaas kost € 1,38 per 100 gram. Hoeveel gram kaas kan Puck ongeveer kopen?"
     },
     {
       "soort": "getal",
       "a": "XSIwMDg0Ils=",
-      "eenheid": "mensen"
+      "eenheid": "mensen",
+      "tekst": "Een museum had in een half jaar 9800 bezoekers. Daarvan waren er 450 baby's, 1550 kinderen jonger dan 10 jaar, 1800 jongeren tot 18 jaar en 1200 mensen ouder dan 65 jaar. Hoeveel bezoekers waren tussen de 18 en 65 jaar?"
     },
     {
       "soort": "getal",
       "a": "XSIzIls=",
-      "eenheid": "mensen"
+      "eenheid": "mensen",
+      "tekst": "Elke week komen er ongeveer 302 mensen naar de kerk. Daarvan zijn er 98 ouder dan 60 jaar. Dat is ongeveer 1 op de hoeveel mensen?"
     },
     {
       "soort": "getal",
       "a": "XSIwMDkwMSJb",
-      "eenheid": "koffiebekertjes"
+      "eenheid": "koffiebekertjes",
+      "tekst": "In het magazijn van een groot bedrijf staan 11150 koffiebekertjes. Voor de kantine worden er 250 weggehaald. Hoeveel koffiebekertjes staan er nog in het magazijn?"
     },
     {
       "soort": "breuk",
-      "a": "XSI1LzIiWw=="
+      "a": "XSI1LzIiWw==",
+      "tekst": "Een zwembad is helemaal vol water. Er wordt {3/5} deel van het water weggepompt. Voor welk deel is het zwembad nog gevuld? Schrijf je antwoord als breuk."
     },
     {
       "soort": "breuk",
       "a": "XSIwMi83Ils=",
-      "eenheid": "liter"
+      "eenheid": "liter",
+      "tekst": "Finn begint aan een afdaling van een berg met {6/10} liter water in zijn rugtas. Als hij beneden is, heeft hij nog {1/4} liter. Hoeveel liter heeft Finn onderweg gedronken? Schrijf je antwoord als breuk."
     },
     {
       "soort": "getal",
       "a": "XSIyNyJb",
-      "eenheid": "kinderen"
+      "eenheid": "kinderen",
+      "tekst": "In een trampolinepark zijn 90 kinderen. 80% van hen heeft al iets lekkers gekocht. Hoeveel kinderen zijn dat?"
     },
     {
       "soort": "keuze",
@@ -67,7 +76,8 @@
         "2100",
         "1800",
         "1500"
-      ]
+      ],
+      "tekst": "Aan de avondvierdaagse doen 4769 mensen mee. 3 op de 8 lopers zijn jonger dan 8 jaar. Hoeveel lopers jonger dan 8 zijn dat ongeveer?"
     }
   ]
 }

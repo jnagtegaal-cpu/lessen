@@ -457,7 +457,7 @@
         <div class="vlak">
           <p style="margin-top:0"><b>${klaar}</b> klaar · <b>${bezig}</b> bezig · <b>${lijst.length - klaar - bezig}</b> niet begonnen</p>
           <div class="tabelvak"><table>
-            <thead><tr><th>Letter</th><th>Status</th><th>Meteen<br>goed</th>${t.vragen.map((v, i) => `<th>Som ${i + 1}<span class="vraagkop">${esc(v.antwoord)}${v.eenheid ? " " + esc(v.eenheid) : ""}</span></th>`).join("")}<th></th></tr></thead>
+            <thead><tr><th>Letter</th><th>Status</th><th>Meteen<br>goed</th>${t.vragen.map((v, i) => `<th title="${esc((v.tekst || "").replace(/[{}]/g, ""))}">Som ${i + 1}<span class="vraagkop">${esc(v.antwoord)}${v.eenheid ? " " + esc(v.eenheid) : ""}</span></th>`).join("")}<th></th></tr></thead>
             <tbody>${rijen}</tbody>
             <tfoot><tr><td class="l">Meteen goed</td><td colspan="2">van wie de som goed heeft</td>${meteen.map((m, i) => `<td>${gedaan[i] ? `${m}/${gedaan[i]}` : ""}</td>`).join("")}<td></td></tr></tfoot>
           </table></div>
