@@ -17,6 +17,7 @@
     .kaart.klikbaar:hover { border-color: var(--groen); }
     .kaart.actief { border: 2px solid var(--groen); }
     .label.rood { background: #fde8e6; color: #b3372f; }
+    td span.rood { color: #b3372f; font-weight: 700; }
     .archief { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--schaduw); overflow: hidden; }
     .archief h3 { margin: 0; padding: 12px 18px; font-size: 15px; background: #f3f8f5; color: var(--ink-soft); border-top: 1px solid var(--line); }
     .archief h3:first-child { border-top: 0; }
@@ -88,11 +89,13 @@
     async function laadOpdracht(id) {
       if (!opdrachten[id]) {
         const t = await laadJson(`opdrachten/${encodeURIComponent(id)}/opdracht.json`);
-        t.vragen.forEach((v) => v.goed = ontcijfer(v.a));
+        if (t.soort === "woorden") t.woorden.forEach((w) => w.woord = ontcijfer(w.a)[0]);
+        else t.vragen.forEach((v) => v.goed = ontcijfer(v.a));
         opdrachten[id] = t;
       }
       return opdrachten[id];
     }
+    const aantal = (t) => t.soort === "woorden" ? `${t.vragen} woorden × 2` : `${t.vragen} vragen`;
     const info = (id) => overzicht.find((t) => t.id === id) || { id, titel: id };
     // Welke rondes staan klaar voor de leerlingen? (ook het oude formaat met één ronde)
     function actieveRondes() {
@@ -234,7 +237,7 @@
         const r = rondeVanOpdracht(t.id);
         const tel = r ? telling(r[0]) : null;
         html += `<article class="kaart klikbaar${r ? " actief" : ""}" data-open="${esc(t.id)}">
-          <div class="kaart-meta"><span class="label">Groep ${esc(t.groep)}</span><span class="label grijs">${t.vragen} vragen</span>${r ? `<span class="label">Staat klaar</span>${voorLabel(r[1])}` : ""}</div>
+          <div class="kaart-meta"><span class="label">Groep ${esc(t.groep)}</span><span class="label grijs">${aantal(t)}</span>${r ? `<span class="label">Staat klaar</span>${voorLabel(r[1])}` : ""}</div>
           <h2>${esc(t.titel)}</h2>
           <p>${r ? `Sinds ${esc(uur(r[1].gestart))} · <b>${tel.klaar}</b> ingeleverd · ${tel.bezig} bezig` : "Staat niet klaar voor de leerlingen."}</p>
           <div class="kaart-acties">${r
@@ -284,7 +287,7 @@
       const terugNaar = `#v=${encodeURIComponent(vakVan(id))}`;
       const eerder = geschiedenis().filter(([, x]) => x.toets === id);
       $("inhoud").innerHTML = `<a class="terug" href="${terugNaar}">← ${esc(vakVan(id))}</a>
-        <div class="detail-kop"><div><h1>${esc(t.titel)}</h1><div class="kaart-meta"><span class="label">Groep ${esc(t.groep)}</span><span class="label grijs">${t.vragen} vragen</span><span class="label grijs">Staat niet klaar</span></div></div>
+        <div class="detail-kop"><div><h1>${esc(t.titel)}</h1><div class="kaart-meta"><span class="label">Groep ${esc(t.groep)}</span><span class="label grijs">${aantal(t)}</span><span class="label grijs">Staat niet klaar</span></div></div>
         <div class="knoppen"><button class="knop hoofd" id="klaar">Zet klaar voor iedereen</button></div></div>
         <h2 class="sectie">Of alleen voor bepaalde leerlingen</h2><div class="vlak">${kiezer(`o=${id}`, [], (n) => n ? `Zet klaar voor ${n} ${n === 1 ? "leerling" : "leerlingen"}` : "Zet klaar")}</div>
         <h2 class="sectie">Eerder gemaakt</h2><div class="archief">${eerder.length ? eerder.map(([k, x]) => `<a href="#r=${esc(k)}"><span>${esc(datum(x.gestart))}${voorWie(x) ? ` <span class="zacht">· ${esc(voorTekst(voorWie(x)).toLowerCase())}</span>` : ""}</span><span class="zacht">${esc(uur(x.gestart))}</span></a>`).join("") : `<div class="leeg-klein">Deze opdracht is nog niet eerder gemaakt.</div>`}</div>`;
@@ -311,6 +314,7 @@
       if (!kamer.info) { $("inhoud").innerHTML = `<a class="terug" href="#">← Terug</a><p class="melding">Deze resultaten bestaan niet meer.</p>`; return; }
       const t = await laadOpdracht(kamer.info.toets).catch(() => null);
       if (!t) { $("inhoud").innerHTML = `<a class="terug" href="#">← Terug</a><p class="melding">Deze opdracht is niet meer te vinden.</p>`; return; }
+      if (t.soort === "woorden") return tekenWoordenRonde(k, kamer, t, h);
       const actief = !!actieveRondes()[k];
       const terug = actief ? `<a class="terug" href="#v=${encodeURIComponent(vakVan(t.id))}">← ${esc(vakVan(t.id))}</a>` : `<a class="terug" href="#">← Terug</a>`;
       const ll = kamer.leerlingen || {};
@@ -356,6 +360,78 @@
       if ($("af")) zeker($("af"), "Zeker? Tik nog een keer", () => af(k));
       if ($("wis")) zeker($("wis"), "Echt wissen? Download eerst! Tik nog een keer", () => wis(k));
       document.querySelectorAll("[data-vrij]").forEach((b) => zeker(b, "zeker?", () => Live.schrijf(k, `leerlingen/${b.dataset.vrij}`, null, "DELETE")));
+    }
+
+    // ---------- Woorden oefenen: per leerling per woord hoe vaak het fout ging (ronde 1 overtypen, ronde 2 uit het hoofd) ----------
+    function woordStand(t, d) {
+      const n = t.woorden.length, stap = (d && d.stap) || 0, f = (d && d.fouten) || {};
+      return t.woorden.map((w, i) => [i, i + n].map((s) => ({ gedaan: stap > s, bezig: stap === s, fout: f["w" + s] || [] })));
+    }
+    function tekenWoordenRonde(k, kamer, t, h) {
+      const actief = !!actieveRondes()[k], n = t.woorden.length;
+      const terug = actief ? `<a class="terug" href="#v=${encodeURIComponent(vakVan(t.id))}">← ${esc(vakVan(t.id))}</a>` : `<a class="terug" href="#">← Terug</a>`;
+      const ll = kamer.leerlingen || {}, voor = voorWie(kamer.info), lijst = letters(ll, voor), pasAan = h.get("kies") === "1";
+      let klaar = 0, bezig = 0, rijen = "";
+      const foutPerWoord = t.woorden.map(() => 0), bereikt = t.woorden.map(() => 0);
+      const cel = (x) => x.fout.length ? `<span class="rood" title="${esc(x.fout.join(", "))}">${esc(x.fout.join(", "))}</span>${x.gedaan ? "" : " …"}` : x.gedaan ? "✓" : x.bezig ? "…" : "·";
+      for (const l of lijst) {
+        const d = ll[l];
+        if (!d) { rijen += `<tr><td class="l">${esc(l)}</td><td class="zacht">niet begonnen</td><td></td>${t.woorden.map(() => `<td class="niets">·</td>`).join("")}<td></td></tr>`; continue; }
+        const st = woordStand(t, d), stap = d.stap || 0;
+        d.ingeleverd ? klaar++ : bezig++;
+        st.forEach(([, r2], i) => { if (r2.gedaan) { bereikt[i]++; if (r2.fout.length) foutPerWoord[i]++; } });
+        const totaal = st.reduce((s, [a, b]) => s + a.fout.length + b.fout.length, 0);
+        const hoofdGoed = st.filter(([, b]) => b.gedaan && !b.fout.length).length;
+        rijen += `<tr class="${d.ingeleverd ? "klaar" : ""}"><td class="l">${esc(l)}</td>
+          <td>${d.ingeleverd ? "✓ klaar" : `bezig (${stap}/${2 * n})`}</td>
+          <td><b>${hoofdGoed}</b>/${n}<br><span class="zacht" style="font-size:13px">${totaal} ${totaal === 1 ? "fout" : "fouten"}</span></td>
+          ${st.map(([a, b]) => `<td class="${a.fout.length || b.fout.length ? "fout" : a.gedaan ? "goed" : "niets"}" style="font-weight:400">${cel(a)}<br>${cel(b)}</td>`).join("")}
+          <td>${actief ? `<button class="x" data-vrij="${esc(l)}" title="Wist de voortgang van deze letter, zodat het kind opnieuw kan beginnen">vrijgeven</button>` : ""}</td></tr>`;
+      }
+      const status = actief ? `<span class="label">Staat klaar sinds ${esc(uur(kamer.info.gestart))}</span>` : `<span class="label grijs">Gearchiveerd</span>`;
+      $("inhoud").innerHTML = `${terug}
+        <div class="detail-kop"><div><h1>${esc(t.titel)}</h1>
+          <div class="kaart-meta"><span class="label grijs">${esc(vakVan(t.id))}</span><span class="label grijs">${esc(datum(kamer.info.gestart))}</span>${status}${voor ? voorLabel(kamer.info) : `<span class="label grijs">Voor iedereen</span>`}</div></div>
+          <div class="knoppen">
+            ${actief && !pasAan ? `<button class="knop" id="pasAan">Leerlingen aanpassen</button>` : ""}
+            <button class="knop" id="download">Download voor Excel</button>
+            ${actief ? `<button class="knop hoofd" id="af">Af en archiveren</button>` : `<button class="knop rood" id="wis">Wis uit archief</button>`}
+          </div></div>
+        ${actief && pasAan ? `<div class="vlak" style="margin-bottom:16px"><p style="margin-top:0"><b>Voor wie staat deze opdracht klaar?</b> <button class="x" id="iedereen">voor iedereen</button> · <a class="x" href="#r=${esc(k)}">annuleren</a></p>${kiezer(`r=${k}`, voor || [], () => "Opslaan")}</div>` : ""}
+        <div class="vlak">
+          <p style="margin-top:0"><b>${klaar}</b> klaar · <b>${bezig}</b> bezig · <b>${lijst.length - klaar - bezig}</b> niet begonnen</p>
+          <div class="tabelvak"><table>
+            <thead><tr><th>Letter</th><th>Status</th><th>Uit het hoofd<br>meteen goed</th>${t.woorden.map((w, i) => `<th>${i + 1}<span class="vraagkop">${esc(w.woord)}</span></th>`).join("")}<th></th></tr></thead>
+            <tbody>${rijen}</tbody>
+            <tfoot><tr><td class="l">Fout uit het hoofd</td><td colspan="2">wie ronde 2 deed</td>${foutPerWoord.map((f, i) => `<td>${bereikt[i] ? `${f}/${bereikt[i]}` : ""}</td>`).join("")}<td></td></tr></tfoot>
+          </table></div>
+          <p class="zacht" style="font-size:14px;margin-bottom:0">Per woord staan twee regels: boven ronde 1 (overtypen), onder ronde 2 (uit het hoofd). ✓ = meteen goed. Rood = wat het kind eerst fout typte, daarna probeerde het opnieuw tot het goed was. … = daar is het kind nu.</p>
+        </div>`;
+      $("download").onclick = () => downloadWoorden(t, kamer);
+      if ($("pasAan")) $("pasAan").onclick = () => { keuze = { waar: "" }; location.hash = `r=${k}&kies=1`; };
+      if ($("iedereen")) $("iedereen").onclick = async () => { await zetVoor(k, null); location.hash = `r=${k}`; };
+      if (pasAan) koppelKiezer(async (l) => { await zetVoor(k, l); location.hash = `r=${k}`; });
+      if ($("af")) zeker($("af"), "Zeker? Tik nog een keer", () => af(k));
+      if ($("wis")) zeker($("wis"), "Echt wissen? Download eerst! Tik nog een keer", () => wis(k));
+      document.querySelectorAll("[data-vrij]").forEach((b) => zeker(b, "zeker?", () => Live.schrijf(k, `leerlingen/${b.dataset.vrij}`, null, "DELETE")));
+    }
+    function downloadWoorden(t, kamer) {
+      const ll = kamer.leerlingen || {}, n = t.woorden.length;
+      const cel = (s) => `"${String(s ?? "").replace(/"/g, '""')}"`;
+      const kop = ["Letter", "Status", "Uit het hoofd meteen goed", "Fouten totaal"];
+      t.woorden.forEach((w, i) => kop.push(`${i + 1}. ${w.woord} (overtypen)`, `${i + 1}. ${w.woord} (uit hoofd)`));
+      const regels = [kop.map(cel).join(";")];
+      for (const l of letters(ll, voorWie(kamer.info))) {
+        const d = ll[l];
+        if (!d) { regels.push([l, "niet begonnen"].map(cel).join(";")); continue; }
+        const st = woordStand(t, d);
+        const r = [l, d.ingeleverd ? "klaar" : `bezig (${d.stap || 0}/${2 * n})`, st.filter(([, b]) => b.gedaan && !b.fout.length).length, st.reduce((s, [a, b]) => s + a.fout.length + b.fout.length, 0)];
+        st.forEach(([a, b]) => r.push(...[a, b].map((x) => x.fout.length ? x.fout.join(", ") : x.gedaan ? "goed" : "")));
+        regels.push(r.map(cel).join(";"));
+      }
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob(["\uFEFF" + regels.join("\r\n")], { type: "text/csv;charset=utf-8" }));
+      a.download = `${t.id}-${new Date(kamer.info.gestart).toISOString().slice(0, 10)}.csv`; a.click();
     }
 
     function download(t, kamer) {

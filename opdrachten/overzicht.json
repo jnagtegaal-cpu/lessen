@@ -16,6 +16,24 @@
       "gemaakt": "2026-11-27",
       "vragen": 20,
       "vak": "Spelling"
+    },
+    {
+      "id": "g7-spelling-woorden-blok-3",
+      "titel": "Woorden oefenen groep 7",
+      "groep": "7",
+      "gemaakt": "2026-11-28",
+      "vragen": 25,
+      "vak": "Weektaak",
+      "soort": "woorden"
+    },
+    {
+      "id": "g8-spelling-woorden-blok-3",
+      "titel": "Woorden oefenen groep 8",
+      "groep": "8",
+      "gemaakt": "2026-11-28",
+      "vragen": 25,
+      "vak": "Weektaak",
+      "soort": "woorden"
     }
   ]
 }
